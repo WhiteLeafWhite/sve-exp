@@ -5,7 +5,7 @@
 | 对手 | 天曜战骑 K | 双灾藤 F | 完整配对 | F 负→K 胜 | F 胜→K 负 | K 登场局 | 出牌时有两护符的局数 |
 |---|---|---|---:|---:|---:|---:|---:|
 | 破坏巫师 | 8/20（40%，22–61%） | 11/20（55%，34–74%） | 20 | 1 | 4 | 7 | 5 |
-| 侮蔑龙 | 5/15（33%，15–58%） | 6/15（40%，20–64%） | 15 | 1 | 2 | 5 | 3 |
+| 侮蔑龙 | 9/20（45%，26–66%） | 6/15（40%，20–64%） | 15 | 1 | 2 | 7 | 4 |
 | 财宝皇室 | 7/15（47%，25–70%） | 10/15（67%，42–85%） | 15 | 1 | 4 | 6 | 1 |
 
 ## 破坏巫师
@@ -37,7 +37,7 @@
 
 ## 侮蔑龙
 
-主教先攻胜/场数，K 为 4/8、F 为 3/8。后攻 K 为 1/7、F 为 3/7。战骑在 4 局攻击主战者并造成正伤害，合计 20 点。对手在 2 局对战骑宣告攻击。
+主教先攻胜/场数，K 为 6/10、F 为 3/8。后攻 K 为 3/10、F 为 3/7。战骑在 6 局攻击主战者并造成正伤害，合计 29 点。对手在 3 局对战骑宣告攻击。
 
 | 牌序 | K 结果、中文战报、复盘、录像 | F 结果、中文战报、复盘、录像 |
 |---:|---|---|
@@ -56,6 +56,11 @@
 | 13 | 胜 · [战报](candidate/zQrwne/games/13.md) · [复盘](candidate/zQrwne/reviews/03.md#game-13) · [录像](candidate/zQrwne/replays/13.json) | 负 · [战报](control/zQrwne/games/13.md) · [复盘](control/zQrwne/reviews/03.md#game-13) · [录像](control/zQrwne/replays/13.json) |
 | 14 | 负 · [战报](candidate/zQrwne/games/14.md) · [复盘](candidate/zQrwne/reviews/03.md#game-14) · [录像](candidate/zQrwne/replays/14.json) | 负 · [战报](control/zQrwne/games/14.md) · [复盘](control/zQrwne/reviews/03.md#game-14) · [录像](control/zQrwne/replays/14.json) |
 | 15 | 胜 · [战报](candidate/zQrwne/games/15.md) · [复盘](candidate/zQrwne/reviews/03.md#game-15) · [录像](candidate/zQrwne/replays/15.json) | 胜 · [战报](control/zQrwne/games/15.md) · [复盘](control/zQrwne/reviews/03.md#game-15) · [录像](control/zQrwne/replays/15.json) |
+| 16 | 胜 · [战报](candidate/zQrwne/games/16.md) · [复盘](candidate/zQrwne/reviews/04.md#game-16) · [录像](candidate/zQrwne/replays/16.json) | 待配对 |
+| 17 | 胜 · [战报](candidate/zQrwne/games/17.md) · [复盘](candidate/zQrwne/reviews/04.md#game-17) · [录像](candidate/zQrwne/replays/17.json) | 待配对 |
+| 18 | 胜 · [战报](candidate/zQrwne/games/18.md) · [复盘](candidate/zQrwne/reviews/04.md#game-18) · [录像](candidate/zQrwne/replays/18.json) | 待配对 |
+| 19 | 胜 · [战报](candidate/zQrwne/games/19.md) · [复盘](candidate/zQrwne/reviews/04.md#game-19) · [录像](candidate/zQrwne/replays/19.json) | 待配对 |
+| 20 | 负 · [战报](candidate/zQrwne/games/20.md) · [复盘](candidate/zQrwne/reviews/04.md#game-20) · [录像](candidate/zQrwne/replays/20.json) | 待配对 |
 
 ## 财宝皇室
 
