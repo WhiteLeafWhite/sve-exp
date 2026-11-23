@@ -85,6 +85,9 @@ def logs():
         ledger.append("")
     listing+=rows
     listing.extend(["","主教各对局战绩为"+"、".join(f"{NAMES[k]} {tally(s)}" for k,s in results.items() if s)+"。 [构筑日志](construction.md)"])
+    groups=sorted((ROOT/"checks").glob("*.md"))
+    if groups:
+        listing.extend(["", "每五场从双方座位复查。"+" · ".join(f"[第 {int(f.stem)} 组](checks/{f.name})" for f in groups)])
     for k,s in results.items():
         for j in range(1,(len(s)+4)//5+1):
             ledger.extend([f'<a id="{k}-{j:02}"></a>',"",f"{NAMES[k]}第 {(j-1)*5+1}–{min(j*5,len(s))} 局。 [五局复盘]({k}/reviews/{j:02}.md)",""])

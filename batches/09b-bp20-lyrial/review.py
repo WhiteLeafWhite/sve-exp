@@ -44,6 +44,7 @@ for key,title in KEYS.items():
     if old:
         records[key].update({"baselineWins":sum(x["winner"]==0 for x in old),"lossToWin":improved,"winToLoss":worsened})
         lines.extend([f"同种子由负转胜 {improved} 局，由胜转负 {worsened} 局。",""])
+        skill.extend([f"相同的五个种子，原表 B 对{title}为 {records[key]['baselineWins']} 胜。换上神弓后由负转胜 {improved} 局，由胜转负 {worsened} 局。",""])
     a=f'<a id="{key}-01"></a>'
     log=ROOT/"construction.md";text=log.read_text("utf-8")
     if a not in text: log.write_text(text.rstrip()+"\n\n"+a+"\n\n"+short+f" 此五局沿用共同 D 表，保留配对比较。 [五局复盘]({key}/reviews/01.md)\n",encoding="utf-8")

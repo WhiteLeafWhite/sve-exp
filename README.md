@@ -2,6 +2,8 @@
 
 每局都有 SVE NEXT 录像与按回合整理的中文日志。战报中的生命先列主教，后列对手。第八批为日版 BP20 主教对三个固定困难 Bot 各 50 局，每五局有一次构筑与打法复盘。
 
+这台电脑可以直接打开[主教陪练牌桌](http://127.0.0.1:5170/practice/index.html)。默认你执巫师，对面是本仓库训练的白牙萝蕾娜。也可以自己执主教，挑战三个困难对手。启动、换座位、导入与分支重演见[陪练操作](skills/sve-bishop-matchups/references/bp20-practice.md)。
+
 **第九批**　同一份白牙萝蕾娜透京耶菈对三个原版困难 Bot 各 100 局，先后攻各半。每五局更新两个座位的打法、逐局战报与构筑取舍。[百局分组成绩与全部录像](batches/09-bp20-fixed-300/index.md) · [构筑日志](batches/09-bp20-fixed-300/construction.md) · [共同主教](batches/09-bp20-fixed-300/bishop.json)
 
 按驾驶职业选择陪练技能。[主教](skills/sve-bishop-matchups/SKILL.md) · [破坏巫师](skills/sve-destruction-rune/SKILL.md) · [侮蔑龙](skills/sve-disdain-dragon/SKILL.md) · [财宝皇室](skills/sve-loot-sword/SKILL.md)

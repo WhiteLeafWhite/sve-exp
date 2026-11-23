@@ -9,6 +9,10 @@
 
 ## 在模拟器中练习
 
+本机的[主教陪练牌桌](http://127.0.0.1:5170/practice/index.html)默认让你执破坏巫师，另一侧是白牙萝蕾娜和「BP20 主教陪练」。在「对战」选择龙族或皇室即可换对手。想自己执主教，在己方选择 `BP20-Haven-final.json` 和「人类」，在对面选择一个 `svehelper/` 牌表和「Bot-困难」。三份固定主流牌表使用标准构筑规则，区域禁限列表选「无」。[原版桌面入口](http://127.0.0.1:5170/)
+
+陪练按双方公开主战者的职业识别这三种对局，使用百局验证的 r3。对局中只按合法选择行动。按钮、卡图、Quick 与录像沿用 NEXT 的图形桌面。在另一台电脑部署时，从已装依赖的 NEXT 0.4.3 源码目录运行 `node <技能目录>/scripts/build-desktop.mjs <PC版目录>`，然后从该 PC 版的 `start.bat` 启动。[陪练桌构建脚本](../scripts/build-desktop.mjs)
+
 使用 SVE NEXT 0.4.3（源码提交 `028e157`）。本机 PC 版双击 `dist/pc/start.bat`，首页选择对战或观看录像。桌面练习用标准职业格式。要复现三套原表，在标准格式的禁限下拉框选择「无」，并单独按日版 2026 年十月表检查主教。龙族原表保留 3 张日版限 1 的 BP15-066，皇室原表保留 3 张日版禁用的 BP05-018。可在牌组选择里用分享码定位原表。将主教位设为玩家，对手选困难。[模拟器项目](https://github.com/eireetm/ShadowverseEvolve-NEXT) · [日版官方禁限](https://shadowverse-evolve.com/card_limit/)
 
 在模拟器源码根目录打开 PowerShell。令 `$skill` 指向本技能目录。以下写法适用于按默认路径安装的技能。SVE Helper 导入脚本也能给自己调整过的牌表安装正反面卡图与中文、日文卡效。[SVE Helper 公开卡组](https://www.svehelperwin.com/#/deck-list)
