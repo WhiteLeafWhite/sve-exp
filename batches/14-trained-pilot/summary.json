@@ -1,5 +1,5 @@
 {
-  "complete": false,
+  "complete": true,
   "checkpoint": 3,
   "hash": "94bd52f7fe65196e308c22edfda95d94bc75d77e1d1e9857c2369c2effd1a869",
   "byMatchup": {
@@ -24,15 +24,19 @@
       "choices": 3
     },
     "t7B32v": {
-      "games": 15,
-      "trained": 7,
-      "baseline": 7,
+      "games": 20,
+      "trained": 9,
+      "baseline": 9,
       "up": 0,
       "down": 0,
-      "identical": 14,
+      "identical": 19,
       "withChoices": 1,
       "choices": 1
     }
   },
-  "criteria": null
+  "criteria": {
+    "expand": false,
+    "advantage": false,
+    "allAtLeast45": false
+  }
 }
