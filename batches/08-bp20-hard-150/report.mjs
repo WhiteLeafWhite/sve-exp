@@ -103,10 +103,11 @@ function summarize(number) {
       let action=input.type;
       if(input.type==="selectCards") {
         const chosen=input.cards.map(id=>name(d.candidateDefs[d.candidates.indexOf(id)]));
-        action=chosen.length?"选择"+chosen.join("、"):"选择空集合";
+        action=chosen.length?"选择"+chosen.join("、"):"不取牌";
       } else if(input.type==="choose"){
         const choices=d.options.filter(o=>input.ids.includes(o.id));
-        action="选择模式 "+choices.map(o=>o.id).join("、");
+        const oracle=g.state.cards[d.source]?.def==="SD04-002";
+        action=oracle ? (input.ids[0]==="1" ? "选择提高 PP 上限" : "选择抽一张牌") : "选择模式 "+choices.map(o=>o.id).join("、");
       } else if(input.action){
         const a=input.action;
         action=({play:"使用",evolve:"进化",activate:"起动"}[a.type]??"")+
@@ -158,7 +159,7 @@ function summarize(number) {
   const loglines = drillFile ? [
     "# "+basename(drillFile,".json")+" · "+who[0]+resultName(winner),"",
     opts.deckNames.join(" 对 ")+"。从原局输入 "+r.practice.fromInput+" 前开始重练，核对 "+r.inputs.length+
-    " 次输入；终局 T"+g.state.turn+"，主教／对手 "+fmtHp(hp)+"。","",
+    " 次输入。终局 T"+g.state.turn+"，主教／对手 "+fmtHp(hp)+"。","",
     "主教"+order+"，起手为"+handNames(hand)+"，"+mulligan[0]+"。"+foe+mulligan[1]+"。","",
     "[此分支的原生录像](../"+basename(drillFile)+") · [原局逐回合日志](../../"+key+"/games/"+
       basename(r.practice.source,".json")+".md) · [同组重练目录](../logs.md)","",
