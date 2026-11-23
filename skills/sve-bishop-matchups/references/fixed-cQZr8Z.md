@@ -25,3 +25,7 @@
 ## 第 26–30 局 · 主教 2–3
 
 第 27 局 T10，主教体力从 18 到 8。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 61 前重练，当时有 2 PP，从「使用清纯祈祷者·耶菈」和「起动新约都市·透京的能力」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/27.md)
+
+## 第 31–35 局 · 主教 3–2
+
+第 32 局 T11，主教体力从 13 到 5。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 76 前重练，当时有 2 PP，从「进化绝望安息·玛文」和「使用绝望的奔流」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/32.md)
