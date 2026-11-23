@@ -121,7 +121,7 @@ const stopped=()=>{
   }
 };
 const authors=coaches.map(x=>x?.sha??null), auto=[0,0];
-let resumes=0;
+let resumes=0, restartInputs=[];
 if(previousGame){
   const old=previousGame;
   assert.deepEqual(old.options,options);
@@ -129,9 +129,10 @@ if(previousGame){
   for(const v of old.inputs) game.act(v.input,v.by??undefined);
   inputs.push(...old.inputs);notes.push(...old.notes);
   resumes=(old.resumes??0)+1;
+  restartInputs=Array.isArray(old.restartInputs) || !old.resumes ? [...(old.restartInputs??[]),inputs.length] : null;
   for(const seat of [0,1]) {explicit[seat]=old.explicit[seat];strategyMoves[seat]=old.strategyMoves[seat];delegatedUntil[seat]=old.delegatedUntil[seat];auto[seat]=old.auto[seat]}
 }
-put(prefix,{options,inputs,notes,explicit,strategyMoves,delegatedUntil,authors,auto,resumes,viewVersion});
+put(prefix,{options,inputs,notes,explicit,strategyMoves,delegatedUntil,authors,auto,resumes,restartInputs,viewVersion});
 while(game.decision){
   stopped();
   const d=game.decision,seat=d.player,v=game.view(seat),index=inputs.length;
@@ -178,7 +179,7 @@ while(game.decision){
   assert.equal(rt.validateAnswer(d,input),null);
   game.act(input,by??undefined);
   inputs.push({input,by});
-  put(prefix,{options,inputs,notes,explicit,strategyMoves,delegatedUntil,authors,auto,resumes,viewVersion});
+  put(prefix,{options,inputs,notes,explicit,strategyMoves,delegatedUntil,authors,auto,resumes,restartInputs,viewVersion});
   // Show public progress while the two seats have handed this turn to their
   // planners. Cards, choices and the shuffle stay in their own seat views.
   if(delegatedUntil.every(until=>until>=game.state.turn) && (v.turn!==game.state.turn||inputs.length%10===0)){
@@ -192,7 +193,7 @@ const fingerprint=rt.engineFingerprint(resolve("packages/gui"));
 const replay={format:"sve-replay",version:1,options,inputs,info:{result:game.result,turn:game.state.turn},
   training:{key,number:n,engine:fingerprint,policy:"agent",deckVersion:b.name,hp:game.state.players.map(p=>p.leaderDefense),
     bishopHash:hash(b),opponentHash:hash(m),originalOpponentHash:hash(src),opponentChanges:changes},
-  duel:{explicit,strategyMoves,notes,authors,policyChoices:auto,resumes,viewVersion,delegatedPilots:["fair Bishop r"+bishopRevision,"fair medium-v2"]}};
+  duel:{explicit,strategyMoves,notes,authors,policyChoices:auto,resumes,restartInputs,viewVersion,delegatedPilots:["fair Bishop r"+bishopRevision,"fair medium-v2"]}};
 put(out,replay);
 put(join(table,"current.json"),{id,key,n,status:"complete",winner:game.result.winner,turn:game.state.turn,explicit,strategyMoves,changes});
 console.log(JSON.stringify({id,result:game.result,explicit,strategyMoves,changes}));

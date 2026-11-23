@@ -25,6 +25,11 @@
 | 财宝皇室第 3 局 | 双玛文完整指定 T21，再从 T22 交回双方策略 | T27 财宝皇室胜 | [日志与逐局复盘](logs/royal-03-marwynn-turn-B.md) · [原生录像](royal-03-marwynn-turn-B.json) |
 | 财宝皇室第 4 局 | 歪曲处理进化欧克托莉斯 | T15 财宝皇室胜 | [日志与逐局复盘](logs/royal-04-octrice.md) · [原生录像](royal-04-octrice.json) |
 | 财宝皇室第 4 局 | 歪曲处理被夺走的圣士郎 | T15 财宝皇室胜 | [日志与逐局复盘](logs/royal-04-seishiro.md) · [原生录像](royal-04-seishiro.json) |
+| 财宝皇室第 5 局 | 在主教回合用水银复现原局 | T14 财宝皇室胜 | [日志与逐局复盘](logs/royal-05-control.md) · [原生录像](royal-05-control.json) |
+| 财宝皇室第 5 局 | 留水银并横置席翁 | T14 财宝皇室胜 | [日志与逐局复盘](logs/royal-05-quicksilver.md) · [原生录像](royal-05-quicksilver.json) |
+| 财宝皇室第 5 局 | 七费先下圣士郎 | T16 财宝皇室胜 | [日志与逐局复盘](logs/royal-05-seishiro.md) · [原生录像](royal-05-seishiro.json) |
+| 财宝皇室第 5 局 | 留水银并让席翁直立 | T14 财宝皇室胜 | [日志与逐局复盘](logs/royal-05-upright.md) · [原生录像](royal-05-upright.json) |
+| 财宝皇室第 5 局 | 七费先下白牙神殿 | T14 财宝皇室胜 | [日志与逐局复盘](logs/royal-05-whitefang.md) · [原生录像](royal-05-whitefang.json) |
 | 破坏巫师第 1 局 | 圣士郎取耶菈的祈祷 | T12 破坏巫师胜 | [日志与逐局复盘](logs/rune-01-prayer-control.md) · [原生录像](rune-01-prayer-control.json) |
 | 破坏巫师第 1 局 | 圣士郎取承担者 | T21 主教胜 | [日志与逐局复盘](logs/rune-01-punisher.md) · [原生录像](rune-01-punisher.json) |
 | 破坏巫师第 1 局 | 歪曲先解直立随从 | T14 破坏巫师胜 | [日志与逐局复盘](logs/rune-01-warped-progress.md) · [原生录像](rune-01-warped-progress.json) |

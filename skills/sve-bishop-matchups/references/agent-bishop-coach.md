@@ -60,7 +60,7 @@
 
 ### 水银的减伤只持续到打出它的那个回合结束
 
-皇室第五局 T13 输入 123，5 血时出席翁剩 1 PP。自己的主阶段打水银能抽都市，到皇室 T14 时减伤已经结束。对方先用残光清席翁，再用甘露打 2、吉鲁涅莉婕攻 3 刚好致命。练习在 123 留费，逐步检查何时第一次出现 Quick。皇室攻击前已经造成的能力伤害要先扣掉。[皇室第五局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/notes/05-bishop.md)
+皇室第五局 T13 输入 123，5 血时出席翁剩 1 PP。自己的主阶段打水银能抽都市，到皇室 T14 时减伤已经结束。对方先用残光清席翁，再用甘露打 2、吉鲁涅莉婕攻 3 刚好致命。练习在 123 留费，逐步检查何时第一次出现 Quick。皇室攻击前已经造成的能力伤害要先扣掉。[皇室第五局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/notes/05-bishop.md) 这两条都已重演。席翁横置时，甘露先实扣 1，再由两次战斗清守护，水银在输入 137 打出后，剩余两击仍是 3、1。席翁直立时被残光先除，甘露实扣 2，输入 132 打出的水银只将欧克托莉斯的 4 降到 3，恰好致命。下一步从输入 121 的 7 PP 重算整回合。[横置分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/royal-05-quicksilver.json) · [直立分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/royal-05-upright.json)
 
 龙族第五局 T17 输入 146，另一种费用问题是 9 PP 先下祈祷再下席翁，水银在 EX 却付不起。重演改为先席翁、保留 3 PP，输入 149 横置守护，166 打水银。若龙继续原来的 5＋5＋1，只会实扣 4＋4＋0，主教能剩 3。龙实际改使侮蔑之国配嘉鲁蜜儿，再用苍炎及第三名嘉鲁蜜儿处理使徒和席翁，席翁离场后实扣 6＋4＋2，主教从 11 血落败。[龙族第五局笔记](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/notes/05-bishop.md) · [留水银的重演](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-05-quicksilver.json) 把席翁留在直立位置，T18 输入 153 再打水银，席翁的持续减伤与水银的回合效果叠加，使徒、嘉鲁蜜儿、团结者的三次攻击实扣 3＋3＋1。主教从 11 留到 4，T19 天冥与承担者能再解场并回至 8，席翁也打脸 3。T20 新一轮两次 5 攻才落败，终局 −2／13。练习这个位置时，入场和回合末的守护横置都要逐次选择。[直立席翁的分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-05-upright.json)
 

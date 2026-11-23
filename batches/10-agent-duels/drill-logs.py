@@ -27,6 +27,11 @@ TITLES = {
     "dragon-05-upright": "席翁直立，首次攻击窗口用水银",
     "dragon-05-tenmei": "祈祷配天冥，两次回复处理使徒",
     "dragon-05-union": "祈祷配天冥，两次回复处理团结者",
+    "royal-05-control": "在主教回合用水银复现原局",
+    "royal-05-quicksilver": "留水银并横置席翁",
+    "royal-05-upright": "留水银并让席翁直立",
+    "royal-05-seishiro": "七费先下圣士郎",
+    "royal-05-whitefang": "七费先下白牙神殿",
 }
 
 

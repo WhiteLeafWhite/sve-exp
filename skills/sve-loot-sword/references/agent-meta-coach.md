@@ -25,3 +25,5 @@
 **融合前先决定下一回合要留哪一面旗。** 职业第 5 局 T6，手中两张奉还的剑闪，场上 3/1 副船长，EX 一旗。两费空绝显现找第三张剑闪，以一张手牌剑闪作为融合材料，融合后的剑闪进入 EX，余一费能打出四伤解决直立灾藤。显现获得疾驰，和副船长合打 5，再生成黄金短剑。若用 EX 海贼旗作融合材料，本回合也能清场，却会少下一回合的第一面旗。[第 5 局复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/notes/05-meta.md)
 
 **回费用来买疾驰随从。** 同局 T8 四费下芭芭萝丝，后攻用 EP 进化。留住的旗先回两费，下空绝显现。第二旗在显现已经入场时打出，同时给显现疾驰、给纹章放置计数、让进化芭芭萝丝破坏 4/4 圣士郎。两面旗和一次疾驰攻击共打 4，T10 这名受过两次强化的芭芭萝丝又攻 6。若先破坏再回费，显现错过打旗的时点，手中要额外拿出融合材料才能在本回合攻击。[第 5 局战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/games/05.md)
+
+**把第一击留给能吃过水银的攻击者。** 第 5 局主教若提前保留水银，横置席翁时甘露先打 1。皇室再铺副船长与斥候、用两旗，以副船长和吉鲁涅莉婕换掉席翁，由旧欧克托莉斯打 3、借来的耶菈打 1，清空主教剩余四血。席翁直立时不能用同一战斗交换，先让残光实打 7 除席翁，甘露便能打满 2。此时改由四攻欧克托莉斯发起第一击，水银令它降到 3，仍恰好打完。两条都在 T14 收尾，皇室剩 20。[横置席翁分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/royal-05-quicksilver.json) · [直立席翁分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/royal-05-upright.json)
