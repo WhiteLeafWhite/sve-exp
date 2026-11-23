@@ -10,4 +10,8 @@
 
 - 第 62 个牌序 T15 输入 121 用掉一次防止。从这一步前数对手还能打出的攻击和直伤。[实战和录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/13-sacred-sheep/zQrwne/games/02.md)
 
+## 财宝皇室
+
+- 第 62 个牌序 T5 输入 18 用掉一次防止。从这一步前数对手还能打出的攻击和直伤。[实战和录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/13-sacred-sheep/t7B32v/games/02.md)
+
 [每个种子的两份实战](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/13-sacred-sheep/index.md)

@@ -6,7 +6,7 @@ S 对三个固定困难 Bot 使用同一套 40/10。每一对都检查两张换�
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 破坏巫师 | 5 | 4 | 1 | 3 | 0 | 1 | 1 |
 | 侮蔑龙 | 5 | 1 | 1 | 0 | 0 | 2 | 2 |
-| 财宝皇室 | 0 | 0 | 0 | 0 | 0 | 0 | 0 |
+| 财宝皇室 | 5 | 2 | 1 | 1 | 0 | 2 | 2 |
 
 触发次数按引擎的自动能力事件计。只有在同一个对手主阶段内观察到同一份防止效果从有效变为用掉时才计一次，跨阶段和回合末到期均略过。
 
@@ -30,3 +30,14 @@ S 对三个固定困难 Bot 使用同一套 40/10。每一对都检查两张换�
 | 63 | 负／负 | 1 | 1 | 1 | [S 日志](zQrwne/games/03.md) · [S 复盘](zQrwne/reviews/01.md#game-03) · [原生录像](zQrwne/replays/03.json) · [同牌序 F](../12-second-saito/candidate/zQrwne/games/63.md) |
 | 64 | 负／负 | 0 | 0 | 0 | [S 日志](zQrwne/games/04.md) · [S 复盘](zQrwne/reviews/01.md#game-04) · [原生录像](zQrwne/replays/04.json) · [同牌序 F](../12-second-saito/candidate/zQrwne/games/64.md) |
 | 65 | 负／负 | 0 | 0 | 0 | [S 日志](zQrwne/games/05.md) · [S 复盘](zQrwne/reviews/01.md#game-05) · [原生录像](zQrwne/replays/05.json) · [同牌序 F](../12-second-saito/candidate/zQrwne/games/65.md) |
+
+
+## 财宝皇室
+
+| 牌序 | S／F | 梦羊上场次数 | 触发次数 | 同一主阶段内确认已用次数 | 逐局资料 |
+|---:|---|---:|---:|---:|---|
+| 61 | 胜／负 | 1 | 1 | 0 | [S 日志](t7B32v/games/01.md) · [S 复盘](t7B32v/reviews/01.md#game-01) · [原生录像](t7B32v/replays/01.json) · [同牌序 F](../12-second-saito/candidate/t7B32v/games/61.md) |
+| 62 | 负／负 | 1 | 1 | 1 | [S 日志](t7B32v/games/02.md) · [S 复盘](t7B32v/reviews/01.md#game-02) · [原生录像](t7B32v/replays/02.json) · [同牌序 F](../12-second-saito/candidate/t7B32v/games/62.md) |
+| 63 | 负／负 | 0 | 0 | 0 | [S 日志](t7B32v/games/03.md) · [S 复盘](t7B32v/reviews/01.md#game-03) · [原生录像](t7B32v/replays/03.json) · [同牌序 F](../12-second-saito/candidate/t7B32v/games/63.md) |
+| 64 | 负／负 | 0 | 0 | 0 | [S 日志](t7B32v/games/04.md) · [S 复盘](t7B32v/reviews/01.md#game-04) · [原生录像](t7B32v/replays/04.json) · [同牌序 F](../12-second-saito/candidate/t7B32v/games/64.md) |
+| 65 | 胜／胜 | 0 | 0 | 0 | [S 日志](t7B32v/games/05.md) · [S 复盘](t7B32v/reviews/01.md#game-05) · [原生录像](t7B32v/replays/05.json) · [同牌序 F](../12-second-saito/candidate/t7B32v/games/65.md) |

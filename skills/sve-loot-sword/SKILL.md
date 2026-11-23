@@ -22,3 +22,5 @@ description: 在 SVE NEXT 日版 BP20 用 t7B32v「20财宝」皇室对练，核
 对照使用第二张灾藤和第二张玛文的场面，比较回收炎术、用身体交换与留费清场的收益。[配对实战](references/second-saito.md)
 
 已经有三面海贼旗。先算把炮手放在哪一次旗前，能多打几段伤害，再开始行动。[从 T8 执财宝皇室](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-t7B32v-01.json&at=37&seat=1)
+
+对面梦羊触发后，先计算用一次小伤害消耗防止能否保住后续的大段伤害。[一次伤害防止的实战](references/sacred-sheep.md)
