@@ -6,6 +6,6 @@
 |---|---:|---:|
 | [破坏巫师](cQZr8Z/index.md) | 85 | 46–39 |
 | [侮蔑龙](zQrwne/index.md) | 75 | 26–49 |
-| [财宝皇室](t7B32v/index.md) | 80 | 44–36 |
+| [财宝皇室](t7B32v/index.md) | 85 | 48–37 |
 
 [每五局构筑检查](construction.md) · [验证条件](protocol.json) · [主教 40/10](bishop.json)
