@@ -60,7 +60,7 @@ for key, name in KEYS.items():
             hand_to_table.append(f"第 {i} 局选择{target}，主教{RESULT[g['winner']]}")
     compare = f"相同五个种子，原表 B 为 {sum(g['winner']==0 for g in previous)} 胜。" if previous else ""
     rows.extend(["", compare, ""])
-    tips.extend([summary+compare+("；".join(hand_to_table)+"。" if hand_to_table else "五局均未观察到消灭目标。")+f" [逐局对照]({URL}/index.md)",""])
+    tips.extend([summary+compare+("。".join(hand_to_table)+"。" if hand_to_table else "五局均未观察到消灭目标。")+f" [逐局对照]({URL}/index.md)",""])
     records[key] = {"wins":wins, "drawn":drawn, "cast":cast, "targetsByGame":hand_to_table}
     if previous:
         records[key]["baselineWins"] = sum(g["winner"]==0 for g in previous)
