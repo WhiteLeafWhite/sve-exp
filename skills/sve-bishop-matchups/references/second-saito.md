@@ -16,7 +16,7 @@
 - 种子 4 负转胜。先比较两边 T21 之前的动作，再检查换位的进化牌是否上场。[双灾藤](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/candidate/zQrwne/games/04.md) · [双马文](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/control/zQrwne/games/04.md)
 ## 财宝皇室
 
-双灾藤 0–0，双马文 0–0。已有 0 对核对了双方初手；改成双灾藤后，0 局负转胜，0 局胜转负。
+双灾藤 0–0，双马文 3–2。已有 0 对核对了双方初手；改成双灾藤后，0 局负转胜，0 局胜转负。
 
 
 [共同牌表、计数和实战](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/index.md)
