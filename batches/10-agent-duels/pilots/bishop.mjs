@@ -50,21 +50,35 @@ export function choose({ seat, key, view, answers }) {
   const foe = view.players[1 - seat];
   const decision = view.decision;
   const enemies = foe.field.filter(card => !card.hidden && card.type === 'follower');
-  if (doubleHit && (view.turn !== doubleHit.turn || seat !== doubleHit.seat ||
-      !enemies.some(card => card.id === doubleHit.target))) doubleHit = null;
+  if (doubleHit && (view.turn !== doubleHit.turn || seat !== doubleHit.seat)) doubleHit = null;
   if (view.activePlayer !== seat || foe.playPoints !== 0) return null;
+  if (doubleHit && !enemies.some(card => card.id === doubleHit.target) &&
+      (!doubleHit.gunner || decision?.type === 'mainPhase')) {
+    const plan = doubleHit;
+    doubleHit = null;
+    // 皇室第四局 T6。直立的欧克托莉斯已被打掉，4/4 圣士郎能与横置炮手交换。
+    if (plan.gunner) {
+      const attack = answers.findIndex(answer => answer.action?.type === 'attack' &&
+        answer.action.attacker === plan.source && answer.action.target === plan.gunner);
+      if (attack >= 0) return attack;
+    }
+  }
   if (key === 'cQZr8Z') {
     const clear = clearThreeWithSaito({seat, view, own, foe, enemies, answers});
     if (clear !== null) return clear;
   }
 
-  // 巫师第二局输入 36。即使坚定祈祷的检索没有命中，透京减费也已生效。
+  // 巫师第二局输入 36、皇室第五局输入 22。检索命中与否都不影响已生效的减费。
   if (decision?.type === 'mainPhase' && own.maxPlayPoints === 3 && own.playPoints === 0 &&
-      own.leaderDefense >= 15 && own.deckCount > 5 && own.field.length === 1 && own.field[0].def === 'BP18-104') {
+      own.leaderDefense >= 15 && own.deckCount > 5 && own.field.some(card => card.def === 'BP18-104')) {
+    const saveDeliverer = own.field.length === 2 && own.field.some(card => card.def === 'BP18-120') &&
+      own.hand.some(card => card.def === 'BP18-097') && own.hand.some(card => card.def === 'BP18-105');
     const officers = own.hand.filter(card => !card.hidden && card.def === 'BP18-117');
-    const index = answers.findIndex(answer => answer.action?.type === 'play' &&
-      officers.some(card => card.id === answer.action.card));
-    if (index >= 0) return index;
+    if (own.field.length === 1 || saveDeliverer) {
+      const index = answers.findIndex(answer => answer.action?.type === 'play' &&
+        officers.some(card => card.id === answer.action.card));
+      if (index >= 0) return index;
+    }
   }
 
   // 圣士郎从手中放承担者也会触发其入场。巫师首局输入 43 的配对分支验证了两段伤害。
@@ -75,12 +89,14 @@ export function choose({ seat, key, view, answers }) {
     const canEvolve = own.evolveDeck.some(card => !card.hidden && !card.faceUp && card.def === 'BP18-106');
     const target = enemies.find(card => !card.engaged && card.defense >= 3 && card.defense <= 4 && card.attack >= 3);
     // 皇室第三局 T7。承担者进化后还能与另一名横置小从者交换。
-    const canTrade = enemies.length === 2 && enemies.some(card => card.engaged && card.defense <= 2);
+    const gunner = key === 't7B32v' && target?.def === 'BP15-020' && enemies.find(card =>
+      card.def === 'BP19-026' && card.engaged && card.defense === 3 && card.attack === 4 && seishiro?.attack >= 3);
+    const canTrade = enemies.length === 2 && (gunner || enemies.some(card => card.engaged && card.defense <= 2));
     if (seishiro && deliverer && canEvolve && own.field.length < 5 &&
         target && (enemies.length === 1 || canTrade)) {
       const index = answers.findIndex(answer => answer.cards?.length === 1 && answer.cards[0] === deliverer.id);
       if (index >= 0) {
-        doubleHit = {turn: view.turn, seat, source: seishiro.id, target: target.id};
+        doubleHit = {turn: view.turn, seat, source: seishiro.id, target: target.id, gunner: gunner?.id};
         return index;
       }
     }

@@ -26,6 +26,31 @@ function destructionRune({ me, enemy, decision, resolution, answers }) {
   const wasteland = field.find(card => card.def === "BP20-055");
   const supplicant = field.find(card => card.def === "BP20-048" && !card.abilitiesLost);
 
+  if (me.maxPlayPoints === 1 && me.deckCount > 1 && !targets.length &&
+      !me.hand.some(card => card.type === "follower" && card.cost <= 2)) {
+    const sopranos = me.hand.filter(card => card.def === "BP20-045");
+    const white = field.length === 1 && field[0].def === "BP20-T03";
+    if (decision.type === "mainPhase") {
+      if (!field.length && sopranos.length >= 2 && has(me.hand, "BP08-051")) return play("BP20-045");
+      if (white && sopranos.length) return play(me.playPoints ? "BP20-045" : "BP08-051");
+    }
+    if (white && decision.type === "choose" && resolution.at(-1)?.def === "BP20-045") {
+      return first(answers, answer => answer.ids?.includes("destroy"));
+    }
+  }
+
+  if (decision.type === "mainPhase" && targets.length >= 3 && has(available, "BP06-047")) {
+    const cleared = targets.filter(card => card.defense <= (card.def === "BP14-090" && !card.abilitiesLost ? 5 : 6));
+    const threat = cleared.reduce((total, card) => total + card.attack, 0);
+    const faceAttackers = new Set(answers.filter(answer => answer.action?.type === "attack" &&
+      answer.action.target === enemy.leader.id).map(answer => answer.action.attacker));
+    const faceDamage = field.filter(card => faceAttackers.has(card.id)).reduce((total, card) => total + card.attack, 0);
+    if (cleared.length >= 3 && threat >= 9 && enemy.leaderDefense > faceDamage + 3) {
+      const storm = play("BP06-047");
+      if (storm !== null) return storm;
+    }
+  }
+
   if (decision.type === "mainPhase" && targets.length === 1 && !enemy.playPoints && enemy.ex.length === 0 &&
       has(available, "BP15-PR12") && play("BP15-PR12") !== null) {
     const swings = answers.filter(answer => answer.action?.type === "attack" && answer.action.target === enemy.leader.id);
@@ -122,6 +147,19 @@ function destructionRune({ me, enemy, decision, resolution, answers }) {
 function disdainDragon({ me, enemy, decision, resolution, answers }) {
   const field = me.field.filter(card => !card.hidden && card.type === "follower");
   const opposing = enemy.field.filter(card => !card.hidden && card.type === "follower");
+  if (me.maxPlayPoints === 6 && me.playPoints === 1 && !enemy.playPoints &&
+      me.hand.some(card => card.def === "BP05-052") && !me.cemetery.some(card => card.def === "BP08-068") &&
+      me.cemetery.some(card => card.def === "BP05-058") && field.length === 1 && field[0].def === "BP20-062" &&
+      opposing.length === 1 && opposing[0].engaged && opposing[0].defense === 2 && opposing[0].attack <= 2) {
+    // The Rending that raised our maximum is ready to replay. Put Sneer in the cemetery for Galmieux's arrival.
+    if (decision.type === "mainPhase") {
+      const sneer = me.hand.find(card => card.def === "BP08-068");
+      if (sneer) return first(answers, answer => answer.action?.type === "play" && answer.action.card === sneer.id);
+    }
+    if (decision.type === "selectCards" && decision.reason === "target" && resolution.at(-1)?.def === "BP08-068") {
+      return first(answers, answer => answer.cards?.[0] === opposing[0].id);
+    }
+  }
   if (me.deckCount === 1 && opposing.length === 0 && me.leaderDefense >= 8) {
     // Keeping the last card with Hermit only helps if a later Oracle also leaves it in the deck.
     if (decision.type === "choose" && decision.reason === "mode" && enemy.leaderDefense > 4 &&
@@ -146,6 +184,28 @@ function disdainDragon({ me, enemy, decision, resolution, answers }) {
   const ardent = field.find(card => card.def === "BP15-057" && !card.abilitiesLost);
   const fragileGalmieux = field.find(card => card.def === "BP20-056" && card.defense === 1);
   const adherent = field.find(card => card.def === "BP15-066" && card.defense > 1 && !card.abilitiesLost);
+  if (ardent && decision.type === "selectCards" && me.maxPlayPoints >= 7 && !me.playPoints &&
+      me.leaderDefense >= 16 && enemy.leaderDefense > 8 && opposing.length <= 1) {
+    if (decision.reason === "effect" && decision.source === ardent.id) {
+      const congregant = selectOne(answers, decision, "BP20-062");
+      const reserve = selectOne(answers, decision, "BP15-057");
+      const fragile = field.filter(card => card.defense === 1);
+      if (!opposing.length && congregant !== null && reserve !== null && fragile.length >= 2 && ardent.defense <= 2) {
+        // A free Congregant would destroy our attackers and Ward with its own Fanfare.
+        return reserve;
+      }
+      if (opposing[0]?.defense === 1 && me.field.length < 5 && !fragile.length && ardent.defense > 1) {
+        if (congregant !== null) return congregant;
+        const prayer = selectOne(answers, decision, "BP20-064");
+        if (prayer !== null) return prayer;
+      }
+    }
+    if (decision.reason === "target" && opposing[0]?.engaged && opposing[0].defense === 1 &&
+        opposing[0].attack <= 2 && ardent.defense >= 3 &&
+        field.some(card => card.id === decision.source && card.def === "BP20-064")) {
+      return first(answers, answer => answer.cards?.length === 1 && answer.cards[0] === ardent.id);
+    }
+  }
   if (ardent && me.maxPlayPoints >= 7 && me.leaderDefense <= 15 && opposing.length >= 2 && decision.type === "selectCards") {
     if (decision.reason === "effect" && decision.source === ardent.id) {
       const pick = def => selectOne(answers, decision, def);
@@ -229,14 +289,66 @@ function disdainDragon({ me, enemy, decision, resolution, answers }) {
 function lootSword({ me, enemy, decision, resolution, answers }) {
   const field = me.field.filter(card => !card.hidden);
   const octrice = field.find(card => card.def === "BP15-020" && !card.abilitiesLost);
+  const gunnerOnField = field.find(card => card.def === "BP19-026" && !card.abilitiesLost);
+  const targets = enemy.field.filter(card => !card.hidden && card.type === "follower");
+  const earlyFlags = octrice && gunnerOnField && field.length === 2 && me.maxPlayPoints === 3 &&
+    !me.playPoints && !enemy.playPoints && enemy.leaderDefense > 8 &&
+    targets.length <= 1 && targets.every(card => card.defense === 1 && card.attack <= 1);
+  const slashes = me.hand.filter(card => card.def === "BP20-026");
+  const manifest = field.find(card => card.def === "BP20-019" && !card.abilitiesLost);
+  const flagInEx = me.ex.some(card => card.def === "BP19-T01");
+  if (me.maxPlayPoints === 3 && !enemy.playPoints && flagInEx && targets.length === 1 &&
+      !targets[0].engaged && targets[0].defense <= 4 && me.hand.some(card => card.def === "BP19-019")) {
+    if (!manifest && me.playPoints === 3 && slashes.length >= 2 && decision.type === "mainPhase" &&
+        field.some(card => card.def === "BP19-028" && !card.engaged)) {
+      const body = me.hand.find(card => card.def === "BP20-019");
+      if (body) return first(answers, answer => answer.action?.type === "play" && answer.action.card === body.id);
+    }
+    if (manifest && me.playPoints === 1) {
+      if (decision.source === manifest.id && slashes.length >= 2) {
+        if (decision.type === "choose") return first(answers, answer => answer.ids?.includes("search"));
+        if (decision.reason === "search") return selectOne(answers, decision, "BP20-026");
+      }
+      if (decision.type === "selectCards" && decision.reason === "pick" && slashes.some(card => card.id === decision.source)) {
+        // Fuse a spare Slash from hand. The Flag in EX is already a free trigger for next turn's Barbaros.
+        return first(answers, answer => slashes.some(card => card.id !== decision.source && card.id === answer.cards?.[0]));
+      }
+      if (decision.type === "mainPhase") {
+        const cheaper = me.ex.find(card => card.def === "BP20-026");
+        if (cheaper) return first(answers, answer => answer.action?.type === "play" && answer.action.card === cheaper.id);
+        if (slashes.length >= 2) return first(answers, answer => answer.action?.type === "activate" &&
+          slashes.some(card => card.id === answer.action.card));
+      }
+    }
+  }
+  if (decision.type === "selectCards" && decision.reason === "search" && me.maxPlayPoints === 4 &&
+      me.playPoints === 1 && !me.evolutionPoints && me.ex.some(card => card.def === "BP19-T01") &&
+      field.some(card => card.id === decision.source && card.def === "BP19-028" && card.evolvedWith) &&
+      !me.hand.some(card => card.def === "BP19-019")) {
+    // Next turn supplies exactly four for Barbaros and one for her evolution.
+    return selectOne(answers, decision, "BP19-019");
+  }
+  if (earlyFlags && decision.type === "selectCards" && decision.reason === "target") {
+    if (resolution.at(-1)?.def === "BP19-T01") {
+      return first(answers, answer => answer.cards?.[0] === gunnerOnField.id);
+    }
+    if (decision.source === gunnerOnField.id && targets.length === 1) {
+      return first(answers, answer => answer.cards?.[0] === targets[0].id);
+    }
+  }
   if (decision.type === "mainPhase" && octrice && me.playPoints < 2) {
     const discount = first(answers, answer => answer.action?.type === "activate" &&
       answer.action.card === octrice.id && answer.action.ability === 1);
     const use = def => first(answers, answer => answer.action?.type === "play" &&
       me.ex.some(card => card.id === answer.action.card && card.def === def));
-    const targets = enemy.field.filter(card => !card.hidden && card.type === "follower");
     const target = targets[0];
     const daggers = me.ex.filter(card => card.def === "BP15-T01").length;
+    if (earlyFlags && me.ex.some(card => card.def === "BP19-T01") &&
+        answers.some(answer => answer.action?.type === "attack" && answer.action.attacker === gunnerOnField.id &&
+          answer.action.target === enemy.leader.id)) {
+      // A discounted flag both fires Gunner and strengthens the attack still available this turn.
+      return use("BP19-T01") ?? discount;
+    }
     if (targets.length === 1 && target.def === "BP18-097" && !target.engaged && target.defense <= 2 * daggers) {
       // When a two-cost dagger becomes legal, spend it before activating the second discount.
       return use("BP15-T01") ?? discount;

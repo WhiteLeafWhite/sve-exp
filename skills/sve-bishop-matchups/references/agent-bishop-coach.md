@@ -41,4 +41,27 @@
 
 巫师第四局的三费回合出现了整条线路。敌方三名从者均已横置，防御分别 2、2、3。我方 13 血，手中有第二名灾藤与炎术，还有 EP。先下灾藤再付 1 PP 炎术清阿克西雅，输入 39 用 EP 进化第二名灾藤，40 选择回收。用减为零费的同一张炎术清隐者，最后用进化灾藤交换 3/3 里榭娜。两次施放分别给主战者打 1。少一张灾藤进化或少一点 EP，都要重新算哪两名能在这个回合处理。[巫师第四局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/notes/04-bishop.md)
 
-候选也可能失去进化玛文的机会。皇室第三局 T13 第一张已经超进化，T21 第二个本体确实上场。当时我先出萝蕾娜回 4，再以她的进化、战斗和玛文送的奔流清了三体，保住自己的赐予者打 3。比较有第二张玛文进化的路线时，要计入它也会扫掉自己的其他从者。要判断换位是否影响这场胜负，还要比较同牌序的进化与回复线路。[皇室第三局，T21](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/games/03.md)
+候选也可能失去进化玛文的机会。皇室第三局 T13 第一张已经超进化，T21 第二个本体确实上场。当时我先出萝蕾娜回 4，再以她的进化、战斗和玛文送的奔流清了三体，保住自己的赐予者打 3。比较有第二张玛文进化的路线时，要计入它也会扫掉自己的其他从者。两副牌从开局还原到同一局面后，萝蕾娜线均以 10／21 结束 T21。原表花 4＋3 费打第二张进化玛文，再用余下 3 费铺祈祷，以 6／24 交棒。原表萝蕾娜、玛文两条都在 T28 负，候选的萝蕾娜线 T26 负。[皇室第三局，T21](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/games/03.md) · [原表玛文分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/royal-03-marwynn-B.json)
+
+## 第三组 · 第十一至十五局
+
+主教本组五局全负，累计 3 胜 12 负。巫师 2 胜 3 负、龙族 0 胜 5 负、皇室 1 胜 4 负。五局均使用相同的主牌 40、灾藤进化 2、玛文进化 1。
+
+### 守护与能力伤害要分开计算
+
+龙族第四局 T8，萝蕾娜的进化伤害能直接打倒直立 5/2 烈绝侮蔑·嘉鲁蜜儿。攻击时，敌方 2/1 侮蔑的祈祷者已经横置，3/1 团结者不在合法攻击目标中。输入 43 若改下天冥，自己的零费起动和白牙在回合末的回复可各打 2，能绕开守护清两体，但少回 3。T10 忒弥斯清场加白牙把主教带到 10。对面重新下侮蔑绝杰并进化，连续 1＋3＋3＋1＋3 的能力伤害在空场起步也够 11。[龙族第四局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/notes/04-bishop.md)
+
+皇室第四局 T6，直立 3/3 欧克托莉斯与横置 4/3 海潮炮手在同一场。输入 29–36，圣士郎进化从手中放承担者，前后两次回复打欧克托莉斯共 4，再用 4/4 圣士郎交换炮手，己方留下 2/2 承担者。同是双解，若炮手只有 1–2 防且进化后的承担者可攻，就先看承担者能否替代圣士郎交换。[皇室第四局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/notes/04-bishop.md)
+
+### 交换去除目标后，重新走一次对方回合
+
+- 皇室第四局 T14 输入 115，两名敌人都能帮皇室清掉耶菈守护。保留进化欧克托莉斯，它能偷主教墓场天冥。天冥起动打脸 1、借回复清守护，再接旗 1、欧克托莉斯 4、副船长 3。保留偷来的圣士郎，公开 EX 的黄金之杯就能回复并触发 2 伤清守护，随后旗 1、进化副船长 5、圣士郎 3。两种顺序都恰好打 9。[歪曲指向圣士郎](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/royal-04-seishiro.json) · [歪曲指向欧克托莉斯](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/royal-04-octrice.json)
+- 巫师第五局 T15 输入 123，先打都市找到天冥，以承担者、天冥自己的起动、都市起动触发三次 2 伤，能精确清横置 7/6 纱妃拉，并剩 1 PP。下一回合巫师用大红莲之术对主战者打 3 并清场，另外三名随从攻 3、2、2，仍然打完主教的 10 血。另一重演中，破坏的荒野翻到狂信者。狂信者与白之章·黑之章各打 2 并清两名主教随从，再接 3＋2＋2 的攻击，总计 11。进入这个残局前，T9 输入 53 也可复练五费萝蕾娜回 4、直伤打直立阿克西雅、攻击横置祈祷者的分工。[荒野分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-05-wasteland.json) · [天冥三次回复](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-05-tenmei.json) · [巫师第五局笔记](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/notes/05-bishop.md)
+
+### 水银的减伤只持续到打出它的那个回合结束
+
+皇室第五局 T13 输入 123，5 血时出席翁剩 1 PP。自己的主阶段打水银能抽都市，到皇室 T14 时减伤已经结束。对方先用残光清席翁，再用甘露打 2、吉鲁涅莉婕攻 3 刚好致命。练习在 123 留费，逐步检查何时第一次出现 Quick。皇室攻击前已经造成的能力伤害要先扣掉。[皇室第五局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/notes/05-bishop.md)
+
+龙族第五局 T17 输入 146，另一种费用问题是 9 PP 先下祈祷再下席翁，水银在 EX 却付不起。重演改为先席翁、保留 3 PP，输入 149 横置守护，166 打水银。若龙继续原来的 5＋5＋1，只会实扣 4＋4＋0，主教能剩 3。龙实际改使侮蔑之国配嘉鲁蜜儿，再用苍炎及第三名嘉鲁蜜儿处理使徒和席翁，席翁离场后实扣 6＋4＋2，主教从 11 血落败。[龙族第五局笔记](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/notes/05-bishop.md) · [留水银的重演](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-05-quicksilver.json)
+
+皇室第五局也能练前期费用安排。T4 皇室回合末用炎术把 3/3 副船长打到 1 防，T5 留满 3 PP 下坚定祈祷，免费下灾藤并留住承担者。T7 两次 2 伤打欧克托莉斯，2/2 承担者交换 3/1 副船长。T9 第二名灾藤本体才消耗第一张灾藤进化，以零费重用此前炎术。[皇室第五局战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/games/05.md)

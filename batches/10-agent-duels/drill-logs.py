@@ -22,6 +22,11 @@ TITLES = {
     "royal-04-seishiro": "歪曲处理被夺走的圣士郎", "royal-04-octrice": "歪曲处理进化欧克托莉斯",
     "rune-05-prayer-control": "先祈祷，复现巫师第五局", "rune-05-tenmei": "透京取天冥，用三次回复处理纱妃拉",
     "rune-05-wasteland": "同盘以破坏的荒野检索狂信者收尾",
+    "dragon-05-prayer-control": "先用耶菈的祈祷，重走 T17 原线",
+    "dragon-05-quicksilver": "席翁横置，首次攻击窗口用水银",
+    "dragon-05-upright": "席翁直立，首次攻击窗口用水银",
+    "dragon-05-tenmei": "祈祷配天冥，两次回复处理使徒",
+    "dragon-05-union": "祈祷配天冥，两次回复处理团结者",
 }
 
 

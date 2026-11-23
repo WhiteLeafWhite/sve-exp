@@ -12,3 +12,8 @@
 - 第 8 场对侮蔑龙，主教负。T9 输入 47 前的实战考虑为「一费都市给唯一合法的天冥加1/1并回复，第二段2伤击破剩下的侮蔑的狂信者。后者即使有直伤也不能再作为后续自伤目标。剩余对局交本席公平策略。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/lessons/03.md)
 - 第 9 场对财宝皇室，主教负。T7 输入 48 前的实战考虑为「让2/2承担者交换横置3/1斥候，保留完整4/4圣士郎。对手公开黄金短剑打2；改用圣士郎交换会让它剩1防。此后由本席公平策略接手。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/lessons/03.md)
 - 第 10 场对破坏巫师，主教胜。T8 输入 57 前的实战考虑为「用最后1EP普通进化，为白牙的同回合回复准备2伤。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/lessons/04.md)
+- 第 11 场对侮蔑龙，主教负。T10 输入 67 前的实战考虑为「9血面对四名从者，含已进化6/3侮蔑绝杰、两名团结者与横置守护。五费忒弥斯一次清四体，保留两张护符。白牙将到三指示物并回1，若活到下回合可从牌库直接召回复从者。余局交本席公平策略。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/lessons/04.md)
+- 第 12 场对财宝皇室，主教负。T8 输入 46 前的实战考虑为「4PP先用莉迪耶尔回4并挡副船长，检索下回合能与四费天冥合用的1费承担者。单下天冥这回合只触发一次2伤，碰不到直立3防。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/lessons/04.md)
+- 第 13 场对破坏巫师，主教负。T9 输入 56 前的实战考虑为「攻击横置2/3祈祷者，保留4/2萝蕾娜。后续交个人公平策略。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/lessons/05.md)
+- 第 14 场对侮蔑龙，主教负。T9 输入 51 前的实战考虑为「对方下一回合自然达到觉醒，还有第二名团结者。两张玛文中先下第一张横置守护并保每回合回2，若活下来下回合3费可进化清场；另一张继续留作更多随从时取奔流。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/lessons/05.md)
+- 第 15 场对财宝皇室，主教负。T9 输入 74 前的实战考虑为「余2费下耶菈找祈祷，由2/2守护应对已经受伤的芭芭萝丝，后续交个人公平策略。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/lessons/05.md)

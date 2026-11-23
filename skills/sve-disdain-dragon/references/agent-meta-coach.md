@@ -31,3 +31,9 @@
 **烈绝的灭牙先检查觉醒，团结者随后才跳费。** 职业第 4 局 T7 输入 29，现有 6 费上限。给五费烈绝侮蔑付完后，剩下的 1 PP 正好支付灭牙。灭牙全场打 1，当场没有觉醒，嘉鲁蜜儿没获得疾驰。团结者随后才把上限从 6 加到 7。新进场的另一名团结者看到的是已觉醒状态，扫掉 2/1 灾藤，又把上限加到 8。两笔加费来自两名不同的团结者。[第 4 局复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/notes/04-meta.md)
 
 **第三个团结者要计入己方损失。** 职业第 4 局输入 38，敌方已经空场，我方有旧 3/1 团结者、2/1 守护、5/2 烈绝侮蔑和新 3/3 团结者。再下一名零费团结者会带走两个一体，还会把自伤发动者打到一体。我改将五费烈绝侮蔑留在 EX，两个团结者在 T9 各打 3。主教 T10 五费清场后，T11 是另一名侮蔑绝杰配合三次自伤、炽火和狂信者，打出 3+3+3+1+1 共 11。[第 4 局战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/games/04.md)
+
+**祈祷者选中了目标，也要检查觉醒。** 职业第 5 局 T4 上限仅 2，我用入场的祈祷者选对面 1/1 承担者，目标仍 1/1，我方体力仍 20。随后支付一个 EP 进化到 3/3，进化的独立两伤能解另一名 2/2 灾藤。入场打 1 和自回 2 都需要七费上限。只看选择窗口就把一点伤害写进计划，会算错交换。[第 5 局复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/notes/05-meta.md)
+
+**把嘲笑准备在进化前，炎爪留在进化后。** 第 5 局 T8 先让炎爪伤团结者、清一名耶菈，再花最后一费用嘲笑把另一人降到一体。T10 五费侮蔑绝杰入场，用墓中嘲笑自伤，免费进化，进化再从墓里零费使用炎爪。进化前的自伤只减进化费，进化后的炎爪、炽火及觉醒隐者才各产生 3 伤。实际清两名守护还让旧 3/3 团结者打脸 3；T12 和 T14 同一名团结者继续各打 3。[第 5 局战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/games/05.md)
+
+**水银前后重新挑攻击者。** 职业第 5 局 T18 原线以两名烈绝侮蔑各攻 5、炽火 1，打完主教 11 血。主教若留 3 PP，输入 166 用水银的断绝，同牌序龙先用侮蔑之国伤嘉鲁蜜儿，连下三名五费，苍炎打己方使徒和对面席翁，让一名嘉鲁蜜儿交换横置席翁。水银生效后，使徒、另一名嘉鲁蜜儿和团结者仍分别实际打 6、4、2，共 12，龙以 16 比 −1 胜。两条线路的目标和攻击者会变，逐段重算才能比较。[水银分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-05-quicksilver.json) · [原线对照](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-05-prayer-control.json)
