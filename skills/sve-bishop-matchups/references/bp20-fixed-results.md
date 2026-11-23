@@ -27,3 +27,5 @@
 - 对财宝皇室第 97 局，T20 主教生命从 25 降到 7。在前一回合暂停，按公开 EX、当前攻击、需要处理的守护算出对方可能的路线，再揭晓该局操作。[逐回合日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/t7B32v/games/97.md)
 
 下一次采用新构筑时，三个对手共用一份主牌与进化牌，单独统计改动后的样本。神弓两卡位与龙族 r4 的配对重演另有索引。[百局全记录](https://github.com/WhiteLeafWhite/sve-exp/tree/main/batches/09-bp20-fixed-300)
+
+遇到第二个灾藤时，先看先前那张进化卡是否用过，EX 是否有空位，墓地有没有炎术检定 A 级。固定百局中，对龙有 7 局这个窗口和剩余 4 防以内的进化嘉鲁蜜儿同时出现。录像提供每局第一次出现时的输入，可先自行计算本回合伤害再查看记录。[三百局进化牌使用和重练点](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/evolve-slots.md)

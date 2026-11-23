@@ -123,6 +123,8 @@ def main():
        "从装好依赖的 SVE NEXT 源码根目录先执行上一批的 `prepare.mjs`。在此目录的完整数据旁运行 `python run.py <分享码>` 时，"
        "用脚本的实际路径调用，它会从同条件文件继续。指定 `--start R --end R` 可重放一个五局小组。"
        "完成三组后，运行本批的 `summarize.py` 核对 300 份牌表和所有终局。"])
+    if (ROOT/"evolve-slots.md").exists():
+        lines.extend(["", "[300 局进化牌使用与第二张灾藤的机会](evolve-slots.md)"])
     md(ROOT/"index.md",lines)
     diary=["# 共同构筑的 60 次五局检查","", "三套主流的初始牌表逐局按冻结指纹核对，主教在本轮全程使用白牙与萝蕾娜各两张。每五局记录关键牌能否登场、终局伤害来源与下一步取舍，三对局共享一套 40/10。[牌表](bishop.json) · [验收结果](index.md)",""]
     for k,r,c in checks:
@@ -137,6 +139,12 @@ def main():
     for k,item in observations.items():
         rates=[f"{c['drawn']}／{c['entered']}" for c in item["cards"].values()]
         diary.append(f"| {NAMES[k]} | "+" | ".join(rates)+f" | {item['slow']} |")
+    if (ROOT/"evolve-slots.md").exists():
+        diary.extend(["", "## 进化区的一个共用卡位", "",
+                      "三个百局里，各有 2 局用到了第二张马文。第二张萝蕾娜分别用到 8、15、14 局，第三张圣士郎用到 9、7、6 局。"
+                      "想腾出第二张灾藤的进化位时，先比较各带一张马文和两张灾藤的 40/10。"
+                      "在旧牌表里，巫师 15 局、龙族 21 局、皇室 28 局出现过第一张灾藤已进化、后来还能再进化另一名灾藤并回收炎术的机会。"
+                      "这里仍须把马文原本能二次清场的局面算进取舍。[计数、条件与七个嘉鲁蜜儿局面](evolve-slots.md)"])
     md(ROOT/"construction.md",diary)
     ref=ROOT.parents[1]/"skills/sve-bishop-matchups/references/bp20-fixed-results.md"
     tips=["# 共同白牙萝蕾娜的三组百局","",f"三种职业各 100 局，主教共 {fmt(score(all_games))}，先后攻各 150 局。{status}。"
@@ -159,6 +167,11 @@ def main():
                     f"在前一回合暂停，按公开 EX、当前攻击、需要处理的守护算出对方可能的路线，再揭晓该局操作。[逐回合日志]({link})")
     tips.extend(["","下一次采用新构筑时，三个对手共用一份主牌与进化牌，单独统计改动后的样本。"
                  "神弓两卡位与龙族 r4 的配对重演另有索引。[百局全记录](https://github.com/WhiteLeafWhite/sve-exp/tree/main/batches/09-bp20-fixed-300)"])
+    if (ROOT/"evolve-slots.md").exists():
+        tips.extend(["", "遇到第二个灾藤时，先看先前那张进化卡是否用过，EX 是否有空位，墓地有没有炎术检定 A 级。"
+                     "固定百局中，对龙有 7 局这个窗口和剩余 4 防以内的进化嘉鲁蜜儿同时出现。"
+                     "录像提供每局第一次出现时的输入，可先自行计算本回合伤害再查看记录。"
+                     "[三百局进化牌使用和重练点](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/evolve-slots.md)"])
     md(ref,tips)
     print(json.dumps(data,ensure_ascii=False))
 

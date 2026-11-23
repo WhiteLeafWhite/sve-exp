@@ -15,3 +15,5 @@
 [每五局构筑及取舍](construction.md) · [共同主教](bishop.json) · [开赛协议](protocol.json) · [机器可读成绩](summary.json) · [上一轮 150 局](../08-bp20-hard-150/index.md)
 
 从装好依赖的 SVE NEXT 源码根目录先执行上一批的 `prepare.mjs`。在此目录的完整数据旁运行 `python run.py <分享码>` 时，用脚本的实际路径调用，它会从同条件文件继续。指定 `--start R --end R` 可重放一个五局小组。完成三组后，运行本批的 `summarize.py` 核对 300 份牌表和所有终局。
+
+[300 局进化牌使用与第二张灾藤的机会](evolve-slots.md)
