@@ -2,13 +2,15 @@
 
 每局都有 SVE NEXT 录像与按回合整理的中文日志。战报中的生命先列主教，后列对手。第八批为日版 BP20 主教对三个固定困难 Bot 各 50 局，每五局有一次构筑与打法复盘。
 
-这台电脑可以直接打开[主教陪练牌桌](http://127.0.0.1:5170/practice/index.html)。默认你执巫师，对面是本仓库训练的白牙萝蕾娜。也可以自己执主教，挑战三个困难对手。启动、换座位、导入与分支重演见[陪练操作](skills/sve-bishop-matchups/references/bp20-practice.md)。
+这台电脑可以直接打开[主教陪练牌桌](http://127.0.0.1:5170/practice/index.html)。默认你执巫师，对面是本仓库训练的白牙萝蕾娜。也可以自己执主教，挑战三个困难对手。在高级设置选「双席实战陪练」，可以直接挑战两个子 agent 在实战里练出的职业打法。启动、换座位、导入与分支重演见[陪练操作](skills/sve-bishop-matchups/references/bp20-practice.md)。
 
-**第九批**　同一份白牙萝蕾娜透京耶菈对三个原版困难 Bot 各 100 局，先后攻各半。主教对破坏巫师 55–45、侮蔑龙 43–57、财宝皇室 56–44。龙族后攻 25–25，先攻 18–32。三组取较低的一组是 43%，距离约定的 45% 下限还有两胜。[百局分组成绩与全部录像](batches/09-bp20-fixed-300/index.md) · [构筑日志](batches/09-bp20-fixed-300/construction.md) · [共同主教](batches/09-bp20-fixed-300/bishop.json)
+**第九批**　同一份白牙萝蕾娜透京耶菈对三个原版困难 Bot 各 100 局，先后攻各半。主教对破坏巫师 55–45、侮蔑龙 43–57、财宝皇室 56–44。龙族后攻 25–25，先攻 18–32。三组取较低的一组是 43%，距离本次用来衡量「约五五开」的 45% 参考线还有两胜。[百局分组成绩与全部录像](batches/09-bp20-fixed-300/index.md) · [构筑日志](batches/09-bp20-fixed-300/construction.md) · [共同主教](batches/09-bp20-fixed-300/bishop.json)
 
 两次共同构筑微调各测试了三个职业相同的五个配对种子，另有五局只改变对龙打法。神弓代替两个卡位时对龙 0–5，原表同种子 4–1。信仰的一击的五局对龙为 2–3，原表 4–1。现阶段保留白牙、萝蕾娜各两张的原表作为困难 Bot 基准。[神弓试验](batches/09b-bp20-lyrial/index.md) · [快速消灭试验](batches/09d-bp20-banish/index.md) · [同表打法试验](batches/09c-bp20-dragon-policy/index.md)
 
 **第十批**　两个独立子 agent 各执一方，主教连续对同一轮的三职业，双方只读本方视野。每局列出直接选择、委托范围、实际牌表与两人的赛后复盘。[对局成绩、录像和复盘](batches/10-agent-duels/index.md) · [构筑日志](batches/10-agent-duels/construction.md)
+
+**第十一和十二批**　用新牌序检验先攻对龙的换牌，再比较三种对局里第二张灾藤与第二张玛文的实际取舍。每项都有匹配的对照牌序、先后攻记录与逐局录像。[对龙起手](batches/11-dragon-mulligan/index.md) · [三对局进化位](batches/12-second-saito/index.md)
 
 按驾驶职业选择陪练技能。[主教](skills/sve-bishop-matchups/SKILL.md) · [破坏巫师](skills/sve-destruction-rune/SKILL.md) · [侮蔑龙](skills/sve-disdain-dragon/SKILL.md) · [财宝皇室](skills/sve-loot-sword/SKILL.md)
 

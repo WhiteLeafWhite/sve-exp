@@ -22,3 +22,7 @@ description: 用 SVE NEXT 练习 Shadowverse EVOLVE 日版 BP20 主教，陪练�
 复查此前七批时，使用历史牌表、打法版本与当时的样本。历史策略默认使用 r2，本批正式比较使用 r3。[历史战绩](references/results.md) · [历史牌表](references/bishop-final.json) · [历史打法](references/playbook.md) · [历史条件](references/method.md)
 
 先从本方座位重做一个关键决定，再对照当时的理由与比赛结果。[双座位对练题](references/agent-duels.md)
+
+对龙起手时，先比较同一手四张在保留和整手重抽后的前三回合。[先攻留牌的独立实打](references/dragon-opening.md)
+
+对照使用第二张灾藤和第二张玛文的场面，比较回收炎术、用身体交换与留费清场的收益。[配对实战](references/second-saito.md)

@@ -141,10 +141,10 @@ def main():
         diary.append(f"| {NAMES[k]} | "+" | ".join(rates)+f" | {item['slow']} |")
     if (ROOT/"evolve-slots.md").exists():
         diary.extend(["", "## 进化区的一个共用卡位", "",
-                      "三个百局里，各有 2 局用到了第二张马文。第二张萝蕾娜分别用到 8、15、14 局，第三张圣士郎用到 9、7、6 局。"
-                      "想腾出第二张灾藤的进化位时，先比较各带一张马文和两张灾藤的 40/10。"
+                      "三个百局里，各有 2 局用到了第二张玛文。第二张萝蕾娜分别用到 8、15、14 局，第三张圣士郎用到 9、7、6 局。"
+                      "想腾出第二张灾藤的进化位时，先比较各带一张玛文和两张灾藤的 40/10。"
                       "在旧牌表里，巫师 15 局、龙族 21 局、皇室 28 局出现过第一张灾藤已进化、后来还能再进化另一名灾藤并回收炎术的机会。"
-                      "这里仍须把马文原本能二次清场的局面算进取舍。[计数、条件与七个嘉鲁蜜儿局面](evolve-slots.md)"])
+                      "这里仍须把玛文原本能二次清场的局面算进取舍。[计数、条件与七个嘉鲁蜜儿局面](evolve-slots.md)"])
     md(ROOT/"construction.md",diary)
     ref=ROOT.parents[1]/"skills/sve-bishop-matchups/references/bp20-fixed-results.md"
     tips=["# 共同白牙萝蕾娜的三组百局","",f"三种职业各 100 局，主教共 {fmt(score(all_games))}，先后攻各 150 局。{status}。"

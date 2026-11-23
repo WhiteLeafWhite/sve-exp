@@ -16,3 +16,7 @@ description: 在 SVE NEXT 日版 BP20 用 zQrwne「20五妹」侮蔑龙对练，
 5. 连续五局后，按「少一次有效自伤、EX 折扣过期、交换顺序丢伤害、已公开减伤算漏」复查一个败局，把输入位置和替代路线记下。双 agent 对练阶段以冻结原表为基准，累计替换主牌和进化牌合计最多五张。局中应隐藏对手手牌与牌序。[更多实战](https://github.com/WhiteLeafWhite/sve-exp/tree/main/batches/08-bp20-hard-150/zQrwne)
 
 先从本方座位重做一个关键决定，再对照当时的理由与比赛结果。[双座位对练题](references/agent-duels.md)
+
+对龙起手时，先比较同一手四张在保留和整手重抽后的前三回合。[先攻留牌的独立实打](references/dragon-opening.md)
+
+对照使用第二张灾藤和第二张玛文的场面，比较回收炎术、用身体交换与留费清场的收益。[配对实战](references/second-saito.md)

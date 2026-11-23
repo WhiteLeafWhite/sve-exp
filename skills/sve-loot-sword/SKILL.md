@@ -18,3 +18,5 @@ description: 在 SVE NEXT 日版 BP20 用 t7B32v「20财宝」皇室对练，核
 **计算对方现成的斩杀。** 固定百局第 40 局，皇室在 T15 用两张旗和炮手向主教打出三段 1 点，交回合时主教仍有 10 血。主教留场的万裁分身下一回合一击打完皇室 7 血。T16 皇室剩 0 PP、没有横置守护，EX 的三张海贼旗无法阻止这一击。复盘时回到 T15，用「分身还能攻击几次」检验贪伤害的代价。[固定皇室第 40 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/t7B32v/games/40.md)
 
 先从本方座位重做一个关键决定，再对照当时的理由与比赛结果。[双座位对练题](references/agent-duels.md)
+
+对照使用第二张灾藤和第二张玛文的场面，比较回收炎术、用身体交换与留费清场的收益。[配对实战](references/second-saito.md)

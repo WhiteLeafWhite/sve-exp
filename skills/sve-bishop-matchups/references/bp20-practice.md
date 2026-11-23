@@ -13,6 +13,10 @@
 
 陪练按双方公开主战者的职业识别这三种对局，使用百局验证的 r3。对局中只按合法选择行动。按钮、卡图、Quick 与录像沿用 NEXT 的图形桌面。在另一台电脑部署时，从已装依赖的 NEXT 0.4.3 源码目录运行 `node <技能目录>/scripts/build-desktop.mjs <PC版目录>`，然后从该 PC 版的 `start.bat` 启动。[陪练桌构建脚本](../scripts/build-desktop.mjs)
 
+想练双席实战里积累的新打法，在「对战」的高级设置里把对面设为「双席实战陪练」，自己选「人类」。自己执主教时，替对面选巫师、龙族或皇室的牌表。自己执主流时，替对面选主教。两个席位的策略都只读自己能看到的信息，复用实战里选出的出牌顺序。刚完成的五局组会更新本机陪练，重新加载牌桌即可使用。已发布的两份策略指纹可以在[本机陪练版本](http://127.0.0.1:5170/practice/coaches.json)核对。
+
+在其他电脑同时装上双席策略时，构建命令加 `--duels <sve-exp仓库>/batches/10-agent-duels`。原生录像可直接在 Watch replays 复看。[两个座位的策略及赛后手记](https://github.com/WhiteLeafWhite/sve-exp/tree/main/batches/10-agent-duels)
+
 使用 SVE NEXT 0.4.3（源码提交 `028e157`）。本机 PC 版双击 `dist/pc/start.bat`，首页选择对战或观看录像。桌面练习用标准职业格式。要复现三套原表，在标准格式的禁限下拉框选择「无」，并单独按日版 2026 年十月表检查主教。龙族原表保留 3 张日版限 1 的 BP15-066，皇室原表保留 3 张日版禁用的 BP05-018。可在牌组选择里用分享码定位原表。将主教位设为玩家，对手选困难。[模拟器项目](https://github.com/eireetm/ShadowverseEvolve-NEXT) · [日版官方禁限](https://shadowverse-evolve.com/card_limit/)
 
 在模拟器源码根目录打开 PowerShell。令 `$skill` 指向本技能目录。以下写法适用于按默认路径安装的技能。SVE Helper 导入脚本也能给自己调整过的牌表安装正反面卡图与中文、日文卡效。[SVE Helper 公开卡组](https://www.svehelperwin.com/#/deck-list)

@@ -155,11 +155,12 @@ if complete:
         data["criteria"][lane] = {"best65All35AtMostOneBelow50":max(wins)>=65 and min(wins)>=35 and sum(v<50 for v in wins)<=1,
                                   "allAtLeast45":min(wins)>=45}
 index.extend(["",f"本次已复核 {total} 场独立实打的录像。配对共享相同开局，计算胜率时两表各自使用自己的实战记录。"
-              "第二张进化卡的出场是赛中选择，不能把那几局的胜率直接当成换牌收益。", "", *details])
+              "第二张进化卡的出场是赛中选择，不能把那几局的胜率直接当成换牌收益。", "",
+              "[按输入重练第二个进化位的实际选择](examples.md)", "", *details])
 write(ROOT/"index.md",index)
 (ROOT/"summary.json").write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n","utf-8")
 write(REPO/"skills/sve-bishop-matchups/references/second-saito.md",
       ["# 第二张灾藤和第二张玛文怎么选", "", "计算第二次进化的价值时，手上灾藤、墓地法术、EX 空位与对方关键目标要放在同一回合核对。"
        "对面有多名威胁时，另算玛文在这个回合清场后对手还余几次攻击。", "", *[line for key in KEYS for line in tips[key]], "",
-       f"[共同牌表、计数和实战]({WEB}/index.md)"])
+       f"[共同牌表、计数和实战]({WEB}/index.md) · [灾藤的回复或回收模式]({WEB}/examples.md)"])
 print("Reviewed",total,"games.", {k:s["pairs"] for k,s in summary.items()})

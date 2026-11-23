@@ -19,4 +19,4 @@
 双灾藤 3–2，双玛文 3–2。已有 5 对核对了双方初手；改成双灾藤后，0 局负转胜，0 局胜转负。
 
 
-[共同牌表、计数和实战](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/index.md)
+[共同牌表、计数和实战](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/index.md) · [灾藤的回复或回收模式](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/examples.md)
