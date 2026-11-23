@@ -89,3 +89,8 @@
 | 83 | 先攻 | 胜 | T21 · 6／-1 | [日志](games/83.md) · [复盘](reviews/17.md#game-83) · [录像](replays/83.json) |
 | 84 | 后攻 | 胜 | T22 · 25／-1 | [日志](games/84.md) · [复盘](reviews/17.md#game-84) · [录像](replays/84.json) |
 | 85 | 先攻 | 负 | T16 · -1／12 | [日志](games/85.md) · [复盘](reviews/17.md#game-85) · [录像](replays/85.json) |
+| 86 | 后攻 | 胜 | T20 · 11／-1 | [日志](games/86.md) · [复盘](reviews/18.md#game-86) · [录像](replays/86.json) |
+| 87 | 先攻 | 胜 | T23 · 18／-5 | [日志](games/87.md) · [复盘](reviews/18.md#game-87) · [录像](replays/87.json) |
+| 88 | 后攻 | 负 | T13 · 0／18 | [日志](games/88.md) · [复盘](reviews/18.md#game-88) · [录像](replays/88.json) |
+| 89 | 先攻 | 负 | T22 · 0／9 | [日志](games/89.md) · [复盘](reviews/18.md#game-89) · [录像](replays/89.json) |
+| 90 | 后攻 | 胜 | T22 · 22／0 | [日志](games/90.md) · [复盘](reviews/18.md#game-90) · [录像](replays/90.json) |
