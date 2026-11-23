@@ -4,13 +4,13 @@
 
 | 对手 | 天曜战骑 K | 双灾藤 F | 完整配对 | F 负→K 胜 | F 胜→K 负 | K 登场局 | 出牌时有两护符的局数 |
 |---|---|---|---:|---:|---:|---:|---:|
-| 破坏巫师 | 6/15（40%，20–64%） | 6/10（60%，31–83%） | 10 | 0 | 2 | 4 | 3 |
+| 破坏巫师 | 6/15（40%，20–64%） | 7/15（47%，25–70%） | 15 | 1 | 2 | 4 | 3 |
 | 侮蔑龙 | 2/10（20%，6–51%） | 4/10（40%，17–69%） | 10 | 0 | 2 | 2 | 1 |
 | 财宝皇室 | 2/10（20%，6–51%） | 6/10（60%，31–83%） | 10 | 0 | 4 | 5 | 1 |
 
 ## 破坏巫师
 
-主教先攻胜/场数，K 为 2/8、F 为 3/5。后攻 K 为 4/7、F 为 3/5。战骑在 4 局攻击主战者并造成正伤害，合计 27 点。对手在 2 局对战骑宣告攻击。
+主教先攻胜/场数，K 为 2/8、F 为 3/8。后攻 K 为 4/7、F 为 4/7。战骑在 4 局攻击主战者并造成正伤害，合计 27 点。对手在 2 局对战骑宣告攻击。
 
 | 牌序 | K 结果、中文战报、复盘、录像 | F 结果、中文战报、复盘、录像 |
 |---:|---|---|
@@ -24,11 +24,11 @@
 | 8 | 负 · [战报](candidate/cQZr8Z/games/08.md) · [复盘](candidate/cQZr8Z/reviews/02.md#game-08) · [录像](candidate/cQZr8Z/replays/08.json) | 负 · [战报](control/cQZr8Z/games/08.md) · [复盘](control/cQZr8Z/reviews/02.md#game-08) · [录像](control/cQZr8Z/replays/08.json) |
 | 9 | 负 · [战报](candidate/cQZr8Z/games/09.md) · [复盘](candidate/cQZr8Z/reviews/02.md#game-09) · [录像](candidate/cQZr8Z/replays/09.json) | 胜 · [战报](control/cQZr8Z/games/09.md) · [复盘](control/cQZr8Z/reviews/02.md#game-09) · [录像](control/cQZr8Z/replays/09.json) |
 | 10 | 胜 · [战报](candidate/cQZr8Z/games/10.md) · [复盘](candidate/cQZr8Z/reviews/02.md#game-10) · [录像](candidate/cQZr8Z/replays/10.json) | 胜 · [战报](control/cQZr8Z/games/10.md) · [复盘](control/cQZr8Z/reviews/02.md#game-10) · [录像](control/cQZr8Z/replays/10.json) |
-| 11 | 胜 · [战报](candidate/cQZr8Z/games/11.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-11) · [录像](candidate/cQZr8Z/replays/11.json) | 待配对 |
-| 12 | 负 · [战报](candidate/cQZr8Z/games/12.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-12) · [录像](candidate/cQZr8Z/replays/12.json) | 待配对 |
-| 13 | 负 · [战报](candidate/cQZr8Z/games/13.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-13) · [录像](candidate/cQZr8Z/replays/13.json) | 待配对 |
-| 14 | 胜 · [战报](candidate/cQZr8Z/games/14.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-14) · [录像](candidate/cQZr8Z/replays/14.json) | 待配对 |
-| 15 | 负 · [战报](candidate/cQZr8Z/games/15.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-15) · [录像](candidate/cQZr8Z/replays/15.json) | 待配对 |
+| 11 | 胜 · [战报](candidate/cQZr8Z/games/11.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-11) · [录像](candidate/cQZr8Z/replays/11.json) | 负 · [战报](control/cQZr8Z/games/11.md) · [复盘](control/cQZr8Z/reviews/03.md#game-11) · [录像](control/cQZr8Z/replays/11.json) |
+| 12 | 负 · [战报](candidate/cQZr8Z/games/12.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-12) · [录像](candidate/cQZr8Z/replays/12.json) | 负 · [战报](control/cQZr8Z/games/12.md) · [复盘](control/cQZr8Z/reviews/03.md#game-12) · [录像](control/cQZr8Z/replays/12.json) |
+| 13 | 负 · [战报](candidate/cQZr8Z/games/13.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-13) · [录像](candidate/cQZr8Z/replays/13.json) | 负 · [战报](control/cQZr8Z/games/13.md) · [复盘](control/cQZr8Z/reviews/03.md#game-13) · [录像](control/cQZr8Z/replays/13.json) |
+| 14 | 胜 · [战报](candidate/cQZr8Z/games/14.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-14) · [录像](candidate/cQZr8Z/replays/14.json) | 胜 · [战报](control/cQZr8Z/games/14.md) · [复盘](control/cQZr8Z/reviews/03.md#game-14) · [录像](control/cQZr8Z/replays/14.json) |
+| 15 | 负 · [战报](candidate/cQZr8Z/games/15.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-15) · [录像](candidate/cQZr8Z/replays/15.json) | 负 · [战报](control/cQZr8Z/games/15.md) · [复盘](control/cQZr8Z/reviews/03.md#game-15) · [录像](control/cQZr8Z/replays/15.json) |
 
 ## 侮蔑龙
 
