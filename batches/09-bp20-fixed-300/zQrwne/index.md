@@ -19,3 +19,8 @@
 | 13 | 先攻 | 负 | T14 · 0／15 | [日志](games/13.md) · [复盘](reviews/03.md#game-13) · [录像](replays/13.json) |
 | 14 | 后攻 | 负 | T11 · 0／19 | [日志](games/14.md) · [复盘](reviews/03.md#game-14) · [录像](replays/14.json) |
 | 15 | 先攻 | 负 | T20 · 0／17 | [日志](games/15.md) · [复盘](reviews/03.md#game-15) · [录像](replays/15.json) |
+| 16 | 后攻 | 胜 | T26 · 30／-1 | [日志](games/16.md) · [复盘](reviews/04.md#game-16) · [录像](replays/16.json) |
+| 17 | 先攻 | 负 | T20 · -2／15 | [日志](games/17.md) · [复盘](reviews/04.md#game-17) · [录像](replays/17.json) |
+| 18 | 后攻 | 负 | T15 · -1／23 | [日志](games/18.md) · [复盘](reviews/04.md#game-18) · [录像](replays/18.json) |
+| 19 | 先攻 | 负 | T14 · 0／18 | [日志](games/19.md) · [复盘](reviews/04.md#game-19) · [录像](replays/19.json) |
+| 20 | 后攻 | 负 | T11 · 0／16 | [日志](games/20.md) · [复盘](reviews/04.md#game-20) · [录像](replays/20.json) |
