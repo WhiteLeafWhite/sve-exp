@@ -17,3 +17,7 @@
 ## 第 16–20 局 · 主教 3–2
 
 第 20 局 T13，主教体力从 16 到 5。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 131 前重练，当时有 1 PP，从「起动新约都市·透京的能力」和「起动坚定不移的祈祷的能力」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/20.md)
+
+## 第 21–25 局 · 主教 2–3
+
+第 22 局 T11，主教体力从 12 到 2。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 101 前重练，当时有 0 PP，从「魔污区政府职员·灾藤攻击奏绝的崇拜者」和「魔污区政府职员·灾藤攻击奏绝的显现·里榭娜」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/22.md)
