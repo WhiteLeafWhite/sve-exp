@@ -11,5 +11,6 @@
 - F 版本。第 6 局 T10 输入 71 还有 0 PP，实际结束主阶段。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/cQZr8Z/games/06.md)
 - F 版本。第 11 局 T27 输入 229 还有 5 PP，实际结束主阶段。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/cQZr8Z/games/11.md)
 - F 版本。第 16 局 T16 输入 153 还有 7 PP，实际誓断的赐予者攻击巫师主战者。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/cQZr8Z/games/16.md)
+- F 版本。第 21 局 T17 输入 154 还有 9 PP，实际加罚的承担者攻击巫师主战者。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/cQZr8Z/games/21.md)
 
 [牌序与总成绩](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/index.md)
