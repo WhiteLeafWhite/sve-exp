@@ -26,3 +26,5 @@ description: 在 SVE NEXT 日版 BP20 用 t7B32v「20财宝」皇室对练，核
 对面梦羊触发后，先计算用一次小伤害消耗防止能否保住后续的大段伤害。[一次伤害防止的实战](references/sacred-sheep.md)
 
 核对两个护符的五费盘面，数清天曜战骑当天的疾驰、回复和交回合后的守护。[同牌序取舍](references/heavenly-knight.md)
+
+在相同牌序第一次分歧处对照实战主教席和基础搜索的决定。[冻结打法对困难 Bot 的验证](references/trained-pilot.md)

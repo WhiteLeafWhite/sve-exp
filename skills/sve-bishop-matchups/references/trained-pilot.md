@@ -10,4 +10,8 @@
 
 - 牌序 74，输入 25 · T6 · 主教使用魔污区政府职员·灾藤。两份录像所有输入一致。[训练席逐回合](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/zQrwne/games/04.md)
 
+## 财宝皇室
+
+- 这组没有在多个合法选项之间命中冻结打法。可重练牌序 71 的基础搜索。[训练席逐回合](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/t7B32v/games/01.md)
+
 [冻结打法、同表对照和原生录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/index.md)
