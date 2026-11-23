@@ -53,3 +53,7 @@
 ## 第 61–65 局 · 主教 1–4
 
 第 62 局 T13，主教体力从 18 到 6。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 136 前重练，当时有 0 PP，从「加罚的承担者攻击破坏的祈祷者」和「加罚的承担者攻击破坏的狂信者」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/62.md)
+
+## 第 66–70 局 · 主教 5–0
+
+第 67 局 T8，主教体力从 17 到 7。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 199 前重练，当时有 10 PP，从「魔污区政府职员·灾藤攻击巫师主战者」和「使用白牙神殿」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/67.md)
