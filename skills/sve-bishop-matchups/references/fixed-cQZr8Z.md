@@ -77,3 +77,7 @@
 ## 第 91–95 局 · 主教 3–2
 
 第 93 局 T8，主教体力从 20 到 7。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 146 前重练，当时有 0 PP，从「结束主阶段」和「起动帅忍部长·煤木万裁的能力」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/93.md)
+
+## 第 96–100 局 · 主教 2–3
+
+第 98 局 T7，主教体力从 19 到 9。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 57 前重练，当时有 0 PP，从「结束主阶段」和「使用绝望的奔流」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/98.md)
