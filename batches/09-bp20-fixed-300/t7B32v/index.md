@@ -99,3 +99,8 @@
 | 93 | 先攻 | 胜 | T25 · 15／-3 | [日志](games/93.md) · [复盘](reviews/19.md#game-93) · [录像](replays/93.json) |
 | 94 | 后攻 | 胜 | T22 · 14／0 | [日志](games/94.md) · [复盘](reviews/19.md#game-94) · [录像](replays/94.json) |
 | 95 | 先攻 | 负 | T10 · 0／20 | [日志](games/95.md) · [复盘](reviews/19.md#game-95) · [录像](replays/95.json) |
+| 96 | 后攻 | 负 | T15 · 0／13 | [日志](games/96.md) · [复盘](reviews/20.md#game-96) · [录像](replays/96.json) |
+| 97 | 先攻 | 负 | T22 · 0／12 | [日志](games/97.md) · [复盘](reviews/20.md#game-97) · [录像](replays/97.json) |
+| 98 | 后攻 | 胜 | T20 · 23／-5 | [日志](games/98.md) · [复盘](reviews/20.md#game-98) · [录像](replays/98.json) |
+| 99 | 先攻 | 负 | T14 · 0／14 | [日志](games/99.md) · [复盘](reviews/20.md#game-99) · [录像](replays/99.json) |
+| 100 | 后攻 | 胜 | T22 · 8／-1 | [日志](games/100.md) · [复盘](reviews/20.md#game-100) · [录像](replays/100.json) |
