@@ -5,6 +5,7 @@
 ## 破坏巫师
 
 - 第 61 个牌序 T20 输入 182 用掉一次防止。从这一步前数对手还能打出的攻击和直伤。[实战和录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/13-sacred-sheep/cQZr8Z/games/01.md)
+- 第 69 个牌序 T8 输入 39 用掉一次防止。从这一步前数对手还能打出的攻击和直伤。[实战和录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/13-sacred-sheep/cQZr8Z/games/09.md)
 
 ## 侮蔑龙
 

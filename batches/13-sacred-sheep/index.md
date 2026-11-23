@@ -4,7 +4,7 @@ S 对三个固定困难 Bot 使用同一套 40/10。每一对都检查两张换�
 
 | 对手 | 已配对 | S 胜场 | F 胜场 | 原负转胜 | 原胜转负 | 梦羊登场局 | 梦羊触发局 |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| 破坏巫师 | 5 | 4 | 1 | 3 | 0 | 1 | 1 |
+| 破坏巫师 | 10 | 5 | 3 | 3 | 1 | 2 | 2 |
 | 侮蔑龙 | 5 | 1 | 1 | 0 | 0 | 2 | 2 |
 | 财宝皇室 | 5 | 2 | 1 | 1 | 0 | 2 | 2 |
 
@@ -19,6 +19,11 @@ S 对三个固定困难 Bot 使用同一套 40/10。每一对都检查两张换�
 | 63 | 胜／负 | 0 | 0 | 0 | [S 日志](cQZr8Z/games/03.md) · [S 复盘](cQZr8Z/reviews/01.md#game-03) · [原生录像](cQZr8Z/replays/03.json) · [同牌序 F](../12-second-saito/candidate/cQZr8Z/games/63.md) |
 | 64 | 负／负 | 0 | 0 | 0 | [S 日志](cQZr8Z/games/04.md) · [S 复盘](cQZr8Z/reviews/01.md#game-04) · [原生录像](cQZr8Z/replays/04.json) · [同牌序 F](../12-second-saito/candidate/cQZr8Z/games/64.md) |
 | 65 | 胜／负 | 0 | 0 | 0 | [S 日志](cQZr8Z/games/05.md) · [S 复盘](cQZr8Z/reviews/01.md#game-05) · [原生录像](cQZr8Z/replays/05.json) · [同牌序 F](../12-second-saito/candidate/cQZr8Z/games/65.md) |
+| 66 | 胜／胜 | 0 | 0 | 0 | [S 日志](cQZr8Z/games/06.md) · [S 复盘](cQZr8Z/reviews/02.md#game-06) · [原生录像](cQZr8Z/replays/06.json) · [同牌序 F](../12-second-saito/candidate/cQZr8Z/games/66.md) |
+| 67 | 负／负 | 0 | 0 | 0 | [S 日志](cQZr8Z/games/07.md) · [S 复盘](cQZr8Z/reviews/02.md#game-07) · [原生录像](cQZr8Z/replays/07.json) · [同牌序 F](../12-second-saito/candidate/cQZr8Z/games/67.md) |
+| 68 | 负／负 | 0 | 0 | 0 | [S 日志](cQZr8Z/games/08.md) · [S 复盘](cQZr8Z/reviews/02.md#game-08) · [原生录像](cQZr8Z/replays/08.json) · [同牌序 F](../12-second-saito/candidate/cQZr8Z/games/68.md) |
+| 69 | 负／胜 | 2 | 2 | 1 | [S 日志](cQZr8Z/games/09.md) · [S 复盘](cQZr8Z/reviews/02.md#game-09) · [原生录像](cQZr8Z/replays/09.json) · [同牌序 F](../12-second-saito/candidate/cQZr8Z/games/69.md) |
+| 70 | 负／负 | 0 | 0 | 0 | [S 日志](cQZr8Z/games/10.md) · [S 复盘](cQZr8Z/reviews/02.md#game-10) · [原生录像](cQZr8Z/replays/10.json) · [同牌序 F](../12-second-saito/candidate/cQZr8Z/games/70.md) |
 
 
 ## 侮蔑龙
