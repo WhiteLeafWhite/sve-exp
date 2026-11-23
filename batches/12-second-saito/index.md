@@ -6,9 +6,9 @@
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 破坏巫师 | 9–6 | 9–6 | 15 | 1 | 1 | 3 | 0 |
 | 侮蔑龙 | 8–7 | 6–9 | 15 | 2 | 0 | 6 | 1 |
-| 财宝皇室 | 6–4 | 7–8 | 10 | 1 | 0 | 2 | 0 |
+| 财宝皇室 | 8–7 | 7–8 | 15 | 1 | 0 | 3 | 0 |
 
-本次已复核 85 场独立实打的录像。配对共享相同开局，计算胜率时两表各自使用自己的实战记录。第二张进化卡的出场是赛中选择，不能把那几局的胜率直接当成换牌收益。
+本次已复核 90 场独立实打的录像。配对共享相同开局，计算胜率时两表各自使用自己的实战记录。第二张进化卡的出场是赛中选择，不能把那几局的胜率直接当成换牌收益。
 
 [按输入重练第二个进化位的实际选择](examples.md)
 
@@ -58,7 +58,7 @@
 
 ## 财宝皇室
 
-主教先攻，F 为 3–2、B 为 3–5。主教后攻，F 为 3–2、B 为 4–3。
+主教先攻，F 为 3–5、B 为 3–5。主教后攻，F 为 5–2、B 为 4–3。
 
 | 编号 | 双灾藤 F | 双玛文 B | 第二张灾藤／玛文的出场回合 |
 |---:|---:|---:|---|
@@ -72,8 +72,8 @@
 | 8 | [胜](candidate/t7B32v/games/08.md) | [负](control/t7B32v/games/08.md) | T6／— |
 | 9 | [胜](candidate/t7B32v/games/09.md) | [胜](control/t7B32v/games/09.md) | —／— |
 | 10 | [负](candidate/t7B32v/games/10.md) | [负](control/t7B32v/games/10.md) | T10／— |
-| 11 | 待配对 | [负](control/t7B32v/games/11.md) | —／— |
-| 12 | 待配对 | [胜](control/t7B32v/games/12.md) | —／— |
-| 13 | 待配对 | [负](control/t7B32v/games/13.md) | —／— |
-| 14 | 待配对 | [胜](control/t7B32v/games/14.md) | —／— |
-| 15 | 待配对 | [负](control/t7B32v/games/15.md) | —／— |
+| 11 | [负](candidate/t7B32v/games/11.md) | [负](control/t7B32v/games/11.md) | —／— |
+| 12 | [胜](candidate/t7B32v/games/12.md) | [胜](control/t7B32v/games/12.md) | T16／— |
+| 13 | [负](candidate/t7B32v/games/13.md) | [负](control/t7B32v/games/13.md) | —／— |
+| 14 | [胜](candidate/t7B32v/games/14.md) | [胜](control/t7B32v/games/14.md) | —／— |
+| 15 | [负](candidate/t7B32v/games/15.md) | [负](control/t7B32v/games/15.md) | —／— |
