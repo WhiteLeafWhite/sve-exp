@@ -9,3 +9,4 @@
 | 03 | zQrwne「20五妹」，第 1–10 局 | [录像、日志和卡组](batches/03-zQrwne/index-01.md) · [逐局复盘](batches/03-zQrwne/review-01.md) |
 | 04 | t7B32v「20财宝」，第 1–10 局 | [录像、日志和卡组](batches/04-t7B32v/index-01.md) · [逐局复盘](batches/04-t7B32v/review-01.md) |
 | 05 | cQZr8Z「20二妹」，第 11–20 局 | [录像、日志和卡组](batches/05-cQZr8Z/index-02.md) · [逐局复盘](batches/05-cQZr8Z/review-02.md) |
+| 06 | zQrwne「20五妹」，第 11–20 局 | [录像、日志和卡组](batches/06-zQrwne/index-02.md) · [逐局复盘](batches/06-zQrwne/review-02.md) |
