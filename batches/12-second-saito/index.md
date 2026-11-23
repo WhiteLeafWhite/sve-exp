@@ -4,17 +4,17 @@
 
 | 对手 | 双灾藤 F | 双玛文 B | 完整配对 | 原负转胜 | 原胜转负 | 第二张灾藤出场 | 第二张玛文出场 |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| 破坏巫师 | 14–11 | 13–7 | 20 | 1 | 2 | 7 | 0 |
+| 破坏巫师 | 14–11 | 15–10 | 25 | 1 | 2 | 7 | 0 |
 | 侮蔑龙 | 11–9 | 9–11 | 20 | 2 | 0 | 6 | 1 |
 | 财宝皇室 | 10–10 | 9–11 | 20 | 1 | 0 | 4 | 0 |
 
-本次已复核 125 场独立实打的录像。配对共享相同开局，计算胜率时两表各自使用自己的实战记录。第二张进化卡的出场是赛中选择，不能把那几局的胜率直接当成换牌收益。
+本次已复核 130 场独立实打的录像。配对共享相同开局，计算胜率时两表各自使用自己的实战记录。第二张进化卡的出场是赛中选择，不能把那几局的胜率直接当成换牌收益。
 
 [按输入重练第二个进化位的实际选择](examples.md)
 
 ## 破坏巫师
 
-主教先攻，F 为 7–6、B 为 5–5。主教后攻，F 为 7–5、B 为 8–2。
+主教先攻，F 为 7–6、B 为 7–6。主教后攻，F 为 7–5、B 为 8–4。
 
 | 编号 | 双灾藤 F | 双玛文 B | 第二张灾藤／玛文的出场回合 |
 |---:|---:|---:|---|
@@ -38,11 +38,11 @@
 | 18 | [胜](candidate/cQZr8Z/games/18.md) | [胜](control/cQZr8Z/games/18.md) | T18／— |
 | 19 | [胜](candidate/cQZr8Z/games/19.md) | [胜](control/cQZr8Z/games/19.md) | —／— |
 | 20 | [胜](candidate/cQZr8Z/games/20.md) | [胜](control/cQZr8Z/games/20.md) | T10／— |
-| 21 | [胜](candidate/cQZr8Z/games/21.md) | 待配对 | —／— |
-| 22 | [负](candidate/cQZr8Z/games/22.md) | 待配对 | —／— |
-| 23 | [胜](candidate/cQZr8Z/games/23.md) | 待配对 | —／— |
-| 24 | [负](candidate/cQZr8Z/games/24.md) | 待配对 | —／— |
-| 25 | [负](candidate/cQZr8Z/games/25.md) | 待配对 | —／— |
+| 21 | [胜](candidate/cQZr8Z/games/21.md) | [胜](control/cQZr8Z/games/21.md) | —／— |
+| 22 | [负](candidate/cQZr8Z/games/22.md) | [负](control/cQZr8Z/games/22.md) | —／— |
+| 23 | [胜](candidate/cQZr8Z/games/23.md) | [胜](control/cQZr8Z/games/23.md) | —／— |
+| 24 | [负](candidate/cQZr8Z/games/24.md) | [负](control/cQZr8Z/games/24.md) | —／— |
+| 25 | [负](candidate/cQZr8Z/games/25.md) | [负](control/cQZr8Z/games/25.md) | —／— |
 
 ## 侮蔑龙
 
