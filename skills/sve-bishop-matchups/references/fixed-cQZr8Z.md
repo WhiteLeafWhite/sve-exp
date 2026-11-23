@@ -9,3 +9,7 @@
 ## 第 6–10 局 · 主教 2–3
 
 第 8 局 T11，主教体力从 16 到 -1。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 68 前重练，当时有 1 PP，从「起动坚定不移的祈祷的能力」和「使用加罚的承担者」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/08.md)
+
+## 第 11–15 局 · 主教 3–2
+
+第 12 局 T13，主教体力从 16 到 6。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 100 前重练，当时有 3 PP，从「使用清纯祈祷者·耶菈」和「使用戒信之六铭传·圣士郎」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/12.md)
