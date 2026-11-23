@@ -1,0 +1,50 @@
+"""Rebuild the Chinese chronological record of every completed practice branch."""
+import json
+import subprocess
+from pathlib import Path
+
+BATCH = Path(__file__).resolve().parent.parent
+REPORT = BATCH / "08-bp20-hard-150" / "report.mjs"
+NAMES = {"cQZr8Z": "破坏巫师", "zQrwne": "侮蔑龙", "t7B32v": "财宝皇室"}
+TITLES = {
+    "dragon-07-prayer": "先起动祈祷", "dragon-07-super": "改选超进化",
+    "dragon-21-marwynn": "先下玛文", "dragon-21-pyromancy": "炎术、灾藤、再用炎术",
+    "rune-01-prayer-control": "圣士郎取耶菈的祈祷", "rune-01-punisher": "圣士郎取承担者",
+    "rune-01-warped-progress": "歪曲先解直立随从", "dragon-01-quicksilver": "留 1 PP 出水银",
+    "dragon-02-prayer": "祈祷对开局时的龙策略", "dragon-02-whitefang": "白牙对开局时的龙策略",
+    "dragon-02-prayer-trained": "祈祷对第一组更新后的龙", "dragon-02-whitefang-trained": "白牙对第一组更新后的龙",
+    "dragon-02-whitefang-draw-control": "213 手选抽牌对照", "dragon-02-whitefang-take-control": "217 手选取牌对照",
+    "dragon-02-whitefang-ramp": "213 改选加 PP 上限", "dragon-02-whitefang-decline": "217 拒绝取牌",
+    "dragon-02-whitefang-keep-one": "隐者与启示都给下一回合留牌",
+}
+
+
+def read(file):
+    return json.loads(file.read_text("utf-8-sig"))
+
+
+def source_match(folder, replay):
+    source = replay["practice"]["source"]
+    for key in NAMES:
+        native = folder.parent / key / "replays" / source
+        if native.is_file() and read(native)["options"]["seed"] == replay["options"]["seed"]:
+            return key, int(native.stem)
+    raise ValueError("Original game missing for " + source)
+
+
+for folder in sorted(BATCH.glob("*/drills")):
+    logs = []
+    for file in sorted(folder.glob("*.json")):
+        replay = read(file)
+        key, n = source_match(folder, replay)
+        subprocess.run(["node", REPORT, key, "1", "drill", file], check=True)
+        winner = replay["info"]["result"]["winner"]
+        result = {0: "主教胜", 1: NAMES[key]+"胜", None: "平局"}[winner]
+        slug = file.stem
+        logs.append(f"| {NAMES[key]}第 {n} 局 | {TITLES.get(slug,slug)} | T{replay['info']['turn']} {result} | "
+                    f"[日志与逐局复盘](logs/{slug}.md) · [原生录像]({file.name}) |")
+    if logs:
+        lines = ["# 各分支的逐回合日志", "", "这些记录用于重做同一局面的选择。正式实战成绩只使用原局。", "",
+                 "| 原局 | 重练的选择 | 分支终局 | 记录 |", "|---|---|---|---|", *logs]
+        (folder/"logs.md").write_text("\n".join(lines)+"\n","utf-8")
+        print(folder.parent.name,len(logs))
