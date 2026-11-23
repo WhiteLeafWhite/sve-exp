@@ -16,6 +16,8 @@ TITLES = {
     "dragon-02-whitefang-draw-control": "213 手选抽牌对照", "dragon-02-whitefang-take-control": "217 手选取牌对照",
     "dragon-02-whitefang-ramp": "213 改选加 PP 上限", "dragon-02-whitefang-decline": "217 拒绝取牌",
     "dragon-02-whitefang-keep-one": "隐者与启示都给下一回合留牌",
+    "royal-03-lorena-F": "双灾藤重走萝蕾娜与奔流的交换", "royal-03-lorena-B": "双玛文重走萝蕾娜与奔流的交换",
+    "royal-03-marwynn-B": "双玛文先用第二张玛文进化清场",
 }
 
 

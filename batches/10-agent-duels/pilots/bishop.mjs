@@ -1,11 +1,62 @@
 export const baseRevision = 3;
+let doubleHit = null;
+let exchange = null;
+
+// 巫师第四局 T6。两发炎术各解一个小从者，进化灾藤与第三名横置从者交换。
+function clearThreeWithSaito({seat, view, own, foe, enemies, answers}) {
+  if (exchange?.turn !== view.turn || exchange?.seat !== seat) exchange = null;
+  const decision = view.decision;
+  const available = [...own.hand, ...own.ex].filter(card => !card.hidden);
+  const pyro = available.find(card => card.def === 'BP18-123');
+  const play = card => answers.findIndex(answer => card && answer.action?.type === 'play' && answer.action.card === card.id);
+  if (!exchange) {
+    if (decision?.type !== 'mainPhase' || own.maxPlayPoints !== 3 || own.playPoints !== 3 ||
+        own.evolutionPoints < 1 || own.leaderDefense > 16 || own.field.length >= 5 || !pyro ||
+        own.field.some(card => !card.hidden && card.type === 'follower') ||
+        enemies.length !== 3 || foe.leaderDefense <= 8) return null;
+    const trade = enemies.find(card => card.engaged && card.attack === 3 && card.defense === 3);
+    const small = enemies.filter(card => card.defense >= 1 && card.defense <= 2 && card.attack >= 2);
+    const canEvolve = own.evolveDeck.some(card => !card.hidden && !card.faceUp && card.def === 'BP18-118');
+    const officer = available.find(card => card.def === 'BP18-117');
+    const index = play(officer);
+    if (!trade || small.length !== 2 || !canEvolve || index < 0) return null;
+    small.sort((a, b) => Number(b.def === 'BP20-040') - Number(a.def === 'BP20-040') || b.attack - a.attack);
+    exchange = {seat, turn: view.turn, small: small.map(card => card.id), trade: trade.id};
+    return index;
+  }
+  const small = exchange.small.find(id => enemies.some(card => card.id === id));
+  const officer = own.field.find(card => !card.hidden && card.def === 'BP18-117');
+  if (!officer) return null;
+  let index = -1;
+  if (decision?.type === 'choose' && decision.source === officer.id) {
+    index = answers.findIndex(answer => answer.ids?.includes('pyromancy'));
+  } else if (decision?.type === 'selectCards' && decision.reason === 'target' && small &&
+      view.resolution.some(card => card.id === decision.source && card.def === 'BP18-123')) {
+    index = answers.findIndex(answer => answer.cards?.length === 1 && answer.cards[0] === small);
+  } else if (decision?.type === 'mainPhase') {
+    if (small && pyro) index = play(pyro);
+    if (small && index < 0 && own.cemetery.some(card => card.def === 'BP18-123')) {
+      index = answers.findIndex(answer => answer.action?.type === 'evolve' &&
+        answer.action.card === officer.id && !answer.action.superEvolve);
+    }
+    if (!small) index = answers.findIndex(answer => answer.action?.type === 'attack' &&
+      answer.action.attacker === officer.id && answer.action.target === exchange.trade);
+  }
+  return index >= 0 ? index : null;
+}
 
 export function choose({ seat, key, view, answers }) {
   const own = view.players[seat];
   const foe = view.players[1 - seat];
   const decision = view.decision;
   const enemies = foe.field.filter(card => !card.hidden && card.type === 'follower');
+  if (doubleHit && (view.turn !== doubleHit.turn || seat !== doubleHit.seat ||
+      !enemies.some(card => card.id === doubleHit.target))) doubleHit = null;
   if (view.activePlayer !== seat || foe.playPoints !== 0) return null;
+  if (key === 'cQZr8Z') {
+    const clear = clearThreeWithSaito({seat, view, own, foe, enemies, answers});
+    if (clear !== null) return clear;
+  }
 
   // 巫师第二局输入 36。即使坚定祈祷的检索没有命中，透京减费也已生效。
   if (decision?.type === 'mainPhase' && own.maxPlayPoints === 3 && own.playPoints === 0 &&
@@ -17,15 +68,32 @@ export function choose({ seat, key, view, answers }) {
   }
 
   // 圣士郎从手中放承担者也会触发其入场。巫师首局输入 43 的配对分支验证了两段伤害。
-  if (decision?.type === 'selectCards' && decision.reason === 'pick' && enemies.length === 1 &&
-      enemies[0].defense >= 3 && enemies[0].defense <= 4 && enemies[0].attack >= 3) {
-    const seishiro = own.field.find(card => !card.hidden && card.def === 'BP18-097' && card.evolvedWith && !card.abilitiesLost);
+  if (decision?.type === 'selectCards' && decision.reason === 'pick') {
+    const seishiro = own.field.find(card => !card.hidden && card.id === decision.source &&
+      card.def === 'BP18-097' && card.evolvedWith && !card.abilitiesLost);
     const deliverer = own.hand.find(card => !card.hidden && card.def === 'BP18-105');
     const canEvolve = own.evolveDeck.some(card => !card.hidden && !card.faceUp && card.def === 'BP18-106');
-    if (seishiro && decision.source === seishiro.id && deliverer && canEvolve && own.field.length < 5) {
+    const target = enemies.find(card => !card.engaged && card.defense >= 3 && card.defense <= 4 && card.attack >= 3);
+    // 皇室第三局 T7。承担者进化后还能与另一名横置小从者交换。
+    const canTrade = enemies.length === 2 && enemies.some(card => card.engaged && card.defense <= 2);
+    if (seishiro && deliverer && canEvolve && own.field.length < 5 &&
+        target && (enemies.length === 1 || canTrade)) {
       const index = answers.findIndex(answer => answer.cards?.length === 1 && answer.cards[0] === deliverer.id);
-      if (index >= 0) return index;
+      if (index >= 0) {
+        doubleHit = {turn: view.turn, seat, source: seishiro.id, target: target.id};
+        return index;
+      }
     }
+  }
+
+  if (doubleHit && decision?.type === 'confirm' && own.field.some(card =>
+    !card.hidden && card.id === decision.source && card.def === 'BP18-105')) {
+    const index = answers.findIndex(answer => answer.yes === true);
+    if (index >= 0) return index;
+  }
+  if (doubleHit && decision?.type === 'selectCards' && decision.reason === 'target' && decision.source === doubleHit.source) {
+    const index = answers.findIndex(answer => answer.cards?.length === 1 && answer.cards[0] === doubleHit.target);
+    if (index >= 0) return index;
   }
 
   // 巫师首局输入 64 的同牌序分支。保住两费处理直立威胁，灾藤留给横置从者。

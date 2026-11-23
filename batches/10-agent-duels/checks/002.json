@@ -1,0 +1,284 @@
+{
+  "range": [
+    6,
+    10
+  ],
+  "games": [
+    {
+      "global": 6,
+      "cycle": 2,
+      "key": "t7B32v",
+      "order": "player2",
+      "winner": 1,
+      "turn": 15,
+      "inputs": 130,
+      "direct": [
+        8,
+        14
+      ],
+      "chosenByPolicy": [
+        0,
+        0
+      ],
+      "bishopHash": "d780a138fbf854dea21540dea2d6f9e4d6a62001818fe1449388d3b467f7130e",
+      "opponentHash": "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+      "opponentChanges": 0,
+      "picks": [
+        {
+          "index": 48,
+          "turn": 8,
+          "seat": 0,
+          "decision": "mainPhase",
+          "pick": {
+            "type": "mainPhase",
+            "action": {
+              "type": "play",
+              "card": "c187"
+            }
+          },
+          "delegate": "step",
+          "reason": "立刻使用EX的0费绝望的奔流，场上四攻的欧克托莉斯是目标。"
+        },
+        {
+          "index": 37,
+          "turn": 7,
+          "seat": 1,
+          "decision": "mainPhase",
+          "pick": {
+            "type": "mainPhase",
+            "action": {
+              "type": "play",
+              "card": "c169"
+            }
+          },
+          "delegate": "game",
+          "reason": "黄金短剑打直立圣士郎二伤，另外两名旧随从的攻击留给主战者。"
+        }
+      ]
+    },
+    {
+      "global": 7,
+      "cycle": 3,
+      "key": "cQZr8Z",
+      "order": "player1",
+      "winner": 0,
+      "turn": 27,
+      "inputs": 276,
+      "direct": [
+        16,
+        8
+      ],
+      "chosenByPolicy": [
+        0,
+        2
+      ],
+      "bishopHash": "c36513adac42a87c2d4ca86d1013e0ed52f6e4024d8b6fdd4e0f94afc8ed8c95",
+      "opponentHash": "ed8882da5252c802b10365452fee7185915cb764e46e3b5305e246c6529424fd",
+      "opponentChanges": 0,
+      "picks": [
+        {
+          "index": 40,
+          "turn": 7,
+          "seat": 0,
+          "decision": "mainPhase",
+          "pick": {
+            "type": "mainPhase",
+            "action": {
+              "type": "attack",
+              "attacker": "c142",
+              "target": "c128"
+            }
+          },
+          "delegate": "game",
+          "reason": "5/3圣士郎攻击2/3横置崇拜者，正常交换后会剩5/1，双方均有回应机会。已清对方两名从者并留灾藤，本回合余1PP和后续对局交本席公平策略。"
+        },
+        {
+          "index": 50,
+          "turn": 8,
+          "seat": 1,
+          "decision": "mainPhase",
+          "pick": {
+            "type": "mainPhase",
+            "action": {
+              "type": "activate",
+              "card": "c182",
+              "ability": 0
+            }
+          },
+          "delegate": "step",
+          "reason": "现在献荒野给祈祷者，剩一体的五攻圣士郎值这次二伤，三颗 EP 都留着。"
+        }
+      ]
+    },
+    {
+      "global": 8,
+      "cycle": 3,
+      "key": "zQrwne",
+      "order": "player1",
+      "winner": 1,
+      "turn": 20,
+      "inputs": 200,
+      "direct": [
+        13,
+        7
+      ],
+      "chosenByPolicy": [
+        0,
+        1
+      ],
+      "bishopHash": "c36513adac42a87c2d4ca86d1013e0ed52f6e4024d8b6fdd4e0f94afc8ed8c95",
+      "opponentHash": "9416da999b748650b862702d9bbf970470089f6aace1182a43097cb5fca1bcf7",
+      "opponentChanges": 0,
+      "picks": [
+        {
+          "index": 47,
+          "turn": 9,
+          "seat": 0,
+          "decision": "mainPhase",
+          "pick": {
+            "type": "mainPhase",
+            "action": {
+              "type": "activate",
+              "card": "c120",
+              "ability": 1
+            }
+          },
+          "delegate": "game",
+          "reason": "一费都市给唯一合法的天冥加1/1并回复，第二段2伤击破剩下的侮蔑的狂信者。后者即使有直伤也不能再作为后续自伤目标。剩余对局交本席公平策略。"
+        },
+        {
+          "index": 40,
+          "turn": 8,
+          "seat": 1,
+          "decision": "mainPhase",
+          "pick": {
+            "type": "mainPhase",
+            "action": {
+              "type": "play",
+              "card": "c125"
+            }
+          },
+          "delegate": "game",
+          "reason": "再下狂信者：全场一伤后天冥剩三体，崇拜者的触发负责补三。保住 4/1、2/1 两个随从及两颗 EP。"
+        }
+      ]
+    },
+    {
+      "global": 9,
+      "cycle": 3,
+      "key": "t7B32v",
+      "order": "player1",
+      "winner": 1,
+      "turn": 26,
+      "inputs": 260,
+      "direct": [
+        16,
+        15
+      ],
+      "chosenByPolicy": [
+        0,
+        2
+      ],
+      "bishopHash": "c36513adac42a87c2d4ca86d1013e0ed52f6e4024d8b6fdd4e0f94afc8ed8c95",
+      "opponentHash": "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+      "opponentChanges": 0,
+      "picks": [
+        {
+          "index": 48,
+          "turn": 7,
+          "seat": 0,
+          "decision": "mainPhase",
+          "pick": {
+            "type": "mainPhase",
+            "action": {
+              "type": "attack",
+              "attacker": "c163",
+              "target": "c116"
+            }
+          },
+          "delegate": "game",
+          "reason": "让2/2承担者交换横置3/1斥候，保留完整4/4圣士郎。对手公开黄金短剑打2；改用圣士郎交换会让它剩1防。此后由本席公平策略接手。"
+        },
+        {
+          "index": 57,
+          "turn": 8,
+          "seat": 1,
+          "decision": "mainPhase",
+          "pick": {
+            "type": "mainPhase",
+            "action": {
+              "type": "play",
+              "card": "c186"
+            }
+          },
+          "delegate": "step",
+          "reason": "第二面免费旗给炮手或芭芭萝丝都是八狱盗贼。分开加攻击，若主教解芭芭萝丝，炮手还能有三攻。"
+        }
+      ]
+    },
+    {
+      "global": 10,
+      "cycle": 4,
+      "key": "cQZr8Z",
+      "order": "player2",
+      "winner": 0,
+      "turn": 20,
+      "inputs": 197,
+      "direct": [
+        18,
+        10
+      ],
+      "chosenByPolicy": [
+        0,
+        2
+      ],
+      "bishopHash": "c36513adac42a87c2d4ca86d1013e0ed52f6e4024d8b6fdd4e0f94afc8ed8c95",
+      "opponentHash": "ed8882da5252c802b10365452fee7185915cb764e46e3b5305e246c6529424fd",
+      "opponentChanges": 0,
+      "picks": [
+        {
+          "index": 57,
+          "turn": 8,
+          "seat": 0,
+          "decision": "mainPhase",
+          "pick": {
+            "type": "mainPhase",
+            "action": {
+              "type": "evolve",
+              "card": "c188",
+              "ability": 0,
+              "evolveCard": "c42",
+              "useEvolutionPoint": true,
+              "superEvolve": false
+            }
+          },
+          "delegate": "step",
+          "reason": "用最后1EP普通进化，为白牙的同回合回复准备2伤。"
+        },
+        {
+          "index": 48,
+          "turn": 7,
+          "seat": 1,
+          "decision": "mainPhase",
+          "pick": {
+            "type": "mainPhase",
+            "action": {
+              "type": "evolve",
+              "card": "c172",
+              "ability": 0,
+              "evolveCard": "c96",
+              "useEvolutionPoint": false,
+              "superEvolve": false
+            }
+          },
+          "delegate": "step",
+          "reason": "用余下的一费进化，从可见的四张里选后续最能落地的两张偶像。"
+        }
+      ]
+    }
+  ],
+  "nextPolicies": {
+    "bishop": "d657f31c49f8f06140b7ac602c16f1e13888f1aa180ba8e969fa44677a42cc09",
+    "meta": "7c401925e2c7fefe5a13ec29495bde38e887b95ae00e6d41f1439a11f222530b"
+  }
+}

@@ -4,3 +4,5 @@
 
 - 第 1 场对主教，破坏巫师胜。T8 输入 55 前的实战考虑为「独唱付两张偶像，打两次二点，主教下回合不能拿圣士郎作四攻起点。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/lessons/01.md)
 - 第 4 场对主教，破坏巫师胜。T7 输入 39 前的实战考虑为「破坏绝杰在场后打出愉悦，回 1 PP 再抽一张，保留狂信者与白黑章等主教下随从。两名旧随从可对无守护主战者打四加二。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/lessons/02.md)
+- 第 7 场对主教，破坏巫师负。T8 输入 50 前的实战考虑为「现在献荒野给祈祷者，剩一体的五攻圣士郎值这次二伤，三颗 EP 都留着。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/lessons/03.md)
+- 第 10 场对主教，破坏巫师负。T7 输入 48 前的实战考虑为「用余下的一费进化，从可见的四张里选后续最能落地的两张偶像。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/lessons/04.md)

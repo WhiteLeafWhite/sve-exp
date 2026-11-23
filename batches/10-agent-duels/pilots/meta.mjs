@@ -9,6 +9,11 @@ function selectOne(answers, decision, def) {
     decision.candidateDefs[decision.candidates.indexOf(answer.cards[0])] === def);
 }
 
+const runeIdols = new Set([
+  "BP05-037", "BP05-048", "BP05-T01", "BP05-T02", "BP08-050", "BP15-039", "BP15-049", "BP15-054",
+  "BP20-037", "BP20-040", "BP20-048", "BP20-055", "BP20-T03", "BP20-T04",
+]);
+
 function destructionRune({ me, enemy, decision, resolution, answers }) {
   const available = [...me.hand, ...me.ex];
   const field = me.field.filter(card => !card.hidden);
@@ -17,6 +22,42 @@ function destructionRune({ me, enemy, decision, resolution, answers }) {
   const has = (cards, def) => cards.some(card => card.def === def);
   const play = def => first(answers, answer => answer.action?.type === "play" &&
     available.some(card => card.id === answer.action.card && card.def === def));
+  const targets = enemy.field.filter(card => !card.hidden && card.type === "follower");
+  const wasteland = field.find(card => card.def === "BP20-055");
+  const supplicant = field.find(card => card.def === "BP20-048" && !card.abilitiesLost);
+
+  if (decision.type === "mainPhase" && targets.length === 1 && !enemy.playPoints && enemy.ex.length === 0 &&
+      has(available, "BP15-PR12") && play("BP15-PR12") !== null) {
+    const swings = answers.filter(answer => answer.action?.type === "attack" && answer.action.target === enemy.leader.id);
+    const attackers = new Set(swings.map(answer => answer.action.attacker));
+    const reserve = field.filter(card => !card.engaged && !attackers.has(card.id) && runeIdols.has(card.def));
+    const shion = targets[0].def === "BP14-090" && !targets[0].abilitiesLost ? 1 : 0;
+    if (swings.length && reserve.length * 2 >= targets[0].defense + shion) {
+      // The visible nonattackers alone can pay for Monody. Cash in an available attack before selecting its cost.
+      return answers.indexOf(swings[0]);
+    }
+  }
+
+  if (wasteland && enemy.leaderDefense > 8 && targets.length === 2 && targets.every(card => card.defense <= 2) &&
+      targets.some(card => card.attack >= 4)) {
+    if (decision.type === "mainPhase" && has(available, "BP05-045")) {
+      if (field.length === 1 && me.playPoints >= 4) return play("BP20-048");
+      if (field.length === 2 && supplicant && !supplicant.engaged) return play("BP05-045");
+    }
+    if (decision.type === "selectCards" && decision.reason === "target" && resolution.at(-1)?.def === "BP05-045") {
+      const exact = targets.find(card => card.defense === 2 && !card.engaged);
+      if (exact) return first(answers, answer => answer.cards?.[0] === exact.id);
+    }
+  }
+  if (wasteland && supplicant && field.length === 2 && targets.length === 1 && enemy.leaderDefense > 2 &&
+      targets[0].defense <= 2 && targets[0].attack >= 4) {
+    if (decision.type === "mainPhase" && !me.playPoints) {
+      return first(answers, answer => answer.action?.type === "activate" && answer.action.card === supplicant.id);
+    }
+    if (decision.type === "selectCards" && decision.reason === "target" && decision.source === supplicant.id) {
+      return first(answers, answer => answer.cards?.[0] === targets[0].id);
+    }
+  }
 
   if (decision.type === "selectCards") {
     const candidate = def => selectOne(answers, decision, def);
@@ -35,7 +76,6 @@ function destructionRune({ me, enemy, decision, resolution, answers }) {
     }
 
     if (source?.def === "BP15-PR12" && decision.reason === "pick") {
-      const targets = enemy.field.filter(card => !card.hidden && card.type === "follower");
       if (targets.length !== 1) return null;
       const target = targets[0];
       const reduction = target.def === "BP14-090" && !target.abilitiesLost ? 1 : 0;
@@ -82,6 +122,27 @@ function destructionRune({ me, enemy, decision, resolution, answers }) {
 function disdainDragon({ me, enemy, decision, resolution, answers }) {
   const field = me.field.filter(card => !card.hidden && card.type === "follower");
   const opposing = enemy.field.filter(card => !card.hidden && card.type === "follower");
+  if (me.deckCount === 1 && opposing.length === 0 && me.leaderDefense >= 8) {
+    // Keeping the last card with Hermit only helps if a later Oracle also leaves it in the deck.
+    if (decision.type === "choose" && decision.reason === "mode" && enemy.leaderDefense > 4 &&
+        resolution.some(card => card.id === decision.source && card.def === "SD04-002")) {
+      return first(answers, answer => answer.ids?.includes("1"));
+    }
+    const revealed = decision.peek?.[0];
+    const zealots = field.filter(card => card.def === "BP08-063" && !card.abilitiesLost);
+    if (decision.type === "selectCards" && decision.min === 0 && decision.reason === "effect" &&
+        !decision.source && revealed?.def === "BP20-056" && me.maxPlayPoints >= 7 && me.playPoints >= 3 &&
+        field.every(card => card.engaged || (card.def === "BP08-063" && card.defense === 1)) &&
+        zealots.length === 1 && me.cemetery.at(-1)?.def === "BP15-072" &&
+        me.hand.every(card => ["SD04-002", "BP08-068", "BP20-063"].includes(card.def)) &&
+        me.ex.every(card => card.def === "BP20-T05")) {
+      // Here a newly played Zealot killed Hermit. Manifest Galmieux has three Storm damage;
+      // the one-defense Zealot can deal one more before it dies. The enemy field is empty.
+      const selfPing = me.ex.length > 0 || (me.playPoints > 3 && me.hand.some(card => card.def === "BP08-068"));
+      if (enemy.leaderDefense > 3 + Number(selfPing)) return first(answers, answer => answer.cards?.length === 0);
+      return first(answers, answer => answer.cards?.length === 1 && answer.cards[0] === revealed.id);
+    }
+  }
   const ardent = field.find(card => card.def === "BP15-057" && !card.abilitiesLost);
   const fragileGalmieux = field.find(card => card.def === "BP20-056" && card.defense === 1);
   const adherent = field.find(card => card.def === "BP15-066" && card.defense > 1 && !card.abilitiesLost);
@@ -167,10 +228,29 @@ function disdainDragon({ me, enemy, decision, resolution, answers }) {
 
 function lootSword({ me, enemy, decision, resolution, answers }) {
   const field = me.field.filter(card => !card.hidden);
+  const octrice = field.find(card => card.def === "BP15-020" && !card.abilitiesLost);
+  if (decision.type === "mainPhase" && octrice && me.playPoints < 2) {
+    const discount = first(answers, answer => answer.action?.type === "activate" &&
+      answer.action.card === octrice.id && answer.action.ability === 1);
+    const use = def => first(answers, answer => answer.action?.type === "play" &&
+      me.ex.some(card => card.id === answer.action.card && card.def === def));
+    const targets = enemy.field.filter(card => !card.hidden && card.type === "follower");
+    const target = targets[0];
+    const daggers = me.ex.filter(card => card.def === "BP15-T01").length;
+    if (targets.length === 1 && target.def === "BP18-097" && !target.engaged && target.defense <= 2 * daggers) {
+      // When a two-cost dagger becomes legal, spend it before activating the second discount.
+      return use("BP15-T01") ?? discount;
+    }
+    if (!targets.length && me.hand.length <= 3 && me.ex.some(card => card.def === "BP15-PR10")) {
+      return use("BP15-PR10") ?? discount;
+    }
+  }
   const barbaros = field.find(card => card.def === "BP19-019" && card.evolvedWith && !card.abilitiesLost);
   const flags = me.ex.filter(card => card.def === "BP19-T01");
   const gunner = me.hand.find(card => card.def === "BP19-026");
-  if (barbaros && flags.length >= 2 && gunner && field.length < 5) {
+  const replaceFlag = flags.length === 0 && field.length === 1 &&
+    enemy.field.some(card => !card.hidden && card.def === "BP18-097" && !card.engaged);
+  if (barbaros && (flags.length >= 2 || replaceFlag) && gunner && field.length < 5) {
     if (decision.type === "choose" && decision.source === barbaros.id && me.playPoints < 2 &&
         me.maxPlayPoints >= 2) {
       // Recover on the first flag so a Gunner can contribute to every remaining flag.
@@ -178,7 +258,7 @@ function lootSword({ me, enemy, decision, resolution, answers }) {
     }
     if (decision.type === "mainPhase" && me.playPoints >= 2) {
       const ready = answers.some(answer => answer.action?.type === "attack" && answer.action.target === enemy.leader.id);
-      if (ready) return first(answers, answer => answer.action?.type === "play" && answer.action.card === gunner.id);
+      if (ready || replaceFlag) return first(answers, answer => answer.action?.type === "play" && answer.action.card === gunner.id);
     }
   }
 
