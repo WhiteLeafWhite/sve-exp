@@ -5,5 +5,6 @@
 | 对手 | 已归档 | 主教胜–负 |
 |---|---:|---:|
 | [破坏巫师](cQZr8Z/index.md) | 5 | 3–2 |
+| [侮蔑龙](zQrwne/index.md) | 5 | 0–5 |
 
 [每五局构筑检查](construction.md) · [验证条件](protocol.json) · [主教 40/10](bishop.json)
