@@ -1,6 +1,6 @@
 # 透京耶菈 · 白牙与萝蕾娜
 
-选表阶段为构筑 B，三套固定对手各占三分之一。定稿后 45 局为 21–24。主战者为 伊莉丝（BP01-LD11）。[模拟器牌表](bp20-150-final.json) · [逐局成绩](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/index.md)
+选表阶段为构筑 B，三套固定对手各占三分之一。定稿后首批 45 局为 21–24。随后固定同一套 B 完整独立验证 300 局，对巫师 55–45、侮蔑龙 43–57、财宝皇室 56–44。三套对手共用以下 40/10。主战者为伊莉丝（BP01-LD11）。[模拟器牌表](bp20-150-final.json) · [300 局先后攻、伤害与复盘](bp20-fixed-results.md) · [最初选表记录](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/index.md)
 
 ## 主牌 · 40 张
 

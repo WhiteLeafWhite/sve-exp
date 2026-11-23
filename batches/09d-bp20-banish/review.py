@@ -69,6 +69,11 @@ for key, name in KEYS.items():
     existing = diary.read_text("utf-8")
     if anchor not in existing:
         diary.write_text(existing.rstrip()+f"\n\n{anchor}\n\n{summary} 保留本组共同 E 完成同条件比较。[五局复盘]({key}/reviews/01.md)\n", "utf-8")
+if len(records)==3:
+    tips.extend(["## 三个消灭目标各练什么", "",
+                 f"- 对巫师第 4 局，敌方 T6 进化里榭娜已经检索完毕，主教在交接回合的 Quick 窗口消灭她。主教在 T9 处理阿克西雅，T27 留下的天冥用 13 攻收尾。给第一张消灭估值时，也要算巫师仍可从 EX 使用的牌。[对巫师第 4 局]({URL}/cQZr8Z/games/04.md)",
+                 f"- 对龙族第 5 局，T14 成功消灭侮蔑绝杰。T17 另一张嘉鲁蜜儿自带的灭牙接出第二名攻击手，5、3 点攻击加狂信者的 1 点能力伤害刚好打满 9 血。去掉旧触发源后仍要数新登场的疾驰。[对龙族第 5 局]({URL}/zQrwne/games/05.md)",
+                 f"- 对皇室第 5 局，主教解掉强袭盗贼并消灭芭芭萝丝，9 血交回合。另一个强袭盗贼还在，对手保有吉鲁涅莉婕的超进化，甘露打 2，两个攻击手打 4、3。选择移除目标前，逐一算活下来的从者能否凑满 9 点。[对皇室第 5 局]({URL}/t7B32v/games/05.md)"])
 write(ROOT/"index.md", rows)
 write(SKILL, tips)
 (ROOT/"summary.json").write_text(json.dumps(records, ensure_ascii=False, indent=2)+"\n", "utf-8")

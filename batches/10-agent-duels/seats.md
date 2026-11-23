@@ -21,3 +21,5 @@ node "$table/seat.mjs" act meta <ticket> <选项序号> turn "先保留偶像数
 两个 seat 可分别编写自己的 `pilots/bishop.mjs` 或 `pilots/meta.mjs`，导出 `choose({seat,key,view,answers})`。策略仅依据座位视野，返回合法选项下标或 `null`（交给公平搜索）。主教可另导出 `baseRevision` 选择 r2、r3 或 r4。策略在一局开始时冻结，裁判保存内容指纹和源码快照。局中实际选项以 `seat.mjs` 为准。
 
 如需试改牌表，把主教候选保存为 `decks/bishop.json`，主流候选保存为 `decks/<分享码>.json`。三个对手共用的主教于下一循环开始时冻结。在主流一侧，每个区域以相对最初原表的换入与移出张数之较大值计数，两区加总并计入主战者更换，最多五张。原表允许保有之前冻结的禁限例外。每局结束后，可在 `<分享码>/notes/NN-bishop.md` 或 `NN-meta.md` 写各自的复盘，下一次整理会把文字加入逐局手记。训练者在组间更新职业打法，构筑张数的变化归入构筑日志。
+
+打满五场后，裁判运行 `python -B -X utf8 "$table/checkpoint.py" <组号>`。这一步逐局校验提交的两副实际牌表、策略快照、手选次数与双方的复盘，并把实战题写入对应职业的 `references/agent-duels.md`。达到周额度停止条件时，可传 `--through <最后一场完成的全局局号>` 整理不足五场的尾组。

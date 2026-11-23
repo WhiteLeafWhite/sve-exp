@@ -49,6 +49,13 @@ assert(changes<=5,"Opponent exceeds five changes against the original fixed list
 const decks=[b,m].map(d=>rt.toDeckList(d));
 assert.deepEqual(rt.formatProblems(b,"standard",list,catalog,engine.validateDeck(decks[0],{deckRestrictions:true})),[]);
 assert.deepEqual(engine.validateDeck(decks[1],{deckRestrictions:true}),[]);
+const originalRestrictions=rt.formatProblems(src,"standard",list,catalog,[]);
+const cardCopies=(deck,id)=>[...Object.entries(deck.main),...Object.entries(deck.evolve)]
+  .reduce((sum,[printing,copies])=>sum+(catalog.printing(printing)?.id===id?copies:0),0);
+for(const issue of rt.formatProblems(m,"standard",list,catalog,[])){
+  assert(originalRestrictions.some(initial=>initial.kind===issue.kind && initial.card===issue.card),"New restriction: "+issue.card);
+  assert(cardCopies(m,issue.card)<=cardCopies(src,issue.card),"Exceeded original exception: "+issue.card);
+}
 const out=join(root,key,"replays",String(n).padStart(2,"0")+".json");
 assert(!existsSync(out),"Game already completed: "+id);
 const prefix=join(work,"progress.json");

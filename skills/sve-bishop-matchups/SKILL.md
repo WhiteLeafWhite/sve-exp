@@ -11,7 +11,9 @@ description: 用 SVE NEXT 练习 Shadowverse EVOLVE 日版 BP20 主教，陪练�
 4. 提交引擎列出的合法动作。自定义主教使用自己可见的信息和公平抽样，三个对手用桌面困难预设。局中根据可见动作更新推测，赛后再打开全视角录像核查。将一次复盘写成「当时看到什么、选择了什么、另一条合法线路及其代价」。[主教决策程序](scripts/bishop-player.mjs) · [互动与分支工具](scripts/practice.mjs)
 5. 每五局检查起手、最危险的一个对手回合、核心牌抽到／打出／实际进场的差别。把换出的卡、换入的卡、张数及想解决的问题写进构筑日志。把可复用的出牌顺序、例外、对应录像输入点写入打法。保留对手原表，平衡先后攻，选好构筑后用新种子独立验证。[每五局构筑日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/construction.md)
 
-固定百局阶段的最新重练题随每五局更新，选择本次对手即可。[巫师](references/fixed-cQZr8Z.md) · [龙族](references/fixed-zQrwne.md) · [皇室](references/fixed-t7B32v.md)
+固定百局阶段，白牙萝蕾娜对巫师 55 胜、龙族 43 胜、皇室 56 胜。对龙先攻时优先练习 T5–T9 的去除与施压取舍，对巫师后攻时重点看对方先铺偶像后的解场窗口。按照对手和先后攻选题。[百局统计与斩杀类型](references/bp20-fixed-results.md) · [巫师](references/fixed-cQZr8Z.md) · [龙族](references/fixed-zQrwne.md) · [皇室](references/fixed-t7B32v.md)
+
+双 agent 对练时，主教席和对手席各读自己的玩家视角。每个三职业循环冻结共同主教，三种主流各自与最初原表比较，换动最多五张。把两方亲自选择的关节点、委托给本方策略的操作及每一局的理由一同保存。[双方座位与录像操作](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/seats.md)
 
 检验防守卡位时，逐局看神弓座天使是否活到伤害结算、信仰的一击是否赶得上消灭触发源。练习先解场时，用同一份牌重演炎术、灾藤和炎术的顺序，记录龙族余下的攻击与直伤。[神弓两卡位实测](references/lyrial.md) · [快速消灭的实战目标](references/banish.md) · [龙族 r4 打法与配对实录](references/dragon-r4.md)
 
