@@ -49,6 +49,8 @@
 
 **对龙有足够体力时，先算进化后的灾藤值几攻。** 在同牌序的困难龙第 85 局，T15 主教 25 血、手中炎术、两张耶菈的祈祷，场上有直立的 5/5 灾藤和 6/6 圣士郎。对面是直立的 3/1 团结者、横置的 4/3 祈祷者。圣士郎的第二次 2 伤点团结者，再用灾藤撞祈祷者，确实能清掉两体。灾藤吃下 4 点战斗伤害后只剩 1 防，龙的烈绝的灭牙给所有从者各打 1，把它一起带走，这一线最终落败。另一份实战把 2 伤打在祈祷者上，保留两名健康的从者。T16 承受 4、1、3 后仍有 17 血。T17 炎术打 1、圣士郎攻 10、确信打 2、灾藤攻 7，凑齐对手的 20 血。先算交换后剩几防、对方的全场伤害要花几费，再比较能省下的体力与下回合少掉的攻击。[选择两体的断点](http://127.0.0.1:5170/practice/index.html?replay=BP20-trained-zQrwne-15.json&at=117&seat=0) · [留灾藤的实战](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/candidate/zQrwne/games/85.md) · [清两体的实战](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/zQrwne/games/15.md)
 
+**圣士郎进化，先问手里的承担者有没有第二种免费登场方式。** 困难巫师第 88 牌序，T6 主教 0 PP，手里同时有三费的坚定不移的祈祷和一费承担者。直接免费放承担者可以回两次、打两次 2，再用圣士郎攻击，处理两名里榭娜。免费放坚定祈祷也能做完这些事。祈祷先找到都市，下一张透京减 2，使承担者在 0 PP 时仍能登场。下一回合能用都市检索歪曲，去掉巫师 4 攻的破坏的随从。两线的 T6 都从 19 回到 21，先放承担者的实战 T13 以 −1／28 负，先放祈祷的实战 T20 以 16／−2 胜。交操作前还要数有没有给祈祷和承担者各留一格。[从圣士郎进化选择处接手](http://127.0.0.1:5170/practice/index.html?replay=BP20-trained-cQZr8Z-18.json&at=18&seat=0) · [先放承担者](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/cQZr8Z/games/18.md) · [先放祈祷](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/candidate/cQZr8Z/games/88.md)
+
 ## 冷门主轴的证据
 
 SVE Helper 本次筛选出 38 份 BP20 主教公开牌表。白牙＋萝蕾娜同表出现 2 份，希弥佳＋安息神殿出现 15 份。勒碧丝＋封印同样只有 2 份，但在相同三组对手的选表阶段仅 3/30 胜，白牙版本为 20/30。对真人可以把「能否预判回复、解场与直伤」列作待验证的问题。困难 Bot 的完整信息设置只检验这套牌承受强力对抗时的表现。[公开样本](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/source-sample.json) · [同条件选表](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/selected.json)
