@@ -163,6 +163,9 @@ function summarize(number) {
     "主教"+order+"，起手为"+handNames(hand)+"，"+mulligan[0]+"。"+foe+mulligan[1]+"。","",
     "[此分支的原生录像](../"+basename(drillFile)+") · [原局逐回合日志](../../"+key+"/games/"+
       basename(r.practice.source,".json")+".md) · [同组重练目录](../logs.md)","",
+    ...(r.practice.verifiedPositions ? ["逐步核对了断点前的 "+r.practice.verifiedPositions+" 个盘面，包含双方主牌库顺序和所有已用的进化卡。"+
+      (r.practice.evolveSlots.length ? "闲置进化位由"+r.practice.evolveSlots.map(s=>name(s.from)+"换为"+name(s.to)).join("、")+"。" : "进化区与原局相同。")+
+      "双方在输入 "+r.practice.plannersRestartedAt+" 重新开始搜索。",""] : []),
     "## 重练决定","",...marked.map(m=>"- "+m),""
   ] : originalLog;
   const seatTurns = [0,0];
