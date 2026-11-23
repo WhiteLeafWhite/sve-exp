@@ -24,3 +24,5 @@ description: 在 SVE NEXT 日版 BP20 用 t7B32v「20财宝」皇室对练，核
 已经有三面海贼旗。先算把炮手放在哪一次旗前，能多打几段伤害，再开始行动。[从 T8 执财宝皇室](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-t7B32v-01.json&at=37&seat=1)
 
 对面梦羊触发后，先计算用一次小伤害消耗防止能否保住后续的大段伤害。[一次伤害防止的实战](references/sacred-sheep.md)
+
+核对两个护符的五费盘面，数清天曜战骑当天的疾驰、回复和交回合后的守护。[同牌序取舍](references/heavenly-knight.md)

@@ -6,7 +6,7 @@
 |---|---|---|---:|---:|---:|---:|---:|
 | 破坏巫师 | 3/5（60%，23–88%） | 4/5（80%，38–96%） | 5 | 0 | 1 | 2 | 2 |
 | 侮蔑龙 | 2/5（40%，12–77%） | 3/5（60%，23–88%） | 5 | 0 | 1 | 1 | 1 |
-| 财宝皇室 | — | — | 0 | 0 | 0 | 0 | 0 |
+| 财宝皇室 | 0/5（0%，0–43%） | — | 0 | 0 | 0 | 3 | 1 |
 
 ## 破坏巫师
 
@@ -34,7 +34,12 @@
 
 ## 财宝皇室
 
-主教先攻胜/场数，K 为 0/0、F 为 0/0。后攻 K 为 0/0、F 为 0/0。战骑在 0 局攻击主战者并造成正伤害，合计 0 点。对手在 0 局对战骑宣告攻击。
+主教先攻胜/场数，K 为 0/3、F 为 0/0。后攻 K 为 0/2、F 为 0/0。战骑在 1 局攻击主战者并造成正伤害，合计 4 点。对手在 1 局对战骑宣告攻击。
 
 | 牌序 | K 结果、中文战报、复盘、录像 | F 结果、中文战报、复盘、录像 |
 |---:|---|---|
+| 1 | 负 · [战报](candidate/t7B32v/games/01.md) · [复盘](candidate/t7B32v/reviews/01.md#game-01) · [录像](candidate/t7B32v/replays/01.json) | 待配对 |
+| 2 | 负 · [战报](candidate/t7B32v/games/02.md) · [复盘](candidate/t7B32v/reviews/01.md#game-02) · [录像](candidate/t7B32v/replays/02.json) | 待配对 |
+| 3 | 负 · [战报](candidate/t7B32v/games/03.md) · [复盘](candidate/t7B32v/reviews/01.md#game-03) · [录像](candidate/t7B32v/replays/03.json) | 待配对 |
+| 4 | 负 · [战报](candidate/t7B32v/games/04.md) · [复盘](candidate/t7B32v/reviews/01.md#game-04) · [录像](candidate/t7B32v/replays/04.json) | 待配对 |
+| 5 | 负 · [战报](candidate/t7B32v/games/05.md) · [复盘](candidate/t7B32v/reviews/01.md#game-05) · [录像](candidate/t7B32v/replays/05.json) | 待配对 |
