@@ -5,3 +5,5 @@
 破坏巫师 2 胜 3 负，主教在 1 局取入手牌，1 局让神弓座天使进场。 [五局复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09b-bp20-lyrial/cQZr8Z/reviews/01.md)
 
 侮蔑龙 0 胜 5 负，主教在 2 局取入手牌，2 局让神弓座天使进场。 [五局复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09b-bp20-lyrial/zQrwne/reviews/01.md)
+
+财宝皇室 4 胜 1 负，主教在 4 局取入手牌，3 局让神弓座天使进场。 [五局复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09b-bp20-lyrial/t7B32v/reviews/01.md)
