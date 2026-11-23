@@ -5,7 +5,7 @@
 | 对手 | 天曜战骑 K | 双灾藤 F | 完整配对 | F 负→K 胜 | F 胜→K 负 | K 登场局 | 出牌时有两护符的局数 |
 |---|---|---|---:|---:|---:|---:|---:|
 | 破坏巫师 | 12/25（48%，30–67%） | 16/25（64%，45–80%） | 25 | 1 | 5 | 9 | 7 |
-| 侮蔑龙 | 11/25（44%，27–63%） | 8/20（40%，22–61%） | 20 | 3 | 2 | 8 | 5 |
+| 侮蔑龙 | 11/25（44%，27–63%） | 11/25（44%，27–63%） | 25 | 3 | 3 | 8 | 5 |
 | 财宝皇室 | 8/20（40%，22–61%） | 11/20（55%，34–74%） | 20 | 1 | 4 | 6 | 1 |
 
 ## 破坏巫师
@@ -42,7 +42,7 @@
 
 ## 侮蔑龙
 
-主教先攻胜/场数，K 为 8/13、F 为 4/10。后攻 K 为 3/12、F 为 4/10。战骑在 7 局攻击主战者并造成正伤害，合计 34 点。对手在 3 局对战骑宣告攻击。
+主教先攻胜/场数，K 为 8/13、F 为 7/13。后攻 K 为 3/12、F 为 4/12。战骑在 7 局攻击主战者并造成正伤害，合计 34 点。对手在 3 局对战骑宣告攻击。
 
 | 牌序 | K 结果、中文战报、复盘、录像 | F 结果、中文战报、复盘、录像 |
 |---:|---|---|
@@ -66,11 +66,11 @@
 | 18 | 胜 · [战报](candidate/zQrwne/games/18.md) · [复盘](candidate/zQrwne/reviews/04.md#game-18) · [录像](candidate/zQrwne/replays/18.json) | 负 · [战报](control/zQrwne/games/18.md) · [复盘](control/zQrwne/reviews/04.md#game-18) · [录像](control/zQrwne/replays/18.json) |
 | 19 | 胜 · [战报](candidate/zQrwne/games/19.md) · [复盘](candidate/zQrwne/reviews/04.md#game-19) · [录像](candidate/zQrwne/replays/19.json) | 负 · [战报](control/zQrwne/games/19.md) · [复盘](control/zQrwne/reviews/04.md#game-19) · [录像](control/zQrwne/replays/19.json) |
 | 20 | 负 · [战报](candidate/zQrwne/games/20.md) · [复盘](candidate/zQrwne/reviews/04.md#game-20) · [录像](candidate/zQrwne/replays/20.json) | 负 · [战报](control/zQrwne/games/20.md) · [复盘](control/zQrwne/reviews/04.md#game-20) · [录像](control/zQrwne/replays/20.json) |
-| 21 | 胜 · [战报](candidate/zQrwne/games/21.md) · [复盘](candidate/zQrwne/reviews/05.md#game-21) · [录像](candidate/zQrwne/replays/21.json) | 待配对 |
-| 22 | 负 · [战报](candidate/zQrwne/games/22.md) · [复盘](candidate/zQrwne/reviews/05.md#game-22) · [录像](candidate/zQrwne/replays/22.json) | 待配对 |
-| 23 | 负 · [战报](candidate/zQrwne/games/23.md) · [复盘](candidate/zQrwne/reviews/05.md#game-23) · [录像](candidate/zQrwne/replays/23.json) | 待配对 |
-| 24 | 负 · [战报](candidate/zQrwne/games/24.md) · [复盘](candidate/zQrwne/reviews/05.md#game-24) · [录像](candidate/zQrwne/replays/24.json) | 待配对 |
-| 25 | 胜 · [战报](candidate/zQrwne/games/25.md) · [复盘](candidate/zQrwne/reviews/05.md#game-25) · [录像](candidate/zQrwne/replays/25.json) | 待配对 |
+| 21 | 胜 · [战报](candidate/zQrwne/games/21.md) · [复盘](candidate/zQrwne/reviews/05.md#game-21) · [录像](candidate/zQrwne/replays/21.json) | 胜 · [战报](control/zQrwne/games/21.md) · [复盘](control/zQrwne/reviews/05.md#game-21) · [录像](control/zQrwne/replays/21.json) |
+| 22 | 负 · [战报](candidate/zQrwne/games/22.md) · [复盘](candidate/zQrwne/reviews/05.md#game-22) · [录像](candidate/zQrwne/replays/22.json) | 负 · [战报](control/zQrwne/games/22.md) · [复盘](control/zQrwne/reviews/05.md#game-22) · [录像](control/zQrwne/replays/22.json) |
+| 23 | 负 · [战报](candidate/zQrwne/games/23.md) · [复盘](candidate/zQrwne/reviews/05.md#game-23) · [录像](candidate/zQrwne/replays/23.json) | 胜 · [战报](control/zQrwne/games/23.md) · [复盘](control/zQrwne/reviews/05.md#game-23) · [录像](control/zQrwne/replays/23.json) |
+| 24 | 负 · [战报](candidate/zQrwne/games/24.md) · [复盘](candidate/zQrwne/reviews/05.md#game-24) · [录像](candidate/zQrwne/replays/24.json) | 负 · [战报](control/zQrwne/games/24.md) · [复盘](control/zQrwne/reviews/05.md#game-24) · [录像](control/zQrwne/replays/24.json) |
+| 25 | 胜 · [战报](candidate/zQrwne/games/25.md) · [复盘](candidate/zQrwne/reviews/05.md#game-25) · [录像](candidate/zQrwne/replays/25.json) | 胜 · [战报](control/zQrwne/games/25.md) · [复盘](control/zQrwne/reviews/05.md#game-25) · [录像](control/zQrwne/replays/25.json) |
 
 ## 财宝皇室
 

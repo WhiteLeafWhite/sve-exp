@@ -28,6 +28,7 @@
 - F 版本。第 6 局 T22 输入 185 还有 8 PP，实际分身之术·煤木万裁攻击龙族主战者。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/zQrwne/games/06.md)
 - F 版本。第 11 局 T15 输入 122 还有 2 PP，实际永久之盾·席翁攻击龙族主战者。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/zQrwne/games/11.md)
 - F 版本。第 16 局 T22 输入 200 还有 10 PP，实际分身之术·煤木万裁攻击龙族主战者。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/zQrwne/games/16.md)
+- F 版本。第 21 局 T21 输入 173 还有 10 PP，实际望蜀的裁决者·天冥攻击龙族主战者。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/zQrwne/games/21.md)
 
 ## 对财宝皇室
 
