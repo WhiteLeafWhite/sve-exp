@@ -57,3 +57,7 @@
 ## 第 66–70 局 · 主教 5–0
 
 第 67 局 T8，主教体力从 17 到 7。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 199 前重练，当时有 10 PP，从「魔污区政府职员·灾藤攻击巫师主战者」和「使用白牙神殿」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/67.md)
+
+## 第 71–75 局 · 主教 3–2
+
+第 72 局 T13，主教体力从 12 到 -1。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 96 前重练，当时有 1 PP，从「使用新约都市·透京」和「起动坚定不移的祈祷的能力」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/72.md)
