@@ -2,6 +2,10 @@
 
 每批十局。每局都有 SVE NEXT 录像与按回合整理的中文日志。战报中的生命先列主教，后列对手。
 
+[三组二十局战绩](skills/sve-bishop-matchups/references/results.md) · [最终主教牌表与张数](skills/sve-bishop-matchups/references/deck.md) · [导入牌表](skills/sve-bishop-matchups/references/bishop-final.json) · [三对局打法](skills/sve-bishop-matchups/references/playbook.md) · [可供其他会话使用的 skill](skills/sve-bishop-matchups/SKILL.md)
+
+跨设备使用时，安装完整的 `skills/sve-bishop-matchups` 目录，在新会话中调用 `$sve-bishop-matchups`。每局的 JSON 可在 SVE NEXT 0.4.3 的 Watch replays 中打开。
+
 | 批次 | 对手 | 资料 |
 |---|---|---|
 | 01 | zQrwne「20五妹」 | [逐局日志与录像](batches/01-zQrwne/games.md) · [逐局复盘](batches/01-zQrwne/review.md) · [打法与卡组](batches/01-zQrwne/matchup.md) |
@@ -10,3 +14,4 @@
 | 04 | t7B32v「20财宝」，第 1–10 局 | [录像、日志和卡组](batches/04-t7B32v/index-01.md) · [逐局复盘](batches/04-t7B32v/review-01.md) |
 | 05 | cQZr8Z「20二妹」，第 11–20 局 | [录像、日志和卡组](batches/05-cQZr8Z/index-02.md) · [逐局复盘](batches/05-cQZr8Z/review-02.md) |
 | 06 | zQrwne「20五妹」，第 11–20 局 | [录像、日志和卡组](batches/06-zQrwne/index-02.md) · [逐局复盘](batches/06-zQrwne/review-02.md) |
+| 07 | t7B32v「20财宝」，第 11–20 局 | [录像、日志和卡组](batches/07-t7B32v/index-02.md) · [逐局复盘](batches/07-t7B32v/review-02.md) |

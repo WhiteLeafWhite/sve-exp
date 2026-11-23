@@ -1,0 +1,141 @@
+// SVE NEXT 0.4.3. Pass the simulator's PlannerBot and MEDIUM_V2 exports.
+// The referee supplies the session. This seat's custom evaluation reads PlayerView.
+const priority = {
+  zQrwne: {'BP15-057':5.5,'BP05-052':3,'BP15-066':2.7,'BP20-062':2.2,'BP05-055':2.5},
+  cQZr8Z: {'BP20-048':3,'BP20-040':2.4,'BP05-T02':3,'BP05-040':2.7,'BP20-T04':1},
+  t7B32v: {'BP19-019':5,'BP15-020':4,'BP05-018':3,'BP20-019':2.4,'BP19-026':2.6}
+};
+const bodies = new Set(['BP18-097','BP18-099','BP18-101','BP18-105','BP18-110','BP18-116','BP18-T10','BP18-117']);
+const contains=(cards,def)=>cards.some(c=>c.def===def);
+
+function matchupValue(view, seat, opponentKey) {
+  const mine=view.players[seat], foe=view.players[1-seat];
+  const field=mine.field.filter(c=>!c.hidden), enemy=foe.field.filter(c=>!c.hidden);
+  const units=field.filter(c=>c.type==='follower'), attackers=enemy.filter(c=>c.type==='follower');
+  const shions=units.filter(c=>c.def==='BP14-090').length;
+  const damageEngines=units.filter(c=>c.def==='BP18-097'||c.def==='BP18-099').length;
+  const prayers=field.filter(c=>c.def==='BP02-095').length;
+  let score=2*damageEngines+shions*(opponentKey==='t7B32v'?3:4.2);
+  for(const c of units){
+    if(c.def==='BP18-099')score+=1.1+.45*units.filter(x=>bodies.has(x.def)).length;
+    if(c.def==='BP15-094')score+=1.3+.55*damageEngines;
+    if(c.def==='BP18-100'&&prayers)score+=2.3+.65*damageEngines;
+  }
+  score+=Math.min(2,units.length)*Math.min(2,prayers)*.65;
+  score-=Math.max(0,field.length-units.length-2)*2.8;
+  for(const c of enemy)score-=priority[opponentKey]?.[c.def]||0;
+  const attack=attackers.reduce((n,c)=>n+Math.max(0,c.attack-shions),0);
+  const block=units.filter(c=>c.keywords.includes('ward')).length;
+  const reach=foe.maxPlayPoints<4?1:opponentKey==='zQrwne'?6:opponentKey==='t7B32v'?5:4;
+  score-=.6*Math.max(0,attack+reach-block*2-mine.leaderDefense);
+  score-=.30*Math.max(0,mine.leaderDefense-20);
+  if(opponentKey==='t7B32v'&&mine.deckCount<9)score-=.85*(9-mine.deckCount);
+  return score;
+}
+
+// An estimate for comparing nonterminal positions. Only face-up cards and public
+// resource counts go into it. The search still resolves actual responses normally.
+function nextTurnPressure(view, seat, opponentKey, hasTrait) {
+  const me = view.players[seat], foe = view.players[1-seat];
+  const field = foe.field.filter(c=>!c.hidden && !c.boxed);
+  const units = me.field.filter(c=>!c.hidden && c.type==='follower');
+  const shields = units.filter(c=>c.def==='BP14-090' && !c.abilitiesLost).length;
+  const wards = units.filter(c=>c.keywords.includes('ward'));
+  const count = (zone,def) => zone.filter(c=>c.def===def).length;
+  const hits = n => Math.max(0,n-shields);
+  const pp = Math.min(10,foe.maxPlayPoints+1);
+  let direct = 0, reserve = 0;
+  if(opponentKey==='cQZr8Z'){
+    const idols = field.filter(c=>hasTrait(c,'アイドル')).length;
+    const axia = [...field,...foe.ex].some(c=>c.def==='BP20-040' && c.evolvedWith==null);
+    if(axia && foe.superEvolutionPoints>0 && pp>=5) direct+=hits(idols);
+    direct+=count(field,'BP05-T02')*hits(2);
+    if(idols>=2) direct+=count(field,'BP20-048')*hits(2);
+    reserve=pp>=5?2:0;
+  } else if(opponentKey==='t7B32v'){
+    const flagTarget = field.some(c=>hasTrait(c,'八獄') && hasTrait(c,'盗賊'));
+    if(flagTarget) direct+=count(foe.ex,'BP19-T01')*hits(1);
+    if(me.cemetery.length>=10 && units.length) direct+=count(foe.ex,'BP15-T01')*hits(2);
+    reserve=pp>=4?3:1;
+  } else {
+    const torch=count(foe.ex,'BP15-064'), fangs=count(foe.ex,'BP15-PR13');
+    const galm=field.some(c=>c.def==='BP05-052') || (pp>=5 && contains(foe.ex,'BP05-052'));
+    if(galm) direct+=hits(3)*Math.min(3,1+torch+fangs);
+    if(field.length || galm) direct+=torch*hits(1);
+    if(pp>=7 && fangs && contains(foe.ex,'BP15-057')) reserve+=hits(5);
+    reserve+=pp>=7?5:pp>=5?3:1;
+  }
+  const strikes=field.filter(c=>c.type==='follower').map(c=>hits(c.attack)).sort((a,b)=>b-a);
+  // A Ward can absorb one attack in this estimate. Removal and further attacks
+  // from hidden hands are compared by the sampled engine search.
+  const unblocked=strikes.slice(wards.length).reduce((sum,n)=>sum+n,0);
+  const cushion=me.leaderDefense-unblocked-direct-reserve;
+  let value=-1.3*Math.max(0,3-cushion);
+  if(foe.leaderDefense<=12 && units.length) value+=.28*Math.min(10,units.reduce((s,c)=>s+c.attack,0));
+  if(opponentKey==='t7B32v' && me.deckCount<=6) value-=1.25*(7-me.deckCount);
+  return value;
+}
+
+export function makeBishopPlayer(engine, {PlannerBot, MEDIUM_V2}, {seat=0, opponentKey, seed, revision=2}) {
+  if(!Object.hasOwn(priority,opponentKey))throw Error('Unknown matchup: '+opponentKey);
+  if(revision!==1 && revision!==2)throw Error('Unknown bishop revision');
+  const hasTrait=(c,trait)=>engine.db.get(c.def).traits.includes(trait);
+  const augment=base=>(v,p)=>base(v,p)+(v.result?0:(p===seat?1:-1)*(matchupValue(v,seat,opponentKey)
+    +(revision===2?nextTurnPressure(v,seat,opponentKey,hasTrait):0)));
+  const refinement=revision===2?{
+    samples:3, beamWidth:16, maxSimulations:1900, maxDepth:16, replyPlans:5,
+    innerPlans:[3,3], innerSimulations:440, innerBeam:6, replyLethal:260,
+    lethalSearch:1400, commonRandom:true, drawFirst:true,
+    lineSlots:{lines:3,margin:3,key:'set'}
+  }:{};
+  const search=new PlannerBot(engine,{
+    ...MEDIUM_V2, cheat:false, seed, samples:2, choiceDedupe:true, ...refinement,
+    evaluator:augment(MEDIUM_V2.evaluator), replyEvaluator:augment(MEDIUM_V2.replyEvaluator),
+    greedyEvaluator:augment(MEDIUM_V2.greedyEvaluator)
+  });
+  let myTurn=-1, startField=new Set(), finishTarget=null;
+  return {
+    revision,
+    get stats(){return search.stats;},
+    decide(session){
+      const v=session.view(seat), me=v.players[seat], foe=v.players[1-seat], d=v.decision;
+      if(!d)throw Error('Bishop is not the deciding seat');
+      if(v.activePlayer===seat && v.turn!==myTurn) {
+        myTurn=v.turn;startField=new Set(me.field.filter(c=>!c.hidden).map(c=>c.id));finishTarget=null;
+      }
+      if(d.type==='mulligan'){
+        const hand=me.hand.filter(c=>!c.hidden);
+        const early=hand.some(c=>['BP18-120','BP18-117','BP18-100'].includes(c.def));
+        const pair=contains(hand,'BP18-097')&&hand.some(c=>['BP18-104','BP02-095','BP18-105','BP18-110'].includes(c.def));
+        if(revision===1)return {type:'mulligan',redraw:!early&&!pair};
+        const starters=hand.filter(c=>['BP18-120','BP18-117','BP18-100'].includes(c.def));
+        if(pair || starters.length>=2 || (early && contains(hand,'BP18-097')))return {type:'mulligan',redraw:false};
+        if(hand.filter(c=>c.cost>=4).length>=3 || hand.every(c=>c.cost>=3))return {type:'mulligan',redraw:true};
+        return search.decide(session);
+      }
+      if(finishTarget&&d.type==='selectCards'&&d.reason==='target'&&d.candidates.includes(finishTarget)){
+        const id=finishTarget;finishTarget=null;return {type:'selectCards',cards:[id]};
+      }
+      if(d.type==='mainPhase'&&opponentKey==='zQrwne'){
+        finishTarget=null;
+        const field=me.field.filter(c=>!c.hidden), enemy=foe.field.filter(c=>!c.hidden);
+        const ward=enemy.filter(c=>c.engaged&&c.keywords.includes('ward'));
+        const total=ids=>[...ids].reduce((s,id)=>s+(field.find(c=>c.id===id)?.attack||0),0);
+        const attacks=d.actions.filter(a=>a.type==='attack');
+        const face=attacks.filter(a=>a.target===foe.leader.id);
+        if(face.length&&total(new Set(face.map(a=>a.attacker)))>=foe.leaderDefense)return {type:d.type,action:face[0]};
+        if(ward.length===1){
+          const target=ward[0];
+          const ready=attacks.filter(a=>a.target===target.id&&(startField.has(a.attacker)||field.find(c=>c.id===a.attacker)?.keywords.includes('storm')));
+          if(total(new Set(ready.map(a=>a.attacker)))>=foe.leaderDefense){
+            const cards=[...me.hand.filter(c=>!c.hidden),...me.ex];
+            const answer=d.actions.find(a=>a.type==='play'&&cards.some(c=>c.id===a.card&&
+              ((c.def==='BP18-123'&&target.defense<=2)||(c.def==='BP18-119'&&target.defense<=4))));
+            if(answer){finishTarget=target.id;return {type:d.type,action:answer};}
+          }
+        }
+      }
+      return search.decide(session);
+    }
+  };
+}
