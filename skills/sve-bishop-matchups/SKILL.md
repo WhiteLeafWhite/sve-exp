@@ -11,4 +11,6 @@ description: 用 SVE NEXT 练习 Shadowverse EVOLVE 日版 BP20 主教，陪练�
 4. 提交引擎列出的合法动作。自定义主教使用自己可见的信息和公平抽样，三个对手用桌面困难预设。局中根据可见动作更新推测，赛后再打开全视角录像核查。将一次复盘写成「当时看到什么、选择了什么、另一条合法线路及其代价」。[主教决策程序](scripts/bishop-player.mjs) · [互动与分支工具](scripts/practice.mjs)
 5. 每五局检查起手、最危险的一个对手回合、核心牌抽到／打出／实际进场的差别。把换出的卡、换入的卡、张数及想解决的问题写进构筑日志。把可复用的出牌顺序、例外、对应录像输入点写入打法。保留对手原表，平衡先后攻，选好构筑后用新种子独立验证。[每五局构筑日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/construction.md)
 
+固定百局阶段的最新重练题随每五局更新，选择本次对手即可。[巫师](references/fixed-cQZr8Z.md) · [龙族](references/fixed-zQrwne.md) · [皇室](references/fixed-t7B32v.md)
+
 复查此前七批时，使用历史牌表、打法版本与当时的样本。历史策略默认使用 r2，本批正式比较使用 r3。[历史战绩](references/results.md) · [历史牌表](references/bishop-final.json) · [历史打法](references/playbook.md) · [历史条件](references/method.md)
