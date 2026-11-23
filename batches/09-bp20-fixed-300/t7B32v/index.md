@@ -64,3 +64,8 @@
 | 58 | 后攻 | 胜 | T16 · 19／-3 | [日志](games/58.md) · [复盘](reviews/12.md#game-58) · [录像](replays/58.json) |
 | 59 | 先攻 | 负 | T16 · -1／21 | [日志](games/59.md) · [复盘](reviews/12.md#game-59) · [录像](replays/59.json) |
 | 60 | 后攻 | 胜 | T12 · 20／0 | [日志](games/60.md) · [复盘](reviews/12.md#game-60) · [录像](replays/60.json) |
+| 61 | 先攻 | 胜 | T21 · 14／-2 | [日志](games/61.md) · [复盘](reviews/13.md#game-61) · [录像](replays/61.json) |
+| 62 | 后攻 | 负 | T9 · 0／20 | [日志](games/62.md) · [复盘](reviews/13.md#game-62) · [录像](replays/62.json) |
+| 63 | 先攻 | 胜 | T21 · 31／-1 | [日志](games/63.md) · [复盘](reviews/13.md#game-63) · [录像](replays/63.json) |
+| 64 | 后攻 | 负 | T21 · 0／8 | [日志](games/64.md) · [复盘](reviews/13.md#game-64) · [录像](replays/64.json) |
+| 65 | 先攻 | 负 | T12 · 0／18 | [日志](games/65.md) · [复盘](reviews/13.md#game-65) · [录像](replays/65.json) |
