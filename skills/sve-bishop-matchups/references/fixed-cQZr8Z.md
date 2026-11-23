@@ -45,3 +45,7 @@
 ## 第 51–55 局 · 主教 3–2
 
 第 54 局 T13，主教体力从 12 到 0。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 91 前重练，当时有 1 PP，从「使用炎术检定A级」和「起动坚定不移的祈祷的能力」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/54.md)
+
+## 第 56–60 局 · 主教 2–3
+
+第 58 局 T13，主教体力从 25 到 14。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 138 前重练，当时有 2 PP，从「起动坚定不移的祈祷的能力」和「使用坚定不移的祈祷」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/58.md)
