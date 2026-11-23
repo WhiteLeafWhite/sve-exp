@@ -17,3 +17,7 @@
 - 第 13 场对破坏巫师，主教负。T9 输入 56 前的实战考虑为「攻击横置2/3祈祷者，保留4/2萝蕾娜。后续交个人公平策略。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/lessons/05.md)
 - 第 14 场对侮蔑龙，主教负。T9 输入 51 前的实战考虑为「对方下一回合自然达到觉醒，还有第二名团结者。两张玛文中先下第一张横置守护并保每回合回2，若活下来下回合3费可进化清场；另一张继续留作更多随从时取奔流。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/lessons/05.md)
 - 第 15 场对财宝皇室，主教负。T9 输入 74 前的实战考虑为「余2费下耶菈找祈祷，由2/2守护应对已经受伤的芭芭萝丝，后续交个人公平策略。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/lessons/05.md)
+- 第 16 场对破坏巫师，主教负。T8 输入 49 前的实战考虑为「赐予者攻击横置2/3祈祷者。留下白牙、都市与手中天冥，后续交个人公平策略。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/lessons/06.md)
+- 第 17 场对侮蔑龙，主教负。T8 输入 44 前的实战考虑为「4/4承担者攻击龙的主战者，留下直立5/5圣士郎和手中天冥、坚定祈祷；后续交个人公平策略。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/lessons/06.md)
+- 第 18 场对财宝皇室，主教负。T10 输入 68 前的实战考虑为「末1费起动坚定，让圣士郎第三次打2清副船长，自己再回1到20，并留下4/4圣士郎、2/2承担者和手里的炎术。后续交个人公平策略。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/lessons/06.md)
+- 第 19 场对破坏巫师，主教胜。T9 输入 52 前的实战考虑为「5攻萝蕾娜击倒横置3/4狂信者，留下2防。两名4防都清掉，后续对局交个人公平策略。」。[原局及两席赛后复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/lessons/07.md)

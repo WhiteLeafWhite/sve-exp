@@ -71,3 +71,31 @@
 ### 先回复、把水银留给巫师宣告攻击
 
 巫师第六局 T14 输入 105，主教 12 血，手有白牙、承担者，水银在 EX，巫师场上已有三名 3 攻狂信者。实战先在自己的主阶段用水银，抽到耶菈，靠祈祷在巫师回合开头回到 15。对方打 3＋1＋2，再由三名狂信者各攻 3，正好致命。重演 105 先下白牙、106 下承担者，107 保留 3 PP 结束，回到 14。T15 大红莲之术先打 3，输入 111 在第一次攻击时用水银，三击各 2，主教余 5。T16 自然抽到忒弥斯，清四体并留下白牙。T24 圣士郎 8、萝蕾娜 6、天冥 6，主教以 9／−5 获胜。若在 T14 多用炎术并付费进化，先交换一个狂信者，T15 也余 5，却在 T19 以 0／35 负。记住主教使用水银前巫师有多少能力伤害可以先打。对手改变顺序时，要从那个窗口的实际血量重算。[正式战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/games/06.md) · [保留水银的胜局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-06-hold.json) · [先交换狂信者](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-06-trade.json) 巫师席在同一发牌把大红莲 3、黑之章 1、祈祷者 2 全部提前后，水银仍把三次攻击各减到 2，主教只剩 2。T16 忒弥斯同样清掉四体，白牙回到 3，T19 以 0／35 负。复算时分别用 2 血和 5 血接自己的清场回合。[巫师先打直伤的重演](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-06-burn-first.json)
+
+巫七在 T19 提供了自己主阶段打水银的正例。主教 9 血，水银抽到玛文后仍能用 4＋3 PP 打出并进化，当回合清三体、将入场取的奔流留到 T21 消灭进化阿克西雅。T25 两次攻击与两次天冥起动打 20，T27 三次攻击打 16 收尾。评估水银时，把抽到某张牌之后仍能支付的部署费用，与对方首个攻击窗口之前能打的伤害一起算。[巫师第七局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/notes/07-bishop.md)
+
+独立困难巫师第 88 牌序 T6 输入 18，自己的 3 PP 已经花在圣士郎上，手中同时有坚定不移的祈祷和承担者，还有至少两个场位。圣士郎先放三费坚定祈祷，能找到都市，减费再使承担者以 0 PP 从手牌打出。圣士郎攻击横置里榭娜，承担者入场和免费进化两次回复，另一名里榭娜被两次 2 伤清掉。这样 T8 能用都市找到歪曲，并且还有费用将破坏的随从解掉，T20 以 16／−2 胜。若直接放承担者，同样能清场、回复 2，但三费祈祷留到 T8 支付，歪曲来不及用，T13 以 −1／28 负。只剩一个场位时，仍要给承担者预留落点。[先放坚定祈祷](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/candidate/cQZr8Z/games/88.md) · [直接放承担者](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/cQZr8Z/games/18.md)
+
+巫师在 T14 改为献掉崇拜者、保留暗黑创造物的分支中，T23 对面正好 23 血。先用旧天冥起动打 3，回复伤害清掉崇拜者。旧圣士郎攻 9，出新天冥以后旧天冥攻 7，新天冥再起动打 4，总共 23。第一名天冥的攻击可以排在第二名进场以后，第二名当回合也能发动起动能力。[巫七保留暗黑创造物的重演](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-07-keep-artifact.json)
+
+### 皇室后攻的二费随从、四费回复与最后一费
+
+皇六输入 1 还有更早的取舍。原手是萝蕾娜、白牙、灾藤、万裁，重抽后前两回合都空过。配对保留时，T4 灾藤先找坚定祈祷并进化回 1，T6 赐予者回复 2，T8 萝蕾娜与旧赐予者一起处理皇室三体。T18 分身攻 5、圣士郎攻 4，终局 8／−3。对皇室后攻，须把灾藤二费可下、白牙等三费跟进、萝蕾娜四费可用 EP 回复兼解场连起来评估。一张六费终结牌不必单独触发整手重抽。[保留原手的重演](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/royal-06-keep.json)
+
+另外四个预先选定的困难皇室牌序，后攻初手均有灾藤和萝蕾娜。保留 4 胜，整手重抽 3 胜。F 皇 14 另两张为都市、莉迪耶尔，保留时都市接灾藤并进化，T24 以 19／0 胜。重抽后到 T10 才第一次进化，T13 以 0／20 负。B 皇 90 两边都胜，重抽还早 10 个全局回合收尾。若已有一费都市检索或可靠三费跟进，倾向保留后攻二费灾藤、四费萝蕾娜。仍须结合整手多大的行动空间来判断。
+
+皇室第六局 T10，输入 57 的坚定祈祷先检索承担者，第二次再取圣士郎。减 2 后花 1 PP 打圣士郎，用最后一个后攻 EP 进化并放承担者。输入 66、67 两次 2 伤清直立 6/4 芭芭萝丝，最后 1 PP 在 68 起动同一张坚定祈祷，第三次 2 伤清 2/2 副船长。手上的炎术继续保留，自己从 17 回到 20，场上还有 4/4 和 2/2。若前一费先花来进化，或者先拿圣士郎而漏掉承担者，费用和回复次数都要重新核对。[皇室第六局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/t7B32v/notes/06-bishop.md)
+
+皇六 T18 输入 158，分身已经受过 2 伤，场上实际 5/3。它可以攻袭直立 2/3 炮手，击倒后留 1 防。三种实测的落点中，打脸或交换横置芭芭萝丝都会在 T19 死于海贼旗与炮手。清炮手后，皇室换用偷来的天冥、带黄金之靴的欧克托莉斯，总伤 7，主教还剩 3，T20 能再行动一次，T21 以 0／13 负。[分身清炮手](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/royal-06-cannon.json)
+
+### 龙族对局先算攻击次数与能力伤害
+
+龙族第六局 T8 输入 42，圣士郎已经进化并从手中放了耶菈的祈祷。此时都市给承担者，祈祷的全体加成后两名随从为 4/4、5/5，都能受一次 3 伤。若给圣士郎，就是 3/3、6/6，当前能打脸的承担者会少 1 攻，受到 3 伤也会离场。实战承担者先打 4，下一次祈祷加强后又打 5。后面龙仍以五次能力 3 和一次攻击 3 收尾。[龙族第六局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/notes/06-bishop.md)
+
+龙六 T16 输入 141 的实际手牌是双耶菈、祈祷与都市。都市只翻到炎术，水银在 EX。两名耶菈在回合末横置，保留两张 Quick。T17 龙先自伤，使原本已有 2 防的侮蔑的祈祷者继续受伤。团结者对守护宣攻时，157 用水银，158 用炎术，159 选祈祷者。主教 T17 余 17，T19 余 6，T23 以 0／11 负。若在 T16 提前让炎术除崇拜者或团结者，只保留水银，两路都在 T17 余 12，T19 落败。在自己的回合直接用炎术除 3/2 祈祷者，会改变下一回合哪些龙族从者能与守护交换。[保留两张 Quick](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-06-reserve.json)
+
+同一发牌的另一线在输入 145 先除 3/2 祈祷者，151 双耶菈横置，157 第一次攻击出水银。1 防崇拜者与 1 防团结者分别撞守护同归于尽，嘉鲁蜜儿三次打 2，T17 剩 14。T18 坚定、灾藤、天冥接上回复清场，T26 超进化萝蕾娜同回合处理两名嘉鲁蜜儿，T33 龙牌库抽空，主教 8／12 胜。留 17 的一线在 T23 负，选目标时除了回合末血量，还要逐个检查攻过守护后的存活从者。[主教先除祈祷者的胜线](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-06-priest.json)
+
+龙席也试出了反制。先 2 费进化侮蔑绝杰，用苍炎和炎爪清掉两面守护，配合两个侮蔑之国、纹章与祈祷者等效果，在首次攻击前六次自伤打 18。主教从 20 只剩 2，首次攻击 3 经水银减为 2，T17 仍以 0／11 负。要区分龙先交换守护和先靠能力解守护两种行动顺序，直到对方宣告攻击，水银都不能响应此前结算的能力。[龙先打能力伤害](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-06-burn-first.json)
+
+困难龙族第 85 牌序给出了保留攻击手的例外。T15 输入 117 主教 25 血，有两座耶菈的祈祷、直立 5/5 灾藤、6/6 圣士郎。对方是直立 3/1 团结者与横置 4/3 祈祷者。第二段回复伤害给团结者后，灾藤再与祈祷者战斗会剩 1 防，龙以烈绝的灭牙对所有随从各打 1，灾藤随即离场。这一线清两体却输了。把第二段 2 伤给祈祷者，5/5 灾藤保留。龙 T16 打 4、1、3，主教余 17。T17 炎术 1、圣士郎 10、确信 2、灾藤 7，正好 20。遇到高血、双祈祷和两名直立大随从，先算保住两个下回合攻击手的打点。第四次复盘后公共策略将这种情况交回基础搜索，后续须在新牌序验证。[先清两体的对照](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/zQrwne/games/15.md) · [留下灾藤的对照](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/candidate/zQrwne/games/85.md)

@@ -25,6 +25,75 @@ function destructionRune({ me, enemy, decision, resolution, answers }) {
   const targets = enemy.field.filter(card => !card.hidden && card.type === "follower");
   const wasteland = field.find(card => card.def === "BP20-055");
   const supplicant = field.find(card => card.def === "BP20-048" && !card.abilitiesLost);
+  const black = field.find(card => card.def === "BP20-T04" && !card.abilitiesLost);
+  const ward = targets[0];
+  if (decision.type === "mainPhase" && me.maxPlayPoints === 4 && !enemy.playPoints && targets.length === 1 &&
+      ward.engaged && ward.keywords?.includes("ward") && ward.def !== "BP14-090" && ward.attack >= 4 &&
+      field.some(card => card.def === "BP20-037" && !card.engaged && card.attack === 1) &&
+      field.filter(card => runeIdols.has(card.def)).length >= 2) {
+    const trade = first(answers, answer => answer.action?.type === "attack" && answer.action.target === ward.id &&
+      field.some(card => card.id === answer.action.attacker && card.attack === 1));
+    if (trade !== null) {
+      // Two two-damage abilities and a one-power follower free the stronger attackers for the enemy leader.
+      if (ward.defense === 5 && me.playPoints === 4 && field.length < 5 && has(me.hand, "BP05-048")) return play("BP05-045");
+      if (ward.defense === 3 && me.playPoints === 2 && field.length < 5) return play("BP05-048");
+      if (ward.defense === 3 && !me.playPoints) {
+        const servant = field.find(card => card.def === "BP05-048" && !card.evolvedWith);
+        if (servant) return first(answers, answer => answer.action?.type === "evolve" && answer.action.card === servant.id);
+      }
+      if (ward.defense === 1 && !me.playPoints) return trade;
+    }
+  }
+  const publicShield = enemy.playPoints >= 1 && enemy.ex.some(card => !card.hidden && card.def === "BP14-T07");
+  const freshZealots = field.filter(card => card.def === "BP08-050" && !card.engaged);
+  if (publicShield && !targets.length && freshZealots.length >= 2) {
+    // Mercurial Might can reduce every remaining hit after the first attack. Resolve the Psalm and prayer first.
+    const white = field.find(card => card.def === "BP20-T03" && !card.abilitiesLost);
+    if (decision.type === "selectCards" && decision.reason === "pick") {
+      const payer = [...field, ...me.cemetery].find(card => card.id === decision.source);
+      const offering = payer?.def === "BP20-055" ? black : payer?.def === "BP20-048" ? white : null;
+      if (offering) return first(answers, answer => answer.cards?.[0] === offering.id);
+    }
+    if (decision.type === "mainPhase") {
+      if (wasteland && black && has(me.hand, "BP20-048")) {
+        return first(answers, answer => answer.action?.type === "activate" &&
+          answer.action.card === wasteland.id && answer.action.ability === 1);
+      }
+      if (white && !supplicant && has(me.hand, "BP20-048")) {
+        if (me.playPoints >= 2) return play("BP20-048");
+        if (me.playPoints === 1 && me.deckCount > 1) return play("BP08-051");
+      }
+      if (white && supplicant && !supplicant.engaged) {
+        return first(answers, answer => answer.action?.type === "activate" && answer.action.card === supplicant.id);
+      }
+      if (black && supplicant?.engaged && !wasteland) {
+        return first(answers, answer => answer.action?.type === "attack" &&
+          answer.action.target === enemy.leader.id && freshZealots.some(card => card.id === answer.action.attacker));
+      }
+    }
+  }
+  if (black && !enemy.playPoints && me.maxPlayPoints === 4 && !me.evolutionPoints &&
+      targets.length === 1 && targets[0].def === "BP18-097" && targets[0].defense <= 2 &&
+      decision.type === "mainPhase") {
+    if (field.length === 1 && me.playPoints === 4 && has(me.hand, "BP05-048")) {
+      const prayer = play("BP20-048");
+      if (prayer !== null) return prayer;
+    }
+    if (field.length === 2 && supplicant && me.playPoints === 2) return play("BP05-048");
+    const servant = field.find(card => card.def === "BP05-048" && !card.evolvedWith);
+    if (servant && supplicant && !me.playPoints) {
+      return first(answers, answer => answer.action?.type === "evolve" && answer.action.card === servant.id);
+    }
+  }
+  if (black && supplicant && field.length === 3 && !targets.length && !me.playPoints &&
+      field.some(card => card.def === "BP05-048" && card.evolvedWith)) {
+    if (decision.type === "mainPhase" && !supplicant.engaged) {
+      return first(answers, answer => answer.action?.type === "activate" && answer.action.card === supplicant.id);
+    }
+    if (decision.type === "selectCards" && decision.reason === "pick" && decision.source === supplicant.id) {
+      return first(answers, answer => answer.cards?.[0] === black.id);
+    }
+  }
 
   if (me.maxPlayPoints === 1 && me.deckCount > 1 && !targets.length &&
       !me.hand.some(card => card.type === "follower" && card.cost <= 2)) {
@@ -147,6 +216,49 @@ function destructionRune({ me, enemy, decision, resolution, answers }) {
 function disdainDragon({ me, enemy, decision, resolution, answers }) {
   const field = me.field.filter(card => !card.hidden && card.type === "follower");
   const opposing = enemy.field.filter(card => !card.hidden && card.type === "follower");
+  const attackers = field.filter(card => !card.engaged && card.defense === 1 && card.attack >= 3);
+  const shield = enemy.playPoints >= 1 && enemy.ex.some(card => !card.hidden && card.def === "BP14-T07");
+  const omen = field.find(card => card.def === "BP05-052" && !card.abilitiesLost);
+  if (shield && attackers.length >= 2 && me.maxPlayPoints >= 9 && opposing.length <= 2 &&
+      opposing.every(card => card.engaged && card.keywords?.includes("ward") && card.defense <= 4)) {
+    const playFromHand = def => first(answers, answer => answer.action?.type === "play" &&
+      me.hand.some(card => card.def === def && card.id === answer.action.card));
+    const nation = me.field.find(card => card.def === "BP20-067" && !card.engaged && !card.abilitiesLost);
+    const crest = me.ex.find(card => card.def === "BP20-T05" && !card.abilitiesLost);
+    if (!opposing.length && decision.type === "mainPhase" && !omen) {
+      const lethal = first(answers, answer => answer.action?.type === "attack" && answer.action.target === enemy.leader.id &&
+        attackers.some(card => card.id === answer.action.attacker && card.attack - 1 >= enemy.leaderDefense));
+      if (lethal !== null) return lethal;
+    }
+    if (!opposing.length && omen?.defense === 1 && decision.reason === "wardEnterEngaged" &&
+        enemy.leaderDefense <= 5) return first(answers, answer => answer.cards?.length === 0);
+    if (decision.type === "mainPhase" && !omen && opposing.length === 2 && nation && crest &&
+        me.playPoints >= 7 && me.hand.some(card => card.def === "BP05-058") &&
+        me.cemetery.some(card => card.def === "BP20-063")) return playFromHand("BP05-052");
+    if (omen && decision.type === "mainPhase") {
+      if (!omen.evolvedWith) return first(answers, answer => answer.action?.type === "evolve" && answer.action.card === omen.id);
+      if (opposing.length) {
+        const rending = playFromHand("BP05-058");
+        if (rending !== null && opposing.some(card => card.defense <= 3)) return rending;
+      }
+      const swings = attackers.reduce((sum, card) => sum + card.attack - 1, 0);
+      if (!opposing.length && (omen.defense > 1 || enemy.leaderDefense <= swings + 3)) {
+        // The fatal sixth self-hit still triggers. Keep the fragile attackers alive until the shield window.
+        for (const source of [nation, crest]) {
+          const use = first(answers, answer => answer.action?.type === "activate" && answer.action.card === source?.id);
+          if (use !== null) return use;
+        }
+        return playFromHand("BP20-064") ?? playFromHand("BP15-072");
+      }
+    }
+    if (omen?.evolvedWith && decision.type === "selectCards" && decision.reason === "target") {
+      const target = id => first(answers, answer => answer.cards?.[0] === id);
+      const flame = me.cemetery.find(card => card.def === "BP20-063" && decision.candidates.includes(card.id));
+      if (flame && decision.source === omen.id) return target(flame.id);
+      return target(omen.id) ?? target(enemy.leader.id) ??
+        first(answers, answer => opposing.some(card => card.id === answer.cards?.[0]));
+    }
+  }
   if (me.maxPlayPoints === 6 && me.playPoints === 1 && !enemy.playPoints &&
       me.hand.some(card => card.def === "BP05-052") && !me.cemetery.some(card => card.def === "BP08-068") &&
       me.cemetery.some(card => card.def === "BP05-058") && field.length === 1 && field[0].def === "BP20-062" &&
@@ -184,6 +296,46 @@ function disdainDragon({ me, enemy, decision, resolution, answers }) {
   const ardent = field.find(card => card.def === "BP15-057" && !card.abilitiesLost);
   const fragileGalmieux = field.find(card => card.def === "BP20-056" && card.defense === 1);
   const adherent = field.find(card => card.def === "BP15-066" && card.defense > 1 && !card.abilitiesLost);
+  const fangs = me.ex.find(card => card.def === "BP15-PR13");
+  if (ardent && me.maxPlayPoints >= 7 && me.playPoints === 1 && fangs && opposing.length === 1 &&
+      opposing[0].defense === 1 && ardent.defense >= 2) {
+    // Fangs already clears the opposing follower. A free Supplicant heals and can buy another reveal first.
+    if (ardent.defense >= 3 && decision.type === "selectCards") {
+      if (decision.reason === "effect" && decision.source === ardent.id && me.leaderDefense <= 15 &&
+          me.field.length < 5 && selectOne(answers, decision, "BP20-063") !== null) {
+        return selectOne(answers, decision, "BP20-064");
+      }
+      if (decision.reason === "target" && field.some(card => card.id === decision.source && card.def === "BP20-064")) {
+        return first(answers, answer => answer.cards?.[0] === ardent.id);
+      }
+    }
+    if (decision.type === "mainPhase") {
+      const prayer = me.ex.find(card => card.def === "BP20-064");
+      if (prayer && ardent.defense >= 3) return first(answers, answer => answer.action?.type === "play" && answer.action.card === prayer.id);
+      if (ardent.defense === 2 && me.ex.some(card => card.def === "BP20-056")) {
+        // The Manifest has natural Storm. Let Fangs resolve before it enters so it keeps all three defense.
+        return first(answers, answer => answer.action?.type === "play" && answer.action.card === fangs.id);
+      }
+    }
+  }
+  if (me.maxPlayPoints >= 7 && !me.playPoints && !opposing.length &&
+      field.filter(card => card.def === "BP20-064" && card.defense === 1).length >= 2 &&
+      decision.type === "mainPhase" && answers.every(answer => answer.action?.type === "endMainPhase" ||
+        me.ex.some(card => card.id === answer.action?.card && card.def === "BP20-062"))) {
+    // The empty opposing field cannot compensate for sweeping away our two surviving Supplicants.
+    return first(answers, answer => answer.action?.type === "endMainPhase");
+  }
+  if (ardent && me.maxPlayPoints === 6 && !me.playPoints && decision.type === "selectCards" &&
+      decision.reason === "effect" && decision.source === ardent.id && me.leaderDefense <= 15) {
+    const seishiro = opposing.find(card => card.def === "BP18-097" && !card.engaged && card.attack >= 4);
+    if (seishiro && ardent.defense > 1) {
+      const pick = def => selectOne(answers, decision, def);
+      // Rending removes Seishiro outright. Zealot can finish one health or expose it to the next reveal.
+      const rending = pick("BP05-058");
+      if (seishiro.defense <= 3 && rending !== null) return rending;
+      if (seishiro.defense <= 2 && me.field.length < 5) return pick("BP08-063") ?? pick("BP20-067");
+    }
+  }
   if (ardent && decision.type === "selectCards" && me.maxPlayPoints >= 7 && !me.playPoints &&
       me.leaderDefense >= 16 && enemy.leaderDefense > 8 && opposing.length <= 1) {
     if (decision.reason === "effect" && decision.source === ardent.id) {
@@ -360,17 +512,22 @@ function lootSword({ me, enemy, decision, resolution, answers }) {
   const barbaros = field.find(card => card.def === "BP19-019" && card.evolvedWith && !card.abilitiesLost);
   const flags = me.ex.filter(card => card.def === "BP19-T01");
   const gunner = me.hand.find(card => card.def === "BP19-026");
-  const replaceFlag = flags.length === 0 && field.length === 1 &&
-    enemy.field.some(card => !card.hidden && card.def === "BP18-097" && !card.engaged);
-  if (barbaros && (flags.length >= 2 || replaceFlag) && gunner && field.length < 5) {
+  const firstMate = me.hand.find(card => card.def === "BP19-028");
+  const hasSlash = me.ex.some(card => card.def === "BP20-026");
+  const replaceFlag = flags.length === 0 && field.length === 1 && (
+    targets.some(card => card.def === "BP18-097" && !card.engaged) ||
+    (hasSlash && targets.length === 1 && targets[0].engaged && targets[0].defense <= 4)
+  );
+  const flagMaker = gunner ?? (replaceFlag ? firstMate : null);
+  if (barbaros && (flags.length >= 2 || replaceFlag) && flagMaker && field.length < 5) {
     if (decision.type === "choose" && decision.source === barbaros.id && me.playPoints < 2 &&
         me.maxPlayPoints >= 2) {
-      // Recover on the first flag so a Gunner can contribute to every remaining flag.
+      // The crew member bought with Recover makes another flag that can still destroy a follower.
       return first(answers, answer => answer.ids?.includes("recover"));
     }
     if (decision.type === "mainPhase" && me.playPoints >= 2) {
       const ready = answers.some(answer => answer.action?.type === "attack" && answer.action.target === enemy.leader.id);
-      if (ready || replaceFlag) return first(answers, answer => answer.action?.type === "play" && answer.action.card === gunner.id);
+      if (ready || replaceFlag) return first(answers, answer => answer.action?.type === "play" && answer.action.card === flagMaker.id);
     }
   }
 

@@ -57,6 +57,8 @@ TITLES = {
     "royal-opening-76": "后攻已有灾藤与萝蕾娜，改为整手重抽",
     "dragon-85-check4-full": "由第四次复盘后的主教席重做完整对局",
     "dragon-85-check4-target": "只在第二次 2 伤的目标处换用新主教席",
+    "rune-88-check4-full": "由第四次复盘后的主教席重做圣士郎起手",
+    "rune-88-check4-target": "只在圣士郎选择免费放牌时换用新主教席",
 }
 
 
