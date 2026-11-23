@@ -41,7 +41,11 @@
 
 **财宝皇室：把旗和炮手各自打的伤害分开算。** 皇六 T18，5 攻、剩 3 防的万裁分身能攻袭直立的 2/3 炮手。去横置的 6/4 芭芭萝丝，皇室三次用旗打出 6 点，炮手再攻 5。先去炮手，皇室改借天冥、再以欧克托莉斯攻 6，主教余 3 多活一回合。若预计下一回合回到 6，还要找出应付第二次 6 攻的方法。[重做三个攻击目标](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-t7B32v-06.json&at=158&seat=0) · [三条实战线路](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/index.md)
 
+同一条龙六获胜线，龙席改为先解两名守护，在首攻前把嘉鲁蜜儿的六段 3 点全部打完。主教余 2，水银把崇拜者的攻击从 3 压到 2，正好归零。看见双侮蔑之国与纹章时，还要写下嘉鲁蜜儿可承受几次自伤、最后一次致死时触发是否仍然结算。换执龙再算一次总伤。[从首次攻守分歧执龙](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-drill-dragon-06-priest.json&at=156&seat=1) · [六段能力伤害的实际结算](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/logs/dragon-06-burn-first.md)
+
 皇室后攻起手先数手中能用的二费。皇六已有灾藤、萝蕾娜、白牙和万裁。保留能按二费灾藤发动检索、四费萝蕾娜回复并进化解场，重演 T18 由分身与圣士郎合击 9 点获胜。原局为找便宜去除整手重抽，自己的前两回合都空过。决定前先说出这手牌前三个己方回合能做什么，再说明需要冒整手重抽的风险去找哪张牌。[后攻起手题](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-t7B32v-06.json&at=1&seat=0) · [同牌序保留四张](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/logs/royal-06-keep.md)
+
+从四份独立困难 Bot 起手再练一次。它们都满足主教后攻且起手同时有灾藤和萝蕾娜。四手保留均获胜，改为重抽三胜一负。唯一区别胜负的是另有都市和莉迪耶尔的 F 第 14 局。保留能在第二个己方回合进化灾藤，重抽直到 T10 才有首进化。B 第 90 局的两条都胜，重抽反而更快结束。记住手里已有的前两步，根据另外两张、先后攻和对方场面决定取舍。[四对起手、各自的第一张进化与完整录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/royal-opening.md)
 
 ## 冷门主轴的证据
 

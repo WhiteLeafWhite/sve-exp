@@ -19,6 +19,7 @@
 | 侮蔑龙第 5 局 | 祈祷配天冥，两次回复处理使徒 | T18 侮蔑龙胜 | [日志与逐局复盘](logs/dragon-05-tenmei.md) · [原生录像](dragon-05-tenmei.json) |
 | 侮蔑龙第 5 局 | 祈祷配天冥，两次回复处理团结者 | T18 侮蔑龙胜 | [日志与逐局复盘](logs/dragon-05-union.md) · [原生录像](dragon-05-union.json) |
 | 侮蔑龙第 5 局 | 席翁直立，首次攻击窗口用水银 | T20 侮蔑龙胜 | [日志与逐局复盘](logs/dragon-05-upright.md) · [原生录像](dragon-05-upright.json) |
+| 侮蔑龙第 6 局 | 龙先用嘉鲁蜜儿连续六次打三，再让旧随从攻击 | T17 侮蔑龙胜 | [日志与逐局复盘](logs/dragon-06-burn-first.md) · [原生录像](dragon-06-burn-first.json) |
 | 侮蔑龙第 6 局 | 按原座位策略决策，复现完整龙六原局 | T17 侮蔑龙胜 | [日志与逐局复盘](logs/dragon-06-cached.md) · [原生录像](dragon-06-cached.json) |
 | 侮蔑龙第 6 局 | 手动指定与原局相同的水银，比较后续搜索 | T21 侮蔑龙胜 | [日志与逐局复盘](logs/dragon-06-control.md) · [原生录像](dragon-06-control.json) |
 | 侮蔑龙第 6 局 | 都市取炎术，先除祈祷者 | T33 主教胜 | [日志与逐局复盘](logs/dragon-06-priest.md) · [原生录像](dragon-06-priest.json) |

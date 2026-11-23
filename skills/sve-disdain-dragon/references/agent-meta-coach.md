@@ -39,3 +39,11 @@
 **水银前后重新挑攻击者。** 职业第 5 局 T18 原线以两名烈绝侮蔑各攻 5、炽火 1，打完主教 11 血。主教若留 3 PP，输入 166 用水银的断绝，同牌序龙先用侮蔑之国伤嘉鲁蜜儿，连下三名五费，苍炎打己方使徒和对面席翁，让一名嘉鲁蜜儿交换横置席翁。水银生效后，使徒、另一名嘉鲁蜜儿和团结者仍分别实际打 6、4、2，共 12，龙以 16 比 −1 胜。两条线路的目标和攻击者会变，逐段重算才能比较。[水银分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-05-quicksilver.json) · [原线对照](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-05-prayer-control.json)
 
 同一局还要分席翁横直。直立席翁留场时，主教于 T18 第一次攻击用水银，龙的三次伤害由使徒、嘉鲁蜜儿、团结者分别打 3、3、1，11 血只降到 4。主教 T19 清旧场并回到 8，龙要到 T20 再用两名嘉鲁蜜儿各攻 5。若主教改以祈祷配天冥先处理使徒，龙的 T18 为 5+5+3；先解团结者，侮蔑之国自伤使徒后为 7+5。先登记仍存活的攻击者、席翁能否用战斗接触，再选谁来自伤。[直立席翁](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-05-upright.json) · [先解使徒](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-05-tenmei.json) · [先解团结者](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-05-union.json)
+
+## 双席第 16–20 场
+
+**六费时先算零费团结者会不会扫场。** 职业第 6 局 T9，六费下五费烈绝侮蔑和炎爪，把直立 5/5 圣士郎打至 5/2。嘉鲁蜜儿第一次看二取零费狂信者全场一，第二次取国度，国度的自伤产生第三次看二。此时团结者即便免费仍未觉醒，无法清 5/1 圣士郎。我改取炎爪，自己受到第四次伤害并解圣士郎，最后取显现。显现纹章自伤新显现，打承担者 2，保住了剩 1 血的五攻嘉鲁蜜儿。[第 6 局复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/notes/06-meta.md)
+
+**把会死于全场伤害的攻击提前。** 同局 T17 需要从 18 血收尾，进化侮蔑绝杰的苍炎先清耶菈并打脸 3。即将被第二张灭牙击倒的祈祷者先攻 3，然后两张灭牙、纹章和国度再为绝杰提供四次自伤，各打 3。总计六个三点。[第 6 局战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/zQrwne/games/06.md)
+
+**最后一血的进化嘉鲁蜜儿仍能换三伤。** 第 6 局「主教炎术先除祈祷者」的 T17，主教 20 血、有 2 PP 与公开水银，场上两个横置 3/3 耶菈。旧龙先让两名 3/1 交换守护，为水银开窗，三次自伤各打 2，到 T33 龙抽尽。改为进化嘉鲁蜜儿，免费苍炎清第一守护、手打炎爪清第二守护，接两张侮蔑之国、显现纹章、祈祷者。六次全点嘉鲁蜜儿，第六下致死仍打 3，主教从 20 降至 2 才迎来第一次攻击。两名 3/1 保住其中任意一击，水银减 1 仍能打完。同种子终局已验证为 T17 龙 11、主教 0。[先互换的旧线](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-06-priest.json) · [先六次自伤的复练](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/dragon-06-burn-first.json)
