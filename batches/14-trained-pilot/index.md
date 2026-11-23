@@ -8,7 +8,7 @@
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 破坏巫师 | 10 | 4 | 4 | 0 | 0 | 10 | 0 |
 | 侮蔑龙 | 10 | 6 | 6 | 0 | 0 | 10 | 2 |
-| 财宝皇室 | 5 | 1 | 1 | 0 | 0 | 5 | 0 |
+| 财宝皇室 | 10 | 4 | 4 | 0 | 0 | 10 | 0 |
 
 选项数只计主教面对至少两个合法选项时，冻结打法亲自指定的一步。两份录像可能在更早的一次相同选择后使用不同的搜索缓存。
 
@@ -53,3 +53,8 @@
 | 73 | 胜／胜 | 完全相同 | 0 | [训练日志](t7B32v/games/03.md) · [逐局复盘](t7B32v/reviews/01.md#game-03) · [录像](t7B32v/replays/03.json) · [原 r3](../12-second-saito/candidate/t7B32v/games/73.md) |
 | 74 | 负／负 | 完全相同 | 0 | [训练日志](t7B32v/games/04.md) · [逐局复盘](t7B32v/reviews/01.md#game-04) · [录像](t7B32v/replays/04.json) · [原 r3](../12-second-saito/candidate/t7B32v/games/74.md) |
 | 75 | 负／负 | 完全相同 | 0 | [训练日志](t7B32v/games/05.md) · [逐局复盘](t7B32v/reviews/01.md#game-05) · [录像](t7B32v/replays/05.json) · [原 r3](../12-second-saito/candidate/t7B32v/games/75.md) |
+| 76 | 胜／胜 | 完全相同 | 0 | [训练日志](t7B32v/games/06.md) · [逐局复盘](t7B32v/reviews/02.md#game-06) · [录像](t7B32v/replays/06.json) · [原 r3](../12-second-saito/candidate/t7B32v/games/76.md) |
+| 77 | 负／负 | 完全相同 | 0 | [训练日志](t7B32v/games/07.md) · [逐局复盘](t7B32v/reviews/02.md#game-07) · [录像](t7B32v/replays/07.json) · [原 r3](../12-second-saito/candidate/t7B32v/games/77.md) |
+| 78 | 胜／胜 | 完全相同 | 0 | [训练日志](t7B32v/games/08.md) · [逐局复盘](t7B32v/reviews/02.md#game-08) · [录像](t7B32v/replays/08.json) · [原 r3](../12-second-saito/candidate/t7B32v/games/78.md) |
+| 79 | 负／负 | 完全相同 | 0 | [训练日志](t7B32v/games/09.md) · [逐局复盘](t7B32v/reviews/02.md#game-09) · [录像](t7B32v/replays/09.json) · [原 r3](../12-second-saito/candidate/t7B32v/games/79.md) |
+| 80 | 胜／胜 | 完全相同 | 0 | [训练日志](t7B32v/games/10.md) · [逐局复盘](t7B32v/reviews/02.md#game-10) · [录像](t7B32v/replays/10.json) · [原 r3](../12-second-saito/candidate/t7B32v/games/80.md) |
