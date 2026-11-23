@@ -8,6 +8,7 @@
 - K 版本。第 10 局 T14 输入 94 下战骑时有 2 个护符，全局战骑实际打脸 5，承受 0 次宣攻。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/candidate/cQZr8Z/games/10.md)
 - K 版本。第 15 局 T15 输入 113 下战骑时有 1 个护符，全局战骑实际打脸 3，承受 1 次宣攻。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/candidate/cQZr8Z/games/15.md)
 - K 版本。第 16 局 T18 输入 149 下战骑时有 0 个护符，全局战骑实际打脸 0，承受 0 次宣攻。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/candidate/cQZr8Z/games/16.md)
+- K 版本。第 22 局 T16 输入 106 下战骑时有 2 个护符，全局战骑实际打脸 6，承受 1 次宣攻。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/candidate/cQZr8Z/games/22.md)
 - F 版本。第 1 局 T19 输入 169 还有 3 PP，实际绝望安息·玛文攻击巫师主战者。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/cQZr8Z/games/01.md)
 - F 版本。第 6 局 T10 输入 71 还有 0 PP，实际结束主阶段。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/cQZr8Z/games/06.md)
 - F 版本。第 11 局 T27 输入 229 还有 5 PP，实际结束主阶段。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/cQZr8Z/games/11.md)
