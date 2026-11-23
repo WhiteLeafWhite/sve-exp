@@ -12,7 +12,7 @@
 - 种子 12 胜转负。先比较两边 T17 之前的动作，再检查换位的进化牌是否上场。[双灾藤](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/candidate/cQZr8Z/games/12.md) · [双玛文](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/control/cQZr8Z/games/12.md)
 ## 侮蔑龙
 
-双灾藤 32–43，双玛文 33–47。已有 75 对核对了双方初手；改成双灾藤后，3 局负转胜，1 局胜转负。
+双灾藤 35–45，双玛文 33–47。已有 80 对核对了双方初手；改成双灾藤后，3 局负转胜，1 局胜转负。
 
 - 第 2 局在 T24 进化第二张灾藤。进化前数墓地法术、EX 空位与可连续造成的伤害。[录像与逐回合日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/candidate/zQrwne/games/02.md)
 - 第 2 局在 T18 进化第二张玛文。在进化前记录双方从者、可攻击数和替代去除的费用，再决定是否交清场。[录像与逐回合日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/control/zQrwne/games/02.md)
