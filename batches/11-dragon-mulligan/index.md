@@ -4,12 +4,12 @@
 
 | 样本 | 当前局数 | 主教胜–负 |
 |---|---:|---:|
-| r5 全部 | 20 | 3–17 |
-| r5 先攻 | 10 | 2–8 |
+| r5 全部 | 25 | 4–21 |
+| r5 先攻 | 13 | 3–10 |
 | r3 先攻 | 20 | 7–13 |
-| 共同后攻 | 10 | 1–9 |
+| 共同后攻 | 12 | 1–11 |
 
-已对齐 10 对先攻种子，4 对的完整输入与结果一致。实际改变起手 6 次，其中原负转胜 0 次、原胜转负 2 次。
+已对齐 13 对先攻种子，5 对的完整输入与结果一致。实际改变起手 8 次，其中原负转胜 1 次、原胜转负 2 次。
 
 [先攻留牌候选 r5的每五局构筑与复盘](candidate/construction.md)
 
@@ -27,6 +27,9 @@
 | 15 | 保留 → 整手重抽 | [负](control/zQrwne/games/08.md) | [负](candidate/zQrwne/games/15.md) |
 | 17 | 保留 → 保留 | [负](control/zQrwne/games/09.md) | [负](candidate/zQrwne/games/17.md) |
 | 19 | 保留 → 整手重抽 | [胜](control/zQrwne/games/10.md) | [胜](candidate/zQrwne/games/19.md) |
+| 21 | 保留 → 整手重抽 | [负](control/zQrwne/games/11.md) | [负](candidate/zQrwne/games/21.md) |
+| 23 | 保留 → 保留 | [负](control/zQrwne/games/12.md) | [负](candidate/zQrwne/games/23.md) |
+| 25 | 保留 → 整手重抽 | [负](control/zQrwne/games/13.md) | [胜](candidate/zQrwne/games/25.md) |
 
 ## 后攻逐局记录
 
@@ -40,3 +43,5 @@
 - 第 16 局主教负。[战报](candidate/zQrwne/games/16.md) · [原生录像](candidate/zQrwne/replays/16.json)
 - 第 18 局主教负。[战报](candidate/zQrwne/games/18.md) · [原生录像](candidate/zQrwne/replays/18.json)
 - 第 20 局主教胜。[战报](candidate/zQrwne/games/20.md) · [原生录像](candidate/zQrwne/replays/20.json)
+- 第 22 局主教负。[战报](candidate/zQrwne/games/22.md) · [原生录像](candidate/zQrwne/replays/22.json)
+- 第 24 局主教负。[战报](candidate/zQrwne/games/24.md) · [原生录像](candidate/zQrwne/replays/24.json)
