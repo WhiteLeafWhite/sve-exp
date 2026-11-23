@@ -18,6 +18,7 @@ TITLES = {
     "dragon-02-whitefang-keep-one": "隐者与启示都给下一回合留牌",
     "royal-03-lorena-F": "双灾藤重走萝蕾娜与奔流的交换", "royal-03-lorena-B": "双玛文重走萝蕾娜与奔流的交换",
     "royal-03-marwynn-B": "双玛文先用第二张玛文进化清场",
+    "royal-03-marwynn-turn-B": "双玛文完整指定 T21，再从 T22 交回双方策略",
 }
 
 
