@@ -9,19 +9,21 @@ import { makeBishopPlayer } from "../../skills/sve-bishop-matchups/scripts/bisho
 const root = dirname(fileURLToPath(import.meta.url));
 const rt = await import(pathToFileURL(resolve("dist/bp20-training-engine.mjs")).href);
 const [key, number, version = "A", strategy = "2", series = "explore"] = process.argv.slice(2);
-assert(["explore", "fixed100", "lyrial", "dragonPolicy", "banish"].includes(series));
+assert(["explore", "fixed100", "lyrial", "dragonPolicy", "banish", "opening", "openingControl"].includes(series));
 const fixed = series === "fixed100";
 const pairedVersion = {lyrial:"D", banish:"E"}[series];
 const targeted = series === "dragonPolicy";
-const archive = {fixed100:"09-bp20-fixed-300",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish"}[series];
+const opening = series === "opening" || series === "openingControl";
+const archive = {fixed100:"09-bp20-fixed-300",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish",opening:"11-dragon-mulligan/candidate",openingControl:"11-dragon-mulligan/control"}[series];
 const destination = archive ? join(root,"..",archive) : root;
 const pins = {
   cQZr8Z: ["05", "ed8882da5252c802b10365452fee7185915cb764e46e3b5305e246c6529424fd"],
   zQrwne: ["06", "9416da999b748650b862702d9bbf970470089f6aace1182a43097cb5fca1bcf7"],
   t7B32v: ["07", "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"],
 };
-assert(Object.hasOwn(pins, key) && /^[1-9]\d*$/.test(number) && Number(number) <= (fixed ? 100 : pairedVersion || targeted ? 5 : 50) && (pairedVersion ? version===pairedVersion && strategy==="3" : /^[ABC]$/.test(version)));
+assert(Object.hasOwn(pins, key) && /^[1-9]\d*$/.test(number) && Number(number) <= (fixed || series==="opening" ? 100 : pairedVersion || targeted ? 5 : 50) && (pairedVersion ? version===pairedVersion && strategy==="3" : /^[ABC]$/.test(version)));
 if (targeted) assert(key==="zQrwne" && version==="B" && strategy==="4");
+if (opening) assert(key==="zQrwne" && version==="B" && strategy===(series==="opening"?"5":"3"));
 const read = (path) => JSON.parse(readFileSync(path, "utf8").replace(/^\uFEFF/, ""));
 const engine = rt.createEngine({ cards: rt.ALL_CARDS, scripts: rt.ALL_SCRIPTS });
 const catalog = new rt.Catalog(rt.ALL_CARDS);
@@ -49,8 +51,9 @@ const decks = [bishop, opponent].map((d) => rt.toDeckList(d));
 assert.deepEqual(rt.formatProblems(bishop, "standard", list, catalog,
   engine.validateDeck(decks[0], { deckRestrictions: true })), []);
 assert.deepEqual(engine.validateDeck(decks[1], { deckRestrictions: true }), []);
-const seedNumber = Number(number) + ({lyrial:75, dragonPolicy:90, banish:95}[series] ?? 0);
-const seed = (series!=="explore" ? "sve-exp/bp20-fixed-300/v1/" : "sve-exp/bp20-hard-150/v1/") + key + "/" + seedNumber;
+const seedNumber = series==="openingControl" ? 2*Number(number)-1 : Number(number) + ({lyrial:75, dragonPolicy:90, banish:95}[series] ?? 0);
+const prefix = opening ? "sve-exp/bp20-dragon-mulligan/v1/" : series!=="explore" ? "sve-exp/bp20-fixed-300/v1/" : "sve-exp/bp20-hard-150/v1/";
+const seed = prefix + key + "/" + seedNumber;
 const options = { seed, decks, deckNames: [bishop.name, opponent.name], controllers: ["human", "hard"],
   format: "standard", restrictionList: null, deckRestrictions: true, manualActions: false,
   showEveryMainPhase: true, askEveryQuickWindow: true, turnOrder: seedNumber % 2 ? "player1" : "player2" };

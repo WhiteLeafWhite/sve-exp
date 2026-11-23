@@ -138,7 +138,22 @@ function burnDisdainEngine(view, seat) {
 
 export function makeBishopPlayer(engine, {PlannerBot, MEDIUM_V2}, {seat=0, opponentKey, seed, revision=2}) {
   if(!Object.hasOwn(priority,opponentKey))throw Error('Unknown matchup: '+opponentKey);
-  if(![1,2,3,4].includes(revision))throw Error('Unknown bishop revision');
+  if(![1,2,3,4,5].includes(revision))throw Error('Unknown bishop revision');
+  // Keep the r3 planner, including its RNG usage at the opening decision. Only
+  // override an actual keep, and only for a first-player Haven against Dragon.
+  if(revision===5){
+    const base=makeBishopPlayer(engine,{PlannerBot,MEDIUM_V2},{seat,opponentKey,seed,revision:3});
+    return {revision,get stats(){return base.stats;},decide(session){
+      const old=base.decide(session);
+      if(old.type!=='mulligan' || old.redraw || opponentKey!=='zQrwne')return old;
+      const view=session.view(seat);
+      if(view.firstPlayer!==seat)return old;
+      const hand=view.players[seat].hand.filter(card=>!card.hidden);
+      const engineStart=contains(hand,'BP18-097') && contains(hand,'BP18-105') &&
+        (contains(hand,'BP18-120') || contains(hand,'BP18-117'));
+      return contains(hand,'BP18-100') || engineStart ? old : {type:'mulligan',redraw:true,bottomOrder:[...view.decision.hand]};
+    }};
+  }
   const dragonRevision = revision === 4 && opponentKey === 'zQrwne';
   const hasTrait=(c,trait)=>engine.db.get(c.def).traits.includes(trait);
   const augment=base=>(v,p)=>base(v,p)+(v.result?0:(p===seat?1:-1)*(matchupValue(v,seat,opponentKey)

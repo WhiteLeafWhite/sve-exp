@@ -7,7 +7,7 @@ import { setTimeout as delay } from "node:timers/promises";
 import { fileURLToPath } from "node:url";
 const [key, round, deck, policy, series = "explore"] = process.argv.slice(2);
 const unit = Number(round);
-const rounds={explore:10, fixed100:20, lyrial:1, dragonPolicy:1, banish:1};
+const rounds={explore:10, fixed100:20, lyrial:1, dragonPolicy:1, banish:1, opening:20, openingControl:10};
 assert(Object.hasOwn(rounds,series) && Number.isInteger(unit) && unit >= 1 && unit <= rounds[series] && deck && policy);
 // A supervised run can wait for its five-game quota/skill/publication checkpoint.
 // Offline reproduction needs no account access and uses no control directory.
