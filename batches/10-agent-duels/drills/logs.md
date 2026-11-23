@@ -36,3 +36,8 @@
 | 破坏巫师第 5 局 | 先祈祷，复现巫师第五局 | T16 破坏巫师胜 | [日志与逐局复盘](logs/rune-05-prayer-control.md) · [原生录像](rune-05-prayer-control.json) |
 | 破坏巫师第 5 局 | 透京取天冥，用三次回复处理纱妃拉 | T16 破坏巫师胜 | [日志与逐局复盘](logs/rune-05-tenmei.md) · [原生录像](rune-05-tenmei.json) |
 | 破坏巫师第 5 局 | 同盘以破坏的荒野检索狂信者收尾 | T16 破坏巫师胜 | [日志与逐局复盘](logs/rune-05-wasteland.md) · [原生录像](rune-05-wasteland.json) |
+| 破坏巫师第 6 局 | 都市、炎术与超进化承担者，留水银 | T17 破坏巫师胜 | [日志与逐局复盘](logs/rune-06-city-super.md) · [原生录像](rune-06-city-super.json) |
+| 破坏巫师第 6 局 | 都市、炎术与正常进化承担者，留水银 | T17 破坏巫师胜 | [日志与逐局复盘](logs/rune-06-city.md) · [原生录像](rune-06-city.json) |
+| 破坏巫师第 6 局 | 主教主阶段打水银复现原局 | T15 破坏巫师胜 | [日志与逐局复盘](logs/rune-06-control.md) · [原生录像](rune-06-control.json) |
+| 破坏巫师第 6 局 | 白牙与承担者落场，留水银给首攻 | T24 主教胜 | [日志与逐局复盘](logs/rune-06-hold.md) · [原生录像](rune-06-hold.json) |
+| 破坏巫师第 6 局 | 白牙、炎术与承担者正常进化，先交换狂信者 | T19 破坏巫师胜 | [日志与逐局复盘](logs/rune-06-trade.md) · [原生录像](rune-06-trade.json) |

@@ -32,6 +32,17 @@ TITLES = {
     "royal-05-upright": "留水银并让席翁直立",
     "royal-05-seishiro": "七费先下圣士郎",
     "royal-05-whitefang": "七费先下白牙神殿",
+    "rune-06-control": "主教主阶段打水银复现原局",
+    "rune-06-hold": "白牙与承担者落场，留水银给首攻",
+    "rune-06-trade": "白牙、炎术与承担者正常进化，先交换狂信者",
+    "rune-06-city": "都市、炎术与正常进化承担者，留水银",
+    "rune-06-city-super": "都市、炎术与超进化承担者，留水银",
+    "rune-06-burn-first": "同盘巫师先耗尽直伤，再让三名狂信者攻击",
+    "dragon-06-control": "主阶段打水银，再以炎术处理崇拜者",
+    "dragon-06-worshipper": "都市取炎术，先除崇拜者",
+    "dragon-06-union": "都市取炎术，先除团结者",
+    "dragon-06-priest": "都市取炎术，先除祈祷者",
+    "dragon-06-reserve": "双耶菈落场，水银与炎术都留给龙族回合",
 }
 
 

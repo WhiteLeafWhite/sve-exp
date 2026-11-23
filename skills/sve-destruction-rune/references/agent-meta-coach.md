@@ -29,3 +29,9 @@
 同局 T15 若主教先用都市找天冥，三次回复各打 2，足以提前处理 7/6 纱妃拉。此时 T16 只剩面伤 3+2+2，主教 10 血，场上有 5/5 天冥与 1/1 承担者。大红莲七费同时清两体、领袖打 3，三名旧随从正好补足余下 7，终局巫师 24、主教 0。复练时比较两条线路里大红莲各自消掉了什么、七攻还能不能出手。[都市取天冥](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-05-tenmei.json) · [原线对照](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-05-prayer-control.json)
 
 同一输入 136 若先花 1 PP 出荒野，实际揭示了狂信者。起动荒野、埋白章腾格，三费狂信者灭天冥并打主教 2，两费白黑章灭承担者并再打 2，已有三人仍能攻击 7。此线出牌 1+3+2，最后还余 2 PP，巫师 29 比 −1 胜。比较线路时要写明决策时已知什么。大红莲与三名攻击者的 3+7 已在手上和场上，荒野的 2+2+7 则是在看见狂信者之后才明确成立。[荒野同盘分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-05-wasteland.json)
+
+## 双席第 16–20 场
+
+**两个二费随从能在零 EP 时解场并打 5。** 职业第 6 局 T7，我方只有新约黑章，敌方是 4/2 圣士郎。四费先下祈祷者、再下作为第三偶像的破坏的随从，免费进化到 4/4，同时打圣士郎和主教各 2。祈祷者献黑章，对主教另打 2+1；白章接回场上。保下的 4/4 在 T9、T11 各攻击 4。对比 T5 敌方空场时，同一张随从进化无法连带打主教，阿克西雅献白章检索的价值更高。[第 6 局复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/notes/06-meta.md)
+
+**大红莲不够击倒席翁时，可以留给下一批随从。** 第 6 局 T13 只面对 3/7 席翁，大红莲打它实为 5，无法单独清掉。T15 实际面对横置 4/4 守护与直立 3/3，从八费支付七费清两体并打脸 3。三个原本受守护限制的狂信者转为能各攻 3，再补黑章 1、祈祷者 2，正好打完主教 15 血。[第 6 局战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/games/06.md)

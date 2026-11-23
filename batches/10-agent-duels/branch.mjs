@@ -1,7 +1,7 @@
 // node branch.mjs <finished replay> <first differing input> [--picks 64=3,65=2] [--inspect 65] [--out new.json]
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { basename,dirname,join,resolve } from "node:path";
 import { fileURLToPath,pathToFileURL } from "node:url";
 import { parseArgs } from "node:util";
@@ -39,6 +39,7 @@ if(arg["evolve-deck"]){
   options={...options,decks:[alternate,options.decks[1]],deckNames:[deck.name,options.deckNames[1]]};
 }
 const root=dirname(fileURLToPath(import.meta.url));
+const stopFile=resolve("dist/quota-checkpoints/stop");
 const planned=arg.plan?await import(pathToFileURL(resolve(arg.plan)).href):null, conditional=[];
 if(planned)assert(typeof planned.choose==="function");
 async function archivedCoach(sha){
@@ -70,6 +71,10 @@ const game=alternatePrefix?.game??fresh(),inputs=alternatePrefix?.inputs??[],man
 const label=def=>engine.db.has(def)?engine.db.get(def).names.cn||def:def;
 while(game.decision){
   const i=inputs.length,d=game.decision,s=d.player,v=game.view(s),legal=rt.enumerateAnswers(d,180);
+  if(inspect===null && existsSync(stopFile)){
+    console.log("Weekly cutoff. This unfinished practice line was excluded at input "+i);
+    process.exit(3);
+  }
   if(i>0 && i<=cut && restartInputs.includes(i))pilots=makePilots();
   if(i===inspect){
     const names=new Map();
