@@ -6,7 +6,7 @@
 |---|---|---|---:|---:|---:|---:|---:|
 | 破坏巫师 | 6/15（40%，20–64%） | 7/15（47%，25–70%） | 15 | 1 | 2 | 4 | 3 |
 | 侮蔑龙 | 5/15（33%，15–58%） | 6/15（40%，20–64%） | 15 | 1 | 2 | 5 | 3 |
-| 财宝皇室 | 7/15（47%，25–70%） | 6/10（60%，31–83%） | 10 | 0 | 4 | 6 | 1 |
+| 财宝皇室 | 7/15（47%，25–70%） | 10/15（67%，42–85%） | 15 | 1 | 4 | 6 | 1 |
 
 ## 破坏巫师
 
@@ -54,7 +54,7 @@
 
 ## 财宝皇室
 
-主教先攻胜/场数，K 为 4/8、F 为 4/5。后攻 K 为 3/7、F 为 2/5。战骑在 3 局攻击主战者并造成正伤害，合计 10 点。对手在 3 局对战骑宣告攻击。
+主教先攻胜/场数，K 为 4/8、F 为 6/8。后攻 K 为 3/7、F 为 4/7。战骑在 3 局攻击主战者并造成正伤害，合计 10 点。对手在 3 局对战骑宣告攻击。
 
 | 牌序 | K 结果、中文战报、复盘、录像 | F 结果、中文战报、复盘、录像 |
 |---:|---|---|
@@ -68,8 +68,8 @@
 | 8 | 胜 · [战报](candidate/t7B32v/games/08.md) · [复盘](candidate/t7B32v/reviews/02.md#game-08) · [录像](candidate/t7B32v/replays/08.json) | 胜 · [战报](control/t7B32v/games/08.md) · [复盘](control/t7B32v/reviews/02.md#game-08) · [录像](control/t7B32v/replays/08.json) |
 | 9 | 负 · [战报](candidate/t7B32v/games/09.md) · [复盘](candidate/t7B32v/reviews/02.md#game-09) · [录像](candidate/t7B32v/replays/09.json) | 胜 · [战报](control/t7B32v/games/09.md) · [复盘](control/t7B32v/reviews/02.md#game-09) · [录像](control/t7B32v/replays/09.json) |
 | 10 | 负 · [战报](candidate/t7B32v/games/10.md) · [复盘](candidate/t7B32v/reviews/02.md#game-10) · [录像](candidate/t7B32v/replays/10.json) | 胜 · [战报](control/t7B32v/games/10.md) · [复盘](control/t7B32v/reviews/02.md#game-10) · [录像](control/t7B32v/replays/10.json) |
-| 11 | 胜 · [战报](candidate/t7B32v/games/11.md) · [复盘](candidate/t7B32v/reviews/03.md#game-11) · [录像](candidate/t7B32v/replays/11.json) | 待配对 |
-| 12 | 胜 · [战报](candidate/t7B32v/games/12.md) · [复盘](candidate/t7B32v/reviews/03.md#game-12) · [录像](candidate/t7B32v/replays/12.json) | 待配对 |
-| 13 | 胜 · [战报](candidate/t7B32v/games/13.md) · [复盘](candidate/t7B32v/reviews/03.md#game-13) · [录像](candidate/t7B32v/replays/13.json) | 待配对 |
-| 14 | 胜 · [战报](candidate/t7B32v/games/14.md) · [复盘](candidate/t7B32v/reviews/03.md#game-14) · [录像](candidate/t7B32v/replays/14.json) | 待配对 |
-| 15 | 胜 · [战报](candidate/t7B32v/games/15.md) · [复盘](candidate/t7B32v/reviews/03.md#game-15) · [录像](candidate/t7B32v/replays/15.json) | 待配对 |
+| 11 | 胜 · [战报](candidate/t7B32v/games/11.md) · [复盘](candidate/t7B32v/reviews/03.md#game-11) · [录像](candidate/t7B32v/replays/11.json) | 负 · [战报](control/t7B32v/games/11.md) · [复盘](control/t7B32v/reviews/03.md#game-11) · [录像](control/t7B32v/replays/11.json) |
+| 12 | 胜 · [战报](candidate/t7B32v/games/12.md) · [复盘](candidate/t7B32v/reviews/03.md#game-12) · [录像](candidate/t7B32v/replays/12.json) | 胜 · [战报](control/t7B32v/games/12.md) · [复盘](control/t7B32v/reviews/03.md#game-12) · [录像](control/t7B32v/replays/12.json) |
+| 13 | 胜 · [战报](candidate/t7B32v/games/13.md) · [复盘](candidate/t7B32v/reviews/03.md#game-13) · [录像](candidate/t7B32v/replays/13.json) | 胜 · [战报](control/t7B32v/games/13.md) · [复盘](control/t7B32v/reviews/03.md#game-13) · [录像](control/t7B32v/replays/13.json) |
+| 14 | 胜 · [战报](candidate/t7B32v/games/14.md) · [复盘](candidate/t7B32v/reviews/03.md#game-14) · [录像](candidate/t7B32v/replays/14.json) | 胜 · [战报](control/t7B32v/games/14.md) · [复盘](control/t7B32v/reviews/03.md#game-14) · [录像](control/t7B32v/replays/14.json) |
+| 15 | 胜 · [战报](candidate/t7B32v/games/15.md) · [复盘](candidate/t7B32v/reviews/03.md#game-15) · [录像](candidate/t7B32v/replays/15.json) | 胜 · [战报](control/t7B32v/games/15.md) · [复盘](control/t7B32v/reviews/03.md#game-15) · [录像](control/t7B32v/replays/15.json) |
