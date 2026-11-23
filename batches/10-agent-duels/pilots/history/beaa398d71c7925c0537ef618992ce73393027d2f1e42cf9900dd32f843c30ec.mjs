@@ -1,0 +1,83 @@
+export const baseRevision = 3;
+
+export function choose({ seat, key, view, answers }) {
+  const own = view.players[seat];
+  const foe = view.players[1 - seat];
+  const decision = view.decision;
+  const enemies = foe.field.filter(card => !card.hidden && card.type === 'follower');
+  if (view.activePlayer !== seat || foe.playPoints !== 0) return null;
+
+  // 巫师第二局输入 36。即使坚定祈祷的检索没有命中，透京减费也已生效。
+  if (decision?.type === 'mainPhase' && own.maxPlayPoints === 3 && own.playPoints === 0 &&
+      own.leaderDefense >= 15 && own.deckCount > 5 && own.field.length === 1 && own.field[0].def === 'BP18-104') {
+    const officers = own.hand.filter(card => !card.hidden && card.def === 'BP18-117');
+    const index = answers.findIndex(answer => answer.action?.type === 'play' &&
+      officers.some(card => card.id === answer.action.card));
+    if (index >= 0) return index;
+  }
+
+  // 圣士郎从手中放承担者也会触发其入场。巫师首局输入 43 的配对分支验证了两段伤害。
+  if (decision?.type === 'selectCards' && decision.reason === 'pick' && enemies.length === 1 &&
+      enemies[0].defense >= 3 && enemies[0].defense <= 4 && enemies[0].attack >= 3) {
+    const seishiro = own.field.find(card => !card.hidden && card.def === 'BP18-097' && card.evolvedWith && !card.abilitiesLost);
+    const deliverer = own.hand.find(card => !card.hidden && card.def === 'BP18-105');
+    const canEvolve = own.evolveDeck.some(card => !card.hidden && !card.faceUp && card.def === 'BP18-106');
+    if (seishiro && decision.source === seishiro.id && deliverer && canEvolve && own.field.length < 5) {
+      const index = answers.findIndex(answer => answer.cards?.length === 1 && answer.cards[0] === deliverer.id);
+      if (index >= 0) return index;
+    }
+  }
+
+  // 巫师首局输入 64 的同牌序分支。保住两费处理直立威胁，灾藤留给横置从者。
+  const friendly = own.field.filter(card => !card.hidden && card.type === 'follower');
+  if (key === 'cQZr8Z' && enemies.length >= 3 && foe.leaderDefense > 10 && own.leaderDefense <= 15 &&
+      friendly.length === 1 && friendly[0].def === 'BP18-117' && friendly[0].evolvedWith && !friendly[0].engaged &&
+      own.field.some(card => !card.hidden && card.def === 'BP02-095') && own.ex.some(card => card.def === 'BP18-123')) {
+    const target = enemies.find(card => !card.engaged && card.attack >= 4 && card.defense <= 4);
+    const battleTarget = enemies.find(card => card.engaged && card.defense <= friendly[0].attack + 1 &&
+      card.attack < friendly[0].defense + 1);
+    const discard = own.hand.find(card => !card.hidden && card.def === 'BP18-105');
+    const cards = [...own.hand, ...own.ex, ...view.resolution].filter(card => !card.hidden);
+    const spell = cards.find(card => card.def === 'BP18-119' && (decision?.type === 'mainPhase' || card.id === decision?.source));
+    if (target && battleTarget && discard && spell) {
+      let choice = -1;
+      if (decision.type === 'mainPhase' && own.playPoints === 2) {
+        choice = answers.findIndex(answer => answer.action?.type === 'play' && answer.action.card === spell.id);
+      } else if (decision.type === 'selectCards' && ['target', 'cost'].includes(decision.reason)) {
+        const selected = decision.reason === 'target' ? target.id : discard.id;
+        choice = answers.findIndex(answer => answer.cards?.length === 1 && answer.cards[0] === selected);
+      }
+      if (choice >= 0) return choice;
+    }
+  }
+
+  // 龙族首局 T9。用回复伤害拆直立从者，进化从者再免费击破横置目标。
+  if (decision?.type === 'selectCards' && decision.reason === 'target') {
+    const source = own.field.find(card => !card.hidden && card.id === decision.source);
+    if (!['BP18-097', 'BP18-099'].includes(source?.def)) return null;
+    const attackers = own.field.filter(card => !card.hidden && card.evolvedWith && !card.engaged && !card.boxed);
+    const combat = enemies.some(enemy => enemy.engaged && attackers.some(attacker =>
+      attacker.attack >= enemy.defense && attacker.defense > enemy.attack));
+    const target = enemies.filter(card => !card.engaged && card.defense <= 2 && card.attack >= 3)
+      .sort((a, b) => b.attack - a.attack)[0];
+    if (!combat || !target || enemies.length !== 2) return null;
+    const index = answers.findIndex(answer => answer.cards?.length === 1 && answer.cards[0] === target.id);
+    return index >= 0 ? index : null;
+  }
+
+  // 巫师首局 T5。灾藤先落地，让同一张炎术再对主战者打 1。
+  if (key !== 'cQZr8Z' || decision?.type !== 'mainPhase' || own.maxPlayPoints !== 3 || foe.leaderDefense <= 8) return null;
+  if (enemies.length !== 1 || enemies[0].def !== 'BP20-040' || enemies[0].defense > 2) return null;
+  const available = [...own.hand, ...own.ex].filter(card => !card.hidden);
+  const spell = available.find(card => card.def === 'BP18-123');
+  if (!spell) return null;
+
+  const onField = own.field.some(card => !card.hidden && card.def === 'BP18-117');
+  let play = spell;
+  if (!onField) {
+    if (own.playPoints < 3 || own.field.length >= 5) return null;
+    play = available.find(card => card.def === 'BP18-117');
+  }
+  const index = answers.findIndex(answer => answer.action?.type === 'play' && answer.action.card === play?.id);
+  return index >= 0 ? index : null;
+}

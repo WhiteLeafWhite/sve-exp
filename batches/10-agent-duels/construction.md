@@ -6,6 +6,10 @@
 
 - 循环 2 · 共同主教 · 保留当前张数。[实际牌表](decks/history/d780a138fbf854dea21540dea2d6f9e4d6a62001818fe1449388d3b467f7130e.json)
 
+
+[主教席的调表理由](construction-bishop.md)
+
+[三职业的换牌记录](meta-deck-log.md)
 <a id="cQZr8Z-01"></a>
 
 破坏巫师第 1–2 局。 [五局复盘](cQZr8Z/reviews/01.md)

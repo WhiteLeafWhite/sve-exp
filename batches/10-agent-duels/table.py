@@ -85,6 +85,9 @@ def logs():
         ledger.append("")
     listing+=rows
     listing.extend(["","主教各对局战绩为"+"、".join(f"{NAMES[k]} {tally(s)}" for k,s in results.items() if s)+"。 [构筑日志](construction.md)"])
+    for title,name in (("主教席的调表理由","construction-bishop.md"),("三职业的换牌记录","meta-deck-log.md")):
+        if (ROOT/name).is_file():
+            ledger.extend(["",f"[{title}]({name})"])
     groups=sorted((ROOT/"checks").glob("*.md"))
     if groups:
         listing.extend(["", "每五场从双方座位复查。"+" · ".join(f"[第 {int(f.stem)} 组](checks/{f.name})" for f in groups)])

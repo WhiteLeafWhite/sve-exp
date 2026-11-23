@@ -15,6 +15,8 @@ description: 用 SVE NEXT 练习 Shadowverse EVOLVE 日版 BP20 主教，陪练�
 
 双 agent 对练时，主教席和对手席各读自己的玩家视角。每个三职业循环冻结共同主教，三种主流各自与最初原表比较，换动最多五张。把两方亲自选择的关节点、委托给本方策略的操作及每一局的理由一同保存。[双方座位与录像操作](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/seats.md)
 
+在圣士郎进化时，核对手中承担者、剩余进化牌和直立目标的防御。练习把两次回复各自分配为 2 伤，再与下祈祷的同牌序结果比较。对龙或皇室，先算守护被移走或炮手被补回之后的伤害。[主教席实战题与配对重演](references/agent-bishop-coach.md)
+
 检验防守卡位时，逐局看神弓座天使是否活到伤害结算、信仰的一击是否赶得上消灭触发源。练习先解场时，用同一份牌重演炎术、灾藤和炎术的顺序，记录龙族余下的攻击与直伤。[神弓两卡位实测](references/lyrial.md) · [快速消灭的实战目标](references/banish.md) · [龙族 r4 打法与配对实录](references/dragon-r4.md)
 
 复查此前七批时，使用历史牌表、打法版本与当时的样本。历史策略默认使用 r2，本批正式比较使用 r3。[历史战绩](references/results.md) · [历史牌表](references/bishop-final.json) · [历史打法](references/playbook.md) · [历史条件](references/method.md)

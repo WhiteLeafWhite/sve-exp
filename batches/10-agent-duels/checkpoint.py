@@ -85,6 +85,10 @@ def main(group, end):
             deck=read(ROOT/frozen[label]); diff=card_delta(before,deck)
             if label=="bishop" or diff!="保留当前张数":
                 lines.append(f"- 循环 {c}，{('共同主教' if label=='bishop' else NAMES[label])}。{diff}。[所用牌表](../{frozen[label]})")
+    for role,title in (("bishop","主教席"),("meta","主流席")):
+        note=f"reviews-by-seat/{group:03}-{role}.md"
+        if (ROOT/note).is_file():
+            lines.extend(["",f"[{title}的本组复盘与下一组取舍](../{note})"])
     md(base.with_suffix(".md"),lines)
     update_skills()
     logs()
