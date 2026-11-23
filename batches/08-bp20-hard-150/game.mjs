@@ -11,21 +11,23 @@ const rt = await import(pathToFileURL(resolve("dist/bp20-training-engine.mjs")).
 const [key, number, version = "A", strategy = "2", series = "explore"] = process.argv.slice(2);
 const secondSaito = series === "secondSaito" || series === "saitoControl";
 const sheep = series === "sheep";
-assert(secondSaito || sheep || ["explore", "fixed100", "lyrial", "dragonPolicy", "banish", "opening", "openingControl"].includes(series));
+const trained = series === "trained";
+assert(secondSaito || sheep || trained || ["explore", "fixed100", "lyrial", "dragonPolicy", "banish", "opening", "openingControl"].includes(series));
 const fixed = series === "fixed100";
 const pairedVersion = {lyrial:"D", banish:"E"}[series];
 const targeted = series === "dragonPolicy";
 const opening = series === "opening" || series === "openingControl";
-const archive = {fixed100:"09-bp20-fixed-300",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish",opening:"11-dragon-mulligan/candidate",openingControl:"11-dragon-mulligan/control",secondSaito:"12-second-saito/candidate",saitoControl:"12-second-saito/control",sheep:"13-sacred-sheep"}[series];
+const archive = {fixed100:"09-bp20-fixed-300",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish",opening:"11-dragon-mulligan/candidate",openingControl:"11-dragon-mulligan/control",secondSaito:"12-second-saito/candidate",saitoControl:"12-second-saito/control",sheep:"13-sacred-sheep",trained:"14-trained-pilot"}[series];
 const destination = archive ? join(root,"..",archive) : root;
 const pins = {
   cQZr8Z: ["05", "ed8882da5252c802b10365452fee7185915cb764e46e3b5305e246c6529424fd"],
   zQrwne: ["06", "9416da999b748650b862702d9bbf970470089f6aace1182a43097cb5fca1bcf7"],
   t7B32v: ["07", "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"],
 };
-const limit = sheep ? 10 : fixed || series === "opening" || secondSaito ? 100 : pairedVersion || targeted ? 5 : 50;
+const limit = sheep ? 10 : trained ? 20 : fixed || series === "opening" || secondSaito ? 100 : pairedVersion || targeted ? 5 : 50;
 assert(Object.hasOwn(pins, key) && /^[1-9]\d*$/.test(number) && Number(number) <= limit);
-if(sheep) assert(strategy === "3" && version === "S");
+if(trained) assert(strategy === "3" && version === "F");
+else if(sheep) assert(strategy === "3" && version === "S");
 else if(secondSaito) assert(strategy === "3" && version === (series === "secondSaito" ? "F" : "B"));
 else assert(pairedVersion ? version === pairedVersion && strategy === "3" : /^[ABC]$/.test(version));
 if (targeted) assert(key==="zQrwne" && version==="B" && strategy==="4");
@@ -33,7 +35,8 @@ if (opening) assert(key==="zQrwne" && version==="B" && strategy===(series==="ope
 const read = (path) => JSON.parse(readFileSync(path, "utf8").replace(/^\uFEFF/, ""));
 const engine = rt.createEngine({ cards: rt.ALL_CARDS, scripts: rt.ALL_SCRIPTS });
 const catalog = new rt.Catalog(rt.ALL_CARDS);
-const bishop = rt.parseDeckFile(read(pairedVersion || secondSaito || sheep ? join(destination,"bishop.json") : join(root,"decks",version+".json")));
+const bishopFile = trained ? join(root,"../12-second-saito/candidate/bishop.json") : pairedVersion || secondSaito || sheep ? join(destination,"bishop.json") : join(root,"decks",version+".json");
+const bishop = rt.parseDeckFile(read(bishopFile));
 if (secondSaito) {
   const expected = rt.parseDeckFile(read(join(root,"decks","B.json")));
   if (series === "secondSaito") {
@@ -78,8 +81,8 @@ if (sheep) {
 assert.deepEqual(rt.formatProblems(bishop, "standard", list, catalog,
   engine.validateDeck(decks[0], { deckRestrictions: true })), []);
 assert.deepEqual(engine.validateDeck(decks[1], { deckRestrictions: true }), []);
-const seedNumber = series==="openingControl" ? 2*Number(number)-1 : Number(number) + ({lyrial:75, dragonPolicy:90, banish:95, sheep:60}[series] ?? 0);
-const prefix = secondSaito || sheep ? "sve-exp/bp20-second-saito/v1/" : opening ? "sve-exp/bp20-dragon-mulligan/v1/" : series!=="explore" ? "sve-exp/bp20-fixed-300/v1/" : "sve-exp/bp20-hard-150/v1/";
+const seedNumber = series==="openingControl" ? 2*Number(number)-1 : Number(number) + ({lyrial:75, dragonPolicy:90, banish:95, sheep:60, trained:70}[series] ?? 0);
+const prefix = secondSaito || sheep || trained ? "sve-exp/bp20-second-saito/v1/" : opening ? "sve-exp/bp20-dragon-mulligan/v1/" : series!=="explore" ? "sve-exp/bp20-fixed-300/v1/" : "sve-exp/bp20-hard-150/v1/";
 const seed = prefix + key + "/" + seedNumber;
 const options = { seed, decks, deckNames: [bishop.name, opponent.name], controllers: ["human", "hard"],
   format: "standard", restrictionList: null, deckRestrictions: true, manualActions: false,
@@ -87,6 +90,18 @@ const options = { seed, decks, deckNames: [bishop.name, opponent.name], controll
 const config = rt.configOf(options);
 const fingerprint = rt.engineFingerprint(resolve("packages/gui"));
 const fresh = () => engine.newGame({ seed, players: decks, config });
+let coach, seatStrategy, seatHash;
+const authored=[];
+if(trained){
+  const duel=join(root,"../10-agent-duels");
+  seatHash=read(join(duel,"checks/003.json")).nextPolicies.bishop;
+  assert(/^[a-f0-9]{64}$/.test(seatHash));
+  const source=join(duel,"pilots/history",seatHash+".mjs");
+  assert.equal(createHash("sha256").update(readFileSync(source)).digest("hex"),seatHash);
+  coach=await import(pathToFileURL(source).href);
+  assert.equal(coach.baseRevision??3,3);
+  ({seatStrategy}=await import(pathToFileURL(join(duel,"seat-strategy.mjs")).href));
+}
 const file = join(destination, key, "replays", number.padStart(2, "0") + ".json");
 if (existsSync(file)) {
   const old = read(file);
@@ -94,6 +109,7 @@ if (existsSync(file)) {
   assert.equal(old.training.policy, Number(strategy));
   assert.equal(old.training.engine, fingerprint);
   assert.equal(old.training.deckVersion, version);
+  if(trained)assert.equal(old.training.seatPilot.hash,seatHash);
   assert(old.info.result);
   console.log("Already completed", key, number);
 } else {
@@ -112,7 +128,13 @@ if (existsSync(file)) {
     const d = game.decision;
     const forcedPass = d.type === "quick" && d.actions.every((a) => a.type === "pass");
     const by = forcedPass ? null : d.player;
-    const input = forcedPass ? { type: "quick", action: { type: "pass" } } : players[by].decide(game);
+    let input;
+    if(trained && by===0){
+      const {answers}=rt.enumerateAnswers(d,180);
+      const chosen=seatStrategy(game,0,key,answers,coach,players[0],2);
+      input=chosen.input;
+      if(chosen.authored)authored.push({at:inputs.length,turn:game.state.turn,decision:d.type,options:answers.length});
+    }else input=forcedPass ? { type: "quick", action: { type: "pass" } } : players[by].decide(game);
     game.act(input, by ?? undefined);
     inputs.push({ input, by });
   }
@@ -124,6 +146,7 @@ if (existsSync(file)) {
     training: { key, number: Number(number), deckVersion: version, policy: Number(strategy), engine: fingerprint,
       bishopHash: signature(bishop), opponentHash: signature(opponent), reviewedList: list.id, opponentPreset: "hard-next",
       opponentEffort: 1, hp: game.state.players.map((p) => p.leaderDefense),
+      ...(trained ? {seatPilot:{checkpoint:3,hash:seatHash,viewVersion:2,authored}} : {}),
       search: players.map((p) => ({ fallbacks: p.stats.fallbacks, failedSimulations: p.stats.simulationFailures })) } };
   mkdirSync(dirname(file), { recursive: true });
   const temp = file + "." + process.pid + ".tmp";
