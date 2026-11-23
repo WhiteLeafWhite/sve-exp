@@ -7,7 +7,7 @@
 | 对手 | 配对局 | 训练打法胜 | 原 r3 胜 | 原负转胜 | 原胜转负 | 全部输入相同 | 至少一次多选项由训练打法决定 |
 |---|---:|---:|---:|---:|---:|---:|---:|
 | 破坏巫师 | 10 | 4 | 4 | 0 | 0 | 10 | 0 |
-| 侮蔑龙 | 5 | 3 | 3 | 0 | 0 | 5 | 1 |
+| 侮蔑龙 | 10 | 6 | 6 | 0 | 0 | 10 | 2 |
 | 财宝皇室 | 5 | 1 | 1 | 0 | 0 | 5 | 0 |
 
 选项数只计主教面对至少两个合法选项时，冻结打法亲自指定的一步。两份录像可能在更早的一次相同选择后使用不同的搜索缓存。
@@ -37,6 +37,11 @@
 | 73 | 负／负 | 完全相同 | 0 | [训练日志](zQrwne/games/03.md) · [逐局复盘](zQrwne/reviews/01.md#game-03) · [录像](zQrwne/replays/03.json) · [原 r3](../12-second-saito/candidate/zQrwne/games/73.md) |
 | 74 | 胜／胜 | 完全相同 | 1 | [训练日志](zQrwne/games/04.md) · [逐局复盘](zQrwne/reviews/01.md#game-04) · [录像](zQrwne/replays/04.json) · [原 r3](../12-second-saito/candidate/zQrwne/games/74.md) |
 | 75 | 负／负 | 完全相同 | 0 | [训练日志](zQrwne/games/05.md) · [逐局复盘](zQrwne/reviews/01.md#game-05) · [录像](zQrwne/replays/05.json) · [原 r3](../12-second-saito/candidate/zQrwne/games/75.md) |
+| 76 | 负／负 | 完全相同 | 0 | [训练日志](zQrwne/games/06.md) · [逐局复盘](zQrwne/reviews/02.md#game-06) · [录像](zQrwne/replays/06.json) · [原 r3](../12-second-saito/candidate/zQrwne/games/76.md) |
+| 77 | 胜／胜 | 完全相同 | 0 | [训练日志](zQrwne/games/07.md) · [逐局复盘](zQrwne/reviews/02.md#game-07) · [录像](zQrwne/replays/07.json) · [原 r3](../12-second-saito/candidate/zQrwne/games/77.md) |
+| 78 | 胜／胜 | 完全相同 | 0 | [训练日志](zQrwne/games/08.md) · [逐局复盘](zQrwne/reviews/02.md#game-08) · [录像](zQrwne/replays/08.json) · [原 r3](../12-second-saito/candidate/zQrwne/games/78.md) |
+| 79 | 胜／胜 | 完全相同 | 1 | [训练日志](zQrwne/games/09.md) · [逐局复盘](zQrwne/reviews/02.md#game-09) · [录像](zQrwne/replays/09.json) · [原 r3](../12-second-saito/candidate/zQrwne/games/79.md) |
+| 80 | 负／负 | 完全相同 | 0 | [训练日志](zQrwne/games/10.md) · [逐局复盘](zQrwne/reviews/02.md#game-10) · [录像](zQrwne/replays/10.json) · [原 r3](../12-second-saito/candidate/zQrwne/games/80.md) |
 
 
 ## 财宝皇室
