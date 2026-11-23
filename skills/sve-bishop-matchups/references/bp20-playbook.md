@@ -29,6 +29,12 @@
 
 第八批对龙族第 7 局，在输入 148 前停下。主教有 8 血、1 PP，对手 18 血，场上誓断的赐予者可以普通进化或超进化，也能先起动坚定不移的祈祷。实战选普通进化，T18 落败。把同一个输入分别改为超进化和起动祈祷，交还同一套 r3 与满强度 Hard 续打，两条分支也都在 T18 落败。训练时将断点往前挪到 T16，重新找「何时可以移除自伤触发源」或「何时能准备减伤」的机会。两条分支独立保存在训练题目录。[原局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/zQrwne/games/07.md) · [超进化分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/drills/dragon-07-super.json) · [祈祷分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/drills/dragon-07-prayer.json)
 
+## 水银要在什么时候抽牌
+
+固定 B 的三组百局中，主教在己方回合使用水银 85 次，在对方回合使用 23 次。己方回合抽来的同一张牌有 29 次随即离手。遇到需要马上找到解牌、弃牌费用或进化配合的局面，先写下哪一张能改变当回合操作，再决定是否现在抽。另有 31 次水银已经是本回合最后一次主阶段行动，其中 5 次主教在下一个对手回合被击倒。逐段重算原伤害，4 次若从首个攻击窗口开始每段少 1 点，原路线结算后主教还会有血。[三职业计数与原始输入](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/water-timing.md)
+
+以巫师实战第六局重练，先下白牙和承担者，把水银留给对手首攻。若巫师先打大红莲再攻击，主教剩 5，实打到 T24 获胜。若对手先尽量打完 3、1、2 三段能力伤害，再让三名狂信者攻击，主教只剩 2，虽然同样在 T16 抽到忒弥斯清场，实打到 T19 落败。先算清对面可在攻击前花掉的费用，再决定自己这回合需要几次回复。[主教留水银与巫师反制](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/index.md)
+
 ## 冷门主轴的证据
 
 SVE Helper 本次筛选出 38 份 BP20 主教公开牌表。白牙＋萝蕾娜同表出现 2 份，希弥佳＋安息神殿出现 15 份。勒碧丝＋封印同样只有 2 份，但在相同三组对手的选表阶段仅 3/30 胜，白牙版本为 20/30。对真人可以把「能否预判回复、解场与直伤」列作待验证的问题。困难 Bot 的完整信息设置只检验这套牌承受强力对抗时的表现。[公开样本](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/source-sample.json) · [同条件选表](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/selected.json)

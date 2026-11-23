@@ -35,3 +35,5 @@
 **两个二费随从能在零 EP 时解场并打 5。** 职业第 6 局 T7，我方只有新约黑章，敌方是 4/2 圣士郎。四费先下祈祷者、再下作为第三偶像的破坏的随从，免费进化到 4/4，同时打圣士郎和主教各 2。祈祷者献黑章，对主教另打 2+1；白章接回场上。保下的 4/4 在 T9、T11 各攻击 4。对比 T5 敌方空场时，同一张随从进化无法连带打主教，阿克西雅献白章检索的价值更高。[第 6 局复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/notes/06-meta.md)
 
 **大红莲不够击倒席翁时，可以留给下一批随从。** 第 6 局 T13 只面对 3/7 席翁，大红莲打它实为 5，无法单独清掉。T15 实际面对横置 4/4 守护与直立 3/3，从八费支付七费清两体并打脸 3。三个原本受守护限制的狂信者转为能各攻 3，再补黑章 1、祈祷者 2，正好打完主教 15 血。[第 6 局战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/games/06.md)
+
+**水银已经公开时，小额能力伤害先于第一次攻击。**职业第 6 局的白牙分支里，主教 14 血、3 PP，EX 里有水银的断绝。大红莲打 3，若立即攻击，水银后三名 3 攻狂信者各打 2，稍后献黑章只打 0；主教以 5 血进入下回合，在 T24 胜。相同手牌和牌序下，改在攻击前用荒野献黑章打 1，愉悦回费、祈祷者献白章再打 2。第一次攻击前主教已剩 8，三击实打 6，留下 2 血。T16 同一张忒弥斯仍清四名随从，T19 巫师用暗黑创造物与两张章收尾，以 35 比 0 胜。判断从「对方公开的水银是否付得起」开始，再按每段先后计算。[先攻击](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-06-hold.json) · [先献章](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-06-burn-first.json)
