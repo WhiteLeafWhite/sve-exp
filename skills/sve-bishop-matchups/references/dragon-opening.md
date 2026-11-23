@@ -2,7 +2,7 @@
 
 看到耶菈先算 2 费守护能否接出祈祷。若靠圣士郎起步，把承担者与实际找牌的费用写出。减少低攻检索过多的起手可能同时错过炎术和中期的回复。
 
-独立模拟已核对 43 对先攻，留牌实际改变 17 次，负转胜 2 次、胜转负 6 次。完整候选当前 26–59。相同先攻决定的 26 对检查了所有引擎输入，完全相同。
+独立模拟已核对 45 对先攻，留牌实际改变 17 次，负转胜 2 次、胜转负 6 次。完整候选当前 27–63。相同先攻决定的 28 对检查了所有引擎输入，完全相同。
 
 - 种子 25 由负转胜。原方案前三个己方回合打出 1 张，候选打出 2 张。遮住结局后分别重排前三回合。[保留四张](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/11-dragon-mulligan/control/zQrwne/games/13.md) · [重抽四张](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/11-dragon-mulligan/candidate/zQrwne/games/25.md)
 - 种子 3 由胜转负。原方案前三个己方回合打出 2 张，候选打出 1 张。遮住结局后分别重排前三回合。[保留四张](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/11-dragon-mulligan/control/zQrwne/games/02.md) · [重抽四张](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/11-dragon-mulligan/candidate/zQrwne/games/03.md)
