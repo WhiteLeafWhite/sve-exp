@@ -7,7 +7,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 const here = dirname(fileURLToPath(import.meta.url));
 const rt = await import(pathToFileURL(resolve("dist/bp20-training-engine.mjs")).href);
 const [key, roundText, series = "explore"] = process.argv.slice(2);
-const otherFolders = {fixed100:"09-bp20-fixed-300",duel:"10-agent-duels",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish",opening:"11-dragon-mulligan/candidate",openingControl:"11-dragon-mulligan/control",secondSaito:"12-second-saito/candidate",saitoControl:"12-second-saito/control"};
+const otherFolders = {fixed100:"09-bp20-fixed-300",duel:"10-agent-duels",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish",opening:"11-dragon-mulligan/candidate",openingControl:"11-dragon-mulligan/control",secondSaito:"12-second-saito/candidate",saitoControl:"12-second-saito/control",sheep:"13-sacred-sheep"};
 const slotTrial = series === "secondSaito" || series === "saitoControl";
 const drillFile=series==="drill" ? resolve(process.argv[5]) : null;
 assert(series==="explore" || drillFile || Object.hasOwn(otherFolders,series));
