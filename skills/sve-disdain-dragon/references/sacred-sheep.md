@@ -5,5 +5,6 @@
 ## 侮蔑龙
 
 - 第 62 个牌序 T15 输入 121 用掉一次防止。从这一步前数对手还能打出的攻击和直伤。[实战和录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/13-sacred-sheep/zQrwne/games/02.md)
+- 第 66 个牌序 T13 输入 105 用掉一次防止。从这一步前数对手还能打出的攻击和直伤。[实战和录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/13-sacred-sheep/zQrwne/games/06.md)
 
 [全部配对](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/13-sacred-sheep/index.md)
