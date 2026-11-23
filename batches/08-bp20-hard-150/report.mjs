@@ -9,6 +9,8 @@ const rt = await import(pathToFileURL(resolve("dist/bp20-training-engine.mjs")).
 const [key, roundText, series = "explore"] = process.argv.slice(2);
 const otherFolders = {fixed100:"09-bp20-fixed-300",duel:"10-agent-duels",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish",opening:"11-dragon-mulligan/candidate",openingControl:"11-dragon-mulligan/control",secondSaito:"12-second-saito/candidate",saitoControl:"12-second-saito/control",sheep:"13-sacred-sheep",trained:"14-trained-pilot"};
 const slotTrial = series === "secondSaito" || series === "saitoControl";
+const knightTrial = series === "knight" || series === "knightControl";
+if(knightTrial)otherFolders[series]="15-heavenly-knight/"+(series==="knight"?"candidate":"control");
 const drillFile=series==="drill" ? resolve(process.argv[5]) : null;
 assert(series==="explore" || drillFile || Object.hasOwn(otherFolders,series));
 const root = drillFile || series==="explore" ? here : join(here, "..", otherFolders[series]);
@@ -38,6 +40,7 @@ function summarize(number) {
   const drawn = {}, cast = {}, entered = {};
   const evolutions = [];
   const sheepTrial = series === "sheep", sheepTriggers = [], sheepSpent = [];
+  const knight = {plays:[], face:[], attacked:[]};
   const shields = () => g.state.effects.filter(e=>e.target===leaders[0] && e.change.kind==="preventNextDamage" && lookup.get(e.source)==="BP20-099");
   const openingHands = [[], []];
   const branches=new Set(drillFile?[r.practice.fromInput,...(r.practice.manualInputs??[]),
@@ -150,9 +153,20 @@ function summarize(number) {
     }
     if (input.action?.type === "activate") log(who[d.player] + "起动" + card(input.action.card) + "的能力。");
     const turnBefore = g.state.turn;
+    if(series==="knight" && by===0 && input.action?.type==="play" && g.state.cards[input.action.card]?.def==="BP09-091") {
+      const amulets=g.view(0).players[0].field.filter(c=>c.type==="amulet").length;
+      knight.plays.push({at:i,turn:turnBefore,amulets});
+      log("天曜战骑出牌前，主教有 "+amulets+" 个护符。");
+    }
     const before = sheepTrial && g.state.phase === "main" && g.state.activePlayer === 1 ? shields() : [];
     const events = g.act(input, by ?? undefined);
     record(events);
+    if(series==="knight")for(const e of events) {
+      if(e.type==="damageDealt" && e.kind==="attack" && e.target===leaders[1] && (e.by?.def??lookup.get(e.source))==="BP09-091")
+        knight.face.push({at:i,turn:turnBefore,amount:e.amount});
+      if(e.type==="attackDeclared" && e.player===1 && lookup.get(e.target)==="BP09-091")
+        knight.attacked.push({at:i,turn:turnBefore});
+    }
     if(sheepTrial){
       for(const e of events)if(e.type==="abilityTriggered"&&e.player===0&&e.sourceDef==="BP20-099"){
         sheepTriggers.push({turn:g.state.turn,at:i});
@@ -218,6 +232,7 @@ function summarize(number) {
     policy:r.training.policy, mulligan:mulligan[0], hand, earlyPlays, firstHeal, drawn, cast, entered,
     ...(slotTrial ? {evolutions, openingHands} : {}),
     ...(sheepTrial ? {sheepTriggers,sheepSpent} : {}),
+    ...(series==="knight" ? {knight} : {}),
     ...(series==="trained" ? {seatChoices:marked} : {}),
     worst:{ turn:worst.n, loss:worst.start[0]-worst.end[0], start:worst.start,end:worst.end },
     last:{ start:last.start, end:last.end, finish:damage.map((h) => h.text), reason:g.result.losses?.[0]?.reason }, alternative, metaAlternative };
