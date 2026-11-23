@@ -23,6 +23,25 @@ def interval(n, total):
     return [round(100*(center-width),1), round(100*(center+width),1)]
 
 
+def terminal_threats(games):
+    lost = [g for g in games if g["winner"] == 1]
+    sources = Counter()
+    for g in lost:
+        kinds = set()
+        for line in g["last"]["finish"]:
+            if line.endswith("点能力伤害"):
+                kinds.add("ability")
+            elif line.endswith("点攻击伤害"):
+                kinds.add("attack")
+            else:
+                raise ValueError(f"Unrecognized terminal damage in game {g['number']}: {line}")
+        category = "both" if len(kinds) == 2 else next(iter(kinds), "other")
+        sources[category] += 1
+    return {"losses":len(lost), **{k:sources[k] for k in ("attack","ability","both","other")},
+            "from10":sum(g["last"]["start"][0] >= 10 for g in lost),
+            "from20":sum(g["last"]["start"][0] >= 20 for g in lost)}
+
+
 def main():
     protocol = read(ROOT/"protocol.json")
     records, all_seeds, total_inputs = {}, set(), 0
@@ -67,7 +86,7 @@ def main():
             per_game.append(f"| {n} | {g['order']} | {result} | T{g['turn']} | {g['hp'][0]}／{g['hp'][1]} | "
                             f"[战报](games/{n:02}.md) · [复盘](reviews/{(n+4)//5:02}.md#game-{n:02}) · [录像](replays/{n:02}.json) |")
         record=score(games)
-        rr={"record":record,"first":score(games[::2]),"second":score(games[1::2]),"winPercent":record[0],"wilson95":interval(record[0],100),
+        rr={"record":record,"first":score(games[::2]),"second":score(games[1::2]),"winPercent":record[0],"wilson95":interval(record[0],100),"terminalThreats":terminal_threats(games),
             "medianTurn":statistics.median(g["turn"] for g in games),"bishopHash":baseline["bishopHash"],"opponentHash":baseline["opponentHash"]}
         records[key]=rr
         observations[key]={
@@ -124,6 +143,14 @@ def main():
           +("三组均达到 45%。" if balanced else "三组均达到 45% 的条件也未满足。")+" 本表采用每个对手的全部 100 局。","",
           "| 对手 | 胜–负 | 先攻 | 后攻 |","|---|---:|---:|---:|"]
     for k,r in records.items(): tips.append(f"| {NAMES[k]} | {fmt(r['record'])} | {fmt(r['first'])} | {fmt(r['second'])} |")
+    tips.extend(["","## 败局最后一回合怎样扣血","",
+                 "下表按整局计数，只看主教落败的最后一回合。起始 ≥20 血的场次已包含在 ≥10 血中。伤害类别取自引擎实际结算。","",
+                 "| 对手 | 败局 | 仅攻击 | 仅能力 | 两者都有 | 无主战者伤害 | 起始 ≥10 血 | 起始 ≥20 血 |",
+                 "|---|---:|---:|---:|---:|---:|---:|---:|"])
+    for k,r in records.items():
+        threat=r["terminalThreats"]
+        tips.append(f"| {NAMES[k]} | "+" | ".join(str(threat[c]) for c in ("losses","attack","ability","both","other","from10","from20"))+" |")
+    tips.extend(["","自己只挡住攻击或只防能力伤害时，先读该行的混合伤害局数，再回看前一回合能否少留一个对方攻击手或自伤触发源。移除减伤随从会改变后续结算，逐段比较须另开录像分支。"])
     tips.extend(["","## 三次交回合前的重练题",""])
     for k,item in observations.items():
         g=item["sharpest"];s=g["worst"];n=g["number"]

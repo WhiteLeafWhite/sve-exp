@@ -12,3 +12,5 @@ description: 在 SVE NEXT 日版 BP20 用 t7B32v「20财宝」皇室对练，核
 3. 海贼旗要选盗贼，兼具八狱和盗贼才附带 1 点主战者伤害。黄金短剑先要有合法从者目标，对手墓场十张以上才附带主战者 2 点。考虑进化篡夺绝杰利用对方墓场时，优先看立刻能用的回复、移除或疾驰。主教席翁在场时，对每段分别减伤。
 4. **实战题**。对主教第 22 局 T21，主教 12 血。两个旧随从先打 3、2，再用芭芭萝丝提供的海贼旗打 1，最后 6 攻收尾。反例在第 21 局，皇室从 12 血被天冥和两个老随从正好击败。交回合前，用「天冥起动＋能攻击的透京随从」复算主教的上限。[第 22 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/t7B32v/games/22.md) · [第 21 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/t7B32v/games/21.md)
 5. 每五局记录未用尽的减费、被挤掉的 EX、最后一个合适的交换机会。保留至少一组「同局面先用旗或先攻击」的反事实重演。双 agent 对练阶段累计替牌按初始原表的主牌和进化牌合计，最多五张。局中只读取皇室座位的可见信息。[更多实战](https://github.com/WhiteLeafWhite/sve-exp/tree/main/batches/08-bp20-hard-150/t7B32v)
+
+**计算对方现成的斩杀。** 固定百局第 40 局，皇室在 T15 用两张旗和炮手向主教打出三段 1 点，交回合时主教仍有 10 血。主教留场的万裁分身下一回合一击打完皇室 7 血。T16 皇室剩 0 PP、没有横置守护，EX 的三张海贼旗无法阻止这一击。复盘时回到 T15，用「分身还能攻击几次」检验贪伤害的代价。[固定皇室第 40 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/t7B32v/games/40.md)

@@ -7,7 +7,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 const here = dirname(fileURLToPath(import.meta.url));
 const rt = await import(pathToFileURL(resolve("dist/bp20-training-engine.mjs")).href);
 const [key, roundText, series = "explore"] = process.argv.slice(2);
-const otherFolders = {fixed100:"09-bp20-fixed-300",duel:"10-agent-duels",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy"};
+const otherFolders = {fixed100:"09-bp20-fixed-300",duel:"10-agent-duels",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish"};
 assert(series==="explore" || Object.hasOwn(otherFolders,series));
 const root = series==="explore" ? here : join(here, "..", otherFolders[series]);
 const round = Number(roundText);
@@ -115,7 +115,7 @@ function summarize(number) {
   const winner = g.result.winner, order = opts.turnOrder === "player1" ? "先攻" : "后攻";
   const heading = "第 " + number + " 局 · 主教" + order + " · " + resultName(winner);
   const loglines = ["# " + heading,"",opts.deckNames.join(" 对 ") + "。主教构筑 " + r.training.deckVersion +
-    "，打法 r" + r.training.policy + "。终局 T" + g.state.turn + "，主教／对手体力 " + fmtHp(hp) +
+    (series === "duel" ? "，两名子 agent 分席操控" : "，打法 r" + r.training.policy) + "。终局 T" + g.state.turn + "，主教／对手体力 " + fmtHp(hp) +
     "。已重放核对 " + r.inputs.length + " 次输入。","",
     "主教起手为" + handNames(hand) + "，选择" + mulligan[0] + "。" + foe + mulligan[1] + "。","",
     "[原生录像](../replays/" + id + ".json) · [本局复盘](../reviews/" + group + ".md#game-" + id + ")",""];
@@ -142,7 +142,7 @@ const games = numbers.filter(n=>series !== "duel" || existsSync(join(root,key,"r
 assert(games.length > 0);
 const lines = ["# 第 " + round + " 组 · 主教对" + foe,"","本组 " + games.filter((g) => g.winner === 0).length +
   " 胜，" + games.filter((g) => g.winner === 1).length + " 负，" + games.filter((g) => g.winner === null).length +
-  " 平。构筑 " + games[0].deck + "，打法 r" + games[0].policy + "。","","[本轮构筑与打法决策](../../construction.md#"+key+"-"+pad(round)+")",""];
+  " 平。" + (series === "duel" ? "各局牌表与两名子 agent 的选择见逐局记录。" : "构筑 " + games[0].deck + "，打法 r" + games[0].policy + "。"),"","[本轮构筑与打法决策](../../construction.md#"+key+"-"+pad(round)+")",""];
 for (const g of games) {
   const id=pad(g.number), a=g.alternative;
   lines.push('<a id="game-'+id+'"></a>',"", "## 第 " + g.number + " 局 · "+g.order+" · "+resultName(g.winner),"",
