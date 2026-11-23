@@ -100,7 +100,7 @@ for key, (opp,skill) in KEYS.items():
             diary.extend([f"## {opp} · {tag} 第 {rows[0]['number']}–{rows[-1]['number']} 局","",
                           f"胜 {sum(g['winner']==0 for g in rows)}/{len(rows)}。{line}本项继续使用登记的共同 40/10，另一个卡位方案保留作比较。"
                           f"[本组逐局复盘]({folder}/{key}/reviews/{group:02}.md) · [本局]({log})",""])
-            tips.append(f"- {tag}：{line}[当时的局面与录像]({WEB}/{log})")
+            tips.append(f"- {tag} 版本。{line}[当时的局面与录像]({WEB}/{log})")
     paired=set(games["K"])&set(games["F"])
     up=sum(games["K"][n]["winner"]==0 and games["F"][n]["winner"]==1 for n in paired)
     down=sum(games["K"][n]["winner"]==1 and games["F"][n]["winner"]==0 for n in paired)
@@ -118,8 +118,8 @@ for key, (opp,skill) in KEYS.items():
     st=[interval(record[t]["w"],record[t]["n"]) for t in ("K","F")]
     index.append(f"| {opp} | {st[0]} | {st[1]} | {len(paired)} | {up} | {down} | {plays} | {active} |")
     details.extend(["",f"## {opp}","",
-                    f"主教先攻胜/场数，K 为 {'/'.join(map(str,record['K']['first']))}、F 为 {'/'.join(map(str,record['F']['first']))}；后攻 K 为 {'/'.join(map(str,record['K']['second']))}、F 为 {'/'.join(map(str,record['F']['second']))}。"
-                    f"战骑在 {hits} 局攻击主战者并造成正伤害，合计 {damage} 点；在 {targeted} 局成为对手攻击目标。","",
+                    f"主教先攻胜/场数，K 为 {'/'.join(map(str,record['K']['first']))}、F 为 {'/'.join(map(str,record['F']['first']))}。后攻 K 为 {'/'.join(map(str,record['K']['second']))}、F 为 {'/'.join(map(str,record['F']['second']))}。"
+                    f"战骑在 {hits} 局攻击主战者并造成正伤害，合计 {damage} 点。对手在 {targeted} 局对战骑宣告攻击。","",
                     "| 牌序 | K 结果、中文战报、复盘、录像 | F 结果、中文战报、复盘、录像 |","|---:|---|---|"])
     for n in sorted(set(games["K"])|set(games["F"])):
         item=[]
