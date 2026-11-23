@@ -104,13 +104,18 @@ function summarize(number) {
       if(input.type==="selectCards") {
         const chosen=input.cards.map(id=>name(d.candidateDefs[d.candidates.indexOf(id)]));
         action=chosen.length?"选择"+chosen.join("、"):"不取牌";
+        if(d.reason==="wardEnterEngaged") action=chosen.length?"让"+chosen.join("、")+"横置进场":"令守护随从直立进场";
+        if(d.reason==="wardEngage") action=chosen.length?"让守护随从"+chosen.join("、")+"横置":"保留守护随从直立";
+      } else if(input.type==="orderCards"){
+        const zone=d.reason==="deckBottom"?"牌库底":d.reason==="deckTop"?"牌库顶":"指定区域";
+        action="将"+input.order.map(card).join("、")+"按此顺序放入"+zone;
       } else if(input.type==="choose"){
         const choices=d.options.filter(o=>input.ids.includes(o.id));
         const oracle=g.state.cards[d.source]?.def==="SD04-002";
         action=oracle ? (input.ids[0]==="1" ? "选择提高 PP 上限" : "选择抽一张牌") : "选择模式 "+choices.map(o=>o.id).join("、");
       } else if(input.action){
         const a=input.action;
-        action=({play:"使用",evolve:"进化",activate:"起动"}[a.type]??"")+
+        action=({play:"使用",evolve:"进化",activate:"起动",attack:"用"}[a.type]??"")+
           (a.card?card(a.card):a.type==="attack"?card(a.attacker)+"攻击"+targetName(a.target):a.type==="pass"?"让过 Quick":a.type==="endMainPhase"?"结束主阶段":a.type);
       }
       const note="输入 "+i+" · T"+g.state.turn+" · "+who[d.player]+action+"。";
