@@ -29,3 +29,8 @@
 | 23 | 先攻 | 胜 | T17 · 16／-1 | [日志](games/23.md) · [复盘](reviews/05.md#game-23) · [录像](replays/23.json) |
 | 24 | 后攻 | 负 | T17 · -1／22 | [日志](games/24.md) · [复盘](reviews/05.md#game-24) · [录像](replays/24.json) |
 | 25 | 先攻 | 胜 | T19 · 19／0 | [日志](games/25.md) · [复盘](reviews/05.md#game-25) · [录像](replays/25.json) |
+| 26 | 后攻 | 胜 | T26 · 11／-3 | [日志](games/26.md) · [复盘](reviews/06.md#game-26) · [录像](replays/26.json) |
+| 27 | 先攻 | 负 | T14 · 0／17 | [日志](games/27.md) · [复盘](reviews/06.md#game-27) · [录像](replays/27.json) |
+| 28 | 后攻 | 胜 | T14 · 27／-1 | [日志](games/28.md) · [复盘](reviews/06.md#game-28) · [录像](replays/28.json) |
+| 29 | 先攻 | 胜 | T11 · 21／-2 | [日志](games/29.md) · [复盘](reviews/06.md#game-29) · [录像](replays/29.json) |
+| 30 | 后攻 | 胜 | T20 · 29／0 | [日志](games/30.md) · [复盘](reviews/06.md#game-30) · [录像](replays/30.json) |
