@@ -37,6 +37,8 @@ function summarize(number) {
   const hp = [20,20], turns = [], hand = [], mulligan = ["",""];
   const drawn = {}, cast = {}, entered = {};
   const evolutions = [];
+  const sheepTrial = series === "sheep", sheepTriggers = [], sheepSpent = [];
+  const shields = () => g.state.effects.filter(e=>e.target===leaders[0] && e.change.kind==="preventNextDamage" && lookup.get(e.source)==="BP20-099");
   const openingHands = [[], []];
   const branches=new Set(drillFile?[r.practice.fromInput,...(r.practice.manualInputs??[]),
     ...(r.practice.picks??[]).map(p=>p[0]),...(r.practice.conditionalPicks??[]).map(p=>p[0])]:[]);
@@ -145,7 +147,23 @@ function summarize(number) {
       }
     }
     if (input.action?.type === "activate") log(who[d.player] + "起动" + card(input.action.card) + "的能力。");
-    record(g.act(input, by ?? undefined));
+    const turnBefore = g.state.turn;
+    const before = sheepTrial && g.state.phase === "main" && g.state.activePlayer === 1 ? shields() : [];
+    const events = g.act(input, by ?? undefined);
+    record(events);
+    if(sheepTrial){
+      for(const e of events)if(e.type==="abilityTriggered"&&e.player===0&&e.sourceDef==="BP20-099"){
+        sheepTriggers.push({turn:g.state.turn,at:i});
+        log("圣启梦羊的防止伤害能力触发。");
+      }
+      if(before.length && g.state.turn===turnBefore && g.state.phase==="main"){
+        const remaining = new Set(shields().map(e=>e.id));
+        for(const effect of before)if(!remaining.has(effect.id)){
+          sheepSpent.push({turn:turnBefore,at:i});
+          log("圣启梦羊赋予的一次伤害防止在本次输入中用掉。");
+        }
+      }
+    }
   }
   assert.deepEqual(g.result,r.info.result);
   assert.equal(g.state.turn,r.info.turn);
@@ -197,6 +215,7 @@ function summarize(number) {
   return { number, order, winner, hp, turn:g.state.turn, inputs:r.inputs.length, deck:r.training.deckVersion,
     policy:r.training.policy, mulligan:mulligan[0], hand, earlyPlays, firstHeal, drawn, cast, entered,
     ...(slotTrial ? {evolutions, openingHands} : {}),
+    ...(sheepTrial ? {sheepTriggers,sheepSpent} : {}),
     worst:{ turn:worst.n, loss:worst.start[0]-worst.end[0], start:worst.start,end:worst.end },
     last:{ start:last.start, end:last.end, finish:damage.map((h) => h.text), reason:g.result.losses?.[0]?.reason }, alternative, metaAlternative };
 }

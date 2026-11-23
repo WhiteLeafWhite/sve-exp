@@ -22,6 +22,8 @@
 
 ## 三次交回合前的重练题
 
+防止下一次伤害时，先数对面可以故意打小的那一段。原百局对龙的 57 次败场中，终局回合首段有 18 次只打了 1，另有 33 次打了至少 3。一次防止的价值会随出牌顺序变化。[三职业的实测分布与逐局重练](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/first-damage.md)
+
 - 对破坏巫师第 8 局，T11 主教生命从 16 降到 -1。在前一回合暂停，按公开 EX、当前攻击、需要处理的守护算出对方可能的路线，再揭晓该局操作。[逐回合日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/08.md)
 - 对侮蔑龙第 21 局，T12 主教生命从 20 降到 0。在前一回合暂停，按公开 EX、当前攻击、需要处理的守护算出对方可能的路线，再揭晓该局操作。[逐回合日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/zQrwne/games/21.md)
 - 对财宝皇室第 97 局，T20 主教生命从 25 降到 7。在前一回合暂停，按公开 EX、当前攻击、需要处理的守护算出对方可能的路线，再揭晓该局操作。[逐回合日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/t7B32v/games/97.md)

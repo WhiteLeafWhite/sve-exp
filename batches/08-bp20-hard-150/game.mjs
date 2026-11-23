@@ -10,28 +10,30 @@ const root = dirname(fileURLToPath(import.meta.url));
 const rt = await import(pathToFileURL(resolve("dist/bp20-training-engine.mjs")).href);
 const [key, number, version = "A", strategy = "2", series = "explore"] = process.argv.slice(2);
 const secondSaito = series === "secondSaito" || series === "saitoControl";
-assert(secondSaito || ["explore", "fixed100", "lyrial", "dragonPolicy", "banish", "opening", "openingControl"].includes(series));
+const sheep = series === "sheep";
+assert(secondSaito || sheep || ["explore", "fixed100", "lyrial", "dragonPolicy", "banish", "opening", "openingControl"].includes(series));
 const fixed = series === "fixed100";
 const pairedVersion = {lyrial:"D", banish:"E"}[series];
 const targeted = series === "dragonPolicy";
 const opening = series === "opening" || series === "openingControl";
-const archive = {fixed100:"09-bp20-fixed-300",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish",opening:"11-dragon-mulligan/candidate",openingControl:"11-dragon-mulligan/control",secondSaito:"12-second-saito/candidate",saitoControl:"12-second-saito/control"}[series];
+const archive = {fixed100:"09-bp20-fixed-300",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish",opening:"11-dragon-mulligan/candidate",openingControl:"11-dragon-mulligan/control",secondSaito:"12-second-saito/candidate",saitoControl:"12-second-saito/control",sheep:"13-sacred-sheep"}[series];
 const destination = archive ? join(root,"..",archive) : root;
 const pins = {
   cQZr8Z: ["05", "ed8882da5252c802b10365452fee7185915cb764e46e3b5305e246c6529424fd"],
   zQrwne: ["06", "9416da999b748650b862702d9bbf970470089f6aace1182a43097cb5fca1bcf7"],
   t7B32v: ["07", "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"],
 };
-const limit = fixed || series === "opening" || secondSaito ? 100 : pairedVersion || targeted ? 5 : 50;
+const limit = sheep ? 10 : fixed || series === "opening" || secondSaito ? 100 : pairedVersion || targeted ? 5 : 50;
 assert(Object.hasOwn(pins, key) && /^[1-9]\d*$/.test(number) && Number(number) <= limit);
-if(secondSaito) assert(strategy === "3" && version === (series === "secondSaito" ? "F" : "B"));
+if(sheep) assert(strategy === "3" && version === "S");
+else if(secondSaito) assert(strategy === "3" && version === (series === "secondSaito" ? "F" : "B"));
 else assert(pairedVersion ? version === pairedVersion && strategy === "3" : /^[ABC]$/.test(version));
 if (targeted) assert(key==="zQrwne" && version==="B" && strategy==="4");
 if (opening) assert(key==="zQrwne" && version==="B" && strategy===(series==="opening"?"5":"3"));
 const read = (path) => JSON.parse(readFileSync(path, "utf8").replace(/^\uFEFF/, ""));
 const engine = rt.createEngine({ cards: rt.ALL_CARDS, scripts: rt.ALL_SCRIPTS });
 const catalog = new rt.Catalog(rt.ALL_CARDS);
-const bishop = rt.parseDeckFile(read(pairedVersion || secondSaito ? join(destination,"bishop.json") : join(root,"decks",version+".json")));
+const bishop = rt.parseDeckFile(read(pairedVersion || secondSaito || sheep ? join(destination,"bishop.json") : join(root,"decks",version+".json")));
 if (secondSaito) {
   const expected = rt.parseDeckFile(read(join(root,"decks","B.json")));
   if (series === "secondSaito") {
@@ -60,11 +62,24 @@ for (const printing of [bishop.leader, ...Object.keys(bishop.main), ...Object.ke
 }
 const list = { ...read("packages/gui/restrictions/10_26_JPN.json"), id: "10_26_JPN" };
 const decks = [bishop, opponent].map((d) => rt.toDeckList(d));
+if (sheep) {
+  const f = rt.toDeckList(rt.parseDeckFile(read(join(root,"../12-second-saito/candidate/bishop.json"))));
+  assert.equal(decks[0].leader, f.leader);
+  assert.deepEqual(decks[0].evolve, f.evolve);
+  const controlled = [...f.main];
+  for (const removed of ["BP18-104", "BP19-095"]) {
+    const index = controlled.lastIndexOf(removed);
+    assert(index >= 0);
+    controlled[index] = "BP20-099";
+  }
+  assert.deepEqual([...controlled].sort(), [...decks[0].main].sort());
+  decks[0] = {...decks[0], main:controlled};
+}
 assert.deepEqual(rt.formatProblems(bishop, "standard", list, catalog,
   engine.validateDeck(decks[0], { deckRestrictions: true })), []);
 assert.deepEqual(engine.validateDeck(decks[1], { deckRestrictions: true }), []);
-const seedNumber = series==="openingControl" ? 2*Number(number)-1 : Number(number) + ({lyrial:75, dragonPolicy:90, banish:95}[series] ?? 0);
-const prefix = secondSaito ? "sve-exp/bp20-second-saito/v1/" : opening ? "sve-exp/bp20-dragon-mulligan/v1/" : series!=="explore" ? "sve-exp/bp20-fixed-300/v1/" : "sve-exp/bp20-hard-150/v1/";
+const seedNumber = series==="openingControl" ? 2*Number(number)-1 : Number(number) + ({lyrial:75, dragonPolicy:90, banish:95, sheep:60}[series] ?? 0);
+const prefix = secondSaito || sheep ? "sve-exp/bp20-second-saito/v1/" : opening ? "sve-exp/bp20-dragon-mulligan/v1/" : series!=="explore" ? "sve-exp/bp20-fixed-300/v1/" : "sve-exp/bp20-hard-150/v1/";
 const seed = prefix + key + "/" + seedNumber;
 const options = { seed, decks, deckNames: [bishop.name, opponent.name], controllers: ["human", "hard"],
   format: "standard", restrictionList: null, deckRestrictions: true, manualActions: false,
