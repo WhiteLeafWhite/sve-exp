@@ -10,7 +10,7 @@ REPO = ROOT.parents[1]
 WEB = "https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito"
 KEYS = {"cQZr8Z": ("破坏巫师", "sve-destruction-rune"), "zQrwne": ("侮蔑龙", "sve-disdain-dragon"),
         "t7B32v": ("财宝皇室", "sve-loot-sword")}
-LANES = {"candidate": ("F", "BP18-118", "灾藤"), "control": ("B", "BP15-095", "马文")}
+LANES = {"candidate": ("F", "BP18-118", "灾藤"), "control": ("B", "BP15-095", "玛文")}
 LABEL = {0: "胜", 1: "负", None: "平"}
 
 
@@ -94,9 +94,9 @@ for lane, (version, slot, name) in LANES.items():
     write(folder / "construction.md", diary)
 
 summary = {}
-index = ["# 第二张灾藤与第二张马文", "", "两份共同牌表对同样的新牌序分别实打。每行只计已完成五局复盘的对局。"
-         "[预登记与验收条件](protocol.md) · [双灾藤 F 构筑日志](candidate/construction.md) · [双马文 B 构筑日志](control/construction.md)", "",
-         "| 对手 | 双灾藤 F | 双马文 B | 完整配对 | 原负转胜 | 原胜转负 | 第二张灾藤出场 | 第二张马文出场 |",
+index = ["# 第二张灾藤与第二张玛文", "", "两份共同牌表对同样的新牌序分别实打。每行只计已完成五局复盘的对局。"
+         "[预登记与验收条件](protocol.md) · [双灾藤 F 构筑日志](candidate/construction.md) · [双玛文 B 构筑日志](control/construction.md)", "",
+         "| 对手 | 双灾藤 F | 双玛文 B | 完整配对 | 原负转胜 | 原胜转负 | 第二张灾藤出场 | 第二张玛文出场 |",
          "|---|---:|---:|---:|---:|---:|---:|---:|"]
 details = []
 tips = {}
@@ -120,16 +120,16 @@ for key, (opp, skill) in KEYS.items():
                  f"{len(up)} | {len(down)} | {len(f2)} | {len(b2)} |")
     details += [f"## {opp}", "", f"主教先攻，F 为 {display(outcomes['candidate']['first'])}、B 为 {display(outcomes['control']['first'])}。"
                 f"主教后攻，F 为 {display(outcomes['candidate']['second'])}、B 为 {display(outcomes['control']['second'])}。", "",
-                "| 编号 | 双灾藤 F | 双马文 B | 第二张灾藤／马文的出场回合 |", "|---:|---:|---:|---|"]
+                "| 编号 | 双灾藤 F | 双玛文 B | 第二张灾藤／玛文的出场回合 |", "|---:|---:|---:|---|"]
     for n in sorted(f.keys() | b.keys()):
         def lookup(games, lane):
             return f"[{LABEL[games[n]['winner']]}]({lane}/{key}/games/{n:02}.md)" if n in games else "待配对"
         turns = "／".join(f"T{d[n]}" if n in d else "—" for d in (f2, b2))
         details.append(f"| {n} | {lookup(f,'candidate')} | {lookup(b,'control')} | {turns} |")
     details.append("")
-    lesson = [f"## {opp}", "", f"双灾藤 {display(score(f.values()))}，双马文 {display(score(b.values()))}。"
+    lesson = [f"## {opp}", "", f"双灾藤 {display(score(f.values()))}，双玛文 {display(score(b.values()))}。"
               f"已有 {len(paired)} 对核对了双方初手；改成双灾藤后，{len(up)} 局负转胜，{len(down)} 局胜转负。", ""]
-    for games, duplicates, name, lane in ((f,f2,"灾藤","candidate"), (b,b2,"马文","control")):
+    for games, duplicates, name, lane in ((f,f2,"灾藤","candidate"), (b,b2,"玛文","control")):
         if duplicates:
             n = next(iter(duplicates))
             lesson.append(f"- 第 {n} 局在 T{duplicates[n]} 进化第二张{name}。"
@@ -140,7 +140,7 @@ for key, (opp, skill) in KEYS.items():
         if seeds:
             n=seeds[0]
             lesson.append(f"- 种子 {n} {label}。先比较两边 T{min(f[n]['turn'],b[n]['turn'])} 之前的动作，再检查换位的进化牌是否上场。"
-                          f"[双灾藤]({WEB}/candidate/{key}/games/{n:02}.md) · [双马文]({WEB}/control/{key}/games/{n:02}.md)")
+                          f"[双灾藤]({WEB}/candidate/{key}/games/{n:02}.md) · [双玛文]({WEB}/control/{key}/games/{n:02}.md)")
     tips[key]=lesson
     if f or b:
         write(REPO/"skills"/skill/"references"/"second-saito.md",
@@ -159,7 +159,7 @@ index.extend(["",f"本次已复核 {total} 场独立实打的录像。配对共�
 write(ROOT/"index.md",index)
 (ROOT/"summary.json").write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n","utf-8")
 write(REPO/"skills/sve-bishop-matchups/references/second-saito.md",
-      ["# 第二张灾藤和第二张马文怎么选", "", "计算第二次进化的价值时，手上灾藤、墓地法术、EX 空位与对方关键目标要放在同一回合核对。"
-       "对面有多名威胁时，另算马文在这个回合清场后对手还余几次攻击。", "", *[line for key in KEYS for line in tips[key]], "",
+      ["# 第二张灾藤和第二张玛文怎么选", "", "计算第二次进化的价值时，手上灾藤、墓地法术、EX 空位与对方关键目标要放在同一回合核对。"
+       "对面有多名威胁时，另算玛文在这个回合清场后对手还余几次攻击。", "", *[line for key in KEYS for line in tips[key]], "",
        f"[共同牌表、计数和实战]({WEB}/index.md)"])
 print("Reviewed",total,"games.", {k:s["pairs"] for k,s in summary.items()})
