@@ -20,3 +20,5 @@ description: 在 SVE NEXT 日版 BP20 用 zQrwne「20五妹」侮蔑龙对练，
 对龙起手时，先比较同一手四张在保留和整手重抽后的前三回合。[先攻留牌的独立实打](references/dragon-opening.md)
 
 对照使用第二张灾藤和第二张玛文的场面，比较回收炎术、用身体交换与留费清场的收益。[配对实战](references/second-saito.md)
+
+祈祷者入场，要点自己还是对面？数己方嘉鲁蜜儿的剩余体力、自己当前 PP，以及对面下回合能留下几次攻击。[从 T9 执侮蔑龙](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-zQrwne-02.json&at=51&seat=1)

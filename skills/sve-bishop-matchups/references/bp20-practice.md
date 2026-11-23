@@ -46,6 +46,10 @@ node --import tsx "$skill/scripts/practice.mjs" review $source --at 148 --seat 0
 node --import tsx "$skill/scripts/practice.mjs" branch $source --at 148 --seat 0 --pilot bishop --bot hard --out dist/pc/replays/dragon-07-retry.json
 ```
 
+## 从一局录像的指定输入接手
+
+本机陪练地址可带 `replay`、`at`、`seat` 三个参数。`replay` 是本机回放库里的 BP20 文件名，`at` 为已走过的输入数，`seat=0` 为主教，`seat=1` 为主流。引擎只载入已走过的前缀，你会从正常对战界面看到自己的手牌和当前合法选项。双席录像由最近五局复盘的另一席接着下，困难录像保留原困难对手。接手点会重新初始化对手的底层搜索，因此续局可能与当时实战不同。
+
 ## 保持训练可检验
 
 按分享对话中的陪练方法，把同一个问题拆成两次回答。局中先用当时能看见的区域写行动和对方可能回应，赛后才打开全录像，指出哪一步的预测落空。每个结论附可重放的输入点，再换新牌序检验。对练时可用「这个回合花完 PP 解场，还是保留 Quick」这类有明确取舍的题目。[培养卡牌 AI 陪练的参考对话](https://chatgpt.com/share/6b045a9d-e814-83ee-98ea-d46768315061)

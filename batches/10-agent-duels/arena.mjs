@@ -179,6 +179,11 @@ while(game.decision){
   game.act(input,by??undefined);
   inputs.push({input,by});
   put(prefix,{options,inputs,notes,explicit,strategyMoves,delegatedUntil,authors,auto,resumes,viewVersion});
+  // Show public progress while the two seats have handed this turn to their
+  // planners. Cards, choices and the shuffle stay in their own seat views.
+  if(delegatedUntil.every(until=>until>=game.state.turn) && (v.turn!==game.state.turn||inputs.length%10===0)){
+    put(join(table,"current.json"),{id,key,n,status:"resolving",index:inputs.length,turn:game.state.turn});
+  }
 }
 const verify=fresh();
 for(const {input,by} of inputs)verify.act(input,by??undefined);

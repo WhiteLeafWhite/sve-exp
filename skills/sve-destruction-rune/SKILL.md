@@ -20,3 +20,5 @@ description: 在 SVE NEXT 日版 BP20 使用 cQZr8Z「20二妹」破坏巫师对
 先从本方座位重做一个关键决定，再对照当时的理由与比赛结果。[双座位对练题](references/agent-duels.md)
 
 对照使用第二张灾藤和第二张玛文的场面，比较回收炎术、用身体交换与留费清场的收益。[配对实战](references/second-saito.md)
+
+荒野翻出两张牌，手里还有第二张荒野。用实际剩余费用决定选资源、身体还是继续找牌。[从 T2 执破坏巫师](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-01.json&at=8&seat=1)

@@ -36,7 +36,8 @@ const installed = readFileSync(join(pc,"VERSION.txt"),"utf8");
 const fingerprint = installed.match(/Engine fingerprint: ([a-f0-9]+)/)?.[1];
 assert(fingerprint && installed.includes("0.4.3"),"The practice GUI targets SVE NEXT 0.4.3.");
 const hash=createHash("sha256").update(fingerprint).update(readFileSync(fileURLToPath(import.meta.url)))
-  .update(readFileSync(join(scripts,"desktop-seat.mjs"))).update(readFileSync(join(scripts,"bishop-player.mjs")));
+  .update(readFileSync(join(scripts,"desktop-seat.mjs"))).update(readFileSync(join(scripts,"bishop-player.mjs")))
+  .update(readFileSync(join(scripts,"desktop-exercise.mjs")));
 const policyIds={};
 for(const [name,source] of policies) {
   hash.update(source);
@@ -73,11 +74,34 @@ function coachPlugin() {
     name:"sve-bp20-practice", enforce:"pre",
     resolveId(name) {
       if (name==="virtual:sve-bp20-coach") return join(scripts,"desktop-seat.mjs");
+      if (name==="virtual:sve-bp20-exercise") return join(scripts,"desktop-exercise.mjs");
       if (policies.has(name)) return "\0"+name;
     },
     load(id) { if(id.startsWith("\0virtual:sve-duel-")) return policies.get(id.slice(1)); },
     transform(code, file) {
       const path=file.replaceAll("\\","/");
+      if (path.endsWith("/src/app/App.tsx")) {
+        const storeImport='import { dismissError, useApp } from "./store";';
+        code=replaceOnce(code,storeImport,[
+          'import { dismissError, engine, reportError, useApp } from "./store";',
+          'import { hostApi } from "../host/api";',
+          'import { loadExercise } from "virtual:sve-bp20-exercise";'
+        ].join("\n"));
+        const marker='const [screen, setScreen] = useState<Screen>("menu");';
+        const exerciseHook=[
+          marker,'  const readyForExercise = useApp((s) => s.ready);',
+          '  useEffect(() => {','    const query = new URLSearchParams(window.location.search);',
+          '    if (!readyForExercise || !query.has("replay")) return;',
+          '    let active = true;',
+          '    loadExercise(query, (file) => hostApi.loadReplay(file), '+Boolean(policies.size)+').then((message) => {',
+          '      if (!active) return;',
+          '      engine.send({kind:"settings",settings:{paused:false,revealAll:false,manualDebug:false}});',
+          '      engine.send(message); setScreen("game");',
+          '    }).catch((err) => { if(active) reportError(err instanceof Error ? err.message : String(err)); });',
+          '    return () => { active = false; };','  }, [readyForExercise]);'
+        ];
+        return replaceOnce(code,marker,exerciseHook.join("\n"));
+      }
       if (path.endsWith("/src/engine/game-host.ts")) {
         const original='import { createBot, createPresetBot, type BotPreset } from "@sve/bot";';
         const imports=['import { createBot, createPresetBot, PlannerBot, MEDIUM_V2, type BotPreset } from "@sve/bot";',

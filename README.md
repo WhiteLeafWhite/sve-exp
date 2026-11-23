@@ -4,6 +4,8 @@
 
 这台电脑可以直接打开[主教陪练牌桌](http://127.0.0.1:5170/practice/index.html)。默认你执巫师，对面是本仓库训练的白牙萝蕾娜。也可以自己执主教，挑战三个困难对手。在高级设置选「双席实战陪练」，可以直接挑战两个子 agent 在实战里练出的职业打法。启动、换座位、导入与分支重演见[陪练操作](skills/sve-bishop-matchups/references/bp20-practice.md)。
 
+想直接练一个回合，可以从实战中接手。牌桌会停在你需要作决策的那一步，只展示本方可见的牌。[从 T7 执主教](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-01.json&at=43&seat=0) · [从 T2 执破坏巫师](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-01.json&at=8&seat=1) · [从 T9 执侮蔑龙](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-zQrwne-02.json&at=51&seat=1) · [从 T8 执财宝皇室](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-t7B32v-01.json&at=37&seat=1)
+
 **第九批**　同一份白牙萝蕾娜透京耶菈对三个原版困难 Bot 各 100 局，先后攻各半。主教对破坏巫师 55–45、侮蔑龙 43–57、财宝皇室 56–44。龙族后攻 25–25，先攻 18–32。三组取较低的一组是 43%，距离本次用来衡量「约五五开」的 45% 参考线还有两胜。[百局分组成绩与全部录像](batches/09-bp20-fixed-300/index.md) · [构筑日志](batches/09-bp20-fixed-300/construction.md) · [共同主教](batches/09-bp20-fixed-300/bishop.json)
 
 两次共同构筑微调各测试了三个职业相同的五个配对种子，另有五局只改变对龙打法。神弓代替两个卡位时对龙 0–5，原表同种子 4–1。信仰的一击的五局对龙为 2–3，原表 4–1。现阶段保留白牙、萝蕾娜各两张的原表作为困难 Bot 基准。[神弓试验](batches/09b-bp20-lyrial/index.md) · [快速消灭试验](batches/09d-bp20-banish/index.md) · [同表打法试验](batches/09c-bp20-dragon-policy/index.md)
