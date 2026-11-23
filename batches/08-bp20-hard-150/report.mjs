@@ -7,12 +7,13 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 const here = dirname(fileURLToPath(import.meta.url));
 const rt = await import(pathToFileURL(resolve("dist/bp20-training-engine.mjs")).href);
 const [key, roundText, series = "explore"] = process.argv.slice(2);
-const otherFolders = {fixed100:"09-bp20-fixed-300",duel:"10-agent-duels",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish",opening:"11-dragon-mulligan/candidate",openingControl:"11-dragon-mulligan/control"};
+const otherFolders = {fixed100:"09-bp20-fixed-300",duel:"10-agent-duels",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish",opening:"11-dragon-mulligan/candidate",openingControl:"11-dragon-mulligan/control",secondSaito:"12-second-saito/candidate",saitoControl:"12-second-saito/control"};
+const slotTrial = series === "secondSaito" || series === "saitoControl";
 assert(series==="explore" || Object.hasOwn(otherFolders,series));
 const root = series==="explore" ? here : join(here, "..", otherFolders[series]);
 const round = Number(roundText);
 const foe = { cQZr8Z: "巫师", zQrwne: "龙族", t7B32v: "皇室" }[key];
-assert(foe && Number.isSafeInteger(round) && round >= 1 && (series === "duel" || round <= (["fixed100","opening"].includes(series) ? 20 : 10)));
+assert(foe && Number.isSafeInteger(round) && round >= 1 && (series === "duel" || round <= (slotTrial || ["fixed100","opening"].includes(series) ? 20 : 10)));
 const who = ["主教", foe];
 const engine = rt.createEngine({ cards: rt.ALL_CARDS, scripts: rt.ALL_SCRIPTS });
 const read = (path) => JSON.parse(readFileSync(path, "utf8").replace(/^\uFEFF/, ""));
@@ -34,6 +35,7 @@ function summarize(number) {
   const targetName = (id) => leaders.includes(id) ? who[leaders.indexOf(id)] + "主战者" : card(id);
   const hp = [20,20], turns = [], hand = [], mulligan = ["",""];
   const drawn = {}, cast = {}, entered = {};
+  const evolutions = [];
   let t = null, alternative = null, metaAlternative = null, earlyPlays = 0, firstHeal = null;
   const log = (s) => { if (t) t.lines.push(s); };
   const record = (events) => {
@@ -64,7 +66,12 @@ function summarize(number) {
           cast[e.def] = (cast[e.def] ?? 0) + 1;
           if (t && t.n <= 6) earlyPlays++;
         }
-      } else if (e.type === "evolved") log(card(e.card) + (e.superEvolved ? "超进化。" : "进化。"));
+      } else if (e.type === "evolved") {
+        log(card(e.card) + (e.superEvolved ? "超进化。" : "进化。"));
+        const evo = g.state.cards[e.evolveCard];
+        if (slotTrial && evo?.owner === 0 && g.state.cards[e.card]?.controller === 0)
+          evolutions.push({card:evo.def,turn:t.n});
+      }
       else if (e.type === "attackDeclared") log(who[e.player] + "用" + card(e.attacker) + "攻击" + targetName(e.target) + "。");
       else if (e.type === "cardsSelected" && e.source && e.cards.length) log(card(e.source) + "选择" + e.cards.map(targetName).join("、") + "。");
       else if (e.type === "countersChanged" && e.counter === "prayer") log(card(e.card) + "现有 " + e.count + " 个祈祷指示物。");
@@ -135,6 +142,7 @@ function summarize(number) {
   const worst = turns.reduce((a,b) => a.start[0]-a.end[0] >= b.start[0]-b.end[0] ? a : b);
   return { number, order, winner, hp, turn:g.state.turn, inputs:r.inputs.length, deck:r.training.deckVersion,
     policy:r.training.policy, mulligan:mulligan[0], hand, earlyPlays, firstHeal, drawn, cast, entered,
+    ...(slotTrial ? {evolutions} : {}),
     worst:{ turn:worst.n, loss:worst.start[0]-worst.end[0], start:worst.start,end:worst.end },
     last:{ start:last.start, end:last.end, finish:damage.map((h) => h.text), reason:g.result.losses?.[0]?.reason }, alternative, metaAlternative };
 }
