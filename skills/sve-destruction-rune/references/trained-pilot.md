@@ -5,5 +5,6 @@
 ## 破坏巫师
 
 - 这组没有在多个合法选项之间命中冻结打法。可重练牌序 71 的基础搜索。[训练席逐回合](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/cQZr8Z/games/01.md)
+- 这组没有在多个合法选项之间命中冻结打法。可重练牌序 76 的基础搜索。[训练席逐回合](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/cQZr8Z/games/06.md)
 
 [三种对局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/index.md)

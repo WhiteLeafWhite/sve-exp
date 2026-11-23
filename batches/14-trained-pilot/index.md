@@ -6,7 +6,7 @@
 
 | 对手 | 配对局 | 训练打法胜 | 原 r3 胜 | 原负转胜 | 原胜转负 | 全部输入相同 | 至少一次多选项由训练打法决定 |
 |---|---:|---:|---:|---:|---:|---:|---:|
-| 破坏巫师 | 5 | 4 | 4 | 0 | 0 | 5 | 0 |
+| 破坏巫师 | 10 | 4 | 4 | 0 | 0 | 10 | 0 |
 | 侮蔑龙 | 5 | 3 | 3 | 0 | 0 | 5 | 1 |
 | 财宝皇室 | 5 | 1 | 1 | 0 | 0 | 5 | 0 |
 
@@ -21,6 +21,11 @@
 | 73 | 胜／胜 | 完全相同 | 0 | [训练日志](cQZr8Z/games/03.md) · [逐局复盘](cQZr8Z/reviews/01.md#game-03) · [录像](cQZr8Z/replays/03.json) · [原 r3](../12-second-saito/candidate/cQZr8Z/games/73.md) |
 | 74 | 胜／胜 | 完全相同 | 0 | [训练日志](cQZr8Z/games/04.md) · [逐局复盘](cQZr8Z/reviews/01.md#game-04) · [录像](cQZr8Z/replays/04.json) · [原 r3](../12-second-saito/candidate/cQZr8Z/games/74.md) |
 | 75 | 负／负 | 完全相同 | 0 | [训练日志](cQZr8Z/games/05.md) · [逐局复盘](cQZr8Z/reviews/01.md#game-05) · [录像](cQZr8Z/replays/05.json) · [原 r3](../12-second-saito/candidate/cQZr8Z/games/75.md) |
+| 76 | 负／负 | 完全相同 | 0 | [训练日志](cQZr8Z/games/06.md) · [逐局复盘](cQZr8Z/reviews/02.md#game-06) · [录像](cQZr8Z/replays/06.json) · [原 r3](../12-second-saito/candidate/cQZr8Z/games/76.md) |
+| 77 | 负／负 | 完全相同 | 0 | [训练日志](cQZr8Z/games/07.md) · [逐局复盘](cQZr8Z/reviews/02.md#game-07) · [录像](cQZr8Z/replays/07.json) · [原 r3](../12-second-saito/candidate/cQZr8Z/games/77.md) |
+| 78 | 负／负 | 完全相同 | 0 | [训练日志](cQZr8Z/games/08.md) · [逐局复盘](cQZr8Z/reviews/02.md#game-08) · [录像](cQZr8Z/replays/08.json) · [原 r3](../12-second-saito/candidate/cQZr8Z/games/78.md) |
+| 79 | 负／负 | 完全相同 | 0 | [训练日志](cQZr8Z/games/09.md) · [逐局复盘](cQZr8Z/reviews/02.md#game-09) · [录像](cQZr8Z/replays/09.json) · [原 r3](../12-second-saito/candidate/cQZr8Z/games/79.md) |
+| 80 | 负／负 | 完全相同 | 0 | [训练日志](cQZr8Z/games/10.md) · [逐局复盘](cQZr8Z/reviews/02.md#game-10) · [录像](cQZr8Z/replays/10.json) · [原 r3](../12-second-saito/candidate/cQZr8Z/games/80.md) |
 
 
 ## 侮蔑龙
