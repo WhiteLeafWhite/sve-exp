@@ -47,6 +47,8 @@
 
 从四份独立困难 Bot 起手再练一次。它们都满足主教后攻且起手同时有灾藤和萝蕾娜。四手保留均获胜，改为重抽三胜一负。唯一区别胜负的是另有都市和莉迪耶尔的 F 第 14 局。保留能在第二个己方回合进化灾藤，重抽直到 T10 才有首进化。B 第 90 局的两条都胜，重抽反而更快结束。记住手里已有的前两步，根据另外两张、先后攻和对方场面决定取舍。[四对起手、各自的第一张进化与完整录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/royal-opening.md)
 
+**对龙有足够体力时，先算进化后的灾藤值几攻。** 在同牌序的困难龙第 85 局，T15 主教 25 血、手中炎术、两张耶菈的祈祷，场上有直立的 5/5 灾藤和 6/6 圣士郎。对面是直立的 3/1 团结者、横置的 4/3 祈祷者。圣士郎的第二次 2 伤点团结者，再用灾藤撞祈祷者，确实能清掉两体。灾藤吃下 4 点战斗伤害后只剩 1 防，龙的烈绝的灭牙给所有从者各打 1，把它一起带走，这一线最终落败。另一份实战把 2 伤打在祈祷者上，保留两名健康的从者。T16 承受 4、1、3 后仍有 17 血。T17 炎术打 1、圣士郎攻 10、确信打 2、灾藤攻 7，凑齐对手的 20 血。先算交换后剩几防、对方的全场伤害要花几费，再比较能省下的体力与下回合少掉的攻击。[选择两体的断点](http://127.0.0.1:5170/practice/index.html?replay=BP20-trained-zQrwne-15.json&at=117&seat=0) · [留灾藤的实战](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/candidate/zQrwne/games/85.md) · [清两体的实战](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/zQrwne/games/15.md)
+
 ## 冷门主轴的证据
 
 SVE Helper 本次筛选出 38 份 BP20 主教公开牌表。白牙＋萝蕾娜同表出现 2 份，希弥佳＋安息神殿出现 15 份。勒碧丝＋封印同样只有 2 份，但在相同三组对手的选表阶段仅 3/30 胜，白牙版本为 20/30。对真人可以把「能否预判回复、解场与直伤」列作待验证的问题。困难 Bot 的完整信息设置只检验这套牌承受强力对抗时的表现。[公开样本](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/source-sample.json) · [同条件选表](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/selected.json)
