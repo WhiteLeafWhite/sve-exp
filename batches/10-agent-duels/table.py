@@ -56,6 +56,7 @@ def logs():
     prev={k:read(BATCH/ORIG[k]/"opponent.json") for k in KEYS}
     prev["bishop"]=read(BATCH/"09-bp20-fixed-300/bishop.json")
     results={k:[] for k in KEYS}; changes={}; rows=[]; total=0
+    exact={}
     for f in sorted((ROOT/"cycles").glob("*.json")):
         cycle=int(f.stem); chosen=read(f)
         for label,path in chosen.items():
@@ -68,6 +69,9 @@ def logs():
             if not replay.exists():continue
             data=read(replay); w=data["info"]["result"]["winner"]; d=data["duel"]; tr=data["training"]
             results[k].append(w);changes[k]=tr["opponentChanges"];total+=1
+            pair=(tr["bishopHash"],k,tr["opponentHash"])
+            record=exact.setdefault(pair,{"wins":0,"losses":0,"draws":0,"opponentChanges":tr["opponentChanges"]})
+            record[{0:"wins",1:"losses",None:"draws"}[w]]+=1
             txt={0:"胜",1:"负",None:"平"}[w]; side="先" if cycle%2 else "后"
             row=f"| {g} | {NAMES[k]} | {side} | {txt} | {d['explicit'][0]}／{d['explicit'][1]} | [日志]({k}/games/{num}.md) · [两个座位的复盘]({k}/lessons/{num}.md) · [录像]({k}/replays/{num}.json) |"
             rows.append(row)
@@ -85,6 +89,16 @@ def logs():
         ledger.append("")
     listing+=rows
     listing.extend(["","主教各对局战绩为"+"、".join(f"{NAMES[k]} {tally(s)}" for k,s in results.items() if s)+"。 [构筑日志](construction.md)"])
+    if exact:
+        listing.extend(["","## 各自实际使用的牌表","",
+                        "每行只统计双方均使用所列两份牌表的实战。要看同一构筑对三个职业的取舍，使用同名、同指纹的主教行。","",
+                        "| 共同主教 | 对手牌表 | 主流换牌张数 | 主教胜–负–平 |",
+                        "|---|---|---:|---:|"])
+        for (bh,k,oh),record in exact.items():
+            own=f"decks/history/{bh}.json";foe=f"decks/history/{oh}.json"
+            name=read(ROOT/own)["name"]
+            listing.append(f"| [{name} · {bh[:8]}]({own}) | [{NAMES[k]} · {oh[:8]}]({foe}) | "
+                           f"{record['opponentChanges']} | {record['wins']}–{record['losses']}–{record['draws']} |")
     for title,name in (("主教席的调表理由","construction-bishop.md"),("三职业的换牌记录","meta-deck-log.md")):
         if (ROOT/name).is_file():
             ledger.extend(["",f"[{title}]({name})"])
@@ -97,7 +111,8 @@ def logs():
         for j in range(1,(len(s)+4)//5+1):
             ledger.extend([f'<a id="{k}-{j:02}"></a>',"",f"{NAMES[k]}第 {(j-1)*5+1}–{min(j*5,len(s))} 局。 [五局复盘]({k}/reviews/{j:02}.md)",""])
     md(ROOT/"index.md",listing);md(ROOT/"construction.md",ledger)
-    write(ROOT/"summary.json",{"games":total,"records":{k:[s.count(p) for p in (0,1,None)] for k,s in results.items()},"latestOpponentChanges":changes})
+    write(ROOT/"summary.json",{"games":total,"records":{k:[s.count(p) for p in (0,1,None)] for k,s in results.items()},"latestOpponentChanges":changes,
+          "byExactDecks":[{"bishopHash":bh,"opponent":k,"opponentHash":oh,**record} for (bh,k,oh),record in exact.items()]})
 
 
 if __name__=="__main__":

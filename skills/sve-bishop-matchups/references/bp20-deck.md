@@ -4,6 +4,8 @@
 
 ## 主牌 · 40 张
 
+双席试验的 F 与下表使用完全相同的 40 张主牌。F 进化区将一张 BP15-095 绝望安息·玛文换成 BP18-118 魔污区政府职员·灾藤。比较时按双方的实测牌表选取同一行成绩，再分先后攻。[双灾藤导入文件](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/candidate/bishop.json) · [两表对相同困难牌序的成绩](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/index.md) · [按双方牌表分开的双席实战](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/index.md)
+
 | 卡号 | 名称 | 张数 |
 |---|---|---:|
 | BP01-131 | 忒弥斯的审判 | 1 |
