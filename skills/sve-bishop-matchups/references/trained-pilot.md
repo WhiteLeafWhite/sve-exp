@@ -18,5 +18,6 @@
 
 - 这组没有在多个合法选项之间命中冻结打法。可重练牌序 71 的基础搜索。[训练席逐回合](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/t7B32v/games/01.md)
 - 这组没有在多个合法选项之间命中冻结打法。可重练牌序 76 的基础搜索。[训练席逐回合](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/t7B32v/games/06.md)
+- 牌序 82，输入 36 · T6 · 主教选择空绝篡夺·欧克托莉斯。两份录像首次分歧在输入 92。[训练席逐回合](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/t7B32v/games/12.md)
 
 [冻结打法、同表对照和原生录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/14-trained-pilot/index.md)
