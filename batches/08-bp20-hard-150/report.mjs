@@ -36,6 +36,7 @@ function summarize(number) {
   const hp = [20,20], turns = [], hand = [], mulligan = ["",""];
   const drawn = {}, cast = {}, entered = {};
   const evolutions = [];
+  const openingHands = [[], []];
   let t = null, alternative = null, metaAlternative = null, earlyPlays = 0, firstHeal = null;
   const log = (s) => { if (t) t.lines.push(s); };
   const record = (events) => {
@@ -94,6 +95,8 @@ function summarize(number) {
   record(g.startupEvents);
   for (const [i, {input,by}] of r.inputs.entries()) {
     const d = g.decision;
+    if (slotTrial && d?.type === "mulligan")
+      openingHands[d.player] = g.view(d.player).players[d.player].hand.map(c => c.def);
     if (d?.type === "mulligan" && d.player === 0) hand.push(...g.view(0).players[0].hand.map((c) => c.def));
     if (d?.type === "mainPhase" && d.actions.length > 1 && input.type === "mainPhase") {
       const v = g.view(d.player), own = v.players[d.player], opp = v.players[1-d.player];
@@ -142,13 +145,14 @@ function summarize(number) {
   const worst = turns.reduce((a,b) => a.start[0]-a.end[0] >= b.start[0]-b.end[0] ? a : b);
   return { number, order, winner, hp, turn:g.state.turn, inputs:r.inputs.length, deck:r.training.deckVersion,
     policy:r.training.policy, mulligan:mulligan[0], hand, earlyPlays, firstHeal, drawn, cast, entered,
-    ...(slotTrial ? {evolutions} : {}),
+    ...(slotTrial ? {evolutions, openingHands} : {}),
     worst:{ turn:worst.n, loss:worst.start[0]-worst.end[0], start:worst.start,end:worst.end },
     last:{ start:last.start, end:last.end, finish:damage.map((h) => h.text), reason:g.result.losses?.[0]?.reason }, alternative, metaAlternative };
 }
 
 const numbers = Array.from({ length:5 }, (_,i) => (round-1)*5+i+1);
-const games = numbers.filter(n=>series !== "duel" || existsSync(join(root,key,"replays",pad(n)+".json"))).map(summarize);
+const partial = series === "duel" || process.argv.includes("--partial");
+const games = numbers.filter(n=>!partial || existsSync(join(root,key,"replays",pad(n)+".json"))).map(summarize);
 assert(games.length > 0);
 const lines = ["# 第 " + round + " 组 · 主教对" + foe,"","本组 " + games.filter((g) => g.winner === 0).length +
   " 胜，" + games.filter((g) => g.winner === 1).length + " 负，" + games.filter((g) => g.winner === null).length +
