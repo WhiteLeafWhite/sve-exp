@@ -4,13 +4,13 @@
 
 | 对手 | 天曜战骑 K | 双灾藤 F | 完整配对 | F 负→K 胜 | F 胜→K 负 | K 登场局 | 出牌时有两护符的局数 |
 |---|---|---|---:|---:|---:|---:|---:|
-| 破坏巫师 | 6/15（40%，20–64%） | 7/15（47%，25–70%） | 15 | 1 | 2 | 4 | 3 |
+| 破坏巫师 | 8/20（40%，22–61%） | 7/15（47%，25–70%） | 15 | 1 | 2 | 7 | 5 |
 | 侮蔑龙 | 5/15（33%，15–58%） | 6/15（40%，20–64%） | 15 | 1 | 2 | 5 | 3 |
 | 财宝皇室 | 7/15（47%，25–70%） | 10/15（67%，42–85%） | 15 | 1 | 4 | 6 | 1 |
 
 ## 破坏巫师
 
-主教先攻胜/场数，K 为 2/8、F 为 3/8。后攻 K 为 4/7、F 为 4/7。战骑在 4 局攻击主战者并造成正伤害，合计 27 点。对手在 2 局对战骑宣告攻击。
+主教先攻胜/场数，K 为 3/10、F 为 3/8。后攻 K 为 5/10、F 为 4/7。战骑在 6 局攻击主战者并造成正伤害，合计 49 点。对手在 4 局对战骑宣告攻击。
 
 | 牌序 | K 结果、中文战报、复盘、录像 | F 结果、中文战报、复盘、录像 |
 |---:|---|---|
@@ -29,6 +29,11 @@
 | 13 | 负 · [战报](candidate/cQZr8Z/games/13.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-13) · [录像](candidate/cQZr8Z/replays/13.json) | 负 · [战报](control/cQZr8Z/games/13.md) · [复盘](control/cQZr8Z/reviews/03.md#game-13) · [录像](control/cQZr8Z/replays/13.json) |
 | 14 | 胜 · [战报](candidate/cQZr8Z/games/14.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-14) · [录像](candidate/cQZr8Z/replays/14.json) | 胜 · [战报](control/cQZr8Z/games/14.md) · [复盘](control/cQZr8Z/reviews/03.md#game-14) · [录像](control/cQZr8Z/replays/14.json) |
 | 15 | 负 · [战报](candidate/cQZr8Z/games/15.md) · [复盘](candidate/cQZr8Z/reviews/03.md#game-15) · [录像](candidate/cQZr8Z/replays/15.json) | 负 · [战报](control/cQZr8Z/games/15.md) · [复盘](control/cQZr8Z/reviews/03.md#game-15) · [录像](control/cQZr8Z/replays/15.json) |
+| 16 | 负 · [战报](candidate/cQZr8Z/games/16.md) · [复盘](candidate/cQZr8Z/reviews/04.md#game-16) · [录像](candidate/cQZr8Z/replays/16.json) | 待配对 |
+| 17 | 胜 · [战报](candidate/cQZr8Z/games/17.md) · [复盘](candidate/cQZr8Z/reviews/04.md#game-17) · [录像](candidate/cQZr8Z/replays/17.json) | 待配对 |
+| 18 | 胜 · [战报](candidate/cQZr8Z/games/18.md) · [复盘](candidate/cQZr8Z/reviews/04.md#game-18) · [录像](candidate/cQZr8Z/replays/18.json) | 待配对 |
+| 19 | 负 · [战报](candidate/cQZr8Z/games/19.md) · [复盘](candidate/cQZr8Z/reviews/04.md#game-19) · [录像](candidate/cQZr8Z/replays/19.json) | 待配对 |
+| 20 | 负 · [战报](candidate/cQZr8Z/games/20.md) · [复盘](candidate/cQZr8Z/reviews/04.md#game-20) · [录像](candidate/cQZr8Z/replays/20.json) | 待配对 |
 
 ## 侮蔑龙
 
