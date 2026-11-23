@@ -1,0 +1,15 @@
+# 神弓莉莉耶尔 · 两个卡位的实测
+
+对照固定白牙萝蕾娜 B，试验 D 用两张神弓座天使替换一张坚定不移的祈祷和一张希望女王。三种对局使用同一份 D，按预登记的五个配对种子复查。[构筑记录](construction.md)
+
+## 侮蔑龙
+
+侮蔑龙 0 胜 5 负，主教在 2 局取入手牌，2 局让神弓座天使进场。
+
+| 原表种子序号 | 主教先后攻 | D | B | 记录 |
+|---:|---|---|---|---|
+| 76 | 后攻 | 负 | 待对应组完成 | [日志](zQrwne/games/01.md) · [复盘](zQrwne/reviews/01.md#game-01) · [录像](zQrwne/replays/01.json) |
+| 77 | 先攻 | 负 | 待对应组完成 | [日志](zQrwne/games/02.md) · [复盘](zQrwne/reviews/01.md#game-02) · [录像](zQrwne/replays/02.json) |
+| 78 | 后攻 | 负 | 待对应组完成 | [日志](zQrwne/games/03.md) · [复盘](zQrwne/reviews/01.md#game-03) · [录像](zQrwne/replays/03.json) |
+| 79 | 先攻 | 负 | 待对应组完成 | [日志](zQrwne/games/04.md) · [复盘](zQrwne/reviews/01.md#game-04) · [录像](zQrwne/replays/04.json) |
+| 80 | 后攻 | 负 | 待对应组完成 | [日志](zQrwne/games/05.md) · [复盘](zQrwne/reviews/01.md#game-05) · [录像](zQrwne/replays/05.json) |
