@@ -97,7 +97,7 @@ for key, (opp,skill) in KEYS.items():
                       if a else f"第 {n} 局在 T{sample['turn']} 结算。")
                 if tag=="K":line+="这一局没有打出天曜战骑。"
             log=f"{folder}/{key}/games/{n:02}.md"
-            diary.extend([f"## {opp} · {tag} 第 {rows[0]['number']}–{rows[-1]['number']} 局","",
+            diary.extend([f'<a id="{key}-{tag}-{group:02}"></a>',"",f"## {opp} · {tag} 第 {rows[0]['number']}–{rows[-1]['number']} 局","",
                           f"胜 {sum(g['winner']==0 for g in rows)}/{len(rows)}。{line}本项继续使用登记的共同 40/10，另一个卡位方案保留作比较。"
                           f"[本组逐局复盘]({folder}/{key}/reviews/{group:02}.md) · [本局]({log})",""])
             tips.append(f"- {tag} 版本。{line}[当时的局面与录像]({WEB}/{log})")
