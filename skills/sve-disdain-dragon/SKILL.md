@@ -21,4 +21,6 @@ description: 在 SVE NEXT 日版 BP20 用 zQrwne「20五妹」侮蔑龙对练，
 
 对照使用第二张灾藤和第二张玛文的场面，比较回收炎术、用身体交换与留费清场的收益。[配对实战](references/second-saito.md)
 
-祈祷者入场，要点自己还是对面？数己方嘉鲁蜜儿的剩余体力、自己当前 PP，以及对面下回合能留下几次攻击。[从 T9 执侮蔑龙](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-zQrwne-02.json&at=51&seat=1)
+侮蔑的祈祷者（BP20-064）入场的一点伤害与回两血都要求已觉醒。低于七费上限时仍可花进化费用或 EP 升为 3/3 守护，进化触发的对敌方从者打 2 可以独立结算。觉醒后，祈祷者入场要点自己还是对面？数己方嘉鲁蜜儿的剩余体力、自己当前 PP，以及对面下回合能留下几次攻击。[从 T9 执侮蔑龙](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-zQrwne-02.json&at=51&seat=1)
+
+对面梦羊触发后，先计算用一次小伤害消耗防止能否保住后续的大段伤害。[一次伤害防止的实战](references/sacred-sheep.md)
