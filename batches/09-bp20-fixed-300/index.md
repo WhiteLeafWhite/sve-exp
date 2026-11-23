@@ -5,7 +5,7 @@
 | 对手 | 已归档 | 主教胜–负 |
 |---|---:|---:|
 | [破坏巫师](cQZr8Z/index.md) | 70 | 41–29 |
-| [侮蔑龙](zQrwne/index.md) | 65 | 24–41 |
+| [侮蔑龙](zQrwne/index.md) | 70 | 25–45 |
 | [财宝皇室](t7B32v/index.md) | 70 | 39–31 |
 
 [每五局构筑检查](construction.md) · [验证条件](protocol.json) · [主教 40/10](bishop.json)
