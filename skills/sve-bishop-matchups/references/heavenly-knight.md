@@ -23,6 +23,7 @@
 先按当前盘面判断天曜战骑能打 3 还是 5，回复能触发几次。决定疾驰指向后，再数下回合必须处理它的攻击者。
 
 - K 版本。第 2 局 T10 输入 72 下战骑时有 0 个护符，全局战骑实际打脸 0，承受 0 次宣攻。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/candidate/t7B32v/games/02.md)
+- K 版本。第 8 局 T16 输入 140 下战骑时有 0 个护符，全局战骑实际打脸 3，承受 0 次宣攻。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/candidate/t7B32v/games/08.md)
 - F 版本。第 1 局 T11 输入 79 还有 0 PP，实际结束主阶段。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/t7B32v/games/01.md)
 
 [牌序与总成绩](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/index.md)
