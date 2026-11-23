@@ -100,6 +100,8 @@ def main(group, end):
                 lines.append(f"- 循环 {c}，{('共同主教' if label=='bishop' else NAMES[label])}。{diff}。[所用牌表](../{frozen[label]})")
     for role,title in (("bishop","主教席"),("meta","主流席")):
         note=f"reviews-by-seat/{group:03}-{role}.md"
+        if len(games)<5 and not (ROOT/note).is_file():
+            note=f"reviews-by-seat/{group:03}-{role}-partial.md"
         if (ROOT/note).is_file():
             lines.extend(["",f"[{title}的本组复盘与下一组取舍](../{note})"])
         if role in after:
