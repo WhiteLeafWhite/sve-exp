@@ -243,9 +243,12 @@ const numbers = Array.from({ length:5 }, (_,i) => (round-1)*5+i+1);
 const partial = series === "duel" || process.argv.includes("--partial");
 const games = numbers.filter(n=>!partial || existsSync(join(root,key,"replays",pad(n)+".json"))).map(summarize);
 assert(games.length > 0);
+const decisionLog=knightTrial
+  ? "../../../construction.md#"+key+"-"+games[0].deck+"-"+pad(round)
+  : "../../construction.md#"+key+"-"+pad(round);
 const lines = ["# 第 " + round + " 组 · 主教对" + foe,"","本组 " + games.filter((g) => g.winner === 0).length +
   " 胜，" + games.filter((g) => g.winner === 1).length + " 负，" + games.filter((g) => g.winner === null).length +
-  " 平。" + (series === "duel" ? "各局牌表与两名子 agent 的选择见逐局记录。" : "构筑 " + games[0].deck + "，打法 r" + games[0].policy + "。"),"","[本轮构筑与打法决策](../../construction.md#"+key+"-"+pad(round)+")",""];
+  " 平。" + (series === "duel" ? "各局牌表与两名子 agent 的选择见逐局记录。" : "构筑 " + games[0].deck + "，打法 r" + games[0].policy + "。"),"","[本轮构筑与打法决策]("+decisionLog+")",""];
 for (const g of games) {
   const id=pad(g.number), a=g.alternative;
   lines.push('<a id="game-'+id+'"></a>',"", "## 第 " + g.number + " 局 · "+g.order+" · "+resultName(g.winner),"",
