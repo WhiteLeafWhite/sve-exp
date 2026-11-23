@@ -17,6 +17,8 @@
 
 在其他电脑同时装上双席策略时，构建命令加 `--duels <sve-exp仓库>/batches/10-agent-duels`。原生录像可直接在 Watch replays 复看。[两个座位的策略及赛后手记](https://github.com/WhiteLeafWhite/sve-exp/tree/main/batches/10-agent-duels)
 
+把录像装到另一台电脑时，从 NEXT 源码目录运行 `python -X utf8 <技能目录>/scripts/install-replays.py <sve-exp仓库> dist/pc`。原局和重练分支会用习题链接指定的文件名进入录像库。以后拉取新战报，再执行同一命令即可补新局。[录像安装脚本](../scripts/install-replays.py)
+
 要重练双灾藤候选，在主教的牌组选择里找「透京耶菈 · 白牙与萝蕾娜（灾藤进化2）」，本机文件名是 `bp20-agents/bishop-c36513adac.json`。白牙、萝蕾娜各两张，40 张主牌与固定百局相同。一张绝望安息·玛文进化换成了第二张魔污区政府职员·灾藤进化。[可导入的双灾藤牌表](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/candidate/bishop.json)
 
 使用 SVE NEXT 0.4.3（源码提交 `028e157`）。本机 PC 版双击 `dist/pc/start.bat`，首页选择对战或观看录像。桌面练习用标准职业格式。要复现三套原表，在标准格式的禁限下拉框选择「无」，并单独按日版 2026 年十月表检查主教。龙族原表保留 3 张日版限 1 的 BP15-066，皇室原表保留 3 张日版禁用的 BP05-018。可在牌组选择里用分享码定位原表。将主教位设为玩家，对手选困难。[模拟器项目](https://github.com/eireetm/ShadowverseEvolve-NEXT) · [日版官方禁限](https://shadowverse-evolve.com/card_limit/)

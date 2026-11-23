@@ -1,5 +1,7 @@
 # 第二个进化位在场上做了什么
 
+可以先遮住解答，打开本机牌桌。巫师题从主教只剩 13 血而对方有三名从者时开始。皇室题的两个入口使用相同的双方手牌与场面，各使用自己的进化区。[执双灾藤对巫师 T6](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-04.json&at=34&seat=0) · [执双灾藤对皇室 T21](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-t7B32v-03.json&at=191&seat=0) · [执双玛文对皇室 T21](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-drill-royal-03-marwynn-turn-B.json&at=191&seat=0)
+
 双席实战里也出现了相反的两种需求。对巫师第 4 局，T6 第二张灾藤回收刚用过的炎术，EP 进化后的 3/3 再交换里榭娜，一回合处理三个随从。对皇室第 3 局，T21 能用 7 PP 进化第二张玛文，重演中一并清掉己方还能打 3 的赐予者。两条线路可以由玩家从本方视角接手。[巫师第 4 局实战](../10-agent-duels/cQZr8Z/lessons/04.md) · [皇室第 3 局四份重演](../10-agent-duels/drills/index.md#财宝皇室第三局--第二张玛文能否改善清场)
 
 ## 龙族第 4 局 · 回收炎术与交换合用

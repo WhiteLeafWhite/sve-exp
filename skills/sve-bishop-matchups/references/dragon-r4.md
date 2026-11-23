@@ -1,5 +1,5 @@
 # 对侮蔑龙的 r4 打法
 
-用模拟器重练时，先从龙族第 7 局比较起动祈祷与超进化，再从龙族第 21 局比较先下玛文与灾藤回收炎术。每条路线都能对照逐回合日志和原生录像。[第 7 局的两条路线](../../../batches/08-bp20-hard-150/drills/logs.md) · [第 21 局的两条路线](../../../batches/09-bp20-fixed-300/drills/logs.md)
+用模拟器重练时，先从龙族第 7 局比较起动祈祷与超进化，再从龙族第 21 局比较先下玛文与灾藤回收炎术。每条路线都能对照逐回合日志和原生录像。[第 7 局的两条路线](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/drills/logs.md) · [第 21 局的两条路线](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/drills/logs.md)
 
 遇到已经进化的 BP05-052，先算己方回合的低费解法。对方本回合的自伤触发尚未开始。炎术可以打 2，进化灾藤可把墓场炎术放到 EX 并在本回合减费，因而有机会用同一张牌打两次。若对方仍有 PP，要在每一个 Quick 窗口重新估算。无可确认的斩杀时，把己方唯一的守护被移除后对方的攻击与直伤合起来计算。相同 B 牌表的五局试验 r4 为 2 胜 3 负。配对 r3 为 3 胜 2 负。每个决定与原表种子逐一相连。[配对记录](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09c-bp20-dragon-policy/index.md)
