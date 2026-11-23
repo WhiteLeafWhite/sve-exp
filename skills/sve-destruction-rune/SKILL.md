@@ -24,3 +24,5 @@ description: 在 SVE NEXT 日版 BP20 使用 cQZr8Z「20二妹」破坏巫师对
 荒野翻出两张牌，手里还有第二张荒野。用实际剩余费用决定选资源、身体还是继续找牌。[从 T2 执破坏巫师](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-01.json&at=8&seat=1)
 
 对面梦羊触发后，先计算用一次小伤害消耗防止能否保住后续的大段伤害。[一次伤害防止的实战](references/sacred-sheep.md)
+
+核对两个护符的五费盘面，数清天曜战骑当天的疾驰、回复和交回合后的守护。[同牌序取舍](references/heavenly-knight.md)

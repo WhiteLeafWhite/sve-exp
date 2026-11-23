@@ -30,3 +30,5 @@ description: 用 SVE NEXT 练习 Shadowverse EVOLVE 日版 BP20 主教，陪练�
 圣士郎进化后，选择手里一张放进场。先比较这回合能触发几次回复，以及对面的 4/4 会不会活到下回合。[从 T7 执主教](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-01.json&at=43&seat=0)
 
 下梦羊时，先确定对手的第一段伤害是否能改由更小的一段支付。[一次伤害防止的实战](references/sacred-sheep.md)
+
+核对两个护符的五费盘面，数清天曜战骑当天的疾驰、回复和交回合后的守护。[同牌序取舍](references/heavenly-knight.md)
