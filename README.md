@@ -1,6 +1,10 @@
 # SVE 主教实战记录
 
-每批十局。每局都有 SVE NEXT 录像与按回合整理的中文日志。战报中的生命先列主教，后列对手。
+每局都有 SVE NEXT 录像与按回合整理的中文日志。战报中的生命先列主教，后列对手。第八批为日版 BP20 主教对三个固定困难 Bot 各 50 局，每五局有一次构筑与打法复盘。
+
+**第八批**　[150 局总成绩与录像](batches/08-bp20-hard-150/index.md) · [每五局构筑日志](batches/08-bp20-hard-150/construction.md) · [定稿主教与完整张数](skills/sve-bishop-matchups/references/bp20-deck.md) · [模拟器导入文件](skills/sve-bishop-matchups/references/bp20-150-final.json) · [三对局打法](skills/sve-bishop-matchups/references/bp20-playbook.md) · [陪练技能](skills/sve-bishop-matchups/SKILL.md)
+
+前七批每批十局，对应以下历史资料。
 
 [三组二十局战绩](skills/sve-bishop-matchups/references/results.md) · [最终主教牌表与张数](skills/sve-bishop-matchups/references/deck.md) · [导入牌表](skills/sve-bishop-matchups/references/bishop-final.json) · [三对局打法](skills/sve-bishop-matchups/references/playbook.md) · [可供其他会话使用的 skill](skills/sve-bishop-matchups/SKILL.md)
 

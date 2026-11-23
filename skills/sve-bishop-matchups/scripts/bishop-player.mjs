@@ -76,20 +76,49 @@ function nextTurnPressure(view, seat, opponentKey, hasTrait) {
   return value;
 }
 
+// BP20 extension. All inputs are already filtered to the evaluating player's information.
+function prayerValue(view, seat) {
+  const me = view.players[seat], foe = view.players[1-seat];
+  const live = me.field.filter(c => !c.hidden && !c.boxed && !c.abilitiesLost);
+  let value = 0;
+  for (const c of live) {
+    const counters = c.counters.prayer || 0;
+    if (c.def === 'BP16-093') value += 1 + .85 * Math.min(4, counters);
+    if (c.def === 'BP02-091') value += 1 + 1.4 * Math.min(3, counters);
+    if (c.def === 'BP09-095') value += 1.5 + .6 * Math.min(2, counters);
+  }
+  // There are only five field slots. Keep the last slot usable for healing or removal.
+  const amulets = live.filter(c => c.type === 'amulet').length;
+  if (amulets >= 3 && foe.field.some(c => !c.hidden && c.type === 'follower')) value -= (amulets - 2) * 2.3;
+  // An upright Ward on the non-active side does not restrict an attack.
+  if (view.activePlayer !== seat) {
+    const standing = live.filter(c => !c.engaged && c.keywords.includes('ward')).length;
+    if (me.leaderDefense <= 12 && standing) value -= 1.5 * standing;
+  }
+  return value;
+}
+
 export function makeBishopPlayer(engine, {PlannerBot, MEDIUM_V2}, {seat=0, opponentKey, seed, revision=2}) {
   if(!Object.hasOwn(priority,opponentKey))throw Error('Unknown matchup: '+opponentKey);
-  if(revision!==1 && revision!==2)throw Error('Unknown bishop revision');
+  if(![1,2,3].includes(revision))throw Error('Unknown bishop revision');
   const hasTrait=(c,trait)=>engine.db.get(c.def).traits.includes(trait);
   const augment=base=>(v,p)=>base(v,p)+(v.result?0:(p===seat?1:-1)*(matchupValue(v,seat,opponentKey)
-    +(revision===2?nextTurnPressure(v,seat,opponentKey,hasTrait):0)));
-  const refinement=revision===2?{
+    +(revision>=2?nextTurnPressure(v,seat,opponentKey,hasTrait):0)
+    +(revision===3?prayerValue(v,seat):0)));
+  const refinement=revision>=2?{
     samples:3, beamWidth:16, maxSimulations:1900, maxDepth:16, replyPlans:5,
     innerPlans:[3,3], innerSimulations:440, innerBeam:6, replyLethal:260,
     lethalSearch:1400, commonRandom:true, drawFirst:true,
     lineSlots:{lines:3,margin:3,key:'set'}
   }:{};
+  // R3 searches the current turn and scores the visible threat at its end. All
+  // candidates use this budget; revision 2 keeps the original two-turn search.
+  const focused = revision === 3 ? {
+    lookahead:1, samples:2, beamWidth:10, maxSimulations:850, replyPlans:4,
+    lethalSearch:1100, replyLethal:140,
+  } : {};
   const search=new PlannerBot(engine,{
-    ...MEDIUM_V2, cheat:false, seed, samples:2, choiceDedupe:true, ...refinement,
+    ...MEDIUM_V2, cheat:false, seed, samples:2, choiceDedupe:true, ...refinement, ...focused,
     evaluator:augment(MEDIUM_V2.evaluator), replyEvaluator:augment(MEDIUM_V2.replyEvaluator),
     greedyEvaluator:augment(MEDIUM_V2.greedyEvaluator)
   });
@@ -105,6 +134,10 @@ export function makeBishopPlayer(engine, {PlannerBot, MEDIUM_V2}, {seat=0, oppon
       }
       if(d.type==='mulligan'){
         const hand=me.hand.filter(c=>!c.hidden);
+        if (revision === 3) {
+          const starts = hand.some(c => ['BP16-093','BP16-104','BP09-095'].includes(c.def));
+          if (starts && hand.some(c => c.cost <= 2 && c.type !== 'amulet')) return {type:'mulligan',redraw:false};
+        }
         const early=hand.some(c=>['BP18-120','BP18-117','BP18-100'].includes(c.def));
         const pair=contains(hand,'BP18-097')&&hand.some(c=>['BP18-104','BP02-095','BP18-105','BP18-110'].includes(c.def));
         if(revision===1)return {type:'mulligan',redraw:!early&&!pair};
@@ -116,7 +149,7 @@ export function makeBishopPlayer(engine, {PlannerBot, MEDIUM_V2}, {seat=0, oppon
       if(finishTarget&&d.type==='selectCards'&&d.reason==='target'&&d.candidates.includes(finishTarget)){
         const id=finishTarget;finishTarget=null;return {type:'selectCards',cards:[id]};
       }
-      if(d.type==='mainPhase'&&opponentKey==='zQrwne'){
+      if(d.type==='mainPhase'&&opponentKey==='zQrwne'&&revision<3){
         finishTarget=null;
         const field=me.field.filter(c=>!c.hidden), enemy=foe.field.filter(c=>!c.hidden);
         const ward=enemy.filter(c=>c.engaged&&c.keywords.includes('ward'));

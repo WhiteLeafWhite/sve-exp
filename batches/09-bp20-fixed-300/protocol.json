@@ -1,0 +1,16 @@
+{
+  "deck": "B",
+  "policy": 3,
+  "keys": ["cQZr8Z", "zQrwne", "t7B32v"],
+  "gamesPerOpponent": 100,
+  "firstPerOpponent": 50,
+  "checkpointSize": 5,
+  "seedPrefix": "sve-exp/bp20-fixed-300/v1/",
+  "hardPreset": "hard-next",
+  "effort": 1,
+  "minimumBestWins": 65,
+  "minimumWorstWins": 35,
+  "maximumMatchupsBelow50Wins": 1,
+  "rankingMetric": "wins divided by all 100 games against the specified frozen opponent",
+  "freeze": "同一份主牌、进化牌和主教策略版本覆盖三种对局和全部 300 个种子。每五局复盘，可将后续微调建议记为假设。"
+}

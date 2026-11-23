@@ -1,12 +1,14 @@
 ---
 name: sve-bishop-matchups
-description: 使用透京耶菈主教练习 Shadowverse EVOLVE 日版 BP20，在 SVE NEXT 中对战 cQZr8Z 破坏巫师、zQrwne 侮蔑龙、t7B32v 财宝皇室。提供实战牌表、起手与应对、困难 Bot 录像和逐局复盘。
+description: 用 SVE NEXT 练习 Shadowverse EVOLVE 日版 BP20 主教，陪练起手、进化、Quick、斩杀与复盘。适用于从 SVE Helper 导入卡图牌表、用主教对三个固定困难 Bot、每五局优化构筑或从录像决策点重练。
 ---
 
-# 透京耶菈主教陪练
+# BP20 主教陪练
 
-1. 用[分组成绩](references/results.md)确认这套构筑在指定对手上的实测表现。构筑与对局胜负的适用范围由卡池、对手原表与先后攻共同决定。
-2. 导入[主教牌表](references/bishop-final.json)。开局前阅读[打法](references/playbook.md)中的起手部分和本轮对手那一行。查看公开 EX、对方已使用的进化资源、双方墓场、己方手牌和 PP。
-3. 每回合优先验算合法斩杀。把廉价解守护、天冥直伤、已经能攻击的随从和对方可用 Quick 按顺序结算。准备交回合时，分别估算攻击、能力伤害和后续回复，再决定是否留 1 PP。
-4. 在模拟器里接入保存的主教决策时，按[练习条件](references/method.md)调用[决策程序](scripts/bishop-player.mjs)。对手使用原版桌面 Hard，主教按自己的合法视野行动。
-5. 赛后保存原生录像并逐回合记录，标明先后攻、起手与重抽、关键行动、终局生命、胜负原因和可改进的一步。训练样本、正式分组、改变过去输入的重演分别记账。可从[原始七批对局](https://github.com/WhiteLeafWhite/sve-exp)逐局比对。
+1. 准备牌表。使用第八批的同一套定稿对战 cQZr8Z 破坏巫师、zQrwne 侮蔑龙和 t7B32v 财宝皇室。向用户报出本对局独立验证的胜负，再说明这次要练的一个决定。[定稿与张数](references/bp20-deck.md) · [导入文件](references/bp20-150-final.json) · [三对局成绩](https://github.com/WhiteLeafWhite/sve-exp/tree/main/batches/08-bp20-hard-150)
+2. 对练时由用户选择要驾驶的一方。开局先看四张手牌，给出先后攻、第二回合与第三回合各能做什么，再决定是否整手重抽。询问用户的一次取舍后，给出一个可执行的替代顺序，让用户在模拟器比较。按需核对规则与导入命令。[规则、启动及重演](references/bp20-practice.md)
+3. 在主阶段先算可确认的斩杀，逐一扣除横置守护、解场费用与可能的 Quick。交回合前读敌方公开 EX、墓场、剩余 EP／SEP 和己方可减伤次数。写出对方一条可能的终结线，再决定进化、回血、铺护符或留 PP。按对手选择题目。[实战打法与重练题](references/bp20-playbook.md)
+4. 提交引擎列出的合法动作。自定义主教使用自己可见的信息和公平抽样，三个对手用桌面困难预设。局中根据可见动作更新推测，赛后再打开全视角录像核查。将一次复盘写成「当时看到什么、选择了什么、另一条合法线路及其代价」。[主教决策程序](scripts/bishop-player.mjs) · [互动与分支工具](scripts/practice.mjs)
+5. 每五局检查起手、最危险的一个对手回合、核心牌抽到／打出／实际进场的差别。把换出的卡、换入的卡、张数及想解决的问题写进构筑日志。把可复用的出牌顺序、例外、对应录像输入点写入打法。保留对手原表，平衡先后攻，选好构筑后用新种子独立验证。[每五局构筑日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/construction.md)
+
+复查此前七批时，使用历史牌表、打法版本与当时的样本。历史策略默认使用 r2，本批正式比较使用 r3。[历史战绩](references/results.md) · [历史牌表](references/bishop-final.json) · [历史打法](references/playbook.md) · [历史条件](references/method.md)
