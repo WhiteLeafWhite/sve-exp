@@ -44,3 +44,8 @@
 | 38 | 后攻 | 负 | T13 · 0／19 | [日志](games/38.md) · [复盘](reviews/08.md#game-38) · [录像](replays/38.json) |
 | 39 | 先攻 | 胜 | T19 · 22／-1 | [日志](games/39.md) · [复盘](reviews/08.md#game-39) · [录像](replays/39.json) |
 | 40 | 后攻 | 胜 | T16 · 11／0 | [日志](games/40.md) · [复盘](reviews/08.md#game-40) · [录像](replays/40.json) |
+| 41 | 先攻 | 胜 | T27 · 31／-2 | [日志](games/41.md) · [复盘](reviews/09.md#game-41) · [录像](replays/41.json) |
+| 42 | 后攻 | 胜 | T24 · 20／-3 | [日志](games/42.md) · [复盘](reviews/09.md#game-42) · [录像](replays/42.json) |
+| 43 | 先攻 | 负 | T16 · -1／10 | [日志](games/43.md) · [复盘](reviews/09.md#game-43) · [录像](replays/43.json) |
+| 44 | 后攻 | 负 | T32 · 10／13 | [日志](games/44.md) · [复盘](reviews/09.md#game-44) · [录像](replays/44.json) |
+| 45 | 先攻 | 胜 | T19 · 20／0 | [日志](games/45.md) · [复盘](reviews/09.md#game-45) · [录像](replays/45.json) |
