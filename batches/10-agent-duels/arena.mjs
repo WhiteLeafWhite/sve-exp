@@ -6,6 +6,7 @@ import { dirname, join, resolve } from "node:path";
 import { setTimeout as delay } from "node:timers/promises";
 import { fileURLToPath, pathToFileURL } from "node:url";
 import { makeBishopPlayer } from "../../skills/sve-bishop-matchups/scripts/bishop-player.mjs";
+import { seatStrategy } from "./seat-strategy.mjs";
 
 const root=dirname(fileURLToPath(import.meta.url));
 const table=resolve("dist/agent-table");
@@ -60,6 +61,7 @@ const out=join(root,key,"replays",String(n).padStart(2,"0")+".json");
 assert(!existsSync(out),"Game already completed: "+id);
 const prefix=join(work,"progress.json");
 const previousGame=existsSync(prefix)?read(prefix):null;
+const viewVersion=previousGame?(previousGame.viewVersion??1):2;
 const hiddenSeed=previousGame?.options.seed??("sve-exp/agents/v1/"+randomUUID());
 const options={seed:hiddenSeed,decks,deckNames:[b.name,m.name],controllers:["human","human"],
   format:"standard",restrictionList:null,deckRestrictions:true,manualActions:false,showEveryMainPhase:true,askEveryQuickWindow:true,
@@ -90,7 +92,7 @@ function present(v,answers) {
   const names=new Map();
   function card(c){
     if(c.hidden){
-      if(c.remembered) return {remembered:c.remembered};
+      if(viewVersion>=2&&c.known)return {known:{...c.known,card:name(c.known.def)}};
       return null;
     }
     const tag=name(c.def)+"("+c.printing+")";
@@ -129,7 +131,7 @@ if(previousGame){
   resumes=(old.resumes??0)+1;
   for(const seat of [0,1]) {explicit[seat]=old.explicit[seat];strategyMoves[seat]=old.strategyMoves[seat];delegatedUntil[seat]=old.delegatedUntil[seat];auto[seat]=old.auto[seat]}
 }
-put(prefix,{options,inputs,notes,explicit,strategyMoves,delegatedUntil,authors,auto,resumes});
+put(prefix,{options,inputs,notes,explicit,strategyMoves,delegatedUntil,authors,auto,resumes,viewVersion});
 while(game.decision){
   stopped();
   const d=game.decision,seat=d.player,v=game.view(seat),index=inputs.length;
@@ -137,16 +139,9 @@ while(game.decision){
   const onlyPass=d.type==="quick"&&d.actions.every(a=>a.type==="pass");
   const by=onlyPass?null:seat;
   const assisted=()=>{
-    if(coaches[seat]){
-      // A hidden instance id can encode deal order. Give the seat policy only a
-      // hidden placeholder and any card the viewer may legitimately remember.
-      const side=v.players[1-seat];
-      const mask=cards=>cards.map(c=>c.hidden?{hidden:true,...(c.remembered?{remembered:c.remembered}:{})}:c);
-      const safe={...v,players:v.players.map((p,i)=>i===seat?p:{...side,hand:mask(p.hand),evolveDeck:mask(p.evolveDeck),banished:mask(p.banished),field:mask(p.field)})};
-      const choice=coaches[seat].choose({seat,key,view:safe,answers:permitted.answers});
-      if(Number.isInteger(choice)&&permitted.answers[choice]){auto[seat]++;return permitted.answers[choice]}
-    }
-    return pilots[seat].decide(game);
+    const choice=seatStrategy(game,seat,key,permitted.answers,coaches[seat],pilots[seat],viewVersion);
+    if(choice.authored)auto[seat]++;
+    return choice.input;
   };
   let input;
   if(onlyPass) input={type:"quick",action:{type:"pass"}};
@@ -183,7 +178,7 @@ while(game.decision){
   assert.equal(rt.validateAnswer(d,input),null);
   game.act(input,by??undefined);
   inputs.push({input,by});
-  put(prefix,{options,inputs,notes,explicit,strategyMoves,delegatedUntil,authors,auto,resumes});
+  put(prefix,{options,inputs,notes,explicit,strategyMoves,delegatedUntil,authors,auto,resumes,viewVersion});
 }
 const verify=fresh();
 for(const {input,by} of inputs)verify.act(input,by??undefined);
@@ -192,7 +187,7 @@ const fingerprint=rt.engineFingerprint(resolve("packages/gui"));
 const replay={format:"sve-replay",version:1,options,inputs,info:{result:game.result,turn:game.state.turn},
   training:{key,number:n,engine:fingerprint,policy:"agent",deckVersion:b.name,hp:game.state.players.map(p=>p.leaderDefense),
     bishopHash:hash(b),opponentHash:hash(m),originalOpponentHash:hash(src),opponentChanges:changes},
-  duel:{explicit,strategyMoves,notes,authors,policyChoices:auto,resumes,delegatedPilots:["fair Bishop r"+bishopRevision,"fair medium-v2"]}};
+  duel:{explicit,strategyMoves,notes,authors,policyChoices:auto,resumes,viewVersion,delegatedPilots:["fair Bishop r"+bishopRevision,"fair medium-v2"]}};
 put(out,replay);
 put(join(table,"current.json"),{id,key,n,status:"complete",winner:game.result.winner,turn:game.state.turn,explicit,strategyMoves,changes});
 console.log(JSON.stringify({id,result:game.result,explicit,strategyMoves,changes}));

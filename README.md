@@ -8,6 +8,8 @@
 
 两次共同构筑微调各测试了三个职业相同的五个配对种子，另有五局只改变对龙打法。神弓代替两个卡位时对龙 0–5，原表同种子 4–1。信仰的一击的五局对龙为 2–3，原表 4–1。现阶段保留白牙、萝蕾娜各两张的原表作为困难 Bot 基准。[神弓试验](batches/09b-bp20-lyrial/index.md) · [快速消灭试验](batches/09d-bp20-banish/index.md) · [同表打法试验](batches/09c-bp20-dragon-policy/index.md)
 
+**第十批**　两个独立子 agent 各执一方，主教连续对同一轮的三职业，双方只读本方视野。每局列出直接选择、委托范围、实际牌表与两人的赛后复盘。[对局成绩、录像和复盘](batches/10-agent-duels/index.md) · [构筑日志](batches/10-agent-duels/construction.md)
+
 按驾驶职业选择陪练技能。[主教](skills/sve-bishop-matchups/SKILL.md) · [破坏巫师](skills/sve-destruction-rune/SKILL.md) · [侮蔑龙](skills/sve-disdain-dragon/SKILL.md) · [财宝皇室](skills/sve-loot-sword/SKILL.md)
 
 **第八批**　[150 局总成绩与录像](batches/08-bp20-hard-150/index.md) · [每五局构筑日志](batches/08-bp20-hard-150/construction.md) · [定稿主教与完整张数](skills/sve-bishop-matchups/references/bp20-deck.md) · [模拟器导入文件](skills/sve-bishop-matchups/references/bp20-150-final.json) · [三对局打法](skills/sve-bishop-matchups/references/bp20-playbook.md) · [陪练技能](skills/sve-bishop-matchups/SKILL.md)

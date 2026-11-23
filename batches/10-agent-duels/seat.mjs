@@ -9,7 +9,15 @@ const seat=["bishop","meta"].indexOf(role);
 assert(seat>=0&&["view","act"].includes(cmd));
 const table=resolve("dist/agent-table");
 const read=f=>JSON.parse(readFileSync(f,"utf8"));
-const current=()=>existsSync(join(table,"current.json"))?read(join(table,"current.json")):{status:"idle"};
+const current=()=>{
+  const file=join(table,"current.json");
+  if(!existsSync(file))return {status:"idle"};
+  const s=read(file);
+  if(s.status==="waiting" && existsSync(join(table,s.id,"answers",s.ticket+".json"))){
+    return {id:s.id,key:s.key,n:s.n,status:"resolving",index:s.index,turn:s.turn};
+  }
+  return s;
+};
 const own=s=>read(join(table,s.id,"seat-"+seat+".json"));
 if(cmd==="view"){
   const seconds=Number(args[0]||0);

@@ -18,3 +18,5 @@ description: 用 SVE NEXT 练习 Shadowverse EVOLVE 日版 BP20 主教，陪练�
 检验防守卡位时，逐局看神弓座天使是否活到伤害结算、信仰的一击是否赶得上消灭触发源。练习先解场时，用同一份牌重演炎术、灾藤和炎术的顺序，记录龙族余下的攻击与直伤。[神弓两卡位实测](references/lyrial.md) · [快速消灭的实战目标](references/banish.md) · [龙族 r4 打法与配对实录](references/dragon-r4.md)
 
 复查此前七批时，使用历史牌表、打法版本与当时的样本。历史策略默认使用 r2，本批正式比较使用 r3。[历史战绩](references/results.md) · [历史牌表](references/bishop-final.json) · [历史打法](references/playbook.md) · [历史条件](references/method.md)
+
+先从本方座位重做一个关键决定，再对照当时的理由与比赛结果。[双座位对练题](references/agent-duels.md)
