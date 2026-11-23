@@ -36,4 +36,8 @@
 
 **大红莲不够击倒席翁时，可以留给下一批随从。** 第 6 局 T13 只面对 3/7 席翁，大红莲打它实为 5，无法单独清掉。T15 实际面对横置 4/4 守护与直立 3/3，从八费支付七费清两体并打脸 3。三个原本受守护限制的狂信者转为能各攻 3，再补黑章 1、祈祷者 2，正好打完主教 15 血。[第 6 局战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/games/06.md)
 
-**水银已经公开时，小额能力伤害先于第一次攻击。**职业第 6 局的白牙分支里，主教 14 血、3 PP，EX 里有水银的断绝。大红莲打 3，若立即攻击，水银后三名 3 攻狂信者各打 2，稍后献黑章只打 0；主教以 5 血进入下回合，在 T24 胜。相同手牌和牌序下，改在攻击前用荒野献黑章打 1，愉悦回费、祈祷者献白章再打 2。第一次攻击前主教已剩 8，三击实打 6，留下 2 血。T16 同一张忒弥斯仍清四名随从，T19 巫师用暗黑创造物与两张章收尾，以 35 比 0 胜。判断从「对方公开的水银是否付得起」开始，再按每段先后计算。[先攻击](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-06-hold.json) · [先献章](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-06-burn-first.json)
+**水银已经公开时，小额能力伤害先于第一次攻击。** 职业第 6 局的白牙分支里，主教 14 血、3 PP，EX 里有水银的断绝。大红莲打 3，若立即攻击，水银后三名 3 攻狂信者各打 2，稍后献黑章只打 0；主教以 5 血进入下回合，在 T24 胜。相同手牌和牌序下，改在攻击前用荒野献黑章打 1，愉悦回费、祈祷者献白章再打 2。第一次攻击前主教已剩 8，三击实打 6，留下 2 血。T16 同一张忒弥斯仍清四名随从，T19 巫师用暗黑创造物与两张章收尾，以 35 比 0 胜。判断从「对方公开的水银是否付得起」开始，再按每段先后计算。[先攻击](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-06-hold.json) · [先献章](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-06-burn-first.json)
+
+**同为 5/5 守护，横置与直立改变了先后顺序。** 第 7 局 T8 女王横置，四费先用白之章·黑之章打 2，再下破坏的随从免费进化打 2，两个效果都向主教打 2。一攻显现和剩一血的女王交换，保住两攻隐者、三攻狂信者直攻，四费合计打脸 9。进墓的显现又在 T10 支付重返的奏绝，召出四费里榭娜并补两个创造物。T12 第二名 5/5 女王直立，旧场先攻 4+2+2，之后仍可用三张尚无攻击机会的偶像横置给独唱，单次 6 解决女王。T14 面对席翁，暗黑创造物当轮打 1。若要以歼灭的歌声腾位，已经看三的崇拜者也可作祭品；原局献暗黑后便失去后续主阶段的固定伤害。[第 7 局复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/cQZr8Z/notes/07-meta.md)
+
+第 7 局输入 120 改献已横置的 2/3 崇拜者，实测暗黑创造物到 T22 依次打出 1、1、1、1、2，共 6。T23 巫师有 23 血，仍被天冥的 3、圣士郎攻 9、旧天冥攻 7、新天冥的 4 正好打完。保留两个回合以后还能造成伤害的护符，与提前切断主教的攻击和回复触发，是两笔要分别核算的收益。[保留创造物的分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/rune-07-keep-artifact.json)

@@ -53,3 +53,5 @@
 | 破坏巫师第 6 局 | 主教主阶段打水银复现原局 | T15 破坏巫师胜 | [日志与逐局复盘](logs/rune-06-control.md) · [原生录像](rune-06-control.json) |
 | 破坏巫师第 6 局 | 白牙与承担者落场，留水银给首攻 | T24 主教胜 | [日志与逐局复盘](logs/rune-06-hold.md) · [原生录像](rune-06-hold.json) |
 | 破坏巫师第 6 局 | 白牙、炎术与承担者正常进化，先交换狂信者 | T19 破坏巫师胜 | [日志与逐局复盘](logs/rune-06-trade.md) · [原生录像](rune-06-trade.json) |
+| 破坏巫师第 7 局 | 按原座位策略逐手复现双方第七局 | T27 主教胜 | [日志与逐局复盘](logs/rune-07-cached.md) · [原生录像](rune-07-cached.json) |
+| 破坏巫师第 7 局 | 歼灭的歌声改献祭已横置的崇拜者，保留暗黑创造物 | T23 主教胜 | [日志与逐局复盘](logs/rune-07-keep-artifact.md) · [原生录像](rune-07-keep-artifact.json) |

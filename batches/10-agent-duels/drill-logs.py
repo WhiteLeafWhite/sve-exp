@@ -55,6 +55,8 @@ TITLES = {
     "royal-opening-14": "后攻已有灾藤与萝蕾娜，改为整手重抽",
     "royal-opening-20": "后攻已有灾藤与萝蕾娜，改为保留原手",
     "royal-opening-76": "后攻已有灾藤与萝蕾娜，改为整手重抽",
+    "dragon-85-check4-full": "由第四次复盘后的主教席重做完整对局",
+    "dragon-85-check4-target": "只在第二次 2 伤的目标处换用新主教席",
 }
 
 
