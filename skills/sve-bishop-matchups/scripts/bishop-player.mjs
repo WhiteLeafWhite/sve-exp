@@ -118,6 +118,24 @@ function disdainExposure(view, seat) {
   return -exposure;
 }
 
+function burnDisdainEngine(view, seat) {
+  const own=view.players[seat], foe=view.players[1-seat], d=view.decision;
+  if(d.type!=='mainPhase' || foe.playPoints>0 || foe.leaderDefense<=8) return null;
+  const target=foe.field.find(c=>!c.hidden && !c.abilitiesLost && c.def==='BP05-052' && c.evolvedWith && c.defense<=4);
+  if(!target) return null;
+  const visible=[...own.hand.filter(c=>!c.hidden),...own.ex];
+  const spells=visible.filter(c=>c.def==='BP18-123');
+  const shot=d.actions.find(a=>a.type==='play' && spells.some(c=>c.id===a.card));
+  if(!shot) return null;
+  const faceAttackers=new Set(d.actions.filter(a=>a.type==='attack' && a.target===foe.leader.id).map(a=>a.attacker));
+  const reach=own.field.filter(c=>!c.hidden && faceAttackers.has(c.id)).reduce((sum,c)=>sum+c.attack,0);
+  if(reach>=foe.leaderDefense) return null;
+  const saito=visible.some(c=>c.def==='BP18-117') && own.field.length<5 &&
+    own.evolveDeck.some(c=>!c.hidden && !c.faceUp && c.def==='BP18-118') && own.playPoints>=(own.evolutionPoints?3:4);
+  const twice=spells.length>=2 && own.playPoints>=2;
+  return target.defense<=2 || twice || saito ? {action:shot,target:target.id} : null;
+}
+
 export function makeBishopPlayer(engine, {PlannerBot, MEDIUM_V2}, {seat=0, opponentKey, seed, revision=2}) {
   if(!Object.hasOwn(priority,opponentKey))throw Error('Unknown matchup: '+opponentKey);
   if(![1,2,3,4].includes(revision))throw Error('Unknown bishop revision');
@@ -146,13 +164,23 @@ export function makeBishopPlayer(engine, {PlannerBot, MEDIUM_V2}, {seat=0, oppon
     evaluator:augment(MEDIUM_V2.evaluator), replyEvaluator:augment(MEDIUM_V2.replyEvaluator),
     greedyEvaluator:augment(MEDIUM_V2.greedyEvaluator)
   });
-  let myTurn=-1, startField=new Set(), finishTarget=null;
+  let myTurn=-1, startField=new Set(), finishTarget=null, burnTarget=null;
   return {
     revision,
     get stats(){return search.stats;},
     decide(session){
       const v=session.view(seat), me=v.players[seat], foe=v.players[1-seat], d=v.decision;
       if(!d)throw Error('Bishop is not the deciding seat');
+      if(dragonRevision && burnTarget && d.type==='selectCards' && d.reason==='target'){
+        const target=burnTarget;burnTarget=null;
+        const source=[...me.hand,...me.ex,...v.resolution].find(c=>!c.hidden && c.id===d.source);
+        if(source?.def==='BP18-123' && d.candidates.includes(target))return {type:'selectCards',cards:[target]};
+      }
+      if(dragonRevision && d.type==='mainPhase'){
+        burnTarget=null;
+        const burn=burnDisdainEngine(v,seat);
+        if(burn){burnTarget=burn.target;return {type:'mainPhase',action:burn.action};}
+      }
       if(v.activePlayer===seat && v.turn!==myTurn) {
         myTurn=v.turn;startField=new Set(me.field.filter(c=>!c.hidden).map(c=>c.id));finishTarget=null;
       }

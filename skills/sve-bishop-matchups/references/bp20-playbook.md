@@ -19,7 +19,9 @@
 
 ## 交回合时按移除后的场面再算一次
 
-固定百局对侮蔑龙第 21 局，主教 T11 有 20 血、6 PP、两格已占用。实战把 6 PP 全用在席翁，对方公开 EX 有烈绝的显现纹章。龙用崇拜者入场与进化的选取配合，再宣告攻击移除了席翁，随后组合打满 20。一张刚进 EX 的水银的断绝需要 1 PP。重练这段时先写下自己能保留的 Quick、对方当前有几条可以处理守护的线路，再比较同费可出的玛文、白牙或灾藤。桌面给出了这些合法选择，替换哪条能扭转终局还要实际重演。[固定龙族第 21 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/zQrwne/games/21.md) · [输入 53 前的局面](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/zQrwne/reviews/05.md#game-21)
+固定百局对侮蔑龙第 21 局，主教 T11 有 20 血、6 PP、两格已占用。实战把 6 PP 全用在席翁，对方公开 EX 有烈绝的显现纹章。龙用崇拜者入场与进化的选取配合，再宣告攻击移除了席翁，随后组合打满 20。一张刚进 EX 的水银的断绝需要 1 PP。[固定龙族第 21 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/zQrwne/games/21.md) · [输入 53 前的局面](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/zQrwne/reviews/05.md#game-21)
+
+这局有一条实测能翻盘的解法。已进化的侮蔑绝杰剩 3 防，先用 1 费炎术打 2，再下灾藤并进化，从墓场把同一张炎术收进 EX 减费重打，余下的 1 防也被清掉。对方仍能打出第二张嘉鲁蜜儿，主教承受四段 3 点伤害后剩 8 血，最终在 T21 用席翁、承担者收尾。另一个同起点分支先打玛文，主教回到 23 血，T14 仍败。把「能否用己方回合的两段低费伤害拆触发源」加入交回合前的检查。两条重演使用同一牌序与满强度困难对手，正式百局保留原败局。[炎术分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/drills/dragon-21-pyromancy.json) · [玛文分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/drills/dragon-21-marwynn.json)
 
 ## 从败局倒推一回合
 

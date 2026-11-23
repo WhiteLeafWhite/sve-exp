@@ -13,6 +13,7 @@ const { positionals: [command, ...files], values: opt } = parseArgs({
     seat: { type: "string", default: "0" }, first: { type: "string" }, seed: { type: "string" },
     list: { type: "string", default: "10_26_JPN" }, bot: { type: "string", default: "medium" },
     pilot: { type: "string", default: "medium" }, auto: { type: "boolean" }, matchup: { type: "string" },
+    revision: { type: "string", default: "3" },
     at: { type: "string" }, pick: { type: "string" }, out: { type: "string" },
   },
 });
@@ -37,6 +38,7 @@ const [core, sets, bots, { configOf, CONTROLLER_PRESETS }, { parseDeckFile, toDe
 const engine = core.createEngine({ cards: sets.ALL_CARDS, scripts: sets.ALL_SCRIPTS });
 const fingerprint = engineFingerprint(resolve("packages/gui"));
 const fairBots = ["medium", "medium-v2", "greedy"];
+if (!["1","2","3","4"].includes(opt.revision)) throw Error("Choose a supported Bishop policy revision (1–4).");
 const frozen = {
   cQZr8Z: "ed8882da5252c802b10365452fee7185915cb764e46e3b5305e246c6529424fd",
   zQrwne: "9416da999b748650b862702d9bbf970470089f6aace1182a43097cb5fca1bcf7",
@@ -49,7 +51,7 @@ controllers[seat] = opt.auto && opt.pick === undefined && opt.pilot !== "bishop"
 const loadBot = (name, seed, player, matchup) => {
   if (name === "bishop") {
     if (!Object.hasOwn(frozen, matchup)) throw Error("Supply --matchup and the matching fixed deck when using the Bishop pilot.");
-    return makeBishopPlayer(engine, bots, { seat: player, opponentKey: matchup, seed: "bishop/" + seed, revision: 3 });
+    return makeBishopPlayer(engine, bots, { seat: player, opponentKey: matchup, seed: "bishop/" + seed, revision: Number(opt.revision) });
   }
   const key = [seed, name, player].join(":");
   return name === "greedy" ? bots.createBot(engine, "easy", key)
@@ -232,7 +234,7 @@ if (command === "review") {
   } finally { reader?.close(); }
   const end = game.view(seat);
   const result = { result: end.result, turn: end.turn };
-  const practice = { fingerprint, seat, matchup, pilot: opt.pilot, opponent: opt.bot, manualInputs: played,
+  const practice = { fingerprint, seat, matchup, pilot: opt.pilot, ...(opt.pilot==="bishop"?{revision:Number(opt.revision)}:{}), opponent: opt.bot, manualInputs: played,
     ...(command === "branch" ? { source: basename(files[0]), fromInput: prefix } : {}) };
   saveReplay(opt.out, { format: "sve-replay", version: 1, options: { ...options, controllers }, inputs, info: result, practice });
   console.log(JSON.stringify({ ...result, inputs: inputs.length, manualInputs: played, saved: resolve(opt.out) }));

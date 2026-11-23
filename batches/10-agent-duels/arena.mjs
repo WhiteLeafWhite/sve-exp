@@ -58,8 +58,6 @@ const options={seed:hiddenSeed,decks,deckNames:[b.name,m.name],controllers:["hum
   turnOrder:n%2?"player1":"player2"};
 const fresh=()=>engine.newGame({seed:options.seed,players:decks,config:rt.configOf(options)});
 const game=fresh(), inputs=[], notes=[], delegatedUntil=[-1,-1], explicit=[0,0], strategyMoves=[0,0];
-const pilots=[makeBishopPlayer(engine,rt,{seat:0,opponentKey:key,seed:"agent-counsel/"+options.seed,revision:3}),
-  rt.createPresetBot(engine,"medium-v2","agent-counsel/"+options.seed+"/meta",1)];
 const coaches=[];
 for(const role of ["bishop","meta"]){
   const file=join(root,"pilots",role+".mjs");
@@ -70,8 +68,12 @@ for(const role of ["bishop","meta"]){
   if(!existsSync(snapshot)){mkdirSync(dirname(snapshot),{recursive:true});writeFileSync(snapshot,code,{flag:"wx"})}
   const policy=await import(pathToFileURL(snapshot).href);
   assert.equal(typeof policy.choose,"function");
-  coaches.push({sha,choose:policy.choose});
+  coaches.push({sha,choose:policy.choose,baseRevision:policy.baseRevision});
 }
+const bishopRevision=coaches[0]?.baseRevision??3;
+assert([2,3,4].includes(bishopRevision));
+const pilots=[makeBishopPlayer(engine,rt,{seat:0,opponentKey:key,seed:"agent-counsel/"+options.seed,revision:bishopRevision}),
+  rt.createPresetBot(engine,"medium-v2","agent-counsel/"+options.seed+"/meta",1)];
 const name=def=>catalog.printing(def)?.names.cn||catalog.printing(def)?.names.ja||def;
 function present(v,answers) {
   const names=new Map();
@@ -171,7 +173,7 @@ const fingerprint=rt.engineFingerprint(resolve("packages/gui"));
 const replay={format:"sve-replay",version:1,options,inputs,info:{result:game.result,turn:game.state.turn},
   training:{key,number:n,engine:fingerprint,policy:"agent",deckVersion:b.name,hp:game.state.players.map(p=>p.leaderDefense),
     bishopHash:hash(b),opponentHash:hash(m),originalOpponentHash:hash(src),opponentChanges:changes},
-  duel:{explicit,strategyMoves,notes,authors,policyChoices:auto,delegatedPilots:["fair Bishop r3","fair medium-v2"]}};
+  duel:{explicit,strategyMoves,notes,authors,policyChoices:auto,delegatedPilots:["fair Bishop r"+bishopRevision,"fair medium-v2"]}};
 put(out,replay);
 put(join(table,"current.json"),{id,key,n,status:"complete",winner:game.result.winner,turn:game.state.turn,explicit,strategyMoves,changes});
 console.log(JSON.stringify({id,result:game.result,explicit,strategyMoves,changes}));
