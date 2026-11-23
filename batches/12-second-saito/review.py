@@ -46,6 +46,18 @@ def exact_test(up, down):
     return min(1.0, 2 * sum(math.comb(n, i) for i in range(min(up, down) + 1)) / 2**n)
 
 
+def win_interval(record):
+    wins, n = record[0], sum(record)
+    if not n:
+        return "—"
+    z = 1.959963984540054
+    rate = wins / n
+    denominator = 1 + z * z / n
+    center = (rate + z * z / (2 * n)) / denominator
+    margin = z * math.sqrt(rate * (1-rate) / n + z*z/(4*n*n)) / denominator
+    return f"{wins}/{n}（{100*rate:.1f}%，{100*(center-margin):.1f}–{100*(center+margin):.1f}%）"
+
+
 old = read(ROOT.parent / "09-bp20-fixed-300/summary.json")
 by_lane = {}
 for lane, (version, slot, name) in LANES.items():
@@ -148,6 +160,23 @@ for key, (opp, skill) in KEYS.items():
 complete = all(item["pairs"] == 100 for item in summary.values())
 total = sum(sum(sum(s[lane]["record"]) for lane in LANES) for s in summary.values())
 data = {"physicalGames":total, "complete":complete, "byMatchup":summary}
+opening = read(ROOT.parent / "11-dragon-mulligan/summary.json")
+aggregate = ["## 胜率与样本范围", "",
+             "括号里依次为实测胜率与 Wilson 95% 区间。前两列只用本轮。配对检验只比较相同种子下胜负翻转的方向，各职业分别作双侧精确检验。滚动区间和检验用于描述样本。", "",
+             "| 对手 | F 本轮 | B 本轮 | 配对检验 p | B 在各独立牌序的累计 |", "|---|---|---|---:|---|"]
+data["pooledControl"] = {}
+for key, (opp, _) in KEYS.items():
+    s = summary[key]
+    prior = [old["byMatchup"][key]["record"]]
+    if key == "zQrwne":
+        prior.extend([opening["controlFirst"],opening["sharedSecond"]])
+    b, f = s["control"]["record"], s["candidate"]["record"]
+    pooled = [sum(column) for column in zip(b, *prior)]
+    data["pooledControl"][key] = pooled
+    aggregate.append(f"| {opp} | {win_interval(f)} | {win_interval(b)} | {s['exactMcNemarTwoSided']:.3f} | {win_interval(pooled)} |")
+aggregate.extend(["", "B 的累计包含第九批每职业 100 局和本轮 B。龙族另计第十一批的 50 个原打法先攻与 50 个共用后攻，每个牌序只用一次。"
+                  "三批使用不同种子前缀、同一 B 主教、相同 r3 与三套原版困难对手。两人执牌及重练分支另计。"
+                  "[第九批](../09-bp20-fixed-300/index.md) · [第十一批的共用后攻](../11-dragon-mulligan/index.md)", ""])
 if complete:
     data["criteria"] = {}
     for lane in LANES:
@@ -156,7 +185,7 @@ if complete:
                                   "allAtLeast45":min(wins)>=45}
 index.extend(["",f"本次已复核 {total} 场独立实打的录像。配对共享相同开局，计算胜率时两表各自使用自己的实战记录。"
               "第二张进化卡的出场是赛中选择，不能把那几局的胜率直接当成换牌收益。", "",
-              "[按输入重练第二个进化位的实际选择](examples.md)", "", *details])
+              "[按输入重练第二个进化位的实际选择](examples.md)", "", *aggregate, *details])
 write(ROOT/"index.md",index)
 (ROOT/"summary.json").write_text(json.dumps(data,ensure_ascii=False,indent=2)+"\n","utf-8")
 write(REPO/"skills/sve-bishop-matchups/references/second-saito.md",
