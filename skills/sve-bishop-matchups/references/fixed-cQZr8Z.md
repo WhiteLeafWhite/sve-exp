@@ -41,3 +41,7 @@
 ## 第 46–50 局 · 主教 5–0
 
 第 48 局 T13，主教体力从 18 到 7。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 244 前重练，当时有 10 PP，从「永久之盾·席翁攻击巫师主战者」和「起动望蜀的裁决者·天冥的能力」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/48.md)
+
+## 第 51–55 局 · 主教 3–2
+
+第 54 局 T13，主教体力从 12 到 0。检查掉血前巫师的偶像总数、可用 SEP 与场上的祈祷者。比较清随从、压主战者和为 Quick 留 PP 的顺序。 可从输入 91 前重练，当时有 1 PP，从「使用炎术检定A级」和「起动坚定不移的祈祷的能力」中比较一个不同动作。 [战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/54.md)
