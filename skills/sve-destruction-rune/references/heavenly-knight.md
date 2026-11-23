@@ -9,5 +9,6 @@
 - F 版本。第 1 局 T19 输入 169 还有 3 PP，实际绝望安息·玛文攻击巫师主战者。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/cQZr8Z/games/01.md)
 - F 版本。第 6 局 T10 输入 71 还有 0 PP，实际结束主阶段。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/cQZr8Z/games/06.md)
 - F 版本。第 11 局 T27 输入 229 还有 5 PP，实际结束主阶段。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/cQZr8Z/games/11.md)
+- F 版本。第 16 局 T16 输入 153 还有 7 PP，实际誓断的赐予者攻击巫师主战者。[当时的局面与录像](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/control/cQZr8Z/games/16.md)
 
 [牌序与总成绩](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/15-heavenly-knight/index.md)
