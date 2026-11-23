@@ -2,6 +2,8 @@
 
 每局都有 SVE NEXT 录像与按回合整理的中文日志。战报中的生命先列主教，后列对手。第八批为日版 BP20 主教对三个固定困难 Bot 各 50 局，每五局有一次构筑与打法复盘。
 
+第一次上桌，可以直接选当前推荐的共同主教。构筑对照列出每个职业实际打了几场、赢了几场，以及换掉一个进化位或两个主牌位的代价。[本次共同主教与三对局打法](skills/sve-bishop-matchups/references/bp20-current.md) · [直接导入](skills/sve-bishop-matchups/references/bp20-recommended.json)
+
 这台电脑可以直接打开[主教陪练牌桌](http://127.0.0.1:5170/practice/index.html)。默认你执巫师，对面是本仓库训练的白牙萝蕾娜。也可以自己执主教，挑战三个困难对手。在高级设置选「双席实战陪练」，可以直接挑战两个子 agent 在实战里练出的职业打法。启动、换座位、导入与分支重演见[陪练操作](skills/sve-bishop-matchups/references/bp20-practice.md)。
 
 想直接练一个回合，可以从实战中接手。牌桌会停在你需要作决策的那一步，只展示本方可见的牌。[从 T7 执主教](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-01.json&at=43&seat=0) · [从 T2 执破坏巫师](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-01.json&at=8&seat=1) · [从 T9 执侮蔑龙](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-zQrwne-02.json&at=51&seat=1) · [从 T8 执财宝皇室](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-t7B32v-01.json&at=37&seat=1)

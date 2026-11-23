@@ -5,7 +5,7 @@ description: 用 SVE NEXT 练习 Shadowverse EVOLVE 日版 BP20 主教，陪练�
 
 # BP20 主教陪练
 
-1. 准备牌表。使用第八批的同一套定稿对战 cQZr8Z 破坏巫师、zQrwne 侮蔑龙和 t7B32v 财宝皇室。向用户报出本对局独立验证的胜负，再说明这次要练的一个决定。[定稿与张数](references/bp20-deck.md) · [导入文件](references/bp20-150-final.json) · [三对局成绩](https://github.com/WhiteLeafWhite/sve-exp/tree/main/batches/08-bp20-hard-150)
+1. 准备牌表。用当前推荐的同一套主教对战 cQZr8Z 破坏巫师、zQrwne 侮蔑龙和 t7B32v 财宝皇室。向用户说清本对局已有多少场、赢了几场，再选这次要练的一个决定。要重做历史录像，就用录像中保存的牌表。[当前推荐、胜率与取舍](references/bp20-current.md) · [当前导入牌表](references/bp20-recommended.json) · [基础 40 张与进化位](references/bp20-deck.md)
 2. 对练时由用户选择要驾驶的一方。开局先看四张手牌，给出先后攻、第二回合与第三回合各能做什么，再决定是否整手重抽。询问用户的一次取舍后，给出一个可执行的替代顺序，让用户在模拟器比较。按需核对规则与导入命令。[规则、启动及重演](references/bp20-practice.md)
 3. 在主阶段先算可确认的斩杀，逐一扣除横置守护、解场费用与可能的 Quick。交回合前读敌方公开 EX、墓场、剩余 EP／SEP 和己方可减伤次数。写出对方一条可能的终结线，再决定进化、回血、铺护符或留 PP。按对手选择题目。[实战打法与重练题](references/bp20-playbook.md)
 4. 提交引擎列出的合法动作。自定义主教使用自己可见的信息和公平抽样，三个对手用桌面困难预设。局中根据可见动作更新推测，赛后再打开全视角录像核查。将一次复盘写成「当时看到什么、选择了什么、另一条合法线路及其代价」。[主教决策程序](scripts/bishop-player.mjs) · [互动与分支工具](scripts/practice.mjs)
@@ -28,6 +28,8 @@ description: 用 SVE NEXT 练习 Shadowverse EVOLVE 日版 BP20 主教，陪练�
 对照使用第二张灾藤和第二张玛文的场面，比较回收炎术、用身体交换与留费清场的收益。[配对实战](references/second-saito.md)
 
 圣士郎进化后，选择手里一张放进场。先比较这回合能触发几次回复，以及对面的 4/4 会不会活到下回合。[从 T7 执主教](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-01.json&at=43&seat=0)
+
+练水银时，同一局先执主教，再执巫师。主教七费，手中有白牙和承担者，先算留费后能否活过三个 3 攻。换座位后，看公开 EX，再决定荒野、黑章、祈祷者与首攻的顺序。两个执牌者在这个残局都打出过胜线。[从 T14 执主教](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-06.json&at=105&seat=0) · [从 T15 执巫师](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-drill-rune-06-hold.json&at=109&seat=1) · [两种应手与终局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/index.md)
 
 下梦羊时，先确定对手的第一段伤害是否能改由更小的一段支付。[一次伤害防止的实战](references/sacred-sheep.md)
 

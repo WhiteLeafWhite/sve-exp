@@ -2,7 +2,7 @@
 // Run with Node from the installed 0.4.3 simulator checkout.
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { createRequire } from "node:module";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -35,7 +35,20 @@ assert(existsSync(join(pc,"server.mjs")),"Pass the installed PC release director
 const installed = readFileSync(join(pc,"VERSION.txt"),"utf8");
 const fingerprint = installed.match(/Engine fingerprint: ([a-f0-9]+)/)?.[1];
 assert(fingerprint && installed.includes("0.4.3"),"The practice GUI targets SVE NEXT 0.4.3.");
-const hash=createHash("sha256").update(fingerprint).update(readFileSync(fileURLToPath(import.meta.url)))
+let defaultHaven="BP20-Haven-final.json";
+const recommendation=join(scripts,"../references/bp20-recommended.json");
+if(existsSync(recommendation)){
+  const bytes=readFileSync(recommendation), deck=JSON.parse(bytes);
+  assert(deck.format==="sve-deck" && deck.version===1 && deck.leader && deck.main && deck.evolve);
+  const signature=createHash("sha256").update(bytes).digest("hex").slice(0,10);
+  defaultHaven="BP20-Haven-recommended-"+signature+".json";
+  const decks=join(pc,"decks");
+  mkdirSync(decks,{recursive:true});
+  const path=join(decks,defaultHaven);
+  try{writeFileSync(path,bytes,{flag:"wx"})}
+  catch(e){if(e.code!=="EEXIST")throw e;assert.deepEqual(readFileSync(path),bytes,"Different deck already occupies "+defaultHaven)}
+}
+const hash=createHash("sha256").update(fingerprint).update(defaultHaven).update(readFileSync(fileURLToPath(import.meta.url)))
   .update(readFileSync(join(scripts,"desktop-seat.mjs"))).update(readFileSync(join(scripts,"bishop-player.mjs")))
   .update(readFileSync(join(scripts,"desktop-exercise.mjs")));
 const policyIds={};
@@ -45,7 +58,7 @@ for(const [name,source] of policies) {
 }
 const id=hash.digest("hex").slice(0,16);
 const manifest=join(pc,"app/practice/coaches.json");
-const manifestText=JSON.stringify({engine:fingerprint,build:id,checkpoint:lastCheck||null,policies:policyIds},null,2)+"\n";
+const manifestText=JSON.stringify({engine:fingerprint,build:id,checkpoint:lastCheck||null,defaultHaven,policies:policyIds},null,2)+"\n";
 if(values["if-changed"] && existsSync(join(pc,"app/practice/index.html")) && existsSync(manifest)
    && JSON.parse(readFileSync(manifest,"utf8")).build===id) {
   if(readFileSync(manifest,"utf8")!==manifestText) writeFileSync(manifest,manifestText);
@@ -122,7 +135,7 @@ function coachPlugin() {
       }
       if (path.endsWith("/src/app/settings.ts")) {
         code=replaceOnce(code,'const KEY = "sve-gui-settings"','const KEY = "sve-bp20-practice-settings"');
-        code=replaceOnce(code,'setupDecks: ["samples/sd01.json", "samples/sd02.json"]','setupDecks: ["svehelper/cQZr8Z.json", "BP20-Haven-final.json"]');
+        code=replaceOnce(code,'setupDecks: ["samples/sd01.json", "samples/sd02.json"]','setupDecks: ["svehelper/cQZr8Z.json", '+JSON.stringify(defaultHaven)+']');
         code=replaceOnce(code,'setupControllers: ["human", "medium"]','setupControllers: ["human", "bishop-coach"]');
         return replaceOnce(code,'restrictionLists: {},','restrictionLists: {standard:null},');
       }
