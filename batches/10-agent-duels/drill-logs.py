@@ -19,6 +19,9 @@ TITLES = {
     "royal-03-lorena-F": "双灾藤重走萝蕾娜与奔流的交换", "royal-03-lorena-B": "双玛文重走萝蕾娜与奔流的交换",
     "royal-03-marwynn-B": "双玛文先用第二张玛文进化清场",
     "royal-03-marwynn-turn-B": "双玛文完整指定 T21，再从 T22 交回双方策略",
+    "royal-04-seishiro": "歪曲处理被夺走的圣士郎", "royal-04-octrice": "歪曲处理进化欧克托莉斯",
+    "rune-05-prayer-control": "先祈祷，复现巫师第五局", "rune-05-tenmei": "透京取天冥，用三次回复处理纱妃拉",
+    "rune-05-wasteland": "同盘以破坏的荒野检索狂信者收尾",
 }
 
 
