@@ -2,7 +2,7 @@
 
 每局都有 SVE NEXT 录像与按回合整理的中文日志。战报中的生命先列主教，后列对手。第八批为日版 BP20 主教对三个固定困难 Bot 各 50 局，每五局有一次构筑与打法复盘。
 
-第一次上桌，可以直接选当前推荐的共同主教。构筑对照列出每个职业实际打了几场、赢了几场，以及换掉一个进化位或两个主牌位的代价。[本次共同主教与三对局打法](skills/sve-bishop-matchups/references/bp20-current.md) · [直接导入](skills/sve-bishop-matchups/references/bp20-recommended.json)
+本轮推荐白牙萝蕾娜透京耶菈，40 张主牌、10 张进化牌，进化区放两张灾藤、一张玛文。同一套牌对固定困难 Bot，破坏巫师 63/125（50.4%）、侮蔑龙 55/122（45.1%）、财宝皇室 62/125（49.6%）。双席正式对练另有 19 局，主教 4 胜 15 负。第 20 局停在 T14，未计胜负。[完整牌表、胜率区间与构筑取舍](skills/sve-bishop-matchups/references/bp20-current.md) · [直接导入](skills/sve-bishop-matchups/references/bp20-recommended.json) · [两位执牌者的每局复盘](batches/10-agent-duels/index.md)
 
 这台电脑可以直接打开[主教陪练牌桌](http://127.0.0.1:5170/practice/index.html)。默认你执巫师，对面是本仓库训练的白牙萝蕾娜。也可以自己执主教，挑战三个困难对手。在高级设置选「双席实战陪练」，可以直接挑战两个子 agent 在实战里练出的职业打法。启动、换座位、导入与分支重演见[陪练操作](skills/sve-bishop-matchups/references/bp20-practice.md)。
 
