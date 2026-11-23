@@ -2,6 +2,10 @@
 
 每局都有 SVE NEXT 录像与按回合整理的中文日志。战报中的生命先列主教，后列对手。第八批为日版 BP20 主教对三个固定困难 Bot 各 50 局，每五局有一次构筑与打法复盘。
 
+**第九批**　同一份白牙萝蕾娜透京耶菈对三个原版困难 Bot 各 100 局，先后攻各半。每五局更新两个座位的打法、逐局战报与构筑取舍。[百局分组成绩与全部录像](batches/09-bp20-fixed-300/index.md) · [构筑日志](batches/09-bp20-fixed-300/construction.md) · [共同主教](batches/09-bp20-fixed-300/bishop.json)
+
+按驾驶职业选择陪练技能。[主教](skills/sve-bishop-matchups/SKILL.md) · [破坏巫师](skills/sve-destruction-rune/SKILL.md) · [侮蔑龙](skills/sve-disdain-dragon/SKILL.md) · [财宝皇室](skills/sve-loot-sword/SKILL.md)
+
 **第八批**　[150 局总成绩与录像](batches/08-bp20-hard-150/index.md) · [每五局构筑日志](batches/08-bp20-hard-150/construction.md) · [定稿主教与完整张数](skills/sve-bishop-matchups/references/bp20-deck.md) · [模拟器导入文件](skills/sve-bishop-matchups/references/bp20-150-final.json) · [三对局打法](skills/sve-bishop-matchups/references/bp20-playbook.md) · [陪练技能](skills/sve-bishop-matchups/SKILL.md)
 
 前七批每批十局，对应以下历史资料。

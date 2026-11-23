@@ -98,13 +98,34 @@ function prayerValue(view, seat) {
   return value;
 }
 
+// A single Ward can be removed before later attacks. Evaluate the publicly
+// visible Disdain engine again with that line open, especially after a tap-out.
+function disdainExposure(view, seat) {
+  const me = view.players[seat], foe = view.players[1 - seat];
+  const field = foe.field.filter(c => !c.hidden && !c.abilitiesLost);
+  const galm = field.find(c => c.def === 'BP05-052' && c.evolvedWith);
+  if (!galm) return 0;
+  const visibleHits = foe.ex.filter(c => ['BP15-064','BP15-PR13','BP20-T05','BP20-063'].includes(c.def)).length;
+  const haveQuick = me.playPoints >= 1 && me.ex.some(c => c.def === 'BP14-T07');
+  const sion = me.field.some(c => !c.hidden && !c.abilitiesLost && c.def === 'BP14-090');
+  const bodyDamage = field.filter(c => c.type === 'follower').reduce((s,c) => s + Math.max(0,c.attack),0);
+  const damage = bodyDamage + 3 * Math.min(4, 1 + visibleHits) + (foe.maxPlayPoints >= 5 ? 3 : 0);
+  const margin = me.leaderDefense - damage;
+  let exposure = 3 + Math.min(3,visibleHits);
+  if (margin <= 3) exposure += Math.min(7, 4 - margin);
+  if (haveQuick) exposure *= .65;
+  if (sion && haveQuick) exposure *= .75;
+  return -exposure;
+}
+
 export function makeBishopPlayer(engine, {PlannerBot, MEDIUM_V2}, {seat=0, opponentKey, seed, revision=2}) {
   if(!Object.hasOwn(priority,opponentKey))throw Error('Unknown matchup: '+opponentKey);
-  if(![1,2,3].includes(revision))throw Error('Unknown bishop revision');
+  if(![1,2,3,4].includes(revision))throw Error('Unknown bishop revision');
+  const dragonRevision = revision === 4 && opponentKey === 'zQrwne';
   const hasTrait=(c,trait)=>engine.db.get(c.def).traits.includes(trait);
   const augment=base=>(v,p)=>base(v,p)+(v.result?0:(p===seat?1:-1)*(matchupValue(v,seat,opponentKey)
     +(revision>=2?nextTurnPressure(v,seat,opponentKey,hasTrait):0)
-    +(revision===3?prayerValue(v,seat):0)));
+    +(revision>=3?prayerValue(v,seat):0)+(dragonRevision?disdainExposure(v,seat):0)));
   const refinement=revision>=2?{
     samples:3, beamWidth:16, maxSimulations:1900, maxDepth:16, replyPlans:5,
     innerPlans:[3,3], innerSimulations:440, innerBeam:6, replyLethal:260,
@@ -113,7 +134,10 @@ export function makeBishopPlayer(engine, {PlannerBot, MEDIUM_V2}, {seat=0, oppon
   }:{};
   // R3 searches the current turn and scores the visible threat at its end. All
   // candidates use this budget; revision 2 keeps the original two-turn search.
-  const focused = revision === 3 ? {
+  const focused = dragonRevision ? {
+    lookahead:2, samples:3, beamWidth:14, maxSimulations:1500, replyPlans:5,
+    innerPlans:[3,3], innerSimulations:340, innerBeam:6, replyLethal:230, lethalSearch:1400,
+  } : revision >= 3 ? {
     lookahead:1, samples:2, beamWidth:10, maxSimulations:850, replyPlans:4,
     lethalSearch:1100, replyLethal:140,
   } : {};
@@ -134,7 +158,7 @@ export function makeBishopPlayer(engine, {PlannerBot, MEDIUM_V2}, {seat=0, oppon
       }
       if(d.type==='mulligan'){
         const hand=me.hand.filter(c=>!c.hidden);
-        if (revision === 3) {
+        if (revision >= 3) {
           const starts = hand.some(c => ['BP16-093','BP16-104','BP09-095'].includes(c.def));
           if (starts && hand.some(c => c.cost <= 2 && c.type !== 'amulet')) return {type:'mulligan',redraw:false};
         }

@@ -7,7 +7,7 @@ import { setTimeout as delay } from "node:timers/promises";
 import { fileURLToPath } from "node:url";
 const [key, round, deck, policy, series = "explore"] = process.argv.slice(2);
 const unit = Number(round);
-assert(["explore", "fixed100", "lyrial"].includes(series) && Number.isInteger(unit) && unit >= 1 && unit <= (series === "fixed100" ? 20 : series === "lyrial" ? 1 : 10) && deck && policy);
+assert(["explore", "fixed100", "lyrial", "dragonPolicy"].includes(series) && Number.isInteger(unit) && unit >= 1 && unit <= (series === "fixed100" ? 20 : ["lyrial","dragonPolicy"].includes(series) ? 1 : 10) && deck && policy);
 // A supervised run can wait for its five-game quota/skill/publication checkpoint.
 // Offline reproduction needs no account access and uses no control directory.
 const gates = resolve("dist/quota-checkpoints");

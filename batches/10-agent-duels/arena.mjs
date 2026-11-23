@@ -1,6 +1,6 @@
 // Referee for one game. Start from the simulator checkout; seat.mjs is the player interface.
 import assert from "node:assert/strict";
-import { createHash } from "node:crypto";
+import { createHash, randomUUID } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, renameSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { setTimeout as delay } from "node:timers/promises";
@@ -51,7 +51,9 @@ assert.deepEqual(rt.formatProblems(b,"standard",list,catalog,engine.validateDeck
 assert.deepEqual(engine.validateDeck(decks[1],{deckRestrictions:true}),[]);
 const out=join(root,key,"replays",String(n).padStart(2,"0")+".json");
 assert(!existsSync(out),"Game already completed: "+id);
-const options={seed:"sve-exp/agents/v1/"+key+"/"+n,decks,deckNames:[b.name,m.name],controllers:["human","human"],
+const prefix=join(work,"progress.json");
+const hiddenSeed=existsSync(prefix)?read(prefix).options.seed:"sve-exp/agents/v1/"+randomUUID();
+const options={seed:hiddenSeed,decks,deckNames:[b.name,m.name],controllers:["human","human"],
   format:"standard",restrictionList:null,deckRestrictions:true,manualActions:false,showEveryMainPhase:true,askEveryQuickWindow:true,
   turnOrder:n%2?"player1":"player2"};
 const fresh=()=>engine.newGame({seed:options.seed,players:decks,config:rt.configOf(options)});
@@ -93,11 +95,11 @@ function present(v,answers) {
   if(d.type==="selectCards") d.candidates.forEach((c,i)=>names.set(c,name(d.candidateDefs[i])||names.get(c)||"未公开卡"));
   const label=(value)=>JSON.stringify(value,(k,x)=>typeof x==="string"&&names.has(x)?names.get(x)+"#"+x:x);
   return {turn:v.turn,active:v.activePlayer,phase:v.phase,attack:v.attack,decision:d.type,reason:d.reason||d.timing,
-    source:d.source?names.get(d.source):undefined, sides,choices:answers.map(label)};
+    source:d.source?names.get(d.source):undefined, questionOptions:d.options,min:d.min,max:d.max,
+    resolution:v.resolution.map(card),sides,choices:answers.map(label)};
 }
 const stop=resolve("dist/quota-checkpoints/stop");
 const stopped=()=>{if(existsSync(stop))throw Error("Weekly stop. Unfinished game kept locally: "+id)};
-const prefix=join(work,"progress.json");
 const authors=coaches.map(x=>x?.sha??null), auto=[0,0];
 if(existsSync(prefix)){
   const old=read(prefix);
@@ -115,7 +117,12 @@ while(game.decision){
   const by=onlyPass?null:seat;
   const assisted=()=>{
     if(coaches[seat]){
-      const choice=coaches[seat].choose({seat,key,view:v,answers:permitted.answers});
+      // A hidden instance id can encode deal order. Give the seat policy only a
+      // hidden placeholder and any card the viewer may legitimately remember.
+      const side=v.players[1-seat];
+      const mask=cards=>cards.map(c=>c.hidden?{hidden:true,...(c.remembered?{remembered:c.remembered}:{})}:c);
+      const safe={...v,players:v.players.map((p,i)=>i===seat?p:{...side,hand:mask(p.hand),evolveDeck:mask(p.evolveDeck),banished:mask(p.banished),field:mask(p.field)})};
+      const choice=coaches[seat].choose({seat,key,view:safe,answers:permitted.answers});
       if(Number.isInteger(choice)&&permitted.answers[choice]){auto[seat]++;return permitted.answers[choice]}
     }
     return pilots[seat].decide(game);

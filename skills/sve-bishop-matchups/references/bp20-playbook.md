@@ -17,6 +17,10 @@
 | 侮蔑龙 | 龙族公开 EX 中能伤己方从者的牌、嘉鲁蜜儿是否已进化、下一回合 PP、我方减伤与水银的断绝。 | 对能反复触发的嘉鲁蜜儿，比较先移除她与回到高生命。第 1 局主教交回合时 20 血，龙族用 6＋4 点攻击和四次 3 点能力伤害将其击败。席翁在场和 1 PP Quick 的减伤要逐段算。第 6 局两名席翁各攻 3 收尾。[第 1 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/zQrwne/games/01.md) · [第 6 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/zQrwne/games/06.md) |
 | 财宝皇室 | 芭芭萝丝、公开海贼旗和黄金短剑、我方墓场是否满十、对手能否先给随从开路。 | 先算公开财宝能造成的直接伤害，再看疾驰和已有攻击。第 22 局从 12 血被 3＋2、海贼旗 1、芭芭萝丝 6 击败。自己能取胜时要压住节奏，第 21 局先用天冥打 3，再用场上两个老从者打 6、3，正好 12。[第 22 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/t7B32v/games/22.md) · [第 21 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/t7B32v/games/21.md) |
 
+## 交回合时按移除后的场面再算一次
+
+固定百局对侮蔑龙第 21 局，主教 T11 有 20 血、6 PP、两格已占用。实战把 6 PP 全用在席翁，对方公开 EX 有烈绝的显现纹章。龙用崇拜者入场与进化的选取配合，再宣告攻击移除了席翁，随后组合打满 20。一张刚进 EX 的水银的断绝需要 1 PP。重练这段时先写下自己能保留的 Quick、对方当前有几条可以处理守护的线路，再比较同费可出的玛文、白牙或灾藤。桌面给出了这些合法选择，替换哪条能扭转终局还要实际重演。[固定龙族第 21 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/zQrwne/games/21.md) · [输入 53 前的局面](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/zQrwne/reviews/05.md#game-21)
+
 ## 从败局倒推一回合
 
 第八批对龙族第 7 局，在输入 148 前停下。主教有 8 血、1 PP，对手 18 血，场上誓断的赐予者可以普通进化或超进化，也能先起动坚定不移的祈祷。实战选普通进化，T18 落败。把同一个输入分别改为超进化和起动祈祷，交还同一套 r3 与满强度 Hard 续打，两条分支也都在 T18 落败。训练时将断点往前挪到 T16，重新找「何时可以移除自伤触发源」或「何时能准备减伤」的机会。两条分支独立保存在训练题目录。[原局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/zQrwne/games/07.md) · [超进化分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/drills/dragon-07-super.json) · [祈祷分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/drills/dragon-07-prayer.json)

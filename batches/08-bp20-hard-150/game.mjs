@@ -9,16 +9,19 @@ import { makeBishopPlayer } from "../../skills/sve-bishop-matchups/scripts/bisho
 const root = dirname(fileURLToPath(import.meta.url));
 const rt = await import(pathToFileURL(resolve("dist/bp20-training-engine.mjs")).href);
 const [key, number, version = "A", strategy = "2", series = "explore"] = process.argv.slice(2);
-assert(["explore", "fixed100", "lyrial"].includes(series));
+assert(["explore", "fixed100", "lyrial", "dragonPolicy"].includes(series));
 const fixed = series === "fixed100";
 const paired = series === "lyrial";
-const destination = fixed ? join(root, "..", "09-bp20-fixed-300") : paired ? join(root, "..", "09b-bp20-lyrial") : root;
+const targeted = series === "dragonPolicy";
+const archive = {fixed100:"09-bp20-fixed-300",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy"}[series];
+const destination = archive ? join(root,"..",archive) : root;
 const pins = {
   cQZr8Z: ["05", "ed8882da5252c802b10365452fee7185915cb764e46e3b5305e246c6529424fd"],
   zQrwne: ["06", "9416da999b748650b862702d9bbf970470089f6aace1182a43097cb5fca1bcf7"],
   t7B32v: ["07", "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"],
 };
-assert(Object.hasOwn(pins, key) && /^[1-9]\d*$/.test(number) && Number(number) <= (fixed ? 100 : paired ? 5 : 50) && (paired ? version==="D" && strategy==="3" : /^[ABC]$/.test(version)));
+assert(Object.hasOwn(pins, key) && /^[1-9]\d*$/.test(number) && Number(number) <= (fixed ? 100 : paired || targeted ? 5 : 50) && (paired ? version==="D" && strategy==="3" : /^[ABC]$/.test(version)));
+if (targeted) assert(key==="zQrwne" && version==="B" && strategy==="4");
 const read = (path) => JSON.parse(readFileSync(path, "utf8").replace(/^\uFEFF/, ""));
 const engine = rt.createEngine({ cards: rt.ALL_CARDS, scripts: rt.ALL_SCRIPTS });
 const catalog = new rt.Catalog(rt.ALL_CARDS);
@@ -46,8 +49,8 @@ const decks = [bishop, opponent].map((d) => rt.toDeckList(d));
 assert.deepEqual(rt.formatProblems(bishop, "standard", list, catalog,
   engine.validateDeck(decks[0], { deckRestrictions: true })), []);
 assert.deepEqual(engine.validateDeck(decks[1], { deckRestrictions: true }), []);
-const seedNumber = Number(number) + (paired ? 75 : 0);
-const seed = (fixed || paired ? "sve-exp/bp20-fixed-300/v1/" : "sve-exp/bp20-hard-150/v1/") + key + "/" + seedNumber;
+const seedNumber = Number(number) + (paired ? 75 : targeted ? 90 : 0);
+const seed = (series!=="explore" ? "sve-exp/bp20-fixed-300/v1/" : "sve-exp/bp20-hard-150/v1/") + key + "/" + seedNumber;
 const options = { seed, decks, deckNames: [bishop.name, opponent.name], controllers: ["human", "hard"],
   format: "standard", restrictionList: null, deckRestrictions: true, manualActions: false,
   showEveryMainPhase: true, askEveryQuickWindow: true, turnOrder: seedNumber % 2 ? "player1" : "player2" };

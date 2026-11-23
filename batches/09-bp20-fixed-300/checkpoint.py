@@ -47,11 +47,14 @@ def generate(key,r):
             +f" [战报]({link})",""])
         opp_wins=[x for x in games if x["winner"]==1]
         ex=(opp_wins or games)[0]
+        move=ex.get("metaAlternative")
         cause="、".join(ex["last"]["finish"][:3]) or ex["last"]["reason"]
         mlink=f"{BASE}/{key}/games/{ex['number']:02}.md"
         ml.extend([heading+title+" "+record([c["record"][1],c["record"][0],c["record"][2]]),"",
             f"第 {ex['number']} 局终局回合 T{ex['turn']}，从主教／{title}体力 {ex['last']['start'][0]}／{ex['last']['start'][1]} 起算。"
-            f"实际记录包括{cause}。回到该回合前，分别写下能用于交换和能攻击主战者的随从，再按单段伤害检验选择。 [战报]({mlink})",""])
+            f"实际记录包括{cause}。"+
+            (f" 输入 {move['at']} 前，本方持有 {move['pp']} PP、{move['ep']} EP、{move['sep']} SEP。比较先「{move['actual']}」或先「{move['alternatives'][0]}」，重新计算可保留的攻击与直伤。" if move else
+             "回到该回合前，分别写下能用于交换和能攻击主战者的随从，再按单段伤害检验选择。")+f" [战报]({mlink})",""])
         for g in games:
             n=g["number"]; s={0:"胜",1:"负",None:"平"}[g["winner"]]
             idx.append(f"| {n} | {g['order']} | {s} | T{g['turn']} · {g['hp'][0]}／{g['hp'][1]} | [日志](games/{n:02}.md) · [复盘](reviews/{j:02}.md#game-{n:02}) · [录像](replays/{n:02}.json) |")

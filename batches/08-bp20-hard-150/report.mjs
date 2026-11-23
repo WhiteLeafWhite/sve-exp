@@ -7,7 +7,7 @@ import { fileURLToPath, pathToFileURL } from "node:url";
 const here = dirname(fileURLToPath(import.meta.url));
 const rt = await import(pathToFileURL(resolve("dist/bp20-training-engine.mjs")).href);
 const [key, roundText, series = "explore"] = process.argv.slice(2);
-const otherFolders = {fixed100:"09-bp20-fixed-300",duel:"10-agent-duels",lyrial:"09b-bp20-lyrial"};
+const otherFolders = {fixed100:"09-bp20-fixed-300",duel:"10-agent-duels",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy"};
 assert(series==="explore" || Object.hasOwn(otherFolders,series));
 const root = series==="explore" ? here : join(here, "..", otherFolders[series]);
 const round = Number(roundText);
@@ -34,7 +34,7 @@ function summarize(number) {
   const targetName = (id) => leaders.includes(id) ? who[leaders.indexOf(id)] + "主战者" : card(id);
   const hp = [20,20], turns = [], hand = [], mulligan = ["",""];
   const drawn = {}, cast = {}, entered = {};
-  let t = null, alternative = null, earlyPlays = 0, firstHeal = null;
+  let t = null, alternative = null, metaAlternative = null, earlyPlays = 0, firstHeal = null;
   const log = (s) => { if (t) t.lines.push(s); };
   const record = (events) => {
     for (const e of events) {
@@ -86,8 +86,8 @@ function summarize(number) {
   for (const [i, {input,by}] of r.inputs.entries()) {
     const d = g.decision;
     if (d?.type === "mulligan" && d.player === 0) hand.push(...g.view(0).players[0].hand.map((c) => c.def));
-    if (d?.type === "mainPhase" && d.player === 0 && d.actions.length > 1 && input.type === "mainPhase") {
-      const v = g.view(0), own = v.players[0], opp = v.players[1];
+    if (d?.type === "mainPhase" && d.actions.length > 1 && input.type === "mainPhase") {
+      const v = g.view(d.player), own = v.players[d.player], opp = v.players[1-d.player];
       const label = (a) => {
         if (a.type === "play") return "使用" + card(a.card);
         if (a.type === "attack") return card(a.attacker) + "攻击" + targetName(a.target);
@@ -98,10 +98,13 @@ function summarize(number) {
       };
       const actual = label(input.action);
       const alternatives = [...new Set(d.actions.map(label))].filter((a) => a !== actual && a !== "结束主阶段");
-      if (alternatives.length) alternative = { at:i, t:v.turn, pp:own.playPoints, opposingPP:opp.playPoints,
+      if (alternatives.length) {
+        const choice = { at:i, t:v.turn, pp:own.playPoints, opposingPP:opp.playPoints, ep:own.evolutionPoints, sep:own.superEvolutionPoints,
         hp:[own.leaderDefense,opp.leaderDefense], actual, alternatives:alternatives.slice(0,3),
         ownSlots:own.field.length, opposingEx:opp.ex.filter((c)=>!c.hidden).map((c)=>name(c.def)),
         engagedWards:opp.field.filter((c)=>!c.hidden && c.engaged && c.keywords.includes("ward")).map((c)=>name(c.def)) };
+        if(d.player===0) alternative=choice; else metaAlternative=choice;
+      }
     }
     if (input.action?.type === "activate") log(who[d.player] + "起动" + card(input.action.card) + "的能力。");
     record(g.act(input, by ?? undefined));
@@ -131,7 +134,7 @@ function summarize(number) {
   return { number, order, winner, hp, turn:g.state.turn, inputs:r.inputs.length, deck:r.training.deckVersion,
     policy:r.training.policy, mulligan:mulligan[0], hand, earlyPlays, firstHeal, drawn, cast, entered,
     worst:{ turn:worst.n, loss:worst.start[0]-worst.end[0], start:worst.start,end:worst.end },
-    last:{ start:last.start, end:last.end, finish:damage.map((h) => h.text), reason:g.result.losses?.[0]?.reason }, alternative };
+    last:{ start:last.start, end:last.end, finish:damage.map((h) => h.text), reason:g.result.losses?.[0]?.reason }, alternative, metaAlternative };
 }
 
 const numbers = Array.from({ length:5 }, (_,i) => (round-1)*5+i+1);
@@ -149,6 +152,9 @@ for (const g of games) {
     " PP，对手有 "+a.opposingPP+" PP。实战选择"+a.actual+"。其他合法选择包括"+a.alternatives.join("、")+"。"+
     "主教占用 "+a.ownSlots+"/5 个场位。对方横置守护为"+(a.engagedWards.join("、")||"零张")+"，公开 EX 为"+
     (a.opposingEx.join("、")||"空")+"。先根据这些信息算一条行动线，再打开录像检查。","");
+  const m=g.metaAlternative;
+  if(m && series!=="explore")lines.push("**"+foe+"席位**　输入 "+m.at+" 前持有 "+m.pp+" PP、"+m.ep+" EP、"+m.sep+" SEP。"+
+    "主教横置守护为"+(m.engagedWards.join("、")||"零张")+"。实战选择"+m.actual+"，还可选择"+m.alternatives.join("、")+"。","");
   lines.push("[逐回合日志](../games/"+id+".md) · [录像](../replays/"+id+".json)","");
 }
 save(join(root,key,"reviews",pad(round)+".md"),lines.join("\n"));
