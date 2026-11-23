@@ -1,17 +1,18 @@
 // Rebuild five Chinese turn logs and a group review from the native replays.
 // node report.mjs <opponent key> <round 1–10>   (cwd = simulator checkout)
 import assert from "node:assert/strict";
-import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 const here = dirname(fileURLToPath(import.meta.url));
 const rt = await import(pathToFileURL(resolve("dist/bp20-training-engine.mjs")).href);
 const [key, roundText, series = "explore"] = process.argv.slice(2);
-assert(["explore", "fixed100"].includes(series));
-const root = series === "fixed100" ? join(here, "..", "09-bp20-fixed-300") : here;
+const otherFolders = {fixed100:"09-bp20-fixed-300",duel:"10-agent-duels",lyrial:"09b-bp20-lyrial"};
+assert(series==="explore" || Object.hasOwn(otherFolders,series));
+const root = series==="explore" ? here : join(here, "..", otherFolders[series]);
 const round = Number(roundText);
 const foe = { cQZr8Z: "巫师", zQrwne: "龙族", t7B32v: "皇室" }[key];
-assert(foe && Number.isInteger(round) && round >= 1 && round <= (series === "fixed100" ? 20 : 10));
+assert(foe && Number.isSafeInteger(round) && round >= 1 && (series === "duel" || round <= (series === "fixed100" ? 20 : 10)));
 const who = ["主教", foe];
 const engine = rt.createEngine({ cards: rt.ALL_CARDS, scripts: rt.ALL_SCRIPTS });
 const read = (path) => JSON.parse(readFileSync(path, "utf8").replace(/^\uFEFF/, ""));
@@ -133,7 +134,9 @@ function summarize(number) {
     last:{ start:last.start, end:last.end, finish:damage.map((h) => h.text), reason:g.result.losses?.[0]?.reason }, alternative };
 }
 
-const games = Array.from({ length:5 }, (_,i) => summarize((round-1)*5+i+1));
+const numbers = Array.from({ length:5 }, (_,i) => (round-1)*5+i+1);
+const games = numbers.filter(n=>series !== "duel" || existsSync(join(root,key,"replays",pad(n)+".json"))).map(summarize);
+assert(games.length > 0);
 const lines = ["# 第 " + round + " 组 · 主教对" + foe,"","本组 " + games.filter((g) => g.winner === 0).length +
   " 胜，" + games.filter((g) => g.winner === 1).length + " 负，" + games.filter((g) => g.winner === null).length +
   " 平。构筑 " + games[0].deck + "，打法 r" + games[0].policy + "。","","[本轮构筑与打法决策](../../construction.md#"+key+"-"+pad(round)+")",""];

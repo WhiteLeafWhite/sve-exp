@@ -1,6 +1,7 @@
 """Publish one reviewed group into the local Git history; network push stays with the supervisor."""
 import argparse
 import subprocess
+import shutil
 from pathlib import Path
 from run import ROOT, KEYS, NAMES, read, score, store
 
@@ -73,6 +74,15 @@ def generate(key,r):
     md(ROOT/"index.md",intro); md(ROOT/"construction.md",diary)
     files=[bishop,meta,f/"published.json",f/"index.md",ROOT/"index.md",ROOT/"construction.md",f/"checks"/f"{r:02}.json",f/"reviews"/f"{r:02}.json",f/"reviews"/f"{r:02}.md"]
     for n in range(r*5-4,r*5+1): files.extend([f/"games"/f"{n:02}.md",f/"replays"/f"{n:02}.json"])
+    pc=Path("dist/pc/replays")
+    if pc.is_dir():
+        for n in range(r*5-4,r*5+1):
+            source=f/"replays"/f"{n:02}.json"
+            dest=pc/f"BP20-fixed-{key}-{n:02}.json"
+            if dest.exists():
+                assert source.read_bytes()==dest.read_bytes()
+            else:
+                shutil.copyfile(source,dest)
     return [str(i.relative_to(REPO)) for i in files]
 
 
@@ -83,4 +93,4 @@ if __name__=="__main__":
     a=parser.parse_args()
     files=generate(a.key,a.round)
     subprocess.run(["git","-C",str(REPO),"-c","core.safecrlf=false","add","--",*files],check=True)
-    subprocess.run(["git","-C",str(REPO),"commit","-q","-m",f"Review fixed Haven vs {a.key}, games {a.round*5-4}-{a.round*5}"],check=True)
+    subprocess.run(["git","-C",str(REPO),"commit","-q","-m",f"Review fixed Haven vs {a.key}, games {a.round*5-4}-{a.round*5}","--only","--",*files],check=True)
