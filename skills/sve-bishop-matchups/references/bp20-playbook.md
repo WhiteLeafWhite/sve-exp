@@ -25,6 +25,8 @@
 
 ## 从败局倒推一回合
 
+固定百局对财宝皇室第 44 局提供了一道牌库题。输入 302 前，主教 24 血、牌库 3 张。T30 时还剩 1 张，T31 对手下篡夺绝杰·欧克托莉斯，把这最后一张莉迪耶尔从牌库送入墓场。牌库清空后对局继续，皇室用三个随从各打 3。T32 主教在 10 血时需要抽牌才落败。对这张能把对方牌库顶两张送墓的入场曲，交回合时除生命还要算牌库与下一次强制抽牌。重练输入 302，先比较下回合能否抢到 13 点和还能承受几次取牌，再决定是否用忒弥斯清场。[逐回合日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/t7B32v/games/44.md) · [输入 302 前](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/t7B32v/reviews/09.md#game-44)
+
 第八批对龙族第 7 局，在输入 148 前停下。主教有 8 血、1 PP，对手 18 血，场上誓断的赐予者可以普通进化或超进化，也能先起动坚定不移的祈祷。实战选普通进化，T18 落败。把同一个输入分别改为超进化和起动祈祷，交还同一套 r3 与满强度 Hard 续打，两条分支也都在 T18 落败。训练时将断点往前挪到 T16，重新找「何时可以移除自伤触发源」或「何时能准备减伤」的机会。两条分支独立保存在训练题目录。[原局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/zQrwne/games/07.md) · [超进化分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/drills/dragon-07-super.json) · [祈祷分支](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/drills/dragon-07-prayer.json)
 
 ## 冷门主轴的证据

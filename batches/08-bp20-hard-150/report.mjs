@@ -78,6 +78,8 @@ function summarize(number) {
         if (t) t.end = [...hp];
         if (e.player === 0 && e.delta > 0 && t && firstHeal === null) firstHeal = t.n;
         log(who[e.player] + "体力 " + (e.delta > 0 ? "+" : "") + e.delta + "，现为 " + e.defense + "。");
+      } else if (e.type === "gameEnded") {
+        for (const loss of e.result.losses) if (loss.reason === "deckOut") log(who[loss.player] + "因需要抽牌时牌库已空而落败。");
       } else if (e.type === "mulligan") mulligan[e.player] = e.redraw ? "整手重抽" : "保留";
       else if (e.type === "dieRolled") log(who[e.player] + "掷出 " + e.result + "。");
     }
