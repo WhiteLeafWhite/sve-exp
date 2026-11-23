@@ -12,13 +12,16 @@ const [key, number, version = "A", strategy = "2", series = "explore"] = process
 const secondSaito = series === "secondSaito" || series === "saitoControl";
 const sheep = series === "sheep";
 const trained = series === "trained";
-assert(secondSaito || sheep || trained || ["explore", "fixed100", "lyrial", "dragonPolicy", "banish", "opening", "openingControl"].includes(series));
+const knightTrial = series === "knight" || series === "knightControl";
+assert(secondSaito || sheep || trained || knightTrial || ["explore", "fixed100", "lyrial", "dragonPolicy", "banish", "opening", "openingControl"].includes(series));
 const fixed = series === "fixed100";
 const pairedVersion = {lyrial:"D", banish:"E"}[series];
 const targeted = series === "dragonPolicy";
 const opening = series === "opening" || series === "openingControl";
 const archive = {fixed100:"09-bp20-fixed-300",lyrial:"09b-bp20-lyrial",dragonPolicy:"09c-bp20-dragon-policy",banish:"09d-bp20-banish",opening:"11-dragon-mulligan/candidate",openingControl:"11-dragon-mulligan/control",secondSaito:"12-second-saito/candidate",saitoControl:"12-second-saito/control",sheep:"13-sacred-sheep",trained:"14-trained-pilot"}[series];
 const destination = archive ? join(root,"..",archive) : root;
+const knightRoot = join(root,"../15-heavenly-knight");
+const outputRoot = knightTrial ? join(knightRoot,series==="knight"?"candidate":"control") : destination;
 const pins = {
   cQZr8Z: ["05", "ed8882da5252c802b10365452fee7185915cb764e46e3b5305e246c6529424fd"],
   zQrwne: ["06", "9416da999b748650b862702d9bbf970470089f6aace1182a43097cb5fca1bcf7"],
@@ -26,7 +29,8 @@ const pins = {
 };
 const limit = sheep ? 10 : trained ? 20 : fixed || series === "opening" || secondSaito ? 100 : pairedVersion || targeted ? 5 : 50;
 assert(Object.hasOwn(pins, key) && /^[1-9]\d*$/.test(number) && Number(number) <= limit);
-if(trained) assert(strategy === "3" && version === "F");
+if(knightTrial) assert(strategy === "3" && version === (series==="knight"?"K":"F"));
+else if(trained) assert(strategy === "3" && version === "F");
 else if(sheep) assert(strategy === "3" && version === "S");
 else if(secondSaito) assert(strategy === "3" && version === (series === "secondSaito" ? "F" : "B"));
 else assert(pairedVersion ? version === pairedVersion && strategy === "3" : /^[ABC]$/.test(version));
@@ -35,7 +39,7 @@ if (opening) assert(key==="zQrwne" && version==="B" && strategy===(series==="ope
 const read = (path) => JSON.parse(readFileSync(path, "utf8").replace(/^\uFEFF/, ""));
 const engine = rt.createEngine({ cards: rt.ALL_CARDS, scripts: rt.ALL_SCRIPTS });
 const catalog = new rt.Catalog(rt.ALL_CARDS);
-const bishopFile = trained ? join(root,"../12-second-saito/candidate/bishop.json") : pairedVersion || secondSaito || sheep ? join(destination,"bishop.json") : join(root,"decks",version+".json");
+const bishopFile = series==="knight" ? join(knightRoot,"bishop.json") : trained || series==="knightControl" ? join(root,"../12-second-saito/candidate/bishop.json") : pairedVersion || secondSaito || sheep ? join(destination,"bishop.json") : join(root,"decks",version+".json");
 const bishop = rt.parseDeckFile(read(bishopFile));
 if (secondSaito) {
   const expected = rt.parseDeckFile(read(join(root,"decks","B.json")));
@@ -65,15 +69,15 @@ for (const printing of [bishop.leader, ...Object.keys(bishop.main), ...Object.ke
 }
 const list = { ...read("packages/gui/restrictions/10_26_JPN.json"), id: "10_26_JPN" };
 const decks = [bishop, opponent].map((d) => rt.toDeckList(d));
-if (sheep) {
+if (sheep || series==="knight") {
   const f = rt.toDeckList(rt.parseDeckFile(read(join(root,"../12-second-saito/candidate/bishop.json"))));
   assert.equal(decks[0].leader, f.leader);
   assert.deepEqual(decks[0].evolve, f.evolve);
   const controlled = [...f.main];
-  for (const removed of ["BP18-104", "BP19-095"]) {
+  for (const removed of [sheep ? "BP18-104" : "BP14-090", "BP19-095"]) {
     const index = controlled.lastIndexOf(removed);
     assert(index >= 0);
-    controlled[index] = "BP20-099";
+    controlled[index] = sheep ? "BP20-099" : "BP09-091";
   }
   assert.deepEqual([...controlled].sort(), [...decks[0].main].sort());
   decks[0] = {...decks[0], main:controlled};
@@ -82,7 +86,7 @@ assert.deepEqual(rt.formatProblems(bishop, "standard", list, catalog,
   engine.validateDeck(decks[0], { deckRestrictions: true })), []);
 assert.deepEqual(engine.validateDeck(decks[1], { deckRestrictions: true }), []);
 const seedNumber = series==="openingControl" ? 2*Number(number)-1 : Number(number) + ({lyrial:75, dragonPolicy:90, banish:95, sheep:60, trained:70}[series] ?? 0);
-const prefix = secondSaito || sheep || trained ? "sve-exp/bp20-second-saito/v1/" : opening ? "sve-exp/bp20-dragon-mulligan/v1/" : series!=="explore" ? "sve-exp/bp20-fixed-300/v1/" : "sve-exp/bp20-hard-150/v1/";
+const prefix = knightTrial ? "sve-exp/bp20-heavenly-knight/v1/" : secondSaito || sheep || trained ? "sve-exp/bp20-second-saito/v1/" : opening ? "sve-exp/bp20-dragon-mulligan/v1/" : series!=="explore" ? "sve-exp/bp20-fixed-300/v1/" : "sve-exp/bp20-hard-150/v1/";
 const seed = prefix + key + "/" + seedNumber;
 const options = { seed, decks, deckNames: [bishop.name, opponent.name], controllers: ["human", "hard"],
   format: "standard", restrictionList: null, deckRestrictions: true, manualActions: false,
@@ -102,7 +106,7 @@ if(trained){
   assert.equal(coach.baseRevision??3,3);
   ({seatStrategy}=await import(pathToFileURL(join(duel,"seat-strategy.mjs")).href));
 }
-const file = join(destination, key, "replays", number.padStart(2, "0") + ".json");
+const file = join(outputRoot, key, "replays", number.padStart(2, "0") + ".json");
 if (existsSync(file)) {
   const old = read(file);
   assert.deepEqual(old.options, options);

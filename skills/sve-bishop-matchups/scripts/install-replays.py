@@ -14,6 +14,8 @@ SERIES = {
     '12-second-saito/candidate': 'BP20-saito-F', '12-second-saito/control': 'BP20-saito-B',
     '13-sacred-sheep': 'BP20-sheep',
     '14-trained-pilot': 'BP20-trained',
+    '15-heavenly-knight/candidate': 'BP20-knight-K',
+    '15-heavenly-knight/control': 'BP20-knight-F',
 }
 
 
