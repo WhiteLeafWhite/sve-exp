@@ -4,7 +4,7 @@
 
 ## 破坏巫师
 
-双灾藤 43–52，双玛文 43–52。已有 95 对核对了双方初手；改成双灾藤后，2 局负转胜，2 局胜转负。
+双灾藤 43–52，双玛文 47–53。已有 95 对核对了双方初手；改成双灾藤后，2 局负转胜，2 局胜转负。
 
 - 第 3 局在 T17 进化第二张灾藤。进化前数墓地法术、EX 空位与可连续造成的伤害。[录像与逐回合日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/candidate/cQZr8Z/games/03.md)
 - 第 35 局在 T17 进化第二张玛文。在进化前记录双方从者、可攻击数和替代去除的费用，再决定是否交清场。[录像与逐回合日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/12-second-saito/control/cQZr8Z/games/35.md)
