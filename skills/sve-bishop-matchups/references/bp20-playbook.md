@@ -35,6 +35,14 @@
 
 以巫师实战第六局重练，先下白牙和承担者，把水银留给对手首攻。若巫师先打大红莲再攻击，主教剩 5，实打到 T24 获胜。若对手先尽量打完 3、1、2 三段能力伤害，再让三名狂信者攻击，主教只剩 2，虽然同样在 T16 抽到忒弥斯清场，实打到 T19 落败。先算清对面可在攻击前花掉的费用，再决定自己这回合需要几次回复。[主教留水银与巫师反制](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/index.md)
 
+### 两个对手都有多名攻击者时
+
+**侮蔑龙：决定先点谁，再算守护会跟谁交换。** 龙六 T16，都市只找到炎术，三名旧随从都能成为炎术的目标。先点剩 1 防的崇拜者或团结者，双耶菈加水银可以让主教活过 T17，但两条都在 T19 落败。先点 3/2 祈祷者，另外两名旧攻击者反而各与一名耶菈交换，灾藤接天冥清掉新场。T26 萝蕾娜除两名嘉鲁蜜儿，T33 主教以 8 血等到龙抽空。练习时在选择目标之前，先预测龙会不会把两个旧随从都用来撞守护。[重做炎术的目标](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-drill-dragon-06-priest.json&at=145&seat=0) · [六条线路](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/index.md)
+
+**财宝皇室：把旗和炮手各自打的伤害分开算。** 皇六 T18，5 攻、剩 3 防的万裁分身能攻袭直立的 2/3 炮手。去横置的 6/4 芭芭萝丝，皇室三次用旗打出 6 点，炮手再攻 5。先去炮手，皇室改借天冥、再以欧克托莉斯攻 6，主教余 3 多活一回合。若预计下一回合回到 6，还要找出应付第二次 6 攻的方法。[重做三个攻击目标](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-t7B32v-06.json&at=158&seat=0) · [三条实战线路](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/index.md)
+
+皇室后攻起手先数手中能用的二费。皇六已有灾藤、萝蕾娜、白牙和万裁。保留能按二费灾藤发动检索、四费萝蕾娜回复并进化解场，重演 T18 由分身与圣士郎合击 9 点获胜。原局为找便宜去除整手重抽，自己的前两回合都空过。决定前先说出这手牌前三个己方回合能做什么，再说明需要冒整手重抽的风险去找哪张牌。[后攻起手题](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-t7B32v-06.json&at=1&seat=0) · [同牌序保留四张](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/logs/royal-06-keep.md)
+
 ## 冷门主轴的证据
 
 SVE Helper 本次筛选出 38 份 BP20 主教公开牌表。白牙＋萝蕾娜同表出现 2 份，希弥佳＋安息神殿出现 15 份。勒碧丝＋封印同样只有 2 份，但在相同三组对手的选表阶段仅 3/30 胜，白牙版本为 20/30。对真人可以把「能否预判回复、解场与直伤」列作待验证的问题。困难 Bot 的完整信息设置只检验这套牌承受强力对抗时的表现。[公开样本](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/source-sample.json) · [同条件选表](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/selected.json)

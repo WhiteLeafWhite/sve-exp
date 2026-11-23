@@ -38,11 +38,16 @@ TITLES = {
     "rune-06-city": "都市、炎术与正常进化承担者，留水银",
     "rune-06-city-super": "都市、炎术与超进化承担者，留水银",
     "rune-06-burn-first": "同盘巫师先耗尽直伤，再让三名狂信者攻击",
-    "dragon-06-control": "主阶段打水银，再以炎术处理崇拜者",
+    "dragon-06-cached": "按原座位策略决策，复现完整龙六原局",
+    "dragon-06-control": "手动指定与原局相同的水银，比较后续搜索",
     "dragon-06-worshipper": "都市取炎术，先除崇拜者",
     "dragon-06-union": "都市取炎术，先除团结者",
     "dragon-06-priest": "都市取炎术，先除祈祷者",
     "dragon-06-reserve": "双耶菈落场，水银与炎术都留给龙族回合",
+    "royal-06-cached": "按原座位策略完整复现皇六",
+    "royal-06-cannon": "煤木万裁分身攻袭直立的海潮炮手",
+    "royal-06-barbaros": "煤木万裁分身攻击横置的芭芭萝丝",
+    "royal-06-keep": "保留萝蕾娜、白牙、灾藤、万裁的整手",
 }
 
 
