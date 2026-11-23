@@ -22,3 +22,5 @@ description: 在 SVE NEXT 日版 BP20 使用 cQZr8Z「20二妹」破坏巫师对
 对照使用第二张灾藤和第二张玛文的场面，比较回收炎术、用身体交换与留费清场的收益。[配对实战](references/second-saito.md)
 
 荒野翻出两张牌，手里还有第二张荒野。用实际剩余费用决定选资源、身体还是继续找牌。[从 T2 执破坏巫师](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-01.json&at=8&seat=1)
+
+对面梦羊触发后，先计算用一次小伤害消耗防止能否保住后续的大段伤害。[一次伤害防止的实战](references/sacred-sheep.md)
