@@ -68,7 +68,20 @@ def main(group, end):
     logs()
     games=[check_game(g) for g in range(start,end+1)]
     base=ROOT/"checks"/f"{group:03}"
-    write(base.with_suffix(".json"), {"range":[start,end], "games":games})
+    saved=read(base.with_suffix(".json")) if base.with_suffix(".json").is_file() else {}
+    after=saved.get("nextPolicies",{}) if saved.get("range")==[start,end] else {}
+    for role in ("bishop","meta"):
+        live=ROOT/"pilots"/(role+".mjs")
+        if role not in after and live.is_file():
+            data=live.read_bytes()
+            sha=hashlib.sha256(data).hexdigest()
+            path=ROOT/"pilots/history"/(sha+".mjs")
+            if not path.exists():path.write_bytes(data)
+            after[role]=sha
+        if role in after:
+            frozen=ROOT/"pilots/history"/(after[role]+".mjs")
+            assert hashlib.sha256(frozen.read_bytes()).hexdigest()==after[role]
+    write(base.with_suffix(".json"), {"range":[start,end], "games":games, "nextPolicies":after})
     lines=[f"# 双座位第 {start}–{end} 场", "", "| 场次 | 对手 | 主教 | 双方直接选择 | 对手相对原表 | 原生证据 |", "|---:|---|---|---:|---:|---|"]
     for game in games:
         k=game["key"]; number=f"{game['cycle']:02}"
@@ -89,6 +102,8 @@ def main(group, end):
         note=f"reviews-by-seat/{group:03}-{role}.md"
         if (ROOT/note).is_file():
             lines.extend(["",f"[{title}的本组复盘与下一组取舍](../{note})"])
+        if role in after:
+            lines.extend(["",f"[{title}完成本组复盘后的陪练程序](../pilots/history/{after[role]}.mjs)"])
     md(base.with_suffix(".md"),lines)
     update_skills()
     logs()

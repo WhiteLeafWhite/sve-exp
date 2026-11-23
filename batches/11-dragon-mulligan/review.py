@@ -63,7 +63,13 @@ if summary["complete"]:
 index=["# 从先攻换牌改善侮蔑龙对局","", "固定 B 主教、满强度龙族 Hard。每个奇数种子有两份实际对战录像，偶数种子只实打一次，因为两个打法在后攻完全相同。[试验协议](protocol.md)","",
        "| 样本 | 当前局数 | 主教胜–负 |", "|---|---:|---:|",f"| r5 全部 | {len(candidate)} | {score(candidate.values())} |",f"| r5 先攻 | {len(first)} | {score(first)} |",f"| r3 先攻 | {len(control)} | {score(control.values())} |",f"| 共同后攻 | {len(second)} | {score(second)} |","",
        f"已对齐 {len(pairs)} 对先攻种子，{same} 对的完整输入与结果一致。实际改变起手 {len(switched)} 次，其中原负转胜 {len(up)} 次、原胜转负 {len(down)} 次。",""]
-if summary["complete"]:index.extend([f"候选与原打法各覆盖同样的 100 个种子，共有 150 场物理对局。原打法合计 {score([*control.values(),*second])}，候选合计 {score(candidate.values())}。配对方向的双侧精确检验 p={p_exact:.3f}。",""])
+if summary["complete"]:
+    index.extend([f"候选与原打法各覆盖同样的 100 个种子，共有 150 场实际对战。原打法合计 {score([*control.values(),*second])}，候选合计 {score(candidate.values())}。配对方向的双侧精确检验 p={p_exact:.3f}。","",
+                  "本轮保留 r3。遇到白牙、炎术、坚定祈祷、灾藤这手，先算出灾藤接白牙的曲线，再决定是否重抽。"
+                  "种子 3 保留后 T19 以 28／−1 获胜，重抽后只在前三个己方回合打出一张，到 T18 以 0／24 落败。"
+                  "种子 25 的双炎术、耶菈的祈祷、圣士郎是另一道题。保留后到前三回合只打一张，重抽获得耶菈与透京，T25 获胜。"
+                  "[种子 3 保留](control/zQrwne/games/02.md) · [种子 3 重抽](candidate/zQrwne/games/03.md) · "
+                  "[种子 25 保留](control/zQrwne/games/13.md) · [种子 25 重抽](candidate/zQrwne/games/25.md)",""])
 for label,title in NAMES.items():
     if all_games[label]:index.extend([f"[{title}的每五局构筑与复盘]({label}/construction.md)",""])
 index.extend(["| 先攻种子 | 原打法 → 候选 | 原局 | 候选 |", "|---:|---|---|---|",*pair_rows,"","## 后攻逐局记录",""])
@@ -78,5 +84,9 @@ for sk,title,advice in [("sve-bishop-matchups","先攻对龙的换牌题","看�
         if numbers:
             n=numbers[0];old=control[n];new=candidate[n]
             tips.append(f"- 种子 {n} {why}。原方案前三个己方回合打出 {old['earlyPlays']} 张，候选打出 {new['earlyPlays']} 张。遮住结局后分别重排前三回合。[保留四张]({URL}/control/{KEY}/games/{old['number']:02}.md) · [重抽四张]({URL}/candidate/{KEY}/games/{n:02}.md)")
+    if summary["complete"]:
+        tips.extend(["","本轮 r3 在同样一百个牌序胜 37 局，r5 胜 33 局。保留原 r3，训练时逐手比较前两回合可打出的牌。"
+                     "白牙、炎术、坚定祈祷、灾藤的手牌可先靠灾藤找牌并接白牙；双炎术、祈祷与圣士郎的手牌起步较慢。"
+                     "将这两手分别遮住终局再决定，而后打开种子 3 和 25 的两份录像。"])
     tips.extend(["",f"[样本口径、配对局和全部录像]({URL}/index.md)"])
     save(REPO/"skills"/sk/"references/dragon-opening.md",tips)

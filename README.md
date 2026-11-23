@@ -10,7 +10,7 @@
 
 **第十批**　两个独立子 agent 各执一方，主教连续对同一轮的三职业，双方只读本方视野。每局列出直接选择、委托范围、实际牌表与两人的赛后复盘。[对局成绩、录像和复盘](batches/10-agent-duels/index.md) · [构筑日志](batches/10-agent-duels/construction.md)
 
-**第十一和十二批**　用新牌序检验先攻对龙的换牌，再比较三种对局里第二张灾藤与第二张玛文的实际取舍。每项都有匹配的对照牌序、先后攻记录与逐局录像。[对龙起手](batches/11-dragon-mulligan/index.md) · [三对局进化位](batches/12-second-saito/index.md)
+**第十一和十二批**　对龙的独立 100 个牌序中，原打法胜 37 局。先攻采用更严格的留牌标准后胜 33 局，保留原打法。另用三个职业的新牌序比较第二张灾藤与第二张玛文的取舍。每项都有匹配的对照牌序、先后攻记录与逐局录像。[对龙起手](batches/11-dragon-mulligan/index.md) · [三对局进化位](batches/12-second-saito/index.md)
 
 按驾驶职业选择陪练技能。[主教](skills/sve-bishop-matchups/SKILL.md) · [破坏巫师](skills/sve-destruction-rune/SKILL.md) · [侮蔑龙](skills/sve-disdain-dragon/SKILL.md) · [财宝皇室](skills/sve-loot-sword/SKILL.md)
 

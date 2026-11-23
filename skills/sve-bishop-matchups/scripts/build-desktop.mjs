@@ -2,7 +2,7 @@
 // Run with Node from the installed 0.4.3 simulator checkout.
 import assert from "node:assert/strict";
 import { createHash } from "node:crypto";
-import { existsSync, readFileSync, writeFileSync } from "node:fs";
+import { existsSync, readFileSync, readdirSync, writeFileSync } from "node:fs";
 import { createRequire } from "node:module";
 import { dirname, join, resolve } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -14,6 +14,18 @@ const pc = resolve(positionals[0] || "dist/pc");
 const scripts = dirname(fileURLToPath(import.meta.url));
 const duelDir=resolve(values.duels||join(scripts,"../../../batches/10-agent-duels"));
 const policyFiles={"bishop":"pilots/bishop.mjs","meta":"pilots/meta.mjs","seat":"seat-strategy.mjs"};
+const checked=join(duelDir,"checks");
+const lastCheck=existsSync(checked) && readdirSync(checked).filter(n=>/^\d+\.json$/.test(n))
+  .sort((a,b)=>parseInt(b)-parseInt(a)).find(n=>JSON.parse(readFileSync(join(checked,n),"utf8")).nextPolicies);
+if(lastCheck) {
+  const {nextPolicies}=JSON.parse(readFileSync(join(checked,lastCheck),"utf8"));
+  for(const role of ["bishop","meta"]){
+    const sha=nextPolicies[role];
+    assert(/^[a-f0-9]{64}$/.test(sha),"Incomplete policy checkpoint: "+lastCheck);
+    policyFiles[role]="pilots/history/"+sha+".mjs";
+    assert.equal(createHash("sha256").update(readFileSync(join(duelDir,policyFiles[role]))).digest("hex"),sha);
+  }
+}
 const policies=new Map();
 if(Object.values(policyFiles).every(file=>existsSync(join(duelDir,file)))) {
   for(const [name,file] of Object.entries(policyFiles)) policies.set("virtual:sve-duel-"+name,readFileSync(join(duelDir,file),"utf8"));
@@ -32,8 +44,10 @@ for(const [name,source] of policies) {
 }
 const id=hash.digest("hex").slice(0,16);
 const manifest=join(pc,"app/practice/coaches.json");
+const manifestText=JSON.stringify({engine:fingerprint,build:id,checkpoint:lastCheck||null,policies:policyIds},null,2)+"\n";
 if(values["if-changed"] && existsSync(join(pc,"app/practice/index.html")) && existsSync(manifest)
    && JSON.parse(readFileSync(manifest,"utf8")).build===id) {
+  if(readFileSync(manifest,"utf8")!==manifestText) writeFileSync(manifest,manifestText);
   console.log("Practice seats already match the archived strategies."); process.exit(0);
 }
 const fromSim = createRequire(join(sim,"package.json"));
@@ -104,4 +118,4 @@ await build({root:gui, configFile:join(gui,"vite.config.ts"), base:"/practice/",
   plugins:[coachPlugin()], worker:{plugins:()=>[coachPlugin()]}, define:{__ENGINE_FINGERPRINT__:JSON.stringify(id)},
   build:{outDir:join(pc,"app/practice"),emptyOutDir:false}, logLevel:"warn"});
 console.log("Installed BP20 practice GUI at /practice/index.html");
-writeFileSync(manifest,JSON.stringify({engine:fingerprint,build:id,policies:policyIds},null,2)+"\n");
+writeFileSync(manifest,manifestText);
