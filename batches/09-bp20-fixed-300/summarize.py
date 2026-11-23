@@ -30,7 +30,7 @@ def main():
     deck = read(ROOT/"bishop.json")
     previous = read(PREV/"summary.json")
     source = dict(zip(KEYS, ("05-cQZr8Z","06-zQrwne","07-t7B32v")))
-    checks, all_games = [], []
+    checks, all_games, observations = [], [], {}
     for key in KEYS:
         folder = ROOT/key
         original = read(ROOT.parent/source[key]/"opponent.json")
@@ -70,6 +70,11 @@ def main():
         rr={"record":record,"first":score(games[::2]),"second":score(games[1::2]),"winPercent":record[0],"wilson95":interval(record[0],100),
             "medianTurn":statistics.median(g["turn"] for g in games),"bishopHash":baseline["bishopHash"],"opponentHash":baseline["opponentHash"]}
         records[key]=rr
+        observations[key]={
+            "cards":{c:{"drawn":sum(c in g["drawn"] for g in games),"entered":sum(c in g["entered"] for g in games)}
+                     for c in ("BP09-095","BP18-107","BP14-090")},
+            "sharpest":max(games,key=lambda g:g["worst"]["loss"]),
+            "slow":sum(g["earlyPlays"]<=1 for g in games)}
         md(folder/"index.md",[f"# 主教对{NAMES[key]} · 100 局","",f"主教 {fmt(record)}，先攻 {fmt(rr['first'])}，后攻 {fmt(rr['second'])}。"
            "每局使用同一份主教和固定原表。T 是双方累计回合数。","",
            f"[总成绩](../index.md) · [五局检查](../construction.md) · [对手原表](../../{source[key]}/opponent.json)","",*per_game])
@@ -107,7 +112,27 @@ def main():
              c["decision"]+f" 第 {game} 局 T{ex['turn']} 单回合主教生命净减 {ex['loss']}。"
              +("本组败局最后一回合伤害来源包括"+c["lossSources"]+"。" if c["lossSources"] else "")+c["tactic"],
              "",f"[五局复盘]({k}/reviews/{r:02}.md) · [局面日志]({k}/games/{game:02}.md) · [输入与统计]({k}/checks/{r:02}.json)",""])
+    diary.extend(["## 三个卡位在各对局的实际表现","","每格为取入手牌局数／实际进场局数，共 100 局。牌库直接召唤也算进场。较长的对局可以摸到更多牌，"
+                  "这些数据用于定位重演样本。","",
+                  "| 对手 | 白牙神殿 | 传教司祭·萝蕾娜 | 永久之盾·席翁 | 开局六个双方回合至多打一张的局数 |","|---|---:|---:|---:|---:|"])
+    for k,item in observations.items():
+        rates=[f"{c['drawn']}／{c['entered']}" for c in item["cards"].values()]
+        diary.append(f"| {NAMES[k]} | "+" | ".join(rates)+f" | {item['slow']} |")
     md(ROOT/"construction.md",diary)
+    ref=ROOT.parents[1]/"skills/sve-bishop-matchups/references/bp20-fixed-results.md"
+    tips=["# 共同白牙萝蕾娜的三组百局","",f"三种职业各 100 局，主教共 {fmt(score(all_games))}，先后攻各 150 局。{status}。"
+          +("三组均达到 45%。" if balanced else "三组均达到 45% 的条件也未满足。")+" 本表采用每个对手的全部 100 局。","",
+          "| 对手 | 胜–负 | 先攻 | 后攻 |","|---|---:|---:|---:|"]
+    for k,r in records.items(): tips.append(f"| {NAMES[k]} | {fmt(r['record'])} | {fmt(r['first'])} | {fmt(r['second'])} |")
+    tips.extend(["","## 三次交回合前的重练题",""])
+    for k,item in observations.items():
+        g=item["sharpest"];s=g["worst"];n=g["number"]
+        link=f"https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/{k}/games/{n:02}.md"
+        tips.append(f"- 对{NAMES[k]}第 {n} 局，T{s['turn']} 主教生命从 {s['start'][0]} 降到 {s['end'][0]}。"
+                    f"在前一回合暂停，按公开 EX、当前攻击、需要处理的守护算出对方可能的路线，再揭晓该局操作。[逐回合日志]({link})")
+    tips.extend(["","下一次采用新构筑时，三个对手共用一份主牌与进化牌，单独统计改动后的样本。"
+                 "神弓两卡位与龙族 r4 的配对重演另有索引。[百局全记录](https://github.com/WhiteLeafWhite/sve-exp/tree/main/batches/09-bp20-fixed-300)"])
+    md(ref,tips)
     print(json.dumps(data,ensure_ascii=False))
 
 if __name__=="__main__":

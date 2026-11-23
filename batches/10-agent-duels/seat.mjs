@@ -18,7 +18,7 @@ if(cmd==="view"){
   let s;
   do{
     s=current();
-    if(s.status==="complete"||s.status==="waiting"&&s.seat===seat&&s.ticket!==args[1])break;
+    if(s.status==="complete"&&args[1]!=="done:"+s.id||s.status==="stopped"||s.status==="waiting"&&s.seat===seat&&s.ticket!==args[1])break;
     if(Date.now()>=end)break;
     await delay(350);
   }while(true);

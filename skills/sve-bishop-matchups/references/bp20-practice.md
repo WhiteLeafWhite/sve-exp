@@ -26,6 +26,8 @@ $key = "zQrwne"
 node --import tsx "$skill/scripts/practice.mjs" play "$skill/references/bp20-150-final.json" "dist/pc/decks/svehelper/$key.json" --matchup $key --bot hard --pilot bishop --first 0 --out dist/pc/replays/dragon-practice-01.json
 ```
 
+要自己执侮蔑龙、让陪练驾驶主教，可以沿用上述牌表顺序，把参数改为 `--seat 1 --matchup zQrwne --bot bishop --pilot medium`，并选一个新录像文件。默认的主教打法是 r3。专练侮蔑龙的触发源处理时，可加 `--revision 4` 试用针对该对局的两回合搜索和双炎术解场。
+
 赛后从逐局复盘找到「输入 N 前」。`review --at N` 重演恰好 N 次输入，从该玩家视角列出可见牌和合法选择。`branch` 从同一点续打，可加 `--pick I --auto` 指定第一步并完成后续。分支内的自动驾驶从该位置重新初始化。把两种选择放在同一输入点、同一牌序和对手等级比较，再另用新种子检查能否复现。分支另存，正式成绩只统计首次正赛。
 
 ```powershell

@@ -48,4 +48,8 @@ for key,title in KEYS.items():
     log=ROOT/"construction.md";text=log.read_text("utf-8")
     if a not in text: log.write_text(text.rstrip()+"\n\n"+a+"\n\n"+short+f" 此五局沿用共同 D 表，保留配对比较。 [五局复盘]({key}/reviews/01.md)\n",encoding="utf-8")
 md(ROOT/"index.md",lines);md(SKILL,skill)
+if "zQrwne" in records:
+    skill.extend(["","侮蔑龙的第 2 局与第 3 局都抽到并打出了神弓，仍由龙获胜。第 2 局炎爪、崇拜者的能力配合完成去除，第 3 局也用炎爪配合祈祷者处理神弓。留直可以限制普通随从攻击，面对能力去除仍要能接续新的防线。"
+                  +f" [第 2 局]({URL}/zQrwne/games/02.md) · [第 3 局]({URL}/zQrwne/games/03.md)"])
+    md(SKILL,skill)
 (ROOT/"summary.json").write_text(json.dumps(records,ensure_ascii=False,indent=2)+"\n","utf-8")

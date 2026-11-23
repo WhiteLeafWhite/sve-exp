@@ -7,3 +7,6 @@
 侮蔑龙 0 胜 5 负，主教在 2 局取入手牌，2 局让神弓座天使进场。 [五局复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09b-bp20-lyrial/zQrwne/reviews/01.md)
 
 财宝皇室 4 胜 1 负，主教在 4 局取入手牌，3 局让神弓座天使进场。 [五局复盘](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09b-bp20-lyrial/t7B32v/reviews/01.md)
+
+
+侮蔑龙的第 2 局与第 3 局都抽到并打出了神弓，仍由龙获胜。第 2 局炎爪、崇拜者的能力配合完成去除，第 3 局也用炎爪配合祈祷者处理神弓。留直可以限制普通随从攻击，面对能力去除仍要能接续新的防线。 [第 2 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09b-bp20-lyrial/zQrwne/games/02.md) · [第 3 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09b-bp20-lyrial/zQrwne/games/03.md)

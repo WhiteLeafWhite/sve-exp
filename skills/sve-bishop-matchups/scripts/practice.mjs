@@ -45,8 +45,9 @@ const frozen = {
   t7B32v: "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
 };
 if (opt.matchup && !Object.hasOwn(frozen, opt.matchup)) throw Error("Unknown frozen opponent.");
-if (![...fairBots, "bishop"].includes(opt.pilot) || ![...fairBots, "hard"].includes(opt.bot)) throw Error("Use a fair pilot. The opponent may also be hard.");
-const controllers = [opt.bot, opt.bot];
+if (![...fairBots, "bishop"].includes(opt.pilot) || ![...fairBots, "hard","bishop"].includes(opt.bot) || opt.pilot==="bishop"&&opt.bot==="bishop") throw Error("Select one Bishop seat and a supported opposing pilot.");
+const bishopSeat = opt.bot === "bishop" ? 1-seat : seat;
+const controllers = [opt.bot === "bishop" ? "human" : opt.bot, opt.bot === "bishop" ? "human" : opt.bot];
 controllers[seat] = opt.auto && opt.pick === undefined && opt.pilot !== "bishop" ? opt.pilot : "human";
 const loadBot = (name, seed, player, matchup) => {
   if (name === "bishop") {
@@ -67,7 +68,7 @@ function newReplay() {
   const players = decks.map((d, i) => {
     const player = toDeckList(d);
     const ordinary = engine.validateDeck(player, { deckRestrictions: true });
-    const fixedOpponent = opt.matchup && i !== seat;
+    const fixedOpponent = opt.matchup && i !== bishopSeat;
     if (fixedOpponent) {
       const hash = createHash("sha256").update(JSON.stringify([d.leader, Object.entries(d.main).sort(), Object.entries(d.evolve).sort()])).digest("hex");
       if (hash !== frozen[opt.matchup]) throw Error("The opposing deck differs from the selected frozen list.");
@@ -234,7 +235,7 @@ if (command === "review") {
   } finally { reader?.close(); }
   const end = game.view(seat);
   const result = { result: end.result, turn: end.turn };
-  const practice = { fingerprint, seat, matchup, pilot: opt.pilot, ...(opt.pilot==="bishop"?{revision:Number(opt.revision)}:{}), opponent: opt.bot, manualInputs: played,
+  const practice = { fingerprint, seat, matchup, pilot: opt.pilot, ...(opt.pilot==="bishop"||opt.bot==="bishop"?{revision:Number(opt.revision)}:{}), opponent: opt.bot, manualInputs: played,
     ...(command === "branch" ? { source: basename(files[0]), fromInput: prefix } : {}) };
   saveReplay(opt.out, { format: "sve-replay", version: 1, options: { ...options, controllers }, inputs, info: result, practice });
   console.log(JSON.stringify({ ...result, inputs: inputs.length, manualInputs: played, saved: resolve(opt.out) }));

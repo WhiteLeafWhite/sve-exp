@@ -52,15 +52,19 @@ assert.deepEqual(engine.validateDeck(decks[1],{deckRestrictions:true}),[]);
 const out=join(root,key,"replays",String(n).padStart(2,"0")+".json");
 assert(!existsSync(out),"Game already completed: "+id);
 const prefix=join(work,"progress.json");
-const hiddenSeed=existsSync(prefix)?read(prefix).options.seed:"sve-exp/agents/v1/"+randomUUID();
+const previousGame=existsSync(prefix)?read(prefix):null;
+const hiddenSeed=previousGame?.options.seed??("sve-exp/agents/v1/"+randomUUID());
 const options={seed:hiddenSeed,decks,deckNames:[b.name,m.name],controllers:["human","human"],
   format:"standard",restrictionList:null,deckRestrictions:true,manualActions:false,showEveryMainPhase:true,askEveryQuickWindow:true,
   turnOrder:n%2?"player1":"player2"};
 const fresh=()=>engine.newGame({seed:options.seed,players:decks,config:rt.configOf(options)});
 const game=fresh(), inputs=[], notes=[], delegatedUntil=[-1,-1], explicit=[0,0], strategyMoves=[0,0];
 const coaches=[];
-for(const role of ["bishop","meta"]){
-  const file=join(root,"pilots",role+".mjs");
+for(const [seat,role] of ["bishop","meta"].entries()){
+  const saved=previousGame?.authors[seat];
+  if(previousGame && !saved){coaches.push(null);continue}
+  if(saved)assert(/^[a-f0-9]{64}$/.test(saved));
+  const file=saved?join(root,"pilots","history",saved+".mjs"):join(root,"pilots",role+".mjs");
   if(!existsSync(file)){coaches.push(null);continue}
   const code=readFileSync(file);
   const sha=createHash("sha256").update(code).digest("hex");
@@ -101,16 +105,24 @@ function present(v,answers) {
     resolution:v.resolution.map(card),sides,choices:answers.map(label)};
 }
 const stop=resolve("dist/quota-checkpoints/stop");
-const stopped=()=>{if(existsSync(stop))throw Error("Weekly stop. Unfinished game kept locally: "+id)};
+const stopped=()=>{
+  if(existsSync(stop)){
+    put(join(table,"current.json"),{id,key,n,status:"stopped",index:inputs.length,turn:game.state.turn});
+    throw Error("Weekly stop. Unfinished game kept locally: "+id);
+  }
+};
 const authors=coaches.map(x=>x?.sha??null), auto=[0,0];
-if(existsSync(prefix)){
-  const old=read(prefix);
+let resumes=0;
+if(previousGame){
+  const old=previousGame;
   assert.deepEqual(old.options,options);
   assert.deepEqual(old.authors,authors);
   for(const v of old.inputs) game.act(v.input,v.by??undefined);
   inputs.push(...old.inputs);notes.push(...old.notes);
+  resumes=(old.resumes??0)+1;
   for(const seat of [0,1]) {explicit[seat]=old.explicit[seat];strategyMoves[seat]=old.strategyMoves[seat];delegatedUntil[seat]=old.delegatedUntil[seat];auto[seat]=old.auto[seat]}
 }
+put(prefix,{options,inputs,notes,explicit,strategyMoves,delegatedUntil,authors,auto,resumes});
 while(game.decision){
   stopped();
   const d=game.decision,seat=d.player,v=game.view(seat),index=inputs.length;
@@ -164,7 +176,7 @@ while(game.decision){
   assert.equal(rt.validateAnswer(d,input),null);
   game.act(input,by??undefined);
   inputs.push({input,by});
-  put(prefix,{options,inputs,notes,explicit,strategyMoves,delegatedUntil,authors,auto});
+  put(prefix,{options,inputs,notes,explicit,strategyMoves,delegatedUntil,authors,auto,resumes});
 }
 const verify=fresh();
 for(const {input,by} of inputs)verify.act(input,by??undefined);
@@ -173,7 +185,7 @@ const fingerprint=rt.engineFingerprint(resolve("packages/gui"));
 const replay={format:"sve-replay",version:1,options,inputs,info:{result:game.result,turn:game.state.turn},
   training:{key,number:n,engine:fingerprint,policy:"agent",deckVersion:b.name,hp:game.state.players.map(p=>p.leaderDefense),
     bishopHash:hash(b),opponentHash:hash(m),originalOpponentHash:hash(src),opponentChanges:changes},
-  duel:{explicit,strategyMoves,notes,authors,policyChoices:auto,delegatedPilots:["fair Bishop r"+bishopRevision,"fair medium-v2"]}};
+  duel:{explicit,strategyMoves,notes,authors,policyChoices:auto,resumes,delegatedPilots:["fair Bishop r"+bishopRevision,"fair medium-v2"]}};
 put(out,replay);
 put(join(table,"current.json"),{id,key,n,status:"complete",winner:game.result.winner,turn:game.state.turn,explicit,strategyMoves,changes});
 console.log(JSON.stringify({id,result:game.result,explicit,strategyMoves,changes}));

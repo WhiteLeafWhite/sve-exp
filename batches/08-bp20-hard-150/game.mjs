@@ -74,6 +74,10 @@ if (existsSync(file)) {
   ];
   const inputs = [];
   while (game.decision) {
+    if (series!=="explore" && existsSync(resolve("dist/quota-checkpoints/stop"))) {
+      console.log("Weekly cutoff. This unfinished game was excluded:",key,number,inputs.length);
+      process.exit(3);
+    }
     assert(inputs.length < 5000, "Unfinished game at 5000 inputs");
     const d = game.decision;
     const forcedPass = d.type === "quick" && d.actions.every((a) => a.type === "pass");
