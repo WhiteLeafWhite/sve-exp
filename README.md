@@ -18,6 +18,8 @@
 
 **第十三批**　圣启梦羊在对方主阶段提供一次伤害防止。将两张梦羊放入共同主教，用预先指定的相同牌序与双灾藤原表比较，保留两张牌在洗牌前的物理位置。[构筑与三职业复盘](batches/13-sacred-sheep/index.md) · [原百局的首段伤害](batches/09-bp20-fixed-300/first-damage.md)
 
+**第十四批**　用同一份 F 主教比较两个子 agent 实战三组后学到的打法与原 r3。每个困难对手预先指定 20 个相同牌序，保留每一次由主教席打法指定的操作。[同表打法验证](batches/14-trained-pilot/index.md)
+
 **第八批**　[150 局总成绩与录像](batches/08-bp20-hard-150/index.md) · [每五局构筑日志](batches/08-bp20-hard-150/construction.md) · [定稿主教与完整张数](skills/sve-bishop-matchups/references/bp20-deck.md) · [模拟器导入文件](skills/sve-bishop-matchups/references/bp20-150-final.json) · [三对局打法](skills/sve-bishop-matchups/references/bp20-playbook.md) · [陪练技能](skills/sve-bishop-matchups/SKILL.md)
 
 前七批每批十局，对应以下历史资料。

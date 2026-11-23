@@ -13,6 +13,7 @@ SERIES = {
     '11-dragon-mulligan/candidate': 'BP20-opening-r5', '11-dragon-mulligan/control': 'BP20-opening-r3',
     '12-second-saito/candidate': 'BP20-saito-F', '12-second-saito/control': 'BP20-saito-B',
     '13-sacred-sheep': 'BP20-sheep',
+    '14-trained-pilot': 'BP20-trained',
 }
 
 

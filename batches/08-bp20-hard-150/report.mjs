@@ -41,7 +41,8 @@ function summarize(number) {
   const shields = () => g.state.effects.filter(e=>e.target===leaders[0] && e.change.kind==="preventNextDamage" && lookup.get(e.source)==="BP20-099");
   const openingHands = [[], []];
   const branches=new Set(drillFile?[r.practice.fromInput,...(r.practice.manualInputs??[]),
-    ...(r.practice.picks??[]).map(p=>p[0]),...(r.practice.conditionalPicks??[]).map(p=>p[0])]:[]);
+    ...(r.practice.picks??[]).map(p=>p[0]),...(r.practice.conditionalPicks??[]).map(p=>p[0])]:
+    series==="trained" ? r.training.seatPilot.authored.filter(c=>c.options>1).map(c=>c.at) : []);
   const marked=[];
   let t = null, alternative = null, metaAlternative = null, earlyPlays = 0, firstHeal = null;
   const log = (s) => { if (t) t.lines.push(s); };
@@ -103,7 +104,8 @@ function summarize(number) {
     const d = g.decision;
     if(branches.has(i)){
       let action=input.type;
-      if(input.type==="selectCards") {
+      if(input.type==="mulligan")action=input.redraw?"整手重抽":"保留起手";
+      else if(input.type==="selectCards") {
         const chosen=input.cards.map(id=>name(d.candidateDefs[d.candidates.indexOf(id)]));
         action=chosen.length?"选择"+chosen.join("、"):"不取牌";
         if(d.reason==="wardEnterEngaged") action=chosen.length?"让"+chosen.join("、")+"横置进场":"令守护随从直立进场";
@@ -121,7 +123,7 @@ function summarize(number) {
           (a.card?card(a.card):a.type==="attack"?card(a.attacker)+"攻击"+targetName(a.target):a.type==="pass"?"让过 Quick":a.type==="endMainPhase"?"结束主阶段":a.type);
       }
       const note="输入 "+i+" · T"+g.state.turn+" · "+who[d.player]+action+"。";
-      marked.push(note);log("重练决定。"+note);
+      marked.push(note);log((series==="trained"?"主教席实战打法。":"重练决定。")+note);
     }
     if (slotTrial && d?.type === "mulligan")
       openingHands[d.player] = g.view(d.player).players[d.player].hand.map(c => c.def);
@@ -216,6 +218,7 @@ function summarize(number) {
     policy:r.training.policy, mulligan:mulligan[0], hand, earlyPlays, firstHeal, drawn, cast, entered,
     ...(slotTrial ? {evolutions, openingHands} : {}),
     ...(sheepTrial ? {sheepTriggers,sheepSpent} : {}),
+    ...(series==="trained" ? {seatChoices:marked} : {}),
     worst:{ turn:worst.n, loss:worst.start[0]-worst.end[0], start:worst.start,end:worst.end },
     last:{ start:last.start, end:last.end, finish:damage.map((h) => h.text), reason:g.result.losses?.[0]?.reason }, alternative, metaAlternative };
 }
