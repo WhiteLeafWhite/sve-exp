@@ -2,7 +2,7 @@
 import assert from 'node:assert/strict';
 import { join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { archive, engine, fileHash, fingerprint, loadDecks, pad, protocol, read, save, start } from './game.mjs';
+import { archive, engine, fileHash, fingerprint, loadDecks, locate, pad, protocol, read, save, start } from './game.mjs';
 
 export const titles = { dragon: '侮蔑龙', rune: '破坏法', mirror: '财宝皇' };
 const FLAG = 'BP19-T01', GUNNER = 'BP19-026', BARBAROS = 'BP19-019', ORIGINAL = 'BP05-018';
@@ -11,12 +11,14 @@ const name = def => engine.db.has(def) ? engine.db.get(def).names.cn || engine.d
 const hp = pair => pair.join('／');
 const resultLabel = w => w === 0 ? '胜' : w === 1 ? '负' : '和';
 
-export function inspectReplay(file, matchup, number, trial = '') {
+export function inspectReplay(file, matchup, number, mode = '') {
   const r = read(file), t = r.training;
+  const series = locate(matchup, mode, t.pilot);
   const lock = protocol.opponents[matchup];
   assert.equal(t.matchup, matchup);
   assert.equal(t.number, number);
-  assert.equal(t.trial || '', trial);
+  assert.equal(t.trial || '', series.trial);
+  assert.equal(t.experiment || '', series.experiment);
   assert.equal(t.key, lock.key);
   assert.equal(t.opponentHash, lock.sha256);
   assert.equal(t.ownHash, protocol.ourDeck.sha256);
@@ -25,7 +27,7 @@ export function inspectReplay(file, matchup, number, trial = '') {
   assert.equal(t.opponentPreset, protocol.opponentPreset);
   assert.equal(t.pilotSha256, fileHash(join(archive, 'pilots', `r${t.pilot}.mjs`)));
   assert.deepEqual(r.options.decks, loadDecks(matchup).decks);
-  assert.equal(r.options.seed, `${protocol.series}/${trial ? `practice-${trial}` : 'formal'}/${lock.key}/${pad(number)}`);
+  assert.equal(r.options.seed, `${series.prefix}/${lock.key}/${pad(number)}`);
   assert.equal(r.options.turnOrder, number % 2 ? 'player1' : 'player2');
   assert.equal(r.options.restrictionList, protocol.restrictionList);
   assert.deepEqual(r.options.controllers, ['human', 'hard']);
@@ -161,7 +163,7 @@ export function inspectReplay(file, matchup, number, trial = '') {
   const firstLine = (summary.first ? '先攻' : '后攻') + `，T${summary.turn} ${resultLabel(summary.winner)}，终局体力 ${hp(blood)}。`;
   const md = [`# ${titles[matchup]}第 ${number} 局 · ${resultLabel(summary.winner)}`, '',
     `${firstLine} 体力与 PP 顺序均为我方／对手。财宝皇原表，打法 r${t.pilot}。`,
-    '', '[原生录像](../replays/' + pad(number) + '.json) · [我方牌表](../../decks/t7B32v.json) · [固定对手牌表](../../../' + lock.archive + '/opponent.json)',
+    '', '[原生录像](../replays/' + pad(number) + '.json) · [我方牌表](' + (series.experiment ? '../../../16-bp20-loot-300' : '../..') + '/decks/t7B32v.json) · [固定对手牌表](../../../' + lock.archive + '/opponent.json)',
     '', '## 起手与赛后回看', '',
     `- 我方起手 ${openings[0].map(name).join('、')}。${mulligans[0] ? '整手重抽' : '保留'}${authored.size ? `，${[...authored.values()][0]}` : ''}。`,
     `- 对手${mulligans[1] ? '整手重抽' : '保留起手'}。终局由${game.result.losses.map(l => `${labels[l.player]}${l.reason === 'deckOut' ? '抽空牌库' : '体力归零'}`).join('与')}决定。`,
@@ -181,12 +183,12 @@ export function inspectReplay(file, matchup, number, trial = '') {
   return { summary, markdown: md.join('\n') + '\n' };
 }
 
-function summarizeBlock(matchup, startAt, count, trial, revision) {
+function summarizeBlock(matchup, startAt, count, mode, revision) {
   assert(Object.hasOwn(titles, matchup));
-  const root = trial ? join(resolve('../../analysis/practice/loot-stage'), trial, `r${revision}`, matchup) : join(archive, matchup);
+  const root = locate(matchup, mode, revision).folder;
   const rows = [];
   for (let number = startAt; number < startAt + count; number++) {
-    const { summary, markdown } = inspectReplay(join(root, 'replays', `${pad(number)}.json`), matchup, number, trial);
+    const { summary, markdown } = inspectReplay(join(root, 'replays', `${pad(number)}.json`), matchup, number, mode);
     rows.push(summary);
     save(join(root, 'games', `${pad(number)}.md`), markdown);
   }
@@ -212,6 +214,6 @@ function summarizeBlock(matchup, startAt, count, trial, revision) {
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url).toLowerCase() === resolve(process.argv[1]).toLowerCase()) {
-  const [matchup, from, count, trial = '', revision = '1'] = process.argv.slice(2);
-  for (const key of matchup.split(',')) summarizeBlock(key, Number(from), Number(count), trial, revision);
+  const [matchup, from, count, mode = '', revision = '1'] = process.argv.slice(2);
+  for (const key of matchup.split(',')) summarizeBlock(key, Number(from), Number(count), mode, revision);
 }

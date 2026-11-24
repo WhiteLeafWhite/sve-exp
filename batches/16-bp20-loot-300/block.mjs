@@ -4,18 +4,20 @@ import { spawn } from 'node:child_process';
 import { availableParallelism, constants, setPriority } from 'node:os';
 import { fileURLToPath } from 'node:url';
 
-const [matchups, startText, countText, revision, trial = ''] = process.argv.slice(2);
+const [matchups, startText, countText, revision, mode = ''] = process.argv.slice(2);
 const start = Number(startText), count = Number(countText);
 const keys = matchups.split(',');
 assert(keys.every(k => ['dragon', 'rune', 'mirror'].includes(k)));
-assert(Number.isInteger(start) && Number.isInteger(count) && start >= 1 && count >= 1 && start + count <= 101);
-assert(trial || (start % 10 === 1 && count === 10 && keys.length === 1));
+const extra = mode === 'extra-rune';
+assert(Number.isInteger(start) && Number.isInteger(count) && start >= 1 && count >= 1 && start + count <= (extra ? 201 : 101));
+assert(mode || (start % 10 === 1 && count === 10 && keys.length === 1));
+if (extra) assert.deepEqual(keys, ['rune']);
 const script = fileURLToPath(new URL('./game.mjs', import.meta.url));
 const queue = Array.from({ length: count }, (_, i) => keys.map(key => [key, String(start + i)])).flat();
 const failures = [];
 const run = args => new Promise(resolve => {
-  const child = spawn(process.execPath, [script, ...args, revision, trial], { windowsHide: true, stdio: 'inherit' });
-  child.once('spawn', () => {
+  const child = spawn(process.execPath, [script, ...args, revision, mode], { windowsHide: true, stdio: 'inherit' });
+  if (!extra) child.once('spawn', () => {
     try { setPriority(child.pid, constants.priority.PRIORITY_BELOW_NORMAL); } catch { /* Scheduling can stay at its default. */ }
   });
   child.once('error', error => { failures.push([...args, error.message]); resolve(); });

@@ -17,6 +17,8 @@ export const save = (path, data) => {
 };
 export const fingerprint = rt.engineFingerprint(resolve('packages/gui'));
 export const protocol = read(join(archive, 'protocol.json'));
+export const extraArchive = join(archive, '..', '17-bp20-loot-rune-200');
+export const extraMode = 'extra-rune';
 export const deckHash = ({ leader, main, evolve }) => createHash('sha256').update(JSON.stringify([
   leader, Object.entries(main).sort(), Object.entries(evolve).sort(),
 ])).digest('hex');
@@ -48,24 +50,41 @@ export function start(options) {
 
 export const pad = n => String(n).padStart(3, '0');
 
-async function play(matchup, number, revision, trial = '') {
+export function locate(matchup, mode = '', revision = '') {
+  if (mode === extraMode) {
+    assert.equal(matchup, 'rune');
+    const extension = read(join(extraArchive, 'protocol.json'));
+    assert.equal(extension.ownHash, protocol.ourDeck.sha256);
+    assert.equal(extension.opponentHash, protocol.opponents.rune.sha256);
+    assert.equal(extension.opponentPreset, protocol.opponentPreset);
+    assert.equal(extension.opponentEffort, protocol.opponentEffort);
+    return { folder: join(extraArchive, matchup), prefix: `${extension.series}/formal`, count: extension.games,
+      trial: '', experiment: extraMode };
+  }
+  const folder = mode ? join(resolve('../../analysis/practice/loot-stage'), mode, `r${revision}`, matchup) : join(archive, matchup);
+  return { folder, prefix: `${protocol.series}/${mode ? `practice-${mode}` : 'formal'}`, count: protocol.gamesPerOpponent,
+    trial: mode, experiment: '' };
+}
+
+async function play(matchup, number, revision, mode = '') {
   assert(Object.hasOwn(protocol.opponents, matchup));
-  assert(Number.isInteger(number) && number >= 1 && number <= protocol.gamesPerOpponent);
-  assert(/^\d+$/.test(revision) && /^[a-z0-9-]*$/.test(trial));
+  assert(/^\d+$/.test(revision) && /^[a-z0-9-]*$/.test(mode));
+  const series = locate(matchup, mode, revision);
+  assert(Number.isInteger(number) && number >= 1 && number <= series.count);
   const pilotPath = join(archive, 'pilots', `r${revision}.mjs`);
   const pilotSha256 = fileHash(pilotPath);
   const { makePilot } = await import(pathToFileURL(pilotPath).href);
   const { mine, rival, decks } = loadDecks(matchup);
   const key = protocol.opponents[matchup].key;
-  const seed = `${protocol.series}/${trial ? `practice-${trial}` : 'formal'}/${key}/${pad(number)}`;
+  const seed = `${series.prefix}/${key}/${pad(number)}`;
   const options = { seed, decks, deckNames: [mine.name, rival.name], controllers: ['human', 'hard'], format: 'standard',
     restrictionList: protocol.restrictionList, deckRestrictions: true, manualActions: false, showEveryMainPhase: true, askEveryQuickWindow: true,
     turnOrder: number % 2 === 1 ? 'player1' : 'player2' };
-  const directory = trial ? join(resolve('../../analysis/practice/loot-stage'), trial, `r${revision}`, matchup) : join(archive, matchup);
-  const file = join(directory, 'replays', `${pad(number)}.json`);
+  const file = join(series.folder, 'replays', `${pad(number)}.json`);
   const metadata = { matchup, key, number, pilot: Number(revision), pilotSha256, engine: fingerprint,
     opponentHash: deckHash(rival), ownHash: deckHash(mine), opponentPreset: protocol.opponentPreset, opponentEffort: protocol.opponentEffort,
-    restrictionList: protocol.restrictionList, ...(trial ? { trial } : {}) };
+    restrictionList: protocol.restrictionList, ...(series.trial ? { trial: series.trial } : {}),
+    ...(series.experiment ? { experiment: series.experiment } : {}) };
   if (existsSync(file)) {
     const old = read(file);
     assert.deepEqual(old.options, options);
@@ -76,7 +95,7 @@ async function play(matchup, number, revision, trial = '') {
   }
 
   const g = start(options);
-  const minePilot = makePilot({ engine, rt, seat: 0, matchup, seed: `loot-pilot/v${revision}/${matchup}/${pad(number)}/${trial || 'formal'}` });
+  const minePilot = makePilot({ engine, rt, seat: 0, matchup, seed: `loot-pilot/v${revision}/${matchup}/${pad(number)}/${mode || 'formal'}` });
   const hard = rt.createPresetBot(engine, protocol.opponentPreset, `${seed}:hard:1`, protocol.opponentEffort);
   const inputs = [], authored = [];
   const began = performance.now();
