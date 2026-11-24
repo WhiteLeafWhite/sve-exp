@@ -233,6 +233,7 @@ export function makeIndex() {
     if (existsSync(skill)) links.push(`[打法](../../skills/sve-bp20-${slug}-vs-loot/SKILL.md)`);
     md.push(`| ${p.title} | \`${p.key}\` | ${results.length}/40 | ${wins(true)}/${amount(true) || '—'} | ${wins(false)}/${amount(false) || '—'} | ${w}–${l}–${results.length - w - l} | ${links.join(' · ')} |`);
   }
-  md.push('', '[对战与牌表锁定说明](README.md) · [协议、原表校验值与强度](protocol.json)', '');
+  const reviewLink = existsSync(join(archive, 'review.md')) ? ' · [收官战绩与十份打法](review.md)' : '';
+  md.push('', '[对战与牌表锁定说明](README.md) · [协议、原表校验值与强度](protocol.json)' + reviewLink, '');
   save(join(archive, 'index.md'), md.join('\n'));
 }

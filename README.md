@@ -1,5 +1,9 @@
 # SVE 实战记录
 
+## BP20 十套原表对困难财宝皇
+
+从 SVE Helper Win 的 BP20 环境选出六职业的十个不同主轴。每套先攻 20、后攻 20，对手固定为带三张篡夺绝杰的 `t7B32v`。400 局均有原生录像、逐局日志和十局复盘。十份打法手册附原表和可接手练习。[400 局战绩与十份手册](batches/18-bp20-field/review.md) · [逐局录像和每批复盘](batches/18-bp20-field/index.md)
+
 ## 财宝皇 300 局
 
 财宝皇 t7B32v 原表分别对侮蔑龙、破坏法与财宝皇困难 Bot 各打 100 局，取得 68、54、76 胜。每十局提供录像、逐局日志、复盘与牌表。[300 局战绩与每批复盘](batches/16-bp20-loot-300/index.md) · [打法总结](batches/16-bp20-loot-300/review.md) · [破坏法加练 200 局](batches/17-bp20-loot-rune-200/README.md)
