@@ -1,0 +1,683 @@
+{
+  "firstGame": 101,
+  "lastGame": 110,
+  "folder": "hunter/101-110",
+  "matchup": "hunter",
+  "next": [
+    "争场,炮手,首攻前",
+    "先拆旗伤引擎、留费与防守、前两费与留牌"
+  ],
+  "stats": [
+    {
+      "wins": 3,
+      "losses": 7,
+      "draws": 0,
+      "firstWins": 1,
+      "firstGames": 5,
+      "secondWins": 2,
+      "secondGames": 5,
+      "direct": 0,
+      "authored": 104,
+      "fallback": 373,
+      "forced": 165
+    },
+    {
+      "wins": 7,
+      "losses": 3,
+      "draws": 0,
+      "firstWins": 3,
+      "firstGames": 5,
+      "secondWins": 4,
+      "secondGames": 5,
+      "direct": 0,
+      "authored": 51,
+      "fallback": 318,
+      "forced": 157
+    }
+  ],
+  "config": {
+    "revisions": [
+      "r3",
+      "r3"
+    ],
+    "focus": [
+      "base",
+      "base"
+    ],
+    "live": []
+  },
+  "skills": [
+    "https://github.com/WhiteLeafWhite/sve-exp/blob/a3d7f7cd9994fb77ec06f294b8b086781eac0de3/skills/sve-loot-sword/SKILL.md",
+    "https://github.com/WhiteLeafWhite/sve-exp/blob/a3d7f7cd9994fb77ec06f294b8b086781eac0de3/skills/sve-bp20-hunter-vs-loot/SKILL.md",
+    "https://github.com/WhiteLeafWhite/sve-exp/blob/a3d7f7cd9994fb77ec06f294b8b086781eac0de3/batches/10-agent-duels/seats.md"
+  ],
+  "restriction": "08_26_CHN",
+  "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+  "engine": "c95927874b565f21",
+  "deckHashes": [
+    "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+    "27e44e5ebbbfd30da6fc271eb45fde2a28d07bf79c397d136161e224417f28d8"
+  ],
+  "games": [
+    {
+      "id": "g0101",
+      "number": 101,
+      "phase": "b011",
+      "matchup": "hunter",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "base",
+        "base"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "27e44e5ebbbfd30da6fc271eb45fde2a28d07bf79c397d136161e224417f28d8"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        0,
+        8
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 6,
+          "fallback": 39,
+          "forced": 17
+        },
+        {
+          "direct": 0,
+          "authored": 6,
+          "fallback": 33,
+          "forced": 15
+        }
+      ],
+      "inputCount": 116,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 14,
+      "seed": "5ede9c15-0e09-4119-8fb8-72f87e11787b",
+      "replaySHA256": "ee6686b60df77cf3662a2704f8a2256e24d373a0940ab54854dfc903bbdce34a"
+    },
+    {
+      "id": "g0102",
+      "number": 102,
+      "phase": "b011",
+      "matchup": "hunter",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "base",
+        "base"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "27e44e5ebbbfd30da6fc271eb45fde2a28d07bf79c397d136161e224417f28d8"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        13,
+        -3
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 11,
+          "fallback": 40,
+          "forced": 17
+        },
+        {
+          "direct": 0,
+          "authored": 1,
+          "fallback": 30,
+          "forced": 12
+        }
+      ],
+      "inputCount": 111,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 12,
+      "seed": "42d5bc90-f0d4-42c1-a28d-c8d37fe1cf10",
+      "replaySHA256": "0a92caf4ad11401e825ea5ab67e1a279c2b858d5ea1b4989e2edc8660cec596f"
+    },
+    {
+      "id": "g0103",
+      "number": 103,
+      "phase": "b011",
+      "matchup": "hunter",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "base",
+        "base"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "27e44e5ebbbfd30da6fc271eb45fde2a28d07bf79c397d136161e224417f28d8"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        0,
+        8
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 15,
+          "fallback": 39,
+          "forced": 21
+        },
+        {
+          "direct": 0,
+          "authored": 5,
+          "fallback": 42,
+          "forced": 19
+        }
+      ],
+      "inputCount": 141,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 14,
+      "seed": "d5eef974-e7f2-433f-a3d3-4e5b3616776e",
+      "replaySHA256": "9927c66677d2d0dd6a4d56f1625ec50a85b0625a818b51336500f1e11d5709be"
+    },
+    {
+      "id": "g0104",
+      "number": 104,
+      "phase": "b011",
+      "matchup": "hunter",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "base",
+        "base"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "27e44e5ebbbfd30da6fc271eb45fde2a28d07bf79c397d136161e224417f28d8"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        16,
+        -1
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 13,
+          "fallback": 38,
+          "forced": 9
+        },
+        {
+          "direct": 0,
+          "authored": 3,
+          "fallback": 20,
+          "forced": 16
+        }
+      ],
+      "inputCount": 99,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 10,
+      "seed": "3eed162a-4898-481e-96b3-2ba6ddd2ca97",
+      "replaySHA256": "75c6263e34dcb6cbe249ace6126e8a580f98f7dab06df96be933ea657c82b4ca"
+    },
+    {
+      "id": "g0105",
+      "number": 105,
+      "phase": "b011",
+      "matchup": "hunter",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "base",
+        "base"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "27e44e5ebbbfd30da6fc271eb45fde2a28d07bf79c397d136161e224417f28d8"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        -2,
+        13
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 3,
+          "fallback": 27,
+          "forced": 18
+        },
+        {
+          "direct": 0,
+          "authored": 7,
+          "fallback": 23,
+          "forced": 14
+        }
+      ],
+      "inputCount": 92,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 12,
+      "seed": "c2aae68c-e308-425a-8537-39b5c5fcc0a3",
+      "replaySHA256": "216082c5b053f44423ec64379542ae167ff8d6a8b3b496949b352b8d69179a60"
+    },
+    {
+      "id": "g0106",
+      "number": 106,
+      "phase": "b011",
+      "matchup": "hunter",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "base",
+        "base"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "27e44e5ebbbfd30da6fc271eb45fde2a28d07bf79c397d136161e224417f28d8"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        -1,
+        22
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 2,
+          "fallback": 14,
+          "forced": 16
+        },
+        {
+          "direct": 0,
+          "authored": 4,
+          "fallback": 20,
+          "forced": 13
+        }
+      ],
+      "inputCount": 69,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 11,
+      "seed": "90866867-5542-4eef-9b9b-fc4dac5e4f78",
+      "replaySHA256": "dbd3b856da5c7b4231f91ca0f83bd6e72ab9b4f4da408de90e27f6d73062a7ef"
+    },
+    {
+      "id": "g0107",
+      "number": 107,
+      "phase": "b011",
+      "matchup": "hunter",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "base",
+        "base"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "27e44e5ebbbfd30da6fc271eb45fde2a28d07bf79c397d136161e224417f28d8"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        -1,
+        12
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 10,
+          "fallback": 29,
+          "forced": 15
+        },
+        {
+          "direct": 0,
+          "authored": 4,
+          "fallback": 36,
+          "forced": 13
+        }
+      ],
+      "inputCount": 107,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 12,
+      "seed": "73a8eccd-28ba-47cc-a81f-50a4833e3086",
+      "replaySHA256": "f2390d211adaebe2834fbba0ed9b76aca96662ca3b8808a645473530b5861c6c"
+    },
+    {
+      "id": "g0108",
+      "number": 108,
+      "phase": "b011",
+      "matchup": "hunter",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "base",
+        "base"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "27e44e5ebbbfd30da6fc271eb45fde2a28d07bf79c397d136161e224417f28d8"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        -1,
+        15
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 15,
+          "fallback": 39,
+          "forced": 18
+        },
+        {
+          "direct": 0,
+          "authored": 6,
+          "fallback": 39,
+          "forced": 18
+        }
+      ],
+      "inputCount": 135,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 15,
+      "seed": "f2a6091d-467b-417a-8407-c0f584465ad3",
+      "replaySHA256": "7bab15dde076e177da05f33d68cee728985edcd8946f916110983f644b157fbf"
+    },
+    {
+      "id": "g0109",
+      "number": 109,
+      "phase": "b011",
+      "matchup": "hunter",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "base",
+        "base"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "27e44e5ebbbfd30da6fc271eb45fde2a28d07bf79c397d136161e224417f28d8"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        9,
+        0
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 14,
+          "fallback": 61,
+          "forced": 18
+        },
+        {
+          "direct": 0,
+          "authored": 8,
+          "fallback": 38,
+          "forced": 21
+        }
+      ],
+      "inputCount": 160,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 17,
+      "seed": "c0ebbadf-69bf-46b8-8191-7536649f9f33",
+      "replaySHA256": "f97366cfb3ff26aa05c4ce45ec1a788ea29ff6366eabb0a3ef52558464602820"
+    },
+    {
+      "id": "g0110",
+      "number": 110,
+      "phase": "b011",
+      "matchup": "hunter",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "base",
+        "base"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "27e44e5ebbbfd30da6fc271eb45fde2a28d07bf79c397d136161e224417f28d8"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        0,
+        12
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 15,
+          "fallback": 47,
+          "forced": 16
+        },
+        {
+          "direct": 0,
+          "authored": 7,
+          "fallback": 37,
+          "forced": 16
+        }
+      ],
+      "inputCount": 138,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 15,
+      "seed": "a936c518-2745-4fe9-924f-b04b8e933c6f",
+      "replaySHA256": "c50aad92ea2d0aa2fcb2a21d229a2d709d87148a9da13323efccdae2891ffbce"
+    }
+  ]
+}
