@@ -8,7 +8,7 @@
 | 妖精妖 | `1DYwF7` | 10/40 | 4/5 | 2/5 | 6–4–0 | [原表](fairy/deck.json) · [1–10](fairy/checks/001.md) |
 | 铺场皇 | `csUWGv` | 10/40 | 4/5 | 2/5 | 6–4–0 | [原表](rally/deck.json) · [1–10](rally/checks/001.md) |
 | 破坏法 | `cQZr8Z` | 10/40 | 2/5 | 3/5 | 5–5–0 | [原表](destruction/deck.json) · [1–10](destruction/checks/001.md) |
-| 真实法 | `h1LX3a` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](truth/deck.json) |
+| 真实法 | `h1LX3a` | 10/40 | 0/5 | 0/5 | 0–10–0 | [原表](truth/deck.json) · [1–10](truth/checks/001.md) |
 | 侮蔑龙 | `zQrwne` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](disdain/deck.json) |
 | 海洋龙 | `d86IcJ` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](ocean/deck.json) |
 | 混融梦 | `8YKXr7` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](choice/deck.json) |
