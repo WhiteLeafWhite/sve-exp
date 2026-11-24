@@ -1,0 +1,196 @@
+g0784
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 叫唤与憎恶[BP20-082]、叫唤与憎恶[BP20-082]、赫尔薇尔[BP20-081]、混融的肯定者[BP20-089]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 整手重抽 〔authored〕
+    1 P1 mulligan 保留 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 死之索偿[BP11-075]、轰[BP05-085]、混融的祈祷者[BP20-085]、奔放的狱炎·凯尔贝洛斯[BP16-075]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/1
+手牌 死之索偿[BP11-075]、轰[BP05-085]、混融的祈祷者[BP20-085]、奔放的狱炎·凯尔贝洛斯[BP16-075]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    4 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+    5 P1 mainPhase 结束主阶段
+    6 P2 quick 打出 死之索偿[BP11-075] 大洋斥候[BP19-030] field→cemetery 〔fallback〕
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 轰[BP05-085]、混融的祈祷者[BP20-085]、奔放的狱炎·凯尔贝洛斯[BP16-075]、混融之城[BP20-086]｜对手手牌 4 张
+场 空 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/1
+    8 P2 mainPhase 打出 混融的祈祷者[BP20-085] 〔fallback〕
+    9 P2 choose/mode leader 混融的祈祷者[BP20-085]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18 〔fallback〕
+   10 P2 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 1 回合 · HP 18/20 · PP 2/0
+手牌 轰[BP05-085]、奔放的狱炎·凯尔贝洛斯[BP16-075]、混融之城[BP20-086]｜对手手牌 5 张
+场 空 / 混融的祈祷者[BP20-085] 2/3
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/1
+   12 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   13 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   15 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 18/20 · PP 0/3
+手牌 轰[BP05-085]、奔放的狱炎·凯尔贝洛斯[BP16-075]、混融之城[BP20-086]、混融的继承者·夏姆·娜可亚[BP20-076]｜对手手牌 5 张
+场 怒涛副船长[BP19-028] 3/3 / 混融的祈祷者[BP20-085] 2/3
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 1/1
+   17 P2 mainPhase 打出 轰[BP05-085] 〔fallback〕
+   18 P2 choose/mode damage 轰[BP05-085]→怒涛副船长[BP19-028] 3；怒涛副船长[BP19-028] field→cemetery 〔fallback〕
+   19 P2 mainPhase 攻击 混融的祈祷者[BP20-085] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   20 P1 quick Quick 放过 混融的祈祷者[BP20-085]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=16
+   21 P2 mainPhase 打出 混融之城[BP20-086] 〔fallback〕
+   22 P2 orderCards/deckBottom 排序 死之索偿[BP11-075]、赫尔薇尔[BP20-081]、涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   23 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 16/20 · PP 3/0
+手牌 奔放的狱炎·凯尔贝洛斯[BP16-075]、混融的继承者·夏姆·娜可亚[BP20-076]｜对手手牌 6 张
+场 空 / 混融的祈祷者[BP20-085] 2/3 横、混融之城[BP20-086]
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 2/2
+   25 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018]
+   26 P1 mainPhase 进化 篡夺绝杰·欧克托莉斯[BP05-018]（EP）
+   27 P1 selectCards/target 混融的继承者·夏姆·娜可亚[BP20-076] cemetery→ex
+   28 P1 mainPhase 攻击 篡夺绝杰·欧克托莉斯[BP05-018] → 混融的祈祷者[BP20-085]
+   29 P2 quick Quick 放过 篡夺绝杰·欧克托莉斯[BP05-018]→混融的祈祷者[BP20-085] 4；混融的祈祷者[BP20-085]→篡夺绝杰·欧克托莉斯[BP05-018] 2；混融的祈祷者[BP20-085] field→cemetery 〔forced〕
+   30 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 16/20 · PP 0/4
+手牌 奔放的狱炎·凯尔贝洛斯[BP16-075]、混融的继承者·夏姆·娜可亚[BP20-076]、地狱中士[BP19-088]｜对手手牌 5 张
+场 篡夺绝杰·欧克托莉斯[BP05-018] 4/2 伤2 横 / 混融之城[BP20-086]
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01]、混融的继承者·夏姆·娜可亚[BP20-076] / 空｜墓 2/4
+   32 P2 mainPhase 打出 奔放的狱炎·凯尔贝洛斯[BP16-075] 〔fallback〕
+   33 P2 mainPhase 起动 奔放的狱炎·凯尔贝洛斯[BP16-075] 能力 1 〔fallback〕
+   34 P2 selectCards/pick 守卫犬的左腕·可可[BP16-T05] 奔放的狱炎·凯尔贝洛斯[BP16-075]→篡夺绝杰·欧克托莉斯[BP05-018] 2；P2 +2=22；守卫犬的左腕·可可[BP16-T05] field→cemetery；篡夺绝杰·欧克托莉斯[BP05-018] field→cemetery 〔fallback〕
+   35 P2 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 1 回合 · HP 16/22 · PP 4/0
+手牌 混融的继承者·夏姆·娜可亚[BP20-076]、地狱中士[BP19-088]｜对手手牌 6 张
+场 空 / 混融之城[BP20-086]、奔放的狱炎·凯尔贝洛斯[BP16-075] 3/3 横、守卫犬的右腕·米米[BP16-T04] 2/2
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01]、混融的继承者·夏姆·娜可亚[BP20-076] / 空｜墓 3/5
+   37 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   38 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   39 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→密不可分的爱·米路缇欧[BP15-PR05] 1；P2 -1=21
+   41 P1 mainPhase 打出 精炼的空绝[BP15-026]
+   42 P1 selectCards/target 精炼的空绝[BP15-026]→守卫犬的右腕·米米[BP16-T04] 2；黄金之杯[BP15-T02] 新→ex；守卫犬的右腕·米米[BP16-T04] field→cemetery
+   43 P1 choose/mode 守卫犬的右腕·米米[BP16-T04]→出航的罪人·芭芭萝丝[BP19-019] 2；奔放的狱炎·凯尔贝洛斯[BP16-075] field→cemetery
+   44 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→密不可分的爱·米路缇欧[BP15-PR05] 1；P2 -1=20
+   45 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→密不可分的爱·米路缇欧[BP15-PR05] 1；P2 -1=19
+   46 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+   47 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   48 P1 selectCards/target 战栗的海贼旗[BP19-T01]→密不可分的爱·米路缇欧[BP15-PR05] 1；P2 -1=18
+   49 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 16/18 · PP 0/5
+手牌 混融的继承者·夏姆·娜可亚[BP20-076]、地狱中士[BP19-088]、沉默绝杰·鲁鲁纳伊[BP05-070]｜对手手牌 3 张
+场 出航的罪人·芭芭萝丝[BP19-019] 8/2 伤2、大洋斥候[BP19-030] 2/2 / 混融之城[BP20-086]
+EX 混融的继承者·夏姆·娜可亚[BP20-076]、黄金之杯[BP15-T02] / 空｜墓 4/9
+   51 P2 mainPhase 打出 混融的继承者·夏姆·娜可亚[BP20-076] 〔fallback〕
+   52 P2 mainPhase 进化 混融的继承者·夏姆·娜可亚[BP20-076] 纹章 混融的继承者·夏姆·娜可亚[BP20-T06] 新→ex 〔authored〕
+   53 P2 mainPhase 起动 死之索偿[BP11-075] 能力 0 〔fallback〕
+   54 P2 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 死之索偿[BP11-075] cemetery→banished；混沌支配者·艾希连德凛克[BP11-069] cemetery→banished 〔authored〕
+   55 P2 mainPhase 攻击 混融的继承者·夏姆·娜可亚[BP20-076] → 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   56 P1 quick Quick 放过 混融的继承者·夏姆·娜可亚[BP20-076]→出航的罪人·芭芭萝丝[BP19-019] 4；出航的罪人·芭芭萝丝[BP19-019]→混融的继承者·夏姆·娜可亚[BP20-076] 8；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；混融的继承者·夏姆·娜可亚[BP20-076] field→cemetery
+   57 P2 mainPhase 打出 地狱中士[BP19-088] 〔fallback〕
+   58 P2 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 1 回合 · HP 16/18 · PP 5/0
+手牌 沉默绝杰·鲁鲁纳伊[BP05-070]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 / 混融之城[BP20-086]、地狱中士[BP19-088] 2/2
+EX 混融的继承者·夏姆·娜可亚[BP20-076]、黄金之杯[BP15-T02] / 纹章 混融的继承者·夏姆·娜可亚[BP20-T06]｜墓 5/8
+   60 P1 mainPhase 打出 精炼的空绝[BP15-026] 精炼的空绝[BP15-026]→地狱中士[BP19-088] 2；黄金之杯[BP15-T02] 新→ex；地狱中士[BP19-088] field→cemetery
+   61 P2 choose/mode damage 〔fallback〕
+   62 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018]
+   63 P1 mainPhase 进化 篡夺绝杰·欧克托莉斯[BP05-018]
+   64 P1 selectCards/target 奔放的狱炎·凯尔贝洛斯[BP16-075] cemetery→ex
+   65 P1 mainPhase 打出 奔放的狱炎·凯尔贝洛斯[BP16-075]
+   66 P1 mainPhase 攻击 大洋斥候[BP19-030] → 密不可分的爱·米路缇欧[BP15-PR05]
+   67 P2 quick Quick 放过 大洋斥候[BP19-030]→密不可分的爱·米路缇欧[BP15-PR05] 2；P2 -2=16 〔forced〕
+   68 P1 mainPhase 打出 黄金之杯[BP15-T02] P1 +2=18
+   69 P1 mainPhase 打出 黄金之杯[BP15-T02] P1 +2=20
+   70 P1 mainPhase 结束主阶段
+
+T11 · 选手 2 回合 · HP 20/16 · PP 0/6
+手牌 沉默绝杰·鲁鲁纳伊[BP05-070]、混融之城[BP20-086]｜对手手牌 2 张
+场 大洋斥候[BP19-030] 2/2 横、篡夺绝杰·欧克托莉斯[BP05-018] 4/4、奔放的狱炎·凯尔贝洛斯[BP16-075] 3/3、守卫犬的右腕·米米[BP16-T04] 2/2、守卫犬的左腕·可可[BP16-T05] 2/2 / 混融之城[BP20-086]
+EX 混融的继承者·夏姆·娜可亚[BP20-076] / 纹章 混融的继承者·夏姆·娜可亚[BP20-T06]｜墓 6/10
+   72 P2 mainPhase 打出 沉默绝杰·鲁鲁纳伊[BP05-070] 〔fallback〕
+   73 P2 selectCards/target 篡夺绝杰·欧克托莉斯[BP05-018] 篡夺绝杰·欧克托莉斯[BP05-018] field→cemetery 〔fallback〕
+   74 P2 mainPhase 进化 沉默绝杰·鲁鲁纳伊[BP05-070] 〔fallback〕
+   75 P2 mainPhase 攻击 沉默绝杰·鲁鲁纳伊[BP05-070] → 大洋斥候[BP19-030] 〔fallback〕
+   76 P1 quick Quick 放过 沉默绝杰·鲁鲁纳伊[BP05-070]→大洋斥候[BP19-030] 4；大洋斥候[BP19-030]→沉默绝杰·鲁鲁纳伊[BP05-070] 2；大洋斥候[BP19-030] field→cemetery
+   77 P2 mainPhase 打出 混融之城[BP20-086] 〔fallback〕
+   78 P2 selectCards/effect 混融的肯定者[BP20-089] 〔fallback〕
+   79 P2 orderCards/deckBottom 排序 轰[BP05-085]、死之索偿[BP11-075] 〔fallback〕
+   80 P2 mainPhase 结束主阶段 〔fallback〕
+
+T12 · 选手 1 回合 · HP 20/16 · PP 6/1
+手牌 混融的肯定者[BP20-089]｜对手手牌 2 张
+场 奔放的狱炎·凯尔贝洛斯[BP16-075] 3/3、守卫犬的右腕·米米[BP16-T04] 2/2、守卫犬的左腕·可可[BP16-T05] 2/2 / 混融之城[BP20-086]、沉默绝杰·鲁鲁纳伊[BP05-070] 4/2 伤2 横、混融之城[BP20-086]
+EX 混融的继承者·夏姆·娜可亚[BP20-076] / 纹章 混融的继承者·夏姆·娜可亚[BP20-T06]｜墓 9/10
+   82 P1 mainPhase 打出 混融的继承者·夏姆·娜可亚[BP20-076]
+   83 P1 mainPhase 攻击 守卫犬的左腕·可可[BP16-T05] → 沉默绝杰·鲁鲁纳伊[BP05-070]
+   84 P2 quick Quick 放过 守卫犬的左腕·可可[BP16-T05]→沉默绝杰·鲁鲁纳伊[BP05-070] 2；沉默绝杰·鲁鲁纳伊[BP05-070]→守卫犬的左腕·可可[BP16-T05] 4；P1 +2=22；守卫犬的左腕·可可[BP16-T05] field→cemetery；沉默绝杰·鲁鲁纳伊[BP05-070] field→cemetery 〔forced〕
+   85 P1 mainPhase 打出 空绝的崇拜者[BP15-028]
+   87 P1 mainPhase 进化 空绝的崇拜者[BP15-028] 黄金短剑[BP15-T01] 新→ex
+   88 P1 mainPhase 攻击 奔放的狱炎·凯尔贝洛斯[BP16-075] → 密不可分的爱·米路缇欧[BP15-PR05]
+   89 P2 quick Quick 放过 奔放的狱炎·凯尔贝洛斯[BP16-075]→密不可分的爱·米路缇欧[BP15-PR05] 3；P2 -3=13 〔forced〕
+   90 P1 mainPhase 攻击 守卫犬的右腕·米米[BP16-T04] → 密不可分的爱·米路缇欧[BP15-PR05]
+   91 P2 quick Quick 放过 守卫犬的右腕·米米[BP16-T04]→密不可分的爱·米路缇欧[BP15-PR05] 2；P2 -2=11 〔forced〕
+   92 P1 mainPhase 结束主阶段
+
+T13 · 选手 2 回合 · HP 22/11 · PP 0/7
+手牌 混融的肯定者[BP20-089]、叫唤与憎恶[BP20-082]｜对手手牌 1 张
+场 奔放的狱炎·凯尔贝洛斯[BP16-075] 3/3 横、守卫犬的右腕·米米[BP16-T04] 2/2 横、混融的继承者·夏姆·娜可亚[BP20-076] 3/3、空绝的崇拜者[BP15-028] 3/3 / 混融之城[BP20-086]、混融之城[BP20-086]
+EX 黄金短剑[BP15-T01] / 纹章 混融的继承者·夏姆·娜可亚[BP20-T06]｜墓 10/11
+   94 P2 mainPhase 打出 叫唤与憎恶[BP20-082] 〔fallback〕
+   95 P2 choose/mode damage、pp 〔authored〕
+   96 P2 selectCards/target 奔放的狱炎·凯尔贝洛斯[BP16-075] 叫唤与憎恶[BP20-082]→奔放的狱炎·凯尔贝洛斯[BP16-075] 3；奔放的狱炎·凯尔贝洛斯[BP16-075] field→cemetery 〔authored〕
+   97 P2 mainPhase 打出 混融的肯定者[BP20-089] 〔fallback〕
+   98 P2 choose/mode damage 〔fallback〕
+   99 P2 selectCards/target 空绝的崇拜者[BP15-028] 混融的肯定者[BP20-089]→空绝的崇拜者[BP15-028] 3；空绝的崇拜者[BP15-028] field→cemetery 〔fallback〕
+  100 P2 mainPhase 结束主阶段 〔fallback〕
+
+T14 · 选手 1 回合 · HP 22/11 · PP 7/3
+手牌 ｜对手手牌 2 张
+场 守卫犬的右腕·米米[BP16-T04] 2/2、混融的继承者·夏姆·娜可亚[BP20-076] 3/3 / 混融之城[BP20-086]、混融之城[BP20-086]、混融的肯定者[BP20-089] 3/3
+EX 黄金短剑[BP15-T01] / 纹章 混融的继承者·夏姆·娜可亚[BP20-T06]｜墓 11/13
+  102 P1 mainPhase 攻击 混融的继承者·夏姆·娜可亚[BP20-076] → 密不可分的爱·米路缇欧[BP15-PR05]
+  103 P2 quick Quick 放过 混融的继承者·夏姆·娜可亚[BP20-076]→密不可分的爱·米路缇欧[BP15-PR05] 3；P2 -3=8 〔forced〕
+  104 P1 mainPhase 打出 黄金短剑[BP15-T01] 黄金短剑[BP15-T01]→混融的肯定者[BP20-089] 2；黄金短剑[BP15-T01]→密不可分的爱·米路缇欧[BP15-PR05] 2；P2 -2=6
+  105 P1 mainPhase 攻击 守卫犬的右腕·米米[BP16-T04] → 密不可分的爱·米路缇欧[BP15-PR05]
+  106 P2 quick Quick 放过 守卫犬的右腕·米米[BP16-T04]→密不可分的爱·米路缇欧[BP15-PR05] 2；P2 -2=4 〔forced〕
+  107 P1 mainPhase 打出 精炼的空绝[BP15-026] 精炼的空绝[BP15-026]→混融的肯定者[BP20-089] 2；黄金之杯[BP15-T02] 新→ex；混融的肯定者[BP20-089] field→cemetery
+  108 P1 mainPhase 打出 黄金之杯[BP15-T02] P1 +2=24
+  109 P1 mainPhase 结束主阶段
+
+T15 · 选手 2 回合 · HP 24/4 · PP 2/8
+手牌 《恋人》·米路缇欧[BP10-074]｜对手手牌 1 张
+场 守卫犬的右腕·米米[BP16-T04] 2/2 横、混融的继承者·夏姆·娜可亚[BP20-076] 3/3 横 / 混融之城[BP20-086]、混融之城[BP20-086]
+EX 空 / 纹章 混融的继承者·夏姆·娜可亚[BP20-T06]｜墓 12/14
+  111 P2 mainPhase 打出 《恋人》·米路缇欧[BP10-074] 〔fallback〕
+  112 P2 mainPhase 起动 混融之城[BP20-086] 能力 1 〔fallback〕
+  113 P2 choose/mode rush、assail 混融之城[BP20-086] field→cemetery 〔fallback〕
+  114 P2 mainPhase 攻击 《恋人》·米路缇欧[BP10-074] → 混融的继承者·夏姆·娜可亚[BP20-076] 〔fallback〕
+  115 P1 quick Quick 放过 《恋人》·米路缇欧[BP10-074]→混融的继承者·夏姆·娜可亚[BP20-076] 4；混融的继承者·夏姆·娜可亚[BP20-076]→《恋人》·米路缇欧[BP10-074] 3；混融的继承者·夏姆·娜可亚[BP20-076] field→cemetery
+  116 P2 mainPhase 结束主阶段 〔fallback〕
+
+T16 · 选手 1 回合 · HP 24/4 · PP 8/2
+手牌 ｜对手手牌 2 张
+场 守卫犬的右腕·米米[BP16-T04] 2/2 / 混融之城[BP20-086]、《恋人》·米路缇欧[BP10-074] 4/1 伤3 横
+EX 空 / 纹章 混融的继承者·夏姆·娜可亚[BP20-T06]｜墓 12/16
+  118 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+  119 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+  120 P1 choose/mode 涸绝的甘露[BP15-PR18] 新→ex
+  121 P1 mainPhase 打出 涸绝的甘露[BP15-PR18] 涸绝的甘露[BP15-PR18]→密不可分的爱·米路缇欧[BP15-PR05] 2；P2 -2=2；P1 +2=26
+  122 P1 mainPhase 攻击 守卫犬的右腕·米米[BP16-T04] → 密不可分的爱·米路缇欧[BP15-PR05]
+  123 P2 quick Quick 放过 守卫犬的右腕·米米[BP16-T04]→密不可分的爱·米路缇欧[BP15-PR05] 2；P2 -2=0 〔forced〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":16}
+生命 26/0
+选手输入 [{"direct":0,"authored":10,"fallback":37,"forced":18},{"direct":0,"authored":5,"fallback":34,"forced":20}]
