@@ -39,4 +39,4 @@
 - 第 181–190 局，3–7–0（30.0%），r11。[日志、录像和复盘](rune/checks/181.md)
 - 第 191–200 局，5–5–0（50.0%），r11。[日志、录像和复盘](rune/checks/191.md)
 
-[牌表与对战约定](README.md) · [打法迭代](decisions.md)
+[牌表与对战约定](README.md) · [打法迭代](decisions.md) · [收官复盘](review.md)

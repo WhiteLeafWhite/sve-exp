@@ -38,6 +38,7 @@ for (const group of entries) {
   const revisions = [...new Set(group.map(r => `r${r.pilot}`))].join('、');
   lines.push(`- 第 ${start}–${end} 局，${result(group)}，${revisions}。[日志、录像和复盘](rune/checks/${pad(start)}.md)`);
 }
-lines.push('', '[牌表与对战约定](README.md) · [打法迭代](decisions.md)');
+const review = existsSync(join(extraArchive, 'review.md')) ? ' · [收官复盘](review.md)' : '';
+lines.push('', '[牌表与对战约定](README.md) · [打法迭代](decisions.md)' + review);
 save(join(extraArchive, 'index.md'), lines.join('\n') + '\n');
 console.log(`加练 ${all.length}/${protocol.games}，${wins(all)} 胜，验证 ${wins(test)}/${test.length}`);
