@@ -1,0 +1,172 @@
+g0379
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、静寂的安纳提玛·吉尔达利娅[BP19-022]、荣光剑士·奥蕾莉亚[BP20-022]、天空指挥官·榭莉亚[BP09-018]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 整手重抽
+    1 P2 mulligan 整手重抽 P1 0=20；P2 0=20 〔authored〕
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、圣剑之光的小队长[BP17-029]、俏猫上将[BP13-029]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 篡夺的随从[BP05-029]
+    3 P1 mainPhase 结束主阶段
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、圣剑之光的小队长[BP17-029]、俏猫上将[BP13-029]、宇宙之翼·洛菈米亚[BP15-023]｜对手手牌 3 张
+场 篡夺的随从[BP05-029] 2/2 / 空
+EX 空 / 空｜墓 0/1
+    5 P2 mainPhase 打出 俏猫上将[BP13-029] 〔fallback〕
+    6 P2 mainPhase 结束主阶段 〔forced〕
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、圣剑之光的小队长[BP17-029]、宇宙之翼·洛菈米亚[BP15-023]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2 / 俏猫上将[BP13-029] 2/2
+EX 空 / 空｜墓 0/1
+    8 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+    9 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   10 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=19
+   11 P1 mainPhase 攻击 篡夺的随从[BP05-029] → [公主形态]佩可莉姆[CP04-PR02]
+   12 P2 quick Quick 放过 篡夺的随从[BP05-029]→[公主形态]佩可莉姆[CP04-PR02] 2；P2 -2=17 〔forced〕
+   13 P1 mainPhase 结束主阶段
+
+T4 · 选手 2 回合 · HP 20/17 · PP 0/2
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、圣剑之光的小队长[BP17-029]、宇宙之翼·洛菈米亚[BP15-023]、圣剑之光的小队长[BP17-029]｜对手手牌 3 张
+场 篡夺的随从[BP05-029] 2/2 横、大洋斥候[BP19-030] 3/2 / 俏猫上将[BP13-029] 2/2
+EX 空 / 空｜墓 0/1
+   15 P2 mainPhase 打出 圣剑之光的小队长[BP17-029] 〔fallback〕
+   16 P2 selectCards/wardEnterEngaged 不选 铁甲骑士[BP01-T07] 新→ex 〔fallback〕
+   17 P2 selectPending p151 〔fallback〕
+   18 P2 selectCards/target 大洋斥候[BP19-030] 俏猫上将[BP13-029]→大洋斥候[BP19-030] 1 〔fallback〕
+   19 P2 selectCards/target 大洋斥候[BP19-030] 俏猫上将[BP13-029]→大洋斥候[BP19-030] 1；大洋斥候[BP19-030] field→cemetery 〔fallback〕
+   20 P2 mainPhase 攻击 俏猫上将[BP13-029] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   21 P1 quick Quick 放过 俏猫上将[BP13-029]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18
+   22 P2 mainPhase 结束主阶段 〔forced〕
+   23 P2 selectCards/wardEngage 战盾卫士[BP02-T02] 〔authored〕
+
+T5 · 选手 1 回合 · HP 18/17 · PP 3/0
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、宇宙之翼·洛菈米亚[BP15-023]、圣剑之光的小队长[BP17-029]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2 / 俏猫上将[BP13-029] 2/2 横、圣剑之光的小队长[BP17-029] 1/1、战盾卫士[BP02-T02] 1/1 横、骑士[BP01-T05] 1/1
+EX 空 / 铁甲骑士[BP01-T07]｜墓 1/1
+   25 P1 mainPhase 打出 空绝的崇拜者[BP15-028]
+   26 P1 mainPhase 进化 空绝的崇拜者[BP15-028] 黄金短剑[BP15-T01] 新→ex
+   27 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 战盾卫士[BP02-T02]
+   28 P2 quick Quick 放过 篡夺的随从[BP05-029]→战盾卫士[BP02-T02] 2；战盾卫士[BP02-T02]→篡夺的随从[BP05-029] 1；战盾卫士[BP02-T02] field→cemetery 〔forced〕
+   29 P1 mainPhase 攻击 空绝的崇拜者[BP15-028] → 俏猫上将[BP13-029]
+   30 P2 quick Quick 放过 空绝的崇拜者[BP15-028]→俏猫上将[BP13-029] 3；俏猫上将[BP13-029]→空绝的崇拜者[BP15-028] 2；俏猫上将[BP13-029] field→cemetery 〔forced〕
+   31 P1 mainPhase 结束主阶段
+
+T6 · 选手 2 回合 · HP 18/17 · PP 0/3
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、宇宙之翼·洛菈米亚[BP15-023]、圣剑之光的小队长[BP17-029]、咒箱女王·娜哈特·娜哈特[BP11-018]｜对手手牌 3 张
+场 篡夺的随从[BP05-029] 2/1 伤1 横、空绝的崇拜者[BP15-028] 3/1 伤2 横 / 圣剑之光的小队长[BP17-029] 1/1、骑士[BP01-T05] 1/1
+EX 黄金短剑[BP15-T01] / 铁甲骑士[BP01-T07]｜墓 1/2
+   33 P2 mainPhase 攻击 圣剑之光的小队长[BP17-029] → 空绝的崇拜者[BP15-028] 〔fallback〕
+   34 P1 quick Quick 放过 圣剑之光的小队长[BP17-029]→空绝的崇拜者[BP15-028] 1；空绝的崇拜者[BP15-028]→圣剑之光的小队长[BP17-029] 3；空绝的崇拜者[BP15-028] field→cemetery；圣剑之光的小队长[BP17-029] field→cemetery
+   35 P2 mainPhase 打出 月光执行者·里欧德[BP17-022] 月光执行者·里欧德[BP17-022]→篡夺的随从[BP05-029] 1；篡夺的随从[BP05-029] field→cemetery 〔fallback〕
+   36 P2 mainPhase 打出 圣剑之光的小队长[BP17-029] 〔fallback〕
+   37 P2 selectCards/wardEnterEngaged 不选 铁甲骑士[BP01-T07] 新→ex 〔fallback〕
+   38 P2 mainPhase 攻击 骑士[BP01-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   39 P1 quick Quick 放过 骑士[BP01-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=17
+   40 P2 mainPhase 结束主阶段 〔forced〕
+   41 P2 selectCards/wardEngage 战盾卫士[BP02-T02] 〔authored〕
+
+T7 · 选手 1 回合 · HP 17/17 · PP 4/0
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]｜对手手牌 4 张
+场 空 / 骑士[BP01-T05] 1/1 横、月光执行者·里欧德[BP17-022] 1/2、圣剑之光的小队长[BP17-029] 1/1、战盾卫士[BP02-T02] 1/1 横、骑士[BP01-T05] 1/1
+EX 黄金短剑[BP15-T01] / 铁甲骑士[BP01-T07]、铁甲骑士[BP01-T07]｜墓 3/3
+   43 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019]
+   44 P1 choose/mode 纹章 空绝的显现·欧克托莉斯[BP20-T02] 新→ex
+   45 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+   46 P1 selectCards/target 奉还的剑闪[BP20-026]→战盾卫士[BP02-T02] 4；黄金短剑[BP15-T01] 新→ex；战盾卫士[BP02-T02] field→cemetery
+   48 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → [公主形态]佩可莉姆[CP04-PR02]
+   49 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→[公主形态]佩可莉姆[CP04-PR02] 2；P2 -2=15 〔forced〕
+   50 P1 mainPhase 结束主阶段
+
+T8 · 选手 2 回合 · HP 17/15 · PP 0/4
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]、瞬息的迅捷剑士[BP16-031]｜对手手牌 2 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 骑士[BP01-T05] 1/1、月光执行者·里欧德[BP17-022] 1/2、圣剑之光的小队长[BP17-029] 1/1、骑士[BP01-T05] 1/1
+EX 黄金短剑[BP15-T01]、纹章 空绝的显现·欧克托莉斯[BP20-T02]、黄金短剑[BP15-T01] / 铁甲骑士[BP01-T07]、铁甲骑士[BP01-T07]｜墓 4/3
+   52 P2 mainPhase 打出 咒箱女王·娜哈特·娜哈特[BP11-018] 〔fallback〕
+   53 P2 selectCards/search 娜哈特的私兵[BP11-031] 娜哈特的私兵[BP11-031] deck→ex 〔fallback〕
+   54 P2 mainPhase 攻击 骑士[BP01-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   55 P1 quick Quick 放过 骑士[BP01-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=16
+   56 P2 mainPhase 攻击 月光执行者·里欧德[BP17-022] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   57 P1 quick Quick 放过 月光执行者·里欧德[BP17-022]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=15
+   58 P2 mainPhase 攻击 圣剑之光的小队长[BP17-029] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   59 P1 quick Quick 放过 圣剑之光的小队长[BP17-029]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=14
+   60 P2 mainPhase 起动 咒箱女王·娜哈特·娜哈特[BP11-018] 能力 1 〔fallback〕
+   61 P2 mainPhase 攻击 骑士[BP01-T05] → 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   62 P1 quick Quick 放过 骑士[BP01-T05]→空绝的显现·欧克托莉斯[BP20-019] 1；空绝的显现·欧克托莉斯[BP20-019]→骑士[BP01-T05] 2；骑士[BP01-T05] field→cemetery
+   63 P2 mainPhase 打出 娜哈特的私兵[BP11-031] 〔fallback〕
+   64 P2 mainPhase 结束主阶段 〔forced〕
+
+T9 · 选手 1 回合 · HP 14/15 · PP 5/0
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、宇宙之翼·洛菈米亚[BP15-023]、瞬息的迅捷剑士[BP16-031]、俏猫上将[BP13-029]｜对手手牌 3 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/2 伤1 横 / 骑士[BP01-T05] 1/1 横、月光执行者·里欧德[BP17-022] 1/2 横、圣剑之光的小队长[BP17-029] 1/1 横、咒箱女王·娜哈特·娜哈特[BP11-018] 3/5、娜哈特的私兵[BP11-031] 2/2
+EX 黄金短剑[BP15-T01]、纹章 空绝的显现·欧克托莉斯[BP20-T02]、黄金短剑[BP15-T01] / 铁甲骑士[BP01-T07]、铁甲骑士[BP01-T07]｜墓 4/3
+   66 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   67 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]
+   68 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   69 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=14
+   72 P1 mainPhase 打出 黄金短剑[BP15-T01]
+   73 P1 selectCards/target 黄金短剑[BP15-T01]→娜哈特的私兵[BP11-031] 2；娜哈特的私兵[BP11-031] field→cemetery
+   76 P1 selectCards/target 咒箱女王·娜哈特·娜哈特[BP11-018] field→cemetery
+   77 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 圣剑之光的小队长[BP17-029]
+   78 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→圣剑之光的小队长[BP17-029] 5；圣剑之光的小队长[BP17-029]→出航的罪人·芭芭萝丝[BP19-019] 1；圣剑之光的小队长[BP17-029] field→cemetery 〔forced〕
+   79 P1 mainPhase 打出 黄金短剑[BP15-T01]
+   80 P1 selectCards/target 黄金短剑[BP15-T01]→骑士[BP01-T05] 2；骑士[BP01-T05] field→cemetery
+   82 P1 mainPhase 结束主阶段
+
+T10 · 选手 2 回合 · HP 14/14 · PP 0/5
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、宇宙之翼·洛菈米亚[BP15-023]、瞬息的迅捷剑士[BP16-031]、俏猫上将[BP13-029]、宇宙之翼·洛菈米亚[BP15-023]｜对手手牌 2 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/2 伤1 横、出航的罪人·芭芭萝丝[BP19-019] 5/3 伤1 横 / 月光执行者·里欧德[BP17-022] 1/2
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02] / 铁甲骑士[BP01-T07]、铁甲骑士[BP01-T07]｜墓 4/8
+   84 P2 mainPhase 打出 晴天的银骑士·艾蜜莉亚[SP01-010] 〔fallback〕
+   85 P2 mainPhase 起动 晴天的银骑士·艾蜜莉亚[SP01-010] 能力 1 〔fallback〕
+   86 P2 selectCards/pick 宇宙之翼·洛菈米亚[BP15-023] 〔fallback〕
+   87 P2 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 晴天的银骑士·艾蜜莉亚[SP01-010]→出航的罪人·芭芭萝丝[BP19-019] 3；出航的罪人·芭芭萝丝[BP19-019] field→cemetery 〔fallback〕
+   88 P2 mainPhase 打出 瞬息的迅捷剑士[BP16-031] 晴天的银骑士·艾蜜莉亚[SP01-010]→空绝的显现·欧克托莉斯[BP20-019] 3；空绝的显现·欧克托莉斯[BP20-019] field→cemetery 〔fallback〕
+   89 P2 mainPhase 攻击 宇宙之翼·洛菈米亚[BP15-023] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   90 P1 quick Quick 放过 宇宙之翼·洛菈米亚[BP15-023]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=12
+   91 P2 mainPhase 进化 瞬息的迅捷剑士[BP16-031]（EP） 瞬息的迅捷剑士[BP16-032]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=11 〔fallback〕
+   92 P2 mainPhase 攻击 瞬息的迅捷剑士[BP16-031] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   93 P1 quick Quick 放过 瞬息的迅捷剑士[BP16-031]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=9
+   94 P2 mainPhase 攻击 月光执行者·里欧德[BP17-022] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   95 P1 quick Quick 放过 月光执行者·里欧德[BP17-022]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=8
+   96 P2 mainPhase 结束主阶段 〔forced〕
+
+T11 · 选手 1 回合 · HP 8/14 · PP 6/0
+手牌 俏猫上将[BP13-029]、宇宙之翼·洛菈米亚[BP15-023]｜对手手牌 3 张
+场 空 / 月光执行者·里欧德[BP17-022] 1/2 横、晴天的银骑士·艾蜜莉亚[SP01-010] 4/4、宇宙之翼·洛菈米亚[BP15-023] 2/2 横、瞬息的迅捷剑士[BP16-031] 2/2 横
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02] / 铁甲骑士[BP01-T07]、铁甲骑士[BP01-T07]｜墓 6/8
+   98 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   99 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+  101 P1 selectCards/target 瞬息的迅捷剑士[BP16-031] field→cemetery
+  102 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 宇宙之翼·洛菈米亚[BP15-023]
+  103 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→宇宙之翼·洛菈米亚[BP15-023] 3；宇宙之翼·洛菈米亚[BP15-023]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 2；P1 +3=11；宇宙之翼·洛菈米亚[BP15-023] field→cemetery 〔forced〕
+  104 P1 mainPhase 打出 空绝的崇拜者[BP15-028]
+  105 P1 confirm/effect 黄金短剑[BP15-T01] 新→ex
+  106 P1 mainPhase 结束主阶段
+
+T12 · 选手 2 回合 · HP 11/14 · PP 1/6
+手牌 俏猫上将[BP13-029]、宇宙之翼·洛菈米亚[BP15-023]、瞬息的迅捷剑士[BP16-031]｜对手手牌 1 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/1 伤2 横、空绝的崇拜者[BP15-028] 3/3 / 月光执行者·里欧德[BP17-022] 1/2、晴天的银骑士·艾蜜莉亚[SP01-010] 4/4
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02]、黄金短剑[BP15-T01] / 铁甲骑士[BP01-T07]、铁甲骑士[BP01-T07]｜墓 6/10
+  108 P2 mainPhase 打出 宇宙之翼·洛菈米亚[BP15-023] 〔fallback〕
+  109 P2 selectCards/target 空绝的崇拜者[BP15-028] 晴天的银骑士·艾蜜莉亚[SP01-010]→空绝的崇拜者[BP15-028] 3；空绝的崇拜者[BP15-028] field→cemetery 〔fallback〕
+  110 P2 mainPhase 打出 瞬息的迅捷剑士[BP16-031] 晴天的银骑士·艾蜜莉亚[SP01-010]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 3；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery 〔fallback〕
+  111 P2 mainPhase 攻击 晴天的银骑士·艾蜜莉亚[SP01-010] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+  112 P1 quick Quick 放过 晴天的银骑士·艾蜜莉亚[SP01-010]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=7
+  113 P2 mainPhase 超进化 瞬息的迅捷剑士[BP16-031] 瞬息的迅捷剑士[BP16-032]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=6 〔fallback〕
+  114 P2 mainPhase 攻击 瞬息的迅捷剑士[BP16-031] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+  115 P1 quick Quick 放过 瞬息的迅捷剑士[BP16-031]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=3
+  116 P2 mainPhase 攻击 宇宙之翼·洛菈米亚[BP15-023] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+  117 P1 quick Quick 放过 宇宙之翼·洛菈米亚[BP15-023]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=1
+  118 P2 mainPhase 攻击 月光执行者·里欧德[BP17-022] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+  119 P1 quick Quick 放过 月光执行者·里欧德[BP17-022]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=0
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":12}
+生命 0/14
+选手输入 [{"direct":0,"authored":11,"fallback":28,"forced":24},{"direct":0,"authored":3,"fallback":37,"forced":17}]
