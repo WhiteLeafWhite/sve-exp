@@ -8,7 +8,7 @@
 | 妖精妖 | `1DYwF7` | 40/40 | 12/20 | 7/20 | 19–21–0 | [原表](fairy/deck.json) · [1–10](fairy/checks/001.md) · [11–20](fairy/checks/011.md) · [21–30](fairy/checks/021.md) · [31–40](fairy/checks/031.md) |
 | 铺场皇 | `csUWGv` | 40/40 | 15/20 | 9/20 | 24–16–0 | [原表](rally/deck.json) · [1–10](rally/checks/001.md) · [11–20](rally/checks/011.md) · [21–30](rally/checks/021.md) · [31–40](rally/checks/031.md) |
 | 破坏法 | `cQZr8Z` | 30/40 | 9/15 | 7/15 | 16–14–0 | [原表](destruction/deck.json) · [1–10](destruction/checks/001.md) · [11–20](destruction/checks/011.md) · [21–30](destruction/checks/021.md) |
-| 真实法 | `h1LX3a` | 30/40 | 0/15 | 0/15 | 0–30–0 | [原表](truth/deck.json) · [1–10](truth/checks/001.md) · [11–20](truth/checks/011.md) · [21–30](truth/checks/021.md) |
+| 真实法 | `h1LX3a` | 40/40 | 1/20 | 0/20 | 1–39–0 | [原表](truth/deck.json) · [1–10](truth/checks/001.md) · [11–20](truth/checks/011.md) · [21–30](truth/checks/021.md) · [31–40](truth/checks/031.md) |
 | 侮蔑龙 | `zQrwne` | 30/40 | 3/15 | 3/15 | 6–24–0 | [原表](disdain/deck.json) · [1–10](disdain/checks/001.md) · [11–20](disdain/checks/011.md) · [21–30](disdain/checks/021.md) |
 | 海洋龙 | `d86IcJ` | 30/40 | 6/15 | 3/15 | 9–21–0 | [原表](ocean/deck.json) · [1–10](ocean/checks/001.md) · [11–20](ocean/checks/011.md) · [21–30](ocean/checks/021.md) |
 | 混融梦 | `8YKXr7` | 30/40 | 9/15 | 11/15 | 20–10–0 | [原表](choice/deck.json) · [1–10](choice/checks/001.md) · [11–20](choice/checks/011.md) · [21–30](choice/checks/021.md) |
