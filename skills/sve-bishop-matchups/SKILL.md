@@ -1,38 +1,33 @@
 ---
 name: sve-bishop-matchups
-description: 用 SVE NEXT 练习 Shadowverse EVOLVE 日版 BP20 主教，陪练起手、进化、Quick、斩杀与复盘。适用于从 SVE Helper 导入卡图牌表、用主教对三个固定困难 Bot、每五局优化构筑或从录像决策点重练。
+description: 驾驶 Shadowverse EVOLVE 日版 BP20 的透京耶菈主教，覆盖白牙萝蕾娜双灾藤 F、席翁玛文、梦羊、天曜战骑等九份牌表。练习整手重抽、免费入场、回复解场、天冥斩杀和水银 Quick。
 ---
 
-# BP20 主教陪练
+# 白牙萝蕾娜透京耶菈主教
 
-1. 准备牌表。用当前推荐的同一套主教对战 cQZr8Z 破坏巫师、zQrwne 侮蔑龙和 t7B32v 财宝皇室。向用户说清本对局已有多少场、赢了几场，再选这次要练的一个决定。要重做历史录像，就用录像中保存的牌表。[当前推荐、胜率与取舍](references/bp20-current.md) · [当前导入牌表](references/bp20-recommended.json) · [基础 40 张与进化位](references/bp20-deck.md)
-2. 对练时由用户选择要驾驶的一方。开局先看四张手牌，给出先后攻、第二回合与第三回合各能做什么，再决定是否整手重抽。询问用户的一次取舍后，给出一个可执行的替代顺序，让用户在模拟器比较。按需核对规则与导入命令。[规则、启动及重演](references/bp20-practice.md)
-3. 在主阶段先算可确认的斩杀，逐一扣除横置守护、解场费用与可能的 Quick。交回合前读敌方公开 EX、墓场、剩余 EP／SEP 和己方可减伤次数。写出对方一条可能的终结线，再决定进化、回血、铺护符或留 PP。按对手选择题目。[实战打法与重练题](references/bp20-playbook.md)
-4. 提交引擎列出的合法动作。自定义主教使用自己可见的信息和公平抽样，三个对手用桌面困难预设。局中根据可见动作更新推测，赛后再打开全视角录像核查。将一次复盘写成「当时看到什么、选择了什么、另一条合法线路及其代价」。[主教决策程序](scripts/bishop-player.mjs) · [互动与分支工具](scripts/practice.mjs)
-5. 每五局检查起手、最危险的一个对手回合、核心牌抽到／打出／实际进场的差别。把换出的卡、换入的卡、张数及想解决的问题写进构筑日志。把可复用的出牌顺序、例外、对应录像输入点写入打法。保留对手原表，平衡先后攻，选好构筑后用新种子独立验证。[每五局构筑日志](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/construction.md)
+接手上一阶段时，默认拿 F 表作主教基准。主牌 40 张，进化 10 张，进化区灾藤 2、玛文 1。对三个固定困难 Bot 的独立牌序，主教对巫师 63/125、龙 55/122、皇室 62/125。19 场双方各按自己视野出牌的正式对练中，主教 4 胜 15 负，期间用过两种主教进化配额。在当前算力下优先复用这些决策点。要还原旧局，采用录像里保存的双方牌表。[导入 F 表](references/bp20-recommended.json) · [构筑、分母和胜率区间](references/bp20-current.md) · [双席逐局记录](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/index.md)
 
-固定百局阶段，白牙萝蕾娜对巫师 55 胜、龙族 43 胜、皇室 56 胜。对龙先攻时优先练习 T5–T9 的去除与施压取舍，对巫师后攻时重点看对方先铺偶像后的解场窗口。按照对手和先后攻选题。[百局统计与斩杀类型](references/bp20-fixed-results.md) · [巫师](references/fixed-cQZr8Z.md) · [龙族](references/fixed-zQrwne.md) · [皇室](references/fixed-t7B32v.md)
+## 从起手打到收尾
 
-双 agent 对练时，主教席和对手席各读自己的玩家视角。每个三职业循环冻结共同主教，三种主流各自与最初原表比较，换动最多五张。把两方亲自选择的关节点、委托给本方策略的操作及每一局的理由一同保存。[双方座位与录像操作](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/seats.md)
+- **起手先排自己的第二、第三回合。** 后攻有灾藤、白牙、萝蕾娜、万裁时，灾藤可在二费找后续，四费萝蕾娜可回 4 并准备解场。对皇室第 6 局，实战重抽后前两回合空过，保留同一手的分支打到 T18 主教胜。对龙把先攻留牌一律收紧，在同一百个牌序是原打法 37 胜、收紧后 33 胜。先看跟进和合法目标，再决定是否整手换掉。[皇室起手复练](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/drills/logs/royal-06-keep.md) · [对龙起手对照](references/dragon-opening.md)
+- **圣士郎进化前数费用、空位与进化牌。** 有待用的承担者进化牌 BP18-106 时，圣士郎免费放承担者，入场与自动进化各回 1，圣士郎可分两次各打 2。若有两个空位、手里同时有坚定不移的祈祷和承担者，比较先免费放祈祷，检索后凭下一张透京减 2，再以 0 PP 打承担者。敌方从者已横置时，也要比较小随从交换与用 2 伤移除直立目标。[巫师牌序 88 的原线与对照](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/14-trained-pilot/target-85.md)
+- **回复和攻击分开计数。** 先数这一回合能攻击的旧随从，再算能补几名透京随从、天冥 0 费起动能打几点。耶菈的祈祷每张每回合首次回复能强化全场。己方高血并有双祈祷时，把原本能活下来的攻击者换到只剩 1 防，可能丢掉下回合的致死伤害。龙牌序 85 保住灾藤的线路，次回合灾藤本体打了 7。该局和上一条都是已见牌序。第四次修正停在定点检查，整局复核 0/4。[选目标的代价](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/14-trained-pilot/target-85.md) · [冻结打法的 60 对复核](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/14-trained-pilot/index.md)
 
-在圣士郎进化时，核对手中承担者、剩余进化牌和直立目标的防御。练习把两次回复各自分配为 2 伤，再与下祈祷的同牌序结果比较。对龙或皇室，先算守护被移走或炮手被补回之后的伤害。[主教席实战题与配对重演](references/agent-bishop-coach.md)
+## 交回合前要看什么
 
-检验防守卡位时，逐局看神弓座天使是否活到伤害结算、信仰的一击是否赶得上消灭触发源。练习先解场时，用同一份牌重演炎术、灾藤和炎术的顺序，记录龙族余下的攻击与直伤。[神弓两卡位实测](references/lyrial.md) · [快速消灭的实战目标](references/banish.md) · [龙族 r4 打法与配对实录](references/dragon-r4.md)
+| 对手 | 在己方视野比较的两条线 |
+|---|---|
+| 破坏巫师 | 预算首攻前的能力伤害，再算首攻时水银能挡多少。白牙加承担者留水银的一局，巫师先攻击，主教以 5 血等到忒弥斯并胜。巫师先献章，主教只剩 2，虽清场仍负。[两种巫师应手](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/drills/index.md) |
+| 侮蔑龙 | 席翁横置能挡一次攻击，也给龙用战斗换掉减伤来源的机会。龙第 5 局，两种守护姿态都试过。在该局保留直立席翁和水银，三击由 6、4、2 变为 3、3、1，主教多获一个回合。再算龙的下一波。[主教席手记](references/agent-bishop-coach.md) |
+| 财宝皇室 | 对面有炮手和多面公开海贼旗时，数炮手本体与每面旗的追加伤害。第 6 局，让万裁分身攻袭直立炮手，比打脸或去芭芭萝丝多争取一回合。皇室仍能借墓场的天冥另组伤害。[处理炮手后的录像日志](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/drills/logs/royal-06-cannon.md) |
 
-复查此前七批时，使用历史牌表、打法版本与当时的样本。历史策略默认使用 r2，本批正式比较使用 r3。[历史战绩](references/results.md) · [历史牌表](references/bishop-final.json) · [历史打法](references/playbook.md) · [历史条件](references/method.md)
+## 可直接重练的一手
 
-先从本方座位重做一个关键决定，再对照当时的理由与比赛结果。[双座位对练题](references/agent-duels.md)
+打开下列任一原生录像，恢复前 43 次输入，从**座位 0、T7** 接手。主教 20 血、0 PP，圣士郎刚进化，对面有直立 4/4 里榭娜。这个窗口列出两张耶菈的祈祷与一张承担者。先决定免费放哪张，再分配每次回复的目标。两份录像在输入 43 前相同。选祈祷的一线 T12 负，选承担者并连续两次打 2 的一线 T21 胜。[祈祷对照录像](assets/rune-01-prayer-control.json) · [承担者分支录像](assets/rune-01-punisher.json) · [打开录像与指定输入的方法](references/bp20-practice.md)
 
-对龙起手时，先比较同一手四张在保留和整手重抽后的前三回合。[先攻留牌的独立实打](references/dragon-opening.md)
+## 查找特定构筑或旧记录
 
-对照使用第二张灾藤和第二张玛文的场面，比较回收炎术、用身体交换与留费清场的收益。[配对实战](references/second-saito.md)
-
-圣士郎进化后，选择手里一张放进场。先比较这回合能触发几次回复，以及对面的 4/4 会不会活到下回合。[从 T7 执主教](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-01.json&at=43&seat=0)
-
-练水银时，同一局先执主教，再执巫师。主教七费，手中有白牙和承担者，先算留费后能否活过三个 3 攻。换座位后，看公开 EX，再决定荒野、黑章、祈祷者与首攻的顺序。两个执牌者在这个残局都打出过胜线。[从 T14 执主教](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-06.json&at=105&seat=0) · [从 T15 执巫师](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-drill-rune-06-hold.json&at=109&seat=1) · [两种应手与终局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/10-agent-duels/drills/index.md)
-
-下梦羊时，先确定对手的第一段伤害是否能改由更小的一段支付。[一次伤害防止的实战](references/sacred-sheep.md)
-
-核对两个护符的五费盘面，数清天曜战骑当天的疾驰、回复和交回合后的守护。[同牌序取舍](references/heavenly-knight.md)
-
-在相同牌序第一次分歧处对照实战主教席和基础搜索的决定。[冻结打法对困难 Bot 的验证](references/trained-pilot.md)
+- 手里的牌来自其他批次时，从[九份透京耶菈原表与操作差异](references/versions.md)选择对应版本。勒碧丝／封印控制可调用 `$sve-seraph-haven`。
+- 对局中查[三职业打法](references/bp20-playbook.md)、[双席题库](references/agent-duels.md)或[固定百局胜负](references/bp20-fixed-results.md)。按对手找[巫师](references/fixed-cQZr8Z.md)、[侮蔑龙](references/fixed-zQrwne.md)、[皇室](references/fixed-t7B32v.md)。
+- 比较主教变体时，先查[双玛文 B 与双灾藤 F](references/second-saito.md)、[梦羊 S](references/sacred-sheep.md)、[天曜战骑 K](references/heavenly-knight.md)。其他尝试有[神弓](references/lyrial.md)、[信仰的一击](references/banish.md)、[同表对龙改打法](references/dragon-r4.md)和[双席打法回到困难 Bot](references/trained-pilot.md)。
+- 首轮席翁玛文牌表、34/60 的三组成绩与当时的 r2 单独保存在[历史实测](references/results.md)和[早期打法](references/playbook.md)。F 的困难基准采用 r3。需要模拟器操作时查[工具说明](references/bp20-practice.md)。

@@ -1,30 +1,29 @@
 ---
 name: sve-loot-sword
-description: 在 SVE NEXT 日版 BP20 用 t7B32v「20财宝」皇室对练，核算财宝 EX、费用减免、芭芭萝丝的攻击窗口和对透京主教的压力。
+description: 驾驶 Shadowverse EVOLVE 日版 BP20 的 t7B32v「20财宝」皇室。用于整手留牌、海贼旗与炮手伤害、芭芭萝丝回费、篡夺对手墓场和清场后的续攻。
 ---
 
 # 财宝皇室「20财宝」
 
-每组新增的终局算例与出牌题见[固定百局复盘](references/fixed.md)。
+使用 t7B32v 原表，主牌 40、进化 10，保留三张 BP05-018 篡夺绝杰。双席正式对主教 5 胜 1 负，六局均沿用原表。做决策时先看己方 EX、手牌、对方公开墓场和剩余 PP。[可导入原表](assets/t7B32v.json) · [双席封存记录](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/reviews-by-seat/004-meta.md)
 
-双席实战的五旗伤害计算、回费顺序和清场后续见[财宝皇室主流席手记](references/agent-meta-coach.md)。
+## 先把费用排对
 
-1. 使用 t7B32v 的 40 张主牌、10 张进化牌，保留原表三张 BP05-018。起手看第一批盗贼能否提供场攻和财宝，再判断已有的减费能否在本回合兑现。大洋斥候进场给海贼旗，先检查旗有没有合适的盗贼目标，以及目标下回合能否存活。[冻结牌表](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/07-t7B32v/opponent.json)
-2. 把 EX 每张财宝的印刷费、实际支付的 PP、能造成的伤害逐项写出来。BP15-020 每回合可两次令下一张财宝减 2。芭芭萝丝在己方回合给从 EX 使用的财宝减 1。先用能使下一张动作合法的财宝，再消耗减费。EX 快满时给下一张入场曲或生成物留空位。[卡文查询](https://svehelperwin.com/)
-3. 海贼旗要选盗贼，兼具八狱和盗贼才附带 1 点主战者伤害。黄金短剑先要有合法从者目标，对手墓场十张以上才附带主战者 2 点。考虑进化篡夺绝杰利用对方墓场时，优先看立刻能用的回复、移除或疾驰。主教席翁在场时，对每段分别减伤。
-4. **实战题**。对主教第 22 局 T21，主教 12 血。两个旧随从先打 3、2，再用芭芭萝丝提供的海贼旗打 1，最后 6 攻收尾。反例在第 21 局，皇室从 12 血被天冥和两个老随从正好击败。交回合前，用「天冥起动＋能攻击的透京随从」复算主教的上限。[第 22 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/t7B32v/games/22.md) · [第 21 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/t7B32v/games/21.md)
-5. 每五局记录未用尽的减费、被挤掉的 EX、最后一个合适的交换机会。保留至少一组「同局面先用旗或先攻击」的反事实重演。双 agent 对练阶段累计替牌按初始原表的主牌和进化牌合计，最多五张。局中只读取皇室座位的可见信息。[更多实战](https://github.com/WhiteLeafWhite/sve-exp/tree/main/batches/08-bp20-hard-150/t7B32v)
+- **起手同时找身体和第一件财宝。** 大洋斥候、海潮炮手或怒涛副船长入场都能给旗。芭芭萝丝在手时，优先看前两回合能否留下一名到四费回合仍能攻击的盗贼。第 6 局先攻留艾巴利缇亚、崇拜者、芭芭萝丝和奉还的剑闪，用艾巴利缇亚补两费显现。若本回合要融合库存里的最后一旗，把下回合重新造旗的费用也算进去。[第 6 局执牌手记](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/t7B32v/notes/06-meta.md)
+- **减费配给具体的财宝。** 空绝篡夺 BP15-020 的「下一张财宝减 2」每回合可起动两次。两把原费 2 的黄金短剑，可按「起动、用剑、再起动、再用剑」都付 0。芭芭萝丝 BP19-019 在己方回合给 EX 财宝减 1。进化后每次打财宝，从本回合这张芭芭萝丝尚未选过的效果中选择。只有一旗时，先回 2 PP 买能造旗的随从，再靠第二旗破坏目标；若对方眼下就有致死攻击，比较当场移除。[两把短剑与首旗回费](references/agent-meta-coach.md)
 
-**计算对方现成的斩杀。** 固定百局第 40 局，皇室在 T15 用两张旗和炮手向主教打出三段 1 点，交回合时主教仍有 10 血。主教留场的万裁分身下一回合一击打完皇室 7 血。T16 皇室剩 0 PP、没有横置守护，EX 的三张海贼旗无法阻止这一击。复盘时回到 T15，用「分身还能攻击几次」检验贪伤害的代价。[固定皇室第 40 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/t7B32v/games/40.md)
+## 再把伤害算全
 
-先从本方座位重做一个关键决定，再对照当时的理由与比赛结果。[双座位对练题](references/agent-duels.md)
+| 来源 | 入账条件 |
+|---|---|
+| 海贼旗 BP19-T01 | 选盗贼加 1 攻，同时有八狱与盗贼才附带主战者 1 伤。加攻记给**还会攻击**的随从。给已经攻击过的目标，不能把后来增加的攻击力算回先前一击。 |
+| 海潮炮手 BP19-026 | 打出一面海贼旗可选敌主战者或敌随从打 1。黄金短剑同属财宝，能触发芭芭萝丝、给显现创造疾驰机会，但不会触发炮手。第 6 局是三次旗伤、三次炮手触发、炮手攻击 4，合计 10。[原局](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/t7B32v/games/06.md) |
+| 黄金短剑与篡夺绝杰 | 短剑要有合法敌方随从可选。对手墓场至少 10 张时，才对其主战者额外打 2。进化篡夺绝杰能把对手墓牌放进**皇室自己的 EX**。按实际费用、合法目标和现有触发评估。借来的天冥当场就可起动；借圣士郎则要另有回复才能触发打 2。[拿到天冥的选择](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/t7B32v/notes/06-meta.md) |
 
-对照使用第二张灾藤和第二张玛文的场面，比较回收炎术、用身体交换与留费清场的收益。[配对实战](references/second-saito.md)
+## 可直接重练的一手
 
-已经有三面海贼旗。先算把炮手放在哪一次旗前，能多打几段伤害，再开始行动。[从 T8 执财宝皇室](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-t7B32v-01.json&at=37&seat=1)
+从皇室第 1 局的**前 37 次输入，座位 1、T8**接手。皇室 4 PP，两个可攻击的八狱盗贼、EX 三旗，手里有芭芭萝丝与炮手。主教 20 血、0 PP，场上有天冥。先算这一回合能否打 20，再决定是否全压。实战先下芭芭萝丝，以 EP 进化，第一旗回 2 PP 下炮手，第二旗才用破坏清天冥。五面旗本身打 5，炮手赶上后四旗打 4，斥候攻 7，副船长攻 3，合计 **19**。主教剩 1，随后用忒弥斯清四体并靠白牙回复，皇室最终负。交回合前，单独数清场后手里的直伤能否越过这次回复。[原生录像](assets/royal-01.json) · [原局逐回合日志](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/t7B32v/games/01.md)
 
-对面梦羊触发后，先计算用一次小伤害消耗防止能否保住后续的大段伤害。[一次伤害防止的实战](references/sacred-sheep.md)
+炮手被对方攻袭移除时，马上重算每旗少掉的 1。第 6 局的一条分支借天冥、耶菈，以两旗和黄金靴让欧克托莉斯攻击 6，下一次再攻 6 才获胜。遇到陌生卡组，改看对方实际可借的墓牌及清场后留下的攻击点。[去炮手后的分支](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/drills/logs/royal-06-cannon.md) · [双席题库](references/agent-duels.md) · [固定百局的皇室席记录](references/fixed.md)
 
-核对两个护符的五费盘面，数清天曜战骑当天的疾驰、回复和交回合后的守护。[同牌序取舍](references/heavenly-knight.md)
-
-在相同牌序第一次分歧处对照实战主教席和基础搜索的决定。[冻结打法对困难 Bot 的验证](references/trained-pilot.md)
+按特定主教对手找题时，查[双灾藤](references/second-saito.md)、[梦羊](references/sacred-sheep.md)、[天曜战骑](references/heavenly-knight.md)或[同表改打法](references/trained-pilot.md)。

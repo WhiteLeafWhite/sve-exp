@@ -1,5 +1,21 @@
 # SVE 主教实战记录
 
+## 下一阶段用哪份打法
+
+按自己要执的牌选入口。每份 skill 都附本地可导入的牌表、自己的出牌顺序和可直接接手的 SVE NEXT 原生录像。算力有限时，先用本方视野复盘一个输入，把两条合法线路的费用、伤害、留场与对方下一次响应写清，再播放已有后续。
+
+| 执牌方 | 本机或新会话调用 | 从哪一步接手 |
+|---|---|---|
+| 白牙萝蕾娜透京耶菈（F） | [$sve-bishop-matchups](skills/sve-bishop-matchups/SKILL.md) | 座位 0，T7 输入 43。圣士郎进化后，比较祈祷与承担者的两次回复。 |
+| 勒碧丝／封印炽天使（C） | [$sve-seraph-haven](skills/sve-seraph-haven/SKILL.md) | 座位 0，T21 输入 182。封印回 10 后，选哪两张进 EX。 |
+| 破坏巫师 cQZr8Z | [$sve-destruction-rune](skills/sve-destruction-rune/SKILL.md) | 座位 1，T15 输入 110。对方公开水银，先攻击还是先献黑章。 |
+| 侮蔑龙 zQrwne | [$sve-disdain-dragon](skills/sve-disdain-dragon/SKILL.md) | 座位 1，T17 输入 156。两个守护面前，先交换还是先进化自伤。 |
+| 财宝皇室 t7B32v | [$sve-loot-sword](skills/sve-loot-sword/SKILL.md) | 座位 1，T8 输入 37。选择首旗效果，算出五旗回合能打几点、清场后还剩多少。 |
+
+录像中有 14 份按主战者、主牌和进化牌张数区分的牌表。透京耶菈占 9 份，封印控制 1 份，巫师原表与大红莲版各 1 份，侮蔑龙与皇室各 1 份。第八至十五批封存 1,487 局正式或配对实打，另有 59 份分支。双席完赛 19 局，主教 4 胜 15 负，第 20 局停在 T14。对当前算力下的选择，保留 F 作为主教对照。这些样本中，三套主流的对手都是主教，相互对阵的强弱仍待验证。[透京九份版本与差异](skills/sve-bishop-matchups/references/versions.md) · [样本与独立牌序](skills/sve-bishop-matchups/references/bp20-current.md) · [19 局双席记录](batches/10-agent-duels/index.md)
+
+## 上一阶段的封存记录
+
 每局都有 SVE NEXT 录像与按回合整理的中文日志。战报中的生命先列主教，后列对手。第八批为日版 BP20 主教对三个固定困难 Bot 各 50 局，每五局有一次构筑与打法复盘。
 
 本轮推荐白牙萝蕾娜透京耶菈，40 张主牌、10 张进化牌，进化区放两张灾藤、一张玛文。同一套牌对固定困难 Bot，破坏巫师 63/125（50.4%）、侮蔑龙 55/122（45.1%）、财宝皇室 62/125（49.6%）。双席正式对练另有 19 局，主教 4 胜 15 负。第 20 局停在 T14，未计胜负。[完整牌表、胜率区间与构筑取舍](skills/sve-bishop-matchups/references/bp20-current.md) · [直接导入](skills/sve-bishop-matchups/references/bp20-recommended.json) · [两位执牌者的每局复盘](batches/10-agent-duels/index.md)
@@ -16,7 +32,7 @@
 
 **第十一和十二批**　对龙的独立 100 个牌序中，原打法胜 37 局。先攻采用更严格的留牌标准后胜 33 局，保留原打法。另用三个职业的新牌序比较第二张灾藤与第二张玛文的取舍。每项都有匹配的对照牌序、先后攻记录与逐局录像。[对龙起手](batches/11-dragon-mulligan/index.md) · [三对局进化位](batches/12-second-saito/index.md)
 
-按驾驶职业选择陪练技能。[主教](skills/sve-bishop-matchups/SKILL.md) · [破坏巫师](skills/sve-destruction-rune/SKILL.md) · [侮蔑龙](skills/sve-disdain-dragon/SKILL.md) · [财宝皇室](skills/sve-loot-sword/SKILL.md)
+第八批另外实测了独立的封印炽天使主轴。三种固定困难对手各 10 局，主教依次取得 1、0、2 胜。[第八批选表记录](batches/08-bp20-hard-150/construction.md)
 
 **第十三批**　圣启梦羊在对方主阶段提供一次伤害防止。将两张梦羊放入共同主教，用预先指定的相同牌序与双灾藤原表比较，保留两张牌在洗牌前的物理位置。[构筑与三职业复盘](batches/13-sacred-sheep/index.md) · [原百局的首段伤害](batches/09-bp20-fixed-300/first-damage.md)
 
@@ -30,7 +46,7 @@
 
 [三组二十局战绩](skills/sve-bishop-matchups/references/results.md) · [最终主教牌表与张数](skills/sve-bishop-matchups/references/deck.md) · [导入牌表](skills/sve-bishop-matchups/references/bishop-final.json) · [三对局打法](skills/sve-bishop-matchups/references/playbook.md) · [可供其他会话使用的 skill](skills/sve-bishop-matchups/SKILL.md)
 
-跨设备使用时，安装完整的 `skills/sve-bishop-matchups` 目录，在新会话中调用 `$sve-bishop-matchups`。每局的 JSON 可在 SVE NEXT 0.4.3 的 Watch replays 中打开。
+跨设备使用时，把所选的完整 skill 目录安装到技能目录，在新会话按上表名称调用。每局的 JSON 可在 SVE NEXT 0.4.3 的 Watch replays 中打开。
 
 | 批次 | 对手 | 资料 |
 |---|---|---|

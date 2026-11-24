@@ -1,30 +1,27 @@
 ---
 name: sve-destruction-rune
-description: 在 SVE NEXT 日版 BP20 使用 cQZr8Z「20二妹」破坏巫师对练，处理偶像场位、献祭、里榭娜检索、阿克西雅的超进化爆发和对主教的攻守次序。
+description: 驾驶 Shadowverse EVOLVE 日版 BP20 的 cQZr8Z「20二妹」破坏巫师。用于偶像起手、献祭与场位、独唱横置、阿克西雅超进化和首攻前的直伤，也覆盖一张大红莲的实战变体。
 ---
 
 # 破坏巫师「20二妹」
 
-每组新增的终局算例与出牌题见[固定百局复盘](references/fixed.md)。
+固定困难对手使用 cQZr8Z 原表，40 张主牌、9 张进化牌。执巫师复盘时分清两个版本。双席第 1–4 局用原表，巫师 2 胜 2 负。第 5–7 局把第三张重返的奏绝 BP15-045 换成一张大红莲之术 BP06-047，巫师 2 胜 1 负。七局对手都是主教。[原表](assets/cQZr8Z.json) · [大红莲一张版](assets/cQZr8Z-crimson.json) · [换牌与正式对局记录](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/meta-deck-log.md)
 
-双席实战中保留愉悦、安排进化费与独唱横置对象的例子见[破坏巫师主流席手记](references/agent-meta-coach.md)。
+## 这一回合怎么出牌
 
-1. 使用 cQZr8Z 的 40 张主牌、9 张进化牌。起手先找能在前两回合落地的偶像或整理牌顶的破坏的荒野，再看能否接里榭娜或祈祷者。先攻手只有高费终结时，按整手重抽规则估计空过的代价。[冻结牌表](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/05-cQZr8Z/opponent.json)
-2. 记录场上**全部**偶像，包括护符。阿克西雅的普通进化能力可送走另一张偶像并检索里榭娜，超进化能力按结算时场上偶像数打主战者。有多个待结算能力时，先算保留该偶像能多打几血，再决定是否献祭及触发顺序。祈祷者的起动也会消耗另一张偶像，要比较这张牌用来打 2、保留计数或帮随从开路的价值。[卡文查询](https://svehelperwin.com/)
-3. 暗黑破坏的创造物在己方主阶段开始时打 2，单独计算随从攻击。里榭娜 BP15-039 入场检查三张偶像。奏绝的独唱（BP15-PR12）选择一个敌方随从，一次造成「横置的偶像数 × 2」点伤害。横置两张偶像，普通从者受 4 点，席翁本人受 3 点。同场一个普通从者仍受 4 点，因为席翁只保护自己和主战者。优先横置护符和本回合无须攻击的随从。
-4. **实战题**。对主教第 36 局 T13，主教 14 血。阿克西雅超进化打 5，之后阿克西雅与莉迪耶尔交换，里榭娜和两个狂信者留下 4、3、3 三段。先遮住录像，解释为什么要让阿克西雅负责交换。[逐回合战报](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/08-bp20-hard-150/cQZr8Z/games/36.md)
-5. 每五局记一次「为解场牺牲几张偶像、保住几段攻击、SEP 最终换得多少点伤害」。把一条替代路线定位到明确输入，分别保存成功例与失误例。只在双 agent 对练阶段讨论微调，和冻结原表比较累计换入的主牌及进化牌总张数，最多五张。站在巫师座位只看己方手牌与公开区。[更多实战](https://github.com/WhiteLeafWhite/sve-exp/tree/main/batches/08-bp20-hard-150/cQZr8Z)
+| 局面 | 从巫师席怎样算 |
+|---|---|
+| 起手与前两回合 | 找能落地的偶像、破坏的荒野，再看第三张偶像何时进场。两张重返都需要墓场后续，保留要有可实际使用的找牌手段。第一局 T2 荒野看到愉悦，取它回 1 PP，立刻再下第二张荒野。第二次取到的愉悦留给后续。当场能说出这 1 PP 付给谁，才有必要现在用。[第 1 局执牌手记](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/cQZr8Z/notes/01-meta.md) |
+| 打白黑章或起动祈祷者 | 清点场上全部偶像，包括护符。白之章·黑之章需要目标，其附带的打 2、回 2 要满足两个偶像。祈祷者要横置并献另一张偶像。第 3 局先下祈祷者凑两张，白黑章处理灾藤，再献荒野处理圣士郎。若先献荒野，就少打脸 2、少回 2。[第 3 局](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/cQZr8Z/notes/03-meta.md) |
+| 独唱要横置几张 | 每横置一张偶像提供 2 点，合并为对一个随从的一次伤害。普通目标需要 4 伤时横置两张，剩 4 防的有效席翁因自减 1 则需要三张。优先横置护符或新下、不能打脸的随从。横置守护挡路就先解，守护直立时也可让旧随从先攻击再用独唱。[第 7 局，两次五防守护](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/cQZr8Z/notes/07-meta.md) |
+| 阿克西雅收尾 | 超进化打主战者的数值取决于**结算时**己方偶像牌数。需要普通进化效果献祭检索里榭娜时，比较两个待结算能力的顺序，也清点用来穿守护的攻击者。第八批第 36 局让阿克西雅超进化打 5 后负责交换，其余三人还保有 4、3、3 的攻击。[第 36 局](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/08-bp20-hard-150/cQZr8Z/games/36.md) |
 
-**留一个法术目标。** 固定百局第 8 局，巫师的 EX 曾公开白之章·黑之章与奏绝的独唱。T11 让白之章先选莉迪耶尔，打主教 2 并回 2，再用独唱移除她。荒野献祭新约·黑之章打 1，里榭娜两次攻击各打 4。祈祷者献祭新约·白之章再打 2，最后一次里榭娜攻击打 4，主教从 16 血降至 -1。重排两张法术前，先查白之章还剩什么合法目标、结算时是否仍有两张偶像。[固定巫师第 8 局](https://github.com/WhiteLeafWhite/sve-exp/blob/main/batches/09-bp20-fixed-300/cQZr8Z/games/08.md)
+满场要用歌声腾位时，先估祭品未来还能贡献几点伤害，再判断哪名敌人会活到下一轮。第 7 局改献已横置的崇拜者，留下的暗黑创造物五次共打 6，仍被主教在 T23 一回合打完 23。准备交回合时先数旧天冥的攻击和起动，再数可能新增的起动。[该分支逐回合日志](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/drills/logs/rune-07-keep-artifact.md)
 
-先从本方座位重做一个关键决定，再对照当时的理由与比赛结果。[双座位对练题](references/agent-duels.md)
+## 可直接重练的一手
 
-对照使用第二张灾藤和第二张玛文的场面，比较回收炎术、用身体交换与留费清场的收益。[配对实战](references/second-saito.md)
+用下列录像恢复前 **110 次输入，座位 1、T15**。这是大红莲变体。大红莲已经结算，主教剩 11 血、3 PP，公开 EX 有水银。己方 1 PP，场上三名 3 攻狂信者、荒野和新约黑章。先比较「立刻攻击」及「先起动荒野」两种合法行动。后一线先献黑章打 1，借愉悦回费再让祈祷者献白章打 2，最后三击在水银下各打 2。主教带 2 血进入清场回合，巫师 T19 胜。先宣告攻击的一线让主教带 5 血清场，巫师 T24 负。对手的可用 PP 或公开 Quick 改变时重新计算。[先攻击录像](assets/rune-06-hold.json) · [先献章录像](assets/rune-06-burn-first.json)
 
-荒野翻出两张牌，手里还有第二张荒野。用实际剩余费用决定选资源、身体还是继续找牌。[从 T2 执破坏巫师](http://127.0.0.1:5170/practice/index.html?replay=BP20-agents-cQZr8Z-01.json&at=8&seat=1)
+使用大红莲版时也可比较已知斩杀与先用荒野看二。未揭示的狂信者只能列作摸到后的备选。[本方执牌手记](references/agent-meta-coach.md) · [双席题库](references/agent-duels.md) · [困难席实战记录](references/fixed.md)
 
-对面梦羊触发后，先计算用一次小伤害消耗防止能否保住后续的大段伤害。[一次伤害防止的实战](references/sacred-sheep.md)
-
-核对两个护符的五费盘面，数清天曜战骑当天的疾驰、回复和交回合后的守护。[同牌序取舍](references/heavenly-knight.md)
-
-在相同牌序第一次分歧处对照实战主教席和基础搜索的决定。[冻结打法对困难 Bot 的验证](references/trained-pilot.md)
+要复现特定对手，再查[双灾藤](references/second-saito.md)、[梦羊](references/sacred-sheep.md)、[天曜战骑](references/heavenly-knight.md)或[同牌表改打法](references/trained-pilot.md)。
