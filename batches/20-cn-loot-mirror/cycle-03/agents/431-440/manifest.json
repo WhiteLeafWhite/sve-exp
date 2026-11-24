@@ -1,0 +1,689 @@
+{
+  "firstGame": 431,
+  "lastGame": 440,
+  "folder": "cycle-03/agents/431-440",
+  "matchup": "agents",
+  "applied": [
+    "拆炮,先旗",
+    "留费与 Quick、前两费落点、双方十墓"
+  ],
+  "next": [
+    "拆炮,留精炼",
+    "留费与 Quick、双方十墓、前两费落点"
+  ],
+  "stats": [
+    {
+      "wins": 7,
+      "losses": 3,
+      "draws": 0,
+      "firstWins": 3,
+      "firstGames": 5,
+      "secondWins": 4,
+      "secondGames": 5,
+      "direct": 0,
+      "authored": 160,
+      "fallback": 285,
+      "forced": 153,
+      "hard": 0
+    },
+    {
+      "wins": 3,
+      "losses": 7,
+      "draws": 0,
+      "firstWins": 1,
+      "firstGames": 5,
+      "secondWins": 2,
+      "secondGames": 5,
+      "direct": 0,
+      "authored": 183,
+      "fallback": 234,
+      "forced": 157,
+      "hard": 0
+    }
+  ],
+  "config": {
+    "revisions": [
+      "r6",
+      "r6"
+    ],
+    "focus": [
+      "拆炮,先旗",
+      "留费与 Quick、前两费落点、双方十墓"
+    ],
+    "live": []
+  },
+  "skills": [
+    "https://github.com/WhiteLeafWhite/sve-exp/blob/a3d7f7cd9994fb77ec06f294b8b086781eac0de3/skills/sve-loot-sword/SKILL.md",
+    "https://github.com/WhiteLeafWhite/sve-exp/blob/a3d7f7cd9994fb77ec06f294b8b086781eac0de3/skills/sve-loot-sword/references/bp20-mainstream.md",
+    "https://github.com/WhiteLeafWhite/sve-exp/blob/a3d7f7cd9994fb77ec06f294b8b086781eac0de3/batches/10-agent-duels/seats.md"
+  ],
+  "restriction": "08_26_CHN",
+  "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+  "engine": "c95927874b565f21",
+  "deckHashes": [
+    "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+    "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"
+  ],
+  "games": [
+    {
+      "id": "m0431",
+      "number": 431,
+      "phase": "m044",
+      "matchup": "agents",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "拆炮,先旗",
+        "留费与 Quick、前两费落点、双方十墓"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"
+      ],
+      "authors": [
+        {
+          "rev": "r6",
+          "fingerprint": "2de490af45a2757d38d1d3eb1d301fdaca8a330f05c83032dcef5f3c6ec8981b"
+        },
+        {
+          "rev": "r6",
+          "fingerprint": "73c37ae7e1a4044156faf635e725ebd5c111cde76ea8152a369cba54e65dda58"
+        }
+      ],
+      "hp": [
+        6,
+        0
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 13,
+          "fallback": 27,
+          "forced": 16
+        },
+        {
+          "direct": 0,
+          "authored": 19,
+          "fallback": 22,
+          "forced": 16
+        }
+      ],
+      "inputCount": 113,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 13,
+      "seed": "d3b7f7aa-9c75-4e21-a631-dce49f310878",
+      "replaySHA256": "d5387638f6af49949bcc66384e643853607ab32dd994c339b96d7dfaef896bc8"
+    },
+    {
+      "id": "m0432",
+      "number": 432,
+      "phase": "m044",
+      "matchup": "agents",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "拆炮,先旗",
+        "留费与 Quick、前两费落点、双方十墓"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"
+      ],
+      "authors": [
+        {
+          "rev": "r6",
+          "fingerprint": "2de490af45a2757d38d1d3eb1d301fdaca8a330f05c83032dcef5f3c6ec8981b"
+        },
+        {
+          "rev": "r6",
+          "fingerprint": "73c37ae7e1a4044156faf635e725ebd5c111cde76ea8152a369cba54e65dda58"
+        }
+      ],
+      "hp": [
+        10,
+        -2
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 20,
+          "fallback": 32,
+          "forced": 15
+        },
+        {
+          "direct": 0,
+          "authored": 11,
+          "fallback": 19,
+          "forced": 18
+        }
+      ],
+      "inputCount": 115,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 14,
+      "seed": "8d102f79-991b-4ba4-abbc-9788fb93dda2",
+      "replaySHA256": "f4f180f09ee59004048ba2c1f2a1f623efac1f890effc657a3d1b4d788bf2bc5"
+    },
+    {
+      "id": "m0433",
+      "number": 433,
+      "phase": "m044",
+      "matchup": "agents",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "拆炮,先旗",
+        "留费与 Quick、前两费落点、双方十墓"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"
+      ],
+      "authors": [
+        {
+          "rev": "r6",
+          "fingerprint": "2de490af45a2757d38d1d3eb1d301fdaca8a330f05c83032dcef5f3c6ec8981b"
+        },
+        {
+          "rev": "r6",
+          "fingerprint": "73c37ae7e1a4044156faf635e725ebd5c111cde76ea8152a369cba54e65dda58"
+        }
+      ],
+      "hp": [
+        12,
+        0
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 17,
+          "fallback": 31,
+          "forced": 11
+        },
+        {
+          "direct": 0,
+          "authored": 23,
+          "fallback": 14,
+          "forced": 16
+        }
+      ],
+      "inputCount": 112,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 13,
+      "seed": "4647f234-570e-4151-9c4a-f72e8d894bf8",
+      "replaySHA256": "4ed84d16249abff6772423349e21de4c39e686c513389199d5345d9424a2bcab"
+    },
+    {
+      "id": "m0434",
+      "number": 434,
+      "phase": "m044",
+      "matchup": "agents",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "拆炮,先旗",
+        "留费与 Quick、前两费落点、双方十墓"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"
+      ],
+      "authors": [
+        {
+          "rev": "r6",
+          "fingerprint": "2de490af45a2757d38d1d3eb1d301fdaca8a330f05c83032dcef5f3c6ec8981b"
+        },
+        {
+          "rev": "r6",
+          "fingerprint": "73c37ae7e1a4044156faf635e725ebd5c111cde76ea8152a369cba54e65dda58"
+        }
+      ],
+      "hp": [
+        5,
+        0
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 10,
+          "fallback": 28,
+          "forced": 15
+        },
+        {
+          "direct": 0,
+          "authored": 11,
+          "fallback": 22,
+          "forced": 15
+        }
+      ],
+      "inputCount": 101,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 12,
+      "seed": "8fe263ea-a2e9-451e-aafc-9809458fb0a1",
+      "replaySHA256": "fd029a4ca3c7374a6bb80c69de39978aeeaced24ba777989d8d49ad7558ee285"
+    },
+    {
+      "id": "m0435",
+      "number": 435,
+      "phase": "m044",
+      "matchup": "agents",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "拆炮,先旗",
+        "留费与 Quick、前两费落点、双方十墓"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"
+      ],
+      "authors": [
+        {
+          "rev": "r6",
+          "fingerprint": "2de490af45a2757d38d1d3eb1d301fdaca8a330f05c83032dcef5f3c6ec8981b"
+        },
+        {
+          "rev": "r6",
+          "fingerprint": "73c37ae7e1a4044156faf635e725ebd5c111cde76ea8152a369cba54e65dda58"
+        }
+      ],
+      "hp": [
+        12,
+        -1
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 8,
+          "fallback": 30,
+          "forced": 15
+        },
+        {
+          "direct": 0,
+          "authored": 19,
+          "fallback": 22,
+          "forced": 20
+        }
+      ],
+      "inputCount": 114,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 15,
+      "seed": "2dcc81fa-0bcb-44ba-9c8e-1b1a58ee6124",
+      "replaySHA256": "4b56a5953ff2cce8b4ef1bbebf8179c9348eae92e16e385bb79e566e414bc929"
+    },
+    {
+      "id": "m0436",
+      "number": 436,
+      "phase": "m044",
+      "matchup": "agents",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "拆炮,先旗",
+        "留费与 Quick、前两费落点、双方十墓"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"
+      ],
+      "authors": [
+        {
+          "rev": "r6",
+          "fingerprint": "2de490af45a2757d38d1d3eb1d301fdaca8a330f05c83032dcef5f3c6ec8981b"
+        },
+        {
+          "rev": "r6",
+          "fingerprint": "73c37ae7e1a4044156faf635e725ebd5c111cde76ea8152a369cba54e65dda58"
+        }
+      ],
+      "hp": [
+        6,
+        -1
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 30,
+          "fallback": 26,
+          "forced": 13
+        },
+        {
+          "direct": 0,
+          "authored": 14,
+          "fallback": 24,
+          "forced": 12
+        }
+      ],
+      "inputCount": 119,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 12,
+      "seed": "b0f83edb-d2c4-4269-8b4c-20deeb8c667b",
+      "replaySHA256": "1af87ca91fd078c2ad87b57a3207cf99a34f2f3160cc8e638145fa5fef0921c4"
+    },
+    {
+      "id": "m0437",
+      "number": 437,
+      "phase": "m044",
+      "matchup": "agents",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "拆炮,先旗",
+        "留费与 Quick、前两费落点、双方十墓"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"
+      ],
+      "authors": [
+        {
+          "rev": "r6",
+          "fingerprint": "2de490af45a2757d38d1d3eb1d301fdaca8a330f05c83032dcef5f3c6ec8981b"
+        },
+        {
+          "rev": "r6",
+          "fingerprint": "73c37ae7e1a4044156faf635e725ebd5c111cde76ea8152a369cba54e65dda58"
+        }
+      ],
+      "hp": [
+        0,
+        13
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 18,
+          "fallback": 37,
+          "forced": 18
+        },
+        {
+          "direct": 0,
+          "authored": 29,
+          "fallback": 37,
+          "forced": 14
+        }
+      ],
+      "inputCount": 153,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 14,
+      "seed": "dbaf20b5-21b5-4f94-ada8-1f48e6da1d5a",
+      "replaySHA256": "931cb4ff4980ca4672be853f2709110f6f72d2dc6677c3997fb8728ef8a26f96"
+    },
+    {
+      "id": "m0438",
+      "number": 438,
+      "phase": "m044",
+      "matchup": "agents",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "拆炮,先旗",
+        "留费与 Quick、前两费落点、双方十墓"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"
+      ],
+      "authors": [
+        {
+          "rev": "r6",
+          "fingerprint": "2de490af45a2757d38d1d3eb1d301fdaca8a330f05c83032dcef5f3c6ec8981b"
+        },
+        {
+          "rev": "r6",
+          "fingerprint": "73c37ae7e1a4044156faf635e725ebd5c111cde76ea8152a369cba54e65dda58"
+        }
+      ],
+      "hp": [
+        0,
+        12
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 9,
+          "fallback": 23,
+          "forced": 16
+        },
+        {
+          "direct": 0,
+          "authored": 15,
+          "fallback": 24,
+          "forced": 14
+        }
+      ],
+      "inputCount": 101,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 13,
+      "seed": "2f528f59-bed8-46c1-ac6e-33878a5510fd",
+      "replaySHA256": "1b8d966a0bee3d5e9f5f503d095671c34d83d6e6d5e153993f00c7405854c113"
+    },
+    {
+      "id": "m0439",
+      "number": 439,
+      "phase": "m044",
+      "matchup": "agents",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "拆炮,先旗",
+        "留费与 Quick、前两费落点、双方十墓"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"
+      ],
+      "authors": [
+        {
+          "rev": "r6",
+          "fingerprint": "2de490af45a2757d38d1d3eb1d301fdaca8a330f05c83032dcef5f3c6ec8981b"
+        },
+        {
+          "rev": "r6",
+          "fingerprint": "73c37ae7e1a4044156faf635e725ebd5c111cde76ea8152a369cba54e65dda58"
+        }
+      ],
+      "hp": [
+        -1,
+        6
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 10,
+          "fallback": 28,
+          "forced": 19
+        },
+        {
+          "direct": 0,
+          "authored": 24,
+          "fallback": 30,
+          "forced": 16
+        }
+      ],
+      "inputCount": 127,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 14,
+      "seed": "6cdf4280-fb0a-41f7-bdee-d4ed430f3d2f",
+      "replaySHA256": "da094777ada4adc46762843fe681d268a7157f8a296170573c264032e6c8066b"
+    },
+    {
+      "id": "m0440",
+      "number": 440,
+      "phase": "m044",
+      "matchup": "agents",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "拆炮,先旗",
+        "留费与 Quick、前两费落点、双方十墓"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2"
+      ],
+      "authors": [
+        {
+          "rev": "r6",
+          "fingerprint": "2de490af45a2757d38d1d3eb1d301fdaca8a330f05c83032dcef5f3c6ec8981b"
+        },
+        {
+          "rev": "r6",
+          "fingerprint": "73c37ae7e1a4044156faf635e725ebd5c111cde76ea8152a369cba54e65dda58"
+        }
+      ],
+      "hp": [
+        13,
+        0
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 25,
+          "fallback": 23,
+          "forced": 15
+        },
+        {
+          "direct": 0,
+          "authored": 18,
+          "fallback": 20,
+          "forced": 16
+        }
+      ],
+      "inputCount": 117,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 14,
+      "seed": "da67d57a-3339-4355-b0a3-88fc9cc8ac37",
+      "replaySHA256": "308a251a1b583d37cc2b149d3657fd5e474a6faf7726185dc461e72f13f15e1a"
+    }
+  ]
+}
