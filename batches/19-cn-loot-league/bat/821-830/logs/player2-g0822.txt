@@ -1,0 +1,162 @@
+g0822
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 吸血鬼公主·班比[BP02-069]、拂晓吸血鬼·诺因[BP12-069]、血色圆舞曲[BP12-079]、蝙蝠的鸣噪[BP18-096]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 保留 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 吸血鬼公主·班比[BP02-069]、拂晓吸血鬼·诺因[BP12-069]、血色圆舞曲[BP12-079]、蝙蝠的鸣噪[BP18-096]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 蝙蝠的鸣噪[BP18-096] 〔fallback〕
+    3 P2 selectCards/effect 午夜吸血鬼·瓦妮亚[BP09-083] 〔fallback〕
+    4 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 吸血鬼公主·班比[BP02-069]、拂晓吸血鬼·诺因[BP12-069]、血色圆舞曲[BP12-079]、午夜吸血鬼·瓦妮亚[BP09-083]｜对手手牌 5 张
+场 空 / 丛林蝙蝠[BP01-T15] 1/1
+EX 空 / 空｜墓 0/1
+    6 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 1/2
+手牌 吸血鬼公主·班比[BP02-069]、拂晓吸血鬼·诺因[BP12-069]、血色圆舞曲[BP12-079]、午夜吸血鬼·瓦妮亚[BP09-083]、血色圆舞曲[BP12-079]｜对手手牌 5 张
+场 空 / 丛林蝙蝠[BP01-T15] 1/1
+EX 空 / 空｜墓 0/1
+    8 P2 mainPhase 打出 午夜吸血鬼·瓦妮亚[BP09-083] 丛林蝙蝠[BP01-T15] 新→ex 〔fallback〕
+    9 P2 mainPhase 打出 丛林蝙蝠[BP01-T15] 午夜吸血鬼·瓦妮亚[BP09-083]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19 〔fallback〕
+   10 P2 mainPhase 攻击 丛林蝙蝠[BP01-T15] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   11 P1 quick 打出 精炼的空绝[BP15-026]
+   12 P1 selectCards/target 精炼的空绝[BP15-026]→午夜吸血鬼·瓦妮亚[BP09-083] 2；黄金之杯[BP15-T02] 新→ex；午夜吸血鬼·瓦妮亚[BP09-083] field→cemetery
+   13 P1 quick Quick 放过 丛林蝙蝠[BP01-T15]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=18
+   14 P2 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 1 回合 · HP 18/20 · PP 2/0
+手牌 吸血鬼公主·班比[BP02-069]、拂晓吸血鬼·诺因[BP12-069]、血色圆舞曲[BP12-079]、血色圆舞曲[BP12-079]｜对手手牌 5 张
+场 空 / 丛林蝙蝠[BP01-T15] 1/1 横、丛林蝙蝠[BP01-T15] 1/1
+EX 黄金之杯[BP15-T02] / 空｜墓 1/2
+   16 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019]
+   17 P1 choose/mode 纹章 空绝的显现·欧克托莉斯[BP20-T02] 新→ex
+   18 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex
+   20 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 丛林蝙蝠[BP01-T15]
+   21 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→丛林蝙蝠[BP01-T15] 2；丛林蝙蝠[BP01-T15]→空绝的显现·欧克托莉斯[BP20-019] 1；丛林蝙蝠[BP01-T15] field→cemetery 〔forced〕
+   22 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 18/20 · PP 0/3
+手牌 吸血鬼公主·班比[BP02-069]、拂晓吸血鬼·诺因[BP12-069]、血色圆舞曲[BP12-079]、血色圆舞曲[BP12-079]、拂晓吸血鬼·诺因[BP12-069]｜对手手牌 3 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/2 伤1 横 / 丛林蝙蝠[BP01-T15] 1/1
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02]、奉还的剑闪[BP20-026] / 空｜墓 1/2
+   24 P2 mainPhase 打出 吸血鬼公主·班比[BP02-069] 〔fallback〕
+   25 P2 mainPhase 攻击 丛林蝙蝠[BP01-T15] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   26 P1 quick Quick 放过 丛林蝙蝠[BP01-T15]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=17
+   27 P2 mainPhase 起动 吸血鬼公主·班比[BP02-069] 能力 1 吸血鬼公主·班比[BP02-069]→空绝的显现·欧克托莉斯[BP20-019] 3；吸血鬼公主·班比[BP02-069]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=16；丛林蝙蝠[BP01-T15] field→cemetery；空绝的显现·欧克托莉斯[BP20-019] field→cemetery 〔fallback〕
+   28 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 16/20 · PP 3/0
+手牌 拂晓吸血鬼·诺因[BP12-069]、血色圆舞曲[BP12-079]、血色圆舞曲[BP12-079]、拂晓吸血鬼·诺因[BP12-069]｜对手手牌 4 张
+场 空 / 吸血鬼公主·班比[BP02-069] 3/3
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02]、奉还的剑闪[BP20-026] / 空｜墓 2/2
+   30 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→吸血鬼公主·班比[BP02-069] 4；吸血鬼公主·班比[BP02-069] field→cemetery
+   31 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex
+   32 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 16/20 · PP 0/4
+手牌 拂晓吸血鬼·诺因[BP12-069]、血色圆舞曲[BP12-079]、血色圆舞曲[BP12-079]、拂晓吸血鬼·诺因[BP12-069]、白夜吸血鬼·瓦妮亚[BP09-082]｜对手手牌 3 张
+场 强袭盗贼[BP15-035] 3/1 / 空
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02]、黄金短剑[BP15-T01] / 空｜墓 3/4
+   34 P2 mainPhase 打出 拂晓吸血鬼·诺因[BP12-069] 〔fallback〕
+   35 P2 choose/effect droid 〔fallback〕
+   36 P2 choose/effect droid 生产器械[BP07-T01] 新→ex 〔fallback〕
+   37 P2 mainPhase 进化 拂晓吸血鬼·诺因[BP12-069] 〔fallback〕
+   38 P2 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 1 回合 · HP 16/20 · PP 4/0
+手牌 血色圆舞曲[BP12-079]、血色圆舞曲[BP12-079]、拂晓吸血鬼·诺因[BP12-069]、白夜吸血鬼·瓦妮亚[BP09-082]｜对手手牌 4 张
+场 强袭盗贼[BP15-035] 3/1 / 拂晓吸血鬼·诺因[BP12-069] 4/4、生产器械[BP07-T01] 2/1
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02]、黄金短剑[BP15-T01] / 生产器械[BP07-T01]｜墓 3/4
+   40 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   41 P1 mainPhase 攻击 强袭盗贼[BP15-035] → [《偶像》的碎片]二宫飞鸟[CP02-LD05]
+   42 P2 quick Quick 放过 强袭盗贼[BP15-035]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 3；P2 -3=17 〔forced〕
+   43 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+   44 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   45 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 1；P2 -1=16
+   47 P1 selectCards/target 海潮炮手[BP19-026]→生产器械[BP07-T01] 1；生产器械[BP07-T01] field→cemetery
+   48 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 16/16 · PP 0/5
+手牌 血色圆舞曲[BP12-079]、血色圆舞曲[BP12-079]、拂晓吸血鬼·诺因[BP12-069]、白夜吸血鬼·瓦妮亚[BP09-082]、白夜吸血鬼·瓦妮亚[BP09-082]｜对手手牌 2 张
+场 强袭盗贼[BP15-035] 3/1 横、海潮炮手[BP19-026] 3/3、大洋斥候[BP19-030] 2/2 / 拂晓吸血鬼·诺因[BP12-069] 4/4
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02]、黄金短剑[BP15-T01]、战栗的海贼旗[BP19-T01] / 生产器械[BP07-T01]｜墓 3/4
+   50 P2 mainPhase 攻击 拂晓吸血鬼·诺因[BP12-069] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   51 P1 quick Quick 放过 拂晓吸血鬼·诺因[BP12-069]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=12
+   52 P2 mainPhase 打出 白夜吸血鬼·瓦妮亚[BP09-082] 丛林蝙蝠[BP01-T15] 新→ex 〔fallback〕
+   53 P2 mainPhase 打出 拂晓吸血鬼·诺因[BP12-069] 〔fallback〕
+   54 P2 choose/effect bat 〔fallback〕
+   55 P2 choose/effect droid P2 +1=17；生产器械[BP07-T01] 新→ex 〔fallback〕
+   56 P2 mainPhase 进化 拂晓吸血鬼·诺因[BP12-069] 〔fallback〕
+   57 P2 mainPhase 攻击 拂晓吸血鬼·诺因[BP12-069] → 强袭盗贼[BP15-035] 〔fallback〕
+   58 P1 quick Quick 放过 拂晓吸血鬼·诺因[BP12-069]→强袭盗贼[BP15-035] 4；强袭盗贼[BP15-035]→拂晓吸血鬼·诺因[BP12-069] 3；强袭盗贼[BP15-035] field→cemetery
+   59 P2 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 1 回合 · HP 12/17 · PP 5/0
+手牌 血色圆舞曲[BP12-079]、血色圆舞曲[BP12-079]、白夜吸血鬼·瓦妮亚[BP09-082]｜对手手牌 3 张
+场 海潮炮手[BP19-026] 3/3、大洋斥候[BP19-030] 2/2 / 拂晓吸血鬼·诺因[BP12-069] 4/4 横、白夜吸血鬼·瓦妮亚[BP09-082] 2/2、拂晓吸血鬼·诺因[BP12-069] 4/1 伤3 横、丛林蝙蝠[BP01-T15] 2/1
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02]、黄金短剑[BP15-T01]、战栗的海贼旗[BP19-T01] / 生产器械[BP07-T01]、丛林蝙蝠[BP01-T15]、生产器械[BP07-T01]｜墓 4/4
+   61 P1 mainPhase 攻击 大洋斥候[BP19-030] → 拂晓吸血鬼·诺因[BP12-069]
+   62 P2 quick Quick 放过 大洋斥候[BP19-030]→拂晓吸血鬼·诺因[BP12-069] 2；拂晓吸血鬼·诺因[BP12-069]→大洋斥候[BP19-030] 4；大洋斥候[BP19-030] field→cemetery；拂晓吸血鬼·诺因[BP12-069] field→cemetery 〔forced〕
+   63 P1 mainPhase 打出 黄金短剑[BP15-T01]
+   64 P1 selectCards/target 黄金短剑[BP15-T01]→白夜吸血鬼·瓦妮亚[BP09-082] 2；白夜吸血鬼·瓦妮亚[BP09-082] field→cemetery
+   65 P1 mainPhase 攻击 海潮炮手[BP19-026] → [《偶像》的碎片]二宫飞鸟[CP02-LD05]
+   66 P2 quick Quick 放过 海潮炮手[BP19-026]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 3；P2 -3=14 〔forced〕
+   67 P1 mainPhase 打出 空绝的崇拜者[BP15-028]
+   68 P1 mainPhase 进化 空绝的崇拜者[BP15-028]（EP） 黄金短剑[BP15-T01] 新→ex
+   69 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   70 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 1；P2 -1=13
+   72 P1 selectCards/target 海潮炮手[BP19-026]→丛林蝙蝠[BP01-T15] 1；丛林蝙蝠[BP01-T15] field→cemetery
+   73 P1 selectPending 黄金之靴[BP15-T03] 新→ex；纹章 空绝的显现·欧克托莉斯[BP20-T02] ex→banished
+   75 P1 mainPhase 结束主阶段
+
+T11 · 选手 2 回合 · HP 12/13 · PP 0/6
+手牌 血色圆舞曲[BP12-079]、血色圆舞曲[BP12-079]、白夜吸血鬼·瓦妮亚[BP09-082]、午夜吸血鬼·瓦妮亚[BP09-083]｜对手手牌 3 张
+场 海潮炮手[BP19-026] 4/3 横、空绝的崇拜者[BP15-028] 3/3 / 拂晓吸血鬼·诺因[BP12-069] 4/4
+EX 黄金短剑[BP15-T01]、黄金之靴[BP15-T03] / 生产器械[BP07-T01]、丛林蝙蝠[BP01-T15]、生产器械[BP07-T01]｜墓 5/6
+   77 P2 mainPhase 攻击 拂晓吸血鬼·诺因[BP12-069] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   78 P1 quick Quick 放过 拂晓吸血鬼·诺因[BP12-069]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=8
+   79 P2 mainPhase 打出 生产器械[BP07-T01] 〔fallback〕
+   80 P2 mainPhase 打出 午夜吸血鬼·瓦妮亚[BP09-083] 丛林蝙蝠[BP01-T15] 新→ex 〔fallback〕
+   81 P2 mainPhase 打出 白夜吸血鬼·瓦妮亚[BP09-082] 丛林蝙蝠[BP01-T15] 新→ex 〔fallback〕
+   82 P2 mainPhase 打出 丛林蝙蝠[BP01-T15] 〔fallback〕
+   83 P2 selectPending p241 午夜吸血鬼·瓦妮亚[BP09-083]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=7；P2 +1=14 〔fallback〕
+   84 P2 mainPhase 打出 血色圆舞曲[BP12-079] 〔fallback〕
+   85 P2 choose/mode damage 血色圆舞曲[BP12-079]→第八绝杰·欧克托莉斯[BP10-LD02] 2；血色圆舞曲[BP12-079]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 1；P1 -2=5；P2 -1=13 〔fallback〕
+   86 P2 mainPhase 打出 血色圆舞曲[BP12-079] 〔fallback〕
+   87 P2 choose/mode damage 血色圆舞曲[BP12-079]→第八绝杰·欧克托莉斯[BP10-LD02] 2；血色圆舞曲[BP12-079]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 1；P1 -2=3；P2 -1=12 〔fallback〕
+   88 P2 mainPhase 结束主阶段 〔forced〕
+
+T12 · 选手 1 回合 · HP 3/12 · PP 6/0
+手牌 ｜对手手牌 4 张
+场 海潮炮手[BP19-026] 4/3、空绝的崇拜者[BP15-028] 3/3 / 拂晓吸血鬼·诺因[BP12-069] 4/4 横、生产器械[BP07-T01] 3/1、午夜吸血鬼·瓦妮亚[BP09-083] 2/1、白夜吸血鬼·瓦妮亚[BP09-082] 1/2、丛林蝙蝠[BP01-T15] 2/1
+EX 黄金短剑[BP15-T01]、黄金之靴[BP15-T03] / 生产器械[BP07-T01]、丛林蝙蝠[BP01-T15]、丛林蝙蝠[BP01-T15]｜墓 5/8
+   90 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   91 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]
+   92 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   93 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 1；P2 -1=11
+   96 P1 selectPending 黄金之靴[BP15-T03] 新→ex
+   97 P1 selectCards/target 海潮炮手[BP19-026]→午夜吸血鬼·瓦妮亚[BP09-083] 1；午夜吸血鬼·瓦妮亚[BP09-083] field→cemetery
+   98 P1 mainPhase 攻击 海潮炮手[BP19-026] → [《偶像》的碎片]二宫飞鸟[CP02-LD05]
+   99 P2 quick Quick 放过 海潮炮手[BP19-026]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 5；P2 -5=6 〔forced〕
+  100 P1 mainPhase 打出 篡夺的随从[BP05-029]
+  101 P1 mainPhase 打出 黄金短剑[BP15-T01]
+  102 P1 selectCards/target 黄金短剑[BP15-T01]→生产器械[BP07-T01] 2；黄金短剑[BP15-T01]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 2；P2 -2=4；生产器械[BP07-T01] field→cemetery
+  104 P1 selectCards/target 拂晓吸血鬼·诺因[BP12-069] field→cemetery
+  105 P1 mainPhase 打出 黄金之靴[BP15-T03]
+  108 P1 mainPhase 攻击 空绝的崇拜者[BP15-028] → [《偶像》的碎片]二宫飞鸟[CP02-LD05]
+  109 P2 quick Quick 放过 空绝的崇拜者[BP15-028]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 3；P2 -3=1 〔forced〕
+  110 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → [《偶像》的碎片]二宫飞鸟[CP02-LD05]
+  111 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 4；P2 -4=-3 〔forced〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":12}
+生命 3/-3
+选手输入 [{"direct":0,"authored":18,"fallback":32,"forced":14},{"direct":0,"authored":1,"fallback":29,"forced":18}]
