@@ -1,0 +1,683 @@
+{
+  "firstGame": 381,
+  "lastGame": 390,
+  "folder": "rally/381-390",
+  "matchup": "rally",
+  "next": [
+    "争场,首攻前",
+    "先拆旗伤引擎、留费与防守、前两费与留牌"
+  ],
+  "stats": [
+    {
+      "wins": 3,
+      "losses": 7,
+      "draws": 0,
+      "firstWins": 1,
+      "firstGames": 5,
+      "secondWins": 2,
+      "secondGames": 5,
+      "direct": 0,
+      "authored": 118,
+      "fallback": 252,
+      "forced": 187
+    },
+    {
+      "wins": 7,
+      "losses": 3,
+      "draws": 0,
+      "firstWins": 3,
+      "firstGames": 5,
+      "secondWins": 4,
+      "secondGames": 5,
+      "direct": 0,
+      "authored": 51,
+      "fallback": 236,
+      "forced": 170
+    }
+  ],
+  "config": {
+    "revisions": [
+      "r3",
+      "r3"
+    ],
+    "focus": [
+      "争场,炮手",
+      "先拆旗伤引擎、留费与防守、首攻前算伤害"
+    ],
+    "live": []
+  },
+  "skills": [
+    "https://github.com/WhiteLeafWhite/sve-exp/blob/a3d7f7cd9994fb77ec06f294b8b086781eac0de3/skills/sve-loot-sword/SKILL.md",
+    "https://github.com/WhiteLeafWhite/sve-exp/blob/a3d7f7cd9994fb77ec06f294b8b086781eac0de3/skills/sve-bp20-rally-vs-loot/SKILL.md",
+    "https://github.com/WhiteLeafWhite/sve-exp/blob/a3d7f7cd9994fb77ec06f294b8b086781eac0de3/batches/10-agent-duels/seats.md"
+  ],
+  "restriction": "08_26_CHN",
+  "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+  "engine": "c95927874b565f21",
+  "deckHashes": [
+    "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+    "0645e6d7a97df340d5a59d1c615255b80c17c38104dd61e1007ac4fb3740c59c"
+  ],
+  "games": [
+    {
+      "id": "g0381",
+      "number": 381,
+      "phase": "b039",
+      "matchup": "rally",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "争场,炮手",
+        "先拆旗伤引擎、留费与防守、首攻前算伤害"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "0645e6d7a97df340d5a59d1c615255b80c17c38104dd61e1007ac4fb3740c59c"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        16,
+        -1
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 7,
+          "fallback": 32,
+          "forced": 12
+        },
+        {
+          "direct": 0,
+          "authored": 3,
+          "fallback": 14,
+          "forced": 19
+        }
+      ],
+      "inputCount": 87,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 11,
+      "seed": "aaa4c708-3239-46e5-8218-1e2e7868fb34",
+      "replaySHA256": "213dbdf03ce0f3e344880ec15a2b26731e8919e88d0e592a22b20741f683b1fb"
+    },
+    {
+      "id": "g0382",
+      "number": 382,
+      "phase": "b039",
+      "matchup": "rally",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "争场,炮手",
+        "先拆旗伤引擎、留费与防守、首攻前算伤害"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "0645e6d7a97df340d5a59d1c615255b80c17c38104dd61e1007ac4fb3740c59c"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        10,
+        -2
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 12,
+          "fallback": 29,
+          "forced": 20
+        },
+        {
+          "direct": 0,
+          "authored": 4,
+          "fallback": 25,
+          "forced": 20
+        }
+      ],
+      "inputCount": 110,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 14,
+      "seed": "39fd1918-9504-43f5-9a0d-405713c9e470",
+      "replaySHA256": "d054ae3c8798bb960793354d8ada9b4969c64d8dc9fe90f726ba20ab1d4e73ed"
+    },
+    {
+      "id": "g0383",
+      "number": 383,
+      "phase": "b039",
+      "matchup": "rally",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "争场,炮手",
+        "先拆旗伤引擎、留费与防守、首攻前算伤害"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "0645e6d7a97df340d5a59d1c615255b80c17c38104dd61e1007ac4fb3740c59c"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        0,
+        14
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 14,
+          "fallback": 30,
+          "forced": 23
+        },
+        {
+          "direct": 0,
+          "authored": 3,
+          "fallback": 27,
+          "forced": 22
+        }
+      ],
+      "inputCount": 119,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 14,
+      "seed": "fc8c0e5a-0810-42fb-9e5f-67560a792254",
+      "replaySHA256": "efe0a895a8e95f50c43163327e9582a38dc7dc2155c70c922b6dce9667103074"
+    },
+    {
+      "id": "g0384",
+      "number": 384,
+      "phase": "b039",
+      "matchup": "rally",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "争场,炮手",
+        "先拆旗伤引擎、留费与防守、首攻前算伤害"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "0645e6d7a97df340d5a59d1c615255b80c17c38104dd61e1007ac4fb3740c59c"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        0,
+        17
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 11,
+          "fallback": 9,
+          "forced": 23
+        },
+        {
+          "direct": 0,
+          "authored": 6,
+          "fallback": 23,
+          "forced": 13
+        }
+      ],
+      "inputCount": 85,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 11,
+      "seed": "409e61e5-4977-4cd7-a04e-f760cad2fc99",
+      "replaySHA256": "dbd1bc1e8cfc46936036946882abc8342a248bfa84c967d0f4f4cf7e29bcc1fa"
+    },
+    {
+      "id": "g0385",
+      "number": 385,
+      "phase": "b039",
+      "matchup": "rally",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "争场,炮手",
+        "先拆旗伤引擎、留费与防守、首攻前算伤害"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "0645e6d7a97df340d5a59d1c615255b80c17c38104dd61e1007ac4fb3740c59c"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        0,
+        8
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 8,
+          "fallback": 32,
+          "forced": 18
+        },
+        {
+          "direct": 0,
+          "authored": 8,
+          "fallback": 23,
+          "forced": 19
+        }
+      ],
+      "inputCount": 108,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 12,
+      "seed": "409fb5e5-3b7c-43af-8fc9-b8dff682f7d2",
+      "replaySHA256": "883f619b58bc339539387070f74f7c505419da7085ddb14b7522bd9fcff1cb0b"
+    },
+    {
+      "id": "g0386",
+      "number": 386,
+      "phase": "b039",
+      "matchup": "rally",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "争场,炮手",
+        "先拆旗伤引擎、留费与防守、首攻前算伤害"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "0645e6d7a97df340d5a59d1c615255b80c17c38104dd61e1007ac4fb3740c59c"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        15,
+        0
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 18,
+          "fallback": 18,
+          "forced": 15
+        },
+        {
+          "direct": 0,
+          "authored": 3,
+          "fallback": 21,
+          "forced": 14
+        }
+      ],
+      "inputCount": 89,
+      "result": {
+        "winner": 0,
+        "losses": [
+          {
+            "player": 1,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 10,
+      "seed": "d0d5ab69-00d6-4f44-a6be-05a3725c1f51",
+      "replaySHA256": "daf0e1274fc652b7c4ee7493eef4f337d96d629fdaf8b464c336caad5ee3379c"
+    },
+    {
+      "id": "g0387",
+      "number": 387,
+      "phase": "b039",
+      "matchup": "rally",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "争场,炮手",
+        "先拆旗伤引擎、留费与防守、首攻前算伤害"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "0645e6d7a97df340d5a59d1c615255b80c17c38104dd61e1007ac4fb3740c59c"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        -1,
+        11
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 7,
+          "fallback": 13,
+          "forced": 18
+        },
+        {
+          "direct": 0,
+          "authored": 6,
+          "fallback": 24,
+          "forced": 14
+        }
+      ],
+      "inputCount": 82,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 10,
+      "seed": "13fb9600-7d80-4383-9335-83c8c5eeacc5",
+      "replaySHA256": "d18b80a4d65128d7dbd18d176d866d6fa1daca66f35e3d83ded8907aae0cbc77"
+    },
+    {
+      "id": "g0388",
+      "number": 388,
+      "phase": "b039",
+      "matchup": "rally",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "争场,炮手",
+        "先拆旗伤引擎、留费与防守、首攻前算伤害"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "0645e6d7a97df340d5a59d1c615255b80c17c38104dd61e1007ac4fb3740c59c"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        0,
+        11
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 11,
+          "fallback": 26,
+          "forced": 18
+        },
+        {
+          "direct": 0,
+          "authored": 8,
+          "fallback": 26,
+          "forced": 17
+        }
+      ],
+      "inputCount": 106,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 11,
+      "seed": "7a8cb830-63f0-40be-8a4b-406ab9c0c055",
+      "replaySHA256": "e8dd35b00be718c5c12f2e975897743db48c7268cb409113b1e45e7ba766411e"
+    },
+    {
+      "id": "g0389",
+      "number": 389,
+      "phase": "b039",
+      "matchup": "rally",
+      "first": 1,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "争场,炮手",
+        "先拆旗伤引擎、留费与防守、首攻前算伤害"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "0645e6d7a97df340d5a59d1c615255b80c17c38104dd61e1007ac4fb3740c59c"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        -1,
+        14
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 14,
+          "fallback": 27,
+          "forced": 20
+        },
+        {
+          "direct": 0,
+          "authored": 6,
+          "fallback": 25,
+          "forced": 15
+        }
+      ],
+      "inputCount": 107,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 12,
+      "seed": "1a1b935d-4f6a-451c-9ffe-dea56e2e27c9",
+      "replaySHA256": "44348f924e4e3ca33c5123482ee04a25505c3966e19e8ff1b41eb5870ac6c315"
+    },
+    {
+      "id": "g0390",
+      "number": 390,
+      "phase": "b039",
+      "matchup": "rally",
+      "first": 2,
+      "mode": "policy",
+      "effortHistory": [
+        0.6
+      ],
+      "focus": [
+        "争场,炮手",
+        "先拆旗伤引擎、留费与防守、首攻前算伤害"
+      ],
+      "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+      "engine": "c95927874b565f21",
+      "hashes": [
+        "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+        "0645e6d7a97df340d5a59d1c615255b80c17c38104dd61e1007ac4fb3740c59c"
+      ],
+      "authors": [
+        {
+          "rev": "r3",
+          "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+        },
+        {
+          "rev": "r3",
+          "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+        }
+      ],
+      "hp": [
+        -1,
+        4
+      ],
+      "counts": [
+        {
+          "direct": 0,
+          "authored": 16,
+          "fallback": 36,
+          "forced": 20
+        },
+        {
+          "direct": 0,
+          "authored": 4,
+          "fallback": 28,
+          "forced": 17
+        }
+      ],
+      "inputCount": 121,
+      "result": {
+        "winner": 1,
+        "losses": [
+          {
+            "player": 0,
+            "reason": "leaderDefense"
+          }
+        ]
+      },
+      "turn": 13,
+      "seed": "83b6d6de-ecee-4bdf-8d40-5a9ea4afdcb3",
+      "replaySHA256": "187f346dad287b1862c239b8e3f3a51a3de0f8c9232416ca2f1f4055aa490e71"
+    }
+  ]
+}
