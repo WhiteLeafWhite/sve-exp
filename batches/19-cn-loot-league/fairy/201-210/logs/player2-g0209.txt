@@ -1,0 +1,138 @@
+g0209
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 森林妖精[BP13-013]、女王之剑·辛西亚[BP07-003]、灵之光耀[BP06-011]、冻土女王·皮雅希[BP15-004]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留
+    1 P2 mulligan 保留 P1 0=20；P2 0=20 〔authored〕
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 森林妖精[BP13-013]、女王之剑·辛西亚[BP07-003]、灵之光耀[BP06-011]、冻土女王·皮雅希[BP15-004]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 结束主阶段
+
+T2 · 选手 2 回合 · HP 20/20 · PP 1/1
+手牌 森林妖精[BP13-013]、女王之剑·辛西亚[BP07-003]、灵之光耀[BP06-011]、冻土女王·皮雅希[BP15-004]、妖精舞蹈家[BP01-011]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    4 P2 mainPhase 打出 灵之光耀[BP06-011] 妖精[BP01-T03] 新→ex；妖精[BP01-T03] 新→ex 〔fallback〕
+    5 P2 mainPhase 结束主阶段 〔forced〕
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 森林妖精[BP13-013]、女王之剑·辛西亚[BP07-003]、冻土女王·皮雅希[BP15-004]、妖精舞蹈家[BP01-011]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 妖精[BP01-T03]、妖精[BP01-T03]｜墓 0/1
+    7 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex
+    8 P1 mainPhase 结束主阶段
+
+T4 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 森林妖精[BP13-013]、女王之剑·辛西亚[BP07-003]、冻土女王·皮雅希[BP15-004]、妖精舞蹈家[BP01-011]、妖精龙[BP06-007]｜对手手牌 4 张
+场 强袭盗贼[BP15-035] 3/1 / 空
+EX 黄金短剑[BP15-T01] / 妖精[BP01-T03]、妖精[BP01-T03]｜墓 0/2
+   10 P2 mainPhase 打出 森林妖精[BP13-013] 〔fallback〕
+   11 P2 mainPhase 进化 森林妖精[BP13-013]（EP） P2 +2=22；妖精萤火[BP01-T02] 新→ex；妖精[BP01-T03] 新→ex 〔fallback〕
+   12 P2 mainPhase 打出 妖精萤火[BP01-T02] 〔fallback〕
+   13 P2 mainPhase 结束主阶段 〔forced〕
+
+T5 · 选手 1 回合 · HP 20/22 · PP 3/0
+手牌 女王之剑·辛西亚[BP07-003]、冻土女王·皮雅希[BP15-004]、妖精舞蹈家[BP01-011]、妖精龙[BP06-007]｜对手手牌 5 张
+场 强袭盗贼[BP15-035] 3/1 / 森林妖精[BP13-013] 3/3、妖精萤火[BP01-T02] 1/1
+EX 黄金短剑[BP15-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 0/2
+   15 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex
+   16 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+   17 P1 selectCards/target 奉还的剑闪[BP20-026]→森林妖精[BP13-013] 4；森林妖精[BP13-013] field→cemetery
+   18 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   19 P1 mainPhase 攻击 强袭盗贼[BP15-035] → [公主形态]可可萝[CP04-PR01]
+   20 P2 quick Quick 放过 强袭盗贼[BP15-035]→[公主形态]可可萝[CP04-PR01] 3；P2 -3=19 〔forced〕
+   21 P1 mainPhase 结束主阶段
+
+T6 · 选手 2 回合 · HP 20/19 · PP 0/3
+手牌 女王之剑·辛西亚[BP07-003]、冻土女王·皮雅希[BP15-004]、妖精舞蹈家[BP01-011]、妖精龙[BP06-007]、森林妖精[BP13-013]｜对手手牌 3 张
+场 强袭盗贼[BP15-035] 3/1 横、海潮炮手[BP19-026] 2/3 / 妖精萤火[BP01-T02] 1/1
+EX 战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 1/3
+   23 P2 mainPhase 打出 森林妖精[BP13-013] 〔fallback〕
+   24 P2 mainPhase 进化 森林妖精[BP13-013] P2 +2=21；妖精萤火[BP01-T02] 新→ex；妖精[BP01-T03] 新→ex 〔fallback〕
+   25 P2 mainPhase 攻击 妖精萤火[BP01-T02] → 强袭盗贼[BP15-035] 〔fallback〕
+   26 P1 quick Quick 放过 妖精萤火[BP01-T02]→强袭盗贼[BP15-035] 1；强袭盗贼[BP15-035]→妖精萤火[BP01-T02] 3；强袭盗贼[BP15-035] field→cemetery；妖精萤火[BP01-T02] field→cemetery
+   27 P2 mainPhase 打出 妖精萤火[BP01-T02] 〔fallback〕
+   28 P2 mainPhase 结束主阶段 〔forced〕
+
+T7 · 选手 1 回合 · HP 20/21 · PP 4/0
+手牌 女王之剑·辛西亚[BP07-003]、冻土女王·皮雅希[BP15-004]、妖精舞蹈家[BP01-011]、妖精龙[BP06-007]｜对手手牌 4 张
+场 海潮炮手[BP19-026] 2/3 / 森林妖精[BP13-013] 3/3、妖精萤火[BP01-T02] 1/1
+EX 战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 2/3
+   30 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   31 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+   32 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   33 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=20
+   35 P1 selectCards/target 海潮炮手[BP19-026]→妖精萤火[BP01-T02] 1；妖精萤火[BP01-T02] field→cemetery
+   36 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=19
+   37 P1 mainPhase 攻击 海潮炮手[BP19-026] → [公主形态]可可萝[CP04-PR01]
+   38 P2 quick Quick 放过 海潮炮手[BP19-026]→[公主形态]可可萝[CP04-PR01] 3；P2 -3=16 〔forced〕
+   39 P1 mainPhase 结束主阶段
+
+T8 · 选手 2 回合 · HP 20/16 · PP 0/4
+手牌 女王之剑·辛西亚[BP07-003]、冻土女王·皮雅希[BP15-004]、妖精舞蹈家[BP01-011]、妖精龙[BP06-007]、自然妖精公主·阿丽雅[BP16-001]｜对手手牌 2 张
+场 海潮炮手[BP19-026] 3/3 横、海潮炮手[BP19-026] 2/3、大洋斥候[BP19-030] 2/2 / 森林妖精[BP13-013] 3/3
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 2/3
+   41 P2 mainPhase 打出 妖精龙[BP06-007] 〔fallback〕
+   42 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   43 P2 mainPhase 打出 妖精舞蹈家[BP01-011] 〔fallback〕
+   44 P2 mainPhase 攻击 森林妖精[BP13-013] → 海潮炮手[BP19-026] 〔authored〕
+   45 P1 quick Quick 放过 森林妖精[BP13-013]→海潮炮手[BP19-026] 4；海潮炮手[BP19-026]→森林妖精[BP13-013] 3；海潮炮手[BP19-026] field→cemetery
+   46 P2 mainPhase 结束主阶段 〔forced〕
+   47 P2 selectCards/wardEngage 妖精龙[BP06-007] 〔fallback〕
+
+T9 · 选手 1 回合 · HP 20/16 · PP 5/0
+手牌 女王之剑·辛西亚[BP07-003]、冻土女王·皮雅希[BP15-004]、自然妖精公主·阿丽雅[BP16-001]｜对手手牌 3 张
+场 海潮炮手[BP19-026] 2/3、大洋斥候[BP19-030] 2/2 / 森林妖精[BP13-013] 4/1 伤3 横、妖精龙[BP06-007] 5/5 横、妖精舞蹈家[BP01-011] 2/3
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 3/3
+   49 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   50 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]
+   51 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   52 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=15
+   55 P1 selectCards/target 海潮炮手[BP19-026]→森林妖精[BP13-013] 1；森林妖精[BP13-013] field→cemetery
+   56 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   57 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   58 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=14
+   61 P1 selectCards/target 妖精龙[BP06-007] field→cemetery
+   62 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=13
+   63 P2 choose/token 0 妖精萤火[BP01-T02] 新→ex 〔fallback〕
+   64 P1 mainPhase 攻击 海潮炮手[BP19-026] → [公主形态]可可萝[CP04-PR01]
+   65 P2 quick Quick 放过 海潮炮手[BP19-026]→[公主形态]可可萝[CP04-PR01] 4；P2 -4=9 〔forced〕
+   66 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   67 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=8
+   69 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=7
+   70 P1 mainPhase 攻击 大洋斥候[BP19-030] → [公主形态]可可萝[CP04-PR01]
+   71 P2 quick Quick 放过 大洋斥候[BP19-030]→[公主形态]可可萝[CP04-PR01] 2；P2 -2=5 〔forced〕
+   72 P1 mainPhase 结束主阶段
+
+T10 · 选手 2 回合 · HP 20/5 · PP 0/5
+手牌 女王之剑·辛西亚[BP07-003]、冻土女王·皮雅希[BP15-004]、自然妖精公主·阿丽雅[BP16-001]、交织的决心[BP12-007]｜对手手牌 1 张
+场 海潮炮手[BP19-026] 4/3 横、大洋斥候[BP19-030] 2/2 横、出航的罪人·芭芭萝丝[BP19-019] 5/4、涸绝饥饿·吉鲁涅莉婕[BP15-113] 2/2 / 妖精舞蹈家[BP01-011] 2/3
+EX 空 / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精萤火[BP01-T02]｜墓 3/7
+   74 P2 mainPhase 打出 冻土女王·皮雅希[BP15-004] 〔fallback〕
+   75 P2 mainPhase 进化 冻土女王·皮雅希[BP15-004]（EP） 〔fallback〕
+   76 P2 selectPending p220 冻土女王·皮雅希[BP15-005]→第八绝杰·欧克托莉斯[BP10-LD02] 1；冻土女王·皮雅希[BP15-005]→海潮炮手[BP19-026] 2；冻土女王·皮雅希[BP15-005]→大洋斥候[BP19-030] 2；冻土女王·皮雅希[BP15-005]→出航的罪人·芭芭萝丝[BP19-019] 2；冻土女王·皮雅希[BP15-005]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 2；P1 -1=19；P2 +1=6；大洋斥候[BP19-030] field→cemetery；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery 〔fallback〕
+   77 P2 selectCards/search 逆时剑师·阿玛兹[BP15-002] 〔fallback〕
+   78 P2 mainPhase 攻击 妖精舞蹈家[BP01-011] → 海潮炮手[BP19-026] 〔fallback〕
+   79 P1 quick Quick 放过 妖精舞蹈家[BP01-011]→海潮炮手[BP19-026] 2；海潮炮手[BP19-026]→妖精舞蹈家[BP01-011] 4；海潮炮手[BP19-026] field→cemetery；妖精舞蹈家[BP01-011] field→cemetery
+   80 P2 mainPhase 打出 妖精[BP01-T03] 〔fallback〕
+   81 P2 mainPhase 打出 妖精萤火[BP01-T02] 〔fallback〕
+   82 P2 mainPhase 结束主阶段 〔forced〕
+
+T11 · 选手 1 回合 · HP 19/6 · PP 6/0
+手牌 女王之剑·辛西亚[BP07-003]、自然妖精公主·阿丽雅[BP16-001]、交织的决心[BP12-007]、逆时剑师·阿玛兹[BP15-002]｜对手手牌 2 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/2 伤2 / 冻土女王·皮雅希[BP15-004] 4/4、妖精[BP01-T03] 2/2、妖精萤火[BP01-T02] 1/1
+EX 空 / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 6/8
+   84 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → [公主形态]可可萝[CP04-PR01]
+   85 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→[公主形态]可可萝[CP04-PR01] 5；P2 -5=1 〔forced〕
+   86 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   87 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   88 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=0
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":11}
+生命 19/0
+选手输入 [{"direct":0,"authored":15,"fallback":25,"forced":12},{"direct":0,"authored":2,"fallback":20,"forced":15}]
