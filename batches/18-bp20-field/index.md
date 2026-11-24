@@ -5,7 +5,7 @@
 | 主轴 | 网站卡组码 | 已归档 | 先攻胜场 | 后攻胜场 | 总胜负和 | 牌表、录像与复盘 |
 |---|---|---:|---:|---:|---|---|
 | 猎人妖 | `Z6kf6M` | 40/40 | 14/20 | 16/20 | 30–10–0 | [原表](hunter/deck.json) · [1–10](hunter/checks/001.md) · [11–20](hunter/checks/011.md) · [21–30](hunter/checks/021.md) · [31–40](hunter/checks/031.md) |
-| 妖精妖 | `1DYwF7` | 30/40 | 9/15 | 4/15 | 13–17–0 | [原表](fairy/deck.json) · [1–10](fairy/checks/001.md) · [11–20](fairy/checks/011.md) · [21–30](fairy/checks/021.md) |
+| 妖精妖 | `1DYwF7` | 40/40 | 12/20 | 7/20 | 19–21–0 | [原表](fairy/deck.json) · [1–10](fairy/checks/001.md) · [11–20](fairy/checks/011.md) · [21–30](fairy/checks/021.md) · [31–40](fairy/checks/031.md) |
 | 铺场皇 | `csUWGv` | 30/40 | 13/15 | 7/15 | 20–10–0 | [原表](rally/deck.json) · [1–10](rally/checks/001.md) · [11–20](rally/checks/011.md) · [21–30](rally/checks/021.md) |
 | 破坏法 | `cQZr8Z` | 30/40 | 9/15 | 7/15 | 16–14–0 | [原表](destruction/deck.json) · [1–10](destruction/checks/001.md) · [11–20](destruction/checks/011.md) · [21–30](destruction/checks/021.md) |
 | 真实法 | `h1LX3a` | 30/40 | 0/15 | 0/15 | 0–30–0 | [原表](truth/deck.json) · [1–10](truth/checks/001.md) · [11–20](truth/checks/011.md) · [21–30](truth/checks/021.md) |
