@@ -1,0 +1,115 @@
+m0007
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 艾巴利缇亚[BP05-034]、海潮炮手[BP19-026]、怒涛副船长[BP19-028]、强袭盗贼[BP15-035]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留 〔authored〕
+    1 P2 mulligan 保留 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 艾巴利缇亚[BP05-034]、海潮炮手[BP19-026]、怒涛副船长[BP19-028]、强袭盗贼[BP15-035]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔authored〕
+    3 P1 selectCards/effect 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+    4 P1 orderCards/deckBottom 排序 奉还的剑闪[BP20-026]、怒涛副船长[BP19-028]、海潮炮手[BP19-026] 〔fallback〕
+    5 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 海潮炮手[BP19-026]、怒涛副船长[BP19-028]、强袭盗贼[BP15-035]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 1/0
+    7 P2 mainPhase 打出 艾巴利缇亚[BP05-034]
+   10 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 海潮炮手[BP19-026]、怒涛副船长[BP19-028]、强袭盗贼[BP15-035]、出航的罪人·芭芭萝丝[BP19-019]、空绝的显现·欧克托莉斯[BP20-019]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 1/1
+   12 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   13 P1 choose/mode search 〔authored〕
+   14 P1 selectCards/search 奉还的剑闪[BP20-026] 〔fallback〕
+   15 P1 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 海潮炮手[BP19-026]、怒涛副船长[BP19-028]、强袭盗贼[BP15-035]、出航的罪人·芭芭萝丝[BP19-019]、奉还的剑闪[BP20-026]｜对手手牌 6 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 / 空
+EX 空 / 空｜墓 1/1
+   17 P2 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   18 P2 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   20 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 20/20 · PP 3/0
+手牌 海潮炮手[BP19-026]、怒涛副船长[BP19-028]、强袭盗贼[BP15-035]、出航的罪人·芭芭萝丝[BP19-019]、奉还的剑闪[BP20-026]、大洋斥候[BP19-030]｜对手手牌 6 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 / 怒涛副船长[BP19-028] 3/3
+EX 空 / 战栗的海贼旗[BP19-T01]｜墓 1/1
+   22 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→怒涛副船长[BP19-028] 4；黄金短剑[BP15-T01] 新→ex；怒涛副船长[BP19-028] field→cemetery 〔fallback〕
+   23 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   24 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   25 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P2 -2=18
+   26 P1 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 2 回合 · HP 20/18 · PP 0/3
+手牌 海潮炮手[BP19-026]、怒涛副船长[BP19-028]、强袭盗贼[BP15-035]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 7 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 横、大洋斥候[BP19-030] 2/2 / 空
+EX 黄金短剑[BP15-T01]、战栗的海贼旗[BP19-T01] / 战栗的海贼旗[BP19-T01]｜墓 2/2
+   28 P2 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   29 P2 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19
+   30 P2 selectCards/target 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=18
+   31 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 18/18 · PP 4/0
+手牌 海潮炮手[BP19-026]、怒涛副船长[BP19-028]、强袭盗贼[BP15-035]、出航的罪人·芭芭萝丝[BP19-019]、涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 6 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3、大洋斥候[BP19-030] 2/2 / 海潮炮手[BP19-026] 3/3
+EX 黄金短剑[BP15-T01]、战栗的海贼旗[BP19-T01] / 战栗的海贼旗[BP19-T01]｜墓 2/2
+   33 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   34 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   35 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P2 -2=16
+   36 P1 mainPhase 攻击 大洋斥候[BP19-030] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   37 P2 quick Quick 放过 大洋斥候[BP19-030]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P2 -2=14
+   38 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   39 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P2 -1=13 〔authored〕
+   40 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   41 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P2 -1=12 〔authored〕
+   42 P1 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 2 回合 · HP 18/12 · PP 0/4
+手牌 海潮炮手[BP19-026]、怒涛副船长[BP19-028]、强袭盗贼[BP15-035]、涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 7 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 横、大洋斥候[BP19-030] 2/2 横、出航的罪人·芭芭萝丝[BP19-019] 5/3 / 海潮炮手[BP19-026] 3/3
+EX 黄金短剑[BP15-T01] / 战栗的海贼旗[BP19-T01]｜墓 2/2
+   44 P2 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   45 P2 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   46 P2 selectCards/target 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=17
+   48 P2 selectCards/target 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=16
+   49 P2 selectCards/target 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=15
+   50 P2 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   51 P2 selectCards/target 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=14
+   53 P2 selectCards/target 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=13
+   54 P2 selectCards/target 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=12
+   55 P2 mainPhase 攻击 海潮炮手[BP19-026] → 空绝的显现·欧克托莉斯[BP20-019]
+   56 P1 quick Quick 放过 海潮炮手[BP19-026]→空绝的显现·欧克托莉斯[BP20-019] 5；空绝的显现·欧克托莉斯[BP20-019]→海潮炮手[BP19-026] 2；空绝的显现·欧克托莉斯[BP20-019] field→cemetery 〔forced〕
+   57 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 12/12 · PP 5/0
+手牌 海潮炮手[BP19-026]、怒涛副船长[BP19-028]、强袭盗贼[BP15-035]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、空绝的显现·欧克托莉斯[BP20-019]｜对手手牌 6 张
+场 大洋斥候[BP19-030] 2/2、出航的罪人·芭芭萝丝[BP19-019] 5/3 / 海潮炮手[BP19-026] 5/1 伤2 横、海潮炮手[BP19-026] 2/3
+EX 黄金短剑[BP15-T01] / 空｜墓 3/2
+   59 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   60 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   61 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→第八绝杰·欧克托莉斯[BP10-LD02] 6；P2 -6=6
+   62 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   63 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔authored〕
+   64 P1 selectCards/target 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P2 -1=5 〔authored〕
+   65 P1 selectPending p197 〔fallback〕
+   66 P1 selectCards/target 第八绝杰·欧克托莉斯[BP10-LD02] 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P2 -1=4 〔authored〕
+   67 P1 choose/mode recover 〔authored〕
+   68 P1 mainPhase 攻击 大洋斥候[BP19-030] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   69 P2 quick Quick 放过 大洋斥候[BP19-030]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P2 -3=1
+   70 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   71 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔authored〕
+   72 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P2 -1=0 〔authored〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":9}
+生命 12/0
+选手输入 [{"direct":0,"authored":11,"fallback":18,"forced":9},{"direct":0,"authored":18,"fallback":4,"forced":13}]
