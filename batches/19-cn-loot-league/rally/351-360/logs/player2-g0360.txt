@@ -1,0 +1,121 @@
+g0360
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 瞬息的迅捷剑士[BP16-031]、宇宙之翼·洛菈米亚[BP15-023]、圣剑之光的小队长[BP17-029]、俏猫上将[BP13-029]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 整手重抽 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 瞬息的迅捷剑士[BP16-031]、宇宙之翼·洛菈米亚[BP15-023]、圣剑之光的小队长[BP17-029]、俏猫上将[BP13-029]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 俏猫上将[BP13-029] 〔fallback〕
+    3 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 瞬息的迅捷剑士[BP16-031]、宇宙之翼·洛菈米亚[BP15-023]、圣剑之光的小队长[BP17-029]｜对手手牌 5 张
+场 空 / 俏猫上将[BP13-029] 2/2
+EX 空 / 空｜墓 0/0
+    5 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 1/2
+手牌 瞬息的迅捷剑士[BP16-031]、宇宙之翼·洛菈米亚[BP15-023]、圣剑之光的小队长[BP17-029]、天空指挥官·榭莉亚[BP09-018]｜对手手牌 5 张
+场 空 / 俏猫上将[BP13-029] 2/2
+EX 空 / 空｜墓 0/0
+    7 P2 mainPhase 打出 圣剑之光的小队长[BP17-029] 〔fallback〕
+    8 P2 selectCards/wardEnterEngaged 不选 铁甲骑士[BP01-T07] 新→ex 〔fallback〕
+    9 P2 selectPending p129 〔fallback〕
+   10 P2 mainPhase 结束主阶段 〔fallback〕
+   11 P2 selectCards/wardEngage 战盾卫士[BP02-T02] 〔authored〕
+
+T4 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 瞬息的迅捷剑士[BP16-031]、宇宙之翼·洛菈米亚[BP15-023]、天空指挥官·榭莉亚[BP09-018]｜对手手牌 6 张
+场 空 / 俏猫上将[BP13-029] 2/2、圣剑之光的小队长[BP17-029] 1/1、战盾卫士[BP02-T02] 1/1 横、骑士[BP01-T05] 1/1
+EX 空 / 铁甲骑士[BP01-T07]｜墓 0/0
+   13 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   14 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   16 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 战盾卫士[BP02-T02]
+   17 P2 quick Quick 放过 怒涛副船长[BP19-028]→战盾卫士[BP02-T02] 3；战盾卫士[BP02-T02]→怒涛副船长[BP19-028] 1；战盾卫士[BP02-T02] field→cemetery 〔forced〕
+   18 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 20/20 · PP 0/3
+手牌 瞬息的迅捷剑士[BP16-031]、宇宙之翼·洛菈米亚[BP15-023]、天空指挥官·榭莉亚[BP09-018]、音速机械·洛菈米亚[BP06-019]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 3/2 伤1 横 / 俏猫上将[BP13-029] 2/2、圣剑之光的小队长[BP17-029] 1/1、骑士[BP01-T05] 1/1
+EX 战栗的海贼旗[BP19-T01] / 铁甲骑士[BP01-T07]｜墓 0/0
+   20 P2 mainPhase 打出 音速机械·洛菈米亚[BP06-019] 〔fallback〕
+   21 P2 mainPhase 进化 音速机械·洛菈米亚[BP06-019] 〔fallback〕
+   22 P2 mainPhase 攻击 音速机械·洛菈米亚[BP06-019] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   23 P1 quick Quick 放过 音速机械·洛菈米亚[BP06-019]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=16
+   24 P2 mainPhase 攻击 俏猫上将[BP13-029] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   25 P1 quick Quick 放过 俏猫上将[BP13-029]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=14
+   26 P2 mainPhase 打出 天空指挥官·榭莉亚[BP09-018] 〔fallback〕
+   27 P2 mainPhase 攻击 圣剑之光的小队长[BP17-029] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   28 P1 quick Quick 放过 圣剑之光的小队长[BP17-029]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=13
+   29 P2 mainPhase 攻击 骑士[BP01-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   30 P1 quick Quick 放过 骑士[BP01-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=12
+   31 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 12/20 · PP 3/0
+手牌 瞬息的迅捷剑士[BP16-031]、宇宙之翼·洛菈米亚[BP15-023]｜对手手牌 7 张
+场 怒涛副船长[BP19-028] 3/2 伤1 / 俏猫上将[BP13-029] 2/2 横、圣剑之光的小队长[BP17-029] 1/1 横、骑士[BP01-T05] 1/1 横、音速机械·洛菈米亚[BP06-019] 4/3 横、天空指挥官·榭莉亚[BP09-018] 2/2
+EX 战栗的海贼旗[BP19-T01] / 铁甲骑士[BP01-T07]｜墓 0/0
+   33 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 音速机械·洛菈米亚[BP06-019]
+   34 P2 quick Quick 放过 怒涛副船长[BP19-028]→音速机械·洛菈米亚[BP06-019] 3；音速机械·洛菈米亚[BP06-019]→怒涛副船长[BP19-028] 4；怒涛副船长[BP19-028] field→cemetery；音速机械·洛菈米亚[BP06-019] field→cemetery 〔forced〕
+   35 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   36 P1 mainPhase 进化 怒涛副船长[BP19-028]
+   38 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 俏猫上将[BP13-029]
+   39 P2 quick Quick 放过 怒涛副船长[BP19-028]→俏猫上将[BP13-029] 3；俏猫上将[BP13-029]→怒涛副船长[BP19-028] 2；俏猫上将[BP13-029] field→cemetery 〔forced〕
+   40 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 12/20 · PP 0/4
+手牌 瞬息的迅捷剑士[BP16-031]、宇宙之翼·洛菈米亚[BP15-023]、娜哈特的私兵[BP11-031]｜对手手牌 7 张
+场 怒涛副船长[BP19-028] 3/1 伤2 横 / 圣剑之光的小队长[BP17-029] 1/1、骑士[BP01-T05] 1/1、天空指挥官·榭莉亚[BP09-018] 2/2
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 铁甲骑士[BP01-T07]｜墓 1/2
+   42 P2 mainPhase 进化 天空指挥官·榭莉亚[BP09-018] 〔fallback〕
+   43 P2 mainPhase 攻击 天空指挥官·榭莉亚[BP09-018] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   44 P1 quick Quick 放过 天空指挥官·榭莉亚[BP09-018]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=8
+   45 P2 mainPhase 攻击 圣剑之光的小队长[BP17-029] → 怒涛副船长[BP19-028] 〔fallback〕
+   46 P1 quick Quick 放过 圣剑之光的小队长[BP17-029]→怒涛副船长[BP19-028] 1；怒涛副船长[BP19-028]→圣剑之光的小队长[BP17-029] 3；怒涛副船长[BP19-028] field→cemetery；圣剑之光的小队长[BP17-029] field→cemetery
+   47 P2 mainPhase 攻击 骑士[BP01-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   48 P1 quick Quick 放过 骑士[BP01-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=7
+   49 P2 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 1 回合 · HP 7/20 · PP 4/0
+手牌 瞬息的迅捷剑士[BP16-031]、宇宙之翼·洛菈米亚[BP15-023]、娜哈特的私兵[BP11-031]｜对手手牌 8 张
+场 空 / 骑士[BP01-T05] 1/1 横、天空指挥官·榭莉亚[BP09-018] 4/4 横、铁甲骑士[BP01-T07] 2/2、骑士[BP01-T05] 1/1
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 铁甲骑士[BP01-T07]｜墓 2/3
+   51 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   52 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   53 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=19
+   55 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   56 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   57 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=18
+   60 P1 selectCards/target 天空指挥官·榭莉亚[BP09-018] field→cemetery
+   61 P1 selectCards/target 海潮炮手[BP19-026]→骑士[BP01-T05] 1；骑士[BP01-T05] field→cemetery
+   62 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   63 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=17
+   65 P1 selectCards/target 海潮炮手[BP19-026]→骑士[BP01-T05] 1；骑士[BP01-T05] field→cemetery
+   66 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   67 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=16
+   69 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=15
+   70 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 7/15 · PP 0/5
+手牌 瞬息的迅捷剑士[BP16-031]、宇宙之翼·洛菈米亚[BP15-023]、娜哈特的私兵[BP11-031]、音速机械·洛菈米亚[BP06-019]｜对手手牌 6 张
+场 出航的罪人·芭芭萝丝[BP19-019] 8/4、海潮炮手[BP19-026] 2/3 / 铁甲骑士[BP01-T07] 2/2
+EX 空 / 铁甲骑士[BP01-T07]｜墓 2/6
+   72 P2 mainPhase 打出 宇宙之翼·洛菈米亚[BP15-023] 〔fallback〕
+   73 P2 mainPhase 打出 音速机械·洛菈米亚[BP06-019] 〔fallback〕
+   74 P2 mainPhase 进化 音速机械·洛菈米亚[BP06-019] 〔fallback〕
+   75 P2 mainPhase 攻击 音速机械·洛菈米亚[BP06-019] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   76 P1 quick Quick 放过 音速机械·洛菈米亚[BP06-019]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=3
+   77 P2 mainPhase 攻击 铁甲骑士[BP01-T07] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   78 P1 quick Quick 放过 铁甲骑士[BP01-T07]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=1
+   79 P2 mainPhase 攻击 宇宙之翼·洛菈米亚[BP15-023] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   80 P1 quick Quick 放过 宇宙之翼·洛菈米亚[BP15-023]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=-1
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":9}
+生命 -1/15
+选手输入 [{"direct":0,"authored":16,"fallback":13,"forced":18},{"direct":0,"authored":5,"fallback":19,"forced":10}]
