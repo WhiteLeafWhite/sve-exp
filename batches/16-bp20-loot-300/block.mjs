@@ -26,5 +26,7 @@ async function work() {
   while (queue.length) await run(queue.shift());
 }
 
-await Promise.all(Array.from({ length: Math.min(queue.length, Math.max(1, availableParallelism() - 2), 12) }, work));
+const workers = Number(process.env.SVE_LOOT_GAME_WORKERS ?? 8);
+assert(Number.isInteger(workers) && workers > 0);
+await Promise.all(Array.from({ length: Math.min(queue.length, Math.max(1, availableParallelism() - 2), workers) }, work));
 assert.deepEqual(failures, []);

@@ -20,7 +20,7 @@ export const protocol = read(join(archive, 'protocol.json'));
 export const deckHash = ({ leader, main, evolve }) => createHash('sha256').update(JSON.stringify([
   leader, Object.entries(main).sort(), Object.entries(evolve).sort(),
 ])).digest('hex');
-export const fileHash = path => createHash('sha256').update(readFileSync(path)).digest('hex');
+export const fileHash = path => createHash('sha256').update(readFileSync(path, 'utf8').replace(/\r\n/g, '\n')).digest('hex');
 
 export function loadDecks(matchup) {
   const lock = protocol.opponents[matchup];
@@ -80,9 +80,14 @@ async function play(matchup, number, revision, trial = '') {
   const hard = rt.createPresetBot(engine, protocol.opponentPreset, `${seed}:hard:1`, protocol.opponentEffort);
   const inputs = [], authored = [];
   const began = performance.now();
+  let nextTrace = began + 45_000;
   while (g.decision) {
     assert(inputs.length < 5000, 'Game did not finish within 5000 inputs');
     const d = g.decision;
+    if (process.env.SVE_LOOT_TRACE && performance.now() >= nextTrace) {
+      console.log(`${matchup} ${pad(number)} T${g.state.turn}, ${inputs.length} inputs, ${d.type}, seat ${d.player}`);
+      nextTrace = performance.now() + 45_000;
+    }
     const forcedPass = d.type === 'quick' && d.actions.every(a => a.type === 'pass');
     const by = forcedPass ? null : d.player;
     const input = forcedPass ? { type: 'quick', action: { type: 'pass' } }
@@ -99,7 +104,8 @@ async function play(matchup, number, revision, trial = '') {
   const search = [minePilot.stats, hard.stats].map(s => ({ simulations: s.simulations, fallbacks: s.fallbacks, simulationFailures: s.simulationFailures }));
   const training = { ...metadata, authored, search, terminalHP: g.state.players.map(p => p.leaderDefense) };
   const replay = { format: 'sve-replay', version: 1, options, inputs, info: { result: g.result, turn: g.state.turn }, training };
-  save(file, JSON.stringify(replay) + '\n');
+  if (existsSync(file)) assert.deepEqual(read(file), replay);
+  else save(file, JSON.stringify(replay) + '\n');
   console.log(`${matchup} ${pad(number)} r${revision} W=${g.result.winner} T${g.state.turn} HP=${training.terminalHP.join('/')} ${(performance.now() - began).toFixed(0)}ms`);
 }
 
