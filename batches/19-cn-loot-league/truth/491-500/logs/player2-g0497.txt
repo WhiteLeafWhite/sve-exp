@@ -1,0 +1,84 @@
+g0497
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 真实的戒律[BP08-041]、绝尽的显现·莱欧[BP20-042]、石英魔女[BP15-055]、真实的戒律[BP08-041]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留
+    1 P2 mulligan 整手重抽 P1 0=20；P2 0=20 〔authored〕
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 真实的宣告[BP05-044]、石英魔女[BP15-055]、绝尽真实·莱欧[BP15-038]、真实的隐者[BP15-053]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+    3 P1 mainPhase 结束主阶段
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 真实的宣告[BP05-044]、石英魔女[BP15-055]、绝尽真实·莱欧[BP15-038]、真实的隐者[BP15-053]、虚伪的术式[BP20-049]｜对手手牌 3 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    5 P2 mainPhase 打出 虚伪的术式[BP20-049] 〔fallback〕
+    6 P2 selectCards/effect 绝尽的显现·莱欧[BP20-042] 〔fallback〕
+    7 P2 choose/effect hand 〔fallback〕
+    8 P2 orderCards/deckBottom 排序 真实的继承者·薇赫里雅[BP20-038]、真实的隐者[BP15-053] 〔fallback〕
+    9 P2 mainPhase 结束主阶段 〔fallback〕
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 真实的宣告[BP05-044]、石英魔女[BP15-055]、绝尽真实·莱欧[BP15-038]、真实的隐者[BP15-053]、绝尽的显现·莱欧[BP20-042]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/1
+   11 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   12 P1 mainPhase 攻击 大洋斥候[BP19-030] → 愚昧的贤者·琳库露[BP15-PR03]
+   13 P2 quick Quick 放过 大洋斥候[BP19-030]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=18 〔forced〕
+   14 P1 mainPhase 结束主阶段
+
+T4 · 选手 2 回合 · HP 20/18 · PP 0/2
+手牌 真实的宣告[BP05-044]、石英魔女[BP15-055]、绝尽真实·莱欧[BP15-038]、真实的隐者[BP15-053]、绝尽的显现·莱欧[BP20-042]、真实的祈祷者[BP20-052]｜对手手牌 3 张
+场 大洋斥候[BP19-030] 2/2 横、怒涛副船长[BP19-028] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 0/1
+   16 P2 mainPhase 结束主阶段 〔fallback〕
+
+T5 · 选手 1 回合 · HP 20/18 · PP 3/2
+手牌 真实的宣告[BP05-044]、石英魔女[BP15-055]、绝尽真实·莱欧[BP15-038]、真实的隐者[BP15-053]、绝尽的显现·莱欧[BP20-042]、真实的祈祷者[BP20-052]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2、怒涛副船长[BP19-028] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 0/1
+   18 P1 mainPhase 进化 怒涛副船长[BP19-028]
+   20 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   21 P1 selectCards/target 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=17
+   22 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   23 P1 selectCards/target 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=16
+   24 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 愚昧的贤者·琳库露[BP15-PR03]
+   25 P2 quick Quick 放过 怒涛副船长[BP19-028]→愚昧的贤者·琳库露[BP15-PR03] 5；P2 -5=11 〔forced〕
+   26 P1 mainPhase 攻击 大洋斥候[BP19-030] → 愚昧的贤者·琳库露[BP15-PR03]
+   27 P2 quick Quick 放过 大洋斥候[BP19-030]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=9 〔forced〕
+   28 P1 mainPhase 结束主阶段
+
+T6 · 选手 2 回合 · HP 20/9 · PP 0/3
+手牌 真实的宣告[BP05-044]、石英魔女[BP15-055]、绝尽真实·莱欧[BP15-038]、真实的隐者[BP15-053]、绝尽的显现·莱欧[BP20-042]、真实的祈祷者[BP20-052]、绝尽真实·莱欧[BP15-038]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 横、怒涛副船长[BP19-028] 5/3 横 / 空
+EX 空 / 空｜墓 0/1
+   30 P2 mainPhase 打出 真实的祈祷者[BP20-052] 〔fallback〕
+   31 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   32 P2 selectCards/discard 真实的宣告[BP05-044] 〔fallback〕
+   33 P2 mainPhase 结束主阶段 〔forced〕
+   34 P2 selectCards/wardEngage 真实的祈祷者[BP20-052] 〔authored〕
+
+T7 · 选手 1 回合 · HP 20/9 · PP 4/0
+手牌 石英魔女[BP15-055]、绝尽真实·莱欧[BP15-038]、真实的隐者[BP15-053]、绝尽的显现·莱欧[BP20-042]、绝尽真实·莱欧[BP15-038]、真实的祈祷者[BP20-052]、真实的祈祷者[BP20-052]｜对手手牌 6 张
+场 大洋斥候[BP19-030] 2/2、怒涛副船长[BP19-028] 5/3 / 真实的祈祷者[BP20-052] 3/3 横
+EX 空 / 空｜墓 0/2
+   36 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   37 P1 mainPhase 进化 怒涛副船长[BP19-028]
+   39 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   40 P1 selectCards/target 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=8
+   41 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 真实的祈祷者[BP20-052]
+   42 P2 quick Quick 放过 怒涛副船长[BP19-028]→真实的祈祷者[BP20-052] 3；真实的祈祷者[BP20-052]→怒涛副船长[BP19-028] 3；怒涛副船长[BP19-028] field→cemetery；真实的祈祷者[BP20-052] field→cemetery 〔forced〕
+   43 P1 mainPhase 攻击 大洋斥候[BP19-030] → 愚昧的贤者·琳库露[BP15-PR03]
+   44 P2 quick Quick 放过 大洋斥候[BP19-030]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=6 〔forced〕
+   45 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 愚昧的贤者·琳库露[BP15-PR03]
+   46 P2 quick Quick 放过 怒涛副船长[BP19-028]→愚昧的贤者·琳库露[BP15-PR03] 6；P2 -6=0 〔forced〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":7}
+生命 20/0
+选手输入 [{"direct":0,"authored":9,"fallback":11,"forced":6},{"direct":0,"authored":2,"fallback":9,"forced":10}]

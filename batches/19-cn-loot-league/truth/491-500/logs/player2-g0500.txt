@@ -1,0 +1,121 @@
+g0500
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 绝尽的崇拜者[BP15-047]、虚伪的术式[BP20-049]、虚伪的术式[BP20-049]、真实的宣告[BP05-044]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 保留 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 绝尽的崇拜者[BP15-047]、虚伪的术式[BP20-049]、虚伪的术式[BP20-049]、真实的宣告[BP05-044]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 虚伪的术式[BP20-049] 〔fallback〕
+    3 P2 selectCards/effect 真实绝杰·莱欧[BP05-035] 〔fallback〕
+    4 P2 choose/effect hand 〔fallback〕
+    5 P2 orderCards/deckBottom 排序 绝尽真实·莱欧[BP15-038]、绝尽真实·莱欧[BP15-038] 〔fallback〕
+    6 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 绝尽的崇拜者[BP15-047]、虚伪的术式[BP20-049]、真实的宣告[BP05-044]、真实绝杰·莱欧[BP05-035]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 0/1
+    8 P1 mainPhase 打出 篡夺的随从[BP05-029]
+    9 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 绝尽的崇拜者[BP15-047]、虚伪的术式[BP20-049]、真实的宣告[BP05-044]、真实绝杰·莱欧[BP05-035]、石英魔女[BP15-055]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2 / 空
+EX 空 / 空｜墓 0/2
+   11 P2 mainPhase 打出 绝尽的崇拜者[BP15-047] 〔fallback〕
+   12 P2 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 虚伪的术式[BP20-049]、真实的宣告[BP05-044]、真实绝杰·莱欧[BP05-035]、石英魔女[BP15-055]｜对手手牌 5 张
+场 篡夺的随从[BP05-029] 2/2 / 绝尽的崇拜者[BP15-047] 2/2
+EX 空 / 空｜墓 0/2
+   14 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   15 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113]（EP）
+   17 P1 selectCards/target 绝尽的崇拜者[BP15-047] field→cemetery
+   18 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 愚昧的贤者·琳库露[BP15-PR03]
+   19 P2 quick Quick 放过 篡夺的随从[BP05-029]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=18 〔forced〕
+   20 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 20/18 · PP 0/3
+手牌 虚伪的术式[BP20-049]、真实的宣告[BP05-044]、真实绝杰·莱欧[BP05-035]、石英魔女[BP15-055]、真实的戒律[BP08-041]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2 横、涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 / 空
+EX 空 / 空｜墓 0/3
+   22 P2 mainPhase 打出 真实的宣告[BP05-044] 〔fallback〕
+   23 P2 choose/mode follower 〔fallback〕
+   24 P2 selectCards/target 涸绝饥饿·吉鲁涅莉婕[BP15-113] 真实的宣告[BP05-044]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 3；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery 〔fallback〕
+   25 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 20/18 · PP 3/0
+手牌 虚伪的术式[BP20-049]、真实绝杰·莱欧[BP05-035]、石英魔女[BP15-055]、真实的戒律[BP08-041]｜对手手牌 5 张
+场 篡夺的随从[BP05-029] 2/2 / 空
+EX 空 / 空｜墓 1/4
+   27 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   28 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   30 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 愚昧的贤者·琳库露[BP15-PR03]
+   31 P2 quick Quick 放过 篡夺的随从[BP05-029]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=16 〔forced〕
+   32 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   33 P1 selectCards/target 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=15
+   34 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 20/15 · PP 0/4
+手牌 虚伪的术式[BP20-049]、真实绝杰·莱欧[BP05-035]、石英魔女[BP15-055]、真实的戒律[BP08-041]、绝尽真实·莱欧[BP15-038]｜对手手牌 5 张
+场 篡夺的随从[BP05-029] 2/2 横、怒涛副船长[BP19-028] 4/3 / 空
+EX 空 / 空｜墓 1/4
+   36 P2 mainPhase 打出 石英魔女[BP15-055] 〔fallback〕
+   37 P2 selectCards/discard 虚伪的术式[BP20-049] 〔fallback〕
+   38 P2 mainPhase 起动 绝尽的显现·莱欧[BP20-042] 能力 2 绝尽的伪证[BP15-PR11] 新→ex 〔authored〕
+   39 P2 mainPhase 打出 绝尽的伪证[BP15-PR11] 绝尽的崇拜者[BP15-047] cemetery→field 〔fallback〕
+   40 P2 confirm/effect 确认 〔fallback〕
+   41 P2 selectCards/pick 绝尽的崇拜者[BP15-048] 〔fallback〕
+   42 P2 choose/mode raio 〔fallback〕
+   43 P2 selectCards/search 绝尽的显现·莱欧[BP20-042] 〔fallback〕
+   44 P2 mainPhase 攻击 绝尽的崇拜者[BP15-047] → 篡夺的随从[BP05-029] 〔fallback〕
+   45 P1 quick Quick 放过 绝尽的崇拜者[BP15-047]→篡夺的随从[BP05-029] 3；篡夺的随从[BP05-029]→绝尽的崇拜者[BP15-047] 2；篡夺的随从[BP05-029] field→cemetery
+   46 P2 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 1 回合 · HP 20/15 · PP 4/0
+手牌 真实绝杰·莱欧[BP05-035]、绝尽真实·莱欧[BP15-038]、绝尽的显现·莱欧[BP20-042]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 4/3 / 石英魔女[BP15-055] 1/2、绝尽的崇拜者[BP15-047] 3/1 伤2 横
+EX 空 / 空｜墓 2/6
+   48 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   49 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   50 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   51 P1 selectCards/target 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=14
+   53 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 愚昧的贤者·琳库露[BP15-PR03]
+   54 P2 quick Quick 放过 怒涛副船长[BP19-028]→愚昧的贤者·琳库露[BP15-PR03] 4；P2 -4=10 〔forced〕
+   55 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   56 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   57 P1 selectCards/target 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=9
+   60 P1 selectCards/target 绝尽的崇拜者[BP15-047] field→cemetery
+   61 P1 selectCards/target 海潮炮手[BP19-026]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=8
+   62 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 20/8 · PP 0/5
+手牌 真实绝杰·莱欧[BP05-035]、绝尽真实·莱欧[BP15-038]、绝尽的显现·莱欧[BP20-042]、真实的狂信者[BP08-047]｜对手手牌 4 张
+场 怒涛副船长[BP19-028] 4/3 横、出航的罪人·芭芭萝丝[BP19-019] 6/4、海潮炮手[BP19-026] 2/3 / 石英魔女[BP15-055] 1/2
+EX 空 / 空｜墓 2/7
+   64 P2 mainPhase 打出 真实的狂信者[BP08-047] 〔fallback〕
+   65 P2 mainPhase 攻击 真实的狂信者[BP08-047] → 怒涛副船长[BP19-028] 〔fallback〕
+   66 P1 quick Quick 放过 真实的狂信者[BP08-047]→怒涛副船长[BP19-028] 3；怒涛副船长[BP19-028]→真实的狂信者[BP08-047] 4；怒涛副船长[BP19-028] field→cemetery
+   67 P2 mainPhase 攻击 石英魔女[BP15-055] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   68 P1 quick Quick 放过 石英魔女[BP15-055]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19
+   69 P2 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 1 回合 · HP 19/8 · PP 5/2
+手牌 真实绝杰·莱欧[BP05-035]、绝尽真实·莱欧[BP15-038]、绝尽的显现·莱欧[BP20-042]｜对手手牌 5 张
+场 出航的罪人·芭芭萝丝[BP19-019] 6/4、海潮炮手[BP19-026] 2/3 / 石英魔女[BP15-055] 1/2 横、真实的狂信者[BP08-047] 3/1 伤4 横
+EX 空 / 空｜墓 3/7
+   71 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 愚昧的贤者·琳库露[BP15-PR03]
+   72 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→愚昧的贤者·琳库露[BP15-PR03] 6；P2 -6=2 〔forced〕
+   73 P1 mainPhase 攻击 海潮炮手[BP19-026] → 愚昧的贤者·琳库露[BP15-PR03]
+   74 P2 quick Quick 放过 海潮炮手[BP19-026]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=0 〔forced〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":10}
+生命 19/0
+选手输入 [{"direct":0,"authored":11,"fallback":17,"forced":12},{"direct":0,"authored":2,"fallback":19,"forced":14}]
