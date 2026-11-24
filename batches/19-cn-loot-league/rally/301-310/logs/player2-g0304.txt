@@ -1,0 +1,141 @@
+g0304
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 瞬息的迅捷剑士[BP16-031]、音速机械·洛菈米亚[BP06-019]、荣光剑士·奥蕾莉亚[BP20-022]、音速机械·洛菈米亚[BP06-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 保留 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 瞬息的迅捷剑士[BP16-031]、音速机械·洛菈米亚[BP06-019]、荣光剑士·奥蕾莉亚[BP20-022]、音速机械·洛菈米亚[BP06-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 瞬息的迅捷剑士[BP16-031] 〔fallback〕
+    3 P2 mainPhase 攻击 瞬息的迅捷剑士[BP16-031] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+    4 P1 quick Quick 放过 瞬息的迅捷剑士[BP16-031]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19
+    5 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 19/20 · PP 1/0
+手牌 音速机械·洛菈米亚[BP06-019]、荣光剑士·奥蕾莉亚[BP20-022]、音速机械·洛菈米亚[BP06-019]｜对手手牌 5 张
+场 空 / 瞬息的迅捷剑士[BP16-031] 1/1 横
+EX 空 / 空｜墓 0/0
+    7 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 19/20 · PP 1/2
+手牌 音速机械·洛菈米亚[BP06-019]、荣光剑士·奥蕾莉亚[BP20-022]、音速机械·洛菈米亚[BP06-019]、约定之荣耀·高文[BP18-023]｜对手手牌 5 张
+场 空 / 瞬息的迅捷剑士[BP16-031] 1/1
+EX 空 / 空｜墓 0/0
+    9 P2 mainPhase 打出 约定之荣耀·高文[BP18-023] 〔fallback〕
+   10 P2 mainPhase 结束主阶段 〔fallback〕
+
+T4 · 选手 1 回合 · HP 19/20 · PP 2/0
+手牌 音速机械·洛菈米亚[BP06-019]、荣光剑士·奥蕾莉亚[BP20-022]、音速机械·洛菈米亚[BP06-019]｜对手手牌 6 张
+场 空 / 瞬息的迅捷剑士[BP16-031] 1/1、约定之荣耀·高文[BP18-023] 3/3
+EX 空 / 空｜墓 0/0
+   12 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   13 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   15 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 19/20 · PP 0/3
+手牌 音速机械·洛菈米亚[BP06-019]、荣光剑士·奥蕾莉亚[BP20-022]、音速机械·洛菈米亚[BP06-019]、荣光剑士·奥蕾莉亚[BP20-022]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 3/3 / 瞬息的迅捷剑士[BP16-031] 1/1、约定之荣耀·高文[BP18-023] 3/3
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+   17 P2 mainPhase 打出 荣光剑士·奥蕾莉亚[BP20-022] 〔fallback〕
+   18 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   19 P2 mainPhase 攻击 荣光剑士·奥蕾莉亚[BP20-022] → 怒涛副船长[BP19-028] 〔fallback〕
+   20 P1 quick Quick 放过 荣光剑士·奥蕾莉亚[BP20-022]→怒涛副船长[BP19-028] 3；怒涛副船长[BP19-028]→荣光剑士·奥蕾莉亚[BP20-022] 3；怒涛副船长[BP19-028] field→cemetery
+   21 P2 mainPhase 攻击 约定之荣耀·高文[BP18-023] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   22 P1 quick Quick 放过 约定之荣耀·高文[BP18-023]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=16
+   23 P2 mainPhase 攻击 瞬息的迅捷剑士[BP16-031] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   24 P1 quick Quick 放过 瞬息的迅捷剑士[BP16-031]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=15
+   25 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 15/20 · PP 3/0
+手牌 音速机械·洛菈米亚[BP06-019]、音速机械·洛菈米亚[BP06-019]、荣光剑士·奥蕾莉亚[BP20-022]、月光执行者·里欧德[BP17-022]｜对手手牌 7 张
+场 空 / 瞬息的迅捷剑士[BP16-031] 1/1 横、约定之荣耀·高文[BP18-023] 3/3 横、荣光剑士·奥蕾莉亚[BP20-022] 3/1 伤3 横
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/0
+   27 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   28 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   30 P1 selectCards/target 荣光剑士·奥蕾莉亚[BP20-022] field→cemetery
+   31 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 瞬息的迅捷剑士[BP16-031]
+   32 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→瞬息的迅捷剑士[BP16-031] 3；瞬息的迅捷剑士[BP16-031]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 1；瞬息的迅捷剑士[BP16-031] field→cemetery 〔forced〕
+   33 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 15/20 · PP 0/4
+手牌 音速机械·洛菈米亚[BP06-019]、音速机械·洛菈米亚[BP06-019]、荣光剑士·奥蕾莉亚[BP20-022]、月光执行者·里欧德[BP17-022]、俏猫上将[BP13-029]｜对手手牌 6 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/2 伤1 横 / 约定之荣耀·高文[BP18-023] 3/3
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/2
+   35 P2 mainPhase 打出 俏猫上将[BP13-029] 〔fallback〕
+   36 P2 confirm/optionalCost 确认 〔fallback〕
+   37 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   38 P2 selectPending p147 俏猫上将[BP13-029]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 1；俏猫上将[BP13-029]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 1；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery 〔fallback〕
+   39 P2 mainPhase 攻击 约定之荣耀·高文[BP18-023] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   40 P1 quick Quick 放过 约定之荣耀·高文[BP18-023]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=12
+   41 P2 mainPhase 结束主阶段 〔forced〕
+   42 P2 selectCards/wardEngage 战盾卫士[BP02-T02] 〔fallback〕
+
+T8 · 选手 1 回合 · HP 12/20 · PP 4/0
+手牌 音速机械·洛菈米亚[BP06-019]、音速机械·洛菈米亚[BP06-019]、荣光剑士·奥蕾莉亚[BP20-022]、月光执行者·里欧德[BP17-022]｜对手手牌 7 张
+场 空 / 约定之荣耀·高文[BP18-023] 3/3 横、俏猫上将[BP13-029] 2/2、铁甲骑士[BP01-T07] 2/2、战盾卫士[BP02-T02] 1/1 横
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 2/2
+   44 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   45 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   46 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=19
+   48 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   49 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   50 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=18
+   53 P1 selectCards/target 战盾卫士[BP02-T02] field→cemetery
+   54 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=17
+   55 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 约定之荣耀·高文[BP18-023]
+   56 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→约定之荣耀·高文[BP18-023] 6；约定之荣耀·高文[BP18-023]→出航的罪人·芭芭萝丝[BP19-019] 3；约定之荣耀·高文[BP18-023] field→cemetery 〔forced〕
+   57 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   58 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=16
+   60 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=15
+   61 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 12/15 · PP 0/5
+手牌 音速机械·洛菈米亚[BP06-019]、音速机械·洛菈米亚[BP06-019]、荣光剑士·奥蕾莉亚[BP20-022]、月光执行者·里欧德[BP17-022]、忠义剑士·艾莉卡[BP17-019]｜对手手牌 5 张
+场 出航的罪人·芭芭萝丝[BP19-019] 6/1 伤3 横、海潮炮手[BP19-026] 3/3 / 俏猫上将[BP13-029] 2/2、铁甲骑士[BP01-T07] 2/2
+EX 空 / 空｜墓 2/5
+   63 P2 mainPhase 打出 荣光剑士·奥蕾莉亚[BP20-022] 〔authored〕
+   64 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   65 P2 mainPhase 攻击 荣光剑士·奥蕾莉亚[BP20-022] → 海潮炮手[BP19-026] 〔fallback〕
+   66 P1 quick Quick 放过 荣光剑士·奥蕾莉亚[BP20-022]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026]→荣光剑士·奥蕾莉亚[BP20-022] 3；海潮炮手[BP19-026] field→cemetery
+   67 P2 mainPhase 打出 忠义剑士·艾莉卡[BP17-019] 〔fallback〕
+   68 P2 choose/effect Steelclad Knight 俏猫上将[BP13-029]→出航的罪人·芭芭萝丝[BP19-019] 1；出航的罪人·芭芭萝丝[BP19-019] field→cemetery 〔fallback〕
+   69 P2 mainPhase 攻击 忠义剑士·艾莉卡[BP17-019] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   70 P1 quick Quick 放过 忠义剑士·艾莉卡[BP17-019]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=9
+   71 P2 mainPhase 攻击 俏猫上将[BP13-029] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   72 P1 quick Quick 放过 俏猫上将[BP13-029]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=7
+   73 P2 mainPhase 攻击 铁甲骑士[BP01-T07] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   74 P1 quick Quick 放过 铁甲骑士[BP01-T07]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=5
+   75 P2 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 1 回合 · HP 5/15 · PP 5/0
+手牌 音速机械·洛菈米亚[BP06-019]、音速机械·洛菈米亚[BP06-019]、月光执行者·里欧德[BP17-022]、天空指挥官·榭莉亚[BP09-018]｜对手手牌 6 张
+场 空 / 俏猫上将[BP13-029] 2/2 横、铁甲骑士[BP01-T07] 2/2 横、荣光剑士·奥蕾莉亚[BP20-022] 3/1 伤3 横、忠义剑士·艾莉卡[BP17-019] 3/1 横、铁甲骑士[BP01-T07] 2/2
+EX 空 / 空｜墓 4/5
+   77 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+   78 P1 selectCards/target 奉还的剑闪[BP20-026]→荣光剑士·奥蕾莉亚[BP20-022] 4；荣光剑士·奥蕾莉亚[BP20-022] field→cemetery
+   79 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018]
+   80 P1 mainPhase 进化 篡夺绝杰·欧克托莉斯[BP05-018]（EP）
+   81 P1 selectCards/target 荣光剑士·奥蕾莉亚[BP20-022] cemetery→ex
+   82 P1 mainPhase 攻击 篡夺绝杰·欧克托莉斯[BP05-018] → 忠义剑士·艾莉卡[BP17-019]
+   83 P2 quick Quick 放过 篡夺绝杰·欧克托莉斯[BP05-018]→忠义剑士·艾莉卡[BP17-019] 4；忠义剑士·艾莉卡[BP17-019]→篡夺绝杰·欧克托莉斯[BP05-018] 3；忠义剑士·艾莉卡[BP17-019] field→cemetery 〔forced〕
+   84 P1 mainPhase 结束主阶段
+
+T11 · 选手 2 回合 · HP 5/15 · PP 0/6
+手牌 音速机械·洛菈米亚[BP06-019]、音速机械·洛菈米亚[BP06-019]、月光执行者·里欧德[BP17-022]、天空指挥官·榭莉亚[BP09-018]、瞬息的迅捷剑士[BP16-031]｜对手手牌 4 张
+场 篡夺绝杰·欧克托莉斯[BP05-018] 4/1 伤3 横 / 俏猫上将[BP13-029] 2/2、铁甲骑士[BP01-T07] 2/2、铁甲骑士[BP01-T07] 2/2
+EX 荣光剑士·奥蕾莉亚[BP20-022] / 空｜墓 5/8
+   86 P2 mainPhase 攻击 俏猫上将[BP13-029] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   87 P1 quick Quick 放过 俏猫上将[BP13-029]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=3
+   88 P2 mainPhase 攻击 铁甲骑士[BP01-T07] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   89 P1 quick Quick 放过 铁甲骑士[BP01-T07]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=1
+   90 P2 mainPhase 攻击 铁甲骑士[BP01-T07] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   91 P1 quick Quick 放过 铁甲骑士[BP01-T07]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=-1
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":11}
+生命 -1/15
+选手输入 [{"direct":0,"authored":17,"fallback":16,"forced":20},{"direct":0,"authored":5,"fallback":22,"forced":12}]

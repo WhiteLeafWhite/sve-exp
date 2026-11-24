@@ -1,0 +1,142 @@
+g0308
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 圣剑之光的小队长[BP17-029]、月光执行者·里欧德[BP17-022]、宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 保留 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 圣剑之光的小队长[BP17-029]、月光执行者·里欧德[BP17-022]、宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 结束主阶段 〔fallback〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/1
+手牌 圣剑之光的小队长[BP17-029]、月光执行者·里欧德[BP17-022]、宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    4 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 1/2
+手牌 圣剑之光的小队长[BP17-029]、月光执行者·里欧德[BP17-022]、宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]、圣剑之光的小队长[BP17-029]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    6 P2 mainPhase 打出 圣剑之光的小队长[BP17-029] 〔fallback〕
+    7 P2 selectCards/wardEnterEngaged 不选 铁甲骑士[BP01-T07] 新→ex 〔fallback〕
+    8 P2 mainPhase 结束主阶段 〔forced〕
+    9 P2 selectCards/wardEngage 战盾卫士[BP02-T02] 〔fallback〕
+   10 P1 quick 打出 精炼的空绝[BP15-026]
+   11 P1 selectCards/target 精炼的空绝[BP15-026]→战盾卫士[BP02-T02] 2；黄金之杯[BP15-T02] 新→ex；战盾卫士[BP02-T02] field→cemetery
+
+T4 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 月光执行者·里欧德[BP17-022]、宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]、圣剑之光的小队长[BP17-029]｜对手手牌 5 张
+场 空 / 圣剑之光的小队长[BP17-029] 1/1、骑士[BP01-T05] 1/1
+EX 黄金之杯[BP15-T02] / 铁甲骑士[BP01-T07]｜墓 1/0
+   13 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   14 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   16 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 20/20 · PP 0/3
+手牌 月光执行者·里欧德[BP17-022]、宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]、圣剑之光的小队长[BP17-029]、荣光剑士·奥蕾莉亚[BP20-022]｜对手手牌 5 张
+场 怒涛副船长[BP19-028] 3/3 / 圣剑之光的小队长[BP17-029] 1/1、骑士[BP01-T05] 1/1
+EX 黄金之杯[BP15-T02]、战栗的海贼旗[BP19-T01] / 铁甲骑士[BP01-T07]｜墓 1/0
+   18 P2 mainPhase 打出 月光执行者·里欧德[BP17-022] 月光执行者·里欧德[BP17-022]→怒涛副船长[BP19-028] 1 〔fallback〕
+   19 P2 mainPhase 打出 荣光剑士·奥蕾莉亚[BP20-022] 〔fallback〕
+   20 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   21 P2 mainPhase 攻击 荣光剑士·奥蕾莉亚[BP20-022] → 怒涛副船长[BP19-028] 〔fallback〕
+   22 P1 quick Quick 放过 荣光剑士·奥蕾莉亚[BP20-022]→怒涛副船长[BP19-028] 3；怒涛副船长[BP19-028]→荣光剑士·奥蕾莉亚[BP20-022] 3；怒涛副船长[BP19-028] field→cemetery
+   23 P2 mainPhase 攻击 圣剑之光的小队长[BP17-029] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   24 P1 quick Quick 放过 圣剑之光的小队长[BP17-029]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19
+   25 P2 mainPhase 攻击 骑士[BP01-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   26 P1 quick Quick 放过 骑士[BP01-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=18
+   27 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 18/20 · PP 3/0
+手牌 宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]、圣剑之光的小队长[BP17-029]、幻影拍档·峇妮与峇侬[BP11-019]｜对手手牌 6 张
+场 空 / 圣剑之光的小队长[BP17-029] 1/1 横、骑士[BP01-T05] 1/1 横、月光执行者·里欧德[BP17-022] 1/2、荣光剑士·奥蕾莉亚[BP20-022] 3/1 伤3 横
+EX 黄金之杯[BP15-T02]、战栗的海贼旗[BP19-T01] / 铁甲骑士[BP01-T07]｜墓 2/0
+   29 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   30 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=19
+   31 P1 selectCards/target 海潮炮手[BP19-026]→荣光剑士·奥蕾莉亚[BP20-022] 1；荣光剑士·奥蕾莉亚[BP20-022] field→cemetery
+   32 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 18/19 · PP 0/4
+手牌 宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]、圣剑之光的小队长[BP17-029]、幻影拍档·峇妮与峇侬[BP11-019]、忠义剑士·艾莉卡[BP17-019]｜对手手牌 5 张
+场 海潮炮手[BP19-026] 3/3 / 圣剑之光的小队长[BP17-029] 1/1、骑士[BP01-T05] 1/1、月光执行者·里欧德[BP17-022] 1/2
+EX 黄金之杯[BP15-T02]、战栗的海贼旗[BP19-T01] / 铁甲骑士[BP01-T07]｜墓 2/1
+   34 P2 mainPhase 打出 幻影拍档·峇妮与峇侬[BP11-019] 〔fallback〕
+   35 P2 mainPhase 进化 幻影拍档·峇妮与峇侬[BP11-019] 〔fallback〕
+   36 P2 choose/mode val 〔fallback〕
+   37 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 0 〔fallback〕
+   38 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   39 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=15
+   40 P2 mainPhase 攻击 圣剑之光的小队长[BP17-029] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   41 P1 quick Quick 放过 圣剑之光的小队长[BP17-029]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=14
+   42 P2 mainPhase 攻击 骑士[BP01-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   43 P1 quick Quick 放过 骑士[BP01-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=13
+   44 P2 mainPhase 攻击 月光执行者·里欧德[BP17-022] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   45 P1 quick Quick 放过 月光执行者·里欧德[BP17-022]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=12
+   46 P2 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 1 回合 · HP 12/19 · PP 4/0
+手牌 宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]、圣剑之光的小队长[BP17-029]、忠义剑士·艾莉卡[BP17-019]、幻影拍档·峇妮与峇侬[BP11-019]｜对手手牌 6 张
+场 海潮炮手[BP19-026] 3/3 / 圣剑之光的小队长[BP17-029] 1/1 横、骑士[BP01-T05] 1/1 横、月光执行者·里欧德[BP17-022] 1/2 横、幻影拍档·峇妮与峇侬[BP11-019] 4/4 横、魔导四轮车·V[BP11-T01]
+EX 黄金之杯[BP15-T02]、战栗的海贼旗[BP19-T01] / 铁甲骑士[BP01-T07]｜墓 2/1
+   48 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   49 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   50 P1 mainPhase 攻击 海潮炮手[BP19-026] → [公主形态]佩可莉姆[CP04-PR02]
+   51 P2 quick Quick 放过 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 3；P2 -3=16 〔forced〕
+   52 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   53 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=15
+   56 P1 selectCards/target 海潮炮手[BP19-026]→圣剑之光的小队长[BP17-029] 1；圣剑之光的小队长[BP17-029] field→cemetery
+   57 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+   58 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 骑士[BP01-T05]
+   59 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→骑士[BP01-T05] 5；骑士[BP01-T05]→出航的罪人·芭芭萝丝[BP19-019] 1；骑士[BP01-T05] field→cemetery 〔forced〕
+   60 P1 mainPhase 打出 黄金之杯[BP15-T02] P1 +1=13
+   62 P1 selectCards/target 幻影拍档·峇妮与峇侬[BP11-019] field→cemetery
+   63 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   64 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=14
+   66 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=13
+   67 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   68 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=12
+   70 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=11
+   71 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 13/11 · PP 0/5
+手牌 宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]、圣剑之光的小队长[BP17-029]、忠义剑士·艾莉卡[BP17-019]、幻影拍档·峇妮与峇侬[BP11-019]、宇宙之翼·洛菈米亚[BP15-023]｜对手手牌 4 张
+场 海潮炮手[BP19-026] 3/3 横、出航的罪人·芭芭萝丝[BP19-019] 5/3 伤1 横、大洋斥候[BP19-030] 4/2 / 月光执行者·里欧德[BP17-022] 1/2、魔导四轮车·V[BP11-T01]
+EX 空 / 铁甲骑士[BP01-T07]｜墓 2/5
+   73 P2 mainPhase 打出 幻影拍档·峇妮与峇侬[BP11-019] 〔fallback〕
+   74 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 0 〔fallback〕
+   75 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   76 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→出航的罪人·芭芭萝丝[BP19-019] 3；出航的罪人·芭芭萝丝[BP19-019]→魔导四轮车·V[BP11-T01] 5；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；魔导四轮车·V[BP11-T01] field→cemetery
+   77 P2 mainPhase 打出 圣剑之光的小队长[BP17-029] 〔fallback〕
+   78 P2 selectCards/wardEnterEngaged 不选 铁甲骑士[BP01-T07] 新→ex 〔fallback〕
+   79 P2 mainPhase 攻击 月光执行者·里欧德[BP17-022] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   80 P1 quick Quick 放过 月光执行者·里欧德[BP17-022]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=12
+   81 P2 mainPhase 结束主阶段 〔forced〕
+   82 P2 selectCards/wardEngage 战盾卫士[BP02-T02] 〔fallback〕
+
+T10 · 选手 1 回合 · HP 12/11 · PP 5/0
+手牌 宇宙之翼·洛菈米亚[BP15-023]、咒箱女王·娜哈特·娜哈特[BP11-018]、忠义剑士·艾莉卡[BP17-019]、宇宙之翼·洛菈米亚[BP15-023]、忠义剑士·艾莉卡[BP17-019]｜对手手牌 5 张
+场 海潮炮手[BP19-026] 3/3、大洋斥候[BP19-030] 4/2 / 月光执行者·里欧德[BP17-022] 1/2 横、幻影拍档·峇妮与峇侬[BP11-019] 3/3 横、圣剑之光的小队长[BP17-029] 1/1、战盾卫士[BP02-T02] 1/1 横、骑士[BP01-T05] 1/1
+EX 空 / 铁甲骑士[BP01-T07]、铁甲骑士[BP01-T07]｜墓 3/5
+   84 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   85 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   86 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=10
+   87 P1 selectCards/target 海潮炮手[BP19-026]→战盾卫士[BP02-T02] 1；战盾卫士[BP02-T02] field→cemetery
+   88 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+   89 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   90 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   91 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=9
+   93 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=8
+   95 P1 mainPhase 攻击 海潮炮手[BP19-026] → [公主形态]佩可莉姆[CP04-PR02]
+   96 P2 quick Quick 放过 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 5；P2 -5=3 〔forced〕
+   97 P1 mainPhase 攻击 大洋斥候[BP19-030] → [公主形态]佩可莉姆[CP04-PR02]
+   98 P2 quick Quick 放过 大洋斥候[BP19-030]→[公主形态]佩可莉姆[CP04-PR02] 4；P2 -4=-1 〔forced〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":10}
+生命 12/-1
+选手输入 [{"direct":0,"authored":24,"fallback":22,"forced":15},{"direct":0,"authored":1,"fallback":25,"forced":12}]

@@ -1,0 +1,162 @@
+g0306
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 宇宙之翼·洛菈米亚[BP15-023]、天空指挥官·榭莉亚[BP09-018]、荣光剑士·奥蕾莉亚[BP20-022]、忠义剑士·艾莉卡[BP17-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 整手重抽 〔authored〕
+    1 P1 mulligan 整手重抽 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、圣剑之光的小队长[BP17-029]、咒箱女王·娜哈特·娜哈特[BP11-018]、娜哈特的私兵[BP11-031]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 娜哈特的私兵[BP11-031] 〔fallback〕
+    3 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、圣剑之光的小队长[BP17-029]、咒箱女王·娜哈特·娜哈特[BP11-018]｜对手手牌 5 张
+场 空 / 娜哈特的私兵[BP11-031] 2/2
+EX 空 / 空｜墓 0/0
+    5 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+    6 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、圣剑之光的小队长[BP17-029]、咒箱女王·娜哈特·娜哈特[BP11-018]、宇宙之翼·洛菈米亚[BP15-023]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 / 娜哈特的私兵[BP11-031] 2/2
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    8 P2 mainPhase 攻击 娜哈特的私兵[BP11-031] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+    9 P1 quick Quick 放过 娜哈特的私兵[BP11-031]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18
+   10 P2 mainPhase 打出 圣剑之光的小队长[BP17-029] 〔fallback〕
+   11 P2 selectCards/wardEnterEngaged 不选 铁甲骑士[BP01-T07] 新→ex 〔fallback〕
+   12 P2 mainPhase 结束主阶段 〔forced〕
+   13 P2 selectCards/wardEngage 战盾卫士[BP02-T02] 〔fallback〕
+
+T4 · 选手 1 回合 · HP 18/20 · PP 2/0
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、咒箱女王·娜哈特·娜哈特[BP11-018]、宇宙之翼·洛菈米亚[BP15-023]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 娜哈特的私兵[BP11-031] 2/2 横、圣剑之光的小队长[BP17-029] 1/1、战盾卫士[BP02-T02] 1/1 横、骑士[BP01-T05] 1/1
+EX 战栗的海贼旗[BP19-T01] / 铁甲骑士[BP01-T07]｜墓 0/0
+   15 P1 mainPhase 攻击 大洋斥候[BP19-030] → 战盾卫士[BP02-T02]
+   16 P2 quick Quick 放过 大洋斥候[BP19-030]→战盾卫士[BP02-T02] 2；战盾卫士[BP02-T02]→大洋斥候[BP19-030] 1；战盾卫士[BP02-T02] field→cemetery 〔forced〕
+   17 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019]
+   20 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex
+   21 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 娜哈特的私兵[BP11-031]
+   22 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→娜哈特的私兵[BP11-031] 2；娜哈特的私兵[BP11-031]→空绝的显现·欧克托莉斯[BP20-019] 2；娜哈特的私兵[BP11-031] field→cemetery 〔forced〕
+   23 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 18/20 · PP 0/3
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、咒箱女王·娜哈特·娜哈特[BP11-018]、宇宙之翼·洛菈米亚[BP15-023]、幻影拍档·峇妮与峇侬[BP11-019]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/1 伤1 横、空绝的显现·欧克托莉斯[BP20-019] 2/1 伤2 横 / 圣剑之光的小队长[BP17-029] 1/1、骑士[BP01-T05] 1/1
+EX 奉还的剑闪[BP20-026] / 铁甲骑士[BP01-T07]｜墓 0/1
+   25 P2 mainPhase 打出 宇宙之翼·洛菈米亚[BP15-023] 〔fallback〕
+   26 P2 mainPhase 攻击 宇宙之翼·洛菈米亚[BP15-023] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   27 P1 quick Quick 放过 宇宙之翼·洛菈米亚[BP15-023]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=16
+   28 P2 mainPhase 攻击 圣剑之光的小队长[BP17-029] → 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   29 P1 quick Quick 放过 圣剑之光的小队长[BP17-029]→空绝的显现·欧克托莉斯[BP20-019] 1；空绝的显现·欧克托莉斯[BP20-019]→圣剑之光的小队长[BP17-029] 2；空绝的显现·欧克托莉斯[BP20-019] field→cemetery；圣剑之光的小队长[BP17-029] field→cemetery
+   30 P2 mainPhase 攻击 骑士[BP01-T05] → 大洋斥候[BP19-030] 〔fallback〕
+   31 P1 quick Quick 放过 骑士[BP01-T05]→大洋斥候[BP19-030] 1；大洋斥候[BP19-030]→骑士[BP01-T05] 2；大洋斥候[BP19-030] field→cemetery；骑士[BP01-T05] field→cemetery
+   32 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 16/20 · PP 3/1
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、咒箱女王·娜哈特·娜哈特[BP11-018]、幻影拍档·峇妮与峇侬[BP11-019]｜对手手牌 5 张
+场 空 / 宇宙之翼·洛菈米亚[BP15-023] 2/2 横
+EX 奉还的剑闪[BP20-026] / 铁甲骑士[BP01-T07]｜墓 2/2
+   34 P1 mainPhase 打出 空绝篡夺·欧克托莉斯[BP15-020] 空绝的残光[BP15-PR10] 新→ex
+   35 P1 mainPhase 起动 空绝篡夺·欧克托莉斯[BP15-020] 能力 1
+   36 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→宇宙之翼·洛菈米亚[BP15-023] 4；黄金短剑[BP15-T01] 新→ex；宇宙之翼·洛菈米亚[BP15-023] field→cemetery
+   37 P1 mainPhase 起动 空绝篡夺·欧克托莉斯[BP15-020] 能力 1
+   38 P1 mainPhase 打出 空绝的残光[BP15-PR10]
+   41 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 16/20 · PP 0/4
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、咒箱女王·娜哈特·娜哈特[BP11-018]、幻影拍档·峇妮与峇侬[BP11-019]、晴天的银骑士·艾蜜莉亚[SP01-010]｜对手手牌 5 张
+场 空绝篡夺·欧克托莉斯[BP15-020] 3/3 / 空
+EX 黄金短剑[BP15-T01] / 铁甲骑士[BP01-T07]｜墓 3/3
+   43 P2 mainPhase 打出 晴天的银骑士·艾蜜莉亚[SP01-010] 〔fallback〕
+   44 P2 mainPhase 起动 晴天的银骑士·艾蜜莉亚[SP01-010] 能力 1 〔fallback〕
+   45 P2 selectCards/pick 铁甲骑士[BP01-T07] 晴天的银骑士·艾蜜莉亚[SP01-010]→空绝篡夺·欧克托莉斯[BP15-020] 3；空绝篡夺·欧克托莉斯[BP15-020] field→cemetery 〔fallback〕
+   46 P2 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 1 回合 · HP 16/20 · PP 4/0
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、咒箱女王·娜哈特·娜哈特[BP11-018]、幻影拍档·峇妮与峇侬[BP11-019]｜对手手牌 6 张
+场 空 / 晴天的银骑士·艾蜜莉亚[SP01-010] 4/4、铁甲骑士[BP01-T07] 2/2
+EX 黄金短剑[BP15-T01] / 空｜墓 4/3
+   48 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   49 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   50 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=19
+   52 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   53 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   54 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=18
+   57 P1 selectCards/target 晴天的银骑士·艾蜜莉亚[SP01-010] field→cemetery
+   58 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=17
+   59 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 16/17 · PP 0/5
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、咒箱女王·娜哈特·娜哈特[BP11-018]、幻影拍档·峇妮与峇侬[BP11-019]、荣光剑士·奥蕾莉亚[BP20-022]｜对手手牌 4 张
+场 出航的罪人·芭芭萝丝[BP19-019] 6/4、海潮炮手[BP19-026] 2/3 / 铁甲骑士[BP01-T07] 2/2
+EX 黄金短剑[BP15-T01] / 空｜墓 4/4
+   61 P2 mainPhase 打出 幻影拍档·峇妮与峇侬[BP11-019] 〔fallback〕
+   62 P2 mainPhase 进化 幻影拍档·峇妮与峇侬[BP11-019] 〔fallback〕
+   63 P2 choose/mode val 〔fallback〕
+   64 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 0 〔fallback〕
+   65 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   66 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=13
+   67 P2 mainPhase 攻击 铁甲骑士[BP01-T07] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   68 P1 quick Quick 放过 铁甲骑士[BP01-T07]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=11
+   69 P2 mainPhase 打出 俏猫上将[BP13-029] 〔fallback〕
+   70 P2 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 1 回合 · HP 11/17 · PP 5/0
+手牌 咒箱女王·娜哈特·娜哈特[BP11-018]、幻影拍档·峇妮与峇侬[BP11-019]、荣光剑士·奥蕾莉亚[BP20-022]｜对手手牌 5 张
+场 出航的罪人·芭芭萝丝[BP19-019] 6/4、海潮炮手[BP19-026] 2/3 / 铁甲骑士[BP01-T07] 2/2 横、幻影拍档·峇妮与峇侬[BP11-019] 4/4 横、魔导四轮车·V[BP11-T01]、俏猫上将[BP13-029] 2/2
+EX 黄金短剑[BP15-T01] / 空｜墓 4/4
+   72 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+   73 P1 selectCards/target 奉还的剑闪[BP20-026]→幻影拍档·峇妮与峇侬[BP11-019] 4；幻影拍档·峇妮与峇侬[BP11-019] field→cemetery
+   75 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → [公主形态]佩可莉姆[CP04-PR02]
+   76 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→[公主形态]佩可莉姆[CP04-PR02] 6；P2 -6=11 〔forced〕
+   77 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   78 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   79 P1 mainPhase 进化 怒涛副船长[BP19-028]
+   81 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 铁甲骑士[BP01-T07]
+   82 P2 quick Quick 放过 怒涛副船长[BP19-028]→铁甲骑士[BP01-T07] 3；铁甲骑士[BP01-T07]→怒涛副船长[BP19-028] 2；铁甲骑士[BP01-T07] field→cemetery 〔forced〕
+   83 P1 mainPhase 攻击 海潮炮手[BP19-026] → [公主形态]佩可莉姆[CP04-PR02]
+   84 P2 quick Quick 放过 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 2；P2 -2=9 〔forced〕
+   85 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   86 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=8
+   88 P1 choose/mode 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=7；俏猫上将[BP13-029] field→cemetery
+   89 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   90 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=6
+   91 P1 selectPending 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=5
+   92 P1 mainPhase 结束主阶段
+
+T11 · 选手 2 回合 · HP 11/5 · PP 0/6
+手牌 咒箱女王·娜哈特·娜哈特[BP11-018]、幻影拍档·峇妮与峇侬[BP11-019]、荣光剑士·奥蕾莉亚[BP20-022]、静寂的安纳提玛·吉尔达利娅[BP19-022]｜对手手牌 3 张
+场 出航的罪人·芭芭萝丝[BP19-019] 6/4 横、海潮炮手[BP19-026] 2/3 横、怒涛副船长[BP19-028] 3/1 伤2 横、怒涛副船长[BP19-028] 4/2 / 魔导四轮车·V[BP11-T01]
+EX 黄金短剑[BP15-T01] / 空｜墓 5/8
+   94 P2 mainPhase 打出 幻影拍档·峇妮与峇侬[BP11-019] 〔fallback〕
+   95 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 0 〔fallback〕
+   96 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 海潮炮手[BP19-026] 〔fallback〕
+   97 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026]→魔导四轮车·V[BP11-T01] 2；海潮炮手[BP19-026] field→cemetery
+   98 P2 mainPhase 进化 幻影拍档·峇妮与峇侬[BP11-019] 〔fallback〕
+   99 P2 choose/mode val 〔fallback〕
+  100 P2 mainPhase 打出 瞬息的迅捷剑士[BP16-031] 〔fallback〕
+  101 P2 mainPhase 打出 荣光剑士·奥蕾莉亚[BP20-022] 〔fallback〕
+  102 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+  103 P2 mainPhase 攻击 荣光剑士·奥蕾莉亚[BP20-022] → 怒涛副船长[BP19-028] 〔fallback〕
+  104 P1 quick Quick 放过 荣光剑士·奥蕾莉亚[BP20-022]→怒涛副船长[BP19-028] 3；怒涛副船长[BP19-028]→荣光剑士·奥蕾莉亚[BP20-022] 3；怒涛副船长[BP19-028] field→cemetery
+  105 P2 mainPhase 攻击 瞬息的迅捷剑士[BP16-031] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+  106 P1 quick Quick 放过 瞬息的迅捷剑士[BP16-031]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=10
+  107 P2 mainPhase 结束主阶段 〔forced〕
+
+T12 · 选手 1 回合 · HP 10/5 · PP 6/0
+手牌 咒箱女王·娜哈特·娜哈特[BP11-018]、静寂的安纳提玛·吉尔达利娅[BP19-022]、圣剑之光的小队长[BP17-029]｜对手手牌 4 张
+场 出航的罪人·芭芭萝丝[BP19-019] 6/4、怒涛副船长[BP19-028] 4/2 / 魔导四轮车·V[BP11-T01]、幻影拍档·峇妮与峇侬[BP11-019] 4/4 横、魔导四轮车·V[BP11-T01]、瞬息的迅捷剑士[BP16-031] 1/1 横、荣光剑士·奥蕾莉亚[BP20-022] 3/1 伤3 横
+EX 黄金短剑[BP15-T01] / 空｜墓 7/8
+  109 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 荣光剑士·奥蕾莉亚[BP20-022]
+  110 P2 quick Quick 放过 怒涛副船长[BP19-028]→荣光剑士·奥蕾莉亚[BP20-022] 4；荣光剑士·奥蕾莉亚[BP20-022]→怒涛副船长[BP19-028] 3；怒涛副船长[BP19-028] field→cemetery；荣光剑士·奥蕾莉亚[BP20-022] field→cemetery 〔forced〕
+  111 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → [公主形态]佩可莉姆[CP04-PR02]
+  112 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→[公主形态]佩可莉姆[CP04-PR02] 6；P2 -6=-1 〔forced〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":12}
+生命 10/-1
+选手输入 [{"direct":0,"authored":15,"fallback":32,"forced":18},{"direct":0,"authored":1,"fallback":29,"forced":18}]
