@@ -1,0 +1,138 @@
+g0085
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、海潮炮手[BP19-026]、大洋斥候[BP19-030]、篡夺的随从[BP05-029]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留 〔authored〕
+    1 P2 mulligan 整手重抽 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、海潮炮手[BP19-026]、大洋斥候[BP19-030]、篡夺的随从[BP05-029]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+    3 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、海潮炮手[BP19-026]、篡夺的随从[BP05-029]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    5 P2 mainPhase 打出 破坏的隐者[BP15-054]
+    6 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、海潮炮手[BP19-026]、篡夺的随从[BP05-029]、海潮炮手[BP19-026]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 / 破坏的隐者[BP15-054] 2/2
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    8 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=19 〔fallback〕
+    9 P1 mainPhase 攻击 大洋斥候[BP19-030] → 第二绝杰·里榭娜[BP10-LD04] 〔fallback〕
+   10 P2 quick Quick 放过 大洋斥候[BP19-030]→第二绝杰·里榭娜[BP10-LD04] 3；P2 -3=16
+   11 P1 mainPhase 打出 篡夺的随从[BP05-029] 〔fallback〕
+   12 P1 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 2 回合 · HP 20/16 · PP 0/2
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、海潮炮手[BP19-026]、海潮炮手[BP19-026]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 3/2 横、篡夺的随从[BP05-029] 2/2 / 破坏的隐者[BP15-054] 2/2
+EX 空 / 空｜墓 0/1
+   14 P2 mainPhase 打出 破坏的祈祷者[BP20-048]
+   15 P2 mainPhase 攻击 破坏的隐者[BP15-054] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   16 P1 quick Quick 放过 破坏的隐者[BP15-054]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18 〔forced〕
+   17 P2 mainPhase 起动 破坏的祈祷者[BP20-048] 能力 0
+   18 P2 selectCards/target 破坏的祈祷者[BP20-048]→大洋斥候[BP19-030] 2；破坏的隐者[BP15-054] field→cemetery；大洋斥候[BP19-030] field→cemetery
+   19 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 18/16 · PP 3/0
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、海潮炮手[BP19-026]、海潮炮手[BP19-026]、奉还的剑闪[BP20-026]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2 / 破坏的祈祷者[BP20-048] 2/3 横
+EX 空 / 空｜墓 1/2
+   21 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→破坏的祈祷者[BP20-048] 4；破坏的祈祷者[BP20-048] field→cemetery 〔authored〕
+   22 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 第二绝杰·里榭娜[BP10-LD04] 〔fallback〕
+   23 P2 quick Quick 放过 篡夺的随从[BP05-029]→第二绝杰·里榭娜[BP10-LD04] 2；P2 -2=14
+   24 P1 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 2 回合 · HP 18/14 · PP 1/3
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、海潮炮手[BP19-026]、海潮炮手[BP19-026]｜对手手牌 5 张
+场 篡夺的随从[BP05-029] 2/2 横 / 空
+EX 空 / 空｜墓 2/3
+   26 P2 mainPhase 打出 奏绝破坏·里榭娜[BP15-039]
+   27 P2 mainPhase 进化 奏绝破坏·里榭娜[BP15-039]（EP）
+   28 P2 selectCards/effect 奏绝的显现·里榭娜[BP20-037] deck→ex；破坏的祈祷者[BP20-048] deck→ex
+   30 P2 mainPhase 攻击 奏绝破坏·里榭娜[BP15-039] → 篡夺的随从[BP05-029]
+   31 P1 quick Quick 放过 奏绝破坏·里榭娜[BP15-039]→篡夺的随从[BP05-029] 4；篡夺的随从[BP05-029]→奏绝破坏·里榭娜[BP15-039] 2；篡夺的随从[BP05-029] field→cemetery 〔forced〕
+   32 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 18/14 · PP 4/0
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、海潮炮手[BP19-026]、海潮炮手[BP19-026]、强袭盗贼[BP15-035]｜对手手牌 4 张
+场 空 / 奏绝破坏·里榭娜[BP15-039] 4/2 伤2 横
+EX 空 / 奏绝的显现·里榭娜[BP20-037]、破坏的祈祷者[BP20-048]｜墓 3/3
+   34 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   35 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   36 P1 choose/mode stats 奏绝破坏·里榭娜[BP15-039] field→cemetery 〔fallback〕
+   37 P1 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 2 回合 · HP 18/14 · PP 1/4
+手牌 海潮炮手[BP19-026]、海潮炮手[BP19-026]、强袭盗贼[BP15-035]｜对手手牌 5 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 / 空
+EX 空 / 奏绝的显现·里榭娜[BP20-037]、破坏的祈祷者[BP20-048]｜墓 3/4
+   39 P2 mainPhase 打出 奏绝的显现·里榭娜[BP20-037]
+   40 P2 mainPhase 打出 重返的奏绝[BP15-045] 奏绝破坏·里榭娜[BP15-039] cemetery→banished
+   41 P2 selectCards/search 奏绝的独唱[BP15-PR12] 新→ex
+   42 P2 mainPhase 打出 奏绝的独唱[BP15-PR12]
+   43 P2 selectCards/pick 奏绝的独唱[BP15-PR12]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 4；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery
+   44 P2 mainPhase 进化 奏绝破坏·里榭娜[BP15-039]（EP）
+   45 P2 selectCards/effect 破坏的继承者·阿克西雅[BP20-040] deck→ex；白之章·黑之章[BP05-045] deck→ex
+   47 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 18/14 · PP 5/0
+手牌 海潮炮手[BP19-026]、海潮炮手[BP19-026]、强袭盗贼[BP15-035]、大洋斥候[BP19-030]｜对手手牌 4 张
+场 空 / 奏绝的显现·里榭娜[BP20-037] 1/1 横、新约·白之章[BP20-T03]、奏绝破坏·里榭娜[BP15-039] 4/4
+EX 空 / 破坏的祈祷者[BP20-048]、破坏的继承者·阿克西雅[BP20-040]、白之章·黑之章[BP05-045]｜墓 4/4
+   49 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   50 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=13 〔fallback〕
+   51 P1 selectCards/target 奏绝的显现·里榭娜[BP20-037] 海潮炮手[BP19-026]→奏绝的显现·里榭娜[BP20-037] 1；奏绝的显现·里榭娜[BP20-037] field→cemetery 〔fallback〕
+   52 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   53 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔authored〕
+   54 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=12 〔authored〕
+   55 P1 selectCards/target 第二绝杰·里榭娜[BP10-LD04] 海潮炮手[BP19-026]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=11 〔authored〕
+   56 P1 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 2 回合 · HP 18/11 · PP 0/5
+手牌 海潮炮手[BP19-026]、强袭盗贼[BP15-035]｜对手手牌 5 张
+场 海潮炮手[BP19-026] 4/3、大洋斥候[BP19-030] 2/2 / 新约·白之章[BP20-T03]、奏绝破坏·里榭娜[BP15-039] 4/4
+EX 空 / 破坏的祈祷者[BP20-048]、破坏的继承者·阿克西雅[BP20-040]、白之章·黑之章[BP05-045]｜墓 4/5
+   58 P2 mainPhase 打出 破坏的狂信者[BP08-050]
+   59 P2 selectCards/target 破坏的狂信者[BP08-050]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=16；P2 +2=13；海潮炮手[BP19-026] field→cemetery
+   60 P2 mainPhase 打出 破坏的随从[BP05-048]
+   61 P2 mainPhase 进化 破坏的随从[BP05-048] 破坏的随从[BP05-049]→大洋斥候[BP19-030] 2；破坏的随从[BP05-049]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=14；大洋斥候[BP19-030] field→cemetery
+   62 P2 mainPhase 攻击 奏绝破坏·里榭娜[BP15-039] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   63 P1 quick Quick 放过 奏绝破坏·里榭娜[BP15-039]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=10 〔forced〕
+   64 P2 mainPhase 结束主阶段
+
+T11 · 选手 1 回合 · HP 10/13 · PP 6/0
+手牌 海潮炮手[BP19-026]、强袭盗贼[BP15-035]、艾巴利缇亚[BP05-034]｜对手手牌 3 张
+场 空 / 新约·白之章[BP20-T03]、奏绝破坏·里榭娜[BP15-039] 4/4 横、破坏的狂信者[BP08-050] 3/4、破坏的随从[BP05-048] 4/4
+EX 空 / 破坏的祈祷者[BP20-048]、破坏的继承者·阿克西雅[BP20-040]、白之章·黑之章[BP05-045]｜墓 6/5
+   66 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   67 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=12 〔fallback〕
+   68 P1 selectCards/target 第二绝杰·里榭娜[BP10-LD04] 海潮炮手[BP19-026]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=11 〔authored〕
+   69 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔fallback〕
+   70 P1 selectCards/effect 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+   71 P1 orderCards/deckBottom 排序 涸绝饥饿·吉鲁涅莉婕[BP15-113]、空绝篡夺·欧克托莉斯[BP15-020]、出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   72 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+   73 P1 mainPhase 结束主阶段 〔fallback〕
+
+T12 · 选手 2 回合 · HP 10/11 · PP 0/6
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、艾巴利缇亚[BP05-034]｜对手手牌 4 张
+场 海潮炮手[BP19-026] 3/3、强袭盗贼[BP15-035] 3/1 / 新约·白之章[BP20-T03]、奏绝破坏·里榭娜[BP15-039] 4/4、破坏的狂信者[BP08-050] 3/4、破坏的随从[BP05-048] 4/4
+EX 黄金短剑[BP15-T01] / 破坏的祈祷者[BP20-048]、破坏的继承者·阿克西雅[BP20-040]、白之章·黑之章[BP05-045]｜墓 6/6
+   75 P2 mainPhase 攻击 奏绝破坏·里榭娜[BP15-039] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   76 P1 quick Quick 放过 奏绝破坏·里榭娜[BP15-039]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=6 〔forced〕
+   77 P2 mainPhase 攻击 破坏的随从[BP05-048] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   78 P1 quick Quick 放过 破坏的随从[BP05-048]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=2 〔forced〕
+   79 P2 mainPhase 攻击 破坏的狂信者[BP08-050] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   80 P1 quick Quick 放过 破坏的狂信者[BP08-050]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=-1 〔forced〕
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":12}
+生命 -1/11
+选手输入 [{"direct":0,"authored":7,"fallback":18,"forced":16},{"direct":0,"authored":11,"fallback":19,"forced":10}]
