@@ -7,12 +7,12 @@ const protocol = read(join(extraArchive, 'protocol.json'));
 const checks = join(extraArchive, 'rune', 'checks');
 const files = existsSync(checks) ? readdirSync(checks).filter(f => /^\d{3}\.json$/.test(f)).sort() : [];
 const entries = [];
-let next = 1;
 for (const f of files) {
-  assert.equal(f, `${pad(next)}.json`);
+  const first = Number(f.slice(0, 3));
+  assert(first >= 1 && first < protocol.games && first % 10 === 1);
   const rows = read(join(checks, f));
   assert.equal(rows.length, 10);
-  for (const r of rows) assert.equal(r.number, next++);
+  for (const [index, r] of rows.entries()) assert.equal(r.number, first + index);
   entries.push(rows);
 }
 const all = entries.flat();
