@@ -6,7 +6,7 @@
 |---|---|---:|---:|---:|---|---|
 | 猎人妖 | `Z6kf6M` | 10/40 | 3/5 | 4/5 | 7–3–0 | [原表](hunter/deck.json) · [1–10](hunter/checks/001.md) |
 | 妖精妖 | `1DYwF7` | 10/40 | 4/5 | 2/5 | 6–4–0 | [原表](fairy/deck.json) · [1–10](fairy/checks/001.md) |
-| 铺场皇 | `csUWGv` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](rally/deck.json) |
+| 铺场皇 | `csUWGv` | 10/40 | 4/5 | 2/5 | 6–4–0 | [原表](rally/deck.json) · [1–10](rally/checks/001.md) |
 | 破坏法 | `cQZr8Z` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](destruction/deck.json) |
 | 真实法 | `h1LX3a` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](truth/deck.json) |
 | 侮蔑龙 | `zQrwne` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](disdain/deck.json) |
