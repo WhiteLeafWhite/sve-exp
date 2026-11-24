@@ -4,7 +4,7 @@
 
 | 主轴 | 网站卡组码 | 已归档 | 先攻胜场 | 后攻胜场 | 总胜负和 | 牌表、录像与复盘 |
 |---|---|---:|---:|---:|---|---|
-| 猎人妖 | `Z6kf6M` | 10/40 | 3/5 | 4/5 | 7–3–0 | [原表](hunter/deck.json) · [1–10](hunter/checks/001.md) |
+| 猎人妖 | `Z6kf6M` | 20/40 | 7/10 | 8/10 | 15–5–0 | [原表](hunter/deck.json) · [1–10](hunter/checks/001.md) · [11–20](hunter/checks/011.md) |
 | 妖精妖 | `1DYwF7` | 10/40 | 4/5 | 2/5 | 6–4–0 | [原表](fairy/deck.json) · [1–10](fairy/checks/001.md) |
 | 铺场皇 | `csUWGv` | 10/40 | 4/5 | 2/5 | 6–4–0 | [原表](rally/deck.json) · [1–10](rally/checks/001.md) |
 | 破坏法 | `cQZr8Z` | 10/40 | 2/5 | 3/5 | 5–5–0 | [原表](destruction/deck.json) · [1–10](destruction/checks/001.md) |
