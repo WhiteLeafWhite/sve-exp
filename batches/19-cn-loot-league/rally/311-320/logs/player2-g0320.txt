@@ -1,0 +1,189 @@
+g0320
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 瞬息的迅捷剑士[BP16-031]、忠义剑士·艾莉卡[BP17-019]、圣剑之光的小队长[BP17-029]、月光执行者·里欧德[BP17-022]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 保留 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 瞬息的迅捷剑士[BP16-031]、忠义剑士·艾莉卡[BP17-019]、圣剑之光的小队长[BP17-029]、月光执行者·里欧德[BP17-022]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 瞬息的迅捷剑士[BP16-031] 〔fallback〕
+    3 P2 mainPhase 攻击 瞬息的迅捷剑士[BP16-031] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+    4 P1 quick Quick 放过 瞬息的迅捷剑士[BP16-031]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19
+    5 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 19/20 · PP 1/0
+手牌 忠义剑士·艾莉卡[BP17-019]、圣剑之光的小队长[BP17-029]、月光执行者·里欧德[BP17-022]｜对手手牌 5 张
+场 空 / 瞬息的迅捷剑士[BP16-031] 1/1 横
+EX 空 / 空｜墓 0/0
+    7 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 19/20 · PP 1/2
+手牌 忠义剑士·艾莉卡[BP17-019]、圣剑之光的小队长[BP17-029]、月光执行者·里欧德[BP17-022]、天空指挥官·榭莉亚[BP09-018]｜对手手牌 5 张
+场 空 / 瞬息的迅捷剑士[BP16-031] 1/1
+EX 空 / 空｜墓 0/0
+    9 P2 mainPhase 进化 瞬息的迅捷剑士[BP16-031] 瞬息的迅捷剑士[BP16-032]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=18 〔fallback〕
+   10 P2 mainPhase 攻击 瞬息的迅捷剑士[BP16-031] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   11 P1 quick 打出 精炼的空绝[BP15-026] 精炼的空绝[BP15-026]→瞬息的迅捷剑士[BP16-031] 2；黄金之杯[BP15-T02] 新→ex；瞬息的迅捷剑士[BP16-031] field→cemetery
+   13 P2 mainPhase 打出 天空指挥官·榭莉亚[BP09-018] 〔fallback〕
+   14 P2 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 1 回合 · HP 18/20 · PP 2/0
+手牌 忠义剑士·艾莉卡[BP17-019]、圣剑之光的小队长[BP17-029]、月光执行者·里欧德[BP17-022]｜对手手牌 5 张
+场 空 / 天空指挥官·榭莉亚[BP09-018] 2/2
+EX 黄金之杯[BP15-T02] / 空｜墓 1/1
+   16 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   17 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   19 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 18/20 · PP 0/3
+手牌 忠义剑士·艾莉卡[BP17-019]、圣剑之光的小队长[BP17-029]、月光执行者·里欧德[BP17-022]、圣剑之光的小队长[BP17-029]｜对手手牌 5 张
+场 怒涛副船长[BP19-028] 3/3 / 天空指挥官·榭莉亚[BP09-018] 2/2
+EX 黄金之杯[BP15-T02]、战栗的海贼旗[BP19-T01] / 空｜墓 1/1
+   21 P2 mainPhase 攻击 天空指挥官·榭莉亚[BP09-018] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   22 P1 quick Quick 放过 天空指挥官·榭莉亚[BP09-018]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=16
+   23 P2 mainPhase 打出 圣剑之光的小队长[BP17-029] 〔fallback〕
+   24 P2 selectCards/wardEnterEngaged 不选 铁甲骑士[BP01-T07] 新→ex 〔fallback〕
+   25 P2 mainPhase 进化 天空指挥官·榭莉亚[BP09-018] 〔fallback〕
+   26 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   27 P2 mainPhase 结束主阶段 〔forced〕
+   28 P2 selectCards/wardEngage 战盾卫士[BP02-T02]、战盾卫士[BP02-T02] 〔authored〕
+
+T6 · 选手 1 回合 · HP 16/20 · PP 3/0
+手牌 忠义剑士·艾莉卡[BP17-019]、月光执行者·里欧德[BP17-022]、圣剑之光的小队长[BP17-029]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 3/3 / 天空指挥官·榭莉亚[BP09-018] 2/2 横、圣剑之光的小队长[BP17-029] 1/1、战盾卫士[BP02-T02] 1/1 横、骑士[BP01-T05] 1/1、战盾卫士[BP02-T02] 1/1 横
+EX 黄金之杯[BP15-T02]、战栗的海贼旗[BP19-T01] / 铁甲骑士[BP01-T07]｜墓 1/1
+   30 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   31 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 战盾卫士[BP02-T02]
+   32 P2 quick Quick 放过 怒涛副船长[BP19-028]→战盾卫士[BP02-T02] 3；战盾卫士[BP02-T02]→怒涛副船长[BP19-028] 1；战盾卫士[BP02-T02] field→cemetery 〔forced〕
+   33 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   35 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   36 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=19
+   37 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 战盾卫士[BP02-T02]
+   38 P2 quick Quick 放过 怒涛副船长[BP19-028]→战盾卫士[BP02-T02] 4；战盾卫士[BP02-T02]→怒涛副船长[BP19-028] 1；战盾卫士[BP02-T02] field→cemetery 〔forced〕
+   39 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 16/19 · PP 0/4
+手牌 忠义剑士·艾莉卡[BP17-019]、月光执行者·里欧德[BP17-022]、圣剑之光的小队长[BP17-029]、音速机械·洛菈米亚[BP06-019]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 3/2 伤1 横、怒涛副船长[BP19-028] 4/2 伤1 横 / 天空指挥官·榭莉亚[BP09-018] 2/2、圣剑之光的小队长[BP17-029] 1/1、骑士[BP01-T05] 1/1
+EX 黄金之杯[BP15-T02]、战栗的海贼旗[BP19-T01] / 铁甲骑士[BP01-T07]｜墓 1/1
+   41 P2 mainPhase 打出 音速机械·洛菈米亚[BP06-019] 〔fallback〕
+   42 P2 mainPhase 攻击 天空指挥官·榭莉亚[BP09-018] → 怒涛副船长[BP19-028] 〔fallback〕
+   43 P1 quick Quick 放过 天空指挥官·榭莉亚[BP09-018]→怒涛副船长[BP19-028] 2；怒涛副船长[BP19-028]→天空指挥官·榭莉亚[BP09-018] 4；怒涛副船长[BP19-028] field→cemetery；天空指挥官·榭莉亚[BP09-018] field→cemetery
+   44 P2 mainPhase 进化 音速机械·洛菈米亚[BP06-019] 〔fallback〕
+   45 P2 mainPhase 攻击 音速机械·洛菈米亚[BP06-019] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   46 P1 quick Quick 放过 音速机械·洛菈米亚[BP06-019]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=12
+   47 P2 mainPhase 打出 月光执行者·里欧德[BP17-022] 月光执行者·里欧德[BP17-022]→怒涛副船长[BP19-028] 1 〔fallback〕
+   48 P2 mainPhase 攻击 圣剑之光的小队长[BP17-029] → 怒涛副船长[BP19-028] 〔fallback〕
+   49 P1 quick Quick 放过 圣剑之光的小队长[BP17-029]→怒涛副船长[BP19-028] 1；怒涛副船长[BP19-028]→圣剑之光的小队长[BP17-029] 3；怒涛副船长[BP19-028] field→cemetery；圣剑之光的小队长[BP17-029] field→cemetery
+   50 P2 mainPhase 攻击 骑士[BP01-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   51 P1 quick Quick 放过 骑士[BP01-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=11
+   52 P2 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 1 回合 · HP 11/19 · PP 4/0
+手牌 忠义剑士·艾莉卡[BP17-019]、圣剑之光的小队长[BP17-029]｜对手手牌 7 张
+场 空 / 骑士[BP01-T05] 1/1 横、音速机械·洛菈米亚[BP06-019] 4/3 横、月光执行者·里欧德[BP17-022] 1/2
+EX 黄金之杯[BP15-T02]、战栗的海贼旗[BP19-T01] / 铁甲骑士[BP01-T07]｜墓 3/3
+   54 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   55 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   56 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=18
+   58 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   59 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 骑士[BP01-T05]
+   60 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→骑士[BP01-T05] 5；骑士[BP01-T05]→出航的罪人·芭芭萝丝[BP19-019] 1；骑士[BP01-T05] field→cemetery 〔forced〕
+   61 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   62 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=17
+   65 P1 selectCards/target 音速机械·洛菈米亚[BP06-019] field→cemetery
+   66 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=16
+   67 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   68 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=15
+   70 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=14
+   71 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 11/14 · PP 0/5
+手牌 忠义剑士·艾莉卡[BP17-019]、圣剑之光的小队长[BP17-029]、约定之荣耀·高文[BP18-023]｜对手手牌 5 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/3 伤1 横、海潮炮手[BP19-026] 4/3 / 月光执行者·里欧德[BP17-022] 1/2
+EX 黄金之杯[BP15-T02] / 铁甲骑士[BP01-T07]｜墓 3/6
+   73 P2 mainPhase 打出 约定之荣耀·高文[BP18-023] 〔fallback〕
+   74 P2 mainPhase 打出 音速机械·洛菈米亚[BP06-019] 〔fallback〕
+   75 P2 mainPhase 进化 音速机械·洛菈米亚[BP06-019] 〔fallback〕
+   76 P2 mainPhase 攻击 音速机械·洛菈米亚[BP06-019] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   77 P1 quick Quick 放过 音速机械·洛菈米亚[BP06-019]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=7
+   78 P2 mainPhase 攻击 约定之荣耀·高文[BP18-023] → 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   79 P1 quick Quick 放过 约定之荣耀·高文[BP18-023]→出航的罪人·芭芭萝丝[BP19-019] 3；出航的罪人·芭芭萝丝[BP19-019]→约定之荣耀·高文[BP18-023] 5；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；约定之荣耀·高文[BP18-023] field→cemetery
+   80 P2 mainPhase 攻击 月光执行者·里欧德[BP17-022] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   81 P1 quick Quick 放过 月光执行者·里欧德[BP17-022]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=6
+   82 P2 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 1 回合 · HP 6/14 · PP 5/0
+手牌 忠义剑士·艾莉卡[BP17-019]、圣剑之光的小队长[BP17-029]｜对手手牌 6 张
+场 海潮炮手[BP19-026] 4/3 / 月光执行者·里欧德[BP17-022] 1/2 横、音速机械·洛菈米亚[BP06-019] 4/3 横
+EX 黄金之杯[BP15-T02] / 铁甲骑士[BP01-T07]｜墓 4/7
+   84 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex
+   85 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 音速机械·洛菈米亚[BP06-019]
+   86 P2 quick Quick 放过 强袭盗贼[BP15-035]→音速机械·洛菈米亚[BP06-019] 3；音速机械·洛菈米亚[BP06-019]→强袭盗贼[BP15-035] 4；强袭盗贼[BP15-035] field→cemetery；音速机械·洛菈米亚[BP06-019] field→cemetery 〔forced〕
+   87 P1 mainPhase 打出 空绝篡夺·欧克托莉斯[BP15-020] 空绝的残光[BP15-PR10] 新→ex
+   88 P1 mainPhase 攻击 海潮炮手[BP19-026] → [公主形态]佩可莉姆[CP04-PR02]
+   89 P2 quick Quick 放过 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 4；P2 -4=10 〔forced〕
+   90 P1 mainPhase 起动 空绝篡夺·欧克托莉斯[BP15-020] 能力 1
+   91 P1 mainPhase 打出 黄金短剑[BP15-T01] 黄金短剑[BP15-T01]→月光执行者·里欧德[BP17-022] 2；月光执行者·里欧德[BP17-022] field→cemetery
+   92 P1 mainPhase 起动 空绝篡夺·欧克托莉斯[BP15-020] 能力 1
+   93 P1 mainPhase 打出 黄金之杯[BP15-T02] P1 +2=8
+   94 P1 mainPhase 结束主阶段
+
+T11 · 选手 2 回合 · HP 8/10 · PP 0/6
+手牌 忠义剑士·艾莉卡[BP17-019]、圣剑之光的小队长[BP17-029]、荣光剑士·奥蕾莉亚[BP20-022]｜对手手牌 4 张
+场 海潮炮手[BP19-026] 4/3 横、空绝篡夺·欧克托莉斯[BP15-020] 3/3 / 空
+EX 空绝的残光[BP15-PR10] / 铁甲骑士[BP01-T07]｜墓 5/10
+   96 P2 mainPhase 打出 荣光剑士·奥蕾莉亚[BP20-022] 〔authored〕
+   97 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   98 P2 mainPhase 攻击 荣光剑士·奥蕾莉亚[BP20-022] → 空绝篡夺·欧克托莉斯[BP15-020] 〔fallback〕
+   99 P1 quick Quick 放过 荣光剑士·奥蕾莉亚[BP20-022]→空绝篡夺·欧克托莉斯[BP15-020] 3；空绝篡夺·欧克托莉斯[BP15-020]→荣光剑士·奥蕾莉亚[BP20-022] 3；空绝篡夺·欧克托莉斯[BP15-020] field→cemetery
+  100 P2 mainPhase 结束主阶段 〔forced〕
+
+T12 · 选手 1 回合 · HP 8/10 · PP 6/1
+手牌 忠义剑士·艾莉卡[BP17-019]、圣剑之光的小队长[BP17-029]、幻影拍档·峇妮与峇侬[BP11-019]｜对手手牌 5 张
+场 海潮炮手[BP19-026] 4/3 / 荣光剑士·奥蕾莉亚[BP20-022] 3/1 伤3 横
+EX 空绝的残光[BP15-PR10] / 铁甲骑士[BP01-T07]｜墓 6/10
+  102 P1 mainPhase 打出 精炼的空绝[BP15-026] 精炼的空绝[BP15-026]→荣光剑士·奥蕾莉亚[BP20-022] 2；黄金之杯[BP15-T02] 新→ex；荣光剑士·奥蕾莉亚[BP20-022] field→cemetery
+  103 P1 mainPhase 攻击 海潮炮手[BP19-026] → [公主形态]佩可莉姆[CP04-PR02]
+  104 P2 quick Quick 放过 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 4；P2 -4=6 〔forced〕
+  105 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+  106 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+  107 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=5
+  108 P1 selectPending 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=4；P2 -1=3
+  109 P1 mainPhase 打出 空绝的崇拜者[BP15-028]
+  111 P1 selectCards/pick 黄金短剑[BP15-T01] 新→ex
+  112 P1 mainPhase 结束主阶段
+
+T13 · 选手 2 回合 · HP 8/3 · PP 0/7
+手牌 忠义剑士·艾莉卡[BP17-019]、圣剑之光的小队长[BP17-029]、幻影拍档·峇妮与峇侬[BP11-019]、天空指挥官·榭莉亚[BP09-018]｜对手手牌 2 张
+场 海潮炮手[BP19-026] 4/3 横、海潮炮手[BP19-026] 3/3、空绝的崇拜者[BP15-028] 3/3 / 空
+EX 空绝的残光[BP15-PR10]、黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 铁甲骑士[BP01-T07]｜墓 7/11
+  114 P2 mainPhase 打出 天空指挥官·榭莉亚[BP09-018] 〔fallback〕
+  115 P2 mainPhase 超进化 天空指挥官·榭莉亚[BP09-018] 〔fallback〕
+  116 P2 mainPhase 攻击 天空指挥官·榭莉亚[BP09-018] → 海潮炮手[BP19-026] 〔authored〕
+  117 P1 quick Quick 放过 天空指挥官·榭莉亚[BP09-018]→海潮炮手[BP19-026] 5；海潮炮手[BP19-026]→天空指挥官·榭莉亚[BP09-018] 4；海潮炮手[BP19-026] field→cemetery
+  118 P2 mainPhase 打出 忠义剑士·艾莉卡[BP17-019] 〔fallback〕
+  119 P2 choose/effect Shield Guardian 〔fallback〕
+  120 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+  121 P2 mainPhase 攻击 忠义剑士·艾莉卡[BP17-019] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+  122 P1 quick Quick 放过 忠义剑士·艾莉卡[BP17-019]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=5
+  123 P2 mainPhase 结束主阶段 〔forced〕
+  124 P2 selectCards/wardEngage 战盾卫士[BP02-T02] 〔authored〕
+
+T14 · 选手 1 回合 · HP 5/3 · PP 7/0
+手牌 圣剑之光的小队长[BP17-029]、幻影拍档·峇妮与峇侬[BP11-019]｜对手手牌 3 张
+场 海潮炮手[BP19-026] 3/3、空绝的崇拜者[BP15-028] 3/3 / 天空指挥官·榭莉亚[BP09-018] 5/1 伤4 横、铁甲骑士[BP01-T07] 2/2、骑士[BP01-T05] 1/1、忠义剑士·艾莉卡[BP17-019] 3/1 横、战盾卫士[BP02-T02] 1/1 横
+EX 空绝的残光[BP15-PR10]、黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 铁甲骑士[BP01-T07]｜墓 8/11
+  126 P1 mainPhase 攻击 海潮炮手[BP19-026] → 战盾卫士[BP02-T02]
+  127 P2 quick Quick 放过 海潮炮手[BP19-026]→战盾卫士[BP02-T02] 3；战盾卫士[BP02-T02]→海潮炮手[BP19-026] 1；战盾卫士[BP02-T02] field→cemetery 〔forced〕
+  128 P1 mainPhase 攻击 空绝的崇拜者[BP15-028] → [公主形态]佩可莉姆[CP04-PR02]
+  129 P2 quick Quick 放过 空绝的崇拜者[BP15-028]→[公主形态]佩可莉姆[CP04-PR02] 3；P2 -3=0 〔forced〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":14}
+生命 5/0
+选手输入 [{"direct":0,"authored":18,"fallback":30,"forced":25},{"direct":0,"authored":5,"fallback":31,"forced":21}]

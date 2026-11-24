@@ -1,0 +1,174 @@
+g0319
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、强袭盗贼[BP15-035]、大洋斥候[BP19-030]、涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留 〔authored〕
+    1 P2 mulligan 保留 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、强袭盗贼[BP15-035]、大洋斥候[BP19-030]、涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+    3 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 出航的罪人·芭芭萝丝[BP19-019]、强袭盗贼[BP15-035]、涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    5 P2 mainPhase 打出 瞬息的迅捷剑士[BP16-031]
+    6 P2 mainPhase 进化 瞬息的迅捷剑士[BP16-031]（EP）
+    7 P2 selectCards/target 瞬息的迅捷剑士[BP16-032]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19
+    8 P2 mainPhase 攻击 瞬息的迅捷剑士[BP16-031] → 第八绝杰·欧克托莉斯[BP10-LD02]
+    9 P1 quick Quick 放过 瞬息的迅捷剑士[BP16-031]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=17 〔forced〕
+   10 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 17/20 · PP 2/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、强袭盗贼[BP15-035]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、奉还的剑闪[BP20-026]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 / 瞬息的迅捷剑士[BP16-031] 2/2 横
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+   12 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+   13 P1 mainPhase 攻击 大洋斥候[BP19-030] → [公主形态]佩可莉姆[CP04-PR02] 〔fallback〕
+   14 P2 quick Quick 放过 大洋斥候[BP19-030]→[公主形态]佩可莉姆[CP04-PR02] 2；P2 -2=18
+   15 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 瞬息的迅捷剑士[BP16-031] 〔fallback〕
+   16 P2 quick Quick 放过 强袭盗贼[BP15-035]→瞬息的迅捷剑士[BP16-031] 3；瞬息的迅捷剑士[BP16-031]→强袭盗贼[BP15-035] 2；强袭盗贼[BP15-035] field→cemetery；瞬息的迅捷剑士[BP16-031] field→cemetery
+   17 P1 mainPhase 结束主阶段 〔fallback〕
+
+T4 · 选手 2 回合 · HP 17/18 · PP 0/2
+手牌 出航的罪人·芭芭萝丝[BP19-019]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、奉还的剑闪[BP20-026]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 横 / 空
+EX 战栗的海贼旗[BP19-T01]、黄金短剑[BP15-T01] / 空｜墓 1/2
+   19 P2 mainPhase 打出 约定之荣耀·高文[BP18-023]
+   20 P2 mainPhase 攻击 约定之荣耀·高文[BP18-023] → 大洋斥候[BP19-030]
+   21 P1 quick Quick 放过 约定之荣耀·高文[BP18-023]→大洋斥候[BP19-030] 3；大洋斥候[BP19-030]→约定之荣耀·高文[BP18-023] 2；大洋斥候[BP19-030] field→cemetery 〔forced〕
+   22 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 17/18 · PP 3/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、奉还的剑闪[BP20-026]、艾巴利缇亚[BP05-034]｜对手手牌 4 张
+场 空 / 约定之荣耀·高文[BP18-023] 3/1 伤2 横
+EX 战栗的海贼旗[BP19-T01]、黄金短剑[BP15-T01] / 空｜墓 2/2
+   24 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   25 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   26 P1 choose/mode stats 约定之荣耀·高文[BP18-023] field→cemetery 〔fallback〕
+   27 P1 mainPhase 结束主阶段 〔fallback〕
+
+T6 · 选手 2 回合 · HP 17/18 · PP 0/3
+手牌 出航的罪人·芭芭萝丝[BP19-019]、奉还的剑闪[BP20-026]、艾巴利缇亚[BP05-034]｜对手手牌 5 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 / 空
+EX 战栗的海贼旗[BP19-T01]、黄金短剑[BP15-T01] / 空｜墓 2/3
+   29 P2 mainPhase 打出 幻影拍档·峇妮与峇侬[BP11-019]
+   30 P2 mainPhase 进化 幻影拍档·峇妮与峇侬[BP11-019]（EP）
+   32 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 0
+   33 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   34 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=14 〔forced〕
+   35 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 14/18 · PP 4/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、奉还的剑闪[BP20-026]、艾巴利缇亚[BP05-034]、空绝的显现·欧克托莉斯[BP20-019]｜对手手牌 5 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 / 幻影拍档·峇妮与峇侬[BP11-019] 4/4 横、魔导四轮车·V[BP11-T01]
+EX 战栗的海贼旗[BP19-T01]、黄金短剑[BP15-T01] / 空｜墓 2/3
+   37 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → [公主形态]佩可莉姆[CP04-PR02] 〔fallback〕
+   38 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→[公主形态]佩可莉姆[CP04-PR02] 3；P2 -3=15
+   39 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   40 P1 choose/mode search 〔authored〕
+   41 P1 selectCards/search 奉还的剑闪[BP20-026] 〔fallback〕
+   42 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→幻影拍档·峇妮与峇侬[BP11-019] 4；黄金短剑[BP15-T01] 新→ex；幻影拍档·峇妮与峇侬[BP11-019] field→cemetery 〔fallback〕
+   43 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → [公主形态]佩可莉姆[CP04-PR02] 〔fallback〕
+   44 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→[公主形态]佩可莉姆[CP04-PR02] 2；P2 -2=13
+   45 P1 mainPhase 结束主阶段 〔fallback〕
+
+T8 · 选手 2 回合 · HP 14/13 · PP 0/4
+手牌 出航的罪人·芭芭萝丝[BP19-019]、艾巴利缇亚[BP05-034]、奉还的剑闪[BP20-026]｜对手手牌 6 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 横、空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 魔导四轮车·V[BP11-T01]
+EX 战栗的海贼旗[BP19-T01]、黄金短剑[BP15-T01]、黄金短剑[BP15-T01] / 空｜墓 3/4
+   47 P2 mainPhase 打出 宇宙之翼·洛菈米亚[BP15-023]
+   48 P2 mainPhase 攻击 宇宙之翼·洛菈米亚[BP15-023] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   49 P1 quick Quick 放过 宇宙之翼·洛菈米亚[BP15-023]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=12 〔forced〕
+   50 P2 mainPhase 打出 天空指挥官·榭莉亚[BP09-018]
+   51 P2 mainPhase 进化 天空指挥官·榭莉亚[BP09-018]（EP）
+   53 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 1
+   54 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 空绝的显现·欧克托莉斯[BP20-019]
+   55 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→空绝的显现·欧克托莉斯[BP20-019] 3；空绝的显现·欧克托莉斯[BP20-019]→魔导四轮车·V[BP11-T01] 2；空绝的显现·欧克托莉斯[BP20-019] field→cemetery 〔forced〕
+   56 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 12/13 · PP 5/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、艾巴利缇亚[BP05-034]、奉还的剑闪[BP20-026]、海潮炮手[BP19-026]｜对手手牌 4 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 / 魔导四轮车·V[BP11-T01]、宇宙之翼·洛菈米亚[BP15-023] 2/2 横、天空指挥官·榭莉亚[BP09-018] 2/2 横、战盾卫士[BP02-T02] 1/1 横
+EX 战栗的海贼旗[BP19-T01]、黄金短剑[BP15-T01]、黄金短剑[BP15-T01] / 空｜墓 4/4
+   58 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   59 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   60 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 战盾卫士[BP02-T02] 〔fallback〕
+   61 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→战盾卫士[BP02-T02] 4；战盾卫士[BP02-T02]→出航的罪人·芭芭萝丝[BP19-019] 1；战盾卫士[BP02-T02] field→cemetery
+   62 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 天空指挥官·榭莉亚[BP09-018] 〔fallback〕
+   63 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→天空指挥官·榭莉亚[BP09-018] 3；天空指挥官·榭莉亚[BP09-018]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 2；天空指挥官·榭莉亚[BP09-018] field→cemetery
+   64 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=12 〔fallback〕
+   65 P1 choose/mode recover 〔authored〕
+   66 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   67 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   68 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=11 〔authored〕
+   69 P1 selectPending p192 〔fallback〕
+   70 P1 choose/mode destroy 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=10；宇宙之翼·洛菈米亚[BP15-023] field→cemetery 〔fallback〕
+   71 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   72 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=9 〔authored〕
+   73 P1 selectPending p198 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=8 〔fallback〕
+   74 P1 mainPhase 结束主阶段 〔fallback〕
+
+T10 · 选手 2 回合 · HP 12/8 · PP 0/5
+手牌 艾巴利缇亚[BP05-034]、奉还的剑闪[BP20-026]｜对手手牌 5 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/1 伤2 横、出航的罪人·芭芭萝丝[BP19-019] 5/3 伤1 横、海潮炮手[BP19-026] 4/3 / 魔导四轮车·V[BP11-T01]
+EX 黄金短剑[BP15-T01]、黄金短剑[BP15-T01] / 空｜墓 4/8
+   76 P2 mainPhase 打出 咒箱女王·娜哈特·娜哈特[BP11-018]
+   77 P2 selectCards/search 月光执行者·里欧德[BP17-022] deck→ex
+   78 P2 mainPhase 起动 咒箱女王·娜哈特·娜哈特[BP11-018] 能力 1
+   80 P2 mainPhase 打出 月光执行者·里欧德[BP17-022]
+   81 P2 selectCards/target 月光执行者·里欧德[BP17-022]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 3；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery
+   82 P2 mainPhase 结束主阶段
+
+T11 · 选手 1 回合 · HP 12/8 · PP 6/0
+手牌 艾巴利缇亚[BP05-034]、奉还的剑闪[BP20-026]、空绝的显现·欧克托莉斯[BP20-019]｜对手手牌 4 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/3 伤1 横、海潮炮手[BP19-026] 4/3 / 魔导四轮车·V[BP11-T01]、咒箱女王·娜哈特·娜哈特[BP11-018] 3/5、月光执行者·里欧德[BP17-022] 1/2
+EX 黄金短剑[BP15-T01]、黄金短剑[BP15-T01] / 空｜墓 5/8
+   84 P1 mainPhase 攻击 海潮炮手[BP19-026] → [公主形态]佩可莉姆[CP04-PR02] 〔fallback〕
+   85 P2 quick Quick 放过 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 4；P2 -4=4
+   86 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   87 P1 choose/mode crest 纹章 空绝的显现·欧克托莉斯[BP20-T02] 新→ex 〔authored〕
+   88 P1 mainPhase 打出 奉还的剑闪[BP20-026] 〔fallback〕
+   89 P1 selectCards/target 月光执行者·里欧德[BP17-022] 奉还的剑闪[BP20-026]→月光执行者·里欧德[BP17-022] 4；黄金短剑[BP15-T01] 新→ex；月光执行者·里欧德[BP17-022] field→cemetery 〔authored〕
+   90 P1 selectPending p221 〔fallback〕
+   91 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → [公主形态]佩可莉姆[CP04-PR02] 〔fallback〕
+   92 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→[公主形态]佩可莉姆[CP04-PR02] 2；P2 -2=2
+   93 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔fallback〕
+   94 P1 selectCards/effect 艾巴利缇亚[BP05-034] 〔fallback〕
+   95 P1 orderCards/deckBottom 排序 篡夺的随从[BP05-029]、空绝篡夺·欧克托莉斯[BP15-020]、涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   96 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔fallback〕
+   97 P1 selectCards/effect 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+   98 P1 orderCards/deckBottom 排序 怒涛副船长[BP19-028]、空绝的崇拜者[BP15-028]、海潮炮手[BP19-026] 〔fallback〕
+   99 P1 mainPhase 结束主阶段 〔forced〕
+
+T12 · 选手 2 回合 · HP 12/2 · PP 0/6
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、艾巴利缇亚[BP05-034]｜对手手牌 5 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/3 伤1 横、海潮炮手[BP19-026] 4/3 横、空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 魔导四轮车·V[BP11-T01]、咒箱女王·娜哈特·娜哈特[BP11-018] 3/5
+EX 黄金短剑[BP15-T01]、黄金短剑[BP15-T01]、纹章 空绝的显现·欧克托莉斯[BP20-T02]、黄金短剑[BP15-T01] / 空｜墓 7/9
+  101 P2 mainPhase 起动 咒箱女王·娜哈特·娜哈特[BP11-018] 能力 1
+  103 P2 mainPhase 攻击 咒箱女王·娜哈特·娜哈特[BP11-018] → 海潮炮手[BP19-026]
+  104 P1 quick Quick 放过 咒箱女王·娜哈特·娜哈特[BP11-018]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026]→咒箱女王·娜哈特·娜哈特[BP11-018] 4；海潮炮手[BP19-026] field→cemetery 〔forced〕
+  105 P2 mainPhase 打出 静寂的安纳提玛·吉尔达利娅[BP19-022]
+  107 P2 selectCards/pick 静寂的安纳提玛·吉尔达利娅[BP19-023]→出航的罪人·芭芭萝丝[BP19-019] 4；静寂的安纳提玛·吉尔达利娅[BP19-023]→空绝的显现·欧克托莉斯[BP20-019] 4；静寂的安纳提玛·吉尔达利娅[BP19-023]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=10；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；空绝的显现·欧克托莉斯[BP20-019] field→cemetery
+  108 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 1
+  110 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 第八绝杰·欧克托莉斯[BP10-LD02]
+  111 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=7 〔forced〕
+  112 P2 mainPhase 结束主阶段
+
+T13 · 选手 1 回合 · HP 7/2 · PP 7/0
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、艾巴利缇亚[BP05-034]、精炼的空绝[BP15-026]｜对手手牌 5 张
+场 空 / 魔导四轮车·V[BP11-T01]、咒箱女王·娜哈特·娜哈特[BP11-018] 3/1 伤4 横、静寂的安纳提玛·吉尔达利娅[BP19-022] 5/5 横、铁甲骑士[BP01-T07] 2/2 横、骑士[BP01-T05] 1/1
+EX 黄金短剑[BP15-T01]、黄金短剑[BP15-T01]、纹章 空绝的显现·欧克托莉斯[BP20-T02]、黄金短剑[BP15-T01] / 空｜墓 10/9
+  114 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+  115 P1 mainPhase 打出 黄金短剑[BP15-T01] 〔fallback〕
+  116 P1 selectCards/target 咒箱女王·娜哈特·娜哈特[BP11-018] 黄金短剑[BP15-T01]→咒箱女王·娜哈特·娜哈特[BP11-018] 2；黄金短剑[BP15-T01]→[公主形态]佩可莉姆[CP04-PR02] 2；P2 -2=0；咒箱女王·娜哈特·娜哈特[BP11-018] field→cemetery 〔authored〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":13}
+生命 7/0
+选手输入 [{"direct":0,"authored":11,"fallback":37,"forced":15},{"direct":0,"authored":6,"fallback":28,"forced":20}]
