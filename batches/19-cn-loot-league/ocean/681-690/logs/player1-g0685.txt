@@ -1,0 +1,105 @@
+g0685
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 强袭盗贼[BP15-035]、篡夺的随从[BP05-029]、海潮炮手[BP19-026]、奉还的剑闪[BP20-026]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留 〔authored〕
+    1 P2 mulligan 保留 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 强袭盗贼[BP15-035]、篡夺的随从[BP05-029]、海潮炮手[BP19-026]、奉还的剑闪[BP20-026]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 篡夺的随从[BP05-029] 〔authored〕
+    3 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 强袭盗贼[BP15-035]、海潮炮手[BP19-026]、奉还的剑闪[BP20-026]｜对手手牌 5 张
+场 篡夺的随从[BP05-029] 2/2 / 空
+EX 空 / 空｜墓 0/1
+    5 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/1
+手牌 强袭盗贼[BP15-035]、海潮炮手[BP19-026]、奉还的剑闪[BP20-026]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 5 张
+场 篡夺的随从[BP05-029] 2/2 / 空
+EX 空 / 空｜墓 0/1
+    7 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+    8 P1 mainPhase 结束主阶段 〔fallback〕
+
+T4 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 海潮炮手[BP19-026]、奉还的剑闪[BP20-026]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 6 张
+场 篡夺的随从[BP05-029] 3/2、强袭盗贼[BP15-035] 3/1 / 空
+EX 黄金短剑[BP15-T01] / 空｜墓 0/2
+   10 P2 mainPhase 打出 鲨鱼战士[BP17-067]
+   12 P2 mainPhase 进化 鲨鱼战士[BP17-067]（EP）
+   13 P2 selectCards/target 鲨鱼战士[BP17-068]→篡夺的随从[BP05-029] 2；篡夺的随从[BP05-029] field→cemetery
+   14 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 20/20 · PP 3/0
+手牌 海潮炮手[BP19-026]、奉还的剑闪[BP20-026]、出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 5 张
+场 强袭盗贼[BP15-035] 3/1 / 鲨鱼战士[BP17-067] 3/3
+EX 黄金短剑[BP15-T01] / 空｜墓 1/2
+   16 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex 〔fallback〕
+   17 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→鲨鱼战士[BP17-067] 4；鲨鱼战士[BP17-067] field→cemetery 〔fallback〕
+   18 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   19 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 不融银冰·菲琳[BP20-LD04] 〔fallback〕
+   20 P2 quick Quick 放过 强袭盗贼[BP15-035]→不融银冰·菲琳[BP20-LD04] 3；P2 -3=17
+   21 P1 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 2 回合 · HP 20/17 · PP 0/3
+手牌 出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 6 张
+场 强袭盗贼[BP15-035] 3/1 横、海潮炮手[BP19-026] 2/3 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 2/3
+   23 P2 mainPhase 打出 大洋钓手[BP11-067]
+   24 P2 selectCards/effect 虎鲸巨涡[BP09-062] deck→ex
+   26 P2 mainPhase 打出 虎鲸巨涡[BP09-062]
+   27 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 20/17 · PP 4/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 5 张
+场 强袭盗贼[BP15-035] 3/1、海潮炮手[BP19-026] 2/3 / 大洋钓手[BP11-067] 2/3、虎鲸[BP02-T05] 2/2
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 2/4
+   29 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   30 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 不融银冰·菲琳[BP20-LD04] 〔fallback〕
+   31 P2 quick Quick 放过 强袭盗贼[BP15-035]→不融银冰·菲琳[BP20-LD04] 3；P2 -3=14
+   32 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   33 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=13 〔authored〕
+   34 P1 selectCards/target 不融银冰·菲琳[BP20-LD04] 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=12 〔authored〕
+   35 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   36 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=11 〔authored〕
+   37 P1 selectCards/target 不融银冰·菲琳[BP20-LD04] 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=10 〔authored〕
+   38 P1 mainPhase 攻击 海潮炮手[BP19-026] → 不融银冰·菲琳[BP20-LD04] 〔fallback〕
+   39 P2 quick Quick 放过 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 4；P2 -4=6
+   40 P1 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 2 回合 · HP 20/6 · PP 0/4
+手牌 出航的罪人·芭芭萝丝[BP19-019]、涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 6 张
+场 强袭盗贼[BP15-035] 3/1 横、海潮炮手[BP19-026] 4/3 横、出航的罪人·芭芭萝丝[BP19-019] 3/3 / 大洋钓手[BP11-067] 2/3、虎鲸[BP02-T05] 2/2
+EX 空 / 空｜墓 2/4
+   42 P2 mainPhase 打出 身经百战的鱼人[BP19-067] 虎鲸巨涡[BP09-062] deck→ex
+   43 P2 mainPhase 攻击 虎鲸[BP02-T05] → 海潮炮手[BP19-026]
+   44 P1 quick Quick 放过 虎鲸[BP02-T05]→海潮炮手[BP19-026] 2；海潮炮手[BP19-026]→虎鲸[BP02-T05] 4；虎鲸[BP02-T05] field→cemetery 〔forced〕
+   45 P2 mainPhase 攻击 虎鲸[BP02-T05] → 海潮炮手[BP19-026]
+   46 P1 quick Quick 放过 虎鲸[BP02-T05]→海潮炮手[BP19-026] 2；海潮炮手[BP19-026]→虎鲸[BP02-T05] 4；海潮炮手[BP19-026] field→cemetery；虎鲸[BP02-T05] field→cemetery 〔forced〕
+   47 P2 mainPhase 攻击 虎鲸[BP02-T05] → 强袭盗贼[BP15-035]
+   48 P1 quick Quick 放过 虎鲸[BP02-T05]→强袭盗贼[BP15-035] 2；强袭盗贼[BP15-035]→虎鲸[BP02-T05] 3；强袭盗贼[BP15-035] field→cemetery；虎鲸[BP02-T05] field→cemetery 〔forced〕
+   49 P2 mainPhase 攻击 大洋钓手[BP11-067] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   50 P1 quick Quick 放过 大洋钓手[BP11-067]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18 〔forced〕
+   51 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 18/6 · PP 5/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、篡夺绝杰·欧克托莉斯[BP05-018]｜对手手牌 5 张
+场 出航的罪人·芭芭萝丝[BP19-019] 3/3 / 大洋钓手[BP11-067] 2/3 横、身经百战的鱼人[BP19-067] 3/3
+EX 空 / 虎鲸巨涡[BP09-062]｜墓 4/4
+   53 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   54 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   55 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔authored〕
+   56 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=5 〔authored〕
+   57 P1 choose/mode recover 〔authored〕
+   58 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 不融银冰·菲琳[BP20-LD04] 〔authored〕
+   59 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→不融银冰·菲琳[BP20-LD04] 5；P2 -5=0
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":9}
+生命 18/0
+选手输入 [{"direct":0,"authored":11,"fallback":12,"forced":11},{"direct":0,"authored":1,"fallback":13,"forced":12}]
