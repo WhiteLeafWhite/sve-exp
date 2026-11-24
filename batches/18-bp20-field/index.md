@@ -11,7 +11,7 @@
 | 真实法 | `h1LX3a` | 20/40 | 0/10 | 0/10 | 0–20–0 | [原表](truth/deck.json) · [1–10](truth/checks/001.md) · [11–20](truth/checks/011.md) |
 | 侮蔑龙 | `zQrwne` | 20/40 | 1/10 | 2/10 | 3–17–0 | [原表](disdain/deck.json) · [1–10](disdain/checks/001.md) · [11–20](disdain/checks/011.md) |
 | 海洋龙 | `d86IcJ` | 20/40 | 2/10 | 1/10 | 3–17–0 | [原表](ocean/deck.json) · [1–10](ocean/checks/001.md) · [11–20](ocean/checks/011.md) |
-| 混融梦 | `8YKXr7` | 10/40 | 1/5 | 4/5 | 5–5–0 | [原表](choice/deck.json) · [1–10](choice/checks/001.md) |
+| 混融梦 | `8YKXr7` | 20/40 | 5/10 | 6/10 | 11–9–0 | [原表](choice/deck.json) · [1–10](choice/checks/001.md) · [11–20](choice/checks/011.md) |
 | 蝙蝠梦 | `twju4N` | 10/40 | 2/5 | 3/5 | 5–5–0 | [原表](bat/deck.json) · [1–10](bat/checks/001.md) |
 | 纹章教 | `F5Jnyj` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](crest/deck.json) |
 
