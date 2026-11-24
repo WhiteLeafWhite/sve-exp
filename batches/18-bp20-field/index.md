@@ -12,7 +12,7 @@
 | 侮蔑龙 | `zQrwne` | 40/40 | 4/20 | 4/20 | 8–32–0 | [原表](disdain/deck.json) · [1–10](disdain/checks/001.md) · [11–20](disdain/checks/011.md) · [21–30](disdain/checks/021.md) · [31–40](disdain/checks/031.md) |
 | 海洋龙 | `d86IcJ` | 40/40 | 9/20 | 4/20 | 13–27–0 | [原表](ocean/deck.json) · [1–10](ocean/checks/001.md) · [11–20](ocean/checks/011.md) · [21–30](ocean/checks/021.md) · [31–40](ocean/checks/031.md) |
 | 混融梦 | `8YKXr7` | 40/40 | 12/20 | 13/20 | 25–15–0 | [原表](choice/deck.json) · [1–10](choice/checks/001.md) · [11–20](choice/checks/011.md) · [21–30](choice/checks/021.md) · [31–40](choice/checks/031.md) |
-| 蝙蝠梦 | `twju4N` | 30/40 | 12/15 | 7/15 | 19–11–0 | [原表](bat/deck.json) · [1–10](bat/checks/001.md) · [11–20](bat/checks/011.md) · [21–30](bat/checks/021.md) |
+| 蝙蝠梦 | `twju4N` | 40/40 | 17/20 | 9/20 | 26–14–0 | [原表](bat/deck.json) · [1–10](bat/checks/001.md) · [11–20](bat/checks/011.md) · [21–30](bat/checks/021.md) · [31–40](bat/checks/031.md) |
 | 纹章教 | `F5Jnyj` | 30/40 | 3/15 | 7/15 | 10–20–0 | [原表](crest/deck.json) · [1–10](crest/checks/001.md) · [11–20](crest/checks/011.md) · [21–30](crest/checks/021.md) |
 
 [对战与牌表锁定说明](README.md) · [协议、原表校验值与强度](protocol.json)
