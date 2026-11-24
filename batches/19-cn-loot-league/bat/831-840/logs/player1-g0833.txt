@@ -1,0 +1,136 @@
+g0833
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 篡夺的随从[BP05-029]、精炼的空绝[BP15-026]、大洋斥候[BP19-030]、空绝的崇拜者[BP15-028]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留 〔authored〕
+    1 P2 mulligan 保留 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 篡夺的随从[BP05-029]、精炼的空绝[BP15-026]、大洋斥候[BP19-030]、空绝的崇拜者[BP15-028]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+    3 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 篡夺的随从[BP05-029]、精炼的空绝[BP15-026]、空绝的崇拜者[BP15-028]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    5 P2 mainPhase 打出 白夜吸血鬼·瓦妮亚[BP09-082] 丛林蝙蝠[BP01-T15] 新→ex
+    6 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 篡夺的随从[BP05-029]、精炼的空绝[BP15-026]、空绝的崇拜者[BP15-028]、空绝的崇拜者[BP15-028]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 / 白夜吸血鬼·瓦妮亚[BP09-082] 1/2
+EX 战栗的海贼旗[BP19-T01] / 丛林蝙蝠[BP01-T15]｜墓 0/0
+    8 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 1；P2 -1=19 〔fallback〕
+    9 P1 mainPhase 攻击 大洋斥候[BP19-030] → [《偶像》的碎片]二宫飞鸟[CP02-LD05] 〔fallback〕
+   10 P2 quick Quick 放过 大洋斥候[BP19-030]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 3；P2 -3=16
+   11 P1 mainPhase 打出 精炼的空绝[BP15-026] 精炼的空绝[BP15-026]→白夜吸血鬼·瓦妮亚[BP09-082] 2；黄金之杯[BP15-T02] 新→ex；白夜吸血鬼·瓦妮亚[BP09-082] field→cemetery 〔fallback〕
+   12 P1 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 2 回合 · HP 20/16 · PP 0/2
+手牌 篡夺的随从[BP05-029]、空绝的崇拜者[BP15-028]、空绝的崇拜者[BP15-028]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 3/2 横 / 空
+EX 黄金之杯[BP15-T02] / 丛林蝙蝠[BP01-T15]｜墓 1/1
+   14 P2 mainPhase 打出 高贵的暗夜·拜特[BP18-084]
+   17 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 20/16 · PP 3/0
+手牌 篡夺的随从[BP05-029]、空绝的崇拜者[BP15-028]、空绝的崇拜者[BP15-028]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 3/2 / 高贵的暗夜·拜特[BP18-084] 2/1、丛林蝙蝠[BP01-T15] 1/1
+EX 黄金之杯[BP15-T02] / 丛林蝙蝠[BP01-T15]｜墓 1/1
+   19 P1 mainPhase 打出 空绝篡夺·欧克托莉斯[BP15-020] 空绝的残光[BP15-PR10] 新→ex 〔fallback〕
+   20 P1 mainPhase 攻击 大洋斥候[BP19-030] → [《偶像》的碎片]二宫飞鸟[CP02-LD05] 〔fallback〕
+   21 P2 quick Quick 放过 大洋斥候[BP19-030]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 3；P2 -3=13
+   22 P1 mainPhase 起动 空绝篡夺·欧克托莉斯[BP15-020] 能力 1 〔fallback〕
+   23 P1 mainPhase 打出 空绝的残光[BP15-PR10] 〔fallback〕
+   24 P1 choose/mode damage 〔fallback〕
+   25 P1 selectCards/target 高贵的暗夜·拜特[BP18-084] 空绝的残光[BP15-PR10]→高贵的暗夜·拜特[BP18-084] 3；高贵的暗夜·拜特[BP18-084] field→cemetery 〔authored〕
+   26 P1 mainPhase 结束主阶段 〔fallback〕
+
+T6 · 选手 2 回合 · HP 20/13 · PP 0/3
+手牌 篡夺的随从[BP05-029]、空绝的崇拜者[BP15-028]、空绝的崇拜者[BP15-028]｜对手手牌 6 张
+场 大洋斥候[BP19-030] 3/2 横、空绝篡夺·欧克托莉斯[BP15-020] 3/3 / 丛林蝙蝠[BP01-T15] 1/1
+EX 黄金之杯[BP15-T02] / 丛林蝙蝠[BP01-T15]｜墓 1/2
+   28 P2 mainPhase 打出 终幕吸血鬼·尤里亚斯[BP17-074] 惊骇之夜[BP17-T07] 新→ex
+   29 P2 mainPhase 进化 终幕吸血鬼·尤里亚斯[BP17-074]（EP）
+   31 P2 selectCards/target 终幕吸血鬼·尤里亚斯[BP17-075]→空绝篡夺·欧克托莉斯[BP15-020] 3；终幕吸血鬼·尤里亚斯[BP17-075]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 1；P2 -1=12；空绝篡夺·欧克托莉斯[BP15-020] field→cemetery
+   32 P2 mainPhase 攻击 终幕吸血鬼·尤里亚斯[BP17-074] → 大洋斥候[BP19-030]
+   33 P1 quick Quick 放过 终幕吸血鬼·尤里亚斯[BP17-074]→大洋斥候[BP19-030] 4；大洋斥候[BP19-030]→终幕吸血鬼·尤里亚斯[BP17-074] 3；大洋斥候[BP19-030] field→cemetery 〔forced〕
+   34 P2 mainPhase 攻击 丛林蝙蝠[BP01-T15] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   35 P1 quick Quick 放过 丛林蝙蝠[BP01-T15]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19 〔forced〕
+   36 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 19/12 · PP 4/0
+手牌 篡夺的随从[BP05-029]、空绝的崇拜者[BP15-028]、空绝的崇拜者[BP15-028]、强袭盗贼[BP15-035]｜对手手牌 5 张
+场 空 / 丛林蝙蝠[BP01-T15] 1/1 横、终幕吸血鬼·尤里亚斯[BP17-074] 4/1 伤3 横
+EX 黄金之杯[BP15-T02] / 丛林蝙蝠[BP01-T15]、惊骇之夜[BP17-T07]｜墓 3/2
+   38 P1 mainPhase 打出 篡夺的随从[BP05-029] 〔fallback〕
+   39 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+   40 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 终幕吸血鬼·尤里亚斯[BP17-074] 〔fallback〕
+   41 P2 quick Quick 放过 强袭盗贼[BP15-035]→终幕吸血鬼·尤里亚斯[BP17-074] 3；终幕吸血鬼·尤里亚斯[BP17-074]→强袭盗贼[BP15-035] 4；强袭盗贼[BP15-035] field→cemetery；终幕吸血鬼·尤里亚斯[BP17-074] field→cemetery
+   42 P1 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 2 回合 · HP 19/12 · PP 1/4
+手牌 空绝的崇拜者[BP15-028]、空绝的崇拜者[BP15-028]｜对手手牌 6 张
+场 篡夺的随从[BP05-029] 3/2 / 丛林蝙蝠[BP01-T15] 1/1
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 丛林蝙蝠[BP01-T15]、惊骇之夜[BP17-T07]｜墓 4/5
+   44 P2 mainPhase 打出 给仆从的礼物[BP09-075]
+   45 P2 mainPhase 打出 给仆从的礼物[BP09-075]
+   46 P2 mainPhase 打出 Last Daylight[CP02-085] Last Daylight[CP02-085]→篡夺的随从[BP05-029] 3；篡夺的随从[BP05-029] field→cemetery
+   47 P2 mainPhase 攻击 丛林蝙蝠[BP01-T15] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   48 P1 quick Quick 放过 丛林蝙蝠[BP01-T15]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=17 〔forced〕
+   49 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 17/12 · PP 5/0
+手牌 空绝的崇拜者[BP15-028]、空绝的崇拜者[BP15-028]、艾巴利缇亚[BP05-034]｜对手手牌 5 张
+场 空 / 丛林蝙蝠[BP01-T15] 2/1 横、丛林蝙蝠[BP01-T15] 2/1、丛林蝙蝠[BP01-T15] 2/1、丛林蝙蝠[BP01-T15] 2/1、丛林蝙蝠[BP01-T15] 2/1
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 丛林蝙蝠[BP01-T15]、惊骇之夜[BP17-T07]｜墓 5/8
+   51 P1 mainPhase 打出 空绝的崇拜者[BP15-028] 〔fallback〕
+   52 P1 mainPhase 进化 空绝的崇拜者[BP15-028] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+   53 P1 mainPhase 打出 黄金短剑[BP15-T01] 〔fallback〕
+   54 P1 selectCards/target 丛林蝙蝠[BP01-T15] 黄金短剑[BP15-T01]→丛林蝙蝠[BP01-T15] 2；丛林蝙蝠[BP01-T15] field→cemetery；黄金之靴[BP15-T03] 新→ex 〔authored〕
+   55 P1 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 2 回合 · HP 17/12 · PP 0/5
+手牌 空绝的崇拜者[BP15-028]、艾巴利缇亚[BP05-034]｜对手手牌 6 张
+场 空绝的崇拜者[BP15-028] 3/3 / 丛林蝙蝠[BP01-T15] 2/1、丛林蝙蝠[BP01-T15] 2/1、丛林蝙蝠[BP01-T15] 2/1、丛林蝙蝠[BP01-T15] 2/1
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01]、黄金之靴[BP15-T03] / 丛林蝙蝠[BP01-T15]、惊骇之夜[BP17-T07]｜墓 5/8
+   57 P2 mainPhase 打出 吸血鬼公主·班比[BP02-069]
+   58 P2 mainPhase 打出 Last Daylight[CP02-085] Last Daylight[CP02-085]→空绝的崇拜者[BP15-028] 3；空绝的崇拜者[BP15-028] field→cemetery
+   59 P2 mainPhase 攻击 丛林蝙蝠[BP01-T15] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   60 P1 quick Quick 放过 丛林蝙蝠[BP01-T15]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=14 〔forced〕
+   61 P2 mainPhase 攻击 丛林蝙蝠[BP01-T15] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   62 P1 quick Quick 放过 丛林蝙蝠[BP01-T15]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=11 〔forced〕
+   63 P2 mainPhase 攻击 丛林蝙蝠[BP01-T15] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   64 P1 quick Quick 放过 丛林蝙蝠[BP01-T15]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=8 〔forced〕
+   65 P2 mainPhase 攻击 丛林蝙蝠[BP01-T15] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   66 P1 quick Quick 放过 丛林蝙蝠[BP01-T15]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=5 〔forced〕
+   67 P2 mainPhase 结束主阶段
+
+T11 · 选手 1 回合 · HP 5/12 · PP 6/1
+手牌 空绝的崇拜者[BP15-028]、艾巴利缇亚[BP05-034]、艾巴利缇亚[BP05-034]｜对手手牌 4 张
+场 空 / 丛林蝙蝠[BP01-T15] 3/1 横、丛林蝙蝠[BP01-T15] 3/1 横、丛林蝙蝠[BP01-T15] 3/1 横、丛林蝙蝠[BP01-T15] 3/1 横、吸血鬼公主·班比[BP02-069] 6/6
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01]、黄金之靴[BP15-T03] / 丛林蝙蝠[BP01-T15]、惊骇之夜[BP17-T07]｜墓 6/9
+   69 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔fallback〕
+   70 P1 selectCards/effect 怒涛副船长[BP19-028] 〔fallback〕
+   71 P1 orderCards/deckBottom 排序 大洋斥候[BP19-030]、怒涛副船长[BP19-028]、涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   72 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   73 P1 mainPhase 进化 怒涛副船长[BP19-028] 〔fallback〕
+   74 P1 selectCards/search 海潮炮手[BP19-026] 〔authored〕
+   75 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   76 P1 mainPhase 结束主阶段 〔fallback〕
+
+T12 · 选手 2 回合 · HP 5/12 · PP 0/6
+手牌 空绝的崇拜者[BP15-028]、艾巴利缇亚[BP05-034]｜对手手牌 5 张
+场 怒涛副船长[BP19-028] 3/3、海潮炮手[BP19-026] 2/3 / 丛林蝙蝠[BP01-T15] 3/1、丛林蝙蝠[BP01-T15] 3/1、丛林蝙蝠[BP01-T15] 3/1、丛林蝙蝠[BP01-T15] 3/1、吸血鬼公主·班比[BP02-069] 6/6
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01]、黄金之靴[BP15-T03]、战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 丛林蝙蝠[BP01-T15]、惊骇之夜[BP17-T07]｜墓 7/9
+   78 P2 mainPhase 攻击 吸血鬼公主·班比[BP02-069] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   79 P1 quick Quick 放过 吸血鬼公主·班比[BP02-069]→第八绝杰·欧克托莉斯[BP10-LD02] 6；P1 -6=-1 〔forced〕
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":12}
+生命 -1/12
+选手输入 [{"direct":0,"authored":5,"fallback":22,"forced":17},{"direct":0,"authored":2,"fallback":21,"forced":13}]
