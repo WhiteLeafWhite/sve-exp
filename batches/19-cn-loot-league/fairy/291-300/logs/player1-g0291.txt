@@ -1,0 +1,194 @@
+g0291
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、艾巴利缇亚[BP05-034]、海潮炮手[BP19-026]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留 〔authored〕
+    1 P2 mulligan 保留 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、艾巴利缇亚[BP05-034]、海潮炮手[BP19-026]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔authored〕
+    3 P1 selectCards/effect 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+    4 P1 orderCards/deckBottom 排序 奉还的剑闪[BP20-026]、空绝的崇拜者[BP15-028]、精炼的空绝[BP15-026] 〔fallback〕
+    5 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、海潮炮手[BP19-026]、空绝篡夺·欧克托莉斯[BP15-020]、空绝的显现·欧克托莉斯[BP20-019]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 1/0
+    7 P2 mainPhase 打出 自然妖精公主·阿丽雅[BP16-001] 妖精[BP01-T03] 新→ex；妖精[BP01-T03] 新→ex
+    8 P2 mainPhase 进化 自然妖精公主·阿丽雅[BP16-001]（EP）
+    9 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、海潮炮手[BP19-026]、空绝篡夺·欧克托莉斯[BP15-020]、空绝的显现·欧克托莉斯[BP20-019]、精炼的空绝[BP15-026]｜对手手牌 4 张
+场 空 / 自然妖精公主·阿丽雅[BP16-001] 1/1、妖精[BP01-T03] 1/1
+EX 空 / 妖精[BP01-T03]、妖精[BP01-T03]｜墓 1/0
+   11 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   12 P1 choose/mode search 〔authored〕
+   13 P1 selectCards/search 奉还的剑闪[BP20-026] 〔fallback〕
+   14 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex 〔fallback〕
+   15 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → [公主形态]可可萝[CP04-PR01] 〔fallback〕
+   16 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→[公主形态]可可萝[CP04-PR01] 2；P2 -2=18
+   17 P1 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 2 回合 · HP 20/18 · PP 0/2
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、海潮炮手[BP19-026]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 5 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 自然妖精公主·阿丽雅[BP16-001] 1/1、妖精[BP01-T03] 1/1
+EX 奉还的剑闪[BP20-026] / 妖精[BP01-T03]、妖精[BP01-T03]｜墓 2/0
+   19 P2 mainPhase 打出 妖精龙[BP06-007]
+   21 P2 mainPhase 攻击 自然妖精公主·阿丽雅[BP16-001] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   22 P1 quick Quick 放过 自然妖精公主·阿丽雅[BP16-001]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19 〔forced〕
+   23 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   24 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=18 〔forced〕
+   25 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 18/18 · PP 3/0
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、海潮炮手[BP19-026]、空绝篡夺·欧克托莉斯[BP15-020]、怒涛副船长[BP19-028]｜对手手牌 4 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 / 自然妖精公主·阿丽雅[BP16-001] 1/1 横、妖精[BP01-T03] 1/1 横、妖精龙[BP06-007] 3/4 横
+EX 奉还的剑闪[BP20-026] / 妖精[BP01-T03]、妖精[BP01-T03]｜墓 2/0
+   28 P1 mainPhase 打出 奉还的剑闪[BP20-026] 〔fallback〕
+   29 P1 selectCards/target 妖精龙[BP06-007] 奉还的剑闪[BP20-026]→妖精龙[BP06-007] 4；黄金短剑[BP15-T01] 新→ex；妖精龙[BP06-007] field→cemetery；妖精萤火[BP01-T02] 新→ex；妖精[BP01-T03] 新→ex 〔authored〕
+   30 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   31 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 自然妖精公主·阿丽雅[BP16-001] 〔fallback〕
+   32 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→自然妖精公主·阿丽雅[BP16-001] 2；自然妖精公主·阿丽雅[BP16-001]→空绝的显现·欧克托莉斯[BP20-019] 1；自然妖精公主·阿丽雅[BP16-001] field→cemetery
+   33 P1 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 2 回合 · HP 18/18 · PP 0/3
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、空绝篡夺·欧克托莉斯[BP15-020]、怒涛副船长[BP19-028]｜对手手牌 5 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/2 伤1 横、海潮炮手[BP19-026] 2/3 / 妖精[BP01-T03] 1/1
+EX 黄金短剑[BP15-T01]、战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精萤火[BP01-T02]、妖精[BP01-T03]｜墓 3/2
+   35 P2 mainPhase 打出 纯真的水之妖精[BP16-015] 妖精[BP01-T03] 新→ex
+   36 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   37 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=17 〔forced〕
+   38 P2 mainPhase 打出 妖精[BP01-T03]
+   39 P2 mainPhase 打出 妖精萤火[BP01-T02]
+   40 P2 mainPhase 打出 灵之光耀[BP06-011]
+   43 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 17/18 · PP 4/0
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、空绝篡夺·欧克托莉斯[BP15-020]、怒涛副船长[BP19-028]、海潮炮手[BP19-026]｜对手手牌 3 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/2 伤1、海潮炮手[BP19-026] 2/3 / 妖精[BP01-T03] 3/3 横、纯真的水之妖精[BP16-015] 2/1、妖精[BP01-T03] 1/1、妖精萤火[BP01-T02] 1/1
+EX 黄金短剑[BP15-T01]、战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 3/3
+   45 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   46 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → [公主形态]可可萝[CP04-PR01] 〔fallback〕
+   47 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→[公主形态]可可萝[CP04-PR01] 2；P2 -2=16
+   48 P1 mainPhase 攻击 海潮炮手[BP19-026] → [公主形态]可可萝[CP04-PR01] 〔fallback〕
+   49 P2 quick Quick 放过 海潮炮手[BP19-026]→[公主形态]可可萝[CP04-PR01] 2；P2 -2=14
+   50 P1 mainPhase 进化 怒涛副船长[BP19-028] 〔fallback〕
+   51 P1 selectCards/search 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   52 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   53 P1 selectCards/target 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=13 〔authored〕
+   54 P1 selectPending p178 〔fallback〕
+   55 P1 selectCards/target 纯真的水之妖精[BP16-015] 海潮炮手[BP19-026]→纯真的水之妖精[BP16-015] 1；纯真的水之妖精[BP16-015] field→cemetery；妖精[BP01-T03] 新→ex 〔fallback〕
+   56 P1 mainPhase 结束主阶段 〔fallback〕
+
+T8 · 选手 2 回合 · HP 17/13 · PP 0/4
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、空绝篡夺·欧克托莉斯[BP15-020]、海潮炮手[BP19-026]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 4 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/2 伤1 横、海潮炮手[BP19-026] 2/3 横、怒涛副船长[BP19-028] 4/3 / 妖精[BP01-T03] 3/3、妖精[BP01-T03] 1/1、妖精萤火[BP01-T02] 1/1
+EX 黄金短剑[BP15-T01]、战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 3/4
+   58 P2 mainPhase 攻击 妖精[BP01-T03] → 海潮炮手[BP19-026]
+   59 P1 quick Quick 放过 妖精[BP01-T03]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026]→妖精[BP01-T03] 2；海潮炮手[BP19-026] field→cemetery 〔forced〕
+   60 P2 mainPhase 打出 森林妖精[BP13-013]
+   61 P2 mainPhase 打出 妖精[BP01-T03]
+   62 P2 mainPhase 进化 森林妖精[BP13-013] P2 +2=15；妖精萤火[BP01-T02] 新→ex；妖精[BP01-T03] 新→ex
+   63 P2 mainPhase 攻击 森林妖精[BP13-013] → 空绝的显现·欧克托莉斯[BP20-019]
+   64 P1 quick Quick 放过 森林妖精[BP13-013]→空绝的显现·欧克托莉斯[BP20-019] 3；空绝的显现·欧克托莉斯[BP20-019]→森林妖精[BP13-013] 2；空绝的显现·欧克托莉斯[BP20-019] field→cemetery 〔forced〕
+   65 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   66 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=16 〔forced〕
+   67 P2 mainPhase 攻击 妖精萤火[BP01-T02] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   68 P1 quick Quick 放过 妖精萤火[BP01-T02]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=15 〔forced〕
+   69 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 15/15 · PP 5/0
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、空绝篡夺·欧克托莉斯[BP15-020]、海潮炮手[BP19-026]、出航的罪人·芭芭萝丝[BP19-019]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 3 张
+场 怒涛副船长[BP19-028] 4/3 / 妖精[BP01-T03] 3/1 伤2 横、妖精[BP01-T03] 1/1 横、妖精萤火[BP01-T02] 1/1 横、森林妖精[BP13-013] 3/1 伤2 横、妖精[BP01-T03] 1/1
+EX 黄金短剑[BP15-T01]、战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精萤火[BP01-T02]、妖精[BP01-T03]｜墓 5/4
+   71 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   72 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   73 P1 mainPhase 攻击 怒涛副船长[BP19-028] → [公主形态]可可萝[CP04-PR01] 〔fallback〕
+   74 P2 quick Quick 放过 怒涛副船长[BP19-028]→[公主形态]可可萝[CP04-PR01] 4；P2 -4=11
+   75 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 森林妖精[BP13-013] 〔fallback〕
+   76 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→森林妖精[BP13-013] 4；森林妖精[BP13-013]→出航的罪人·芭芭萝丝[BP19-019] 3；森林妖精[BP13-013] field→cemetery
+   77 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   78 P1 selectCards/target 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=10 〔authored〕
+   79 P1 choose/mode recover 〔authored〕
+   80 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   81 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   82 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=9 〔authored〕
+   83 P1 selectPending p215 〔fallback〕
+   84 P1 selectCards/target [公主形态]可可萝[CP04-PR01] 海潮炮手[BP19-026]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=8 〔authored〕
+   85 P1 choose/mode destroy 〔fallback〕
+   86 P1 selectCards/target 妖精[BP01-T03] 妖精[BP01-T03] field→cemetery 〔authored〕
+   87 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   88 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=7 〔authored〕
+   89 P1 selectPending p220 〔fallback〕
+   90 P1 selectCards/target [公主形态]可可萝[CP04-PR01] 海潮炮手[BP19-026]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=6 〔authored〕
+   91 P1 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 2 回合 · HP 15/6 · PP 0/5
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、空绝篡夺·欧克托莉斯[BP15-020]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 4 张
+场 怒涛副船长[BP19-028] 5/3 横、出航的罪人·芭芭萝丝[BP19-019] 4/1 伤3 横、海潮炮手[BP19-026] 4/3 / 妖精[BP01-T03] 1/1、妖精萤火[BP01-T02] 1/1、妖精[BP01-T03] 1/1
+EX 黄金短剑[BP15-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精萤火[BP01-T02]、妖精[BP01-T03]｜墓 5/7
+   93 P2 mainPhase 攻击 妖精[BP01-T03] → 出航的罪人·芭芭萝丝[BP19-019]
+   94 P1 quick Quick 放过 妖精[BP01-T03]→出航的罪人·芭芭萝丝[BP19-019] 1；出航的罪人·芭芭萝丝[BP19-019]→妖精[BP01-T03] 4；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；妖精[BP01-T03] field→cemetery 〔forced〕
+   95 P2 mainPhase 打出 逆时剑师·阿玛兹[BP15-002]
+   97 P2 mainPhase 进化 逆时剑师·阿玛兹[BP15-002]（EP）
+   98 P2 selectCards/target 逆时剑师·阿玛兹[BP15-003]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=13；怒涛副船长[BP19-028] field→cemetery
+   99 P2 mainPhase 攻击 妖精萤火[BP01-T02] → 第八绝杰·欧克托莉斯[BP10-LD02]
+  100 P1 quick Quick 放过 妖精萤火[BP01-T02]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=12 〔forced〕
+  101 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02]
+  102 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=11 〔forced〕
+  103 P2 mainPhase 打出 妖精[BP01-T03]
+  104 P2 mainPhase 打出 大自然的导引[BP01-015]
+  106 P2 mainPhase 打出 妖精[BP01-T03]
+  107 P2 mainPhase 打出 妖精萤火[BP01-T02]
+  108 P2 mainPhase 结束主阶段
+
+T11 · 选手 1 回合 · HP 11/6 · PP 6/0
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]、空绝篡夺·欧克托莉斯[BP15-020]、空绝篡夺·欧克托莉斯[BP15-020]、精炼的空绝[BP15-026]｜对手手牌 3 张
+场 海潮炮手[BP19-026] 4/3 / 妖精萤火[BP01-T02] 1/1 横、妖精[BP01-T03] 1/1 横、逆时剑师·阿玛兹[BP15-002] 3/3 横、妖精[BP01-T03] 1/1、妖精萤火[BP01-T02] 1/1
+EX 黄金短剑[BP15-T01] / 妖精[BP01-T03]、妖精[BP01-T03]｜墓 7/8
+  111 P1 mainPhase 打出 空绝篡夺·欧克托莉斯[BP15-020] 空绝的残光[BP15-PR10] 新→ex 〔fallback〕
+  112 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+  113 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+  114 P1 choose/mode sweetness 涸绝的甘露[BP15-PR18] 新→ex 〔fallback〕
+  115 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 逆时剑师·阿玛兹[BP15-002] 〔fallback〕
+  116 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→逆时剑师·阿玛兹[BP15-002] 3；逆时剑师·阿玛兹[BP15-002]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 3；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery；逆时剑师·阿玛兹[BP15-002] field→cemetery
+  117 P1 mainPhase 攻击 海潮炮手[BP19-026] → [公主形态]可可萝[CP04-PR01] 〔fallback〕
+  118 P2 quick Quick 放过 海潮炮手[BP19-026]→[公主形态]可可萝[CP04-PR01] 4；P2 -4=2
+  119 P1 mainPhase 起动 空绝篡夺·欧克托莉斯[BP15-020] 能力 1 〔fallback〕
+  120 P1 mainPhase 打出 精炼的空绝[BP15-026] 〔fallback〕
+  121 P1 selectCards/target 妖精萤火[BP01-T02] 精炼的空绝[BP15-026]→妖精萤火[BP01-T02] 2；黄金之杯[BP15-T02] 新→ex；妖精萤火[BP01-T02] field→cemetery 〔authored〕
+  122 P1 mainPhase 起动 空绝篡夺·欧克托莉斯[BP15-020] 能力 1 〔fallback〕
+  123 P1 mainPhase 打出 黄金短剑[BP15-T01] 〔fallback〕
+  124 P1 selectCards/target 妖精[BP01-T03] 黄金短剑[BP15-T01]→妖精[BP01-T03] 2；妖精[BP01-T03] field→cemetery 〔authored〕
+  125 P1 mainPhase 结束主阶段 〔forced〕
+
+T12 · 选手 2 回合 · HP 11/2 · PP 0/6
+手牌 空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 4 张
+场 海潮炮手[BP19-026] 4/3 横、空绝篡夺·欧克托莉斯[BP15-020] 3/3 / 妖精[BP01-T03] 1/1、妖精萤火[BP01-T02] 1/1
+EX 空绝的残光[BP15-PR10]、涸绝的甘露[BP15-PR18]、黄金之杯[BP15-T02] / 妖精[BP01-T03]、妖精[BP01-T03]｜墓 9/9
+  127 P2 mainPhase 打出 女王之剑·辛西亚[BP07-003] 妖精萤火[BP01-T02] 新→ex
+  128 P2 mainPhase 攻击 妖精[BP01-T03] → 海潮炮手[BP19-026]
+  129 P1 quick Quick 放过 妖精[BP01-T03]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026]→妖精[BP01-T03] 4；海潮炮手[BP19-026] field→cemetery；妖精[BP01-T03] field→cemetery 〔forced〕
+  130 P2 mainPhase 攻击 妖精萤火[BP01-T02] → 空绝篡夺·欧克托莉斯[BP15-020]
+  131 P1 quick Quick 放过 妖精萤火[BP01-T02]→空绝篡夺·欧克托莉斯[BP15-020] 3；空绝篡夺·欧克托莉斯[BP15-020]→妖精萤火[BP01-T02] 3；空绝篡夺·欧克托莉斯[BP15-020] field→cemetery；妖精萤火[BP01-T02] field→cemetery 〔forced〕
+  132 P2 mainPhase 打出 妖精萤火[BP01-T02]
+  133 P2 mainPhase 攻击 妖精萤火[BP01-T02] → 第八绝杰·欧克托莉斯[BP10-LD02]
+  134 P1 quick Quick 放过 妖精萤火[BP01-T02]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=8 〔forced〕
+  135 P2 mainPhase 结束主阶段
+
+T13 · 选手 1 回合 · HP 8/2 · PP 7/0
+手牌 空绝篡夺·欧克托莉斯[BP15-020]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 3 张
+场 空 / 女王之剑·辛西亚[BP07-003] 4/6、妖精萤火[BP01-T02] 3/1 横
+EX 空绝的残光[BP15-PR10]、涸绝的甘露[BP15-PR18]、黄金之杯[BP15-T02] / 妖精[BP01-T03]、妖精[BP01-T03]｜墓 11/9
+  137 P1 mainPhase 打出 涸绝的甘露[BP15-PR18] 涸绝的甘露[BP15-PR18]→[公主形态]可可萝[CP04-PR01] 2；P2 -2=0；P1 +2=10 〔fallback〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":13}
+生命 10/0
+选手输入 [{"direct":0,"authored":18,"fallback":36,"forced":24},{"direct":0,"authored":5,"fallback":35,"forced":20}]
