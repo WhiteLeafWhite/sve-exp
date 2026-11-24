@@ -1,0 +1,204 @@
+g0757
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 强袭盗贼[BP15-035]、精炼的空绝[BP15-026]、精炼的空绝[BP15-026]、大洋斥候[BP19-030]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留 〔authored〕
+    1 P2 mulligan 保留 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 强袭盗贼[BP15-035]、精炼的空绝[BP15-026]、精炼的空绝[BP15-026]、大洋斥候[BP19-030]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+    3 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 强袭盗贼[BP15-035]、精炼的空绝[BP15-026]、精炼的空绝[BP15-026]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    5 P2 mainPhase 打出 死之索偿[BP11-075] 大洋斥候[BP19-030] field→cemetery
+    6 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 强袭盗贼[BP15-035]、精炼的空绝[BP15-026]、精炼的空绝[BP15-026]、精炼的空绝[BP15-026]｜对手手牌 4 张
+场 空 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/1
+    8 P1 mainPhase 结束主阶段 〔fallback〕
+
+T4 · 选手 2 回合 · HP 20/20 · PP 2/2
+手牌 强袭盗贼[BP15-035]、精炼的空绝[BP15-026]、精炼的空绝[BP15-026]、精炼的空绝[BP15-026]｜对手手牌 5 张
+场 空 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/1
+   10 P2 mainPhase 打出 地狱中士[BP19-088]
+   11 P2 mainPhase 打出 混融之城[BP20-086]
+   14 P2 mainPhase 结束主阶段
+   15 P1 quick 打出 精炼的空绝[BP15-026] 精炼的空绝[BP15-026]→地狱中士[BP19-088] 2；黄金之杯[BP15-T02] 新→ex；地狱中士[BP19-088] field→cemetery 〔fallback〕
+
+T5 · 选手 1 回合 · HP 20/20 · PP 3/0
+手牌 强袭盗贼[BP15-035]、精炼的空绝[BP15-026]、精炼的空绝[BP15-026]、空绝的崇拜者[BP15-028]｜对手手牌 4 张
+场 空 / 混融之城[BP20-086]
+EX 战栗的海贼旗[BP19-T01]、黄金之杯[BP15-T02] / 空｜墓 2/3
+   17 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+   18 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   19 P1 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 2 回合 · HP 20/20 · PP 0/3
+手牌 精炼的空绝[BP15-026]、精炼的空绝[BP15-026]、空绝的崇拜者[BP15-028]｜对手手牌 5 张
+场 强袭盗贼[BP15-035] 4/1 / 混融之城[BP20-086]
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 空｜墓 2/4
+   21 P2 mainPhase 打出 混融的肯定者[BP20-089]
+   22 P2 choose/mode 混融的肯定者[BP20-089]→第八绝杰·欧克托莉斯[BP10-LD02] 1；混融的肯定者[BP20-089]→强袭盗贼[BP15-035] 1；P1 -1=19；强袭盗贼[BP15-035] field→cemetery
+   23 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 19/20 · PP 4/0
+手牌 精炼的空绝[BP15-026]、精炼的空绝[BP15-026]、空绝的崇拜者[BP15-028]、海潮炮手[BP19-026]｜对手手牌 4 张
+场 空 / 混融之城[BP20-086]、混融的肯定者[BP20-089] 3/3
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 空｜墓 3/4
+   25 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   26 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→密不可分的爱·米路缇欧[BP15-PR05] 1；P2 -1=19 〔fallback〕
+   27 P1 selectCards/target 密不可分的爱·米路缇欧[BP15-PR05] 海潮炮手[BP19-026]→密不可分的爱·米路缇欧[BP15-PR05] 1；P2 -1=18 〔authored〕
+   28 P1 mainPhase 打出 精炼的空绝[BP15-026] 精炼的空绝[BP15-026]→混融的肯定者[BP20-089] 2；黄金之杯[BP15-T02] 新→ex 〔fallback〕
+   29 P1 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 2 回合 · HP 19/18 · PP 0/4
+手牌 精炼的空绝[BP15-026]、空绝的崇拜者[BP15-028]｜对手手牌 5 张
+场 海潮炮手[BP19-026] 3/3 / 混融之城[BP20-086]、混融的肯定者[BP20-089] 3/1 伤2
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01]、黄金之杯[BP15-T02] / 空｜墓 4/4
+   31 P2 mainPhase 打出 叫唤与憎恶[BP20-082]
+   32 P2 choose/mode 叫唤与憎恶[BP20-082]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026] field→cemetery
+   33 P2 mainPhase 攻击 混融的肯定者[BP20-089] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   34 P1 quick Quick 放过 混融的肯定者[BP20-089]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=16 〔forced〕
+   35 P2 mainPhase 打出 混融的祈祷者[BP20-085]
+   36 P2 choose/mode 混融的祈祷者[BP20-085]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=14
+   37 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 14/18 · PP 5/0
+手牌 精炼的空绝[BP15-026]、空绝的崇拜者[BP15-028]、奉还的剑闪[BP20-026]｜对手手牌 3 张
+场 空 / 混融之城[BP20-086]、混融的肯定者[BP20-089] 3/1 伤2 横、混融的祈祷者[BP20-085] 2/3
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01]、黄金之杯[BP15-T02] / 空｜墓 5/5
+   39 P1 mainPhase 打出 精炼的空绝[BP15-026] 〔fallback〕
+   40 P1 selectCards/target 混融的肯定者[BP20-089] 精炼的空绝[BP15-026]→混融的肯定者[BP20-089] 2；黄金之杯[BP15-T02] 新→ex；混融的肯定者[BP20-089] field→cemetery 〔authored〕
+   41 P1 mainPhase 打出 空绝的崇拜者[BP15-028] 〔fallback〕
+   42 P1 mainPhase 进化 空绝的崇拜者[BP15-028] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+   43 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 〔fallback〕
+   44 P1 selectCards/pick 黄金之杯[BP15-T02] 奉还的剑闪[BP20-026] hand→ex 〔fallback〕
+   45 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→混融的祈祷者[BP20-085] 4；混融的祈祷者[BP20-085] field→cemetery；黄金之靴[BP15-T03] 新→ex 〔fallback〕
+   46 P1 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 2 回合 · HP 14/18 · PP 0/5
+手牌 ｜对手手牌 4 张
+场 空绝的崇拜者[BP15-028] 3/3 / 混融之城[BP20-086]
+EX 黄金短剑[BP15-T01]、黄金之杯[BP15-T02]、黄金之杯[BP15-T02]、黄金短剑[BP15-T01]、黄金之靴[BP15-T03] / 空｜墓 7/7
+   48 P2 mainPhase 打出 奔放的狱炎·凯尔贝洛斯[BP16-075]
+   49 P2 mainPhase 起动 奔放的狱炎·凯尔贝洛斯[BP16-075] 能力 1
+   50 P2 selectCards/pick 奔放的狱炎·凯尔贝洛斯[BP16-075]→空绝的崇拜者[BP15-028] 2；守卫犬的右腕·米米[BP16-T04]→空绝的崇拜者[BP15-028] 2；守卫犬的右腕·米米[BP16-T04] field→cemetery；空绝的崇拜者[BP15-028] field→cemetery
+   51 P2 mainPhase 结束主阶段
+
+T11 · 选手 1 回合 · HP 14/18 · PP 6/1
+手牌 涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 3 张
+场 空 / 混融之城[BP20-086]、奔放的狱炎·凯尔贝洛斯[BP16-075] 3/3 横、守卫犬的左腕·可可[BP16-T05] 2/2
+EX 黄金短剑[BP15-T01]、黄金之杯[BP15-T02]、黄金之杯[BP15-T02]、黄金短剑[BP15-T01]、黄金之靴[BP15-T03] / 空｜墓 8/8
+   53 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   54 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   55 P1 choose/mode stats 〔fallback〕
+   56 P1 selectCards/target 守卫犬的左腕·可可[BP16-T05] P2 +2=20；守卫犬的左腕·可可[BP16-T05] field→cemetery 〔fallback〕
+   57 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 奔放的狱炎·凯尔贝洛斯[BP16-075] 〔fallback〕
+   58 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→奔放的狱炎·凯尔贝洛斯[BP16-075] 3；奔放的狱炎·凯尔贝洛斯[BP16-075]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 3；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery；奔放的狱炎·凯尔贝洛斯[BP16-075] field→cemetery
+   59 P1 mainPhase 打出 黄金之杯[BP15-T02] P1 +2=16 〔fallback〕
+   60 P1 mainPhase 结束主阶段 〔forced〕
+
+T12 · 选手 2 回合 · HP 16/20 · PP 1/6
+手牌 ｜对手手牌 4 张
+场 空 / 混融之城[BP20-086]
+EX 黄金短剑[BP15-T01]、黄金之杯[BP15-T02]、黄金短剑[BP15-T01]、黄金之靴[BP15-T03] / 空｜墓 9/10
+   62 P2 mainPhase 打出 奔放的狱炎·凯尔贝洛斯[BP16-075]
+   63 P2 mainPhase 攻击 守卫犬的右腕·米米[BP16-T04] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   64 P1 quick Quick 放过 守卫犬的右腕·米米[BP16-T04]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=14 〔forced〕
+   65 P2 mainPhase 攻击 守卫犬的左腕·可可[BP16-T05] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   66 P1 quick Quick 放过 守卫犬的左腕·可可[BP16-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=12 〔forced〕
+   67 P2 mainPhase 结束主阶段
+
+T13 · 选手 1 回合 · HP 12/20 · PP 7/2
+手牌 奉还的剑闪[BP20-026]｜对手手牌 3 张
+场 空 / 混融之城[BP20-086]、奔放的狱炎·凯尔贝洛斯[BP16-075] 3/3、守卫犬的右腕·米米[BP16-T04] 2/2 横、守卫犬的左腕·可可[BP16-T05] 2/2 横
+EX 黄金短剑[BP15-T01]、黄金之杯[BP15-T02]、黄金短剑[BP15-T01]、黄金之靴[BP15-T03] / 空｜墓 9/10
+   69 P1 mainPhase 打出 黄金短剑[BP15-T01] 〔fallback〕
+   70 P1 selectCards/target 守卫犬的右腕·米米[BP16-T04] 黄金短剑[BP15-T01]→守卫犬的右腕·米米[BP16-T04] 2；黄金短剑[BP15-T01]→密不可分的爱·米路缇欧[BP15-PR05] 2；P2 -2=18；守卫犬的右腕·米米[BP16-T04] field→cemetery 〔authored〕
+   71 P1 mainPhase 打出 黄金短剑[BP15-T01] 〔fallback〕
+   72 P1 selectCards/target 守卫犬的左腕·可可[BP16-T05] 黄金短剑[BP15-T01]→守卫犬的左腕·可可[BP16-T05] 2；黄金短剑[BP15-T01]→密不可分的爱·米路缇欧[BP15-PR05] 2；P2 -2=16；P2 +2=18；守卫犬的左腕·可可[BP16-T05] field→cemetery 〔authored〕
+   73 P1 mainPhase 打出 黄金之杯[BP15-T02] P1 +2=14 〔fallback〕
+   74 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex 〔fallback〕
+   75 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→奔放的狱炎·凯尔贝洛斯[BP16-075] 4；奔放的狱炎·凯尔贝洛斯[BP16-075] field→cemetery 〔fallback〕
+   76 P1 mainPhase 结束主阶段 〔forced〕
+
+T14 · 选手 2 回合 · HP 14/18 · PP 0/7
+手牌 ｜对手手牌 4 张
+场 空 / 混融之城[BP20-086]
+EX 空 / 空｜墓 10/12
+   78 P2 mainPhase 打出 混沌支配者·艾希连德凛克[BP11-069]
+   79 P2 mainPhase 起动 魔导列车[BP11-T02] 能力 0
+   80 P2 mainPhase 进化 混沌支配者·艾希连德凛克[BP11-069]
+   84 P2 mainPhase 结束主阶段
+
+T15 · 选手 1 回合 · HP 14/18 · PP 8/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 4 张
+场 空 / 混融之城[BP20-086]、混沌支配者·艾希连德凛克[BP11-069] 6/6 横、魔导列车[BP11-T02]
+EX 空 / 空｜墓 10/11
+   86 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   87 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   88 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→密不可分的爱·米路缇欧[BP15-PR05] 1；P2 -1=17 〔fallback〕
+   89 P1 choose/mode destroy 混沌支配者·艾希连德凛克[BP11-069] field→cemetery 〔authored〕
+   90 P1 mainPhase 结束主阶段 〔forced〕
+
+T16 · 选手 2 回合 · HP 14/17 · PP 3/8
+手牌 ｜对手手牌 5 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/4 / 混融之城[BP20-086]、魔导列车[BP11-T02]
+EX 空 / 空｜墓 10/12
+   92 P2 mainPhase 打出 奔放的狱炎·凯尔贝洛斯[BP16-075]
+   93 P2 mainPhase 起动 死之索偿[BP11-075] 能力 0 死之索偿[BP11-075] cemetery→banished；混沌支配者·艾希连德凛克[BP11-069] cemetery→banished
+   94 P2 mainPhase 攻击 守卫犬的右腕·米米[BP16-T04] → 出航的罪人·芭芭萝丝[BP19-019]
+   95 P1 quick Quick 放过 守卫犬的右腕·米米[BP16-T04]→出航的罪人·芭芭萝丝[BP19-019] 2；出航的罪人·芭芭萝丝[BP19-019]→守卫犬的右腕·米米[BP16-T04] 5；守卫犬的右腕·米米[BP16-T04]→出航的罪人·芭芭萝丝[BP19-019] 2；守卫犬的右腕·米米[BP16-T04] field→cemetery；出航的罪人·芭芭萝丝[BP19-019] field→cemetery 〔forced〕
+   96 P2 mainPhase 攻击 守卫犬的左腕·可可[BP16-T05] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   97 P1 quick Quick 放过 守卫犬的左腕·可可[BP16-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=12 〔forced〕
+   98 P2 mainPhase 打出 混融的肯定者[BP20-089]
+   99 P2 choose/mode 混融的肯定者[BP20-089]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=11
+  100 P2 mainPhase 起动 魔导列车[BP11-T02] 能力 0
+  102 P2 mainPhase 攻击 魔导列车[BP11-T02] → 第八绝杰·欧克托莉斯[BP10-LD02]
+  103 P1 quick Quick 放过 魔导列车[BP11-T02]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=7 〔forced〕
+  104 P2 mainPhase 结束主阶段
+
+T17 · 选手 1 回合 · HP 7/17 · PP 9/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 3 张
+场 空 / 混融之城[BP20-086]、魔导列车[BP11-T02]、奔放的狱炎·凯尔贝洛斯[BP16-075] 3/3 横、守卫犬的左腕·可可[BP16-T05] 2/2 横、混融的肯定者[BP20-089] 3/3 横
+EX 空 / 空｜墓 11/11
+  106 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+  107 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+  108 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→密不可分的爱·米路缇欧[BP15-PR05] 1；P2 -1=16 〔fallback〕
+  109 P1 choose/mode destroy 〔fallback〕
+  110 P1 selectCards/target 混融的肯定者[BP20-089] 混融的肯定者[BP20-089] field→cemetery 〔authored〕
+  111 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 奔放的狱炎·凯尔贝洛斯[BP16-075] 〔fallback〕
+  112 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→奔放的狱炎·凯尔贝洛斯[BP16-075] 5；奔放的狱炎·凯尔贝洛斯[BP16-075]→出航的罪人·芭芭萝丝[BP19-019] 3；奔放的狱炎·凯尔贝洛斯[BP16-075] field→cemetery
+  113 P1 mainPhase 结束主阶段 〔forced〕
+
+T18 · 选手 2 回合 · HP 7/16 · PP 4/9
+手牌 ｜对手手牌 4 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/1 伤3 横 / 混融之城[BP20-086]、魔导列车[BP11-T02]、守卫犬的左腕·可可[BP16-T05] 2/2
+EX 空 / 空｜墓 11/13
+  115 P2 mainPhase 打出 叫唤与憎恶[BP20-082]
+  116 P2 choose/mode 叫唤与憎恶[BP20-082]→出航的罪人·芭芭萝丝[BP19-019] 3；出航的罪人·芭芭萝丝[BP19-019] field→cemetery
+  117 P2 mainPhase 起动 混融之城[BP20-086] 能力 1
+  118 P2 choose/mode 混融之城[BP20-086] field→cemetery
+  119 P2 mainPhase 打出 奔放的狱炎·凯尔贝洛斯[BP16-075]
+  120 P2 mainPhase 攻击 守卫犬的左腕·可可[BP16-T05] → 第八绝杰·欧克托莉斯[BP10-LD02]
+  121 P1 quick Quick 放过 守卫犬的左腕·可可[BP16-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=5 〔forced〕
+  122 P2 mainPhase 攻击 守卫犬的右腕·米米[BP16-T04] → 第八绝杰·欧克托莉斯[BP10-LD02]
+  123 P1 quick Quick 放过 守卫犬的右腕·米米[BP16-T04]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=3 〔forced〕
+  124 P2 mainPhase 起动 魔导列车[BP11-T02] 能力 0
+  126 P2 mainPhase 攻击 魔导列车[BP11-T02] → 第八绝杰·欧克托莉斯[BP10-LD02]
+  127 P1 quick Quick 放过 魔导列车[BP11-T02]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=-1 〔forced〕
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":18}
+生命 -1/16
+选手输入 [{"direct":0,"authored":10,"fallback":30,"forced":25},{"direct":0,"authored":6,"fallback":40,"forced":17}]
