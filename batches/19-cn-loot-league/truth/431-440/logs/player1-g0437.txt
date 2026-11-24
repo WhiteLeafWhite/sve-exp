@@ -1,0 +1,136 @@
+g0437
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 空绝篡夺·欧克托莉斯[BP15-020]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 整手重抽 〔authored〕
+    1 P2 mulligan 整手重抽 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 空绝的显现·欧克托莉斯[BP20-019]、海潮炮手[BP19-026]、大洋斥候[BP19-030]、艾巴利缇亚[BP05-034]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+    3 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 空绝的显现·欧克托莉斯[BP20-019]、海潮炮手[BP19-026]、艾巴利缇亚[BP05-034]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    5 P2 mainPhase 打出 虚伪的术式[BP20-049]
+    9 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 空绝的显现·欧克托莉斯[BP20-019]、海潮炮手[BP19-026]、艾巴利缇亚[BP05-034]、篡夺的随从[BP05-029]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/1
+   11 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   12 P1 choose/mode search 〔authored〕
+   13 P1 selectCards/search 奉还的剑闪[BP20-026] 〔fallback〕
+   14 P1 mainPhase 攻击 大洋斥候[BP19-030] → 愚昧的贤者·琳库露[BP15-PR03] 〔fallback〕
+   15 P2 quick Quick 放过 大洋斥候[BP19-030]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=18
+   16 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex 〔fallback〕
+   17 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 愚昧的贤者·琳库露[BP15-PR03] 〔fallback〕
+   18 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=16
+   19 P1 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 2 回合 · HP 20/16 · PP 0/2
+手牌 海潮炮手[BP19-026]、艾巴利缇亚[BP05-034]、篡夺的随从[BP05-029]｜对手手牌 6 张
+场 大洋斥候[BP19-030] 2/2 横、空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 空
+EX 奉还的剑闪[BP20-026] / 空｜墓 0/1
+   21 P2 mainPhase 打出 真实的肯定者[BP20-053]
+   23 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 20/16 · PP 3/0
+手牌 海潮炮手[BP19-026]、艾巴利缇亚[BP05-034]、篡夺的随从[BP05-029]、艾巴利缇亚[BP05-034]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2、空绝的显现·欧克托莉斯[BP20-019] 2/3 / 真实的肯定者[BP20-053] 2/3
+EX 奉还的剑闪[BP20-026] / 空｜墓 0/2
+   25 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→真实的肯定者[BP20-053] 4；黄金短剑[BP15-T01] 新→ex；真实的肯定者[BP20-053] field→cemetery 〔fallback〕
+   26 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   27 P1 mainPhase 攻击 大洋斥候[BP19-030] → 愚昧的贤者·琳库露[BP15-PR03] 〔fallback〕
+   28 P2 quick Quick 放过 大洋斥候[BP19-030]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=14
+   29 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 愚昧的贤者·琳库露[BP15-PR03] 〔fallback〕
+   30 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=12
+   31 P1 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 2 回合 · HP 20/12 · PP 0/3
+手牌 艾巴利缇亚[BP05-034]、篡夺的随从[BP05-029]、艾巴利缇亚[BP05-034]｜对手手牌 6 张
+场 大洋斥候[BP19-030] 2/2 横、空绝的显现·欧克托莉斯[BP20-019] 2/3 横、海潮炮手[BP19-026] 2/3 / 空
+EX 黄金短剑[BP15-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 1/3
+   33 P2 mainPhase 打出 真实的团结者[BP20-046]
+   34 P2 mainPhase 进化 真实的团结者[BP20-046]（EP）
+   35 P2 selectCards/target 真实的团结者[BP20-047]→海潮炮手[BP19-026] 3
+   36 P2 selectCards/discard 海潮炮手[BP19-026] field→cemetery
+   37 P2 mainPhase 攻击 真实的团结者[BP20-046] → 空绝的显现·欧克托莉斯[BP20-019]
+   38 P1 quick Quick 放过 真实的团结者[BP20-046]→空绝的显现·欧克托莉斯[BP20-019] 4；空绝的显现·欧克托莉斯[BP20-019]→真实的团结者[BP20-046] 2；空绝的显现·欧克托莉斯[BP20-019] field→cemetery 〔forced〕
+   39 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 20/12 · PP 4/0
+手牌 艾巴利缇亚[BP05-034]、篡夺的随从[BP05-029]、艾巴利缇亚[BP05-034]、怒涛副船长[BP19-028]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 真实的团结者[BP20-046] 4/2 伤2 横
+EX 黄金短剑[BP15-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 3/4
+   41 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   42 P1 mainPhase 攻击 大洋斥候[BP19-030] → 愚昧的贤者·琳库露[BP15-PR03] 〔fallback〕
+   43 P2 quick Quick 放过 大洋斥候[BP19-030]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=10
+   44 P1 mainPhase 进化 怒涛副船长[BP19-028] 〔fallback〕
+   45 P1 selectCards/search 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   46 P1 mainPhase 打出 篡夺的随从[BP05-029] 〔fallback〕
+   47 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 真实的团结者[BP20-046] 〔fallback〕
+   48 P2 quick Quick 放过 怒涛副船长[BP19-028]→真实的团结者[BP20-046] 3；真实的团结者[BP20-046]→怒涛副船长[BP19-028] 4；怒涛副船长[BP19-028] field→cemetery；真实的团结者[BP20-046] field→cemetery
+   49 P1 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 2 回合 · HP 20/10 · PP 0/4
+手牌 艾巴利缇亚[BP05-034]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 6 张
+场 大洋斥候[BP19-030] 2/2 横、篡夺的随从[BP05-029] 2/2 / 空
+EX 黄金短剑[BP15-T01]、战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 4/6
+   51 P2 mainPhase 打出 绝尽的崇拜者[BP15-047]
+   52 P2 mainPhase 进化 绝尽的崇拜者[BP15-047]
+   54 P2 selectCards/target 绝尽的崇拜者[BP15-048]→篡夺的随从[BP05-029] 2；篡夺的随从[BP05-029] field→cemetery
+   55 P2 mainPhase 攻击 绝尽的崇拜者[BP15-047] → 大洋斥候[BP19-030]
+   56 P1 quick Quick 放过 绝尽的崇拜者[BP15-047]→大洋斥候[BP19-030] 3；大洋斥候[BP19-030]→绝尽的崇拜者[BP15-047] 2；大洋斥候[BP19-030] field→cemetery 〔forced〕
+   57 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 20/10 · PP 5/1
+手牌 艾巴利缇亚[BP05-034]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 5 张
+场 空 / 绝尽的崇拜者[BP15-047] 3/1 伤2 横
+EX 黄金短剑[BP15-T01]、战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 6/6
+   59 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   60 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   61 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=9 〔fallback〕
+   62 P1 choose/mode recover 〔authored〕
+   63 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=8 〔fallback〕
+   64 P1 choose/mode destroy 绝尽的崇拜者[BP15-047] field→cemetery 〔fallback〕
+   65 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=7 〔fallback〕
+   66 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔fallback〕
+   67 P1 selectCards/effect 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+   68 P1 orderCards/deckBottom 排序 奉还的剑闪[BP20-026]、空绝的崇拜者[BP15-028]、篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+   69 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔fallback〕
+   70 P1 selectCards/effect 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+   71 P1 orderCards/deckBottom 排序 奉还的剑闪[BP20-026]、出航的罪人·芭芭萝丝[BP19-019]、精炼的空绝[BP15-026] 〔fallback〕
+   72 P1 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 2 回合 · HP 20/7 · PP 0/5
+手牌 空绝篡夺·欧克托莉斯[BP15-020]、篡夺绝杰·欧克托莉斯[BP05-018]、艾巴利缇亚[BP05-034]、篡夺绝杰·欧克托莉斯[BP05-018]、艾巴利缇亚[BP05-034]｜对手手牌 6 张
+场 出航的罪人·芭芭萝丝[BP19-019] 7/4 / 空
+EX 黄金短剑[BP15-T01] / 空｜墓 6/9
+   74 P2 mainPhase 打出 真实的祈祷者[BP20-052]
+   77 P2 mainPhase 打出 绝尽的崇拜者[BP15-047]
+   78 P2 mainPhase 进化 绝尽的崇拜者[BP15-047]（EP）
+   81 P2 mainPhase 起动 绝尽的显现·莱欧[BP20-042] 能力 2 绝尽的伪证[BP15-PR11] 新→ex
+   82 P2 mainPhase 结束主阶段
+
+T11 · 选手 1 回合 · HP 20/7 · PP 6/0
+手牌 空绝篡夺·欧克托莉斯[BP15-020]、篡夺绝杰·欧克托莉斯[BP05-018]、艾巴利缇亚[BP05-034]、篡夺绝杰·欧克托莉斯[BP05-018]、艾巴利缇亚[BP05-034]、精炼的空绝[BP15-026]｜对手手牌 4 张
+场 出航的罪人·芭芭萝丝[BP19-019] 7/4 / 真实的祈祷者[BP20-052] 3/3 横、绝尽的崇拜者[BP15-047] 3/3
+EX 黄金短剑[BP15-T01] / 绝尽的伪证[BP15-PR11]｜墓 6/12
+   85 P1 mainPhase 打出 黄金短剑[BP15-T01] 〔fallback〕
+   86 P1 selectCards/target 绝尽的崇拜者[BP15-047] 黄金短剑[BP15-T01]→绝尽的崇拜者[BP15-047] 2；黄金短剑[BP15-T01]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=5 〔fallback〕
+   87 P1 choose/mode destroy 〔authored〕
+   88 P1 selectCards/target 真实的祈祷者[BP20-052] 真实的祈祷者[BP20-052] field→cemetery 〔authored〕
+   89 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 愚昧的贤者·琳库露[BP15-PR03] 〔authored〕
+   90 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→愚昧的贤者·琳库露[BP15-PR03] 7；P2 -7=-2
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":11}
+生命 20/-2
+选手输入 [{"direct":0,"authored":10,"fallback":26,"forced":12},{"direct":0,"authored":3,"fallback":23,"forced":17}]
