@@ -1,0 +1,133 @@
+g0194
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 不弑的肯定者[BP20-015]、小小勇士·斯库娜[BP04-010]、十字弩狙击手[BP06-013]、对空射击[BP18-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 保留 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 不弑的肯定者[BP20-015]、小小勇士·斯库娜[BP04-010]、十字弩狙击手[BP06-013]、对空射击[BP18-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 十字弩狙击手[BP06-013] 〔fallback〕
+    3 P2 confirm/optionalCost 确认 〔fallback〕
+    4 P2 selectCards/pick 不弑的肯定者[BP20-015] 十字弩狙击手[BP06-013]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19 〔fallback〕
+    5 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 19/20 · PP 1/0
+手牌 小小勇士·斯库娜[BP04-010]、对空射击[BP18-019]、优美的猫姊妹·暹罗与暹玛[BP11-003]｜对手手牌 5 张
+场 空 / 十字弩狙击手[BP06-013] 1/1
+EX 空 / 空｜墓 0/1
+    7 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 19/20 · PP 1/2
+手牌 小小勇士·斯库娜[BP04-010]、对空射击[BP18-019]、优美的猫姊妹·暹罗与暹玛[BP11-003]、不弑的继承者·库璐璐[BP20-002]｜对手手牌 5 张
+场 空 / 十字弩狙击手[BP06-013] 1/1
+EX 空 / 空｜墓 0/1
+    9 P2 mainPhase 打出 小小勇士·斯库娜[BP04-010] 〔fallback〕
+   10 P2 mainPhase 攻击 十字弩狙击手[BP06-013] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   11 P1 quick Quick 放过 十字弩狙击手[BP06-013]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=18
+   12 P2 mainPhase 进化 小小勇士·斯库娜[BP04-010] 〔fallback〕
+   13 P2 mainPhase 结束主阶段 〔fallback〕
+
+T4 · 选手 1 回合 · HP 18/20 · PP 2/0
+手牌 对空射击[BP18-019]、优美的猫姊妹·暹罗与暹玛[BP11-003]、不弑的继承者·库璐璐[BP20-002]｜对手手牌 6 张
+场 空 / 十字弩狙击手[BP06-013] 1/1 横、小小勇士·斯库娜[BP04-010] 2/2
+EX 空 / 空｜墓 0/1
+   15 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   16 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113]（EP）
+   18 P1 selectCards/target 小小勇士·斯库娜[BP04-010] field→cemetery
+   19 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 十字弩狙击手[BP06-013]
+   20 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→十字弩狙击手[BP06-013] 3；十字弩狙击手[BP06-013]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 1；十字弩狙击手[BP06-013] field→cemetery 〔forced〕
+   21 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 18/20 · PP 0/3
+手牌 对空射击[BP18-019]、优美的猫姊妹·暹罗与暹玛[BP11-003]、不弑的继承者·库璐璐[BP20-002]、优美的猫姊妹·暹罗与暹玛[BP11-003]｜对手手牌 5 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/2 伤1 横 / 空
+EX 空 / 空｜墓 0/3
+   23 P2 mainPhase 打出 优美的猫姊妹·暹罗与暹玛[BP11-003] 〔fallback〕
+   24 P2 mainPhase 攻击 优美的猫姊妹·暹罗与暹玛[BP11-003] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   25 P1 quick Quick 放过 优美的猫姊妹·暹罗与暹玛[BP11-003]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=17
+   26 P2 mainPhase 打出 对空射击[BP18-019] 对空射击[BP18-019]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 3；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery 〔fallback〕
+   27 P2 mainPhase 打出 优美的猫姊妹·暹罗与暹玛[BP11-003] 〔fallback〕
+   28 P2 mainPhase 攻击 优美的猫姊妹·暹罗与暹玛[BP11-003] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   29 P1 quick Quick 放过 优美的猫姊妹·暹罗与暹玛[BP11-003]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=15
+   30 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 15/20 · PP 3/0
+手牌 不弑的继承者·库璐璐[BP20-002]、优美的猫姊妹·暹罗与暹玛[BP11-003]｜对手手牌 6 张
+场 空 / 优美的猫姊妹·暹罗与暹玛[BP11-003] 2/2 横
+EX 空 / 空｜墓 1/4
+   32 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   33 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   35 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+   36 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 优美的猫姊妹·暹罗与暹玛[BP11-003]
+   37 P2 quick Quick 放过 怒涛副船长[BP19-028]→优美的猫姊妹·暹罗与暹玛[BP11-003] 3；优美的猫姊妹·暹罗与暹玛[BP11-003]→怒涛副船长[BP19-028] 2；优美的猫姊妹·暹罗与暹玛[BP11-003] field→cemetery 〔forced〕
+   38 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 15/20 · PP 0/4
+手牌 不弑的继承者·库璐璐[BP20-002]、优美的猫姊妹·暹罗与暹玛[BP11-003]、十字弩狙击手[BP06-013]｜对手手牌 5 张
+场 怒涛副船长[BP19-028] 3/1 伤2 横、大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 1/5
+   40 P2 mainPhase 打出 十字弩狙击手[BP06-013] 〔fallback〕
+   41 P2 confirm/optionalCost 确认 〔fallback〕
+   42 P2 selectCards/target 怒涛副船长[BP19-028] 〔fallback〕
+   43 P2 selectCards/pick 不弑的继承者·库璐璐[BP20-002] 十字弩狙击手[BP06-013]→怒涛副船长[BP19-028] 1；怒涛副船长[BP19-028] field→cemetery 〔fallback〕
+   44 P2 mainPhase 打出 优美的猫姊妹·暹罗与暹玛[BP11-003] 〔fallback〕
+   45 P2 mainPhase 打出 小小勇士·斯库娜[BP04-010] 〔fallback〕
+   46 P2 mainPhase 进化 小小勇士·斯库娜[BP04-010] 〔fallback〕
+   47 P2 mainPhase 攻击 优美的猫姊妹·暹罗与暹玛[BP11-003] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   48 P1 quick Quick 放过 优美的猫姊妹·暹罗与暹玛[BP11-003]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=13
+   49 P2 mainPhase 攻击 小小勇士·斯库娜[BP04-010] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   50 P1 quick Quick 放过 小小勇士·斯库娜[BP04-010]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=10
+   51 P2 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 1 回合 · HP 10/20 · PP 4/0
+手牌 ｜对手手牌 6 张
+场 大洋斥候[BP19-030] 2/2 / 十字弩狙击手[BP06-013] 1/1、优美的猫姊妹·暹罗与暹玛[BP11-003] 2/2 横、小小勇士·斯库娜[BP04-010] 3/3 横
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 2/6
+   53 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   54 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   55 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 小小勇士·斯库娜[BP04-010]
+   56 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→小小勇士·斯库娜[BP04-010] 4；小小勇士·斯库娜[BP04-010]→出航的罪人·芭芭萝丝[BP19-019] 3；小小勇士·斯库娜[BP04-010] field→cemetery 〔forced〕
+   57 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   58 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=19
+   60 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   61 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   62 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=18
+   64 P1 selectCards/target 海潮炮手[BP19-026]→十字弩狙击手[BP06-013] 1；十字弩狙击手[BP06-013] field→cemetery
+   66 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   67 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=17
+   68 P1 selectPending 海潮炮手[BP19-026]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=16；优美的猫姊妹·暹罗与暹玛[BP11-003] field→cemetery
+   69 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   70 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=15
+   71 P1 selectPending 海潮炮手[BP19-026]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=14
+   72 P1 mainPhase 攻击 大洋斥候[BP19-030] → 第六绝杰·艾兹迪亚[BP10-LD01]
+   73 P2 quick Quick 放过 大洋斥候[BP19-030]→第六绝杰·艾兹迪亚[BP10-LD01] 3；P2 -3=11 〔forced〕
+   74 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 10/11 · PP 0/5
+手牌 不弑的随从[BP05-012]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 3/2 横、出航的罪人·芭芭萝丝[BP19-019] 4/1 伤3 横、海潮炮手[BP19-026] 5/3 / 空
+EX 空 / 空｜墓 2/11
+   76 P2 mainPhase 打出 不弑的随从[BP05-012] P2 +2=13 〔fallback〕
+   77 P2 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 1 回合 · HP 10/13 · PP 5/4
+手牌 ｜对手手牌 5 张
+场 大洋斥候[BP19-030] 3/2、出航的罪人·芭芭萝丝[BP19-019] 4/1 伤3、海潮炮手[BP19-026] 5/3 / 不弑的随从[BP05-012] 2/2
+EX 空 / 空｜墓 2/11
+   79 P1 mainPhase 攻击 海潮炮手[BP19-026] → 第六绝杰·艾兹迪亚[BP10-LD01]
+   80 P2 quick Quick 放过 海潮炮手[BP19-026]→第六绝杰·艾兹迪亚[BP10-LD01] 5；P2 -5=8 〔forced〕
+   81 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 第六绝杰·艾兹迪亚[BP10-LD01]
+   82 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→第六绝杰·艾兹迪亚[BP10-LD01] 4；P2 -4=4 〔forced〕
+   83 P1 mainPhase 攻击 大洋斥候[BP19-030] → 第六绝杰·艾兹迪亚[BP10-LD01]
+   84 P2 quick Quick 放过 大洋斥候[BP19-030]→第六绝杰·艾兹迪亚[BP10-LD01] 3；P2 -3=1 〔forced〕
+   85 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex
+   86 P1 mainPhase 打出 黄金短剑[BP15-T01] 黄金短剑[BP15-T01]→不弑的随从[BP05-012] 2；黄金短剑[BP15-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 2；P2 -2=-1；不弑的随从[BP05-012] field→cemetery
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":10}
+生命 10/-1
+选手输入 [{"direct":0,"authored":10,"fallback":25,"forced":14},{"direct":0,"authored":1,"fallback":22,"forced":15}]
