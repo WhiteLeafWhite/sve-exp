@@ -1,0 +1,126 @@
+g0258
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 纯真的水之妖精[BP16-015]、自然妖精公主·阿丽雅[BP16-001]、妖精剑师·阿玛兹[BP06-003]、小小勇士·斯库娜[BP04-010]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 保留 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 纯真的水之妖精[BP16-015]、自然妖精公主·阿丽雅[BP16-001]、妖精剑师·阿玛兹[BP06-003]、小小勇士·斯库娜[BP04-010]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 纯真的水之妖精[BP16-015] 妖精[BP01-T03] 新→ex 〔fallback〕
+    3 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 自然妖精公主·阿丽雅[BP16-001]、妖精剑师·阿玛兹[BP06-003]、小小勇士·斯库娜[BP04-010]｜对手手牌 5 张
+场 空 / 纯真的水之妖精[BP16-015] 2/1
+EX 空 / 妖精[BP01-T03]｜墓 0/0
+    5 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 1/2
+手牌 自然妖精公主·阿丽雅[BP16-001]、妖精剑师·阿玛兹[BP06-003]、小小勇士·斯库娜[BP04-010]、纯真的水之妖精[BP16-015]｜对手手牌 5 张
+场 空 / 纯真的水之妖精[BP16-015] 2/1
+EX 空 / 妖精[BP01-T03]｜墓 0/0
+    7 P2 mainPhase 打出 自然妖精公主·阿丽雅[BP16-001] 妖精[BP01-T03] 新→ex；妖精[BP01-T03] 新→ex 〔fallback〕
+    8 P2 mainPhase 打出 纯真的水之妖精[BP16-015] 妖精[BP01-T03] 新→ex 〔fallback〕
+    9 P2 mainPhase 结束主阶段 〔fallback〕
+
+T4 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 妖精剑师·阿玛兹[BP06-003]、小小勇士·斯库娜[BP04-010]｜对手手牌 6 张
+场 空 / 纯真的水之妖精[BP16-015] 2/1、自然妖精公主·阿丽雅[BP16-001] 1/1、纯真的水之妖精[BP16-015] 2/1
+EX 空 / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 0/0
+   11 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   12 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   14 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 20/20 · PP 0/3
+手牌 妖精剑师·阿玛兹[BP06-003]、小小勇士·斯库娜[BP04-010]、交织的决心[BP12-007]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 3/3 / 纯真的水之妖精[BP16-015] 2/1、自然妖精公主·阿丽雅[BP16-001] 1/1、纯真的水之妖精[BP16-015] 2/1
+EX 战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 0/0
+   16 P2 mainPhase 打出 妖精剑师·阿玛兹[BP06-003] 妖精[BP01-T03] 新→ex 〔fallback〕
+   17 P2 mainPhase 打出 妖精[BP01-T03] 〔fallback〕
+   18 P2 mainPhase 攻击 纯真的水之妖精[BP16-015] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   19 P1 quick Quick 放过 纯真的水之妖精[BP16-015]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18
+   20 P2 mainPhase 攻击 纯真的水之妖精[BP16-015] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   21 P1 quick Quick 放过 纯真的水之妖精[BP16-015]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=16
+   22 P2 mainPhase 起动 妖精剑师·阿玛兹[BP06-003] 能力 1 〔fallback〕
+   23 P2 selectCards/target 妖精[BP01-T03]、纯真的水之妖精[BP16-015] 〔fallback〕
+   24 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   25 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=14
+   26 P2 mainPhase 攻击 自然妖精公主·阿丽雅[BP16-001] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   27 P1 quick Quick 放过 自然妖精公主·阿丽雅[BP16-001]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=13
+   28 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 13/20 · PP 3/0
+手牌 小小勇士·斯库娜[BP04-010]、交织的决心[BP12-007]｜对手手牌 7 张
+场 怒涛副船长[BP19-028] 3/3 / 纯真的水之妖精[BP16-015] 2/1 横、自然妖精公主·阿丽雅[BP16-001] 1/1 横、纯真的水之妖精[BP16-015] 2/1 横、妖精剑师·阿玛兹[BP06-003] 2/2 横、妖精[BP01-T03] 2/2 横
+EX 战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 0/0
+   30 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 妖精[BP01-T03]
+   31 P2 quick Quick 放过 怒涛副船长[BP19-028]→妖精[BP01-T03] 3；妖精[BP01-T03]→怒涛副船长[BP19-028] 2；妖精[BP01-T03] field→cemetery 〔forced〕
+   32 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   33 P1 mainPhase 进化 怒涛副船长[BP19-028]
+   35 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 妖精剑师·阿玛兹[BP06-003]
+   36 P2 quick Quick 放过 怒涛副船长[BP19-028]→妖精剑师·阿玛兹[BP06-003] 3；妖精剑师·阿玛兹[BP06-003]→怒涛副船长[BP19-028] 2；妖精剑师·阿玛兹[BP06-003] field→cemetery 〔forced〕
+   37 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 13/20 · PP 0/4
+手牌 小小勇士·斯库娜[BP04-010]、交织的决心[BP12-007]、妖精剑师·阿玛兹[BP06-003]｜对手手牌 7 张
+场 怒涛副船长[BP19-028] 3/1 伤2 横、怒涛副船长[BP19-028] 3/1 伤2 横 / 纯真的水之妖精[BP16-015] 2/1、自然妖精公主·阿丽雅[BP16-001] 1/1、纯真的水之妖精[BP16-015] 2/1
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 0/1
+   39 P2 mainPhase 打出 妖精剑师·阿玛兹[BP06-003] 妖精[BP01-T03] 新→ex 〔fallback〕
+   40 P2 mainPhase 打出 妖精[BP01-T03] 〔fallback〕
+   41 P2 mainPhase 攻击 自然妖精公主·阿丽雅[BP16-001] → 怒涛副船长[BP19-028] 〔fallback〕
+   42 P1 quick Quick 放过 自然妖精公主·阿丽雅[BP16-001]→怒涛副船长[BP19-028] 1；怒涛副船长[BP19-028]→自然妖精公主·阿丽雅[BP16-001] 3；怒涛副船长[BP19-028] field→cemetery；自然妖精公主·阿丽雅[BP16-001] field→cemetery
+   43 P2 mainPhase 打出 妖精[BP01-T03] 〔fallback〕
+   44 P2 mainPhase 攻击 纯真的水之妖精[BP16-015] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   45 P1 quick Quick 放过 纯真的水之妖精[BP16-015]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=11
+   46 P2 mainPhase 攻击 纯真的水之妖精[BP16-015] → 怒涛副船长[BP19-028] 〔fallback〕
+   47 P1 quick Quick 放过 纯真的水之妖精[BP16-015]→怒涛副船长[BP19-028] 2；怒涛副船长[BP19-028]→纯真的水之妖精[BP16-015] 3；怒涛副船长[BP19-028] field→cemetery；纯真的水之妖精[BP16-015] field→cemetery；妖精[BP01-T03] 新→ex
+   48 P2 mainPhase 起动 妖精剑师·阿玛兹[BP06-003] 能力 1 〔fallback〕
+   49 P2 selectCards/target 妖精[BP01-T03]、妖精[BP01-T03] 〔fallback〕
+   50 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   51 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=8
+   52 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   53 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=5
+   54 P2 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 1 回合 · HP 5/20 · PP 4/0
+手牌 小小勇士·斯库娜[BP04-010]、交织的决心[BP12-007]｜对手手牌 8 张
+场 空 / 纯真的水之妖精[BP16-015] 2/1 横、妖精剑师·阿玛兹[BP06-003] 2/2 横、妖精[BP01-T03] 3/3 横、妖精[BP01-T03] 3/3 横
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 2/3
+   56 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   57 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   58 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=19
+   60 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   61 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 妖精[BP01-T03]
+   62 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→妖精[BP01-T03] 5；妖精[BP01-T03]→出航的罪人·芭芭萝丝[BP19-019] 3；妖精[BP01-T03] field→cemetery 〔forced〕
+   63 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   64 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=18
+   67 P1 selectCards/target 妖精剑师·阿玛兹[BP06-003] field→cemetery
+   68 P1 selectCards/target 海潮炮手[BP19-026]→纯真的水之妖精[BP16-015] 1；纯真的水之妖精[BP16-015] field→cemetery；妖精[BP01-T03] 新→ex
+   69 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   70 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=17
+   72 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=16
+   73 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   74 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=15
+   76 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=14
+   77 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 5/14 · PP 0/5
+手牌 小小勇士·斯库娜[BP04-010]、交织的决心[BP12-007]、妖精剑师·阿玛兹[BP06-003]｜对手手牌 6 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/1 伤3 横、海潮炮手[BP19-026] 5/3 / 妖精[BP01-T03] 3/3
+EX 空 / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 2/7
+   79 P2 mainPhase 打出 妖精剑师·阿玛兹[BP06-003] 〔authored〕
+   80 P2 mainPhase 打出 小小勇士·斯库娜[BP04-010] 〔fallback〕
+   81 P2 mainPhase 进化 小小勇士·斯库娜[BP04-010] 〔fallback〕
+   82 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   83 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=2
+   84 P2 mainPhase 攻击 小小勇士·斯库娜[BP04-010] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   85 P1 quick Quick 放过 小小勇士·斯库娜[BP04-010]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=0
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":9}
+生命 0/14
+选手输入 [{"direct":0,"authored":12,"fallback":17,"forced":19},{"direct":0,"authored":4,"fallback":24,"forced":10}]
