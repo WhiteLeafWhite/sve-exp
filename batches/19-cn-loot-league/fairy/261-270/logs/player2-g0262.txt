@@ -1,0 +1,162 @@
+g0262
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 森林妖精[BP13-013]、小小勇士·斯库娜[BP04-010]、交织的决心[BP12-007]、妖精舞蹈家[BP01-011]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 整手重抽 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 森林妖精[BP13-013]、小小勇士·斯库娜[BP04-010]、交织的决心[BP12-007]、妖精舞蹈家[BP01-011]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 交织的决心[BP12-007] 〔fallback〕
+    3 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 森林妖精[BP13-013]、小小勇士·斯库娜[BP04-010]、妖精舞蹈家[BP01-011]｜对手手牌 5 张
+场 空 / 妖精[BP01-T03] 1/1、妖精[BP01-T03] 1/1
+EX 空 / 空｜墓 0/1
+    5 P1 mainPhase 打出 艾巴利缇亚[BP05-034]
+    8 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 森林妖精[BP13-013]、小小勇士·斯库娜[BP04-010]、妖精舞蹈家[BP01-011]、妖精龙[BP06-007]｜对手手牌 5 张
+场 空 / 妖精[BP01-T03] 1/1、妖精[BP01-T03] 1/1
+EX 空 / 空｜墓 1/1
+   10 P2 mainPhase 打出 妖精舞蹈家[BP01-011] 〔fallback〕
+   11 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   12 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18
+   13 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   14 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=16
+   15 P2 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 1 回合 · HP 16/20 · PP 2/0
+手牌 森林妖精[BP13-013]、小小勇士·斯库娜[BP04-010]、妖精龙[BP06-007]｜对手手牌 6 张
+场 空 / 妖精[BP01-T03] 2/2 横、妖精[BP01-T03] 2/2 横、妖精舞蹈家[BP01-011] 2/3
+EX 空 / 空｜墓 1/1
+   17 P1 mainPhase 打出 精炼的空绝[BP15-026]
+   18 P1 selectCards/target 精炼的空绝[BP15-026]→妖精[BP01-T03] 2；黄金之杯[BP15-T02] 新→ex；妖精[BP01-T03] field→cemetery
+   19 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex
+   20 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+   21 P1 selectCards/target 奉还的剑闪[BP20-026]→妖精[BP01-T03] 4；妖精[BP01-T03] field→cemetery
+   22 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 16/20 · PP 0/3
+手牌 森林妖精[BP13-013]、小小勇士·斯库娜[BP04-010]、妖精龙[BP06-007]、女王之剑·辛西亚[BP07-003]｜对手手牌 4 张
+场 空 / 妖精舞蹈家[BP01-011] 2/3
+EX 空 / 空｜墓 3/1
+   24 P2 mainPhase 打出 森林妖精[BP13-013] 〔fallback〕
+   25 P2 mainPhase 进化 森林妖精[BP13-013] 妖精萤火[BP01-T02] 新→ex；妖精[BP01-T03] 新→ex 〔fallback〕
+   26 P2 mainPhase 攻击 妖精舞蹈家[BP01-011] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   27 P1 quick Quick 放过 妖精舞蹈家[BP01-011]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=14
+   28 P2 mainPhase 打出 妖精萤火[BP01-T02] 〔fallback〕
+   29 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 14/20 · PP 3/0
+手牌 小小勇士·斯库娜[BP04-010]、妖精龙[BP06-007]、女王之剑·辛西亚[BP07-003]｜对手手牌 5 张
+场 空 / 妖精舞蹈家[BP01-011] 2/3 横、森林妖精[BP13-013] 3/3、妖精萤火[BP01-T02] 1/1
+EX 空 / 妖精[BP01-T03]｜墓 3/1
+   31 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+   32 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   33 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113]（EP）
+   35 P1 selectCards/target 妖精萤火[BP01-T02] field→cemetery
+   36 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 妖精舞蹈家[BP01-011]
+   37 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→妖精舞蹈家[BP01-011] 3；妖精舞蹈家[BP01-011]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 2；妖精舞蹈家[BP01-011] field→cemetery 〔forced〕
+   38 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 14/20 · PP 0/4
+手牌 小小勇士·斯库娜[BP04-010]、妖精龙[BP06-007]、女王之剑·辛西亚[BP07-003]、森林妖精[BP13-013]｜对手手牌 3 张
+场 大洋斥候[BP19-030] 2/2、涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/1 伤2 横 / 森林妖精[BP13-013] 3/3
+EX 战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]｜墓 3/2
+   40 P2 mainPhase 打出 森林妖精[BP13-013] 〔fallback〕
+   41 P2 mainPhase 进化 森林妖精[BP13-013] P2 +2=22；妖精萤火[BP01-T02] 新→ex；妖精[BP01-T03] 新→ex 〔fallback〕
+   42 P2 mainPhase 攻击 森林妖精[BP13-013] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   43 P1 quick Quick 放过 森林妖精[BP13-013]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=11
+   44 P2 mainPhase 打出 妖精[BP01-T03] 〔fallback〕
+   45 P2 mainPhase 打出 妖精萤火[BP01-T02] 〔fallback〕
+   46 P2 mainPhase 结束主阶段 〔fallback〕
+
+T8 · 选手 1 回合 · HP 11/22 · PP 4/0
+手牌 小小勇士·斯库娜[BP04-010]、妖精龙[BP06-007]、女王之剑·辛西亚[BP07-003]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2、涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/1 伤2 / 森林妖精[BP13-013] 3/3 横、森林妖精[BP13-013] 3/3、妖精[BP01-T03] 1/1、妖精萤火[BP01-T02] 1/1
+EX 战栗的海贼旗[BP19-T01] / 妖精[BP01-T03]｜墓 3/2
+   48 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   49 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   50 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 森林妖精[BP13-013]
+   51 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→森林妖精[BP13-013] 4；森林妖精[BP13-013]→出航的罪人·芭芭萝丝[BP19-019] 3；森林妖精[BP13-013] field→cemetery 〔forced〕
+   52 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   53 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=21
+   55 P1 mainPhase 攻击 大洋斥候[BP19-030] → [公主形态]可可萝[CP04-PR01]
+   56 P2 quick Quick 放过 大洋斥候[BP19-030]→[公主形态]可可萝[CP04-PR01] 3；P2 -3=18 〔forced〕
+   57 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → [公主形态]可可萝[CP04-PR01]
+   58 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→[公主形态]可可萝[CP04-PR01] 3；P2 -3=15 〔forced〕
+   59 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019]
+   62 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   63 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=14
+   66 P1 selectCards/target 森林妖精[BP13-013] field→cemetery
+   67 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → [公主形态]可可萝[CP04-PR01]
+   68 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→[公主形态]可可萝[CP04-PR01] 2；P2 -2=12 〔forced〕
+   69 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 11/12 · PP 0/5
+手牌 小小勇士·斯库娜[BP04-010]、妖精龙[BP06-007]、女王之剑·辛西亚[BP07-003]、自然妖精公主·阿丽雅[BP16-001]｜对手手牌 3 张
+场 大洋斥候[BP19-030] 4/2 横、涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/1 伤2 横、出航的罪人·芭芭萝丝[BP19-019] 4/1 伤3 横、空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 妖精[BP01-T03] 1/1、妖精萤火[BP01-T02] 1/1
+EX 空 / 妖精[BP01-T03]｜墓 3/4
+   71 P2 mainPhase 攻击 妖精[BP01-T03] → 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   72 P1 quick Quick 放过 妖精[BP01-T03]→出航的罪人·芭芭萝丝[BP19-019] 1；出航的罪人·芭芭萝丝[BP19-019]→妖精[BP01-T03] 4；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；妖精[BP01-T03] field→cemetery
+   73 P2 mainPhase 打出 自然妖精公主·阿丽雅[BP16-001] 妖精[BP01-T03] 新→ex；妖精[BP01-T03] 新→ex 〔fallback〕
+   74 P2 mainPhase 打出 妖精龙[BP06-007] 〔fallback〕
+   75 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   76 P2 mainPhase 打出 小小勇士·斯库娜[BP04-010] 〔fallback〕
+   77 P2 mainPhase 进化 小小勇士·斯库娜[BP04-010] 〔fallback〕
+   78 P2 mainPhase 攻击 妖精萤火[BP01-T02] → 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   79 P1 quick Quick 放过 妖精萤火[BP01-T02]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 1；涸绝饥饿·吉鲁涅莉婕[BP15-113]→妖精萤火[BP01-T02] 3；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery；妖精萤火[BP01-T02] field→cemetery
+   80 P2 mainPhase 攻击 小小勇士·斯库娜[BP04-010] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   81 P1 quick Quick 放过 小小勇士·斯库娜[BP04-010]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=8
+   82 P2 mainPhase 结束主阶段 〔forced〕
+   83 P2 selectCards/wardEngage 不选 〔fallback〕
+
+T10 · 选手 1 回合 · HP 8/12 · PP 5/0
+手牌 女王之剑·辛西亚[BP07-003]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 4/2、空绝的显现·欧克托莉斯[BP20-019] 2/3 / 自然妖精公主·阿丽雅[BP16-001] 1/1、妖精龙[BP06-007] 4/4、小小勇士·斯库娜[BP04-010] 3/3 横
+EX 空 / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 5/4
+   85 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   86 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]
+   87 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   88 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=11
+   91 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+   92 P1 selectCards/target 奉还的剑闪[BP20-026]→妖精龙[BP06-007] 4；黄金短剑[BP15-T01] 新→ex；妖精龙[BP06-007] field→cemetery
+   95 P1 selectCards/target 小小勇士·斯库娜[BP04-010] field→cemetery；妖精萤火[BP01-T02] 新→ex；妖精[BP01-T03] 新→ex
+   96 P1 mainPhase 攻击 大洋斥候[BP19-030] → [公主形态]可可萝[CP04-PR01]
+   97 P2 quick Quick 放过 大洋斥候[BP19-030]→[公主形态]可可萝[CP04-PR01] 4；P2 -4=7 〔forced〕
+   98 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → [公主形态]可可萝[CP04-PR01]
+   99 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→[公主形态]可可萝[CP04-PR01] 2；P2 -2=5 〔forced〕
+  100 P1 mainPhase 结束主阶段
+
+T11 · 选手 2 回合 · HP 8/5 · PP 0/6
+手牌 女王之剑·辛西亚[BP07-003]、妖精龙[BP06-007]｜对手手牌 2 张
+场 大洋斥候[BP19-030] 4/2 横、空绝的显现·欧克托莉斯[BP20-019] 2/3 横、出航的罪人·芭芭萝丝[BP19-019] 5/4 / 自然妖精公主·阿丽雅[BP16-001] 1/1
+EX 黄金短剑[BP15-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精萤火[BP01-T02]、妖精[BP01-T03]｜墓 6/6
+  102 P2 mainPhase 打出 妖精萤火[BP01-T02] 〔fallback〕
+  103 P2 mainPhase 打出 女王之剑·辛西亚[BP07-003] 妖精萤火[BP01-T02] 新→ex 〔fallback〕
+  104 P2 mainPhase 攻击 妖精萤火[BP01-T02] → 大洋斥候[BP19-030] 〔fallback〕
+  105 P1 quick Quick 放过 妖精萤火[BP01-T02]→大洋斥候[BP19-030] 3；大洋斥候[BP19-030]→妖精萤火[BP01-T02] 4；大洋斥候[BP19-030] field→cemetery；妖精萤火[BP01-T02] field→cemetery
+  106 P2 mainPhase 打出 妖精萤火[BP01-T02] 〔fallback〕
+  107 P2 mainPhase 攻击 妖精萤火[BP01-T02] → 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+  108 P1 quick Quick 放过 妖精萤火[BP01-T02]→空绝的显现·欧克托莉斯[BP20-019] 3；空绝的显现·欧克托莉斯[BP20-019]→妖精萤火[BP01-T02] 2；空绝的显现·欧克托莉斯[BP20-019] field→cemetery；妖精萤火[BP01-T02] field→cemetery
+  109 P2 mainPhase 攻击 自然妖精公主·阿丽雅[BP16-001] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+  110 P1 quick Quick 放过 自然妖精公主·阿丽雅[BP16-001]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=7
+  111 P2 mainPhase 结束主阶段 〔forced〕
+
+T12 · 选手 1 回合 · HP 7/5 · PP 6/0
+手牌 妖精龙[BP06-007]｜对手手牌 3 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/4 / 自然妖精公主·阿丽雅[BP16-001] 1/1 横、女王之剑·辛西亚[BP07-003] 4/6
+EX 黄金短剑[BP15-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 8/6
+  113 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → [公主形态]可可萝[CP04-PR01]
+  114 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→[公主形态]可可萝[CP04-PR01] 5；P2 -5=0 〔forced〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":12}
+生命 7/0
+选手输入 [{"direct":0,"authored":19,"fallback":28,"forced":20},{"direct":0,"authored":1,"fallback":29,"forced":18}]

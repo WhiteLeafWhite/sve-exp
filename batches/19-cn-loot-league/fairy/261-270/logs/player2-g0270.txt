@@ -1,0 +1,120 @@
+g0270
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 妖精剑师·阿玛兹[BP06-003]、纯真的水之妖精[BP16-015]、妖精舞蹈家[BP01-011]、森林妖精[BP13-013]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 保留 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 妖精剑师·阿玛兹[BP06-003]、纯真的水之妖精[BP16-015]、妖精舞蹈家[BP01-011]、森林妖精[BP13-013]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 纯真的水之妖精[BP16-015] 妖精[BP01-T03] 新→ex 〔fallback〕
+    3 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 妖精剑师·阿玛兹[BP06-003]、妖精舞蹈家[BP01-011]、森林妖精[BP13-013]｜对手手牌 5 张
+场 空 / 纯真的水之妖精[BP16-015] 2/1
+EX 空 / 妖精[BP01-T03]｜墓 0/0
+    5 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 1/2
+手牌 妖精剑师·阿玛兹[BP06-003]、妖精舞蹈家[BP01-011]、森林妖精[BP13-013]、漂浮的意志·丝碧涅[EBD01-007]｜对手手牌 5 张
+场 空 / 纯真的水之妖精[BP16-015] 2/1
+EX 空 / 妖精[BP01-T03]｜墓 0/0
+    7 P2 mainPhase 打出 妖精舞蹈家[BP01-011] 〔fallback〕
+    8 P2 mainPhase 攻击 纯真的水之妖精[BP16-015] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+    9 P1 quick Quick 放过 纯真的水之妖精[BP16-015]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=17
+   10 P2 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 1 回合 · HP 17/20 · PP 2/0
+手牌 妖精剑师·阿玛兹[BP06-003]、森林妖精[BP13-013]、漂浮的意志·丝碧涅[EBD01-007]｜对手手牌 6 张
+场 空 / 纯真的水之妖精[BP16-015] 3/2 横、妖精舞蹈家[BP01-011] 2/3
+EX 空 / 妖精[BP01-T03]｜墓 0/0
+   12 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019]
+   15 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 17/20 · PP 0/3
+手牌 妖精剑师·阿玛兹[BP06-003]、森林妖精[BP13-013]、漂浮的意志·丝碧涅[EBD01-007]、身环瘴气的妖精公主·阿丽雅[BP13-003]｜对手手牌 6 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 / 纯真的水之妖精[BP16-015] 3/2、妖精舞蹈家[BP01-011] 2/3
+EX 空 / 妖精[BP01-T03]｜墓 0/0
+   17 P2 mainPhase 打出 妖精剑师·阿玛兹[BP06-003] 妖精[BP01-T03] 新→ex 〔fallback〕
+   18 P2 mainPhase 打出 妖精[BP01-T03] 〔fallback〕
+   19 P2 mainPhase 攻击 纯真的水之妖精[BP16-015] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   20 P1 quick Quick 放过 纯真的水之妖精[BP16-015]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=14
+   21 P2 mainPhase 起动 妖精剑师·阿玛兹[BP06-003] 能力 1 〔fallback〕
+   22 P2 selectCards/target 妖精[BP01-T03]、纯真的水之妖精[BP16-015] 〔fallback〕
+   23 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   24 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=11
+   25 P2 mainPhase 攻击 妖精舞蹈家[BP01-011] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   26 P1 quick Quick 放过 妖精舞蹈家[BP01-011]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=9
+   27 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 9/20 · PP 3/0
+手牌 森林妖精[BP13-013]、漂浮的意志·丝碧涅[EBD01-007]、身环瘴气的妖精公主·阿丽雅[BP13-003]｜对手手牌 7 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 / 纯真的水之妖精[BP16-015] 3/2 横、妖精舞蹈家[BP01-011] 2/3 横、妖精剑师·阿玛兹[BP06-003] 2/2 横、妖精[BP01-T03] 3/3 横
+EX 空 / 妖精[BP01-T03]｜墓 0/0
+   29 P1 mainPhase 打出 精炼的空绝[BP15-026]
+   30 P1 selectCards/target 精炼的空绝[BP15-026]→妖精剑师·阿玛兹[BP06-003] 2；黄金之杯[BP15-T02] 新→ex；妖精剑师·阿玛兹[BP06-003] field→cemetery
+   31 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+   32 P1 selectCards/target 奉还的剑闪[BP20-026]→纯真的水之妖精[BP16-015] 4；黄金短剑[BP15-T01] 新→ex；纯真的水之妖精[BP16-015] field→cemetery；妖精[BP01-T03] 新→ex
+   33 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → [公主形态]可可萝[CP04-PR01]
+   34 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→[公主形态]可可萝[CP04-PR01] 2；P2 -2=18 〔forced〕
+   35 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 9/18 · PP 0/4
+手牌 森林妖精[BP13-013]、漂浮的意志·丝碧涅[EBD01-007]、身环瘴气的妖精公主·阿丽雅[BP13-003]、灵之光耀[BP06-011]｜对手手牌 5 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 妖精舞蹈家[BP01-011] 2/3、妖精[BP01-T03] 3/3
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 妖精[BP01-T03]、妖精[BP01-T03]｜墓 2/2
+   37 P2 mainPhase 打出 森林妖精[BP13-013] 〔fallback〕
+   38 P2 mainPhase 进化 森林妖精[BP13-013] P2 +2=20；妖精萤火[BP01-T02] 新→ex；妖精[BP01-T03] 新→ex 〔fallback〕
+   39 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   40 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=6
+   41 P2 mainPhase 攻击 妖精舞蹈家[BP01-011] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   42 P1 quick Quick 放过 妖精舞蹈家[BP01-011]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=4
+   43 P2 mainPhase 攻击 森林妖精[BP13-013] → 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   44 P1 quick Quick 放过 森林妖精[BP13-013]→空绝的显现·欧克托莉斯[BP20-019] 3；空绝的显现·欧克托莉斯[BP20-019]→森林妖精[BP13-013] 2；空绝的显现·欧克托莉斯[BP20-019] field→cemetery
+   45 P2 mainPhase 打出 灵之光耀[BP06-011] 〔fallback〕
+   46 P2 choose/mode buff 〔fallback〕
+   47 P2 selectCards/target 妖精[BP01-T03] 〔fallback〕
+   48 P2 mainPhase 打出 妖精萤火[BP01-T02] 〔fallback〕
+   49 P2 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 1 回合 · HP 4/20 · PP 4/0
+手牌 漂浮的意志·丝碧涅[EBD01-007]、身环瘴气的妖精公主·阿丽雅[BP13-003]｜对手手牌 6 张
+场 空 / 妖精舞蹈家[BP01-011] 2/3 横、妖精[BP01-T03] 5/5 横、森林妖精[BP13-013] 3/1 伤2 横、妖精萤火[BP01-T02] 1/1
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 3/3
+   51 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   52 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   53 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[公主形态]可可萝[CP04-PR01] 1；P2 -1=19
+   55 P1 mainPhase 打出 黄金短剑[BP15-T01]
+   56 P1 selectCards/target 黄金短剑[BP15-T01]→森林妖精[BP13-013] 2；森林妖精[BP13-013] field→cemetery
+   58 P1 selectCards/target 妖精[BP01-T03] field→cemetery
+   59 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 妖精舞蹈家[BP01-011]
+   60 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→妖精舞蹈家[BP01-011] 5；妖精舞蹈家[BP01-011]→出航的罪人·芭芭萝丝[BP19-019] 2；妖精舞蹈家[BP01-011] field→cemetery 〔forced〕
+   61 P1 mainPhase 打出 黄金之杯[BP15-T02] P1 +1=5
+   62 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 5/19 · PP 0/5
+手牌 漂浮的意志·丝碧涅[EBD01-007]、身环瘴气的妖精公主·阿丽雅[BP13-003]、逆时剑师·阿玛兹[BP15-002]｜对手手牌 5 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/2 伤2 横 / 妖精萤火[BP01-T02] 1/1
+EX 空 / 妖精[BP01-T03]、妖精[BP01-T03]、妖精[BP01-T03]｜墓 3/7
+   64 P2 mainPhase 攻击 妖精萤火[BP01-T02] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   65 P1 quick Quick 放过 妖精萤火[BP01-T02]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=4
+   66 P2 mainPhase 打出 漂浮的意志·丝碧涅[EBD01-007] 〔fallback〕
+   67 P2 selectCards/target 妖精剑师·阿玛兹[BP06-003] 妖精剑师·阿玛兹[BP06-003] cemetery→ex 〔fallback〕
+   68 P2 mainPhase 打出 妖精剑师·阿玛兹[BP06-003] 妖精[BP01-T03] 新→ex 〔authored〕
+   69 P2 mainPhase 打出 妖精[BP01-T03] 〔fallback〕
+   70 P2 mainPhase 打出 妖精[BP01-T03] 〔fallback〕
+   71 P2 mainPhase 起动 妖精剑师·阿玛兹[BP06-003] 能力 1 〔fallback〕
+   72 P2 selectCards/target 妖精[BP01-T03]、妖精[BP01-T03] 〔fallback〕
+   73 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   74 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=1
+   75 P2 mainPhase 攻击 妖精[BP01-T03] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   76 P1 quick Quick 放过 妖精[BP01-T03]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=-1
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":9}
+生命 -1/19
+选手输入 [{"direct":0,"authored":11,"fallback":8,"forced":18},{"direct":0,"authored":4,"fallback":26,"forced":10}]
