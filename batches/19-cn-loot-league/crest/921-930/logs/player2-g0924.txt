@@ -1,0 +1,152 @@
+g0924
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 越过那个背影[CP01-070]、戒律间谍[BP19-100]、誓约干部[BP19-098]、戒律间谍[BP19-100]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 整手重抽 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 越过那个背影[CP01-070]、戒律间谍[BP19-100]、誓约干部[BP19-098]、戒律间谍[BP19-100]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 越过那个背影[CP01-070] 〔fallback〕
+    3 P2 selectCards/pick 绝望的显现·玛文[BP20-093]、安息的祈祷者[BP20-101]、安息的神殿[BP20-103] 〔fallback〕
+    4 P2 orderCards/deckTop 排序 绝望的显现·玛文[BP20-093]、安息的祈祷者[BP20-101]、安息的神殿[BP20-103] 〔fallback〕
+    5 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 戒律间谍[BP19-100]、誓约干部[BP19-098]、戒律间谍[BP19-100]｜对手手牌 5 张
+场 空 / 越过那个背影[CP01-070]
+EX 空 / 空｜墓 0/0
+    7 P1 mainPhase 打出 艾巴利缇亚[BP05-034]
+   10 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 戒律间谍[BP19-100]、誓约干部[BP19-098]、戒律间谍[BP19-100]、绝望的显现·玛文[BP20-093]｜对手手牌 5 张
+场 空 / 越过那个背影[CP01-070]
+EX 空 / 空｜墓 1/0
+   12 P2 mainPhase 打出 戒律间谍[BP19-100] 〔fallback〕
+   13 P2 mainPhase 结束主阶段 P2 +1=21 〔forced〕
+
+T4 · 选手 1 回合 · HP 20/21 · PP 2/0
+手牌 誓约干部[BP19-098]、戒律间谍[BP19-100]、绝望的显现·玛文[BP20-093]｜对手手牌 6 张
+场 空 / 越过那个背影[CP01-070]、戒律间谍[BP19-100] 2/2
+EX 空 / 空｜墓 1/0
+   15 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   16 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   18 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 20/21 · PP 0/3
+手牌 誓约干部[BP19-098]、戒律间谍[BP19-100]、绝望的显现·玛文[BP20-093]、安息的祈祷者[BP20-101]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 3/3 / 越过那个背影[CP01-070]、戒律间谍[BP19-100] 2/2
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/0
+   20 P2 mainPhase 进化 戒律间谍[BP19-100] 〔fallback〕
+   21 P2 selectCards/search 结盟的罪人·艾路拉戴[BP19-092] 〔fallback〕
+   22 P2 mainPhase 攻击 戒律间谍[BP19-100] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   23 P1 quick Quick 放过 戒律间谍[BP19-100]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=17
+   24 P2 mainPhase 打出 戒律间谍[BP19-100] 〔fallback〕
+   25 P2 mainPhase 结束主阶段 〔forced〕
+   26 P2 selectPending p150 P2 +1=22；P2 +1=23 〔fallback〕
+
+T6 · 选手 1 回合 · HP 17/23 · PP 3/0
+手牌 誓约干部[BP19-098]、绝望的显现·玛文[BP20-093]、安息的祈祷者[BP20-101]、结盟的罪人·艾路拉戴[BP19-092]｜对手手牌 7 张
+场 怒涛副船长[BP19-028] 3/3 / 越过那个背影[CP01-070]、戒律间谍[BP19-100] 3/3 横、戒律间谍[BP19-100] 2/2
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/0
+   28 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 无尽力量·索菲娜[BP15-PR07]
+   29 P2 quick Quick 放过 怒涛副船长[BP19-028]→无尽力量·索菲娜[BP15-PR07] 3；P2 -3=20 〔forced〕
+   30 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018]
+   31 P1 mainPhase 进化 篡夺绝杰·欧克托莉斯[BP05-018]（EP）
+   32 P1 selectCards/target 安息的团结者[BP20-097] cemetery→ex
+   33 P1 mainPhase 攻击 篡夺绝杰·欧克托莉斯[BP05-018] → 戒律间谍[BP19-100]
+   34 P2 quick Quick 放过 篡夺绝杰·欧克托莉斯[BP05-018]→戒律间谍[BP19-100] 4；戒律间谍[BP19-100]→篡夺绝杰·欧克托莉斯[BP05-018] 3；戒律间谍[BP19-100] field→cemetery 〔forced〕
+   35 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 17/20 · PP 0/4
+手牌 誓约干部[BP19-098]、绝望的显现·玛文[BP20-093]、安息的祈祷者[BP20-101]、结盟的罪人·艾路拉戴[BP19-092]、暗黑供奉[BP01-140]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 3/3 横、篡夺绝杰·欧克托莉斯[BP05-018] 4/1 伤3 横 / 越过那个背影[CP01-070]、戒律间谍[BP19-100] 2/2
+EX 战栗的海贼旗[BP19-T01]、安息的团结者[BP20-097] / 空｜墓 1/2
+   37 P2 mainPhase 攻击 戒律间谍[BP19-100] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   38 P1 quick Quick 放过 戒律间谍[BP19-100]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=15
+   39 P2 mainPhase 打出 绝望的显现·玛文[BP20-093] 〔fallback〕
+   40 P2 selectPending p166 〔fallback〕
+   41 P2 choose/mode crest 纹章 绝望的显现·玛文[BP20-T07] 新→ex 〔authored〕
+   42 P2 confirm/effect 确认 P2 +1=21；悠久的绝望[BP15-101] cemetery→ex 〔fallback〕
+   43 P2 mainPhase 结束主阶段 〔forced〕
+   44 P2 selectPending p170 P2 +1=22 〔fallback〕
+   45 P2 selectCards/target 篡夺绝杰·欧克托莉斯[BP05-018] 纹章 绝望的显现·玛文[BP20-T07]→篡夺绝杰·欧克托莉斯[BP05-018] 1；篡夺绝杰·欧克托莉斯[BP05-018] field→cemetery 〔fallback〕
+
+T8 · 选手 1 回合 · HP 15/22 · PP 4/0
+手牌 誓约干部[BP19-098]、安息的祈祷者[BP20-101]、结盟的罪人·艾路拉戴[BP19-092]、暗黑供奉[BP01-140]｜对手手牌 7 张
+场 怒涛副船长[BP19-028] 3/3 / 越过那个背影[CP01-070]、戒律间谍[BP19-100] 2/2 横、绝望的显现·玛文[BP20-093] 4/4
+EX 战栗的海贼旗[BP19-T01]、安息的团结者[BP20-097] / 纹章 绝望的显现·玛文[BP20-T07]、悠久的绝望[BP15-101]｜墓 2/1
+   47 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   48 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   49 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 戒律间谍[BP19-100]
+   50 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→戒律间谍[BP19-100] 4；戒律间谍[BP19-100]→出航的罪人·芭芭萝丝[BP19-019] 2；戒律间谍[BP19-100] field→cemetery 〔forced〕
+   51 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   52 P1 selectCards/target 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=21
+   54 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 无尽力量·索菲娜[BP15-PR07]
+   55 P2 quick Quick 放过 怒涛副船长[BP19-028]→无尽力量·索菲娜[BP15-PR07] 4；P2 -4=17 〔forced〕
+   56 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   57 P1 selectCards/target 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=16
+   58 P1 choose/mode 绝望的显现·玛文[BP20-093] field→cemetery
+   59 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019]
+   60 P1 choose/mode 纹章 空绝的显现·欧克托莉斯[BP20-T02] 新→ex
+   61 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex
+   63 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 无尽力量·索菲娜[BP15-PR07]
+   64 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=14 〔forced〕
+   65 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 15/14 · PP 0/5
+手牌 誓约干部[BP19-098]、安息的祈祷者[BP20-101]、结盟的罪人·艾路拉戴[BP19-092]、暗黑供奉[BP01-140]、安息绝杰·玛文[BP05-086]｜对手手牌 3 张
+场 怒涛副船长[BP19-028] 5/3 横、出航的罪人·芭芭萝丝[BP19-019] 4/2 伤2 横、空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 越过那个背影[CP01-070]
+EX 安息的团结者[BP20-097]、纹章 空绝的显现·欧克托莉斯[BP20-T02]、奉还的剑闪[BP20-026] / 纹章 绝望的显现·玛文[BP20-T07]、悠久的绝望[BP15-101]｜墓 3/3
+   67 P2 mainPhase 打出 暗黑供奉[BP01-140] P2 +3=17；越过那个背影[CP01-070] field→cemetery 〔fallback〕
+   68 P2 mainPhase 打出 安息绝杰·玛文[BP05-086] 〔fallback〕
+   69 P2 mainPhase 进化 安息绝杰·玛文[BP05-086] P2 +3=20 〔fallback〕
+   70 P2 mainPhase 攻击 安息绝杰·玛文[BP05-086] → 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   71 P1 quick Quick 放过 安息绝杰·玛文[BP05-086]→出航的罪人·芭芭萝丝[BP19-019] 8；出航的罪人·芭芭萝丝[BP19-019]→安息绝杰·玛文[BP05-086] 4；出航的罪人·芭芭萝丝[BP19-019] field→cemetery
+   72 P2 mainPhase 结束主阶段 〔forced〕
+   73 P2 selectCards/target 第八绝杰·欧克托莉斯[BP10-LD02] 纹章 绝望的显现·玛文[BP20-T07]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=14 〔fallback〕
+
+T10 · 选手 1 回合 · HP 14/20 · PP 5/0
+手牌 誓约干部[BP19-098]、安息的祈祷者[BP20-101]、结盟的罪人·艾路拉戴[BP19-092]、永久之盾·席翁[BP14-090]、安息的神殿[BP20-103]｜对手手牌 4 张
+场 怒涛副船长[BP19-028] 5/3、空绝的显现·欧克托莉斯[BP20-019] 2/3 / 安息绝杰·玛文[BP05-086] 8/4 伤4 横
+EX 安息的团结者[BP20-097]、纹章 空绝的显现·欧克托莉斯[BP20-T02]、奉还的剑闪[BP20-026] / 纹章 绝望的显现·玛文[BP20-T07]、悠久的绝望[BP15-101]｜墓 4/5
+   75 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   76 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]
+   77 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 安息绝杰·玛文[BP05-086]
+   78 P2 quick Quick 放过 怒涛副船长[BP19-028]→安息绝杰·玛文[BP05-086] 5；安息绝杰·玛文[BP05-086]→怒涛副船长[BP19-028] 8；怒涛副船长[BP19-028] field→cemetery；安息绝杰·玛文[BP05-086] field→cemetery 〔forced〕
+   79 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   80 P1 selectCards/target 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=19
+   84 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+   85 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+   86 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 无尽力量·索菲娜[BP15-PR07]
+   87 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=17 〔forced〕
+   88 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   89 P1 selectCards/target 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=16
+   92 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   93 P1 selectCards/target 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=15
+   96 P1 mainPhase 结束主阶段
+
+T11 · 选手 1 回合 · HP 14/15 · PP 6/0
+手牌 誓约干部[BP19-098]、安息的祈祷者[BP20-101]、结盟的罪人·艾路拉戴[BP19-092]、永久之盾·席翁[BP14-090]、安息的神殿[BP20-103]｜对手手牌 2 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3、出航的罪人·芭芭萝丝[BP19-019] 7/4、大洋斥候[BP19-030] 2/2、大洋斥候[BP19-030] 2/2 / 空
+EX 安息的团结者[BP20-097]、纹章 空绝的显现·欧克托莉斯[BP20-T02]、奉还的剑闪[BP20-026] / 纹章 绝望的显现·玛文[BP20-T07]、悠久的绝望[BP15-101]｜墓 5/8
+   98 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 无尽力量·索菲娜[BP15-PR07]
+   99 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→无尽力量·索菲娜[BP15-PR07] 7；P2 -7=8 〔forced〕
+  100 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+  101 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+  102 P1 selectCards/target 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=7
+  106 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 无尽力量·索菲娜[BP15-PR07]
+  107 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=5 〔forced〕
+  108 P1 mainPhase 攻击 大洋斥候[BP19-030] → 无尽力量·索菲娜[BP15-PR07]
+  109 P2 quick Quick 放过 大洋斥候[BP19-030]→无尽力量·索菲娜[BP15-PR07] 3；P2 -3=2 〔forced〕
+  110 P1 mainPhase 攻击 大洋斥候[BP19-030] → 无尽力量·索菲娜[BP15-PR07]
+  111 P2 quick Quick 放过 大洋斥候[BP19-030]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=0 〔forced〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":11}
+生命 14/0
+选手输入 [{"direct":0,"authored":22,"fallback":37,"forced":10},{"direct":0,"authored":3,"fallback":19,"forced":21}]

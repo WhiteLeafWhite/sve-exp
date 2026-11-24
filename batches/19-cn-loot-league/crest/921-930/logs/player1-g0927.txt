@@ -1,0 +1,105 @@
+g0927
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 大洋斥候[BP19-030]、艾巴利缇亚[BP05-034]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、怒涛副船长[BP19-028]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留 〔authored〕
+    1 P2 mulligan 保留 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 大洋斥候[BP19-030]、艾巴利缇亚[BP05-034]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、怒涛副船长[BP19-028]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+    3 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 艾巴利缇亚[BP05-034]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、怒涛副船长[BP19-028]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    5 P2 mainPhase 打出 救世主[BP05-100]
+    6 P2 choose/mode 大洋斥候[BP19-030] field→banished
+    7 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 艾巴利缇亚[BP05-034]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、怒涛副船长[BP19-028]、奉还的剑闪[BP20-026]｜对手手牌 4 张
+场 空 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/1
+    9 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   10 P1 mainPhase 结束主阶段 〔fallback〕
+
+T4 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 艾巴利缇亚[BP05-034]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、奉还的剑闪[BP20-026]｜对手手牌 5 张
+场 怒涛副船长[BP19-028] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 0/1
+   12 P2 mainPhase 打出 安息的继承者·希弥佳[BP20-094] 纹章 安息的继承者·希弥佳[BP20-T08] 新→ex
+   13 P2 mainPhase 进化 安息的继承者·希弥佳[BP20-094]（EP）
+   15 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 20/20 · PP 3/0
+手牌 艾巴利缇亚[BP05-034]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、奉还的剑闪[BP20-026]、涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 5 张
+场 怒涛副船长[BP19-028] 2/2 / 安息的继承者·希弥佳[BP20-094] 3/3
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 纹章 安息的继承者·希弥佳[BP20-T08]｜墓 0/1
+   17 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→安息的继承者·希弥佳[BP20-094] 4；安息的继承者·希弥佳[BP20-094] field→cemetery 〔fallback〕
+   18 P1 mainPhase 进化 怒涛副船长[BP19-028] 〔fallback〕
+   19 P1 selectCards/search 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   20 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   21 P2 quick Quick 放过 怒涛副船长[BP19-028]→无尽力量·索菲娜[BP15-PR07] 3；P2 -3=17
+   22 P1 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 2 回合 · HP 20/17 · PP 0/3
+手牌 艾巴利缇亚[BP05-034]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 3/3 横 / 空
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 纹章 安息的继承者·希弥佳[BP20-T08]｜墓 1/2
+   24 P2 mainPhase 打出 安息的神殿[BP20-103]
+   27 P2 mainPhase 打出 悠久的绝望[BP15-101]
+   28 P2 mainPhase 打出 越过那个背影[CP01-070]
+   31 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 20/17 · PP 4/0
+手牌 艾巴利缇亚[BP05-034]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]｜对手手牌 4 张
+场 怒涛副船长[BP19-028] 3/3 / 安息的神殿[BP20-103]、悠久的绝望[BP15-101]、越过那个背影[CP01-070]
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 纹章 安息的继承者·希弥佳[BP20-T08]｜墓 1/2
+   33 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   34 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   35 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=16；P2 -1=15 〔authored〕
+   36 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   37 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=14；P2 -1=13 〔authored〕
+   38 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   39 P2 quick Quick 放过 怒涛副船长[BP19-028]→无尽力量·索菲娜[BP15-PR07] 3；P2 -3=10
+   40 P1 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 2 回合 · HP 20/10 · PP 0/4
+手牌 艾巴利缇亚[BP05-034]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 5 张
+场 怒涛副船长[BP19-028] 3/3 横、海潮炮手[BP19-026] 4/3 / 安息的神殿[BP20-103]、悠久的绝望[BP15-101]、越过那个背影[CP01-070]
+EX 战栗的海贼旗[BP19-T01] / 纹章 安息的继承者·希弥佳[BP20-T08]｜墓 1/2
+   42 P2 mainPhase 起动 悠久的绝望[BP15-101] 能力 1 悠久的绝望[BP15-101] field→cemetery
+   43 P2 mainPhase 打出 绝望安息·玛文[BP15-094]
+   46 P2 confirm/effect P2 +1=11；悠久的绝望[BP15-101] cemetery→ex
+   47 P2 mainPhase 结束主阶段
+   50 P1 quick Quick 放过 P2 +2=13 〔forced〕
+
+T9 · 选手 1 回合 · HP 20/13 · PP 5/0
+手牌 艾巴利缇亚[BP05-034]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、出航的罪人·芭芭萝丝[BP19-019]、空绝的显现·欧克托莉斯[BP20-019]｜对手手牌 5 张
+场 怒涛副船长[BP19-028] 3/3、海潮炮手[BP19-026] 4/3 / 安息的神殿[BP20-103]、越过那个背影[CP01-070]、绝望安息·玛文[BP15-094] 4/4 横
+EX 战栗的海贼旗[BP19-T01] / 纹章 安息的继承者·希弥佳[BP20-T08]、悠久的绝望[BP15-101]｜墓 1/2
+   51 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   52 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   53 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   54 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=12 〔authored〕
+   55 P1 selectPending p188 〔fallback〕
+   56 P1 choose/mode recover 〔authored〕
+   57 P1 selectCards/target 无尽力量·索菲娜[BP15-PR07] 海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=11 〔authored〕
+   58 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 绝望安息·玛文[BP15-094] 〔fallback〕
+   59 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→绝望安息·玛文[BP15-094] 4；绝望安息·玛文[BP15-094]→出航的罪人·芭芭萝丝[BP19-019] 4；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；绝望安息·玛文[BP15-094] field→cemetery
+   60 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔authored〕
+   61 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=10；P2 -1=9 〔authored〕
+   62 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 无尽力量·索菲娜[BP15-PR07] 〔authored〕
+   63 P2 quick Quick 放过 怒涛副船长[BP19-028]→无尽力量·索菲娜[BP15-PR07] 3；P2 -3=6
+   64 P1 mainPhase 攻击 海潮炮手[BP19-026] → 无尽力量·索菲娜[BP15-PR07] 〔authored〕
+   65 P2 quick Quick 放过 海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 6；P2 -6=0
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":9}
+生命 20/0
+选手输入 [{"direct":0,"authored":14,"fallback":12,"forced":7},{"direct":0,"authored":2,"fallback":19,"forced":12}]
