@@ -1,0 +1,105 @@
+g0072
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 破坏的祈祷者[BP20-048]、破坏的随从[BP05-048]、白之章·黑之章[BP05-045]、歼灭的歌声[BP20-045]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 整手重抽 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 破坏的祈祷者[BP20-048]、破坏的随从[BP05-048]、白之章·黑之章[BP05-045]、歼灭的歌声[BP20-045]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 歼灭的歌声[BP20-045] 〔authored〕
+    3 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 破坏的祈祷者[BP20-048]、破坏的随从[BP05-048]、白之章·黑之章[BP05-045]｜对手手牌 5 张
+场 空 / 新约·白之章[BP20-T03]
+EX 空 / 空｜墓 0/1
+    5 P1 mainPhase 打出 篡夺的随从[BP05-029]
+    6 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 破坏的祈祷者[BP20-048]、破坏的随从[BP05-048]、白之章·黑之章[BP05-045]、破坏的愉悦[BP08-051]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2 / 新约·白之章[BP20-T03]
+EX 空 / 空｜墓 0/2
+    8 P2 mainPhase 打出 破坏的祈祷者[BP20-048] 〔fallback〕
+    9 P2 mainPhase 起动 破坏的祈祷者[BP20-048] 能力 0 〔fallback〕
+   10 P2 selectCards/target 篡夺的随从[BP05-029] 破坏的祈祷者[BP20-048]→篡夺的随从[BP05-029] 2；P2 +1=21；新约·白之章[BP20-T03] field→cemetery；篡夺的随从[BP05-029] field→cemetery 〔fallback〕
+   11 P2 mainPhase 结束主阶段 〔fallback〕
+
+T4 · 选手 1 回合 · HP 20/21 · PP 2/0
+手牌 破坏的随从[BP05-048]、白之章·黑之章[BP05-045]、破坏的愉悦[BP08-051]｜对手手牌 5 张
+场 空 / 破坏的祈祷者[BP20-048] 2/3 横、新约·黑之章[BP20-T04]
+EX 空 / 空｜墓 1/2
+   13 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019]
+   16 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex
+   17 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 第二绝杰·里榭娜[BP10-LD04]
+   18 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→第二绝杰·里榭娜[BP10-LD04] 2；P2 -2=19 〔forced〕
+   19 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 20/19 · PP 0/3
+手牌 破坏的随从[BP05-048]、白之章·黑之章[BP05-045]、破坏的愉悦[BP08-051]、破坏的隐者[BP15-054]｜对手手牌 3 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 破坏的祈祷者[BP20-048] 2/3、新约·黑之章[BP20-T04]
+EX 奉还的剑闪[BP20-026] / 空｜墓 2/2
+   21 P2 mainPhase 打出 破坏的隐者[BP15-054] 破坏的隐者[BP15-054]→空绝的显现·欧克托莉斯[BP20-019] 3；空绝的显现·欧克托莉斯[BP20-019] field→cemetery 〔authored〕
+   22 P2 mainPhase 攻击 破坏的祈祷者[BP20-048] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   23 P1 quick Quick 放过 破坏的祈祷者[BP20-048]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18
+   24 P2 mainPhase 打出 破坏的随从[BP05-048] 〔fallback〕
+   25 P2 mainPhase 进化 破坏的随从[BP05-048] 〔fallback〕
+   26 P2 mainPhase 起动 新约·黑之章[BP20-T04] 能力 1 新约·黑之章[BP20-T04]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=17；新约·黑之章[BP20-T04] field→cemetery 〔fallback〕
+   27 P2 mainPhase 结束主阶段 〔fallback〕
+
+T6 · 选手 1 回合 · HP 17/19 · PP 3/0
+手牌 白之章·黑之章[BP05-045]、破坏的愉悦[BP08-051]｜对手手牌 4 张
+场 空 / 破坏的祈祷者[BP20-048] 2/3 横、破坏的隐者[BP15-054] 2/2 横、破坏的随从[BP05-048] 4/4 横、新约·白之章[BP20-T03]
+EX 奉还的剑闪[BP20-026] / 空｜墓 3/2
+   29 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+   30 P1 selectCards/target 奉还的剑闪[BP20-026]→破坏的祈祷者[BP20-048] 4；破坏的祈祷者[BP20-048] field→cemetery
+   31 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019]
+   34 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 17/19 · PP 0/4
+手牌 白之章·黑之章[BP05-045]、破坏的愉悦[BP08-051]、破坏的随从[BP05-048]｜对手手牌 4 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 / 破坏的隐者[BP15-054] 2/2、破坏的随从[BP05-048] 4/4、新约·白之章[BP20-T03]
+EX 空 / 空｜墓 4/3
+   36 P2 mainPhase 打出 破坏的随从[BP05-048] 〔fallback〕
+   37 P2 mainPhase 进化 破坏的随从[BP05-048] 破坏的随从[BP05-049]→空绝的显现·欧克托莉斯[BP20-019] 2；破坏的随从[BP05-049]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=15 〔fallback〕
+   38 P2 mainPhase 打出 白之章·黑之章[BP05-045] 白之章·黑之章[BP05-045]→空绝的显现·欧克托莉斯[BP20-019] 2；白之章·黑之章[BP05-045]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=13；P2 +2=21；空绝的显现·欧克托莉斯[BP20-019] field→cemetery 〔fallback〕
+   39 P2 mainPhase 攻击 破坏的随从[BP05-048] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   40 P1 quick Quick 放过 破坏的随从[BP05-048]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=9
+   41 P2 mainPhase 攻击 破坏的隐者[BP15-054] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   42 P1 quick Quick 放过 破坏的隐者[BP15-054]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=7
+   43 P2 mainPhase 结束主阶段 〔fallback〕
+
+T8 · 选手 1 回合 · HP 7/21 · PP 4/0
+手牌 破坏的愉悦[BP08-051]｜对手手牌 5 张
+场 空 / 破坏的隐者[BP15-054] 2/2 横、破坏的随从[BP05-048] 4/4 横、新约·白之章[BP20-T03]、破坏的随从[BP05-048] 4/4
+EX 空 / 空｜墓 5/4
+   45 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+   46 P1 selectCards/target 奉还的剑闪[BP20-026]→破坏的随从[BP05-048] 4；破坏的随从[BP05-048] field→cemetery
+   47 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   48 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 7/21 · PP 0/5
+手牌 破坏的愉悦[BP08-051]、破坏的继承者·阿克西雅[BP20-040]｜对手手牌 3 张
+场 海潮炮手[BP19-026] 2/3 / 破坏的隐者[BP15-054] 2/2、新约·白之章[BP20-T03]、破坏的随从[BP05-048] 4/4
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 6/5
+   50 P2 mainPhase 攻击 破坏的随从[BP05-048] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   51 P1 quick Quick 放过 破坏的随从[BP05-048]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=3
+   52 P2 mainPhase 攻击 破坏的隐者[BP15-054] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   53 P1 quick Quick 放过 破坏的隐者[BP15-054]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=1
+   54 P2 mainPhase 打出 破坏的继承者·阿克西雅[BP20-040] 〔fallback〕
+   55 P2 mainPhase 进化 破坏的继承者·阿克西雅[BP20-040] 〔fallback〕
+   56 P2 confirm/optionalCost 确认 〔fallback〕
+   57 P2 selectCards/pick 新约·白之章[BP20-T03] 新约·白之章[BP20-T03] field→cemetery 〔fallback〕
+   58 P2 selectCards/search 奏绝破坏·里榭娜[BP15-039] 破坏的继承者·阿克西雅[BP20-041]→海潮炮手[BP19-026] 2；P2 +1=22 〔authored〕
+   59 P2 mainPhase 打出 破坏的愉悦[BP08-051] 〔fallback〕
+   60 P2 mainPhase 打出 奏绝破坏·里榭娜[BP15-039] 奏绝的独唱[BP15-PR12] 新→ex 〔fallback〕
+   61 P2 mainPhase 起动 新约·黑之章[BP20-T04] 能力 1 新约·黑之章[BP20-T04]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=0；新约·黑之章[BP20-T04] field→cemetery 〔authored〕
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":9}
+生命 0/22
+选手输入 [{"direct":0,"authored":7,"fallback":8,"forced":13},{"direct":0,"authored":8,"fallback":20,"forced":6}]
