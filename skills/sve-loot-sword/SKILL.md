@@ -1,11 +1,13 @@
 ---
 name: sve-loot-sword
-description: 驾驶 Shadowverse EVOLVE 日版 BP20 的 t7B32v「20财宝」皇室。用于整手留牌、海贼旗与炮手伤害、芭芭萝丝回费、篡夺对手墓场和清场后的续攻。
+description: 驾驶 Shadowverse EVOLVE BP20 的 t7B32v「20财宝」皇室。用于整手留牌、海贼旗与炮手伤害、芭芭萝丝回费、十墓篡夺，以及对侮蔑龙、破坏法和财宝皇镜像的实战或复盘。
 ---
 
 # 财宝皇室「20财宝」
 
 使用 t7B32v 原表，主牌 40、进化 10，保留三张 BP05-018 篡夺绝杰。双席正式对主教 5 胜 1 负，六局均沿用原表。做决策时先看己方 EX、手牌、对方公开墓场和剩余 PP。[可导入原表](assets/t7B32v.json) · [双席封存记录](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/reviews-by-seat/004-meta.md)
+
+对固定侮蔑龙、破坏法或镜像时，读[三套主流打法与五份可接手录像](references/bp20-mainstream.md)。出牌前确认对方墓场会不会因篡夺从十张降到九张，列出哪只旧盗贼还能吃旗加攻，并按对手留的 PP 评估攻击窗口。
 
 ## 先把费用排对
 
@@ -16,7 +18,7 @@ description: 驾驶 Shadowverse EVOLVE 日版 BP20 的 t7B32v「20财宝」皇�
 
 | 来源 | 入账条件 |
 |---|---|
-| 海贼旗 BP19-T01 | 选盗贼加 1 攻，同时有八狱与盗贼才附带主战者 1 伤。加攻记给**还会攻击**的随从。给已经攻击过的目标，不能把后来增加的攻击力算回先前一击。 |
+| 海贼旗 BP19-T01 | 选盗贼加 1 攻。被选中的盗贼同时是八狱，旗自己才打主战者 1。加攻要记给**还会攻击**的随从，已经攻击的目标要留到以后才兑现 +1 攻。 |
 | 海潮炮手 BP19-026 | 打出一面海贼旗可选敌主战者或敌随从打 1。黄金短剑同属财宝，能触发芭芭萝丝、给显现创造疾驰机会，但不会触发炮手。第 6 局是三次旗伤、三次炮手触发、炮手攻击 4，合计 10。[原局](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/t7B32v/games/06.md) |
 | 黄金短剑与篡夺绝杰 | 短剑要有合法敌方随从可选。对手墓场至少 10 张时，才对其主战者额外打 2。进化篡夺绝杰能把对手墓牌放进**皇室自己的 EX**。按实际费用、合法目标和现有触发评估。借来的天冥当场就可起动；借圣士郎则要另有回复才能触发打 2。[拿到天冥的选择](https://github.com/WhiteLeafWhite/sve-exp/blob/6556d454e7baa65f7c18f233511868ab50700cb4/batches/10-agent-duels/t7B32v/notes/06-meta.md) |
 

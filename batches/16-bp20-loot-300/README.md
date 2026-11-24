@@ -2,7 +2,7 @@
 
 我方持 **t7B32v 原表**，三张 BP05-018。对手按原始 SVE Helper 牌表固定为侮蔑龙 zQrwne、破坏法 cQZr8Z、财宝皇 t7B32v。每个对局 100 局，50 先攻、50 后攻，每组目标至少 65 胜。正式种子由对手代码和局号唯一确定，单数我方先攻。调整打法从下一局生效，已经完成的正式场保留原记录。
 
-- [实时战绩和每十局复盘](index.md)
+- [300 局战绩和每十局复盘](index.md) · [收官复盘](review.md) · [破坏法加练 200 局](../17-bp20-loot-rune-200/README.md)
 - [本方原表](decks/t7B32v.json) · [侮蔑龙原表](../06-zQrwne/opponent.json) · [破坏法原表](../05-cQZr8Z/opponent.json) · [镜像原表](../07-t7B32v/opponent.json)
 - [测试约定和牌表校验值](protocol.json) · [本轮打法版本](pilots.md)
 
