@@ -9,7 +9,7 @@
 | 铺场皇 | `csUWGv` | 10/40 | 4/5 | 2/5 | 6–4–0 | [原表](rally/deck.json) · [1–10](rally/checks/001.md) |
 | 破坏法 | `cQZr8Z` | 10/40 | 2/5 | 3/5 | 5–5–0 | [原表](destruction/deck.json) · [1–10](destruction/checks/001.md) |
 | 真实法 | `h1LX3a` | 10/40 | 0/5 | 0/5 | 0–10–0 | [原表](truth/deck.json) · [1–10](truth/checks/001.md) |
-| 侮蔑龙 | `zQrwne` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](disdain/deck.json) |
+| 侮蔑龙 | `zQrwne` | 10/40 | 1/5 | 0/5 | 1–9–0 | [原表](disdain/deck.json) · [1–10](disdain/checks/001.md) |
 | 海洋龙 | `d86IcJ` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](ocean/deck.json) |
 | 混融梦 | `8YKXr7` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](choice/deck.json) |
 | 蝙蝠梦 | `twju4N` | 0/40 | 0/— | 0/— | 0–0–0 | [原表](bat/deck.json) |
