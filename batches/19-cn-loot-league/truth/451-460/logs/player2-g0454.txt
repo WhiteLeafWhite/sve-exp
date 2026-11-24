@@ -1,0 +1,150 @@
+g0454
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 绝尽的显现·莱欧[BP20-042]、绝尽真实·莱欧[BP15-038]、绝尽真实·莱欧[BP15-038]、石英魔女[BP15-055]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 整手重抽 〔authored〕
+    1 P1 mulligan 保留 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 真实的隐者[BP15-053]、虚伪的术式[BP20-049]、真实的祈祷者[BP20-052]、真实的祈祷者[BP20-052]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 虚伪的术式[BP20-049] 〔fallback〕
+    3 P2 selectCards/effect 绝尽真实·莱欧[BP15-038] 〔fallback〕
+    4 P2 choose/effect hand 〔fallback〕
+    5 P2 orderCards/deckBottom 排序 石英魔女[BP15-055]、真实的继承者·薇赫里雅[BP20-038] 〔fallback〕
+    6 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 真实的隐者[BP15-053]、真实的祈祷者[BP20-052]、真实的祈祷者[BP20-052]、绝尽真实·莱欧[BP15-038]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 0/1
+    8 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+    9 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 真实的隐者[BP15-053]、真实的祈祷者[BP20-052]、真实的祈祷者[BP20-052]、绝尽真实·莱欧[BP15-038]、无尽巫师·桃乐丝[BP12-037]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/1
+   11 P2 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 1 回合 · HP 20/20 · PP 2/2
+手牌 真实的隐者[BP15-053]、真实的祈祷者[BP20-052]、真实的祈祷者[BP20-052]、绝尽真实·莱欧[BP15-038]、无尽巫师·桃乐丝[BP12-037]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/1
+   13 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=19
+   14 P1 mainPhase 攻击 大洋斥候[BP19-030] → 愚昧的贤者·琳库露[BP15-PR03]
+   15 P2 quick Quick 放过 大洋斥候[BP19-030]→愚昧的贤者·琳库露[BP15-PR03] 3；P2 -3=16 〔forced〕
+   16 P1 mainPhase 打出 篡夺的随从[BP05-029]
+   17 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 20/16 · PP 0/3
+手牌 真实的隐者[BP15-053]、真实的祈祷者[BP20-052]、真实的祈祷者[BP20-052]、绝尽真实·莱欧[BP15-038]、无尽巫师·桃乐丝[BP12-037]、真实的隐者[BP15-053]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 3/2 横、篡夺的随从[BP05-029] 2/2 / 空
+EX 空 / 空｜墓 0/2
+   19 P2 mainPhase 打出 真实的祈祷者[BP20-052] 〔fallback〕
+   20 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   21 P2 selectCards/discard 真实的隐者[BP15-053] 〔fallback〕
+   22 P2 mainPhase 结束主阶段 〔forced〕
+   23 P2 selectCards/wardEngage 真实的祈祷者[BP20-052] 〔authored〕
+
+T6 · 选手 1 回合 · HP 20/16 · PP 3/0
+手牌 真实的祈祷者[BP20-052]、绝尽真实·莱欧[BP15-038]、无尽巫师·桃乐丝[BP12-037]、真实的隐者[BP15-053]、真实的祈祷者[BP20-052]、真实的团结者[BP20-046]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 3/2、篡夺的随从[BP05-029] 2/2 / 真实的祈祷者[BP20-052] 3/3 横
+EX 空 / 空｜墓 0/3
+   25 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex
+   26 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 真实的祈祷者[BP20-052]
+   27 P2 quick Quick 放过 强袭盗贼[BP15-035]→真实的祈祷者[BP20-052] 3；真实的祈祷者[BP20-052]→强袭盗贼[BP15-035] 3；强袭盗贼[BP15-035] field→cemetery；真实的祈祷者[BP20-052] field→cemetery 〔forced〕
+   28 P1 mainPhase 攻击 大洋斥候[BP19-030] → 愚昧的贤者·琳库露[BP15-PR03]
+   29 P2 quick Quick 放过 大洋斥候[BP19-030]→愚昧的贤者·琳库露[BP15-PR03] 3；P2 -3=13 〔forced〕
+   30 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 愚昧的贤者·琳库露[BP15-PR03]
+   31 P2 quick Quick 放过 篡夺的随从[BP05-029]→愚昧的贤者·琳库露[BP15-PR03] 3；P2 -3=10 〔forced〕
+   32 P1 mainPhase 打出 艾巴利缇亚[BP05-034]
+   35 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 20/10 · PP 0/4
+手牌 真实的祈祷者[BP20-052]、绝尽真实·莱欧[BP15-038]、无尽巫师·桃乐丝[BP12-037]、真实的隐者[BP15-053]、真实的祈祷者[BP20-052]、真实的团结者[BP20-046]、真实的肯定者[BP20-053]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 3/2 横、篡夺的随从[BP05-029] 3/2 横 / 空
+EX 黄金短剑[BP15-T01] / 空｜墓 1/5
+   37 P2 mainPhase 打出 真实的团结者[BP20-046] 〔fallback〕
+   38 P2 mainPhase 进化 真实的团结者[BP20-046] 〔fallback〕
+   39 P2 selectCards/target 大洋斥候[BP19-030] 真实的团结者[BP20-047]→大洋斥候[BP19-030] 3 〔fallback〕
+   40 P2 selectCards/discard 真实的宣告[BP05-044] 大洋斥候[BP19-030] field→cemetery 〔fallback〕
+   41 P2 mainPhase 攻击 真实的团结者[BP20-046] → 篡夺的随从[BP05-029] 〔fallback〕
+   42 P1 quick Quick 放过 真实的团结者[BP20-046]→篡夺的随从[BP05-029] 4；篡夺的随从[BP05-029]→真实的团结者[BP20-046] 3；篡夺的随从[BP05-029] field→cemetery
+   43 P2 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 1 回合 · HP 20/10 · PP 4/0
+手牌 真实的祈祷者[BP20-052]、绝尽真实·莱欧[BP15-038]、无尽巫师·桃乐丝[BP12-037]、真实的隐者[BP15-053]、真实的祈祷者[BP20-052]、真实的肯定者[BP20-053]｜对手手牌 6 张
+场 空 / 真实的团结者[BP20-046] 4/1 伤3 横
+EX 黄金短剑[BP15-T01] / 空｜墓 3/6
+   45 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   46 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=9
+   47 P1 selectCards/target 海潮炮手[BP19-026]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=8
+   48 P1 mainPhase 打出 艾巴利缇亚[BP05-034]
+   51 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 20/8 · PP 0/5
+手牌 真实的祈祷者[BP20-052]、绝尽真实·莱欧[BP15-038]、无尽巫师·桃乐丝[BP12-037]、真实的隐者[BP15-053]、真实的祈祷者[BP20-052]、真实的肯定者[BP20-053]、真实的信徒[BP05-046]｜对手手牌 6 张
+场 海潮炮手[BP19-026] 3/3 / 真实的团结者[BP20-046] 4/1 伤3
+EX 黄金短剑[BP15-T01] / 空｜墓 3/6
+   53 P2 mainPhase 攻击 真实的团结者[BP20-046] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   54 P1 quick Quick 放过 真实的团结者[BP20-046]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=16
+   55 P2 mainPhase 打出 真实的信徒[BP05-046] 〔fallback〕
+   56 P2 mainPhase 打出 真实的祈祷者[BP20-052] 〔fallback〕
+   57 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   58 P2 selectPending p193 P2 +1=9 〔fallback〕
+   59 P2 selectCards/discard 真实的戒律[BP08-041] 〔fallback〕
+   60 P2 mainPhase 结束主阶段 〔fallback〕
+   61 P2 selectCards/wardEngage 真实的祈祷者[BP20-052] 〔authored〕
+
+T10 · 选手 1 回合 · HP 16/9 · PP 5/0
+手牌 绝尽真实·莱欧[BP15-038]、无尽巫师·桃乐丝[BP12-037]、真实的隐者[BP15-053]、真实的祈祷者[BP20-052]、真实的肯定者[BP20-053]、绝尽的崇拜者[BP15-047]｜对手手牌 7 张
+场 海潮炮手[BP19-026] 3/3 / 真实的团结者[BP20-046] 4/1 伤3 横、真实的信徒[BP05-046] 2/2、真实的祈祷者[BP20-052] 3/3 横
+EX 黄金短剑[BP15-T01] / 空｜墓 3/7
+   63 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+   64 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018]
+   65 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018]
+   66 P1 mainPhase 进化 篡夺绝杰·欧克托莉斯[BP05-018]
+   67 P1 selectCards/target 真实的祈祷者[BP20-052] cemetery→ex
+   68 P1 mainPhase 打出 黄金短剑[BP15-T01]
+   69 P1 selectCards/target 黄金短剑[BP15-T01]→真实的团结者[BP20-046] 2；黄金短剑[BP15-T01]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=7；真实的团结者[BP20-046] field→cemetery
+   70 P1 mainPhase 攻击 篡夺绝杰·欧克托莉斯[BP05-018] → 真实的祈祷者[BP20-052]
+   71 P2 quick Quick 放过 篡夺绝杰·欧克托莉斯[BP05-018]→真实的祈祷者[BP20-052] 4；真实的祈祷者[BP20-052]→篡夺绝杰·欧克托莉斯[BP05-018] 3；真实的祈祷者[BP20-052] field→cemetery 〔forced〕
+   72 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   73 P1 selectCards/target 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=6
+   74 P1 selectCards/target 海潮炮手[BP19-026]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=5
+   75 P1 mainPhase 攻击 海潮炮手[BP19-026] → 愚昧的贤者·琳库露[BP15-PR03]
+   76 P2 quick Quick 放过 海潮炮手[BP19-026]→愚昧的贤者·琳库露[BP15-PR03] 4；P2 -4=1 〔forced〕
+   77 P1 mainPhase 结束主阶段
+
+T11 · 选手 2 回合 · HP 16/1 · PP 0/6
+手牌 绝尽真实·莱欧[BP15-038]、无尽巫师·桃乐丝[BP12-037]、真实的隐者[BP15-053]、真实的祈祷者[BP20-052]、真实的肯定者[BP20-053]、绝尽的崇拜者[BP15-047]、真实的戒律[BP08-041]｜对手手牌 4 张
+场 海潮炮手[BP19-026] 4/3 横、大洋斥候[BP19-030] 2/2、篡夺绝杰·欧克托莉斯[BP05-018] 4/1 伤3 横、篡夺绝杰·欧克托莉斯[BP05-018] 2/2 / 真实的信徒[BP05-046] 2/2
+EX 真实的祈祷者[BP20-052] / 空｜墓 3/12
+   79 P2 mainPhase 攻击 真实的信徒[BP05-046] → 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+   80 P1 quick Quick 放过 真实的信徒[BP05-046]→篡夺绝杰·欧克托莉斯[BP05-018] 2；篡夺绝杰·欧克托莉斯[BP05-018]→真实的信徒[BP05-046] 4；篡夺绝杰·欧克托莉斯[BP05-018] field→cemetery；真实的信徒[BP05-046] field→cemetery
+   81 P2 mainPhase 打出 真实的隐者[BP15-053] 〔fallback〕
+   82 P2 selectCards/target 真实的祈祷者[BP20-052] 真实的祈祷者[BP20-052] cemetery→ex 〔fallback〕
+   83 P2 mainPhase 打出 真实的祈祷者[BP20-052] 〔fallback〕
+   84 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   85 P2 selectCards/discard 真实的戒律[BP08-041] 〔fallback〕
+   86 P2 mainPhase 结束主阶段 〔forced〕
+   87 P2 selectCards/wardEngage 真实的祈祷者[BP20-052] 〔authored〕
+
+T12 · 选手 1 回合 · HP 16/1 · PP 6/0
+手牌 绝尽真实·莱欧[BP15-038]、无尽巫师·桃乐丝[BP12-037]、真实的祈祷者[BP20-052]、真实的肯定者[BP20-053]、绝尽的崇拜者[BP15-047]、无尽巫师·桃乐丝[BP12-037]、石英魔女[BP15-055]｜对手手牌 5 张
+场 海潮炮手[BP19-026] 4/3、大洋斥候[BP19-030] 2/2、篡夺绝杰·欧克托莉斯[BP05-018] 2/2 / 真实的隐者[BP15-053] 2/3、真实的祈祷者[BP20-052] 3/5 横
+EX 真实的祈祷者[BP20-052] / 空｜墓 4/13
+   89 P1 mainPhase 攻击 大洋斥候[BP19-030] → 真实的祈祷者[BP20-052]
+   90 P2 quick Quick 放过 大洋斥候[BP19-030]→真实的祈祷者[BP20-052] 2；真实的祈祷者[BP20-052]→大洋斥候[BP19-030] 3；大洋斥候[BP19-030] field→cemetery 〔forced〕
+   91 P1 mainPhase 攻击 海潮炮手[BP19-026] → 真实的祈祷者[BP20-052]
+   92 P2 quick Quick 放过 海潮炮手[BP19-026]→真实的祈祷者[BP20-052] 4；真实的祈祷者[BP20-052]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026] field→cemetery；真实的祈祷者[BP20-052] field→cemetery 〔forced〕
+   93 P1 mainPhase 攻击 篡夺绝杰·欧克托莉斯[BP05-018] → 愚昧的贤者·琳库露[BP15-PR03]
+   94 P2 quick Quick 放过 篡夺绝杰·欧克托莉斯[BP05-018]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=-1 〔forced〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":12}
+生命 16/-1
+选手输入 [{"direct":0,"authored":10,"fallback":23,"forced":14},{"direct":0,"authored":4,"fallback":25,"forced":19}]
