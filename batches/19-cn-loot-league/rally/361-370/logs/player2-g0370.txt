@@ -1,0 +1,137 @@
+g0370
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 天空指挥官·榭莉亚[BP09-018]、音速机械·洛菈米亚[BP06-019]、荣光剑士·奥蕾莉亚[BP20-022]、咒箱女王·娜哈特·娜哈特[BP11-018]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 整手重抽 〔authored〕
+    1 P1 mulligan 保留 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 约定之荣耀·高文[BP18-023]、天空指挥官·榭莉亚[BP09-018]、幻影拍档·峇妮与峇侬[BP11-019]、娜哈特的私兵[BP11-031]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 天空指挥官·榭莉亚[BP09-018] 〔fallback〕
+    3 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 约定之荣耀·高文[BP18-023]、幻影拍档·峇妮与峇侬[BP11-019]、娜哈特的私兵[BP11-031]｜对手手牌 5 张
+场 空 / 天空指挥官·榭莉亚[BP09-018] 2/2
+EX 空 / 空｜墓 0/0
+    5 P1 mainPhase 打出 艾巴利缇亚[BP05-034]
+    8 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 约定之荣耀·高文[BP18-023]、幻影拍档·峇妮与峇侬[BP11-019]、娜哈特的私兵[BP11-031]、约定之荣耀·高文[BP18-023]｜对手手牌 5 张
+场 空 / 天空指挥官·榭莉亚[BP09-018] 2/2
+EX 空 / 空｜墓 1/0
+   10 P2 mainPhase 打出 约定之荣耀·高文[BP18-023] 〔fallback〕
+   11 P2 mainPhase 攻击 天空指挥官·榭莉亚[BP09-018] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   12 P1 quick Quick 放过 天空指挥官·榭莉亚[BP09-018]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18
+   13 P2 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 1 回合 · HP 18/20 · PP 2/0
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、娜哈特的私兵[BP11-031]、约定之荣耀·高文[BP18-023]｜对手手牌 6 张
+场 空 / 天空指挥官·榭莉亚[BP09-018] 2/2 横、约定之荣耀·高文[BP18-023] 3/3
+EX 空 / 空｜墓 1/0
+   15 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   16 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   18 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 天空指挥官·榭莉亚[BP09-018]
+   19 P2 quick Quick 放过 怒涛副船长[BP19-028]→天空指挥官·榭莉亚[BP09-018] 3；天空指挥官·榭莉亚[BP09-018]→怒涛副船长[BP19-028] 2；天空指挥官·榭莉亚[BP09-018] field→cemetery 〔forced〕
+   20 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 18/20 · PP 0/3
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、娜哈特的私兵[BP11-031]、约定之荣耀·高文[BP18-023]、瞬息的迅捷剑士[BP16-031]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 3/1 伤2 横 / 约定之荣耀·高文[BP18-023] 3/3
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/1
+   22 P2 mainPhase 打出 瞬息的迅捷剑士[BP16-031] 〔fallback〕
+   23 P2 mainPhase 进化 瞬息的迅捷剑士[BP16-031] 〔fallback〕
+   24 P2 selectCards/target 怒涛副船长[BP19-028] 瞬息的迅捷剑士[BP16-032]→怒涛副船长[BP19-028] 1；怒涛副船长[BP19-028] field→cemetery 〔fallback〕
+   25 P2 mainPhase 攻击 约定之荣耀·高文[BP18-023] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   26 P1 quick Quick 放过 约定之荣耀·高文[BP18-023]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=15
+   27 P2 mainPhase 攻击 瞬息的迅捷剑士[BP16-031] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   28 P1 quick Quick 放过 瞬息的迅捷剑士[BP16-031]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=13
+   29 P2 mainPhase 打出 娜哈特的私兵[BP11-031] 〔fallback〕
+   30 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 13/20 · PP 3/0
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、约定之荣耀·高文[BP18-023]｜对手手牌 7 张
+场 空 / 约定之荣耀·高文[BP18-023] 3/3 横、瞬息的迅捷剑士[BP16-031] 2/2 横、娜哈特的私兵[BP11-031] 2/2
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 2/1
+   32 P1 mainPhase 打出 精炼的空绝[BP15-026]
+   33 P1 selectCards/target 精炼的空绝[BP15-026]→瞬息的迅捷剑士[BP16-031] 2；黄金之杯[BP15-T02] 新→ex；瞬息的迅捷剑士[BP16-031] field→cemetery
+   34 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex
+   35 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 约定之荣耀·高文[BP18-023]
+   36 P2 quick Quick 放过 强袭盗贼[BP15-035]→约定之荣耀·高文[BP18-023] 3；约定之荣耀·高文[BP18-023]→强袭盗贼[BP15-035] 3；强袭盗贼[BP15-035] field→cemetery；约定之荣耀·高文[BP18-023] field→cemetery 〔forced〕
+   37 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 13/20 · PP 0/4
+手牌 幻影拍档·峇妮与峇侬[BP11-019]、约定之荣耀·高文[BP18-023]、静寂的安纳提玛·吉尔达利娅[BP19-022]｜对手手牌 5 张
+场 空 / 娜哈特的私兵[BP11-031] 2/2
+EX 战栗的海贼旗[BP19-T01]、黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 空｜墓 4/4
+   39 P2 mainPhase 打出 幻影拍档·峇妮与峇侬[BP11-019] 〔fallback〕
+   40 P2 mainPhase 进化 幻影拍档·峇妮与峇侬[BP11-019] 〔fallback〕
+   41 P2 choose/mode val 〔fallback〕
+   42 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 0 〔fallback〕
+   43 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   44 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=10
+   45 P2 mainPhase 结束主阶段 〔fallback〕
+
+T8 · 选手 1 回合 · HP 10/20 · PP 4/0
+手牌 约定之荣耀·高文[BP18-023]、静寂的安纳提玛·吉尔达利娅[BP19-022]、月光执行者·里欧德[BP17-022]｜对手手牌 6 张
+场 空 / 娜哈特的私兵[BP11-031] 2/2、幻影拍档·峇妮与峇侬[BP11-019] 4/4 横、魔导四轮车·V[BP11-T01]
+EX 战栗的海贼旗[BP19-T01]、黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 空｜墓 4/4
+   47 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   48 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   49 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=19
+   51 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   52 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   53 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=18
+   56 P1 selectCards/target 幻影拍档·峇妮与峇侬[BP11-019] field→cemetery
+   57 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=17
+   58 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   59 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=16
+   61 P1 selectCards/target 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=15
+   62 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 10/15 · PP 0/5
+手牌 约定之荣耀·高文[BP18-023]、静寂的安纳提玛·吉尔达利娅[BP19-022]、月光执行者·里欧德[BP17-022]、晴天的银骑士·艾蜜莉亚[SP01-010]｜对手手牌 4 张
+场 出航的罪人·芭芭萝丝[BP19-019] 7/4、海潮炮手[BP19-026] 2/3 / 娜哈特的私兵[BP11-031] 2/2、魔导四轮车·V[BP11-T01]
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 空｜墓 4/7
+   64 P2 mainPhase 打出 静寂的安纳提玛·吉尔达利娅[BP19-022] 〔fallback〕
+   65 P2 confirm/effect 确认 〔fallback〕
+   66 P2 selectCards/pick 静寂的安纳提玛·吉尔达利娅[BP19-023] 静寂的安纳提玛·吉尔达利娅[BP19-023]→出航的罪人·芭芭萝丝[BP19-019] 4；静寂的安纳提玛·吉尔达利娅[BP19-023]→海潮炮手[BP19-026] 4；静寂的安纳提玛·吉尔达利娅[BP19-023]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=8；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；海潮炮手[BP19-026] field→cemetery 〔fallback〕
+   67 P2 mainPhase 攻击 娜哈特的私兵[BP11-031] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   68 P1 quick Quick 放过 娜哈特的私兵[BP11-031]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=6
+   69 P2 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 1 回合 · HP 6/15 · PP 5/0
+手牌 约定之荣耀·高文[BP18-023]、月光执行者·里欧德[BP17-022]、晴天的银骑士·艾蜜莉亚[SP01-010]｜对手手牌 5 张
+场 空 / 娜哈特的私兵[BP11-031] 2/2 横、魔导四轮车·V[BP11-T01]、静寂的安纳提玛·吉尔达利娅[BP19-022] 5/5、铁甲骑士[BP01-T07] 2/2、骑士[BP01-T05] 1/1
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 空｜墓 6/7
+   71 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   72 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]
+   73 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=14
+   75 P1 mainPhase 打出 黄金短剑[BP15-T01]
+   76 P1 selectCards/target 黄金短剑[BP15-T01]→娜哈特的私兵[BP11-031] 2；娜哈特的私兵[BP11-031] field→cemetery
+   78 P1 selectCards/target 静寂的安纳提玛·吉尔达利娅[BP19-022] field→cemetery
+   79 P1 mainPhase 打出 黄金之杯[BP15-T02] P1 +1=7
+   80 P1 mainPhase 结束主阶段
+
+T11 · 选手 2 回合 · HP 7/14 · PP 0/6
+手牌 约定之荣耀·高文[BP18-023]、月光执行者·里欧德[BP17-022]、晴天的银骑士·艾蜜莉亚[SP01-010]、幻影拍档·峇妮与峇侬[BP11-019]｜对手手牌 4 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/4 / 魔导四轮车·V[BP11-T01]、铁甲骑士[BP01-T07] 2/2、骑士[BP01-T05] 1/1
+EX 空 / 空｜墓 6/11
+   82 P2 mainPhase 打出 约定之荣耀·高文[BP18-023] P2 +2=16 〔fallback〕
+   83 P2 mainPhase 打出 幻影拍档·峇妮与峇侬[BP11-019] 〔fallback〕
+   84 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 0 〔fallback〕
+   85 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   86 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=4
+   87 P2 mainPhase 攻击 约定之荣耀·高文[BP18-023] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   88 P1 quick Quick 放过 约定之荣耀·高文[BP18-023]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=1
+   89 P2 mainPhase 攻击 铁甲骑士[BP01-T07] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   90 P1 quick Quick 放过 铁甲骑士[BP01-T07]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=-1
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":11}
+生命 -1/16
+选手输入 [{"direct":0,"authored":18,"fallback":18,"forced":18},{"direct":0,"authored":4,"fallback":22,"forced":11}]

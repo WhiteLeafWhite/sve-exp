@@ -1,0 +1,144 @@
+g0370
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 海潮炮手[BP19-026]、海潮炮手[BP19-026]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 整手重抽
+    1 P1 mulligan 保留 P2 0=20；P1 0=20 〔authored〕
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 海潮炮手[BP19-026]、海潮炮手[BP19-026]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 天空指挥官·榭莉亚[BP09-018]
+    3 P2 mainPhase 结束主阶段
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 海潮炮手[BP19-026]、海潮炮手[BP19-026]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、精炼的空绝[BP15-026]｜对手手牌 3 张
+场 空 / 天空指挥官·榭莉亚[BP09-018] 2/2
+EX 空 / 空｜墓 0/0
+    5 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔authored〕
+    6 P1 selectCards/effect 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+    7 P1 orderCards/deckBottom 排序 空绝篡夺·欧克托莉斯[BP15-020]、奉还的剑闪[BP20-026]、大洋斥候[BP19-030] 〔fallback〕
+    8 P1 mainPhase 结束主阶段 〔forced〕
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 海潮炮手[BP19-026]、海潮炮手[BP19-026]、出航的罪人·芭芭萝丝[BP19-019]、精炼的空绝[BP15-026]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 4 张
+场 空 / 天空指挥官·榭莉亚[BP09-018] 2/2
+EX 空 / 空｜墓 1/0
+   10 P2 mainPhase 打出 约定之荣耀·高文[BP18-023]
+   11 P2 mainPhase 攻击 天空指挥官·榭莉亚[BP09-018] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   12 P1 quick Quick 放过 天空指挥官·榭莉亚[BP09-018]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18 〔forced〕
+   13 P2 mainPhase 结束主阶段
+
+T4 · 选手 1 回合 · HP 18/20 · PP 2/0
+手牌 海潮炮手[BP19-026]、海潮炮手[BP19-026]、出航的罪人·芭芭萝丝[BP19-019]、精炼的空绝[BP15-026]、出航的罪人·芭芭萝丝[BP19-019]、怒涛副船长[BP19-028]｜对手手牌 3 张
+场 空 / 天空指挥官·榭莉亚[BP09-018] 2/2 横、约定之荣耀·高文[BP18-023] 3/3
+EX 空 / 空｜墓 1/0
+   15 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   16 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP） 〔fallback〕
+   17 P1 selectCards/search 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   18 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 天空指挥官·榭莉亚[BP09-018] 〔fallback〕
+   19 P2 quick Quick 放过 怒涛副船长[BP19-028]→天空指挥官·榭莉亚[BP09-018] 3；天空指挥官·榭莉亚[BP09-018]→怒涛副船长[BP19-028] 2；天空指挥官·榭莉亚[BP09-018] field→cemetery
+   20 P1 mainPhase 结束主阶段 〔forced〕
+
+T5 · 选手 2 回合 · HP 18/20 · PP 0/3
+手牌 海潮炮手[BP19-026]、海潮炮手[BP19-026]、出航的罪人·芭芭萝丝[BP19-019]、精炼的空绝[BP15-026]、出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 4 张
+场 怒涛副船长[BP19-028] 3/1 伤2 横 / 约定之荣耀·高文[BP18-023] 3/3
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/1
+   22 P2 mainPhase 打出 瞬息的迅捷剑士[BP16-031]
+   23 P2 mainPhase 进化 瞬息的迅捷剑士[BP16-031]
+   24 P2 selectCards/target 瞬息的迅捷剑士[BP16-032]→怒涛副船长[BP19-028] 1；怒涛副船长[BP19-028] field→cemetery
+   25 P2 mainPhase 攻击 约定之荣耀·高文[BP18-023] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   26 P1 quick Quick 放过 约定之荣耀·高文[BP18-023]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=15 〔forced〕
+   27 P2 mainPhase 攻击 瞬息的迅捷剑士[BP16-031] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   28 P1 quick Quick 放过 瞬息的迅捷剑士[BP16-031]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=13 〔forced〕
+   29 P2 mainPhase 打出 娜哈特的私兵[BP11-031]
+   30 P2 mainPhase 结束主阶段
+
+T6 · 选手 1 回合 · HP 13/20 · PP 3/0
+手牌 海潮炮手[BP19-026]、海潮炮手[BP19-026]、出航的罪人·芭芭萝丝[BP19-019]、精炼的空绝[BP15-026]、出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、强袭盗贼[BP15-035]｜对手手牌 2 张
+场 空 / 约定之荣耀·高文[BP18-023] 3/3 横、瞬息的迅捷剑士[BP16-031] 2/2 横、娜哈特的私兵[BP11-031] 2/2
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 2/1
+   32 P1 mainPhase 打出 精炼的空绝[BP15-026] 〔fallback〕
+   33 P1 selectCards/target 瞬息的迅捷剑士[BP16-031] 精炼的空绝[BP15-026]→瞬息的迅捷剑士[BP16-031] 2；黄金之杯[BP15-T02] 新→ex；瞬息的迅捷剑士[BP16-031] field→cemetery 〔authored〕
+   34 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+   35 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 约定之荣耀·高文[BP18-023] 〔fallback〕
+   36 P2 quick Quick 放过 强袭盗贼[BP15-035]→约定之荣耀·高文[BP18-023] 3；约定之荣耀·高文[BP18-023]→强袭盗贼[BP15-035] 3；强袭盗贼[BP15-035] field→cemetery；约定之荣耀·高文[BP18-023] field→cemetery
+   37 P1 mainPhase 结束主阶段 〔forced〕
+
+T7 · 选手 2 回合 · HP 13/20 · PP 0/4
+手牌 海潮炮手[BP19-026]、海潮炮手[BP19-026]、出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 3 张
+场 空 / 娜哈特的私兵[BP11-031] 2/2
+EX 战栗的海贼旗[BP19-T01]、黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 空｜墓 4/4
+   39 P2 mainPhase 打出 幻影拍档·峇妮与峇侬[BP11-019]
+   40 P2 mainPhase 进化 幻影拍档·峇妮与峇侬[BP11-019]
+   42 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 0
+   43 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   44 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=10 〔forced〕
+   45 P2 mainPhase 结束主阶段
+
+T8 · 选手 1 回合 · HP 10/20 · PP 4/0
+手牌 海潮炮手[BP19-026]、海潮炮手[BP19-026]、出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、艾巴利缇亚[BP05-034]｜对手手牌 3 张
+场 空 / 娜哈特的私兵[BP11-031] 2/2、幻影拍档·峇妮与峇侬[BP11-019] 4/4 横、魔导四轮车·V[BP11-T01]
+EX 战栗的海贼旗[BP19-T01]、黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 空｜墓 4/4
+   47 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   48 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP） 〔authored〕
+   49 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=19 〔fallback〕
+   50 P1 choose/mode recover 〔authored〕
+   51 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   52 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   53 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=18 〔authored〕
+   54 P1 selectPending p188 〔fallback〕
+   55 P1 choose/mode destroy 〔fallback〕
+   56 P1 selectCards/target 幻影拍档·峇妮与峇侬[BP11-019] 幻影拍档·峇妮与峇侬[BP11-019] field→cemetery 〔authored〕
+   57 P1 selectCards/target [公主形态]佩可莉姆[CP04-PR02] 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=17 〔authored〕
+   58 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   59 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=16 〔authored〕
+   60 P1 selectPending p195 〔fallback〕
+   61 P1 selectCards/target [公主形态]佩可莉姆[CP04-PR02] 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=15 〔authored〕
+   62 P1 mainPhase 结束主阶段 〔forced〕
+
+T9 · 选手 2 回合 · HP 10/15 · PP 0/5
+手牌 海潮炮手[BP19-026]、出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、艾巴利缇亚[BP05-034]｜对手手牌 4 张
+场 出航的罪人·芭芭萝丝[BP19-019] 7/4、海潮炮手[BP19-026] 2/3 / 娜哈特的私兵[BP11-031] 2/2、魔导四轮车·V[BP11-T01]
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 空｜墓 4/7
+   64 P2 mainPhase 打出 静寂的安纳提玛·吉尔达利娅[BP19-022]
+   66 P2 selectCards/pick 静寂的安纳提玛·吉尔达利娅[BP19-023]→出航的罪人·芭芭萝丝[BP19-019] 4；静寂的安纳提玛·吉尔达利娅[BP19-023]→海潮炮手[BP19-026] 4；静寂的安纳提玛·吉尔达利娅[BP19-023]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=8；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；海潮炮手[BP19-026] field→cemetery
+   67 P2 mainPhase 攻击 娜哈特的私兵[BP11-031] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   68 P1 quick Quick 放过 娜哈特的私兵[BP11-031]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=6 〔forced〕
+   69 P2 mainPhase 结束主阶段
+
+T10 · 选手 1 回合 · HP 6/15 · PP 5/0
+手牌 海潮炮手[BP19-026]、出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、艾巴利缇亚[BP05-034]、海潮炮手[BP19-026]｜对手手牌 3 张
+场 空 / 娜哈特的私兵[BP11-031] 2/2 横、魔导四轮车·V[BP11-T01]、静寂的安纳提玛·吉尔达利娅[BP19-022] 5/5、铁甲骑士[BP01-T07] 2/2、骑士[BP01-T05] 1/1
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 空｜墓 6/7
+   71 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   72 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   73 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=14 〔fallback〕
+   74 P1 choose/mode recover 〔authored〕
+   75 P1 mainPhase 打出 黄金短剑[BP15-T01] 〔fallback〕
+   76 P1 selectCards/target 娜哈特的私兵[BP11-031] 黄金短剑[BP15-T01]→娜哈特的私兵[BP11-031] 2；娜哈特的私兵[BP11-031] field→cemetery 〔authored〕
+   77 P1 choose/mode destroy 〔authored〕
+   78 P1 selectCards/target 静寂的安纳提玛·吉尔达利娅[BP19-022] 静寂的安纳提玛·吉尔达利娅[BP19-022] field→cemetery 〔authored〕
+   79 P1 mainPhase 打出 黄金之杯[BP15-T02] P1 +1=7 〔fallback〕
+   80 P1 mainPhase 结束主阶段 〔forced〕
+
+T11 · 选手 2 回合 · HP 7/14 · PP 0/6
+手牌 海潮炮手[BP19-026]、出航的罪人·芭芭萝丝[BP19-019]、艾巴利缇亚[BP05-034]、海潮炮手[BP19-026]｜对手手牌 4 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/4 / 魔导四轮车·V[BP11-T01]、铁甲骑士[BP01-T07] 2/2、骑士[BP01-T05] 1/1
+EX 空 / 空｜墓 6/11
+   82 P2 mainPhase 打出 约定之荣耀·高文[BP18-023] P2 +2=16
+   83 P2 mainPhase 打出 幻影拍档·峇妮与峇侬[BP11-019]
+   84 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 0
+   85 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   86 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=4 〔forced〕
+   87 P2 mainPhase 攻击 约定之荣耀·高文[BP18-023] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   88 P1 quick Quick 放过 约定之荣耀·高文[BP18-023]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=1 〔forced〕
+   89 P2 mainPhase 攻击 铁甲骑士[BP01-T07] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   90 P1 quick Quick 放过 铁甲骑士[BP01-T07]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=-1 〔forced〕
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":11}
+生命 -1/16
+选手输入 [{"direct":0,"authored":18,"fallback":18,"forced":18},{"direct":0,"authored":4,"fallback":22,"forced":11}]

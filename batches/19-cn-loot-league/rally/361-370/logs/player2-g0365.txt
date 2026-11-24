@@ -1,0 +1,152 @@
+g0365
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 俏猫上将[BP13-029]、晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、约定之荣耀·高文[BP18-023]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 整手重抽
+    1 P2 mulligan 保留 P1 0=20；P2 0=20 〔authored〕
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 俏猫上将[BP13-029]、晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、约定之荣耀·高文[BP18-023]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 艾巴利缇亚[BP05-034]
+    5 P1 mainPhase 结束主阶段
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 俏猫上将[BP13-029]、晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、约定之荣耀·高文[BP18-023]、宇宙之翼·洛菈米亚[BP15-023]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    7 P2 mainPhase 打出 俏猫上将[BP13-029] 〔fallback〕
+    8 P2 mainPhase 结束主阶段 〔forced〕
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、约定之荣耀·高文[BP18-023]、宇宙之翼·洛菈米亚[BP15-023]｜对手手牌 6 张
+场 空 / 俏猫上将[BP13-029] 2/2
+EX 空 / 空｜墓 0/0
+   10 P1 mainPhase 打出 精炼的空绝[BP15-026] 精炼的空绝[BP15-026]→俏猫上将[BP13-029] 2；黄金之杯[BP15-T02] 新→ex；俏猫上将[BP13-029] field→cemetery
+   11 P1 mainPhase 打出 艾巴利缇亚[BP05-034]
+   14 P1 mainPhase 结束主阶段
+
+T4 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、约定之荣耀·高文[BP18-023]、宇宙之翼·洛菈米亚[BP15-023]、圣剑之光的小队长[BP17-029]｜对手手牌 5 张
+场 空 / 空
+EX 黄金之杯[BP15-T02] / 空｜墓 2/1
+   16 P2 mainPhase 打出 圣剑之光的小队长[BP17-029] 〔fallback〕
+   17 P2 selectCards/wardEnterEngaged 不选 铁甲骑士[BP01-T07] 新→ex 〔fallback〕
+   18 P2 mainPhase 结束主阶段 〔forced〕
+   19 P2 selectCards/wardEngage 战盾卫士[BP02-T02] 〔authored〕
+
+T5 · 选手 1 回合 · HP 20/20 · PP 3/0
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、约定之荣耀·高文[BP18-023]、宇宙之翼·洛菈米亚[BP15-023]｜对手手牌 6 张
+场 空 / 圣剑之光的小队长[BP17-029] 1/1、战盾卫士[BP02-T02] 1/1 横、骑士[BP01-T05] 1/1
+EX 黄金之杯[BP15-T02] / 铁甲骑士[BP01-T07]｜墓 2/1
+   21 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   22 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   24 P1 selectCards/target 圣剑之光的小队长[BP17-029] field→cemetery
+   25 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 战盾卫士[BP02-T02]
+   26 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→战盾卫士[BP02-T02] 3；战盾卫士[BP02-T02]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 1；战盾卫士[BP02-T02] field→cemetery 〔forced〕
+   27 P1 mainPhase 结束主阶段
+
+T6 · 选手 2 回合 · HP 20/20 · PP 0/3
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、约定之荣耀·高文[BP18-023]、宇宙之翼·洛菈米亚[BP15-023]、瞬息的迅捷剑士[BP16-031]｜对手手牌 5 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/2 伤1 横 / 骑士[BP01-T05] 1/1
+EX 黄金之杯[BP15-T02] / 铁甲骑士[BP01-T07]｜墓 2/2
+   29 P2 mainPhase 打出 约定之荣耀·高文[BP18-023] 〔fallback〕
+   30 P2 mainPhase 打出 瞬息的迅捷剑士[BP16-031] 〔fallback〕
+   31 P2 mainPhase 进化 瞬息的迅捷剑士[BP16-031]（EP） 〔fallback〕
+   32 P2 selectCards/target 涸绝饥饿·吉鲁涅莉婕[BP15-113] 瞬息的迅捷剑士[BP16-032]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 1 〔fallback〕
+   33 P2 mainPhase 攻击 骑士[BP01-T05] → 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   34 P1 quick Quick 放过 骑士[BP01-T05]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 1；涸绝饥饿·吉鲁涅莉婕[BP15-113]→骑士[BP01-T05] 3；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery；骑士[BP01-T05] field→cemetery
+   35 P2 mainPhase 攻击 瞬息的迅捷剑士[BP16-031] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   36 P1 quick Quick 放过 瞬息的迅捷剑士[BP16-031]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18
+   37 P2 mainPhase 结束主阶段 〔forced〕
+
+T7 · 选手 1 回合 · HP 18/20 · PP 4/0
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、宇宙之翼·洛菈米亚[BP15-023]｜对手手牌 6 张
+场 空 / 约定之荣耀·高文[BP18-023] 3/3、瞬息的迅捷剑士[BP16-031] 2/2 横
+EX 黄金之杯[BP15-T02] / 铁甲骑士[BP01-T07]｜墓 3/2
+   39 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018]
+   40 P1 mainPhase 进化 篡夺绝杰·欧克托莉斯[BP05-018]
+   41 P1 selectCards/target 俏猫上将[BP13-029] cemetery→ex
+   42 P1 mainPhase 攻击 篡夺绝杰·欧克托莉斯[BP05-018] → 瞬息的迅捷剑士[BP16-031]
+   43 P2 quick Quick 放过 篡夺绝杰·欧克托莉斯[BP05-018]→瞬息的迅捷剑士[BP16-031] 4；瞬息的迅捷剑士[BP16-031]→篡夺绝杰·欧克托莉斯[BP05-018] 2；瞬息的迅捷剑士[BP16-031] field→cemetery 〔forced〕
+   44 P1 mainPhase 结束主阶段
+
+T8 · 选手 2 回合 · HP 18/20 · PP 0/4
+手牌 晴天的银骑士·艾蜜莉亚[SP01-010]、月光执行者·里欧德[BP17-022]、宇宙之翼·洛菈米亚[BP15-023]、荣光剑士·奥蕾莉亚[BP20-022]｜对手手牌 5 张
+场 篡夺绝杰·欧克托莉斯[BP05-018] 4/2 伤2 横 / 约定之荣耀·高文[BP18-023] 3/3
+EX 黄金之杯[BP15-T02]、俏猫上将[BP13-029] / 铁甲骑士[BP01-T07]｜墓 3/4
+   46 P2 mainPhase 打出 晴天的银骑士·艾蜜莉亚[SP01-010] 〔fallback〕
+   47 P2 mainPhase 起动 晴天的银骑士·艾蜜莉亚[SP01-010] 能力 1 〔fallback〕
+   48 P2 selectCards/pick 宇宙之翼·洛菈米亚[BP15-023] 晴天的银骑士·艾蜜莉亚[SP01-010]→篡夺绝杰·欧克托莉斯[BP05-018] 3；篡夺绝杰·欧克托莉斯[BP05-018] field→cemetery 〔fallback〕
+   49 P2 mainPhase 攻击 约定之荣耀·高文[BP18-023] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   50 P1 quick Quick 放过 约定之荣耀·高文[BP18-023]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=15
+   51 P2 mainPhase 攻击 宇宙之翼·洛菈米亚[BP15-023] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   52 P1 quick Quick 放过 宇宙之翼·洛菈米亚[BP15-023]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=13
+   53 P2 mainPhase 结束主阶段 〔forced〕
+
+T9 · 选手 1 回合 · HP 13/20 · PP 5/0
+手牌 月光执行者·里欧德[BP17-022]、荣光剑士·奥蕾莉亚[BP20-022]｜对手手牌 6 张
+场 空 / 约定之荣耀·高文[BP18-023] 3/3 横、晴天的银骑士·艾蜜莉亚[SP01-010] 4/4、宇宙之翼·洛菈米亚[BP15-023] 2/2 横
+EX 黄金之杯[BP15-T02]、俏猫上将[BP13-029] / 铁甲骑士[BP01-T07]｜墓 4/4
+   55 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018]
+   56 P1 mainPhase 进化 篡夺绝杰·欧克托莉斯[BP05-018]
+   57 P1 selectCards/target 月光执行者·里欧德[BP17-022] cemetery→ex
+   58 P1 mainPhase 攻击 篡夺绝杰·欧克托莉斯[BP05-018] → 约定之荣耀·高文[BP18-023]
+   59 P2 quick Quick 放过 篡夺绝杰·欧克托莉斯[BP05-018]→约定之荣耀·高文[BP18-023] 4；约定之荣耀·高文[BP18-023]→篡夺绝杰·欧克托莉斯[BP05-018] 3；约定之荣耀·高文[BP18-023] field→cemetery 〔forced〕
+   60 P1 mainPhase 打出 月光执行者·里欧德[BP17-022]
+   61 P1 selectCards/target 月光执行者·里欧德[BP17-022]→晴天的银骑士·艾蜜莉亚[SP01-010] 3
+   62 P1 mainPhase 结束主阶段
+
+T10 · 选手 2 回合 · HP 13/20 · PP 0/5
+手牌 月光执行者·里欧德[BP17-022]、荣光剑士·奥蕾莉亚[BP20-022]、静寂的安纳提玛·吉尔达利娅[BP19-022]｜对手手牌 5 张
+场 篡夺绝杰·欧克托莉斯[BP05-018] 4/1 伤3 横、月光执行者·里欧德[BP17-022] 1/2 / 晴天的银骑士·艾蜜莉亚[SP01-010] 4/1 伤3、宇宙之翼·洛菈米亚[BP15-023] 2/2
+EX 黄金之杯[BP15-T02]、俏猫上将[BP13-029] / 铁甲骑士[BP01-T07]｜墓 4/6
+   64 P2 mainPhase 攻击 晴天的银骑士·艾蜜莉亚[SP01-010] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   65 P1 quick Quick 放过 晴天的银骑士·艾蜜莉亚[SP01-010]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=9
+   66 P2 mainPhase 打出 静寂的安纳提玛·吉尔达利娅[BP19-022] 〔fallback〕
+   67 P2 confirm/effect 确认 〔fallback〕
+   68 P2 selectCards/pick 静寂的安纳提玛·吉尔达利娅[BP19-023] 〔fallback〕
+   69 P2 selectPending p207 静寂的安纳提玛·吉尔达利娅[BP19-023]→篡夺绝杰·欧克托莉斯[BP05-018] 4；静寂的安纳提玛·吉尔达利娅[BP19-023]→月光执行者·里欧德[BP17-022] 4；静寂的安纳提玛·吉尔达利娅[BP19-023]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=7；篡夺绝杰·欧克托莉斯[BP05-018] field→cemetery；月光执行者·里欧德[BP17-022] field→cemetery 〔fallback〕
+   70 P2 selectPending p204 〔fallback〕
+   71 P2 mainPhase 攻击 宇宙之翼·洛菈米亚[BP15-023] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   72 P1 quick Quick 放过 宇宙之翼·洛菈米亚[BP15-023]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=5
+   73 P2 mainPhase 结束主阶段 〔fallback〕
+
+T11 · 选手 1 回合 · HP 5/20 · PP 6/0
+手牌 月光执行者·里欧德[BP17-022]、荣光剑士·奥蕾莉亚[BP20-022]｜对手手牌 6 张
+场 空 / 晴天的银骑士·艾蜜莉亚[SP01-010] 4/1 伤3 横、宇宙之翼·洛菈米亚[BP15-023] 2/2 横、静寂的安纳提玛·吉尔达利娅[BP19-022] 5/5、铁甲骑士[BP01-T07] 2/2、骑士[BP01-T05] 1/1
+EX 黄金之杯[BP15-T02]、俏猫上将[BP13-029] / 铁甲骑士[BP01-T07]｜墓 5/7
+   75 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex
+   76 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   77 P1 mainPhase 打出 俏猫上将[BP13-029]
+   78 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   80 P1 selectCards/target 晴天的银骑士·艾蜜莉亚[SP01-010] field→cemetery
+   81 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 宇宙之翼·洛菈米亚[BP15-023]
+   82 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→宇宙之翼·洛菈米亚[BP15-023] 3；宇宙之翼·洛菈米亚[BP15-023]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 2；P1 +3=8；宇宙之翼·洛菈米亚[BP15-023] field→cemetery 〔forced〕
+   83 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 铁甲骑士[BP01-T07]
+   84 P2 quick Quick 放过 强袭盗贼[BP15-035]→铁甲骑士[BP01-T07] 3；铁甲骑士[BP01-T07]→强袭盗贼[BP15-035] 2；强袭盗贼[BP15-035] field→cemetery；铁甲骑士[BP01-T07] field→cemetery 〔forced〕
+   85 P1 mainPhase 结束主阶段
+
+T12 · 选手 2 回合 · HP 8/20 · PP 0/6
+手牌 月光执行者·里欧德[BP17-022]、荣光剑士·奥蕾莉亚[BP20-022]、俏猫上将[BP13-029]｜对手手牌 4 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/1 伤2 横、俏猫上将[BP13-029] 2/2 / 静寂的安纳提玛·吉尔达利娅[BP19-022] 5/5、骑士[BP01-T05] 1/1
+EX 黄金之杯[BP15-T02]、黄金短剑[BP15-T01] / 铁甲骑士[BP01-T07]｜墓 6/10
+   87 P2 mainPhase 攻击 静寂的安纳提玛·吉尔达利娅[BP19-022] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   88 P1 quick Quick 放过 静寂的安纳提玛·吉尔达利娅[BP19-022]→第八绝杰·欧克托莉斯[BP10-LD02] 5；P1 -5=3
+   89 P2 mainPhase 打出 荣光剑士·奥蕾莉亚[BP20-022] 〔fallback〕
+   90 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   91 P2 mainPhase 攻击 荣光剑士·奥蕾莉亚[BP20-022] → 俏猫上将[BP13-029] 〔fallback〕
+   92 P1 quick Quick 放过 荣光剑士·奥蕾莉亚[BP20-022]→俏猫上将[BP13-029] 3；俏猫上将[BP13-029]→荣光剑士·奥蕾莉亚[BP20-022] 2；俏猫上将[BP13-029] field→cemetery
+   93 P2 mainPhase 打出 幻影拍档·峇妮与峇侬[BP11-019] 〔fallback〕
+   94 P2 mainPhase 进化 幻影拍档·峇妮与峇侬[BP11-019]（EP） 〔fallback〕
+   95 P2 choose/mode val 〔fallback〕
+   96 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 0 〔fallback〕
+   97 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+   98 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=0
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":12}
+生命 0/20
+选手输入 [{"direct":0,"authored":3,"fallback":28,"forced":20},{"direct":0,"authored":3,"fallback":30,"forced":15}]
