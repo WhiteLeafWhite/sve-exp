@@ -1,0 +1,105 @@
+g0647
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 海神的威望[BP14-069]、虎鲸的呼声[BP19-073]、乙姬的宝扇[BP16-064]、大洋钓手[BP11-067]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留
+    1 P2 mulligan 保留 P1 0=20；P2 0=20 〔authored〕
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 海神的威望[BP14-069]、虎鲸的呼声[BP19-073]、乙姬的宝扇[BP16-064]、大洋钓手[BP11-067]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+    3 P1 mainPhase 结束主阶段
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 海神的威望[BP14-069]、虎鲸的呼声[BP19-073]、乙姬的宝扇[BP16-064]、大洋钓手[BP11-067]、神鱼·迪兹列斯坦[BP17-057]｜对手手牌 3 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    5 P2 mainPhase 打出 乙姬的宝扇[BP16-064] 〔fallback〕
+    6 P2 mainPhase 起动 乙姬的宝扇[BP16-064] 能力 0 乙姬的宝扇[BP16-064] field→cemetery 〔fallback〕
+    7 P2 mainPhase 结束主阶段 〔forced〕
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 海神的威望[BP14-069]、虎鲸的呼声[BP19-073]、大洋钓手[BP11-067]、神鱼·迪兹列斯坦[BP17-057]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 / 虎鲸[BP02-T05] 2/2
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/1
+    9 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=19
+   10 P1 mainPhase 攻击 大洋斥候[BP19-030] → 不融银冰·菲琳[BP20-LD04]
+   11 P2 quick Quick 放过 大洋斥候[BP19-030]→不融银冰·菲琳[BP20-LD04] 3；P2 -3=16 〔forced〕
+   12 P1 mainPhase 打出 精炼的空绝[BP15-026] 精炼的空绝[BP15-026]→虎鲸[BP02-T05] 2；黄金之杯[BP15-T02] 新→ex；虎鲸[BP02-T05] field→cemetery
+   13 P1 mainPhase 结束主阶段
+
+T4 · 选手 2 回合 · HP 20/16 · PP 0/2
+手牌 海神的威望[BP14-069]、虎鲸的呼声[BP19-073]、大洋钓手[BP11-067]、神鱼·迪兹列斯坦[BP17-057]、永恒巨鲸[BP10-062]｜对手手牌 3 张
+场 大洋斥候[BP19-030] 3/2 横 / 空
+EX 黄金之杯[BP15-T02] / 空｜墓 1/1
+   15 P2 mainPhase 打出 大洋钓手[BP11-067] 〔fallback〕
+   16 P2 selectCards/effect 身经百战的鱼人[BP19-067] 身经百战的鱼人[BP19-067] deck→ex 〔fallback〕
+   17 P2 orderCards/deckBottom 排序 浮华美人鱼[BP20-060]、献身的水龙[BP14-067] 〔fallback〕
+   18 P2 mainPhase 结束主阶段 〔forced〕
+
+T5 · 选手 1 回合 · HP 20/16 · PP 3/0
+手牌 海神的威望[BP14-069]、虎鲸的呼声[BP19-073]、神鱼·迪兹列斯坦[BP17-057]、永恒巨鲸[BP10-062]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 3/2 / 大洋钓手[BP11-067] 2/3
+EX 黄金之杯[BP15-T02] / 身经百战的鱼人[BP19-067]｜墓 1/1
+   20 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   21 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   22 P1 selectCards/target 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=15
+   23 P1 selectCards/target 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=14
+   24 P1 mainPhase 攻击 大洋斥候[BP19-030] → 不融银冰·菲琳[BP20-LD04]
+   25 P2 quick Quick 放过 大洋斥候[BP19-030]→不融银冰·菲琳[BP20-LD04] 3；P2 -3=11 〔forced〕
+   26 P1 mainPhase 结束主阶段
+
+T6 · 选手 2 回合 · HP 20/11 · PP 0/3
+手牌 海神的威望[BP14-069]、虎鲸的呼声[BP19-073]、神鱼·迪兹列斯坦[BP17-057]、永恒巨鲸[BP10-062]、身经百战的鱼人[BP19-067]｜对手手牌 3 张
+场 大洋斥候[BP19-030] 3/2 横、海潮炮手[BP19-026] 3/3 / 大洋钓手[BP11-067] 2/3
+EX 黄金之杯[BP15-T02] / 身经百战的鱼人[BP19-067]｜墓 1/1
+   28 P2 mainPhase 打出 虎鲸的呼声[BP19-073] 〔fallback〕
+   29 P2 mainPhase 攻击 大洋钓手[BP11-067] → 大洋斥候[BP19-030] 〔fallback〕
+   30 P1 quick Quick 放过 大洋钓手[BP11-067]→大洋斥候[BP19-030] 2；大洋斥候[BP19-030]→大洋钓手[BP11-067] 3；大洋斥候[BP19-030] field→cemetery；大洋钓手[BP11-067] field→cemetery
+   31 P2 mainPhase 结束主阶段 〔fallback〕
+
+T7 · 选手 1 回合 · HP 20/11 · PP 4/1
+手牌 海神的威望[BP14-069]、神鱼·迪兹列斯坦[BP17-057]、永恒巨鲸[BP10-062]、身经百战的鱼人[BP19-067]、苍海的制裁·尼普顿[BP19-062]｜对手手牌 4 张
+场 海潮炮手[BP19-026] 3/3 / 虎鲸[BP02-T05] 2/2
+EX 黄金之杯[BP15-T02] / 身经百战的鱼人[BP19-067]｜墓 2/3
+   33 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   34 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   35 P1 selectCards/target 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=10
+   37 P1 selectCards/target 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=9
+   38 P1 selectCards/target 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=8
+   39 P1 mainPhase 攻击 海潮炮手[BP19-026] → 不融银冰·菲琳[BP20-LD04]
+   40 P2 quick Quick 放过 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 4；P2 -4=4 〔forced〕
+   41 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex
+   42 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→虎鲸[BP02-T05] 4；虎鲸[BP02-T05] field→cemetery
+   43 P1 mainPhase 结束主阶段
+
+T8 · 选手 2 回合 · HP 20/4 · PP 0/4
+手牌 海神的威望[BP14-069]、神鱼·迪兹列斯坦[BP17-057]、永恒巨鲸[BP10-062]、身经百战的鱼人[BP19-067]、苍海的制裁·尼普顿[BP19-062]、身经百战的鱼人[BP19-067]｜对手手牌 2 张
+场 海潮炮手[BP19-026] 4/3 横、海潮炮手[BP19-026] 2/3 / 空
+EX 空 / 身经百战的鱼人[BP19-067]｜墓 3/3
+   45 P2 mainPhase 打出 身经百战的鱼人[BP19-067] 虎鲸的呼声[BP19-073] deck→ex 〔fallback〕
+   46 P2 mainPhase 攻击 虎鲸[BP02-T05] → 海潮炮手[BP19-026] 〔fallback〕
+   47 P1 quick Quick 放过 虎鲸[BP02-T05]→海潮炮手[BP19-026] 2；海潮炮手[BP19-026]→虎鲸[BP02-T05] 4；虎鲸[BP02-T05] field→cemetery
+   48 P2 mainPhase 攻击 虎鲸[BP02-T05] → 海潮炮手[BP19-026] 〔fallback〕
+   49 P1 quick Quick 放过 虎鲸[BP02-T05]→海潮炮手[BP19-026] 2；海潮炮手[BP19-026]→虎鲸[BP02-T05] 4；海潮炮手[BP19-026] field→cemetery；虎鲸[BP02-T05] field→cemetery
+   50 P2 mainPhase 结束主阶段 〔forced〕
+
+T9 · 选手 1 回合 · HP 20/4 · PP 5/0
+手牌 海神的威望[BP14-069]、神鱼·迪兹列斯坦[BP17-057]、永恒巨鲸[BP10-062]、身经百战的鱼人[BP19-067]、苍海的制裁·尼普顿[BP19-062]、身经百战的鱼人[BP19-067]｜对手手牌 3 张
+场 海潮炮手[BP19-026] 2/3 / 身经百战的鱼人[BP19-067] 3/3
+EX 空 / 虎鲸的呼声[BP19-073]｜墓 4/3
+   52 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→身经百战的鱼人[BP19-067] 4；身经百战的鱼人[BP19-067] field→cemetery
+   53 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   54 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   55 P1 selectCards/target 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=3
+   56 P1 selectPending 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 1；海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=2；P2 -1=1
+   57 P1 mainPhase 攻击 海潮炮手[BP19-026] → 不融银冰·菲琳[BP20-LD04]
+   58 P2 quick Quick 放过 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 3；P2 -3=-2 〔forced〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":9}
+生命 20/-2
+选手输入 [{"direct":0,"authored":10,"fallback":16,"forced":10},{"direct":0,"authored":1,"fallback":11,"forced":11}]
