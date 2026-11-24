@@ -1,0 +1,2713 @@
+[
+  {
+    "number": 21,
+    "pilot": 2,
+    "winner": 1,
+    "losses": [
+      {
+        "player": 0,
+        "reason": "leaderDefense"
+      }
+    ],
+    "first": true,
+    "turn": 14,
+    "inputs": 121,
+    "hp": [
+      -1,
+      9
+    ],
+    "mulligans": [
+      false,
+      true
+    ],
+    "openings": [
+      [
+        "BP05-034",
+        "BP05-018",
+        "BP15-028",
+        "BP19-019"
+      ],
+      [
+        "BP15-028",
+        "BP15-026",
+        "BP15-113",
+        "BP05-029"
+      ]
+    ],
+    "spikes": [
+      {
+        "turn": 13,
+        "damage": 10,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 89,
+        "hp": [
+          10,
+          19
+        ]
+      },
+      {
+        "turn": 14,
+        "damage": 11,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 111,
+        "hp": [
+          10,
+          9
+        ]
+      }
+    ],
+    "barb": [
+      {
+        "turn": 8,
+        "at": 40,
+        "seat": 1
+      },
+      {
+        "turn": 11,
+        "at": 69,
+        "seat": 0
+      }
+    ],
+    "flags": [
+      {
+        "turn": 8,
+        "at": 37,
+        "seat": 1
+      },
+      {
+        "turn": 11,
+        "at": 70,
+        "seat": 0
+      },
+      {
+        "turn": 11,
+        "at": 77,
+        "seat": 0
+      },
+      {
+        "turn": 14,
+        "at": 113,
+        "seat": 1
+      },
+      {
+        "turn": 14,
+        "at": 115,
+        "seat": 1
+      },
+      {
+        "turn": 14,
+        "at": 117,
+        "seat": 1
+      }
+    ],
+    "steals": [
+      {
+        "turn": 13,
+        "at": 98,
+        "seat": 0,
+        "def": "BP15-026"
+      }
+    ],
+    "threshold": [
+      {
+        "at": 78,
+        "turn": 11,
+        "graveSeat": 1,
+        "before": 9,
+        "after": 11
+      },
+      {
+        "at": 107,
+        "turn": 13,
+        "graveSeat": 0,
+        "before": 9,
+        "after": 10
+      }
+    ],
+    "removal": [
+      {
+        "turn": 3,
+        "at": 11,
+        "seat": 0,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 6,
+        "at": 24,
+        "seat": 0,
+        "def": "BP15-028"
+      },
+      {
+        "turn": 7,
+        "at": 31,
+        "seat": 0,
+        "def": "BP15-035"
+      },
+      {
+        "turn": 7,
+        "at": 31,
+        "seat": 1,
+        "def": "BP15-028"
+      },
+      {
+        "turn": 9,
+        "at": 52,
+        "seat": 1,
+        "def": "BP19-019"
+      },
+      {
+        "turn": 9,
+        "at": 54,
+        "seat": 0,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 9,
+        "at": 54,
+        "seat": 1,
+        "def": "BP15-020"
+      },
+      {
+        "turn": 10,
+        "at": 62,
+        "seat": 0,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 11,
+        "at": 72,
+        "seat": 1,
+        "def": "BP19-019"
+      },
+      {
+        "turn": 11,
+        "at": 79,
+        "seat": 1,
+        "def": "BP15-113"
+      },
+      {
+        "turn": 13,
+        "at": 94,
+        "seat": 1,
+        "def": "BP19-028"
+      },
+      {
+        "turn": 13,
+        "at": 96,
+        "seat": 1,
+        "def": "BP19-028"
+      },
+      {
+        "turn": 13,
+        "at": 101,
+        "seat": 1,
+        "def": "BP19-030"
+      }
+    ],
+    "spentEP": [
+      0,
+      2
+    ],
+    "choice": {
+      "turn": 13,
+      "at": 89,
+      "action": "使用艾巴利缇亚",
+      "alternatives": [
+        "使用奉还的剑闪",
+        "使用篡夺的随从",
+        "用出航的罪人·芭芭萝丝攻击困难 财宝皇主战者"
+      ],
+      "before": [
+        10,
+        19
+      ],
+      "pp": [
+        7,
+        0
+      ],
+      "ex": [],
+      "enemyGrave": 12,
+      "field": [
+        [
+          "BP19-019",
+          6,
+          4,
+          false
+        ],
+        [
+          "BP19-026",
+          2,
+          3,
+          false
+        ]
+      ],
+      "enemyField": [
+        [
+          "BP19-028",
+          3,
+          3,
+          false
+        ],
+        [
+          "BP19-028",
+          2,
+          2,
+          false
+        ],
+        [
+          "BP19-030",
+          2,
+          2,
+          false
+        ]
+      ]
+    },
+    "search": [
+      {
+        "simulations": 104821,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      },
+      {
+        "simulations": 8103,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      }
+    ]
+  },
+  {
+    "number": 22,
+    "pilot": 2,
+    "winner": 0,
+    "losses": [
+      {
+        "player": 1,
+        "reason": "leaderDefense"
+      }
+    ],
+    "first": false,
+    "turn": 14,
+    "inputs": 129,
+    "hp": [
+      10,
+      -1
+    ],
+    "mulligans": [
+      false,
+      false
+    ],
+    "openings": [
+      [
+        "BP19-030",
+        "BP20-019",
+        "BP20-019",
+        "BP05-029"
+      ],
+      [
+        "BP20-019",
+        "BP15-035",
+        "BP05-029",
+        "BP05-034"
+      ]
+    ],
+    "spikes": [
+      {
+        "turn": 14,
+        "damage": 10,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 123,
+        "hp": [
+          10,
+          9
+        ]
+      },
+      {
+        "turn": 7,
+        "damage": 3,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 38,
+        "hp": [
+          14,
+          18
+        ]
+      }
+    ],
+    "barb": [
+      {
+        "turn": 8,
+        "at": 51,
+        "seat": 0
+      },
+      {
+        "turn": 12,
+        "at": 100,
+        "seat": 0
+      }
+    ],
+    "flags": [
+      {
+        "turn": 8,
+        "at": 53,
+        "seat": 0
+      },
+      {
+        "turn": 10,
+        "at": 76,
+        "seat": 0
+      },
+      {
+        "turn": 12,
+        "at": 105,
+        "seat": 0
+      },
+      {
+        "turn": 12,
+        "at": 108,
+        "seat": 0
+      },
+      {
+        "turn": 13,
+        "at": 117,
+        "seat": 1
+      }
+    ],
+    "steals": [
+      {
+        "turn": 9,
+        "at": 66,
+        "seat": 1,
+        "def": "BP19-026"
+      },
+      {
+        "turn": 11,
+        "at": 86,
+        "seat": 1,
+        "def": "BP15-020"
+      }
+    ],
+    "threshold": [
+      {
+        "at": 64,
+        "turn": 9,
+        "graveSeat": 0,
+        "before": 8,
+        "after": 10
+      },
+      {
+        "at": 66,
+        "turn": 9,
+        "graveSeat": 0,
+        "before": 10,
+        "after": 9
+      },
+      {
+        "at": 92,
+        "turn": 11,
+        "graveSeat": 0,
+        "before": 9,
+        "after": 10
+      },
+      {
+        "at": 127,
+        "turn": 14,
+        "graveSeat": 1,
+        "before": 9,
+        "after": 10
+      }
+    ],
+    "removal": [
+      {
+        "turn": 4,
+        "at": 20,
+        "seat": 0,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 4,
+        "at": 20,
+        "seat": 1,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 5,
+        "at": 26,
+        "seat": 0,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 6,
+        "at": 32,
+        "seat": 1,
+        "def": "BP15-020"
+      },
+      {
+        "turn": 8,
+        "at": 56,
+        "seat": 1,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 9,
+        "at": 62,
+        "seat": 0,
+        "def": "BP19-028"
+      },
+      {
+        "turn": 9,
+        "at": 62,
+        "seat": 1,
+        "def": "BP15-035"
+      },
+      {
+        "turn": 10,
+        "at": 79,
+        "seat": 1,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 11,
+        "at": 88,
+        "seat": 0,
+        "def": "BP19-019"
+      },
+      {
+        "turn": 11,
+        "at": 88,
+        "seat": 1,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 11,
+        "at": 92,
+        "seat": 0,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 12,
+        "at": 102,
+        "seat": 1,
+        "def": "BP15-020"
+      },
+      {
+        "turn": 13,
+        "at": 119,
+        "seat": 0,
+        "def": "BP15-035"
+      }
+    ],
+    "spentEP": [
+      3,
+      0
+    ],
+    "choice": {
+      "turn": 14,
+      "at": 123,
+      "action": "用出航的罪人·芭芭萝丝攻击困难 财宝皇主战者",
+      "alternatives": [
+        "使用篡夺的随从",
+        "使用空绝的崇拜者",
+        "使用怒涛副船长"
+      ],
+      "before": [
+        10,
+        9
+      ],
+      "pp": [
+        7,
+        0
+      ],
+      "ex": [
+        "BP15-T01",
+        "BP20-026"
+      ],
+      "enemyGrave": 9,
+      "field": [
+        [
+          "BP19-019",
+          6,
+          4,
+          false
+        ],
+        [
+          "BP19-030",
+          2,
+          2,
+          false
+        ]
+      ],
+      "enemyField": [
+        [
+          "BP19-026",
+          3,
+          3,
+          false
+        ]
+      ]
+    },
+    "search": [
+      {
+        "simulations": 55185,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      },
+      {
+        "simulations": 13162,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      }
+    ]
+  },
+  {
+    "number": 23,
+    "pilot": 2,
+    "winner": 0,
+    "losses": [
+      {
+        "player": 1,
+        "reason": "leaderDefense"
+      }
+    ],
+    "first": true,
+    "turn": 13,
+    "inputs": 122,
+    "hp": [
+      14,
+      0
+    ],
+    "mulligans": [
+      false,
+      true
+    ],
+    "openings": [
+      [
+        "BP19-030",
+        "BP15-026",
+        "BP05-018",
+        "BP20-026"
+      ],
+      [
+        "BP15-020",
+        "BP15-028",
+        "BP15-028",
+        "BP19-026"
+      ]
+    ],
+    "spikes": [
+      {
+        "turn": 13,
+        "damage": 14,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 97,
+        "hp": [
+          14,
+          14
+        ]
+      },
+      {
+        "turn": 8,
+        "damage": 3,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 42,
+        "hp": [
+          18,
+          16
+        ]
+      }
+    ],
+    "barb": [
+      {
+        "turn": 8,
+        "at": 43,
+        "seat": 1
+      },
+      {
+        "turn": 9,
+        "at": 56,
+        "seat": 0
+      },
+      {
+        "turn": 10,
+        "at": 66,
+        "seat": 1
+      }
+    ],
+    "flags": [
+      {
+        "turn": 5,
+        "at": 19,
+        "seat": 0
+      },
+      {
+        "turn": 8,
+        "at": 44,
+        "seat": 1
+      },
+      {
+        "turn": 8,
+        "at": 48,
+        "seat": 1
+      },
+      {
+        "turn": 9,
+        "at": 57,
+        "seat": 0
+      },
+      {
+        "turn": 9,
+        "at": 59,
+        "seat": 0
+      },
+      {
+        "turn": 10,
+        "at": 67,
+        "seat": 1
+      }
+    ],
+    "steals": [
+      {
+        "turn": 7,
+        "at": 37,
+        "seat": 0,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 12,
+        "at": 93,
+        "seat": 1,
+        "def": "BP19-026"
+      }
+    ],
+    "threshold": [
+      {
+        "at": 87,
+        "turn": 11,
+        "graveSeat": 1,
+        "before": 9,
+        "after": 10
+      },
+      {
+        "at": 121,
+        "turn": 13,
+        "graveSeat": 0,
+        "before": 9,
+        "after": 10
+      }
+    ],
+    "removal": [
+      {
+        "turn": 2,
+        "at": 5,
+        "seat": 0,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 5,
+        "at": 23,
+        "seat": 1,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 6,
+        "at": 26,
+        "seat": 0,
+        "def": "BP19-026"
+      },
+      {
+        "turn": 8,
+        "at": 50,
+        "seat": 0,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 9,
+        "at": 55,
+        "seat": 1,
+        "def": "BP19-019"
+      },
+      {
+        "turn": 9,
+        "at": 58,
+        "seat": 1,
+        "def": "BP19-026"
+      },
+      {
+        "turn": 10,
+        "at": 69,
+        "seat": 0,
+        "def": "BP19-019"
+      },
+      {
+        "turn": 11,
+        "at": 78,
+        "seat": 1,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 11,
+        "at": 87,
+        "seat": 1,
+        "def": "BP19-019"
+      },
+      {
+        "turn": 13,
+        "at": 113,
+        "seat": 1,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 13,
+        "at": 121,
+        "seat": 1,
+        "def": "BP19-026"
+      }
+    ],
+    "spentEP": [
+      0,
+      2
+    ],
+    "choice": {
+      "turn": 13,
+      "at": 97,
+      "action": "使用艾巴利缇亚",
+      "alternatives": [
+        "使用强袭盗贼",
+        "起动空绝篡夺·欧克托莉斯的能力 1",
+        "用空绝的显现·欧克托莉斯攻击困难 财宝皇主战者"
+      ],
+      "before": [
+        14,
+        14
+      ],
+      "pp": [
+        7,
+        0
+      ],
+      "ex": [
+        "BP20-T02"
+      ],
+      "enemyGrave": 10,
+      "field": [
+        [
+          "BP20-019",
+          2,
+          3,
+          false
+        ],
+        [
+          "BP15-020",
+          3,
+          3,
+          false
+        ],
+        [
+          "BP15-020",
+          3,
+          3,
+          false
+        ]
+      ],
+      "enemyField": [
+        [
+          "BP05-018",
+          4,
+          4,
+          false
+        ],
+        [
+          "BP19-026",
+          2,
+          3,
+          false
+        ]
+      ]
+    },
+    "search": [
+      {
+        "simulations": 49441,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      },
+      {
+        "simulations": 7114,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      }
+    ]
+  },
+  {
+    "number": 24,
+    "pilot": 2,
+    "winner": 0,
+    "losses": [
+      {
+        "player": 1,
+        "reason": "leaderDefense"
+      }
+    ],
+    "first": false,
+    "turn": 12,
+    "inputs": 105,
+    "hp": [
+      3,
+      0
+    ],
+    "mulligans": [
+      false,
+      true
+    ],
+    "openings": [
+      [
+        "BP15-028",
+        "BP05-029",
+        "BP20-026",
+        "BP19-028"
+      ],
+      [
+        "BP20-019",
+        "BP19-019",
+        "BP19-026",
+        "BP05-029"
+      ]
+    ],
+    "spikes": [
+      {
+        "turn": 12,
+        "damage": 12,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 99,
+        "hp": [
+          3,
+          12
+        ]
+      },
+      {
+        "turn": 11,
+        "damage": 8,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 86,
+        "hp": [
+          11,
+          12
+        ]
+      }
+    ],
+    "barb": [
+      {
+        "turn": 8,
+        "at": 54,
+        "seat": 0
+      },
+      {
+        "turn": 10,
+        "at": 74,
+        "seat": 0
+      }
+    ],
+    "flags": [
+      {
+        "turn": 10,
+        "at": 75,
+        "seat": 0
+      },
+      {
+        "turn": 10,
+        "at": 78,
+        "seat": 0
+      },
+      {
+        "turn": 10,
+        "at": 80,
+        "seat": 0
+      },
+      {
+        "turn": 11,
+        "at": 87,
+        "seat": 1
+      },
+      {
+        "turn": 11,
+        "at": 92,
+        "seat": 1
+      },
+      {
+        "turn": 11,
+        "at": 95,
+        "seat": 1
+      }
+    ],
+    "steals": [],
+    "threshold": [
+      {
+        "at": 79,
+        "turn": 10,
+        "graveSeat": 1,
+        "before": 8,
+        "after": 10
+      }
+    ],
+    "removal": [
+      {
+        "turn": 4,
+        "at": 16,
+        "seat": 1,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 5,
+        "at": 27,
+        "seat": 0,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 6,
+        "at": 37,
+        "seat": 0,
+        "def": "BP19-028"
+      },
+      {
+        "turn": 6,
+        "at": 37,
+        "seat": 1,
+        "def": "BP19-028"
+      },
+      {
+        "turn": 7,
+        "at": 48,
+        "seat": 0,
+        "def": "BP15-113"
+      },
+      {
+        "turn": 7,
+        "at": 50,
+        "seat": 0,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 8,
+        "at": 56,
+        "seat": 1,
+        "def": "BP15-020"
+      },
+      {
+        "turn": 8,
+        "at": 58,
+        "seat": 1,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 8,
+        "at": 60,
+        "seat": 1,
+        "def": "BP15-035"
+      },
+      {
+        "turn": 9,
+        "at": 66,
+        "seat": 0,
+        "def": "BP19-019"
+      },
+      {
+        "turn": 10,
+        "at": 77,
+        "seat": 1,
+        "def": "BP15-020"
+      }
+    ],
+    "spentEP": [
+      3,
+      0
+    ],
+    "choice": {
+      "turn": 12,
+      "at": 99,
+      "action": "用出航的罪人·芭芭萝丝攻击困难 财宝皇主战者",
+      "alternatives": [
+        "使用空绝篡夺·欧克托莉斯",
+        "使用篡夺的随从",
+        "使用精炼的空绝"
+      ],
+      "before": [
+        3,
+        12
+      ],
+      "pp": [
+        6,
+        0
+      ],
+      "ex": [
+        "BP15-T01"
+      ],
+      "enemyGrave": 10,
+      "field": [
+        [
+          "BP19-019",
+          7,
+          4,
+          false
+        ],
+        [
+          "BP15-028",
+          3,
+          3,
+          false
+        ]
+      ],
+      "enemyField": [
+        [
+          "BP15-028",
+          4,
+          3,
+          true
+        ],
+        [
+          "BP19-026",
+          4,
+          3,
+          false
+        ]
+      ]
+    },
+    "search": [
+      {
+        "simulations": 40935,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      },
+      {
+        "simulations": 7935,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      }
+    ]
+  },
+  {
+    "number": 25,
+    "pilot": 2,
+    "winner": 0,
+    "losses": [
+      {
+        "player": 1,
+        "reason": "leaderDefense"
+      }
+    ],
+    "first": true,
+    "turn": 13,
+    "inputs": 100,
+    "hp": [
+      17,
+      0
+    ],
+    "mulligans": [
+      false,
+      true
+    ],
+    "openings": [
+      [
+        "BP19-019",
+        "BP15-026",
+        "BP05-034",
+        "BP19-028"
+      ],
+      [
+        "BP20-019",
+        "BP05-029",
+        "BP05-018",
+        "BP20-026"
+      ]
+    ],
+    "spikes": [
+      {
+        "turn": 13,
+        "damage": 8,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 91,
+        "hp": [
+          17,
+          8
+        ]
+      },
+      {
+        "turn": 12,
+        "damage": 2,
+        "heals": [
+          0,
+          2
+        ],
+        "at": 88,
+        "hp": [
+          19,
+          6
+        ]
+      }
+    ],
+    "barb": [
+      {
+        "turn": 9,
+        "at": 53,
+        "seat": 0
+      },
+      {
+        "turn": 11,
+        "at": 80,
+        "seat": 0
+      }
+    ],
+    "flags": [
+      {
+        "turn": 7,
+        "at": 33,
+        "seat": 0
+      },
+      {
+        "turn": 9,
+        "at": 55,
+        "seat": 0
+      },
+      {
+        "turn": 9,
+        "at": 62,
+        "seat": 0
+      },
+      {
+        "turn": 10,
+        "at": 71,
+        "seat": 1
+      },
+      {
+        "turn": 11,
+        "at": 81,
+        "seat": 0
+      },
+      {
+        "turn": 13,
+        "at": 93,
+        "seat": 0
+      }
+    ],
+    "steals": [
+      {
+        "turn": 8,
+        "at": 44,
+        "seat": 1,
+        "def": "BP19-030"
+      }
+    ],
+    "threshold": [
+      {
+        "at": 82,
+        "turn": 11,
+        "graveSeat": 1,
+        "before": 8,
+        "after": 10
+      },
+      {
+        "at": 88,
+        "turn": 12,
+        "graveSeat": 0,
+        "before": 8,
+        "after": 10
+      }
+    ],
+    "removal": [
+      {
+        "turn": 6,
+        "at": 28,
+        "seat": 0,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 7,
+        "at": 35,
+        "seat": 1,
+        "def": "BP15-113"
+      },
+      {
+        "turn": 7,
+        "at": 39,
+        "seat": 1,
+        "def": "BP15-035"
+      },
+      {
+        "turn": 8,
+        "at": 49,
+        "seat": 0,
+        "def": "BP19-028"
+      },
+      {
+        "turn": 8,
+        "at": 49,
+        "seat": 1,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 9,
+        "at": 58,
+        "seat": 1,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 10,
+        "at": 73,
+        "seat": 0,
+        "def": "BP19-026"
+      },
+      {
+        "turn": 10,
+        "at": 73,
+        "seat": 1,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 10,
+        "at": 75,
+        "seat": 0,
+        "def": "BP19-019"
+      }
+    ],
+    "spentEP": [
+      0,
+      2
+    ],
+    "choice": {
+      "turn": 13,
+      "at": 91,
+      "action": "使用海潮炮手",
+      "alternatives": [
+        "使用强袭盗贼",
+        "用出航的罪人·芭芭萝丝攻击困难 财宝皇主战者",
+        "用空绝的显现·欧克托莉斯攻击困难 财宝皇主战者"
+      ],
+      "before": [
+        17,
+        8
+      ],
+      "pp": [
+        7,
+        1
+      ],
+      "ex": [
+        "BP20-T02"
+      ],
+      "enemyGrave": 10,
+      "field": [
+        [
+          "BP19-019",
+          5,
+          4,
+          false
+        ],
+        [
+          "BP20-019",
+          2,
+          3,
+          false
+        ]
+      ],
+      "enemyField": []
+    },
+    "search": [
+      {
+        "simulations": 54742,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      },
+      {
+        "simulations": 7036,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      }
+    ]
+  },
+  {
+    "number": 26,
+    "pilot": 2,
+    "winner": 0,
+    "losses": [
+      {
+        "player": 1,
+        "reason": "leaderDefense"
+      }
+    ],
+    "first": false,
+    "turn": 12,
+    "inputs": 121,
+    "hp": [
+      16,
+      0
+    ],
+    "mulligans": [
+      false,
+      false
+    ],
+    "openings": [
+      [
+        "BP20-019",
+        "BP05-034",
+        "BP15-020",
+        "BP15-026"
+      ],
+      [
+        "BP20-019",
+        "BP05-034",
+        "BP15-026",
+        "BP19-030"
+      ]
+    ],
+    "spikes": [
+      {
+        "turn": 12,
+        "damage": 10,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 105,
+        "hp": [
+          16,
+          10
+        ]
+      },
+      {
+        "turn": 5,
+        "damage": 2,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 25,
+        "hp": [
+          18,
+          18
+        ]
+      }
+    ],
+    "barb": [],
+    "flags": [
+      {
+        "turn": 8,
+        "at": 62,
+        "seat": 0
+      },
+      {
+        "turn": 12,
+        "at": 114,
+        "seat": 0
+      },
+      {
+        "turn": 12,
+        "at": 120,
+        "seat": 0
+      }
+    ],
+    "steals": [
+      {
+        "turn": 7,
+        "at": 44,
+        "seat": 1,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 9,
+        "at": 72,
+        "seat": 1,
+        "def": "BP15-026"
+      },
+      {
+        "turn": 12,
+        "at": 117,
+        "seat": 0,
+        "def": "BP19-030"
+      }
+    ],
+    "threshold": [
+      {
+        "at": 69,
+        "turn": 9,
+        "graveSeat": 0,
+        "before": 8,
+        "after": 10
+      },
+      {
+        "at": 72,
+        "turn": 9,
+        "graveSeat": 0,
+        "before": 10,
+        "after": 9
+      },
+      {
+        "at": 79,
+        "turn": 10,
+        "graveSeat": 0,
+        "before": 9,
+        "after": 10
+      },
+      {
+        "at": 80,
+        "turn": 10,
+        "graveSeat": 0,
+        "before": 10,
+        "after": 9
+      },
+      {
+        "at": 94,
+        "turn": 11,
+        "graveSeat": 0,
+        "before": 9,
+        "after": 11
+      },
+      {
+        "at": 115,
+        "turn": 12,
+        "graveSeat": 1,
+        "before": 9,
+        "after": 11
+      }
+    ],
+    "removal": [
+      {
+        "turn": 2,
+        "at": 5,
+        "seat": 1,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 5,
+        "at": 25,
+        "seat": 0,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 6,
+        "at": 37,
+        "seat": 1,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 6,
+        "at": 39,
+        "seat": 1,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 8,
+        "at": 54,
+        "seat": 1,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 9,
+        "at": 68,
+        "seat": 0,
+        "def": "BP15-020"
+      },
+      {
+        "turn": 9,
+        "at": 68,
+        "seat": 1,
+        "def": "BP15-035"
+      },
+      {
+        "turn": 10,
+        "at": 79,
+        "seat": 1,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 10,
+        "at": 88,
+        "seat": 1,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 11,
+        "at": 94,
+        "seat": 0,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 11,
+        "at": 100,
+        "seat": 0,
+        "def": "BP15-020"
+      },
+      {
+        "turn": 11,
+        "at": 100,
+        "seat": 1,
+        "def": "BP15-028"
+      }
+    ],
+    "spentEP": [
+      1,
+      0
+    ],
+    "choice": {
+      "turn": 12,
+      "at": 105,
+      "action": "使用艾巴利缇亚",
+      "alternatives": [
+        "使用涸绝饥饿·吉鲁涅莉婕",
+        "使用海潮炮手",
+        "使用黄金之杯"
+      ],
+      "before": [
+        16,
+        10
+      ],
+      "pp": [
+        6,
+        0
+      ],
+      "ex": [
+        "BP15-T02"
+      ],
+      "enemyGrave": 9,
+      "field": [
+        [
+          "BP15-020",
+          3,
+          3,
+          false
+        ],
+        [
+          "BP15-113",
+          3,
+          1,
+          false
+        ]
+      ],
+      "enemyField": []
+    },
+    "search": [
+      {
+        "simulations": 65285,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      },
+      {
+        "simulations": 8500,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      }
+    ]
+  },
+  {
+    "number": 27,
+    "pilot": 2,
+    "winner": 0,
+    "losses": [
+      {
+        "player": 1,
+        "reason": "leaderDefense"
+      }
+    ],
+    "first": true,
+    "turn": 13,
+    "inputs": 107,
+    "hp": [
+      9,
+      0
+    ],
+    "mulligans": [
+      false,
+      false
+    ],
+    "openings": [
+      [
+        "BP15-020",
+        "BP19-030",
+        "BP19-019",
+        "BP15-113"
+      ],
+      [
+        "BP19-026",
+        "BP05-034",
+        "BP15-026",
+        "BP15-028"
+      ]
+    ],
+    "spikes": [
+      {
+        "turn": 13,
+        "damage": 6,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 100,
+        "hp": [
+          9,
+          6
+        ]
+      },
+      {
+        "turn": 10,
+        "damage": 4,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 65,
+        "hp": [
+          13,
+          10
+        ]
+      }
+    ],
+    "barb": [
+      {
+        "turn": 11,
+        "at": 80,
+        "seat": 0
+      }
+    ],
+    "flags": [
+      {
+        "turn": 3,
+        "at": 7,
+        "seat": 0
+      },
+      {
+        "turn": 6,
+        "at": 27,
+        "seat": 1
+      },
+      {
+        "turn": 7,
+        "at": 40,
+        "seat": 0
+      },
+      {
+        "turn": 10,
+        "at": 75,
+        "seat": 1
+      },
+      {
+        "turn": 11,
+        "at": 84,
+        "seat": 0
+      },
+      {
+        "turn": 11,
+        "at": 88,
+        "seat": 0
+      }
+    ],
+    "steals": [],
+    "threshold": [
+      {
+        "at": 90,
+        "turn": 11,
+        "graveSeat": 1,
+        "before": 9,
+        "after": 11
+      }
+    ],
+    "removal": [
+      {
+        "turn": 3,
+        "at": 9,
+        "seat": 0,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 5,
+        "at": 24,
+        "seat": 1,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 6,
+        "at": 33,
+        "seat": 0,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 7,
+        "at": 41,
+        "seat": 1,
+        "def": "BP15-028"
+      },
+      {
+        "turn": 8,
+        "at": 50,
+        "seat": 0,
+        "def": "BP19-026"
+      },
+      {
+        "turn": 9,
+        "at": 60,
+        "seat": 1,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 10,
+        "at": 67,
+        "seat": 0,
+        "def": "BP15-020"
+      },
+      {
+        "turn": 10,
+        "at": 67,
+        "seat": 1,
+        "def": "BP15-035"
+      },
+      {
+        "turn": 10,
+        "at": 76,
+        "seat": 0,
+        "def": "BP15-113"
+      },
+      {
+        "turn": 11,
+        "at": 82,
+        "seat": 1,
+        "def": "BP15-020"
+      },
+      {
+        "turn": 11,
+        "at": 86,
+        "seat": 1,
+        "def": "BP19-026"
+      },
+      {
+        "turn": 12,
+        "at": 94,
+        "seat": 0,
+        "def": "BP19-026"
+      },
+      {
+        "turn": 12,
+        "at": 95,
+        "seat": 0,
+        "def": "BP19-019"
+      }
+    ],
+    "spentEP": [
+      0,
+      2
+    ],
+    "choice": {
+      "turn": 13,
+      "at": 100,
+      "action": "使用空绝的崇拜者",
+      "alternatives": [
+        "使用涸绝饥饿·吉鲁涅莉婕",
+        "保留 7 PP 结束主阶段"
+      ],
+      "before": [
+        9,
+        6
+      ],
+      "pp": [
+        7,
+        0
+      ],
+      "ex": [],
+      "enemyGrave": 12,
+      "field": [],
+      "enemyField": [
+        [
+          "BP15-028",
+          4,
+          4,
+          false
+        ]
+      ]
+    },
+    "search": [
+      {
+        "simulations": 28079,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      },
+      {
+        "simulations": 7785,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      }
+    ]
+  },
+  {
+    "number": 28,
+    "pilot": 2,
+    "winner": 0,
+    "losses": [
+      {
+        "player": 1,
+        "reason": "leaderDefense"
+      }
+    ],
+    "first": false,
+    "turn": 14,
+    "inputs": 125,
+    "hp": [
+      6,
+      -1
+    ],
+    "mulligans": [
+      false,
+      true
+    ],
+    "openings": [
+      [
+        "BP05-018",
+        "BP15-113",
+        "BP19-030",
+        "BP19-030"
+      ],
+      [
+        "BP20-026",
+        "BP15-026",
+        "BP15-113",
+        "BP15-028"
+      ]
+    ],
+    "spikes": [
+      {
+        "turn": 14,
+        "damage": 8,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 117,
+        "hp": [
+          6,
+          7
+        ]
+      },
+      {
+        "turn": 5,
+        "damage": 5,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 18,
+        "hp": [
+          18,
+          20
+        ]
+      }
+    ],
+    "barb": [
+      {
+        "turn": 9,
+        "at": 67,
+        "seat": 1
+      },
+      {
+        "turn": 11,
+        "at": 94,
+        "seat": 1
+      }
+    ],
+    "flags": [
+      {
+        "turn": 5,
+        "at": 24,
+        "seat": 1
+      },
+      {
+        "turn": 7,
+        "at": 48,
+        "seat": 1
+      },
+      {
+        "turn": 9,
+        "at": 68,
+        "seat": 1
+      },
+      {
+        "turn": 11,
+        "at": 93,
+        "seat": 1
+      },
+      {
+        "turn": 11,
+        "at": 95,
+        "seat": 1
+      },
+      {
+        "turn": 14,
+        "at": 119,
+        "seat": 0
+      }
+    ],
+    "steals": [
+      {
+        "turn": 6,
+        "at": 31,
+        "seat": 0,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 8,
+        "at": 54,
+        "seat": 0,
+        "def": "BP20-019"
+      }
+    ],
+    "threshold": [
+      {
+        "at": 52,
+        "turn": 8,
+        "graveSeat": 1,
+        "before": 8,
+        "after": 10
+      },
+      {
+        "at": 54,
+        "turn": 8,
+        "graveSeat": 1,
+        "before": 10,
+        "after": 9
+      },
+      {
+        "at": 56,
+        "turn": 8,
+        "graveSeat": 1,
+        "before": 9,
+        "after": 10
+      }
+    ],
+    "removal": [
+      {
+        "turn": 3,
+        "at": 8,
+        "seat": 0,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 6,
+        "at": 35,
+        "seat": 1,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 6,
+        "at": 37,
+        "seat": 0,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 6,
+        "at": 37,
+        "seat": 1,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 7,
+        "at": 45,
+        "seat": 0,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 7,
+        "at": 47,
+        "seat": 0,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 7,
+        "at": 47,
+        "seat": 1,
+        "def": "BP15-113"
+      },
+      {
+        "turn": 8,
+        "at": 56,
+        "seat": 1,
+        "def": "BP19-026"
+      },
+      {
+        "turn": 9,
+        "at": 70,
+        "seat": 0,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 9,
+        "at": 73,
+        "seat": 0,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 10,
+        "at": 82,
+        "seat": 1,
+        "def": "BP19-019"
+      },
+      {
+        "turn": 10,
+        "at": 84,
+        "seat": 1,
+        "def": "BP19-026"
+      },
+      {
+        "turn": 11,
+        "at": 97,
+        "seat": 0,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 12,
+        "at": 105,
+        "seat": 1,
+        "def": "BP19-019"
+      },
+      {
+        "turn": 13,
+        "at": 114,
+        "seat": 0,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 14,
+        "at": 118,
+        "seat": 1,
+        "def": "BP15-113"
+      }
+    ],
+    "spentEP": [
+      1,
+      0
+    ],
+    "choice": {
+      "turn": 14,
+      "at": 118,
+      "action": "使用黄金短剑",
+      "alternatives": [
+        "使用涸绝饥饿·吉鲁涅莉婕",
+        "使用精炼的空绝",
+        "使用出航的罪人·芭芭萝丝"
+      ],
+      "before": [
+        6,
+        7
+      ],
+      "pp": [
+        7,
+        4
+      ],
+      "ex": [
+        "BP19-T01",
+        "BP15-T01",
+        "BP15-T03"
+      ],
+      "enemyGrave": 16,
+      "field": [
+        [
+          "BP15-028",
+          3,
+          3,
+          false
+        ]
+      ],
+      "enemyField": [
+        [
+          "BP15-113",
+          3,
+          1,
+          true
+        ]
+      ]
+    },
+    "search": [
+      {
+        "simulations": 57902,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      },
+      {
+        "simulations": 6708,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      }
+    ]
+  },
+  {
+    "number": 29,
+    "pilot": 2,
+    "winner": 0,
+    "losses": [
+      {
+        "player": 1,
+        "reason": "leaderDefense"
+      }
+    ],
+    "first": true,
+    "turn": 11,
+    "inputs": 96,
+    "hp": [
+      14,
+      0
+    ],
+    "mulligans": [
+      false,
+      false
+    ],
+    "openings": [
+      [
+        "BP20-019",
+        "BP19-030",
+        "BP05-029",
+        "BP15-028"
+      ],
+      [
+        "BP05-029",
+        "BP19-028",
+        "BP19-030",
+        "BP19-026"
+      ]
+    ],
+    "spikes": [
+      {
+        "turn": 11,
+        "damage": 7,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 90,
+        "hp": [
+          14,
+          7
+        ]
+      },
+      {
+        "turn": 10,
+        "damage": 3,
+        "heals": [
+          0,
+          1
+        ],
+        "at": 79,
+        "hp": [
+          17,
+          6
+        ]
+      }
+    ],
+    "barb": [
+      {
+        "turn": 9,
+        "at": 64,
+        "seat": 0
+      },
+      {
+        "turn": 10,
+        "at": 80,
+        "seat": 1
+      }
+    ],
+    "flags": [
+      {
+        "turn": 5,
+        "at": 25,
+        "seat": 0
+      },
+      {
+        "turn": 7,
+        "at": 47,
+        "seat": 0
+      },
+      {
+        "turn": 8,
+        "at": 54,
+        "seat": 1
+      },
+      {
+        "turn": 9,
+        "at": 65,
+        "seat": 0
+      },
+      {
+        "turn": 9,
+        "at": 68,
+        "seat": 0
+      },
+      {
+        "turn": 9,
+        "at": 74,
+        "seat": 0
+      },
+      {
+        "turn": 10,
+        "at": 81,
+        "seat": 1
+      },
+      {
+        "turn": 10,
+        "at": 84,
+        "seat": 1
+      },
+      {
+        "turn": 10,
+        "at": 87,
+        "seat": 1
+      }
+    ],
+    "steals": [],
+    "threshold": [
+      {
+        "at": 91,
+        "turn": 11,
+        "graveSeat": 1,
+        "before": 9,
+        "after": 10
+      }
+    ],
+    "removal": [
+      {
+        "turn": 4,
+        "at": 19,
+        "seat": 0,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 5,
+        "at": 27,
+        "seat": 1,
+        "def": "BP19-028"
+      },
+      {
+        "turn": 5,
+        "at": 32,
+        "seat": 1,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 6,
+        "at": 40,
+        "seat": 0,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 7,
+        "at": 49,
+        "seat": 1,
+        "def": "BP19-028"
+      },
+      {
+        "turn": 8,
+        "at": 56,
+        "seat": 0,
+        "def": "BP19-026"
+      },
+      {
+        "turn": 8,
+        "at": 56,
+        "seat": 1,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 8,
+        "at": 60,
+        "seat": 0,
+        "def": "BP19-028"
+      },
+      {
+        "turn": 9,
+        "at": 67,
+        "seat": 1,
+        "def": "BP15-113"
+      },
+      {
+        "turn": 10,
+        "at": 83,
+        "seat": 0,
+        "def": "BP19-019"
+      }
+    ],
+    "spentEP": [
+      0,
+      3
+    ],
+    "choice": {
+      "turn": 11,
+      "at": 91,
+      "action": "使用强袭盗贼",
+      "alternatives": [
+        "使用空绝的崇拜者",
+        "使用篡夺绝杰·欧克托莉斯",
+        "使用精炼的空绝"
+      ],
+      "before": [
+        14,
+        7
+      ],
+      "pp": [
+        6,
+        1
+      ],
+      "ex": [],
+      "enemyGrave": 9,
+      "field": [
+        [
+          "BP19-030",
+          2,
+          2,
+          false
+        ],
+        [
+          "BP05-029",
+          4,
+          2,
+          false
+        ]
+      ],
+      "enemyField": [
+        [
+          "BP19-019",
+          7,
+          4,
+          false
+        ]
+      ]
+    },
+    "search": [
+      {
+        "simulations": 41395,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      },
+      {
+        "simulations": 4848,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      }
+    ]
+  },
+  {
+    "number": 30,
+    "pilot": 2,
+    "winner": 0,
+    "losses": [
+      {
+        "player": 1,
+        "reason": "leaderDefense"
+      }
+    ],
+    "first": false,
+    "turn": 12,
+    "inputs": 115,
+    "hp": [
+      8,
+      0
+    ],
+    "mulligans": [
+      false,
+      true
+    ],
+    "openings": [
+      [
+        "BP19-030",
+        "BP05-029",
+        "BP19-026",
+        "BP20-026"
+      ],
+      [
+        "BP15-020",
+        "BP05-034",
+        "BP15-026",
+        "BP15-113"
+      ]
+    ],
+    "spikes": [
+      {
+        "turn": 8,
+        "damage": 7,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 54,
+        "hp": [
+          12,
+          15
+        ]
+      },
+      {
+        "turn": 7,
+        "damage": 3,
+        "heals": [
+          0,
+          0
+        ],
+        "at": 44,
+        "hp": [
+          15,
+          15
+        ]
+      }
+    ],
+    "barb": [
+      {
+        "turn": 9,
+        "at": 71,
+        "seat": 1
+      },
+      {
+        "turn": 10,
+        "at": 83,
+        "seat": 0
+      }
+    ],
+    "flags": [
+      {
+        "turn": 3,
+        "at": 10,
+        "seat": 1
+      },
+      {
+        "turn": 9,
+        "at": 74,
+        "seat": 1
+      },
+      {
+        "turn": 9,
+        "at": 77,
+        "seat": 1
+      },
+      {
+        "turn": 10,
+        "at": 88,
+        "seat": 0
+      },
+      {
+        "turn": 10,
+        "at": 91,
+        "seat": 0
+      },
+      {
+        "turn": 10,
+        "at": 94,
+        "seat": 0
+      }
+    ],
+    "steals": [
+      {
+        "turn": 8,
+        "at": 57,
+        "seat": 0,
+        "def": "BP15-026"
+      },
+      {
+        "turn": 11,
+        "at": 104,
+        "seat": 1,
+        "def": "BP20-026"
+      }
+    ],
+    "threshold": [
+      {
+        "at": 84,
+        "turn": 10,
+        "graveSeat": 1,
+        "before": 8,
+        "after": 10
+      },
+      {
+        "at": 98,
+        "turn": 11,
+        "graveSeat": 0,
+        "before": 9,
+        "after": 10
+      }
+    ],
+    "removal": [
+      {
+        "turn": 4,
+        "at": 18,
+        "seat": 1,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 5,
+        "at": 29,
+        "seat": 0,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 6,
+        "at": 38,
+        "seat": 1,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 7,
+        "at": 50,
+        "seat": 0,
+        "def": "BP19-028"
+      },
+      {
+        "turn": 8,
+        "at": 59,
+        "seat": 1,
+        "def": "BP19-028"
+      },
+      {
+        "turn": 8,
+        "at": 65,
+        "seat": 1,
+        "def": "BP20-019"
+      },
+      {
+        "turn": 9,
+        "at": 69,
+        "seat": 0,
+        "def": "BP05-029"
+      },
+      {
+        "turn": 9,
+        "at": 69,
+        "seat": 1,
+        "def": "BP19-030"
+      },
+      {
+        "turn": 9,
+        "at": 73,
+        "seat": 0,
+        "def": "BP15-113"
+      },
+      {
+        "turn": 9,
+        "at": 76,
+        "seat": 0,
+        "def": "BP05-018"
+      },
+      {
+        "turn": 10,
+        "at": 84,
+        "seat": 1,
+        "def": "BP19-019"
+      },
+      {
+        "turn": 11,
+        "at": 100,
+        "seat": 0,
+        "def": "BP19-026"
+      },
+      {
+        "turn": 11,
+        "at": 100,
+        "seat": 1,
+        "def": "BP15-035"
+      },
+      {
+        "turn": 11,
+        "at": 106,
+        "seat": 0,
+        "def": "BP19-019"
+      },
+      {
+        "turn": 12,
+        "at": 114,
+        "seat": 1,
+        "def": "BP05-018"
+      }
+    ],
+    "spentEP": [
+      3,
+      0
+    ],
+    "choice": {
+      "turn": 8,
+      "at": 54,
+      "action": "使用篡夺绝杰·欧克托莉斯",
+      "alternatives": [
+        "使用海潮炮手",
+        "使用出航的罪人·芭芭萝丝",
+        "使用艾巴利缇亚"
+      ],
+      "before": [
+        12,
+        15
+      ],
+      "pp": [
+        4,
+        0
+      ],
+      "ex": [
+        "BP19-T01",
+        "BP20-026"
+      ],
+      "enemyGrave": 4,
+      "field": [
+        [
+          "BP15-113",
+          3,
+          3,
+          false
+        ],
+        [
+          "BP05-029",
+          2,
+          2,
+          false
+        ]
+      ],
+      "enemyField": [
+        [
+          "BP19-028",
+          3,
+          1,
+          true
+        ],
+        [
+          "BP19-030",
+          2,
+          2,
+          false
+        ],
+        [
+          "BP20-019",
+          2,
+          3,
+          false
+        ]
+      ]
+    },
+    "search": [
+      {
+        "simulations": 38949,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      },
+      {
+        "simulations": 9454,
+        "fallbacks": 0,
+        "simulationFailures": 0
+      }
+    ]
+  }
+]
