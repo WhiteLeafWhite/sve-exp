@@ -7,7 +7,7 @@
 | 猎人妖 | `Z6kf6M` | 30/40 | 11/15 | 11/15 | 22–8–0 | [原表](hunter/deck.json) · [1–10](hunter/checks/001.md) · [11–20](hunter/checks/011.md) · [21–30](hunter/checks/021.md) |
 | 妖精妖 | `1DYwF7` | 30/40 | 9/15 | 4/15 | 13–17–0 | [原表](fairy/deck.json) · [1–10](fairy/checks/001.md) · [11–20](fairy/checks/011.md) · [21–30](fairy/checks/021.md) |
 | 铺场皇 | `csUWGv` | 30/40 | 13/15 | 7/15 | 20–10–0 | [原表](rally/deck.json) · [1–10](rally/checks/001.md) · [11–20](rally/checks/011.md) · [21–30](rally/checks/021.md) |
-| 破坏法 | `cQZr8Z` | 20/40 | 5/10 | 5/10 | 10–10–0 | [原表](destruction/deck.json) · [1–10](destruction/checks/001.md) · [11–20](destruction/checks/011.md) |
+| 破坏法 | `cQZr8Z` | 30/40 | 9/15 | 7/15 | 16–14–0 | [原表](destruction/deck.json) · [1–10](destruction/checks/001.md) · [11–20](destruction/checks/011.md) · [21–30](destruction/checks/021.md) |
 | 真实法 | `h1LX3a` | 20/40 | 0/10 | 0/10 | 0–20–0 | [原表](truth/deck.json) · [1–10](truth/checks/001.md) · [11–20](truth/checks/011.md) |
 | 侮蔑龙 | `zQrwne` | 20/40 | 1/10 | 2/10 | 3–17–0 | [原表](disdain/deck.json) · [1–10](disdain/checks/001.md) · [11–20](disdain/checks/011.md) |
 | 海洋龙 | `d86IcJ` | 20/40 | 2/10 | 1/10 | 3–17–0 | [原表](ocean/deck.json) · [1–10](ocean/checks/001.md) · [11–20](ocean/checks/011.md) |
