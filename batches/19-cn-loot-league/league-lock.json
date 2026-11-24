@@ -1,0 +1,557 @@
+{
+  "publishedSource": "https://github.com/WhiteLeafWhite/sve-exp/tree/main/batches/18-bp20-field",
+  "mainDeck": {
+    "deck": {
+      "format": "sve-deck",
+      "version": 1,
+      "name": "20财宝 · t7B32v",
+      "main": {
+        "BP05-018": 3,
+        "BP05-029": 2,
+        "BP05-034": 3,
+        "BP15-020": 3,
+        "BP15-026": 3,
+        "BP15-028": 3,
+        "BP15-035": 2,
+        "BP15-113": 3,
+        "BP19-019": 3,
+        "BP19-026": 3,
+        "BP19-028": 3,
+        "BP19-030": 3,
+        "BP20-019": 3,
+        "BP20-026": 3
+      },
+      "evolve": {
+        "BP15-029": 2,
+        "BP15-114": 2,
+        "BP19-020": 2,
+        "BP19-029": 2,
+        "BP20-R04": 2
+      },
+      "leader": "BP10-LD02"
+    },
+    "hash": "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+    "counts": {
+      "main": 40,
+      "evolve": 10
+    }
+  },
+  "engine": "c95927874b565f21",
+  "restriction": {
+    "format": "standard",
+    "region": "china",
+    "updated": "2026-08-28",
+    "banned": [
+      {
+        "card": "BP13-107",
+        "name": "世界殒灭",
+        "since": "2026-08-28"
+      },
+      {
+        "card": "BP12-044",
+        "name": "反叛命运",
+        "since": "2026-07-31"
+      },
+      {
+        "card": "BP04-037",
+        "name": "星之铠甲",
+        "since": "2026-06-26"
+      }
+    ],
+    "limited": [
+      {
+        "card": "BP02-062",
+        "name": "龙女巫的仪式",
+        "since": "2026-08-28"
+      },
+      {
+        "card": "BP07-072",
+        "name": "丹紫抵御者·安镍儿",
+        "since": "2026-08-28",
+        "note": "The official list writes 丹紫抵御者·安涅儿; the Chinese card data writes 安镍儿 on every Aenea card."
+      },
+      {
+        "card": "BP03-048",
+        "name": "糖果屋",
+        "since": "2025-10-31"
+      }
+    ],
+    "id": "08_26_CHN"
+  },
+  "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+  "games": 1000,
+  "gamesPerBatch": 10,
+  "gamesPerMatchup": 100,
+  "firstEach": 50,
+  "matchups": [
+    {
+      "slug": "destruction",
+      "key": "cQZr8Z",
+      "title": "破坏法",
+      "axis": "偶像献祭、直伤与回复",
+      "craft": "Runecraft",
+      "first": 1,
+      "last": 100,
+      "hash": "ed8882da5252c802b10365452fee7185915cb764e46e3b5305e246c6529424fd",
+      "counts": {
+        "main": 40,
+        "evolve": 9
+      },
+      "deck": {
+        "format": "sve-deck",
+        "version": 1,
+        "name": "20二妹 [cQZr8Z]",
+        "main": {
+          "BP05-040": 1,
+          "BP05-045": 3,
+          "BP05-048": 3,
+          "BP08-050": 3,
+          "BP08-051": 3,
+          "BP15-039": 3,
+          "BP15-045": 3,
+          "BP15-049": 2,
+          "BP15-054": 3,
+          "BP20-037": 3,
+          "BP20-040": 3,
+          "BP20-045": 3,
+          "BP20-048": 3,
+          "BP20-055": 3,
+          "BP20-PR01": 1
+        },
+        "evolve": {
+          "BP05-049": 3,
+          "BP15-040": 3,
+          "BP20-041": 3
+        },
+        "leader": "BP10-LD04"
+      },
+      "acceptedOtherPrints": []
+    },
+    {
+      "slug": "hunter",
+      "key": "Z6kf6M",
+      "title": "猎人妖",
+      "axis": "猎人堆墓与库璐璐纹章",
+      "craft": "Forestcraft",
+      "first": 101,
+      "last": 200,
+      "hash": "27e44e5ebbbfd30da6fc271eb45fde2a28d07bf79c397d136161e224417f28d8",
+      "counts": {
+        "main": 40,
+        "evolve": 10
+      },
+      "deck": {
+        "format": "sve-deck",
+        "version": 1,
+        "name": "20猎人妖 [Z6kf6M]",
+        "main": {
+          "BP04-010": 3,
+          "BP05-004": 3,
+          "BP05-012": 2,
+          "BP05-017": 1,
+          "BP06-013": 3,
+          "BP11-003": 3,
+          "BP15-008": 3,
+          "BP15-012": 2,
+          "BP15-014": 3,
+          "BP18-019": 3,
+          "BP20-001": 3,
+          "BP20-002": 3,
+          "BP20-008": 3,
+          "BP20-012": 2,
+          "BP20-015": 3
+        },
+        "evolve": {
+          "BP04-011": 3,
+          "BP05-005": 3,
+          "BP15-015": 2,
+          "BP20-003": 2
+        },
+        "leader": "BP10-LD01"
+      },
+      "acceptedOtherPrints": []
+    },
+    {
+      "slug": "fairy",
+      "key": "1DYwF7",
+      "title": "妖精妖",
+      "axis": "妖精生成、阿玛兹与回手",
+      "craft": "Forestcraft",
+      "first": 201,
+      "last": 300,
+      "hash": "b916aa5aeef7ecb39ee3db8019ab2d8437e1514b19a297f7a768e4f4d842e518",
+      "counts": {
+        "main": 40,
+        "evolve": 10
+      },
+      "deck": {
+        "format": "sve-deck",
+        "version": 1,
+        "name": "妖精妖 [1DYwF7]",
+        "main": {
+          "BP01-011": 3,
+          "BP04-010": 2,
+          "BP06-003": 3,
+          "BP06-007": 2,
+          "BP06-011": 2,
+          "BP07-003": 3,
+          "BP12-007": 3,
+          "BP13-003": 3,
+          "BP13-013": 3,
+          "BP15-002": 3,
+          "BP15-004": 2,
+          "BP16-001": 3,
+          "BP16-015": 3,
+          "ETD03-008": 3,
+          "SP01-001": 2
+        },
+        "evolve": {
+          "BP04-011": 1,
+          "BP13-004": 1,
+          "BP13-014": 2,
+          "BP15-003": 2,
+          "BP15-005": 2,
+          "BP16-002": 2
+        },
+        "leader": "CP04-PR01"
+      },
+      "acceptedOtherPrints": [
+        "CP04-PR01",
+        "ETD03-008",
+        "SP01-001"
+      ]
+    },
+    {
+      "slug": "rally",
+      "key": "csUWGv",
+      "title": "铺场皇",
+      "axis": "铺场数、冲击与奥蕾莉亚",
+      "craft": "Swordcraft",
+      "first": 301,
+      "last": 400,
+      "hash": "0645e6d7a97df340d5a59d1c615255b80c17c38104dd61e1007ac4fb3740c59c",
+      "counts": {
+        "main": 40,
+        "evolve": 10
+      },
+      "deck": {
+        "format": "sve-deck",
+        "version": 1,
+        "name": "20铺场皇 [csUWGv]",
+        "main": {
+          "BP11-019": 3,
+          "BP11-031": 1,
+          "BP13-029": 2,
+          "BP15-023": 3,
+          "BP16-031": 3,
+          "BP17-019": 3,
+          "BP17-022": 3,
+          "BP17-029": 3,
+          "BP18-023": 3,
+          "BP19-022": 3,
+          "BP20-022": 3,
+          "SD07-004": 2,
+          "SP01-010": 2,
+          "SP01-011": 3,
+          "SP01-012": 3
+        },
+        "evolve": {
+          "BP09-019": 2,
+          "BP11-020": 2,
+          "BP16-032": 2,
+          "BP19-023": 2,
+          "SP01-013": 2
+        },
+        "leader": "CP04-PR02"
+      },
+      "acceptedOtherPrints": [
+        "CP04-PR02",
+        "SD07-004",
+        "SP01-010",
+        "SP01-011",
+        "SP01-012",
+        "SP01-013"
+      ]
+    },
+    {
+      "slug": "truth",
+      "key": "h1LX3a",
+      "title": "真实法",
+      "axis": "真实法术、减费与莱欧",
+      "craft": "Runecraft",
+      "first": 401,
+      "last": 500,
+      "hash": "d4fae4b247eadc07916b4bd587b0184e4bf1101602a003da777b302087aaabfe",
+      "counts": {
+        "main": 41,
+        "evolve": 10
+      },
+      "deck": {
+        "format": "sve-deck",
+        "version": 1,
+        "name": "纯九爷法 [h1LX3a]",
+        "main": {
+          "BP05-044": 3,
+          "BP05-046": 1,
+          "BP08-041": 3,
+          "BP08-047": 2,
+          "BP12-037": 2,
+          "BP15-038": 3,
+          "BP15-047": 3,
+          "BP15-053": 3,
+          "BP15-055": 3,
+          "BP20-038": 3,
+          "BP20-042": 3,
+          "BP20-046": 1,
+          "BP20-049": 3,
+          "BP20-052": 3,
+          "BP20-053": 3,
+          "BP20-R05": 2
+        },
+        "evolve": {
+          "BP15-048": 3,
+          "BP20-039": 2,
+          "BP20-043": 2,
+          "BP20-047": 2,
+          "BP20-R06": 1
+        },
+        "leader": "BP15-PR03"
+      },
+      "acceptedOtherPrints": []
+    },
+    {
+      "slug": "disdain",
+      "key": "zQrwne",
+      "title": "侮蔑龙",
+      "axis": "能力自伤、跳费与嘉鲁蜜儿",
+      "craft": "Dragoncraft",
+      "first": 501,
+      "last": 600,
+      "hash": "9416da999b748650b862702d9bbf970470089f6aace1182a43097cb5fca1bcf7",
+      "counts": {
+        "main": 40,
+        "evolve": 10
+      },
+      "deck": {
+        "format": "sve-deck",
+        "version": 1,
+        "name": "20五妹 [zQrwne]",
+        "main": {
+          "BP05-052": 3,
+          "BP05-055": 2,
+          "BP05-058": 3,
+          "BP08-063": 2,
+          "BP08-068": 1,
+          "BP15-057": 3,
+          "BP15-064": 3,
+          "BP15-066": 3,
+          "BP15-072": 2,
+          "BP20-056": 3,
+          "BP20-062": 3,
+          "BP20-063": 3,
+          "BP20-064": 3,
+          "BP20-067": 3,
+          "DSD01b-009": 3
+        },
+        "evolve": {
+          "BP05-056": 2,
+          "BP15-067": 3,
+          "BP20-065": 2,
+          "BP20-R09": 3
+        },
+        "leader": "BP10-LD05"
+      },
+      "acceptedOtherPrints": [
+        "DSD01b-009"
+      ]
+    },
+    {
+      "slug": "ocean",
+      "key": "d86IcJ",
+      "title": "海洋龙",
+      "axis": "海洋蓄量、虎鲸与守护",
+      "craft": "Dragoncraft",
+      "first": 601,
+      "last": 700,
+      "hash": "ffdf8210c8f246d77eccdad2ed38e706dd0411b3b5b24e350ad4299aa7841a49",
+      "counts": {
+        "main": 40,
+        "evolve": 9
+      },
+      "deck": {
+        "format": "sve-deck",
+        "version": 1,
+        "name": "水产 [d86IcJ]",
+        "main": {
+          "BP07-059": 2,
+          "BP09-062": 3,
+          "BP10-062": 2,
+          "BP11-067": 3,
+          "BP14-067": 2,
+          "BP14-069": 2,
+          "BP16-064": 3,
+          "BP17-057": 3,
+          "BP17-067": 3,
+          "BP18-076": 2,
+          "BP19-062": 3,
+          "BP19-067": 3,
+          "BP19-073": 3,
+          "BP20-060": 3,
+          "SD08-010": 3
+        },
+        "evolve": {
+          "BP17-058": 3,
+          "BP17-068": 3,
+          "BP20-061": 3
+        },
+        "leader": "BP20-LD04"
+      },
+      "acceptedOtherPrints": [
+        "SD08-010"
+      ]
+    },
+    {
+      "slug": "choice",
+      "key": "8YKXr7",
+      "title": "混融梦",
+      "axis": "混融纹章、抉择与复活",
+      "craft": "Abysscraft",
+      "first": 701,
+      "last": 800,
+      "hash": "7c09fa3bd2fff51889f20393533646a4534d9bff7adf4e54a7aa0c822fa5fe00",
+      "counts": {
+        "main": 40,
+        "evolve": 10
+      },
+      "deck": {
+        "format": "sve-deck",
+        "version": 1,
+        "name": "20混融梦 [8YKXr7]",
+        "main": {
+          "BP01-110": 1,
+          "BP02-112": 2,
+          "BP05-085": 3,
+          "BP10-074": 2,
+          "BP11-069": 2,
+          "BP11-075": 3,
+          "BP15-113": 3,
+          "BP16-075": 2,
+          "BP19-088": 2,
+          "BP20-076": 3,
+          "BP20-081": 3,
+          "BP20-082": 3,
+          "BP20-085": 2,
+          "BP20-086": 3,
+          "BP20-089": 3,
+          "BP20-R11": 3
+        },
+        "evolve": {
+          "BP01-111": 1,
+          "BP10-075": 1,
+          "BP11-070": 1,
+          "BP15-114": 2,
+          "BP20-077": 2,
+          "BP20-R12": 3
+        },
+        "leader": "BP15-PR05"
+      },
+      "acceptedOtherPrints": []
+    },
+    {
+      "slug": "bat",
+      "key": "twju4N",
+      "title": "蝙蝠梦",
+      "axis": "丛林蝙蝠进场、班比与拜特",
+      "craft": "Abysscraft",
+      "first": 801,
+      "last": 900,
+      "hash": "354ee79c551d7259ec5de660ae57ce99c074dc38f2c29117af88aa5cb9a51c3f",
+      "counts": {
+        "main": 40,
+        "evolve": 10
+      },
+      "deck": {
+        "format": "sve-deck",
+        "version": 1,
+        "name": "20弹-大赛6-0蝙蝠梦 [twju4N]",
+        "main": {
+          "BP02-069": 3,
+          "BP02-082": 1,
+          "BP09-069": 3,
+          "BP09-075": 3,
+          "BP09-082": 2,
+          "BP09-083": 3,
+          "BP12-069": 2,
+          "BP12-079": 2,
+          "BP16-075": 3,
+          "BP16-085": 3,
+          "BP17-074": 3,
+          "BP18-080": 3,
+          "BP18-084": 3,
+          "BP18-096": 3,
+          "CP02-085": 3
+        },
+        "evolve": {
+          "BP09-070": 3,
+          "BP12-070": 2,
+          "BP17-075": 2,
+          "BP18-081": 3
+        },
+        "leader": "CP02-LD05"
+      },
+      "acceptedOtherPrints": [
+        "CP02-LD05",
+        "CP02-085"
+      ]
+    },
+    {
+      "slug": "crest",
+      "key": "F5Jnyj",
+      "title": "纹章教",
+      "axis": "安息纹章、回合末压制与守护",
+      "craft": "Havencraft",
+      "first": 901,
+      "last": 1000,
+      "hash": "489896fabea6f0278f2961cbfe7f8dfac0acfd050817b75ffa54d655d067ccab",
+      "counts": {
+        "main": 40,
+        "evolve": 10
+      },
+      "deck": {
+        "format": "sve-deck",
+        "version": 1,
+        "name": "20纹章教 [F5Jnyj]",
+        "main": {
+          "BP01-140": 3,
+          "BP05-100": 2,
+          "BP08-092": 3,
+          "BP14-090": 2,
+          "BP15-094": 1,
+          "BP15-101": 3,
+          "BP19-092": 3,
+          "BP19-098": 1,
+          "BP19-100": 3,
+          "BP20-093": 3,
+          "BP20-094": 3,
+          "BP20-097": 3,
+          "BP20-101": 3,
+          "BP20-103": 3,
+          "BP20-R13": 2,
+          "CP01-070": 2
+        },
+        "evolve": {
+          "BP15-095": 1,
+          "BP19-101": 2,
+          "BP20-095": 2,
+          "BP20-098": 2,
+          "BP20-102": 1,
+          "BP20-R14": 2
+        },
+        "leader": "BP15-PR07"
+      },
+      "acceptedOtherPrints": [
+        "CP01-070"
+      ]
+    }
+  ]
+}
