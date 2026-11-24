@@ -1,0 +1,169 @@
+g0993
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]、空绝的显现·欧克托莉斯[BP20-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留 〔authored〕
+    1 P2 mulligan 保留 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]、空绝的显现·欧克托莉斯[BP20-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 1/1
+手牌 出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]、空绝的显现·欧克托莉斯[BP20-019]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    4 P2 mainPhase 打出 安息的神殿[BP20-103]
+    7 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]、空绝的显现·欧克托莉斯[BP20-019]、涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 5 张
+场 空 / 安息的神殿[BP20-103]
+EX 空 / 空｜墓 0/0
+    9 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   10 P1 choose/mode search 〔authored〕
+   11 P1 selectCards/search 奉还的剑闪[BP20-026] 〔fallback〕
+   12 P1 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、奉还的剑闪[BP20-026]｜对手手牌 6 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 / 安息的神殿[BP20-103]
+EX 空 / 空｜墓 0/0
+   14 P2 mainPhase 打出 暗黑供奉[BP01-140] P2 +3=23；安息的神殿[BP20-103] field→cemetery
+   15 P2 mainPhase 打出 悠久的绝望[BP15-101]
+   16 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 20/23 · PP 3/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、奉还的剑闪[BP20-026]、奉还的剑闪[BP20-026]｜对手手牌 5 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 / 悠久的绝望[BP15-101]
+EX 空 / 空｜墓 0/2
+   18 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   19 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   20 P1 choose/mode stats 〔fallback〕
+   21 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   22 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→无尽力量·索菲娜[BP15-PR07] 4；P2 -4=19
+   23 P1 mainPhase 结束主阶段 〔fallback〕
+
+T6 · 选手 2 回合 · HP 20/19 · PP 0/3
+手牌 出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]、奉还的剑闪[BP20-026]、奉还的剑闪[BP20-026]｜对手手牌 6 张
+场 空绝的显现·欧克托莉斯[BP20-019] 4/1 横、涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 / 悠久的绝望[BP15-101]
+EX 空 / 空｜墓 0/2
+   25 P2 mainPhase 打出 安息的团结者[BP20-097] 纹章 安息的团结者[BP20-T09] 新→ex
+   26 P2 mainPhase 进化 安息的团结者[BP20-097]（EP）
+   27 P2 selectCards/target 安息的团结者[BP20-098]→空绝的显现·欧克托莉斯[BP20-019] 2；空绝的显现·欧克托莉斯[BP20-019] field→cemetery
+   28 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 20/19 · PP 4/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]、奉还的剑闪[BP20-026]、奉还的剑闪[BP20-026]、空绝的显现·欧克托莉斯[BP20-019]｜对手手牌 5 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 / 悠久的绝望[BP15-101]、安息的团结者[BP20-097] 4/4
+EX 空 / 纹章 安息的团结者[BP20-T09]｜墓 1/2
+   30 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→安息的团结者[BP20-097] 4；安息的团结者[BP20-097] field→cemetery 〔authored〕
+   31 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   32 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→无尽力量·索菲娜[BP15-PR07] 3；P2 -3=16
+   33 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   34 P1 choose/mode crest 纹章 空绝的显现·欧克托莉斯[BP20-T02] 新→ex 〔authored〕
+   35 P1 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 2 回合 · HP 20/16 · PP 0/4
+手牌 出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]、奉还的剑闪[BP20-026]｜对手手牌 6 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 横、空绝的显现·欧克托莉斯[BP20-019] 2/3 / 悠久的绝望[BP15-101]
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02] / 纹章 安息的团结者[BP20-T09]｜墓 2/3
+   37 P2 mainPhase 起动 悠久的绝望[BP15-101] 能力 1 悠久的绝望[BP15-101] field→cemetery
+   38 P2 mainPhase 打出 安息绝杰·玛文[BP05-086]
+   39 P2 confirm/effect P2 +1=17；悠久的绝望[BP15-101] cemetery→ex
+   40 P2 mainPhase 进化 安息绝杰·玛文[BP05-086] P2 +3=20
+   41 P2 mainPhase 攻击 安息绝杰·玛文[BP05-086] → 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   42 P1 quick Quick 放过 安息绝杰·玛文[BP05-086]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 8；涸绝饥饿·吉鲁涅莉婕[BP15-113]→安息绝杰·玛文[BP05-086] 3；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery 〔forced〕
+   43 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 20/20 · PP 5/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]、奉还的剑闪[BP20-026]、精炼的空绝[BP15-026]｜对手手牌 7 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 / 安息绝杰·玛文[BP05-086] 8/5 伤3 横
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02] / 纹章 安息的团结者[BP20-T09]、悠久的绝望[BP15-101]｜墓 3/3
+   45 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   46 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   47 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   48 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=19 〔authored〕
+   49 P1 selectPending p177 〔fallback〕
+   50 P1 selectPending p175 〔fallback〕
+   51 P1 choose/mode recover 〔fallback〕
+   52 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   53 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   54 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=18 〔authored〕
+   55 P1 selectPending p188 海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=17 〔fallback〕
+   56 P1 selectPending p189 〔fallback〕
+   57 P1 selectPending p186 〔fallback〕
+   58 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 安息绝杰·玛文[BP05-086] 〔fallback〕
+   59 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→安息绝杰·玛文[BP05-086] 6；安息绝杰·玛文[BP05-086]→出航的罪人·芭芭萝丝[BP19-019] 8；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；安息绝杰·玛文[BP05-086] field→cemetery
+   60 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   61 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=15
+   62 P1 mainPhase 结束主阶段 〔fallback〕
+
+T10 · 选手 1 回合 · HP 20/15 · PP 6/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、奉还的剑闪[BP20-026]、精炼的空绝[BP15-026]、篡夺的随从[BP05-029]｜对手手牌 7 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3、海潮炮手[BP19-026] 2/3 / 空
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02] / 纹章 安息的团结者[BP20-T09]、悠久的绝望[BP15-101]｜墓 4/6
+   64 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   65 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   66 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   67 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=13
+   68 P1 mainPhase 攻击 海潮炮手[BP19-026] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   69 P2 quick Quick 放过 海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=11
+   70 P1 mainPhase 打出 篡夺的随从[BP05-029] 〔fallback〕
+   71 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   72 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=10 〔authored〕
+   73 P1 selectPending p214 海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=9 〔fallback〕
+   74 P1 selectPending p216 〔fallback〕
+   75 P1 selectPending p213 〔fallback〕
+   76 P1 choose/mode recover 〔authored〕
+   77 P1 mainPhase 结束主阶段 〔fallback〕
+
+T11 · 选手 2 回合 · HP 20/9 · PP 2/6
+手牌 奉还的剑闪[BP20-026]、精炼的空绝[BP15-026]｜对手手牌 8 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 横、海潮炮手[BP19-026] 2/3 横、出航的罪人·芭芭萝丝[BP19-019] 5/4、篡夺的随从[BP05-029] 2/2 / 空
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02] / 纹章 安息的团结者[BP20-T09]、悠久的绝望[BP15-101]｜墓 4/7
+   79 P2 mainPhase 打出 救世主[BP05-100]
+   80 P2 choose/mode 篡夺的随从[BP05-029] field→banished
+   81 P2 mainPhase 打出 安息的祈祷者[BP20-101]
+   82 P2 mainPhase 进化 安息的祈祷者[BP20-101] 纹章 安息的祈祷者[BP20-T10] 新→ex
+   83 P2 mainPhase 攻击 安息的祈祷者[BP20-101] → 海潮炮手[BP19-026]
+   84 P1 quick 打出 精炼的空绝[BP15-026] 精炼的空绝[BP15-026]→安息的祈祷者[BP20-101] 2；黄金之杯[BP15-T02] 新→ex 〔fallback〕
+   85 P1 selectPending p231 〔fallback〕
+   86 P1 quick Quick 放过 安息的祈祷者[BP20-101]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026]→安息的祈祷者[BP20-101] 2；海潮炮手[BP19-026] field→cemetery；安息的祈祷者[BP20-101] field→cemetery 〔forced〕
+   87 P2 mainPhase 打出 安息的继承者·希弥佳[BP20-094] 纹章 安息的继承者·希弥佳[BP20-T08] 新→ex
+   88 P2 mainPhase 结束主阶段
+   90 P2 selectPending P2 +1=10
+
+T12 · 选手 1 回合 · HP 20/10 · PP 7/0
+手牌 奉还的剑闪[BP20-026]、空绝的崇拜者[BP15-028]｜对手手牌 5 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3、出航的罪人·芭芭萝丝[BP19-019] 3/2 / 安息的继承者·希弥佳[BP20-094] 3/3
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02]、黄金之杯[BP15-T02] / 纹章 安息的团结者[BP20-T09]、悠久的绝望[BP15-101]、纹章 安息的祈祷者[BP20-T10]、纹章 安息的继承者·希弥佳[BP20-T08]｜墓 6/9
+   93 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   94 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→无尽力量·索菲娜[BP15-PR07] 3；P2 -3=7
+   95 P1 mainPhase 打出 空绝的崇拜者[BP15-028] 〔fallback〕
+   96 P1 mainPhase 进化 空绝的崇拜者[BP15-028] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+   97 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   98 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=5
+   99 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→安息的继承者·希弥佳[BP20-094] 4；黄金短剑[BP15-T01] 新→ex；安息的继承者·希弥佳[BP20-094] field→cemetery 〔fallback〕
+  100 P1 selectPending p258 〔fallback〕
+  101 P1 choose/mode mill 〔fallback〕
+  102 P1 selectPending p260 纹章 空绝的显现·欧克托莉斯[BP20-T02] ex→banished 〔fallback〕
+  103 P1 selectCards/search 海潮炮手[BP19-026] 〔fallback〕
+  104 P1 selectPending p257 黄金之靴[BP15-T03] 新→ex 〔fallback〕
+  105 P1 mainPhase 打出 黄金之靴[BP15-T03] 〔fallback〕
+  106 P1 selectCards/target 空绝的崇拜者[BP15-028] 〔authored〕
+  107 P1 selectPending p271 〔fallback〕
+  108 P1 mainPhase 攻击 空绝的崇拜者[BP15-028] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+  109 P2 quick Quick 放过 空绝的崇拜者[BP15-028]→无尽力量·索菲娜[BP15-PR07] 3；P2 -3=2
+  110 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+  111 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔authored〕
+  112 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=1 〔authored〕
+  113 P1 selectPending p283 海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=0 〔fallback〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":12}
+生命 20/0
+选手输入 [{"direct":0,"authored":14,"fallback":47,"forced":10},{"direct":0,"authored":1,"fallback":24,"forced":18}]

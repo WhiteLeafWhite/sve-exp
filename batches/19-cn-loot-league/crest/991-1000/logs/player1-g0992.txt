@@ -1,0 +1,121 @@
+g0992
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 海潮炮手[BP19-026]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留
+    1 P1 mulligan 保留 P2 0=20；P1 0=20 〔authored〕
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 海潮炮手[BP19-026]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 悠久的绝望[BP15-101]
+    3 P2 mainPhase 结束主阶段
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 海潮炮手[BP19-026]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、篡夺的随从[BP05-029]｜对手手牌 3 张
+场 空 / 悠久的绝望[BP15-101]
+EX 空 / 空｜墓 0/0
+    5 P1 mainPhase 打出 篡夺的随从[BP05-029] 〔authored〕
+    6 P1 mainPhase 结束主阶段 〔forced〕
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 海潮炮手[BP19-026]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2 / 悠久的绝望[BP15-101]
+EX 空 / 空｜墓 0/1
+    8 P2 mainPhase 打出 戒律间谍[BP19-100]
+    9 P2 mainPhase 结束主阶段 P2 +1=21
+
+T4 · 选手 1 回合 · HP 20/21 · PP 2/0
+手牌 海潮炮手[BP19-026]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、大洋斥候[BP19-030]｜对手手牌 3 张
+场 篡夺的随从[BP05-029] 2/2 / 悠久的绝望[BP15-101]、戒律间谍[BP19-100] 2/2
+EX 空 / 空｜墓 0/1
+   11 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   12 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113]（EP） 〔fallback〕
+   13 P1 choose/mode stats 〔fallback〕
+   14 P1 selectCards/target 戒律间谍[BP19-100] 戒律间谍[BP19-100] field→cemetery 〔fallback〕
+   15 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   16 P2 quick Quick 放过 篡夺的随从[BP05-029]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=19
+   17 P1 mainPhase 结束主阶段 〔forced〕
+
+T5 · 选手 2 回合 · HP 20/19 · PP 0/3
+手牌 海潮炮手[BP19-026]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、大洋斥候[BP19-030]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2 横、涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 / 悠久的绝望[BP15-101]
+EX 空 / 空｜墓 0/2
+   19 P2 mainPhase 打出 救世主[BP05-100]
+   20 P2 choose/mode 篡夺的随从[BP05-029] field→banished
+   21 P2 mainPhase 打出 暗黑供奉[BP01-140] P2 +3=22；悠久的绝望[BP15-101] field→cemetery
+   22 P2 mainPhase 打出 安息的神殿[BP20-103]
+   25 P2 mainPhase 结束主阶段
+
+T6 · 选手 1 回合 · HP 20/22 · PP 3/0
+手牌 海潮炮手[BP19-026]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、大洋斥候[BP19-030]、强袭盗贼[BP15-035]｜对手手牌 3 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 / 安息的神殿[BP20-103]
+EX 空 / 空｜墓 0/5
+   27 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   28 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   29 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→无尽力量·索菲娜[BP15-PR07] 3；P2 -3=19
+   30 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   31 P1 mainPhase 结束主阶段 〔forced〕
+
+T7 · 选手 2 回合 · HP 20/19 · PP 0/4
+手牌 艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、强袭盗贼[BP15-035]｜对手手牌 4 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 横、海潮炮手[BP19-026] 2/3、大洋斥候[BP19-030] 2/2 / 安息的神殿[BP20-103]
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 0/5
+   33 P2 mainPhase 打出 绝望的显现·玛文[BP20-093]
+   35 P2 choose/mode 纹章 绝望的显现·玛文[BP20-T07] 新→ex
+   36 P2 confirm/effect P2 +1=20；悠久的绝望[BP15-101] cemetery→ex
+   37 P2 mainPhase 结束主阶段
+   38 P2 selectCards/target 纹章 绝望的显现·玛文[BP20-T07]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19
+
+T8 · 选手 1 回合 · HP 19/20 · PP 4/0
+手牌 艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、强袭盗贼[BP15-035]、空绝的崇拜者[BP15-028]｜对手手牌 3 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3、海潮炮手[BP19-026] 2/3、大洋斥候[BP19-030] 2/2 / 安息的神殿[BP20-103]、绝望的显现·玛文[BP20-093] 4/4
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 纹章 绝望的显现·玛文[BP20-T07]、悠久的绝望[BP15-101]｜墓 0/4
+   40 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   41 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP） 〔authored〕
+   42 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   43 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→无尽力量·索菲娜[BP15-PR07] 3；P2 -3=17
+   44 P1 mainPhase 攻击 海潮炮手[BP19-026] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   45 P2 quick Quick 放过 海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=15
+   46 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   47 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=14 〔authored〕
+   48 P1 selectPending p170 〔fallback〕
+   49 P1 choose/mode recover 〔authored〕
+   50 P1 selectCards/target 无尽力量·索菲娜[BP15-PR07] 海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=13 〔authored〕
+   51 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+   52 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   53 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=12 〔authored〕
+   54 P1 selectPending p180 〔fallback〕
+   55 P1 choose/mode destroy 海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=11；绝望的显现·玛文[BP20-093] field→cemetery 〔fallback〕
+   56 P1 mainPhase 攻击 大洋斥候[BP19-030] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   57 P2 quick Quick 放过 大洋斥候[BP19-030]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=9
+   58 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   59 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=8 〔authored〕
+   60 P1 selectPending p185 海潮炮手[BP19-026]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=7 〔fallback〕
+   61 P1 mainPhase 结束主阶段 〔forced〕
+
+T9 · 选手 2 回合 · HP 19/7 · PP 0/5
+手牌 艾巴利缇亚[BP05-034]、空绝的崇拜者[BP15-028]｜对手手牌 4 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 横、海潮炮手[BP19-026] 2/3 横、大洋斥候[BP19-030] 2/2 横、出航的罪人·芭芭萝丝[BP19-019] 7/4、强袭盗贼[BP15-035] 3/1 / 安息的神殿[BP20-103]
+EX 黄金短剑[BP15-T01] / 纹章 绝望的显现·玛文[BP20-T07]、悠久的绝望[BP15-101]｜墓 0/8
+   63 P2 mainPhase 打出 安息的祈祷者[BP20-101]
+   64 P2 mainPhase 进化 安息的祈祷者[BP20-101] 纹章 安息的祈祷者[BP20-T10] 新→ex
+   65 P2 mainPhase 攻击 安息的祈祷者[BP20-101] → 海潮炮手[BP19-026]
+   66 P1 quick Quick 放过 安息的祈祷者[BP20-101]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026]→安息的祈祷者[BP20-101] 2；海潮炮手[BP19-026] field→cemetery 〔forced〕
+   67 P2 mainPhase 打出 悠久的绝望[BP15-101]
+   68 P2 mainPhase 结束主阶段
+   70 P2 selectCards/target 纹章 绝望的显现·玛文[BP20-T07]→强袭盗贼[BP15-035] 1；强袭盗贼[BP15-035] field→cemetery
+
+T10 · 选手 1 回合 · HP 19/7 · PP 5/1
+手牌 艾巴利缇亚[BP05-034]、空绝的崇拜者[BP15-028]、篡夺绝杰·欧克托莉斯[BP05-018]｜对手手牌 3 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3、大洋斥候[BP19-030] 2/2、出航的罪人·芭芭萝丝[BP19-019] 7/4 / 安息的神殿[BP20-103]、安息的祈祷者[BP20-101] 3/1 伤2 横、悠久的绝望[BP15-101]
+EX 黄金短剑[BP15-T01] / 纹章 绝望的显现·玛文[BP20-T07]、纹章 安息的祈祷者[BP20-T10]｜墓 2/8
+   72 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   73 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→无尽力量·索菲娜[BP15-PR07] 7；P2 -7=0
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":10}
+生命 19/0
+选手输入 [{"direct":0,"authored":9,"fallback":20,"forced":10},{"direct":0,"authored":2,"fallback":21,"forced":12}]
