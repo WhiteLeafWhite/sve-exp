@@ -1,0 +1,149 @@
+g0335
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 空绝的显现·欧克托莉斯[BP20-019]、奉还的剑闪[BP20-026]、海潮炮手[BP19-026]、海潮炮手[BP19-026]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留 〔authored〕
+    1 P2 mulligan 整手重抽 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 空绝的显现·欧克托莉斯[BP20-019]、奉还的剑闪[BP20-026]、海潮炮手[BP19-026]、海潮炮手[BP19-026]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 1/1
+手牌 空绝的显现·欧克托莉斯[BP20-019]、奉还的剑闪[BP20-026]、海潮炮手[BP19-026]、海潮炮手[BP19-026]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    4 P2 mainPhase 打出 俏猫上将[BP13-029]
+    5 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 空绝的显现·欧克托莉斯[BP20-019]、奉还的剑闪[BP20-026]、海潮炮手[BP19-026]、海潮炮手[BP19-026]、强袭盗贼[BP15-035]｜对手手牌 4 张
+场 空 / 俏猫上将[BP13-029] 2/2
+EX 空 / 空｜墓 0/0
+    7 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+    8 P1 choose/mode crest 纹章 空绝的显现·欧克托莉斯[BP20-T02] 新→ex 〔authored〕
+    9 P1 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 奉还的剑闪[BP20-026]、海潮炮手[BP19-026]、海潮炮手[BP19-026]、强袭盗贼[BP15-035]｜对手手牌 5 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 / 俏猫上将[BP13-029] 2/2
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02] / 空｜墓 0/0
+   11 P2 mainPhase 攻击 俏猫上将[BP13-029] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   12 P1 quick Quick 放过 俏猫上将[BP13-029]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18 〔forced〕
+   13 P2 mainPhase 打出 圣剑之光的小队长[BP17-029]
+   14 P2 selectCards/wardEnterEngaged 铁甲骑士[BP01-T07] 新→ex
+   15 P2 selectPending 俏猫上将[BP13-029]→空绝的显现·欧克托莉斯[BP20-019] 1；俏猫上将[BP13-029]→空绝的显现·欧克托莉斯[BP20-019] 1
+   16 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 18/20 · PP 3/0
+手牌 奉还的剑闪[BP20-026]、海潮炮手[BP19-026]、海潮炮手[BP19-026]、强袭盗贼[BP15-035]、精炼的空绝[BP15-026]｜对手手牌 4 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/1 伤2 / 俏猫上将[BP13-029] 2/2 横、圣剑之光的小队长[BP17-029] 1/1、战盾卫士[BP02-T02] 1/1 横、骑士[BP01-T05] 1/1
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02] / 铁甲骑士[BP01-T07]｜墓 0/0
+   19 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   20 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔authored〕
+   21 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=19 〔authored〕
+   22 P1 selectPending p145 〔fallback〕
+   23 P1 selectCards/target 战盾卫士[BP02-T02] 海潮炮手[BP19-026]→战盾卫士[BP02-T02] 1；战盾卫士[BP02-T02] field→cemetery 〔authored〕
+   24 P1 selectPending p144 〔fallback〕
+   25 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 俏猫上将[BP13-029] 〔fallback〕
+   26 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→俏猫上将[BP13-029] 2；俏猫上将[BP13-029]→空绝的显现·欧克托莉斯[BP20-019] 2；空绝的显现·欧克托莉斯[BP20-019] field→cemetery；俏猫上将[BP13-029] field→cemetery
+   27 P1 mainPhase 结束主阶段 〔fallback〕
+
+T6 · 选手 2 回合 · HP 18/19 · PP 0/3
+手牌 奉还的剑闪[BP20-026]、海潮炮手[BP19-026]、强袭盗贼[BP15-035]、精炼的空绝[BP15-026]｜对手手牌 5 张
+场 海潮炮手[BP19-026] 3/3 / 圣剑之光的小队长[BP17-029] 1/1、骑士[BP01-T05] 1/1
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02] / 铁甲骑士[BP01-T07]｜墓 1/1
+   29 P2 mainPhase 打出 幻影拍档·峇妮与峇侬[BP11-019]
+   30 P2 mainPhase 进化 幻影拍档·峇妮与峇侬[BP11-019]（EP）
+   32 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 0
+   33 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   34 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=15 〔forced〕
+   35 P2 mainPhase 攻击 圣剑之光的小队长[BP17-029] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   36 P1 quick Quick 放过 圣剑之光的小队长[BP17-029]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=14 〔forced〕
+   37 P2 mainPhase 攻击 骑士[BP01-T05] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   38 P1 quick Quick 放过 骑士[BP01-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=13 〔forced〕
+   39 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 13/19 · PP 4/0
+手牌 奉还的剑闪[BP20-026]、海潮炮手[BP19-026]、强袭盗贼[BP15-035]、精炼的空绝[BP15-026]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 5 张
+场 海潮炮手[BP19-026] 3/3 / 圣剑之光的小队长[BP17-029] 1/1 横、骑士[BP01-T05] 1/1 横、幻影拍档·峇妮与峇侬[BP11-019] 4/4 横、魔导四轮车·V[BP11-T01]
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02] / 铁甲骑士[BP01-T07]｜墓 1/1
+   41 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   42 P1 mainPhase 攻击 海潮炮手[BP19-026] → [公主形态]佩可莉姆[CP04-PR02] 〔fallback〕
+   43 P2 quick Quick 放过 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 3；P2 -3=16
+   44 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   45 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=15 〔authored〕
+   46 P1 selectPending p170 〔fallback〕
+   47 P1 selectCards/target 圣剑之光的小队长[BP17-029] 海潮炮手[BP19-026]→圣剑之光的小队长[BP17-029] 1；圣剑之光的小队长[BP17-029] field→cemetery 〔fallback〕
+   48 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex 〔fallback〕
+   49 P1 mainPhase 打出 奉还的剑闪[BP20-026] 〔fallback〕
+   50 P1 selectCards/target 幻影拍档·峇妮与峇侬[BP11-019] 奉还的剑闪[BP20-026]→幻影拍档·峇妮与峇侬[BP11-019] 4；幻影拍档·峇妮与峇侬[BP11-019] field→cemetery 〔authored〕
+   51 P1 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 2 回合 · HP 13/15 · PP 0/4
+手牌 海潮炮手[BP19-026]、强袭盗贼[BP15-035]｜对手手牌 6 张
+场 海潮炮手[BP19-026] 3/3 横、出航的罪人·芭芭萝丝[BP19-019] 4/3 / 骑士[BP01-T05] 1/1、魔导四轮车·V[BP11-T01]
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02] / 铁甲骑士[BP01-T07]｜墓 3/3
+   53 P2 mainPhase 打出 荣光剑士·奥蕾莉亚[BP20-022]
+   55 P2 mainPhase 攻击 荣光剑士·奥蕾莉亚[BP20-022] → 海潮炮手[BP19-026]
+   56 P1 quick Quick 放过 荣光剑士·奥蕾莉亚[BP20-022]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026]→荣光剑士·奥蕾莉亚[BP20-022] 3；海潮炮手[BP19-026] field→cemetery 〔forced〕
+   57 P2 mainPhase 攻击 骑士[BP01-T05] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   58 P1 quick Quick 放过 骑士[BP01-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=12 〔forced〕
+   59 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 12/15 · PP 5/1
+手牌 海潮炮手[BP19-026]、强袭盗贼[BP15-035]、空绝的崇拜者[BP15-028]｜对手手牌 6 张
+场 出航的罪人·芭芭萝丝[BP19-019] 4/3 / 骑士[BP01-T05] 1/1 横、魔导四轮车·V[BP11-T01]、荣光剑士·奥蕾莉亚[BP20-022] 3/1 伤3 横
+EX 纹章 空绝的显现·欧克托莉斯[BP20-T02] / 铁甲骑士[BP01-T07]｜墓 4/3
+   61 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+   62 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   63 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 荣光剑士·奥蕾莉亚[BP20-022] 〔fallback〕
+   64 P2 quick Quick 放过 强袭盗贼[BP15-035]→荣光剑士·奥蕾莉亚[BP20-022] 3；荣光剑士·奥蕾莉亚[BP20-022]→强袭盗贼[BP15-035] 3；强袭盗贼[BP15-035] field→cemetery；荣光剑士·奥蕾莉亚[BP20-022] field→cemetery
+   65 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → [公主形态]佩可莉姆[CP04-PR02] 〔fallback〕
+   66 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→[公主形态]佩可莉姆[CP04-PR02] 5；P2 -5=10
+   67 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   68 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   69 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=9 〔authored〕
+   70 P1 selectPending p204 〔fallback〕
+   71 P1 choose/mode recover 〔authored〕
+   72 P1 selectPending p205 〔fallback〕
+   73 P1 selectCards/target [公主形态]佩可莉姆[CP04-PR02] 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=8；纹章 空绝的显现·欧克托莉斯[BP20-T02] ex→banished 〔authored〕
+   74 P1 selectCards/search 海潮炮手[BP19-026] 〔fallback〕
+   75 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   76 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   77 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=7 〔authored〕
+   78 P1 selectPending p216 〔fallback〕
+   79 P1 choose/mode destroy 骑士[BP01-T05] field→cemetery 〔fallback〕
+   80 P1 selectPending p217 海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；海潮炮手[BP19-026]→[公主形态]佩可莉姆[CP04-PR02] 1；P2 -1=6；P2 -1=5 〔fallback〕
+   81 P1 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 2 回合 · HP 12/5 · PP 0/5
+手牌 空绝的崇拜者[BP15-028]｜对手手牌 7 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/4 横、海潮炮手[BP19-026] 4/3、海潮炮手[BP19-026] 2/3 / 魔导四轮车·V[BP11-T01]
+EX 黄金短剑[BP15-T01] / 铁甲骑士[BP01-T07]｜墓 5/5
+   83 P2 mainPhase 打出 幻影拍档·峇妮与峇侬[BP11-019]
+   84 P2 mainPhase 起动 魔导四轮车·V[BP11-T01] 能力 0
+   85 P2 mainPhase 攻击 魔导四轮车·V[BP11-T01] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   86 P1 quick Quick 放过 魔导四轮车·V[BP11-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=9 〔forced〕
+   87 P2 mainPhase 进化 幻影拍档·峇妮与峇侬[BP11-019]（EP）
+   89 P2 mainPhase 打出 忠义剑士·艾莉卡[BP17-019]
+   92 P2 mainPhase 攻击 忠义剑士·艾莉卡[BP17-019] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   93 P1 quick Quick 放过 忠义剑士·艾莉卡[BP17-019]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=6 〔forced〕
+   94 P2 mainPhase 结束主阶段
+
+T11 · 选手 1 回合 · HP 6/5 · PP 6/0
+手牌 空绝的崇拜者[BP15-028]、篡夺的随从[BP05-029]｜对手手牌 6 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/4、海潮炮手[BP19-026] 4/3、海潮炮手[BP19-026] 2/3 / 魔导四轮车·V[BP11-T01]、幻影拍档·峇妮与峇侬[BP11-019] 4/4 横、魔导四轮车·V[BP11-T01]、忠义剑士·艾莉卡[BP17-019] 3/1 横、战盾卫士[BP02-T02] 1/1 横
+EX 黄金短剑[BP15-T01] / 铁甲骑士[BP01-T07]｜墓 5/5
+   97 P1 mainPhase 攻击 海潮炮手[BP19-026] → 战盾卫士[BP02-T02] 〔fallback〕
+   98 P2 quick Quick 放过 海潮炮手[BP19-026]→战盾卫士[BP02-T02] 2；战盾卫士[BP02-T02]→海潮炮手[BP19-026] 1；战盾卫士[BP02-T02] field→cemetery
+   99 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → [公主形态]佩可莉姆[CP04-PR02] 〔authored〕
+  100 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→[公主形态]佩可莉姆[CP04-PR02] 5；P2 -5=0
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":11}
+生命 6/0
+选手输入 [{"direct":0,"authored":12,"fallback":28,"forced":17},{"direct":0,"authored":4,"fallback":25,"forced":15}]
