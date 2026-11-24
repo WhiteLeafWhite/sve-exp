@@ -1,0 +1,228 @@
+g0185
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 空绝的崇拜者[BP15-028]、出航的罪人·芭芭萝丝[BP19-019]、奉还的剑闪[BP20-026]、艾巴利缇亚[BP05-034]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 整手重抽 〔authored〕
+    1 P2 mulligan 整手重抽 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 大洋斥候[BP19-030]、篡夺的随从[BP05-029]、怒涛副船长[BP19-028]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+    3 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 篡夺的随从[BP05-029]、怒涛副船长[BP19-028]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    5 P2 mainPhase 打出 不弑之乡[BP20-012]
+    7 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 篡夺的随从[BP05-029]、怒涛副船长[BP19-028]、空绝篡夺·欧克托莉斯[BP15-020]、精炼的空绝[BP15-026]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 不弑之乡[BP20-012]
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    9 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=19 〔fallback〕
+   10 P1 mainPhase 攻击 大洋斥候[BP19-030] → 第六绝杰·艾兹迪亚[BP10-LD01] 〔fallback〕
+   11 P2 quick Quick 放过 大洋斥候[BP19-030]→第六绝杰·艾兹迪亚[BP10-LD01] 3；P2 -3=16
+   12 P1 mainPhase 打出 篡夺的随从[BP05-029] 〔fallback〕
+   13 P1 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 2 回合 · HP 20/16 · PP 0/2
+手牌 怒涛副船长[BP19-028]、空绝篡夺·欧克托莉斯[BP15-020]、精炼的空绝[BP15-026]｜对手手牌 6 张
+场 大洋斥候[BP19-030] 3/2 横、篡夺的随从[BP05-029] 2/2 / 不弑之乡[BP20-012]
+EX 空 / 空｜墓 0/1
+   15 P2 mainPhase 打出 驱逐的死矢[BP20-008]
+   16 P2 selectCards/target 驱逐的死矢[BP20-008]→大洋斥候[BP19-030] 2；驱逐的死矢[BP20-008]→篡夺的随从[BP05-029] 2；大洋斥候[BP19-030] field→cemetery；篡夺的随从[BP05-029] field→cemetery
+   17 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 20/16 · PP 3/0
+手牌 怒涛副船长[BP19-028]、空绝篡夺·欧克托莉斯[BP15-020]、精炼的空绝[BP15-026]、空绝的显现·欧克托莉斯[BP20-019]｜对手手牌 5 张
+场 空 / 不弑之乡[BP20-012]
+EX 空 / 空｜墓 2/2
+   19 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   20 P1 mainPhase 进化 怒涛副船长[BP19-028] 〔fallback〕
+   21 P1 selectCards/search 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   22 P1 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 2 回合 · HP 20/16 · PP 0/3
+手牌 空绝篡夺·欧克托莉斯[BP15-020]、精炼的空绝[BP15-026]、空绝的显现·欧克托莉斯[BP20-019]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 3/3 / 不弑之乡[BP20-012]
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 2/2
+   24 P2 mainPhase 打出 对空射击[BP18-019] 对空射击[BP18-019]→怒涛副船长[BP19-028] 3；怒涛副船长[BP19-028] field→cemetery
+   25 P2 mainPhase 打出 不弑的随从[BP05-012] P2 +2=18
+   26 P2 mainPhase 打出 不弑之乡[BP20-012]
+   28 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 20/18 · PP 4/0
+手牌 空绝篡夺·欧克托莉斯[BP15-020]、精炼的空绝[BP15-026]、空绝的显现·欧克托莉斯[BP20-019]、出航的罪人·芭芭萝丝[BP19-019]、空绝的崇拜者[BP15-028]｜对手手牌 5 张
+场 空 / 不弑的随从[BP05-012] 2/2、不弑之乡[BP20-012]
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 3/3
+   30 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   31 P1 choose/mode search 〔authored〕
+   32 P1 selectCards/search 奉还的剑闪[BP20-026] 〔fallback〕
+   33 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   34 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 第六绝杰·艾兹迪亚[BP10-LD01] 〔fallback〕
+   35 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→第六绝杰·艾兹迪亚[BP10-LD01] 3；P2 -3=15
+   36 P1 mainPhase 打出 精炼的空绝[BP15-026] 精炼的空绝[BP15-026]→不弑的随从[BP05-012] 2；黄金之杯[BP15-T02] 新→ex；不弑的随从[BP05-012] field→cemetery 〔fallback〕
+   37 P1 mainPhase 结束主阶段 〔fallback〕
+
+T8 · 选手 2 回合 · HP 20/15 · PP 0/4
+手牌 空绝篡夺·欧克托莉斯[BP15-020]、出航的罪人·芭芭萝丝[BP19-019]、空绝的崇拜者[BP15-028]、奉还的剑闪[BP20-026]｜对手手牌 6 张
+场 空绝的显现·欧克托莉斯[BP20-019] 3/3 横 / 不弑之乡[BP20-012]
+EX 黄金之杯[BP15-T02] / 空｜墓 4/4
+   39 P2 mainPhase 打出 不弑的继承者·库璐璐[BP20-002]
+   40 P2 mainPhase 进化 不弑的继承者·库璐璐[BP20-002] 空绝的显现·欧克托莉斯[BP20-019] field→cemetery
+   41 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 20/15 · PP 5/0
+手牌 空绝篡夺·欧克托莉斯[BP15-020]、出航的罪人·芭芭萝丝[BP19-019]、空绝的崇拜者[BP15-028]、奉还的剑闪[BP20-026]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 5 张
+场 空 / 不弑之乡[BP20-012]、不弑的继承者·库璐璐[BP20-002] 4/4
+EX 黄金之杯[BP15-T02] / 空｜墓 5/4
+   43 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→不弑的继承者·库璐璐[BP20-002] 4；不弑的继承者·库璐璐[BP20-002] field→cemetery 〔authored〕
+   44 P1 mainPhase 打出 空绝篡夺·欧克托莉斯[BP15-020] 空绝的残光[BP15-PR10] 新→ex 〔fallback〕
+   45 P1 mainPhase 起动 空绝篡夺·欧克托莉斯[BP15-020] 能力 1 〔fallback〕
+   46 P1 mainPhase 打出 空绝的残光[BP15-PR10] 〔fallback〕
+   47 P1 selectCards/effect 空绝篡夺·欧克托莉斯[BP15-020] 〔fallback〕
+   48 P1 orderCards/deckBottom 排序 篡夺的随从[BP05-029]、海潮炮手[BP19-026] 〔fallback〕
+   49 P1 mainPhase 结束主阶段 〔fallback〕
+
+T10 · 选手 2 回合 · HP 20/15 · PP 0/5
+手牌 出航的罪人·芭芭萝丝[BP19-019]、空绝的崇拜者[BP15-028]、空绝篡夺·欧克托莉斯[BP15-020]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 6 张
+场 空绝篡夺·欧克托莉斯[BP15-020] 3/3 / 不弑之乡[BP20-012]
+EX 黄金之杯[BP15-T02] / 空｜墓 6/5
+   51 P2 mainPhase 打出 不弑的隐者[BP15-014]
+   52 P2 mainPhase 打出 绝命的崇拜者[BP15-012] 绝命的崇拜者[BP15-012]→空绝篡夺·欧克托莉斯[BP15-020] 2；P2 +2=17；空绝篡夺·欧克托莉斯[BP15-020] field→cemetery
+   53 P2 mainPhase 进化 不弑的隐者[BP15-014]
+   55 P2 mainPhase 结束主阶段
+
+T11 · 选手 1 回合 · HP 20/17 · PP 6/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、空绝的崇拜者[BP15-028]、空绝篡夺·欧克托莉斯[BP15-020]、空绝篡夺·欧克托莉斯[BP15-020]、涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 5 张
+场 空 / 不弑之乡[BP20-012]、不弑的隐者[BP15-014] 3/3、绝命的崇拜者[BP15-012] 2/3
+EX 黄金之杯[BP15-T02] / 空｜墓 7/5
+   57 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   58 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   59 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=16 〔fallback〕
+   60 P1 choose/mode recover 〔authored〕
+   61 P1 mainPhase 打出 空绝篡夺·欧克托莉斯[BP15-020] 空绝的残光[BP15-PR10] 新→ex 〔fallback〕
+   62 P1 mainPhase 起动 空绝篡夺·欧克托莉斯[BP15-020] 能力 1 〔fallback〕
+   63 P1 mainPhase 打出 空绝的残光[BP15-PR10] 〔fallback〕
+   64 P1 choose/mode damage 〔fallback〕
+   65 P1 selectCards/target 不弑的隐者[BP15-014] 空绝的残光[BP15-PR10]→不弑的隐者[BP15-014] 3；不弑的隐者[BP15-014] field→cemetery 〔authored〕
+   66 P1 choose/mode destroy 绝命的崇拜者[BP15-012] field→cemetery 〔fallback〕
+   67 P1 mainPhase 结束主阶段 〔fallback〕
+
+T12 · 选手 2 回合 · HP 20/16 · PP 0/6
+手牌 空绝的崇拜者[BP15-028]、空绝篡夺·欧克托莉斯[BP15-020]、涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 6 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/4、空绝篡夺·欧克托莉斯[BP15-020] 3/3 / 不弑之乡[BP20-012]
+EX 黄金之杯[BP15-T02] / 空｜墓 7/7
+   69 P2 mainPhase 打出 不弑的随从[BP05-012] P2 +2=18
+   70 P2 mainPhase 打出 绝命的显现·艾兹迪亚[BP20-001]
+   71 P2 selectCards/search 绝命的痛击[BP15-PR09] 新→ex
+   72 P2 mainPhase 起动 绝命的显现·艾兹迪亚[BP20-001] 能力 1
+   73 P2 mainPhase 打出 驱逐的死矢[BP20-008]
+   74 P2 selectCards/target 驱逐的死矢[BP20-008]→空绝篡夺·欧克托莉斯[BP15-020] 3；驱逐的死矢[BP20-008]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18；空绝篡夺·欧克托莉斯[BP15-020] field→cemetery
+   75 P2 mainPhase 结束主阶段
+
+T13 · 选手 1 回合 · HP 18/18 · PP 7/1
+手牌 空绝的崇拜者[BP15-028]、空绝篡夺·欧克托莉斯[BP15-020]、涸绝饥饿·吉鲁涅莉婕[BP15-113]、艾巴利缇亚[BP05-034]｜对手手牌 4 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/4 / 不弑之乡[BP20-012]、不弑的随从[BP05-012] 2/2、绝命的显现·艾兹迪亚[BP20-001] 3/5
+EX 黄金之杯[BP15-T02] / 绝命的痛击[BP15-PR09]｜墓 8/8
+   77 P1 mainPhase 打出 空绝篡夺·欧克托莉斯[BP15-020] 空绝的残光[BP15-PR10] 新→ex 〔fallback〕
+   78 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   79 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113] 〔fallback〕
+   80 P1 choose/mode stats 〔fallback〕
+   81 P1 selectCards/target 不弑的随从[BP05-012] 不弑的随从[BP05-012] field→cemetery 〔fallback〕
+   82 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 第六绝杰·艾兹迪亚[BP10-LD01] 〔fallback〕
+   83 P2 quick 打出 六连星的刻印[BP05-017]
+   85 P1 mainPhase 打出 黄金之杯[BP15-T02] P1 +2=20 〔fallback〕
+   86 P1 choose/mode recover 〔authored〕
+   87 P1 mainPhase 打出 空绝的崇拜者[BP15-028] 〔fallback〕
+   88 P1 confirm/effect 确认 〔fallback〕
+   89 P1 selectCards/pick 空绝的崇拜者[BP15-029] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+   90 P1 mainPhase 起动 空绝篡夺·欧克托莉斯[BP15-020] 能力 1 〔fallback〕
+   91 P1 mainPhase 打出 黄金短剑[BP15-T01] 黄金短剑[BP15-T01]→绝命的显现·艾兹迪亚[BP20-001] 2；黄金短剑[BP15-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 2；P2 -2=16 〔authored〕
+   92 P1 selectPending p287 黄金之靴[BP15-T03] 新→ex 〔fallback〕
+   93 P1 choose/mode destroy 绝命的显现·艾兹迪亚[BP20-001] field→cemetery 〔fallback〕
+   94 P1 mainPhase 起动 空绝篡夺·欧克托莉斯[BP15-020] 能力 1 〔fallback〕
+   95 P1 mainPhase 打出 黄金之靴[BP15-T03] 〔fallback〕
+   96 P1 selectCards/target 空绝篡夺·欧克托莉斯[BP15-020] 〔authored〕
+   97 P1 mainPhase 攻击 空绝篡夺·欧克托莉斯[BP15-020] → 第六绝杰·艾兹迪亚[BP10-LD01] 〔fallback〕
+   98 P2 quick Quick 放过 空绝篡夺·欧克托莉斯[BP15-020]→第六绝杰·艾兹迪亚[BP10-LD01] 3；P2 -3=13
+   99 P1 mainPhase 结束主阶段 〔forced〕
+
+T14 · 选手 2 回合 · HP 20/13 · PP 0/7
+手牌 艾巴利缇亚[BP05-034]｜对手手牌 4 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/4 横、空绝篡夺·欧克托莉斯[BP15-020] 3/3 横、涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3、空绝的崇拜者[BP15-028] 3/3 / 不弑之乡[BP20-012]
+EX 空绝的残光[BP15-PR10] / 绝命的痛击[BP15-PR09]｜墓 8/13
+  101 P2 mainPhase 打出 对空射击[BP18-019]
+  102 P2 selectCards/target 对空射击[BP18-019]→空绝篡夺·欧克托莉斯[BP15-020] 3；空绝篡夺·欧克托莉斯[BP15-020] field→cemetery
+  103 P2 mainPhase 打出 不弑之乡[BP20-012]
+  105 P2 mainPhase 起动 不弑之乡[BP20-012] 能力 1 P2 +1=14；不弑之乡[BP20-012] field→cemetery
+  106 P2 mainPhase 打出 不弑的肯定者[BP20-015]
+  109 P2 mainPhase 打出 不弑的肯定者[BP20-015]
+  111 P2 mainPhase 打出 小小勇士·斯库娜[BP04-010]
+  112 P2 mainPhase 超进化 小小勇士·斯库娜[BP04-010]（EP）
+  113 P2 mainPhase 攻击 小小勇士·斯库娜[BP04-010] → 出航的罪人·芭芭萝丝[BP19-019]
+  114 P1 quick Quick 放过 小小勇士·斯库娜[BP04-010]→出航的罪人·芭芭萝丝[BP19-019] 6；出航的罪人·芭芭萝丝[BP19-019]→小小勇士·斯库娜[BP04-010] 5；出航的罪人·芭芭萝丝[BP19-019] field→cemetery 〔forced〕
+  115 P2 mainPhase 结束主阶段
+
+T15 · 选手 1 回合 · HP 20/14 · PP 8/0
+手牌 艾巴利缇亚[BP05-034]、大洋斥候[BP19-030]｜对手手牌 2 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3、空绝的崇拜者[BP15-028] 3/3 / 不弑的肯定者[BP20-015] 2/3、不弑的肯定者[BP20-015] 2/3、小小勇士·斯库娜[BP04-010] 6/1 伤5 横
+EX 空绝的残光[BP15-PR10] / 绝命的痛击[BP15-PR09]｜墓 10/16
+  117 P1 mainPhase 攻击 涸绝饥饿·吉鲁涅莉婕[BP15-113] → 第六绝杰·艾兹迪亚[BP10-LD01] 〔fallback〕
+  118 P2 quick Quick 放过 涸绝饥饿·吉鲁涅莉婕[BP15-113]→第六绝杰·艾兹迪亚[BP10-LD01] 3；P2 -3=11
+  119 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+  120 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+  121 P1 selectCards/target 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=10；黄金之靴[BP15-T03] 新→ex 〔authored〕
+  122 P1 mainPhase 攻击 空绝的崇拜者[BP15-028] → 第六绝杰·艾兹迪亚[BP10-LD01] 〔fallback〕
+  123 P2 quick Quick 放过 空绝的崇拜者[BP15-028]→第六绝杰·艾兹迪亚[BP10-LD01] 3；P2 -3=7
+  124 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔fallback〕
+  125 P1 selectCards/effect 海潮炮手[BP19-026] 〔fallback〕
+  126 P1 orderCards/deckBottom 排序 精炼的空绝[BP15-026]、强袭盗贼[BP15-035]、空绝的崇拜者[BP15-028] 〔fallback〕
+  127 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+  128 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+  129 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=6 〔authored〕
+  130 P1 selectCards/target 第六绝杰·艾兹迪亚[BP10-LD01] 海潮炮手[BP19-026]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=5 〔authored〕
+  131 P1 mainPhase 打出 空绝的残光[BP15-PR10] 〔fallback〕
+  132 P1 choose/mode damage 〔fallback〕
+  133 P1 selectCards/target 小小勇士·斯库娜[BP04-010] 空绝的残光[BP15-PR10]→小小勇士·斯库娜[BP04-010] 8；小小勇士·斯库娜[BP04-010] field→cemetery 〔authored〕
+  134 P1 mainPhase 结束主阶段 〔forced〕
+
+T16 · 选手 2 回合 · HP 20/5 · PP 0/8
+手牌 ｜对手手牌 3 张
+场 涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 横、空绝的崇拜者[BP15-028] 3/3 横、大洋斥候[BP19-030] 3/2、海潮炮手[BP19-026] 3/3 / 不弑的肯定者[BP20-015] 2/3、不弑的肯定者[BP20-015] 2/3
+EX 黄金之靴[BP15-T03] / 绝命的痛击[BP15-PR09]｜墓 11/17
+  136 P2 mainPhase 打出 驱逐的死矢[BP20-008]
+  137 P2 selectCards/target 驱逐的死矢[BP20-008]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 3；驱逐的死矢[BP20-008]→海潮炮手[BP19-026] 3；驱逐的死矢[BP20-008]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery；海潮炮手[BP19-026] field→cemetery
+  138 P2 mainPhase 攻击 不弑的肯定者[BP20-015] → 空绝的崇拜者[BP15-028]
+  139 P1 quick Quick 放过 不弑的肯定者[BP20-015]→空绝的崇拜者[BP15-028] 2；空绝的崇拜者[BP15-028]→不弑的肯定者[BP20-015] 3；不弑的肯定者[BP20-015] field→cemetery 〔forced〕
+  140 P2 mainPhase 攻击 不弑的肯定者[BP20-015] → 空绝的崇拜者[BP15-028]
+  141 P1 quick Quick 放过 不弑的肯定者[BP20-015]→空绝的崇拜者[BP15-028] 2；空绝的崇拜者[BP15-028]→不弑的肯定者[BP20-015] 3；空绝的崇拜者[BP15-028] field→cemetery；不弑的肯定者[BP20-015] field→cemetery 〔forced〕
+  142 P2 mainPhase 打出 绝命的腐蚀[BP15-008] 绝命的腐蚀[BP15-008]→大洋斥候[BP19-030] 1
+  143 P2 mainPhase 打出 绝命的腐蚀[BP15-008] 绝命的腐蚀[BP15-008]→大洋斥候[BP19-030] 1；大洋斥候[BP19-030] field→cemetery
+  145 P2 mainPhase 打出 绝命的痛击[BP15-PR09] 绝命的痛击[BP15-PR09]→第八绝杰·欧克托莉斯[BP10-LD02] 6；P1 -6=12
+  146 P2 mainPhase 打出 小小勇士·斯库娜[BP04-010]
+  147 P2 mainPhase 进化 小小勇士·斯库娜[BP04-010]（EP）
+  148 P2 mainPhase 攻击 小小勇士·斯库娜[BP04-010] → 第八绝杰·欧克托莉斯[BP10-LD02]
+  149 P1 quick Quick 放过 小小勇士·斯库娜[BP04-010]→第八绝杰·欧克托莉斯[BP10-LD02] 5；P1 -5=7 〔forced〕
+  150 P2 mainPhase 结束主阶段
+
+T17 · 选手 1 回合 · HP 7/5 · PP 9/0
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]｜对手手牌 1 张
+场 空 / 小小勇士·斯库娜[BP04-010] 5/5 横
+EX 黄金之靴[BP15-T03] / 空｜墓 15/22
+  152 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+  153 P1 mainPhase 打出 黄金之靴[BP15-T03] 〔fallback〕
+  154 P1 mainPhase 超进化 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+  155 P1 selectCards/target 绝命的显现·艾兹迪亚[BP20-001] 绝命的显现·艾兹迪亚[BP20-001] cemetery→ex 〔fallback〕
+  156 P1 mainPhase 攻击 篡夺绝杰·欧克托莉斯[BP05-018] → 第六绝杰·艾兹迪亚[BP10-LD01] 〔authored〕
+  157 P2 quick Quick 放过 篡夺绝杰·欧克托莉斯[BP05-018]→第六绝杰·艾兹迪亚[BP10-LD01] 5；P2 -5=0
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":17}
+生命 7/0
+选手输入 [{"direct":0,"authored":16,"fallback":56,"forced":17},{"direct":0,"authored":7,"fallback":43,"forced":19}]
