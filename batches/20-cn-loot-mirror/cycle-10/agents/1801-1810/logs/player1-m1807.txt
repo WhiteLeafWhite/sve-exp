@@ -1,0 +1,154 @@
+m1807
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 艾巴利缇亚[BP05-034]、大洋斥候[BP19-030]、空绝的显现·欧克托莉斯[BP20-019]、篡夺绝杰·欧克托莉斯[BP05-018]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留 〔authored〕
+    1 P2 mulligan 保留 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 艾巴利缇亚[BP05-034]、大洋斥候[BP19-030]、空绝的显现·欧克托莉斯[BP20-019]、篡夺绝杰·欧克托莉斯[BP05-018]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+    3 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 艾巴利缇亚[BP05-034]、空绝的显现·欧克托莉斯[BP20-019]、篡夺绝杰·欧克托莉斯[BP05-018]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    5 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/1
+手牌 艾巴利缇亚[BP05-034]、空绝的显现·欧克托莉斯[BP20-019]、篡夺绝杰·欧克托莉斯[BP05-018]、海潮炮手[BP19-026]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    7 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+    8 P1 mainPhase 攻击 大洋斥候[BP19-030] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+    9 P2 quick Quick 放过 大洋斥候[BP19-030]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P2 -2=18
+   10 P1 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 2 回合 · HP 20/18 · PP 0/2
+手牌 艾巴利缇亚[BP05-034]、空绝的显现·欧克托莉斯[BP20-019]、篡夺绝杰·欧克托莉斯[BP05-018]｜对手手牌 6 张
+场 大洋斥候[BP19-030] 2/2 横、海潮炮手[BP19-026] 2/3 / 空
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+   12 P2 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   13 P2 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   15 P2 mainPhase 攻击 怒涛副船长[BP19-028] → 大洋斥候[BP19-030]
+   16 P1 quick Quick 放过 怒涛副船长[BP19-028]→大洋斥候[BP19-030] 3；大洋斥候[BP19-030]→怒涛副船长[BP19-028] 2；大洋斥候[BP19-030] field→cemetery 〔forced〕
+   17 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 20/18 · PP 3/0
+手牌 艾巴利缇亚[BP05-034]、空绝的显现·欧克托莉斯[BP20-019]、篡夺绝杰·欧克托莉斯[BP05-018]、强袭盗贼[BP15-035]｜对手手牌 6 张
+场 海潮炮手[BP19-026] 2/3 / 怒涛副船长[BP19-028] 3/1 伤2 横
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 战栗的海贼旗[BP19-T01]｜墓 1/0
+   19 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   20 P1 choose/mode search 〔authored〕
+   21 P1 selectCards/search 奉还的剑闪[BP20-026] 〔fallback〕
+   22 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔authored〕
+   23 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P2 -1=17 〔authored〕
+   24 P1 selectPending p137 〔fallback〕
+   25 P1 selectCards/target 第八绝杰·欧克托莉斯[BP10-LD02] 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P2 -1=16 〔authored〕
+   26 P1 mainPhase 攻击 海潮炮手[BP19-026] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   27 P2 quick Quick 放过 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P2 -3=13
+   28 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   29 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P2 -2=11
+   30 P1 mainPhase 结束主阶段 〔fallback〕
+
+T6 · 选手 2 回合 · HP 20/11 · PP 0/3
+手牌 艾巴利缇亚[BP05-034]、篡夺绝杰·欧克托莉斯[BP05-018]、强袭盗贼[BP15-035]、奉还的剑闪[BP20-026]｜对手手牌 7 张
+场 海潮炮手[BP19-026] 3/3 横、空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 怒涛副船长[BP19-028] 3/1 伤2
+EX 战栗的海贼旗[BP19-T01] / 战栗的海贼旗[BP19-T01]｜墓 1/0
+   32 P2 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   33 P2 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   34 P2 selectCards/target 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19
+   35 P2 selectCards/target 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=18
+   36 P2 mainPhase 攻击 怒涛副船长[BP19-028] → 海潮炮手[BP19-026]
+   37 P1 quick Quick 放过 怒涛副船长[BP19-028]→海潮炮手[BP19-026] 4；海潮炮手[BP19-026]→怒涛副船长[BP19-028] 3；海潮炮手[BP19-026] field→cemetery；怒涛副船长[BP19-028] field→cemetery 〔forced〕
+   38 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 18/11 · PP 4/0
+手牌 艾巴利缇亚[BP05-034]、篡夺绝杰·欧克托莉斯[BP05-018]、强袭盗贼[BP15-035]、奉还的剑闪[BP20-026]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 6 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 / 海潮炮手[BP19-026] 2/3
+EX 战栗的海贼旗[BP19-T01] / 战栗的海贼旗[BP19-T01]｜墓 2/1
+   40 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→海潮炮手[BP19-026] 4；黄金短剑[BP15-T01] 新→ex；海潮炮手[BP19-026] field→cemetery 〔authored〕
+   41 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex 〔fallback〕
+   42 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   43 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P2 -2=9
+   44 P1 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 2 回合 · HP 18/9 · PP 0/4
+手牌 艾巴利缇亚[BP05-034]、篡夺绝杰·欧克托莉斯[BP05-018]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 7 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 横、强袭盗贼[BP15-035] 3/1 / 空
+EX 战栗的海贼旗[BP19-T01]、黄金短剑[BP15-T01]、黄金短剑[BP15-T01] / 战栗的海贼旗[BP19-T01]｜墓 3/3
+   46 P2 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   47 P2 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   48 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 18/9 · PP 5/0
+手牌 艾巴利缇亚[BP05-034]、篡夺绝杰·欧克托莉斯[BP05-018]、出航的罪人·芭芭萝丝[BP19-019]、奉还的剑闪[BP20-026]｜对手手牌 5 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3、强袭盗贼[BP15-035] 3/1 / 海潮炮手[BP19-026] 2/3、海潮炮手[BP19-026] 2/3
+EX 战栗的海贼旗[BP19-T01]、黄金短剑[BP15-T01]、黄金短剑[BP15-T01] / 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01]｜墓 3/3
+   50 P1 mainPhase 打出 奉还的剑闪[BP20-026] 〔authored〕
+   51 P1 selectCards/target 海潮炮手[BP19-026] 奉还的剑闪[BP20-026]→海潮炮手[BP19-026] 4；黄金短剑[BP15-T01] 新→ex；海潮炮手[BP19-026] field→cemetery 〔authored〕
+   52 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔fallback〕
+   53 P1 selectCards/effect 精炼的空绝[BP15-026] 〔fallback〕
+   54 P1 orderCards/deckBottom 排序 空绝的崇拜者[BP15-028]、艾巴利缇亚[BP05-034]、大洋斥候[BP19-030] 〔fallback〕
+   55 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   56 P2 quick Quick 放过 强袭盗贼[BP15-035]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P2 -3=6
+   57 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   58 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P2 -2=4
+   59 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+   60 P1 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 2 回合 · HP 18/4 · PP 0/5
+手牌 出航的罪人·芭芭萝丝[BP19-019]、精炼的空绝[BP15-026]｜对手手牌 6 张
+场 空绝的显现·欧克托莉斯[BP20-019] 2/3 横、强袭盗贼[BP15-035] 3/1 横、篡夺绝杰·欧克托莉斯[BP05-018] 2/2 / 海潮炮手[BP19-026] 2/3
+EX 战栗的海贼旗[BP19-T01]、黄金短剑[BP15-T01]、黄金短剑[BP15-T01]、黄金短剑[BP15-T01] / 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01]｜墓 5/6
+   62 P2 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   63 P2 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   64 P2 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 强袭盗贼[BP15-035]
+   65 P1 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→强袭盗贼[BP15-035] 4；强袭盗贼[BP15-035]→出航的罪人·芭芭萝丝[BP19-019] 3；强袭盗贼[BP15-035] field→cemetery 〔forced〕
+   66 P2 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   67 P2 selectCards/target 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=17
+   70 P2 selectCards/target 空绝的显现·欧克托莉斯[BP20-019] field→cemetery
+   71 P2 selectCards/target 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=16
+   72 P2 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   73 P2 selectCards/target 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=15
+   75 P2 selectCards/target 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=14
+   77 P2 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   78 P2 selectCards/target 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=13
+   80 P2 selectCards/target 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=12
+   81 P2 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   82 P2 selectCards/target 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=11
+   84 P2 selectCards/target 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=10
+   85 P2 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex
+   86 P2 mainPhase 打出 黄金短剑[BP15-T01] 黄金短剑[BP15-T01]→篡夺绝杰·欧克托莉斯[BP05-018] 2；黄金短剑[BP15-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=8；篡夺绝杰·欧克托莉斯[BP05-018] field→cemetery
+   87 P2 mainPhase 攻击 海潮炮手[BP19-026] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   88 P1 quick Quick 放过 海潮炮手[BP19-026]→第八绝杰·欧克托莉斯[BP10-LD02] 6；P1 -6=2 〔forced〕
+   89 P2 mainPhase 结束主阶段
+
+T11 · 选手 1 回合 · HP 2/4 · PP 6/0
+手牌 出航的罪人·芭芭萝丝[BP19-019]、精炼的空绝[BP15-026]、大洋斥候[BP19-030]｜对手手牌 4 张
+场 空 / 海潮炮手[BP19-026] 6/3 横、出航的罪人·芭芭萝丝[BP19-019] 4/1 伤3 横、强袭盗贼[BP15-035] 3/1
+EX 战栗的海贼旗[BP19-T01]、黄金短剑[BP15-T01]、黄金短剑[BP15-T01]、黄金短剑[BP15-T01] / 空｜墓 11/6
+   91 P1 mainPhase 打出 精炼的空绝[BP15-026] 〔authored〕
+   92 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 精炼的空绝[BP15-026]→出航的罪人·芭芭萝丝[BP19-019] 2；黄金之杯[BP15-T02] 新→ex；出航的罪人·芭芭萝丝[BP19-019] field→cemetery 〔authored〕
+   93 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   94 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   95 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P2 -1=3 〔fallback〕
+   96 P1 choose/mode destroy 〔authored〕
+   97 P1 selectCards/target 海潮炮手[BP19-026] 海潮炮手[BP19-026] field→cemetery 〔authored〕
+   98 P1 mainPhase 结束主阶段 〔forced〕
+
+T12 · 选手 2 回合 · HP 2/3 · PP 0/6
+手牌 大洋斥候[BP19-030]｜对手手牌 5 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/4 / 强袭盗贼[BP15-035] 3/1
+EX 黄金短剑[BP15-T01]、黄金短剑[BP15-T01]、黄金短剑[BP15-T01]、黄金之杯[BP15-T02] / 空｜墓 12/8
+  100 P2 mainPhase 攻击 强袭盗贼[BP15-035] → 第八绝杰·欧克托莉斯[BP10-LD02]
+  101 P1 quick Quick 放过 强袭盗贼[BP15-035]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=-1 〔forced〕
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":12}
+生命 -1/3
+选手输入 [{"direct":0,"authored":14,"fallback":18,"forced":15},{"direct":0,"authored":30,"fallback":8,"forced":17}]
