@@ -1,0 +1,158 @@
+g0133
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 不弑之乡[BP20-012]、十字弩狙击手[BP06-013]、优美的猫姊妹·暹罗与暹玛[BP11-003]、优美的猫姊妹·暹罗与暹玛[BP11-003]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留
+    1 P2 mulligan 保留 P1 0=20；P2 0=20 〔authored〕
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 不弑之乡[BP20-012]、十字弩狙击手[BP06-013]、优美的猫姊妹·暹罗与暹玛[BP11-003]、优美的猫姊妹·暹罗与暹玛[BP11-003]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+    3 P1 mainPhase 结束主阶段
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 不弑之乡[BP20-012]、十字弩狙击手[BP06-013]、优美的猫姊妹·暹罗与暹玛[BP11-003]、优美的猫姊妹·暹罗与暹玛[BP11-003]、绝命的显现·艾兹迪亚[BP20-001]｜对手手牌 3 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    5 P2 mainPhase 打出 不弑之乡[BP20-012] 〔fallback〕
+    6 P2 selectCards/effect 绝命的显现·艾兹迪亚[BP20-001] 〔fallback〕
+    7 P2 mainPhase 结束主阶段 〔forced〕
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 十字弩狙击手[BP06-013]、优美的猫姊妹·暹罗与暹玛[BP11-003]、优美的猫姊妹·暹罗与暹玛[BP11-003]、绝命的显现·艾兹迪亚[BP20-001]、绝命的显现·艾兹迪亚[BP20-001]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 / 不弑之乡[BP20-012]
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    9 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019]
+   12 P1 mainPhase 攻击 大洋斥候[BP19-030] → 第六绝杰·艾兹迪亚[BP10-LD01]
+   13 P2 quick Quick 放过 大洋斥候[BP19-030]→第六绝杰·艾兹迪亚[BP10-LD01] 2；P2 -2=18 〔forced〕
+   14 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1
+   15 P1 selectCards/pick 奉还的剑闪[BP20-026] hand→ex
+   16 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 第六绝杰·艾兹迪亚[BP10-LD01]
+   17 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→第六绝杰·艾兹迪亚[BP10-LD01] 2；P2 -2=16 〔forced〕
+   18 P1 mainPhase 结束主阶段
+
+T4 · 选手 2 回合 · HP 20/16 · PP 0/2
+手牌 十字弩狙击手[BP06-013]、优美的猫姊妹·暹罗与暹玛[BP11-003]、优美的猫姊妹·暹罗与暹玛[BP11-003]、绝命的显现·艾兹迪亚[BP20-001]、绝命的显现·艾兹迪亚[BP20-001]、不弑的继承者·库璐璐[BP20-002]｜对手手牌 3 张
+场 大洋斥候[BP19-030] 2/2 横、空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 不弑之乡[BP20-012]
+EX 奉还的剑闪[BP20-026] / 空｜墓 0/0
+   20 P2 mainPhase 打出 十字弩狙击手[BP06-013] 〔fallback〕
+   21 P2 confirm/optionalCost 确认 〔fallback〕
+   22 P2 selectCards/target 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   23 P2 selectCards/pick 绝命的显现·艾兹迪亚[BP20-001] 十字弩狙击手[BP06-013]→空绝的显现·欧克托莉斯[BP20-019] 1 〔fallback〕
+   24 P2 mainPhase 打出 优美的猫姊妹·暹罗与暹玛[BP11-003] 〔fallback〕
+   25 P2 selectCards/target 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   26 P2 mainPhase 攻击 优美的猫姊妹·暹罗与暹玛[BP11-003] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   27 P1 quick Quick 放过 优美的猫姊妹·暹罗与暹玛[BP11-003]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19
+   28 P2 mainPhase 结束主阶段 〔forced〕
+
+T5 · 选手 1 回合 · HP 19/16 · PP 3/0
+手牌 优美的猫姊妹·暹罗与暹玛[BP11-003]、绝命的显现·艾兹迪亚[BP20-001]、不弑的继承者·库璐璐[BP20-002]、绝命的显现·艾兹迪亚[BP20-001]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2、空绝的显现·欧克托莉斯[BP20-019] 2/2 伤1 / 不弑之乡[BP20-012]、十字弩狙击手[BP06-013] 1/1、优美的猫姊妹·暹罗与暹玛[BP11-003] 1/1 横
+EX 奉还的剑闪[BP20-026] / 空｜墓 0/1
+   30 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019]
+   33 P1 mainPhase 攻击 大洋斥候[BP19-030] → 第六绝杰·艾兹迪亚[BP10-LD01]
+   34 P2 quick Quick 放过 大洋斥候[BP19-030]→第六绝杰·艾兹迪亚[BP10-LD01] 2；P2 -2=14 〔forced〕
+   35 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 第六绝杰·艾兹迪亚[BP10-LD01]
+   36 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→第六绝杰·艾兹迪亚[BP10-LD01] 2；P2 -2=12 〔forced〕
+   37 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+   38 P1 selectCards/target 奉还的剑闪[BP20-026]→十字弩狙击手[BP06-013] 4；黄金短剑[BP15-T01] 新→ex；十字弩狙击手[BP06-013] field→cemetery
+   40 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 第六绝杰·艾兹迪亚[BP10-LD01]
+   41 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→第六绝杰·艾兹迪亚[BP10-LD01] 2；P2 -2=10 〔forced〕
+   42 P1 mainPhase 结束主阶段
+
+T6 · 选手 2 回合 · HP 19/10 · PP 0/3
+手牌 优美的猫姊妹·暹罗与暹玛[BP11-003]、绝命的显现·艾兹迪亚[BP20-001]、不弑的继承者·库璐璐[BP20-002]、绝命的显现·艾兹迪亚[BP20-001]、不弑的隐者[BP15-014]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 横、空绝的显现·欧克托莉斯[BP20-019] 2/2 伤1 横、空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 不弑之乡[BP20-012]、优美的猫姊妹·暹罗与暹玛[BP11-003] 1/1
+EX 黄金短剑[BP15-T01] / 空｜墓 1/2
+   44 P2 mainPhase 打出 不弑的继承者·库璐璐[BP20-002] 〔fallback〕
+   45 P2 mainPhase 进化 不弑的继承者·库璐璐[BP20-002]（EP） 〔fallback〕
+   46 P2 selectCards/target 空绝的显现·欧克托莉斯[BP20-019] 空绝的显现·欧克托莉斯[BP20-019] field→cemetery 〔fallback〕
+   47 P2 mainPhase 攻击 不弑的继承者·库璐璐[BP20-002] → 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   48 P1 quick Quick 放过 不弑的继承者·库璐璐[BP20-002]→空绝的显现·欧克托莉斯[BP20-019] 4；空绝的显现·欧克托莉斯[BP20-019]→不弑的继承者·库璐璐[BP20-002] 2；空绝的显现·欧克托莉斯[BP20-019] field→cemetery
+   49 P2 mainPhase 攻击 优美的猫姊妹·暹罗与暹玛[BP11-003] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   50 P1 quick Quick 放过 优美的猫姊妹·暹罗与暹玛[BP11-003]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=18
+   51 P2 mainPhase 结束主阶段 〔forced〕
+
+T7 · 选手 1 回合 · HP 18/10 · PP 4/0
+手牌 优美的猫姊妹·暹罗与暹玛[BP11-003]、绝命的显现·艾兹迪亚[BP20-001]、绝命的显现·艾兹迪亚[BP20-001]、不弑的隐者[BP15-014]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 不弑之乡[BP20-012]、优美的猫姊妹·暹罗与暹玛[BP11-003] 1/1 横、不弑的继承者·库璐璐[BP20-002] 4/2 伤2 横
+EX 黄金短剑[BP15-T01] / 空｜墓 3/2
+   53 P1 mainPhase 打出 精炼的空绝[BP15-026]
+   54 P1 selectCards/target 精炼的空绝[BP15-026]→不弑的继承者·库璐璐[BP20-002] 2；黄金之杯[BP15-T02] 新→ex；不弑的继承者·库璐璐[BP20-002] field→cemetery
+   55 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   56 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   57 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=9
+   58 P1 selectCards/target 海潮炮手[BP19-026]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=8
+   59 P1 mainPhase 攻击 大洋斥候[BP19-030] → 第六绝杰·艾兹迪亚[BP10-LD01]
+   60 P2 quick Quick 放过 大洋斥候[BP19-030]→第六绝杰·艾兹迪亚[BP10-LD01] 2；P2 -2=6 〔forced〕
+   61 P1 mainPhase 结束主阶段
+
+T8 · 选手 2 回合 · HP 18/6 · PP 0/4
+手牌 优美的猫姊妹·暹罗与暹玛[BP11-003]、绝命的显现·艾兹迪亚[BP20-001]、绝命的显现·艾兹迪亚[BP20-001]、不弑的隐者[BP15-014]、对空射击[BP18-019]｜对手手牌 3 张
+场 大洋斥候[BP19-030] 2/2 横、海潮炮手[BP19-026] 3/3 / 不弑之乡[BP20-012]、优美的猫姊妹·暹罗与暹玛[BP11-003] 1/1
+EX 黄金短剑[BP15-T01]、黄金之杯[BP15-T02] / 空｜墓 4/3
+   63 P2 mainPhase 打出 对空射击[BP18-019] 〔authored〕
+   64 P2 selectCards/target 不弑之乡[BP20-012] 〔fallback〕
+   65 P2 selectCards/target 海潮炮手[BP19-026] 对空射击[BP18-019]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026] field→cemetery 〔authored〕
+   66 P2 mainPhase 打出 不弑的隐者[BP15-014] 〔fallback〕
+   67 P2 mainPhase 打出 优美的猫姊妹·暹罗与暹玛[BP11-003] 〔fallback〕
+   68 P2 mainPhase 攻击 优美的猫姊妹·暹罗与暹玛[BP11-003] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   69 P1 quick Quick 放过 优美的猫姊妹·暹罗与暹玛[BP11-003]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=16
+   70 P2 mainPhase 进化 不弑的隐者[BP15-014]（EP） 〔fallback〕
+   71 P2 mainPhase 攻击 不弑的隐者[BP15-014] → 大洋斥候[BP19-030] 〔fallback〕
+   72 P1 quick Quick 放过 不弑的隐者[BP15-014]→大洋斥候[BP19-030] 3；大洋斥候[BP19-030]→不弑的隐者[BP15-014] 2；大洋斥候[BP19-030] field→cemetery
+   73 P2 mainPhase 攻击 优美的猫姊妹·暹罗与暹玛[BP11-003] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   74 P1 quick Quick 放过 优美的猫姊妹·暹罗与暹玛[BP11-003]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=14
+   75 P2 mainPhase 结束主阶段 〔forced〕
+
+T9 · 选手 1 回合 · HP 14/6 · PP 5/0
+手牌 绝命的显现·艾兹迪亚[BP20-001]、绝命的显现·艾兹迪亚[BP20-001]、不弑之乡[BP20-012]｜对手手牌 4 张
+场 空 / 优美的猫姊妹·暹罗与暹玛[BP11-003] 2/2 横、不弑的隐者[BP15-014] 3/1 伤2 横、优美的猫姊妹·暹罗与暹玛[BP11-003] 2/2 横
+EX 黄金短剑[BP15-T01]、黄金之杯[BP15-T02] / 空｜墓 6/4
+   77 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   78 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]
+   79 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=5
+   81 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   82 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   83 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=4
+   85 P1 selectCards/target 不弑的隐者[BP15-014] field→cemetery
+   86 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 优美的猫姊妹·暹罗与暹玛[BP11-003]
+   87 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→优美的猫姊妹·暹罗与暹玛[BP11-003] 6；优美的猫姊妹·暹罗与暹玛[BP11-003]→出航的罪人·芭芭萝丝[BP19-019] 2；优美的猫姊妹·暹罗与暹玛[BP11-003] field→cemetery 〔forced〕
+   88 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1
+   89 P1 selectCards/pick 奉还的剑闪[BP20-026] hand→ex
+   90 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→优美的猫姊妹·暹罗与暹玛[BP11-003] 4；优美的猫姊妹·暹罗与暹玛[BP11-003] field→cemetery
+   91 P1 mainPhase 结束主阶段
+
+T10 · 选手 2 回合 · HP 14/4 · PP 0/5
+手牌 绝命的显现·艾兹迪亚[BP20-001]、绝命的显现·艾兹迪亚[BP20-001]、不弑之乡[BP20-012]、六连星的刻印[BP05-017]｜对手手牌 1 张
+场 出航的罪人·芭芭萝丝[BP19-019] 6/2 伤2 横、怒涛副船长[BP19-028] 2/2 / 空
+EX 黄金短剑[BP15-T01] / 空｜墓 7/9
+   93 P2 mainPhase 打出 不弑之乡[BP20-012] 〔fallback〕
+   94 P2 selectCards/effect 不弑的使徒[BP05-004] 〔fallback〕
+   95 P2 mainPhase 打出 不弑的使徒[BP05-004] 〔fallback〕
+   96 P2 mainPhase 进化 不弑的使徒[BP05-004] 〔fallback〕
+   97 P2 selectCards/search 绝命的崇拜者[BP15-012] 〔fallback〕
+   98 P2 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 绝命的崇拜者[BP15-012]→出航的罪人·芭芭萝丝[BP19-019] 2；P2 +2=6；出航的罪人·芭芭萝丝[BP19-019] field→cemetery 〔fallback〕
+   99 P2 mainPhase 结束主阶段 〔fallback〕
+
+T11 · 选手 1 回合 · HP 14/6 · PP 6/0
+手牌 绝命的显现·艾兹迪亚[BP20-001]、绝命的显现·艾兹迪亚[BP20-001]、六连星的刻印[BP05-017]｜对手手牌 2 张
+场 怒涛副船长[BP19-028] 2/2 / 不弑之乡[BP20-012]、不弑的使徒[BP05-004] 4/4、绝命的崇拜者[BP15-012] 2/3
+EX 黄金短剑[BP15-T01] / 空｜墓 8/9
+  101 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+  102 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+  103 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=5
+  104 P1 mainPhase 进化 怒涛副船长[BP19-028]
+  106 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 第六绝杰·艾兹迪亚[BP10-LD01]
+  107 P2 quick Quick 放过 怒涛副船长[BP19-028]→第六绝杰·艾兹迪亚[BP10-LD01] 4；P2 -4=1 〔forced〕
+  108 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+  109 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+  110 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第六绝杰·艾兹迪亚[BP10-LD01] 1；P2 -1=0
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":11}
+生命 14/0
+选手输入 [{"direct":0,"authored":18,"fallback":31,"forced":14},{"direct":0,"authored":3,"fallback":28,"forced":17}]
