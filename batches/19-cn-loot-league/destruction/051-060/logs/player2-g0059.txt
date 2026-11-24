@@ -1,0 +1,118 @@
+g0059
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 歼灭的歌声[BP20-045]、歼灭的歌声[BP20-045]、破坏的荒野[BP20-055]、被赋生的兽人·纱妃拉[BP05-040]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留
+    1 P2 mulligan 整手重抽 P1 0=20；P2 0=20 〔authored〕
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 破坏的愉悦[BP08-051]、破坏的狂信者[BP08-050]、破坏的愉悦[BP08-051]、奏绝破坏·里榭娜[BP15-039]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 篡夺的随从[BP05-029]
+    3 P1 mainPhase 结束主阶段
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 破坏的愉悦[BP08-051]、破坏的狂信者[BP08-050]、破坏的愉悦[BP08-051]、奏绝破坏·里榭娜[BP15-039]、破坏的隐者[BP15-054]｜对手手牌 3 张
+场 篡夺的随从[BP05-029] 2/2 / 空
+EX 空 / 空｜墓 0/1
+    5 P2 mainPhase 打出 破坏的隐者[BP15-054] 〔fallback〕
+    6 P2 mainPhase 结束主阶段 〔fallback〕
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 破坏的愉悦[BP08-051]、破坏的狂信者[BP08-050]、破坏的愉悦[BP08-051]、奏绝破坏·里榭娜[BP15-039]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2 / 破坏的隐者[BP15-054] 2/2
+EX 空 / 空｜墓 0/1
+    8 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+    9 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   10 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=19
+   11 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 第二绝杰·里榭娜[BP10-LD04]
+   12 P2 quick Quick 放过 篡夺的随从[BP05-029]→第二绝杰·里榭娜[BP10-LD04] 2；P2 -2=17 〔forced〕
+   13 P1 mainPhase 结束主阶段
+
+T4 · 选手 2 回合 · HP 20/17 · PP 0/2
+手牌 破坏的愉悦[BP08-051]、破坏的狂信者[BP08-050]、破坏的愉悦[BP08-051]、奏绝破坏·里榭娜[BP15-039]、破坏绝杰·里榭娜[BP05-037]｜对手手牌 3 张
+场 篡夺的随从[BP05-029] 2/2 横、大洋斥候[BP19-030] 3/2 / 破坏的隐者[BP15-054] 2/2
+EX 空 / 空｜墓 0/1
+   15 P2 mainPhase 攻击 破坏的隐者[BP15-054] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   16 P1 quick Quick 放过 破坏的隐者[BP15-054]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18
+   17 P2 mainPhase 结束主阶段 〔fallback〕
+
+T5 · 选手 1 回合 · HP 18/17 · PP 3/2
+手牌 破坏的愉悦[BP08-051]、破坏的狂信者[BP08-050]、破坏的愉悦[BP08-051]、奏绝破坏·里榭娜[BP15-039]、破坏绝杰·里榭娜[BP05-037]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2、大洋斥候[BP19-030] 3/2 / 破坏的隐者[BP15-054] 2/2 横
+EX 空 / 空｜墓 0/1
+   19 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   20 P1 mainPhase 攻击 大洋斥候[BP19-030] → 第二绝杰·里榭娜[BP10-LD04]
+   21 P2 quick Quick 放过 大洋斥候[BP19-030]→第二绝杰·里榭娜[BP10-LD04] 3；P2 -3=14 〔forced〕
+   22 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 第二绝杰·里榭娜[BP10-LD04]
+   23 P2 quick Quick 放过 篡夺的随从[BP05-029]→第二绝杰·里榭娜[BP10-LD04] 2；P2 -2=12 〔forced〕
+   24 P1 mainPhase 进化 怒涛副船长[BP19-028]
+   26 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 破坏的隐者[BP15-054]
+   27 P2 quick Quick 放过 怒涛副船长[BP19-028]→破坏的隐者[BP15-054] 3；破坏的隐者[BP15-054]→怒涛副船长[BP19-028] 2；破坏的隐者[BP15-054] field→cemetery 〔forced〕
+   28 P1 mainPhase 结束主阶段
+
+T6 · 选手 2 回合 · HP 18/12 · PP 0/3
+手牌 破坏的愉悦[BP08-051]、破坏的狂信者[BP08-050]、破坏的愉悦[BP08-051]、奏绝破坏·里榭娜[BP15-039]、破坏绝杰·里榭娜[BP05-037]、破坏的荒野[BP20-055]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2 横、大洋斥候[BP19-030] 3/2 横、怒涛副船长[BP19-028] 3/1 伤2 横 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/2
+   30 P2 mainPhase 打出 奏绝破坏·里榭娜[BP15-039] 〔fallback〕
+   31 P2 mainPhase 进化 奏绝破坏·里榭娜[BP15-039]（EP） 〔fallback〕
+   32 P2 selectCards/effect 破坏的愉悦[BP08-051]、奏绝的崇拜者[BP15-049] 破坏的愉悦[BP08-051] deck→ex；奏绝的崇拜者[BP15-049] deck→ex 〔authored〕
+   33 P2 orderCards/deckBottom 排序 白之章·黑之章[BP05-045]、歼灭的歌声[BP20-045] 〔fallback〕
+   34 P2 mainPhase 攻击 奏绝破坏·里榭娜[BP15-039] → 大洋斥候[BP19-030] 〔fallback〕
+   35 P1 quick Quick 放过 奏绝破坏·里榭娜[BP15-039]→大洋斥候[BP19-030] 4；大洋斥候[BP19-030]→奏绝破坏·里榭娜[BP15-039] 3；大洋斥候[BP19-030] field→cemetery
+   36 P2 mainPhase 打出 破坏的愉悦[BP08-051] 〔fallback〕
+   37 P2 mainPhase 打出 破坏的荒野[BP20-055] 〔fallback〕
+   38 P2 selectCards/effect 破坏的狂信者[BP08-050] 〔authored〕
+   39 P2 mainPhase 打出 破坏的愉悦[BP08-051] 〔fallback〕
+   40 P2 mainPhase 打出 破坏的愉悦[BP08-051] 〔fallback〕
+   41 P2 mainPhase 打出 奏绝的崇拜者[BP15-049] 〔fallback〕
+   42 P2 selectCards/effect 破坏的隐者[BP15-054] 〔authored〕
+   43 P2 orderCards/deckBottom 排序 破坏的随从[BP05-048]、重返的奏绝[BP15-045] 〔fallback〕
+   44 P2 mainPhase 结束主阶段 〔fallback〕
+
+T7 · 选手 1 回合 · HP 18/12 · PP 4/0
+手牌 破坏的狂信者[BP08-050]、破坏绝杰·里榭娜[BP05-037]、破坏的狂信者[BP08-050]、破坏的隐者[BP15-054]｜对手手牌 5 张
+场 篡夺的随从[BP05-029] 2/2、怒涛副船长[BP19-028] 3/1 伤2 / 奏绝破坏·里榭娜[BP15-039] 4/1 伤3 横、破坏的荒野[BP20-055]、奏绝的崇拜者[BP15-049] 2/3
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/5
+   46 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+   47 P1 selectCards/target 奉还的剑闪[BP20-026]→奏绝破坏·里榭娜[BP15-039] 4；奏绝破坏·里榭娜[BP15-039] field→cemetery
+   48 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→奏绝的崇拜者[BP15-049] 4；奏绝的崇拜者[BP15-049] field→cemetery
+   49 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 第二绝杰·里榭娜[BP10-LD04]
+   50 P2 quick Quick 放过 怒涛副船长[BP19-028]→第二绝杰·里榭娜[BP10-LD04] 3；P2 -3=9 〔forced〕
+   51 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 第二绝杰·里榭娜[BP10-LD04]
+   52 P2 quick Quick 放过 篡夺的随从[BP05-029]→第二绝杰·里榭娜[BP10-LD04] 2；P2 -2=7 〔forced〕
+   53 P1 mainPhase 结束主阶段
+
+T8 · 选手 2 回合 · HP 18/7 · PP 0/4
+手牌 破坏的狂信者[BP08-050]、破坏绝杰·里榭娜[BP05-037]、破坏的狂信者[BP08-050]、破坏的隐者[BP15-054]、破坏的隐者[BP15-054]｜对手手牌 3 张
+场 篡夺的随从[BP05-029] 2/2 横、怒涛副船长[BP19-028] 3/1 伤2 横 / 破坏的荒野[BP20-055]
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 3/7
+   55 P2 mainPhase 打出 破坏的隐者[BP15-054] 〔authored〕
+   56 P2 selectCards/target 怒涛副船长[BP19-028] 〔fallback〕
+   57 P2 mainPhase 打出 破坏的隐者[BP15-054] 〔authored〕
+   58 P2 selectCards/target 怒涛副船长[BP19-028] 破坏的隐者[BP15-054]→怒涛副船长[BP19-028] 3；怒涛副船长[BP19-028] field→cemetery 〔authored〕
+   59 P2 mainPhase 结束主阶段 〔fallback〕
+
+T9 · 选手 1 回合 · HP 18/7 · PP 5/2
+手牌 破坏的狂信者[BP08-050]、破坏绝杰·里榭娜[BP05-037]、破坏的狂信者[BP08-050]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2 / 破坏的荒野[BP20-055]、破坏的隐者[BP15-054] 2/2、破坏的隐者[BP15-054] 2/2
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 4/7
+   61 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   62 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]
+   63 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   64 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=6
+   66 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   67 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   68 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=5
+   71 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 第二绝杰·里榭娜[BP10-LD04]
+   72 P2 quick Quick 放过 篡夺的随从[BP05-029]→第二绝杰·里榭娜[BP10-LD04] 4；P2 -4=1 〔forced〕
+   73 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   74 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=0
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":9}
+生命 18/0
+选手输入 [{"direct":0,"authored":13,"fallback":20,"forced":7},{"direct":0,"authored":7,"fallback":17,"forced":11}]
