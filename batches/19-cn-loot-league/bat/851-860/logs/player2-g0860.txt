@@ -1,0 +1,105 @@
+g0860
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 Last Daylight[CP02-085]、赤血女王·班比[BP18-080]、终幕吸血鬼·尤里亚斯[BP17-074]、奇异探索者·尤娜[BP16-085]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 整手重抽 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 Last Daylight[CP02-085]、赤血女王·班比[BP18-080]、终幕吸血鬼·尤里亚斯[BP17-074]、奇异探索者·尤娜[BP16-085]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 奇异探索者·尤娜[BP16-085] 〔fallback〕
+    3 P2 choose/effect Ghost 怨灵[BP01-T14] 新→ex；怨灵[BP01-T14] 新→ex 〔fallback〕
+    4 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 Last Daylight[CP02-085]、赤血女王·班比[BP18-080]、终幕吸血鬼·尤里亚斯[BP17-074]｜对手手牌 5 张
+场 空 / 奇异探索者·尤娜[BP16-085] 2/2
+EX 空 / 怨灵[BP01-T14]、怨灵[BP01-T14]｜墓 0/0
+    6 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 1/2
+手牌 Last Daylight[CP02-085]、赤血女王·班比[BP18-080]、终幕吸血鬼·尤里亚斯[BP17-074]、终幕吸血鬼·尤里亚斯[BP17-074]｜对手手牌 5 张
+场 空 / 奇异探索者·尤娜[BP16-085] 2/2
+EX 空 / 怨灵[BP01-T14]、怨灵[BP01-T14]｜墓 0/0
+    8 P2 mainPhase 攻击 奇异探索者·尤娜[BP16-085] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+    9 P1 quick Quick 放过 奇异探索者·尤娜[BP16-085]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18
+   10 P2 mainPhase 打出 赤血女王·班比[BP18-080] 〔fallback〕
+   11 P2 confirm/optionalCost 确认 〔fallback〕
+   12 P2 selectCards/pick 终幕吸血鬼·尤里亚斯[BP17-074] 丛林蝙蝠[BP01-T15] 新→ex 〔fallback〕
+   13 P2 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 1 回合 · HP 18/20 · PP 2/0
+手牌 Last Daylight[CP02-085]、终幕吸血鬼·尤里亚斯[BP17-074]、拂晓吸血鬼·诺因[BP12-069]｜对手手牌 6 张
+场 空 / 奇异探索者·尤娜[BP16-085] 2/2 横、赤血女王·班比[BP18-080] 2/2
+EX 空 / 怨灵[BP01-T14]、怨灵[BP01-T14]、丛林蝙蝠[BP01-T15]｜墓 0/1
+   15 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+   16 P1 selectCards/target 奉还的剑闪[BP20-026]→赤血女王·班比[BP18-080] 4；赤血女王·班比[BP18-080] field→cemetery
+   17 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 18/20 · PP 0/3
+手牌 Last Daylight[CP02-085]、终幕吸血鬼·尤里亚斯[BP17-074]、拂晓吸血鬼·诺因[BP12-069]、白夜吸血鬼·瓦妮亚[BP09-082]｜对手手牌 5 张
+场 空 / 奇异探索者·尤娜[BP16-085] 2/2
+EX 空 / 怨灵[BP01-T14]、怨灵[BP01-T14]、丛林蝙蝠[BP01-T15]｜墓 1/2
+   19 P2 mainPhase 攻击 奇异探索者·尤娜[BP16-085] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   20 P1 quick Quick 放过 奇异探索者·尤娜[BP16-085]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=16
+   21 P2 mainPhase 打出 拂晓吸血鬼·诺因[BP12-069] 〔fallback〕
+   22 P2 choose/effect droid 〔fallback〕
+   23 P2 choose/effect droid 生产器械[BP07-T01] 新→ex 〔fallback〕
+   24 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 16/20 · PP 3/0
+手牌 Last Daylight[CP02-085]、终幕吸血鬼·尤里亚斯[BP17-074]、白夜吸血鬼·瓦妮亚[BP09-082]｜对手手牌 6 张
+场 空 / 奇异探索者·尤娜[BP16-085] 2/2 横、拂晓吸血鬼·诺因[BP12-069] 3/3、生产器械[BP07-T01] 1/1
+EX 空 / 怨灵[BP01-T14]、怨灵[BP01-T14]、丛林蝙蝠[BP01-T15]、生产器械[BP07-T01]｜墓 1/2
+   26 P1 mainPhase 打出 空绝篡夺·欧克托莉斯[BP15-020] 空绝的残光[BP15-PR10] 新→ex
+   27 P1 mainPhase 起动 空绝篡夺·欧克托莉斯[BP15-020] 能力 1
+   28 P1 mainPhase 打出 空绝的残光[BP15-PR10]
+   32 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 16/20 · PP 0/4
+手牌 Last Daylight[CP02-085]、终幕吸血鬼·尤里亚斯[BP17-074]、白夜吸血鬼·瓦妮亚[BP09-082]、奔放的狱炎·凯尔贝洛斯[BP16-075]｜对手手牌 6 张
+场 空绝篡夺·欧克托莉斯[BP15-020] 3/3 / 奇异探索者·尤娜[BP16-085] 2/2、拂晓吸血鬼·诺因[BP12-069] 3/3、生产器械[BP07-T01] 1/1
+EX 空 / 怨灵[BP01-T14]、怨灵[BP01-T14]、丛林蝙蝠[BP01-T15]、生产器械[BP07-T01]｜墓 1/2
+   34 P2 mainPhase 打出 怨灵[BP01-T14] 〔fallback〕
+   35 P2 mainPhase 打出 Last Daylight[CP02-085] Last Daylight[CP02-085]→空绝篡夺·欧克托莉斯[BP15-020] 3；空绝篡夺·欧克托莉斯[BP15-020] field→cemetery 〔fallback〕
+   36 P2 mainPhase 进化 拂晓吸血鬼·诺因[BP12-069] 〔fallback〕
+   37 P2 mainPhase 攻击 奇异探索者·尤娜[BP16-085] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   38 P1 quick Quick 放过 奇异探索者·尤娜[BP16-085]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=12
+   39 P2 mainPhase 攻击 拂晓吸血鬼·诺因[BP12-069] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   40 P1 quick Quick 放过 拂晓吸血鬼·诺因[BP12-069]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=8
+   41 P2 mainPhase 攻击 生产器械[BP07-T01] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   42 P1 quick Quick 放过 生产器械[BP07-T01]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=5
+   43 P2 mainPhase 攻击 怨灵[BP01-T14] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   44 P1 quick Quick 放过 怨灵[BP01-T14]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=2
+   45 P2 mainPhase 结束主阶段 怨灵[BP01-T14] field→banished 〔forced〕
+
+T8 · 选手 1 回合 · HP 2/20 · PP 4/0
+手牌 终幕吸血鬼·尤里亚斯[BP17-074]、白夜吸血鬼·瓦妮亚[BP09-082]、奔放的狱炎·凯尔贝洛斯[BP16-075]｜对手手牌 7 张
+场 空 / 奇异探索者·尤娜[BP16-085] 4/2 横、拂晓吸血鬼·诺因[BP12-069] 4/4 横、生产器械[BP07-T01] 3/1 横
+EX 空 / 怨灵[BP01-T14]、丛林蝙蝠[BP01-T15]、生产器械[BP07-T01]｜墓 2/3
+   47 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   48 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   49 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 1；P2 -1=19
+   51 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   52 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   53 P1 selectCards/target 战栗的海贼旗[BP19-T01]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 1；P2 -1=18
+   56 P1 selectCards/target 奇异探索者·尤娜[BP16-085] field→cemetery
+   57 P1 selectCards/target 海潮炮手[BP19-026]→生产器械[BP07-T01] 1；生产器械[BP07-T01] field→cemetery
+   58 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 拂晓吸血鬼·诺因[BP12-069]
+   59 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→拂晓吸血鬼·诺因[BP12-069] 6；拂晓吸血鬼·诺因[BP12-069]→出航的罪人·芭芭萝丝[BP19-019] 4；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；拂晓吸血鬼·诺因[BP12-069] field→cemetery 〔forced〕
+   60 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 2/18 · PP 0/5
+手牌 终幕吸血鬼·尤里亚斯[BP17-074]、白夜吸血鬼·瓦妮亚[BP09-082]、奔放的狱炎·凯尔贝洛斯[BP16-075]、血色圆舞曲[BP12-079]｜对手手牌 5 张
+场 海潮炮手[BP19-026] 2/3 / 空
+EX 空 / 怨灵[BP01-T14]、丛林蝙蝠[BP01-T15]、生产器械[BP07-T01]｜墓 3/5
+   62 P2 mainPhase 打出 血色圆舞曲[BP12-079] 〔authored〕
+   63 P2 choose/mode damage 血色圆舞曲[BP12-079]→第八绝杰·欧克托莉斯[BP10-LD02] 2；血色圆舞曲[BP12-079]→[《偶像》的碎片]二宫飞鸟[CP02-LD05] 1；P1 -2=0；P2 -1=17 〔authored〕
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":9}
+生命 0/17
+选手输入 [{"direct":0,"authored":9,"fallback":13,"forced":13},{"direct":0,"authored":3,"fallback":17,"forced":9}]
