@@ -1,0 +1,123 @@
+g0946
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、篡夺的随从[BP05-029]、怒涛副船长[BP19-028]、大洋斥候[BP19-030]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留
+    1 P1 mulligan 保留 P2 0=20；P1 0=20 〔authored〕
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、篡夺的随从[BP05-029]、怒涛副船长[BP19-028]、大洋斥候[BP19-030]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 安息的神殿[BP20-103]
+    5 P2 mainPhase 结束主阶段
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、篡夺的随从[BP05-029]、怒涛副船长[BP19-028]、大洋斥候[BP19-030]、篡夺的随从[BP05-029]｜对手手牌 4 张
+场 空 / 安息的神殿[BP20-103]
+EX 空 / 空｜墓 0/0
+    7 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+    8 P1 mainPhase 结束主阶段 〔forced〕
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、篡夺的随从[BP05-029]、怒涛副船长[BP19-028]、篡夺的随从[BP05-029]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 安息的神殿[BP20-103]
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+   10 P2 mainPhase 打出 暗黑供奉[BP01-140] P2 +3=23；安息的神殿[BP20-103] field→cemetery
+   11 P2 mainPhase 打出 安息的神殿[BP20-103]
+   14 P2 mainPhase 结束主阶段
+
+T4 · 选手 1 回合 · HP 20/23 · PP 2/0
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、篡夺的随从[BP05-029]、怒涛副船长[BP19-028]、篡夺的随从[BP05-029]、空绝的崇拜者[BP15-028]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 安息的神殿[BP20-103]
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/2
+   16 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   17 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP） 〔authored〕
+   18 P1 selectCards/search 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   19 P1 mainPhase 结束主阶段 〔fallback〕
+
+T5 · 选手 2 回合 · HP 20/23 · PP 0/3
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、篡夺的随从[BP05-029]、篡夺的随从[BP05-029]、空绝的崇拜者[BP15-028]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 6 张
+场 大洋斥候[BP19-030] 2/2、怒涛副船长[BP19-028] 3/3 / 安息的神殿[BP20-103]
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 0/2
+   21 P2 mainPhase 打出 安息的祈祷者[BP20-101]
+   22 P2 mainPhase 进化 安息的祈祷者[BP20-101] 纹章 安息的祈祷者[BP20-T10] 新→ex
+   23 P2 mainPhase 结束主阶段
+
+T6 · 选手 1 回合 · HP 20/23 · PP 3/0
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、篡夺的随从[BP05-029]、篡夺的随从[BP05-029]、空绝的崇拜者[BP15-028]、出航的罪人·芭芭萝丝[BP19-019]、怒涛副船长[BP19-028]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2、怒涛副船长[BP19-028] 3/3 / 安息的神殿[BP20-103]、安息的祈祷者[BP20-101] 3/3
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 纹章 安息的祈祷者[BP20-T10]｜墓 0/2
+   25 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   26 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   27 P2 quick Quick 放过 怒涛副船长[BP19-028]→无尽力量·索菲娜[BP15-PR07] 3；P2 -3=20
+   28 P1 mainPhase 攻击 大洋斥候[BP19-030] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   29 P2 quick Quick 放过 大洋斥候[BP19-030]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=18
+   30 P1 mainPhase 打出 篡夺的随从[BP05-029] 〔fallback〕
+   31 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP） 〔fallback〕
+   32 P1 selectCards/search 海潮炮手[BP19-026] 〔authored〕
+   33 P1 mainPhase 结束主阶段 〔forced〕
+
+T7 · 选手 2 回合 · HP 20/18 · PP 0/4
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、篡夺的随从[BP05-029]、空绝的崇拜者[BP15-028]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]｜对手手牌 6 张
+场 大洋斥候[BP19-030] 2/2 横、怒涛副船长[BP19-028] 3/3 横、怒涛副船长[BP19-028] 3/3、篡夺的随从[BP05-029] 2/2 / 安息的神殿[BP20-103]、安息的祈祷者[BP20-101] 3/3
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 纹章 安息的祈祷者[BP20-T10]｜墓 0/3
+   35 P2 mainPhase 打出 安息的团结者[BP20-097] 纹章 安息的团结者[BP20-T09] 新→ex
+   36 P2 mainPhase 进化 安息的团结者[BP20-097]
+   37 P2 selectCards/target 安息的团结者[BP20-098]→怒涛副船长[BP19-028] 4；怒涛副船长[BP19-028] field→cemetery
+   38 P2 mainPhase 攻击 安息的团结者[BP20-097] → 怒涛副船长[BP19-028]
+   39 P1 quick Quick 放过 安息的团结者[BP20-097]→怒涛副船长[BP19-028] 4；怒涛副船长[BP19-028]→安息的团结者[BP20-097] 3；怒涛副船长[BP19-028] field→cemetery 〔forced〕
+   40 P2 mainPhase 攻击 安息的祈祷者[BP20-101] → 大洋斥候[BP19-030]
+   41 P1 quick Quick 放过 安息的祈祷者[BP20-101]→大洋斥候[BP19-030] 3；大洋斥候[BP19-030]→安息的祈祷者[BP20-101] 2；大洋斥候[BP19-030] field→cemetery 〔forced〕
+   42 P2 mainPhase 结束主阶段
+
+T8 · 选手 1 回合 · HP 20/18 · PP 4/0
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、篡夺的随从[BP05-029]、空绝的崇拜者[BP15-028]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]、空绝的崇拜者[BP15-028]｜对手手牌 5 张
+场 篡夺的随从[BP05-029] 2/2 / 安息的神殿[BP20-103]、安息的祈祷者[BP20-101] 3/1 伤2 横、安息的团结者[BP20-097] 4/1 伤3 横
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 纹章 安息的祈祷者[BP20-T10]、纹章 安息的团结者[BP20-T09]｜墓 3/3
+   46 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   47 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP） 〔authored〕
+   48 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 安息的祈祷者[BP20-101] 〔fallback〕
+   49 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→安息的祈祷者[BP20-101] 4；安息的祈祷者[BP20-101]→出航的罪人·芭芭萝丝[BP19-019] 3；安息的祈祷者[BP20-101] field→cemetery
+   50 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   51 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=17 〔authored〕
+   52 P1 choose/mode recover 〔authored〕
+   53 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+   54 P1 selectPending p194 〔fallback〕
+   55 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   56 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=16 〔authored〕
+   57 P1 choose/mode destroy 安息的团结者[BP20-097] field→cemetery 〔fallback〕
+   58 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   59 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=15 〔authored〕
+   60 P1 selectPending p210 〔fallback〕
+   61 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   62 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→无尽力量·索菲娜[BP15-PR07] 1；P2 -1=14 〔authored〕
+   63 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 无尽力量·索菲娜[BP15-PR07] 〔fallback〕
+   64 P2 quick Quick 放过 篡夺的随从[BP05-029]→无尽力量·索菲娜[BP15-PR07] 6；P2 -6=8
+   65 P1 mainPhase 结束主阶段 〔forced〕
+
+T9 · 选手 2 回合 · HP 20/8 · PP 0/5
+手牌 篡夺的随从[BP05-029]、空绝的崇拜者[BP15-028]、海潮炮手[BP19-026]、空绝的崇拜者[BP15-028]｜对手手牌 6 张
+场 篡夺的随从[BP05-029] 6/2 横、出航的罪人·芭芭萝丝[BP19-019] 8/1 伤3 横、篡夺绝杰·欧克托莉斯[BP05-018] 2/2 / 安息的神殿[BP20-103]
+EX 空 / 纹章 安息的祈祷者[BP20-T10]、纹章 安息的团结者[BP20-T09]｜墓 3/9
+   67 P2 mainPhase 打出 戒律间谍[BP19-100]
+   68 P2 mainPhase 进化 戒律间谍[BP19-100]
+   70 P2 mainPhase 攻击 戒律间谍[BP19-100] → 出航的罪人·芭芭萝丝[BP19-019]
+   71 P1 quick Quick 放过 戒律间谍[BP19-100]→出航的罪人·芭芭萝丝[BP19-019] 3；出航的罪人·芭芭萝丝[BP19-019]→戒律间谍[BP19-100] 8；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；戒律间谍[BP19-100] field→cemetery 〔forced〕
+   72 P2 mainPhase 打出 安息的祈祷者[BP20-101]
+   73 P2 mainPhase 结束主阶段
+
+T10 · 选手 1 回合 · HP 20/8 · PP 5/0
+手牌 篡夺的随从[BP05-029]、空绝的崇拜者[BP15-028]、海潮炮手[BP19-026]、空绝的崇拜者[BP15-028]、涸绝饥饿·吉鲁涅莉婕[BP15-113]｜对手手牌 5 张
+场 篡夺的随从[BP05-029] 6/2、篡夺绝杰·欧克托莉斯[BP05-018] 2/2 / 安息的神殿[BP20-103]、安息的祈祷者[BP20-101] 2/2
+EX 空 / 纹章 安息的祈祷者[BP20-T10]、纹章 安息的团结者[BP20-T09]｜墓 4/10
+   76 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 无尽力量·索菲娜[BP15-PR07] 〔authored〕
+   77 P2 quick Quick 放过 篡夺的随从[BP05-029]→无尽力量·索菲娜[BP15-PR07] 6；P2 -6=2
+   78 P1 mainPhase 攻击 篡夺绝杰·欧克托莉斯[BP05-018] → 无尽力量·索菲娜[BP15-PR07] 〔authored〕
+   79 P2 quick Quick 放过 篡夺绝杰·欧克托莉斯[BP05-018]→无尽力量·索菲娜[BP15-PR07] 2；P2 -2=0
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":10}
+生命 20/0
+选手输入 [{"direct":0,"authored":15,"fallback":16,"forced":11},{"direct":0,"authored":2,"fallback":21,"forced":15}]
