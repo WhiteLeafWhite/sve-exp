@@ -1,0 +1,179 @@
+g0512
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 空绝的显现·欧克托莉斯[BP20-019]、篡夺的随从[BP05-029]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留
+    1 P1 mulligan 保留 P2 0=20；P1 0=20 〔authored〕
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 空绝的显现·欧克托莉斯[BP20-019]、篡夺的随从[BP05-029]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 结束主阶段
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/1
+手牌 空绝的显现·欧克托莉斯[BP20-019]、篡夺的随从[BP05-029]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、怒涛副船长[BP19-028]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    4 P1 mainPhase 打出 篡夺的随从[BP05-029] 〔authored〕
+    5 P1 mainPhase 结束主阶段 〔forced〕
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 空绝的显现·欧克托莉斯[BP20-019]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、怒涛副船长[BP19-028]｜对手手牌 5 张
+场 篡夺的随从[BP05-029] 2/2 / 空
+EX 空 / 空｜墓 0/1
+    7 P2 mainPhase 打出 龙之启示[SD04-002]
+    9 P2 mainPhase 结束主阶段
+
+T4 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 空绝的显现·欧克托莉斯[BP20-019]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、怒涛副船长[BP19-028]、艾巴利缇亚[BP05-034]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 2/2 / 空
+EX 空 / 空｜墓 0/2
+   11 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   12 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 第五绝杰·嘉鲁蜜儿[BP10-LD05] 〔fallback〕
+   13 P2 quick Quick 放过 篡夺的随从[BP05-029]→第五绝杰·嘉鲁蜜儿[BP10-LD05] 2；P2 -2=18
+   14 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP） 〔fallback〕
+   15 P1 selectCards/search 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   16 P1 mainPhase 结束主阶段 〔forced〕
+
+T5 · 选手 2 回合 · HP 20/18 · PP 0/4
+手牌 空绝的显现·欧克托莉斯[BP20-019]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 5 张
+场 篡夺的随从[BP05-029] 2/2 横、怒涛副船长[BP19-028] 3/3 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/2
+   18 P2 mainPhase 打出 侮蔑的祈祷者[BP20-064]
+   21 P2 mainPhase 进化 侮蔑的祈祷者[BP20-064]
+   22 P2 selectCards/target 侮蔑的祈祷者[BP20-065]→篡夺的随从[BP05-029] 2；篡夺的随从[BP05-029] field→cemetery
+   23 P2 mainPhase 结束主阶段
+
+T6 · 选手 1 回合 · HP 20/18 · PP 3/1
+手牌 空绝的显现·欧克托莉斯[BP20-019]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、大洋斥候[BP19-030]｜对手手牌 4 张
+场 怒涛副船长[BP19-028] 3/3 / 侮蔑的祈祷者[BP20-064] 3/3 横
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/2
+   26 P1 mainPhase 打出 空绝的显现·欧克托莉斯[BP20-019] 〔fallback〕
+   27 P1 choose/mode search 〔authored〕
+   28 P1 selectCards/search 奉还的剑闪[BP20-026] 〔fallback〕
+   29 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex 〔fallback〕
+   30 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→侮蔑的祈祷者[BP20-064] 4；黄金短剑[BP15-T01] 新→ex；侮蔑的祈祷者[BP20-064] field→cemetery 〔fallback〕
+   31 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 第五绝杰·嘉鲁蜜儿[BP10-LD05] 〔fallback〕
+   32 P2 quick Quick 放过 怒涛副船长[BP19-028]→第五绝杰·嘉鲁蜜儿[BP10-LD05] 3；P2 -3=15
+   33 P1 mainPhase 攻击 空绝的显现·欧克托莉斯[BP20-019] → 第五绝杰·嘉鲁蜜儿[BP10-LD05] 〔fallback〕
+   34 P2 quick Quick 放过 空绝的显现·欧克托莉斯[BP20-019]→第五绝杰·嘉鲁蜜儿[BP10-LD05] 2；P2 -2=13
+   35 P1 mainPhase 结束主阶段 〔forced〕
+
+T7 · 选手 2 回合 · HP 20/13 · PP 0/5
+手牌 艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、大洋斥候[BP19-030]｜对手手牌 5 张
+场 怒涛副船长[BP19-028] 3/3 横、空绝的显现·欧克托莉斯[BP20-019] 2/3 横 / 空
+EX 黄金短剑[BP15-T01] / 空｜墓 2/3
+   37 P2 mainPhase 打出 侮蔑的使徒[BP05-055]
+   38 P2 mainPhase 进化 侮蔑的使徒[BP05-055]
+   43 P2 mainPhase 攻击 侮蔑的使徒[BP05-055] → 空绝的显现·欧克托莉斯[BP20-019]
+   44 P1 quick Quick 放过 侮蔑的使徒[BP05-055]→空绝的显现·欧克托莉斯[BP20-019] 3；空绝的显现·欧克托莉斯[BP20-019]→侮蔑的使徒[BP05-055] 2；空绝的显现·欧克托莉斯[BP20-019] field→cemetery 〔forced〕
+   45 P2 mainPhase 打出 侮蔑的炎爪[BP05-058] 侮蔑的炎爪[BP05-058]→侮蔑的使徒[BP05-055] 1；侮蔑的炎爪[BP05-058]→怒涛副船长[BP19-028] 3；怒涛副船长[BP19-028] field→cemetery
+   46 P2 mainPhase 结束主阶段
+
+T8 · 选手 1 回合 · HP 20/13 · PP 4/0
+手牌 艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、大洋斥候[BP19-030]、奉还的剑闪[BP20-026]｜对手手牌 4 张
+场 空 / 侮蔑的使徒[BP05-055] 4/2 伤3 横
+EX 黄金短剑[BP15-T01] / 空｜墓 4/5
+   48 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   49 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP） 〔authored〕
+   50 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→第五绝杰·嘉鲁蜜儿[BP10-LD05] 1；P2 -1=12 〔fallback〕
+   51 P1 choose/mode recover 〔authored〕
+   52 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   53 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   54 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→第五绝杰·嘉鲁蜜儿[BP10-LD05] 1；P2 -1=11 〔authored〕
+   55 P1 choose/mode destroy 侮蔑的使徒[BP05-055] field→cemetery 〔fallback〕
+   56 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔fallback〕
+   57 P1 selectCards/effect 空绝篡夺·欧克托莉斯[BP15-020] 〔fallback〕
+   58 P1 orderCards/deckBottom 排序 精炼的空绝[BP15-026]、奉还的剑闪[BP20-026]、海潮炮手[BP19-026] 〔fallback〕
+   59 P1 mainPhase 结束主阶段 〔fallback〕
+
+T9 · 选手 2 回合 · HP 20/11 · PP 0/6
+手牌 艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、奉还的剑闪[BP20-026]、空绝篡夺·欧克托莉斯[BP15-020]｜对手手牌 5 张
+场 出航的罪人·芭芭萝丝[BP19-019] 6/4、大洋斥候[BP19-030] 2/2 / 空
+EX 黄金短剑[BP15-T01] / 空｜墓 5/6
+   61 P2 mainPhase 打出 烈绝侮蔑·嘉鲁蜜儿[BP15-057] 烈绝的灭牙[BP15-PR13] 新→ex
+   62 P2 mainPhase 打出 烈绝的灭牙[BP15-PR13] 烈绝的灭牙[BP15-PR13]→烈绝侮蔑·嘉鲁蜜儿[BP15-057] 1；烈绝的灭牙[BP15-PR13]→出航的罪人·芭芭萝丝[BP19-019] 1；烈绝的灭牙[BP15-PR13]→大洋斥候[BP19-030] 1
+   63 P2 selectCards/effect 烈绝的显现·嘉鲁蜜儿[BP20-056] deck→ex
+   64 P2 mainPhase 打出 烈绝的显现·嘉鲁蜜儿[BP20-056] 纹章 烈绝的显现·嘉鲁蜜儿[BP20-T05] 新→ex
+   65 P2 mainPhase 起动 纹章 烈绝的显现·嘉鲁蜜儿[BP20-T05] 能力 0
+   66 P2 selectCards/target 纹章 烈绝的显现·嘉鲁蜜儿[BP20-T05]→烈绝侮蔑·嘉鲁蜜儿[BP15-057] 1
+   67 P2 selectCards/effect 苍炎的暴威[BP20-063] deck→ex
+   68 P2 mainPhase 打出 苍炎的暴威[BP20-063]
+   70 P2 selectCards/target 苍炎的暴威[BP20-063]→烈绝的显现·嘉鲁蜜儿[BP20-056] 1；苍炎的暴威[BP20-063]→出航的罪人·芭芭萝丝[BP19-019] 4；烈绝的显现·嘉鲁蜜儿[BP20-056]→大洋斥候[BP19-030] 2；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；大洋斥候[BP19-030] field→cemetery
+   71 P2 mainPhase 攻击 烈绝的显现·嘉鲁蜜儿[BP20-056] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   72 P1 quick Quick 放过 烈绝的显现·嘉鲁蜜儿[BP20-056]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=17 〔forced〕
+   73 P2 mainPhase 结束主阶段
+
+T10 · 选手 1 回合 · HP 17/11 · PP 5/0
+手牌 艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、奉还的剑闪[BP20-026]、空绝篡夺·欧克托莉斯[BP15-020]、艾巴利缇亚[BP05-034]｜对手手牌 5 张
+场 空 / 烈绝侮蔑·嘉鲁蜜儿[BP15-057] 5/3 伤2、烈绝的显现·嘉鲁蜜儿[BP20-056] 3/2 伤1 横
+EX 黄金短剑[BP15-T01] / 纹章 烈绝的显现·嘉鲁蜜儿[BP20-T05]｜墓 7/9
+   75 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   76 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   77 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 烈绝的显现·嘉鲁蜜儿[BP20-056] 〔fallback〕
+   78 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→烈绝的显现·嘉鲁蜜儿[BP20-056] 4；烈绝的显现·嘉鲁蜜儿[BP20-056]→出航的罪人·芭芭萝丝[BP19-019] 3；烈绝的显现·嘉鲁蜜儿[BP20-056] field→cemetery
+   79 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→第五绝杰·嘉鲁蜜儿[BP10-LD05] 1；P2 -1=10 〔fallback〕
+   80 P1 choose/mode recover 〔authored〕
+   81 P1 mainPhase 打出 黄金短剑[BP15-T01] 黄金短剑[BP15-T01]→烈绝侮蔑·嘉鲁蜜儿[BP15-057] 2；黄金短剑[BP15-T01]→第五绝杰·嘉鲁蜜儿[BP10-LD05] 2；P2 -2=8 〔fallback〕
+   82 P1 choose/mode destroy 烈绝侮蔑·嘉鲁蜜儿[BP15-057] field→cemetery 〔authored〕
+   83 P1 mainPhase 打出 艾巴利缇亚[BP05-034] 〔fallback〕
+   84 P1 selectCards/effect 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   85 P1 orderCards/deckBottom 排序 空绝的崇拜者[BP15-028]、怒涛副船长[BP19-028]、大洋斥候[BP19-030] 〔fallback〕
+   86 P1 mainPhase 结束主阶段 〔forced〕
+
+T11 · 选手 2 回合 · HP 17/8 · PP 0/8
+手牌 奉还的剑闪[BP20-026]、空绝篡夺·欧克托莉斯[BP15-020]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 6 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/1 伤3 横 / 空
+EX 空 / 纹章 烈绝的显现·嘉鲁蜜儿[BP20-T05]｜墓 8/11
+   88 P2 mainPhase 打出 侮蔑的团结者[BP20-062] 侮蔑的团结者[BP20-062]→出航的罪人·芭芭萝丝[BP19-019] 1；侮蔑的团结者[BP20-062]→c247 1；出航的罪人·芭芭萝丝[BP19-019] field→cemetery
+   89 P2 mainPhase 打出 侮蔑的隐者[BP15-072]
+   90 P2 selectCards/target 侮蔑的隐者[BP15-072]→侮蔑的隐者[BP15-072] 1
+   92 P2 mainPhase 打出 侮蔑的团结者[BP20-062] 侮蔑的团结者[BP20-062]→侮蔑的团结者[BP20-062] 1；侮蔑的团结者[BP20-062]→侮蔑的隐者[BP15-072] 1；侮蔑的团结者[BP20-062]→c258 1；侮蔑的隐者[BP15-072] field→cemetery
+   95 P2 mainPhase 打出 侮蔑的隐者[BP15-072]
+   96 P2 selectCards/target 侮蔑的隐者[BP15-072]→侮蔑的隐者[BP15-072] 1
+   98 P2 mainPhase 起动 纹章 烈绝的显现·嘉鲁蜜儿[BP20-T05] 能力 0
+   99 P2 selectCards/target 纹章 烈绝的显现·嘉鲁蜜儿[BP20-T05]→侮蔑的隐者[BP15-072] 1；侮蔑的隐者[BP15-072] field→cemetery
+  101 P2 mainPhase 结束主阶段
+
+T12 · 选手 1 回合 · HP 17/8 · PP 6/0
+手牌 奉还的剑闪[BP20-026]、空绝篡夺·欧克托莉斯[BP15-020]、艾巴利缇亚[BP05-034]、出航的罪人·芭芭萝丝[BP19-019]、海潮炮手[BP19-026]｜对手手牌 6 张
+场 空 / 侮蔑的团结者[BP20-062] 3/2 伤2、侮蔑的团结者[BP20-062] 3/3 伤1
+EX 空 / 纹章 烈绝的显现·嘉鲁蜜儿[BP20-T05]｜墓 9/13
+  103 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+  104 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+  105 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+  106 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→第五绝杰·嘉鲁蜜儿[BP10-LD05] 1；P2 -1=7 〔authored〕
+  107 P1 selectCards/target 第五绝杰·嘉鲁蜜儿[BP10-LD05] 海潮炮手[BP19-026]→第五绝杰·嘉鲁蜜儿[BP10-LD05] 1；P2 -1=6 〔authored〕
+  108 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔authored〕
+  109 P1 selectCards/target 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01]→第五绝杰·嘉鲁蜜儿[BP10-LD05] 1；P2 -1=5 〔authored〕
+  110 P1 selectCards/target 第五绝杰·嘉鲁蜜儿[BP10-LD05] 海潮炮手[BP19-026]→第五绝杰·嘉鲁蜜儿[BP10-LD05] 1；P2 -1=4 〔authored〕
+  111 P1 mainPhase 结束主阶段 〔forced〕
+
+T13 · 选手 2 回合 · HP 17/4 · PP 0/10
+手牌 奉还的剑闪[BP20-026]、空绝篡夺·欧克托莉斯[BP15-020]、艾巴利缇亚[BP05-034]｜对手手牌 7 张
+场 出航的罪人·芭芭萝丝[BP19-019] 3/3、海潮炮手[BP19-026] 4/3 / 侮蔑的团结者[BP20-062] 3/2 伤2、侮蔑的团结者[BP20-062] 3/3 伤1
+EX 空 / 纹章 烈绝的显现·嘉鲁蜜儿[BP20-T05]｜墓 9/13
+  113 P2 mainPhase 打出 侮蔑的炎爪[BP05-058]
+  115 P2 selectCards/target 侮蔑的炎爪[BP05-058]→侮蔑的团结者[BP20-062] 1；侮蔑的炎爪[BP05-058]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026] field→cemetery
+  116 P2 mainPhase 打出 侮蔑绝杰·嘉鲁蜜儿[BP05-052]
+  117 P2 mainPhase 进化 侮蔑绝杰·嘉鲁蜜儿[BP05-052]
+  118 P2 selectCards/target 侮蔑的祈祷者[BP20-064] cemetery→resolution
+  120 P2 selectCards/target 侮蔑的祈祷者[BP20-064]→侮蔑绝杰·嘉鲁蜜儿[BP05-052] 1；P2 +2=6
+  121 P2 selectCards/target 侮蔑绝杰·嘉鲁蜜儿[BP05-053]→出航的罪人·芭芭萝丝[BP19-019] 3；出航的罪人·芭芭萝丝[BP19-019] field→cemetery
+  122 P2 mainPhase 打出 炽火的烈绝[BP15-064]
+  123 P2 selectCards/target 炽火的烈绝[BP15-064]→侮蔑绝杰·嘉鲁蜜儿[BP05-052] 1；炽火的烈绝[BP15-064]→第八绝杰·欧克托莉斯[BP10-LD02] 1；侮蔑绝杰·嘉鲁蜜儿[BP05-053]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -1=16；P1 -3=13
+  124 P2 mainPhase 打出 炽火的烈绝[BP15-064]
+  125 P2 selectCards/target 炽火的烈绝[BP15-064]→侮蔑绝杰·嘉鲁蜜儿[BP05-052] 1；炽火的烈绝[BP15-064]→第八绝杰·欧克托莉斯[BP10-LD02] 1；侮蔑绝杰·嘉鲁蜜儿[BP05-053]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -1=12；P1 -3=9
+  126 P2 mainPhase 攻击 侮蔑的团结者[BP20-062] → 第八绝杰·欧克托莉斯[BP10-LD02]
+  127 P1 quick Quick 放过 侮蔑的团结者[BP20-062]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=6 〔forced〕
+  128 P2 mainPhase 起动 纹章 烈绝的显现·嘉鲁蜜儿[BP20-T05] 能力 0
+  129 P2 selectCards/target 纹章 烈绝的显现·嘉鲁蜜儿[BP20-T05]→侮蔑绝杰·嘉鲁蜜儿[BP05-052] 1；侮蔑绝杰·嘉鲁蜜儿[BP05-053]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=3
+  130 P2 mainPhase 攻击 侮蔑的团结者[BP20-062] → 第八绝杰·欧克托莉斯[BP10-LD02]
+  131 P1 quick Quick 放过 侮蔑的团结者[BP20-062]→第八绝杰·欧克托莉斯[BP10-LD02] 3；P1 -3=0 〔forced〕
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":13}
+生命 0/6
+选手输入 [{"direct":0,"authored":16,"fallback":27,"forced":15},{"direct":0,"authored":10,"fallback":50,"forced":14}]
