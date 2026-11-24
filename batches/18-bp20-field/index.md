@@ -13,6 +13,6 @@
 | 海洋龙 | `d86IcJ` | 20/40 | 2/10 | 1/10 | 3–17–0 | [原表](ocean/deck.json) · [1–10](ocean/checks/001.md) · [11–20](ocean/checks/011.md) |
 | 混融梦 | `8YKXr7` | 20/40 | 5/10 | 6/10 | 11–9–0 | [原表](choice/deck.json) · [1–10](choice/checks/001.md) · [11–20](choice/checks/011.md) |
 | 蝙蝠梦 | `twju4N` | 20/40 | 7/10 | 5/10 | 12–8–0 | [原表](bat/deck.json) · [1–10](bat/checks/001.md) · [11–20](bat/checks/011.md) |
-| 纹章教 | `F5Jnyj` | 10/40 | 2/5 | 4/5 | 6–4–0 | [原表](crest/deck.json) · [1–10](crest/checks/001.md) |
+| 纹章教 | `F5Jnyj` | 20/40 | 3/10 | 5/10 | 8–12–0 | [原表](crest/deck.json) · [1–10](crest/checks/001.md) · [11–20](crest/checks/011.md) |
 
 [对战与牌表锁定说明](README.md) · [协议、原表校验值与强度](protocol.json)
