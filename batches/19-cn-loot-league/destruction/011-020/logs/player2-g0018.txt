@@ -1,0 +1,171 @@
+g0018
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 破坏的祈祷者[BP20-048]、破坏的随从[BP05-048]、破坏绝杰·里榭娜[BP05-037]、奏绝破坏·里榭娜[BP15-039]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 整手重抽 〔authored〕
+    1 P1 mulligan 整手重抽 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 奏绝破坏·里榭娜[BP15-039]、破坏的荒野[BP20-055]、破坏的祈祷者[BP20-048]、破坏的继承者·阿克西雅[BP20-040]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 打出 破坏的荒野[BP20-055] 〔authored〕
+    3 P2 selectCards/effect 破坏的愉悦[BP08-051] 〔authored〕
+    4 P2 mainPhase 结束主阶段 〔fallback〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 奏绝破坏·里榭娜[BP15-039]、破坏的祈祷者[BP20-048]、破坏的继承者·阿克西雅[BP20-040]、破坏的愉悦[BP08-051]｜对手手牌 5 张
+场 空 / 破坏的荒野[BP20-055]
+EX 空 / 空｜墓 0/0
+    6 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+    7 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 奏绝破坏·里榭娜[BP15-039]、破坏的祈祷者[BP20-048]、破坏的继承者·阿克西雅[BP20-040]、破坏的愉悦[BP08-051]、破坏的继承者·阿克西雅[BP20-040]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 / 破坏的荒野[BP20-055]
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    9 P2 mainPhase 打出 破坏的祈祷者[BP20-048] 〔fallback〕
+   10 P2 mainPhase 结束主阶段 〔fallback〕
+
+T4 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 奏绝破坏·里榭娜[BP15-039]、破坏的继承者·阿克西雅[BP20-040]、破坏的愉悦[BP08-051]、破坏的继承者·阿克西雅[BP20-040]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 破坏的荒野[BP20-055]、破坏的祈祷者[BP20-048] 2/3
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+   12 P1 mainPhase 打出 涸绝饥饿·吉鲁涅莉婕[BP15-113]
+   13 P1 mainPhase 进化 涸绝饥饿·吉鲁涅莉婕[BP15-113]（EP）
+   14 P1 choose/mode 涸绝的甘露[BP15-PR18] 新→ex
+   15 P1 mainPhase 攻击 大洋斥候[BP19-030] → 第二绝杰·里榭娜[BP10-LD04]
+   16 P2 quick Quick 放过 大洋斥候[BP19-030]→第二绝杰·里榭娜[BP10-LD04] 2；P2 -2=18 〔forced〕
+   17 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 20/18 · PP 0/3
+手牌 奏绝破坏·里榭娜[BP15-039]、破坏的继承者·阿克西雅[BP20-040]、破坏的愉悦[BP08-051]、破坏的继承者·阿克西雅[BP20-040]、奏绝的显现·里榭娜[BP20-037]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 横、涸绝饥饿·吉鲁涅莉婕[BP15-113] 3/3 / 破坏的荒野[BP20-055]、破坏的祈祷者[BP20-048] 2/3
+EX 战栗的海贼旗[BP19-T01]、涸绝的甘露[BP15-PR18] / 空｜墓 0/0
+   19 P2 mainPhase 打出 奏绝破坏·里榭娜[BP15-039] 奏绝的独唱[BP15-PR12] 新→ex 〔fallback〕
+   20 P2 mainPhase 攻击 破坏的祈祷者[BP20-048] → 大洋斥候[BP19-030] 〔fallback〕
+   21 P1 quick Quick 放过 破坏的祈祷者[BP20-048]→大洋斥候[BP19-030] 2；大洋斥候[BP19-030]→破坏的祈祷者[BP20-048] 2；大洋斥候[BP19-030] field→cemetery
+   22 P2 mainPhase 打出 奏绝的独唱[BP15-PR12] 〔fallback〕
+   23 P2 selectCards/pick 破坏的荒野[BP20-055]、奏绝破坏·里榭娜[BP15-039] 奏绝的独唱[BP15-PR12]→涸绝饥饿·吉鲁涅莉婕[BP15-113] 4；涸绝饥饿·吉鲁涅莉婕[BP15-113] field→cemetery 〔authored〕
+   24 P2 mainPhase 打出 破坏的愉悦[BP08-051] 〔fallback〕
+   25 P2 mainPhase 进化 奏绝破坏·里榭娜[BP15-039] 〔fallback〕
+   26 P2 selectCards/effect 歼灭的歌声[BP20-045]、破坏的继承者·阿克西雅[BP20-040] 歼灭的歌声[BP20-045] deck→ex；破坏的继承者·阿克西雅[BP20-040] deck→ex 〔authored〕
+   27 P2 orderCards/deckBottom 排序 破坏的狂信者[BP08-050]、重返的奏绝[BP15-045] 〔fallback〕
+   28 P2 mainPhase 结束主阶段 〔fallback〕
+
+T6 · 选手 1 回合 · HP 20/18 · PP 3/0
+手牌 破坏的继承者·阿克西雅[BP20-040]、破坏的继承者·阿克西雅[BP20-040]、奏绝的显现·里榭娜[BP20-037]｜对手手牌 5 张
+场 空 / 破坏的荒野[BP20-055]、破坏的祈祷者[BP20-048] 2/1 伤2 横、奏绝破坏·里榭娜[BP15-039] 4/4 横
+EX 战栗的海贼旗[BP19-T01]、涸绝的甘露[BP15-PR18] / 歼灭的歌声[BP20-045]、破坏的继承者·阿克西雅[BP20-040]｜墓 2/1
+   30 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018]
+   31 P1 mainPhase 进化 篡夺绝杰·欧克托莉斯[BP05-018]（EP）
+   32 P1 selectCards/target 白之章·黑之章[BP05-045] cemetery→ex
+   33 P1 mainPhase 攻击 篡夺绝杰·欧克托莉斯[BP05-018] → 破坏的祈祷者[BP20-048]
+   34 P2 quick Quick 放过 篡夺绝杰·欧克托莉斯[BP05-018]→破坏的祈祷者[BP20-048] 4；破坏的祈祷者[BP20-048]→篡夺绝杰·欧克托莉斯[BP05-018] 2；破坏的祈祷者[BP20-048] field→cemetery 〔forced〕
+   35 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 20/18 · PP 0/4
+手牌 破坏的继承者·阿克西雅[BP20-040]、破坏的继承者·阿克西雅[BP20-040]、奏绝的显现·里榭娜[BP20-037]、奏绝的崇拜者[BP15-049]｜对手手牌 4 张
+场 篡夺绝杰·欧克托莉斯[BP05-018] 4/2 伤2 横 / 破坏的荒野[BP20-055]、奏绝破坏·里榭娜[BP15-039] 4/4
+EX 战栗的海贼旗[BP19-T01]、涸绝的甘露[BP15-PR18]、白之章·黑之章[BP05-045] / 歼灭的歌声[BP20-045]、破坏的继承者·阿克西雅[BP20-040]｜墓 2/3
+   37 P2 mainPhase 攻击 奏绝破坏·里榭娜[BP15-039] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   38 P1 quick Quick 放过 奏绝破坏·里榭娜[BP15-039]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=16
+   39 P2 mainPhase 打出 破坏的继承者·阿克西雅[BP20-040] 〔fallback〕
+   40 P2 mainPhase 进化 破坏的继承者·阿克西雅[BP20-040] 〔fallback〕
+   41 P2 confirm/optionalCost 拒绝 〔fallback〕
+   42 P2 mainPhase 打出 歼灭的歌声[BP20-045] 〔fallback〕
+   43 P2 choose/mode psalm 破坏的继承者·阿克西雅[BP20-041]→篡夺绝杰·欧克托莉斯[BP05-018] 2；篡夺绝杰·欧克托莉斯[BP05-018] field→cemetery 〔fallback〕
+   44 P2 mainPhase 结束主阶段 〔fallback〕
+
+T8 · 选手 1 回合 · HP 16/18 · PP 4/0
+手牌 破坏的继承者·阿克西雅[BP20-040]、破坏的继承者·阿克西雅[BP20-040]、奏绝的显现·里榭娜[BP20-037]、奏绝的崇拜者[BP15-049]｜对手手牌 5 张
+场 空 / 破坏的荒野[BP20-055]、奏绝破坏·里榭娜[BP15-039] 4/4 横、破坏的继承者·阿克西雅[BP20-040] 3/3、新约·白之章[BP20-T03]
+EX 战栗的海贼旗[BP19-T01]、涸绝的甘露[BP15-PR18]、白之章·黑之章[BP05-045] / 空｜墓 3/4
+   46 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   47 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   48 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=17
+   50 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex
+   51 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   52 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=16
+   54 P1 selectCards/target 破坏的继承者·阿克西雅[BP20-040] field→cemetery
+   55 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 奏绝破坏·里榭娜[BP15-039]
+   56 P2 quick Quick 放过 强袭盗贼[BP15-035]→奏绝破坏·里榭娜[BP15-039] 3；奏绝破坏·里榭娜[BP15-039]→强袭盗贼[BP15-035] 4；强袭盗贼[BP15-035] field→cemetery 〔forced〕
+   57 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 奏绝破坏·里榭娜[BP15-039]
+   58 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→奏绝破坏·里榭娜[BP15-039] 6；奏绝破坏·里榭娜[BP15-039]→出航的罪人·芭芭萝丝[BP19-019] 4；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；奏绝破坏·里榭娜[BP15-039] field→cemetery 〔forced〕
+   59 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 16/16 · PP 0/5
+手牌 破坏的继承者·阿克西雅[BP20-040]、破坏的继承者·阿克西雅[BP20-040]、奏绝的显现·里榭娜[BP20-037]、奏绝的崇拜者[BP15-049]、破坏的荒野[BP20-055]｜对手手牌 3 张
+场 空 / 破坏的荒野[BP20-055]、新约·白之章[BP20-T03]
+EX 涸绝的甘露[BP15-PR18]、白之章·黑之章[BP05-045]、黄金短剑[BP15-T01] / 空｜墓 5/7
+   61 P2 mainPhase 打出 破坏的继承者·阿克西雅[BP20-040] 〔fallback〕
+   62 P2 mainPhase 起动 新约·白之章[BP20-T03] 能力 1 P2 +1=17；新约·白之章[BP20-T03] field→cemetery 〔fallback〕
+   63 P2 mainPhase 打出 奏绝的崇拜者[BP15-049] 〔fallback〕
+   64 P2 selectCards/effect 重返的奏绝[BP15-045] 〔authored〕
+   65 P2 orderCards/deckBottom 排序 破坏的隐者[BP15-054]、破坏的荒野[BP20-055] 〔fallback〕
+   66 P2 mainPhase 进化 破坏的继承者·阿克西雅[BP20-040] 〔fallback〕
+   67 P2 confirm/optionalCost 确认 〔fallback〕
+   68 P2 selectCards/pick 新约·黑之章[BP20-T04] 新约·黑之章[BP20-T04] field→cemetery 〔fallback〕
+   69 P2 selectCards/search 奏绝破坏·里榭娜[BP15-039] 新约·黑之章[BP20-T04]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=15 〔authored〕
+   70 P2 mainPhase 结束主阶段 〔fallback〕
+
+T10 · 选手 1 回合 · HP 15/17 · PP 5/0
+手牌 破坏的继承者·阿克西雅[BP20-040]、奏绝的显现·里榭娜[BP20-037]、破坏的荒野[BP20-055]、重返的奏绝[BP15-045]、奏绝破坏·里榭娜[BP15-039]｜对手手牌 4 张
+场 空 / 破坏的荒野[BP20-055]、破坏的继承者·阿克西雅[BP20-040] 3/3 横、奏绝的崇拜者[BP15-049] 2/3、新约·白之章[BP20-T03]
+EX 涸绝的甘露[BP15-PR18]、白之章·黑之章[BP05-045]、黄金短剑[BP15-T01] / 空｜墓 5/7
+   72 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   73 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]
+   74 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=16
+   76 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 破坏的继承者·阿克西雅[BP20-040]
+   77 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→破坏的继承者·阿克西雅[BP20-040] 5；破坏的继承者·阿克西雅[BP20-040]→出航的罪人·芭芭萝丝[BP19-019] 3；破坏的继承者·阿克西雅[BP20-040] field→cemetery 〔forced〕
+   78 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   79 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   80 P1 selectCards/target 战栗的海贼旗[BP19-T01]→第二绝杰·里榭娜[BP10-LD04] 1；P2 -1=15
+   82 P1 mainPhase 结束主阶段
+
+T11 · 选手 2 回合 · HP 15/15 · PP 0/6
+手牌 破坏的继承者·阿克西雅[BP20-040]、奏绝的显现·里榭娜[BP20-037]、破坏的荒野[BP20-055]、重返的奏绝[BP15-045]、奏绝破坏·里榭娜[BP15-039]、破坏的荒野[BP20-055]｜对手手牌 2 张
+场 出航的罪人·芭芭萝丝[BP19-019] 5/1 伤3 横、怒涛副船长[BP19-028] 3/2 / 破坏的荒野[BP20-055]、奏绝的崇拜者[BP15-049] 2/3、新约·白之章[BP20-T03]
+EX 涸绝的甘露[BP15-PR18]、白之章·黑之章[BP05-045]、黄金短剑[BP15-T01] / 空｜墓 5/10
+   84 P2 mainPhase 打出 奏绝破坏·里榭娜[BP15-039] 奏绝的独唱[BP15-PR12] 新→ex 〔fallback〕
+   85 P2 mainPhase 打出 奏绝的独唱[BP15-PR12] 〔authored〕
+   86 P2 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   87 P2 selectCards/pick 破坏的荒野[BP20-055] 奏绝的独唱[BP15-PR12]→出航的罪人·芭芭萝丝[BP19-019] 2；出航的罪人·芭芭萝丝[BP19-019] field→cemetery 〔authored〕
+   88 P2 mainPhase 打出 破坏的继承者·阿克西雅[BP20-040] 〔fallback〕
+   89 P2 mainPhase 攻击 奏绝的崇拜者[BP15-049] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   90 P1 quick Quick 放过 奏绝的崇拜者[BP15-049]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=13
+   91 P2 mainPhase 进化 奏绝破坏·里榭娜[BP15-039] 〔fallback〕
+   92 P2 selectCards/effect 破坏的狂信者[BP08-050]、重返的奏绝[BP15-045] 破坏的狂信者[BP08-050] deck→ex；重返的奏绝[BP15-045] deck→ex 〔authored〕
+   93 P2 orderCards/deckBottom 排序 破坏的祈祷者[BP20-048]、歼灭的歌声[BP20-045] 〔fallback〕
+   94 P2 mainPhase 起动 新约·白之章[BP20-T03] 能力 1 P2 +1=16；新约·白之章[BP20-T03] field→cemetery 〔fallback〕
+   95 P2 mainPhase 结束主阶段 〔fallback〕
+
+T12 · 选手 1 回合 · HP 13/16 · PP 6/0
+手牌 奏绝的显现·里榭娜[BP20-037]、破坏的荒野[BP20-055]、重返的奏绝[BP15-045]、破坏的荒野[BP20-055]｜对手手牌 3 张
+场 怒涛副船长[BP19-028] 3/2 / 破坏的荒野[BP20-055]、奏绝的崇拜者[BP15-049] 2/3 横、奏绝破坏·里榭娜[BP15-039] 4/4 横、破坏的继承者·阿克西雅[BP20-040] 2/2 横、新约·黑之章[BP20-T04]
+EX 涸绝的甘露[BP15-PR18]、白之章·黑之章[BP05-045]、黄金短剑[BP15-T01] / 破坏的狂信者[BP08-050]、重返的奏绝[BP15-045]｜墓 6/10
+   97 P1 mainPhase 打出 涸绝的甘露[BP15-PR18] 涸绝的甘露[BP15-PR18]→第二绝杰·里榭娜[BP10-LD04] 2；P2 -2=14；P1 +2=15
+   98 P1 mainPhase 超进化 怒涛副船长[BP19-028]
+  100 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 第二绝杰·里榭娜[BP10-LD04]
+  101 P2 quick Quick 放过 怒涛副船长[BP19-028]→第二绝杰·里榭娜[BP10-LD04] 5；P2 -5=9 〔forced〕
+  102 P1 mainPhase 结束主阶段
+
+T13 · 选手 2 回合 · HP 15/9 · PP 0/7
+手牌 重返的奏绝[BP15-045]、破坏的荒野[BP20-055]、被赋生的兽人·纱妃拉[BP05-040]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 5/4 横 / 破坏的荒野[BP20-055]、奏绝的崇拜者[BP15-049] 2/3、奏绝破坏·里榭娜[BP15-039] 4/4、破坏的继承者·阿克西雅[BP20-040] 2/2、新约·黑之章[BP20-T04]
+EX 白之章·黑之章[BP05-045]、黄金短剑[BP15-T01] / 破坏的狂信者[BP08-050]、重返的奏绝[BP15-045]｜墓 6/12
+  104 P2 mainPhase 超进化 破坏的继承者·阿克西雅[BP20-040] 〔fallback〕
+  105 P2 selectPending p286 破坏的继承者·阿克西雅[BP20-041]→第八绝杰·欧克托莉斯[BP10-LD02] 5；P1 -5=10 〔fallback〕
+  106 P2 confirm/optionalCost 拒绝 〔fallback〕
+  107 P2 mainPhase 攻击 奏绝破坏·里榭娜[BP15-039] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+  108 P1 quick Quick 放过 奏绝破坏·里榭娜[BP15-039]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=6
+  109 P2 mainPhase 攻击 破坏的继承者·阿克西雅[BP20-040] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+  110 P1 quick Quick 放过 破坏的继承者·阿克西雅[BP20-040]→第八绝杰·欧克托莉斯[BP10-LD02] 4；P1 -4=2
+  111 P2 mainPhase 攻击 奏绝的崇拜者[BP15-049] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+  112 P1 quick Quick 放过 奏绝的崇拜者[BP15-049]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=0
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":13}
+生命 0/9
+选手输入 [{"direct":0,"authored":13,"fallback":21,"forced":18},{"direct":0,"authored":14,"fallback":35,"forced":12}]
