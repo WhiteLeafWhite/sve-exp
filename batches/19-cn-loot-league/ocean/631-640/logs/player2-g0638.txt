@@ -1,0 +1,201 @@
+g0638
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 献身的水龙[BP14-067]、碧沫人鱼[BP07-059]、苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 保留 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 献身的水龙[BP14-067]、碧沫人鱼[BP07-059]、苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/1
+手牌 献身的水龙[BP14-067]、碧沫人鱼[BP07-059]、苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    4 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+    5 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 献身的水龙[BP14-067]、碧沫人鱼[BP07-059]、苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]、鲨鱼战士[BP17-067]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    7 P2 mainPhase 打出 献身的水龙[BP14-067] 〔fallback〕
+    8 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+    9 P2 mainPhase 结束主阶段 〔forced〕
+   10 P2 selectCards/wardEngage 献身的水龙[BP14-067] 〔authored〕
+
+T4 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 碧沫人鱼[BP07-059]、苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]、鲨鱼战士[BP17-067]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 献身的水龙[BP14-067] 2/3 横
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+   12 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=19
+   13 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex
+   14 P1 mainPhase 攻击 大洋斥候[BP19-030] → 献身的水龙[BP14-067]
+   15 P2 quick Quick 放过 大洋斥候[BP19-030]→献身的水龙[BP14-067] 3；献身的水龙[BP14-067]→大洋斥候[BP19-030] 2；大洋斥候[BP19-030] field→cemetery；献身的水龙[BP14-067] field→cemetery 〔forced〕
+   16 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 20/19 · PP 0/3
+手牌 碧沫人鱼[BP07-059]、苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]、鲨鱼战士[BP17-067]、碧沫人鱼[BP07-059]｜对手手牌 4 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/1
+   18 P2 mainPhase 打出 鲨鱼战士[BP17-067] 〔fallback〕
+   19 P2 mainPhase 进化 鲨鱼战士[BP17-067] 鲨鱼战士[BP17-068]→大洋斥候[BP19-030] 2；大洋斥候[BP19-030] field→cemetery 〔fallback〕
+   20 P2 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 1 回合 · HP 20/19 · PP 3/0
+手牌 碧沫人鱼[BP07-059]、苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]、碧沫人鱼[BP07-059]｜对手手牌 5 张
+场 空 / 鲨鱼战士[BP17-067] 3/3
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 2/1
+   22 P1 mainPhase 起动 奉还的剑闪[BP20-026] 能力 1 奉还的剑闪[BP20-026] hand→ex
+   23 P1 mainPhase 打出 奉还的剑闪[BP20-026] 奉还的剑闪[BP20-026]→鲨鱼战士[BP17-067] 4；鲨鱼战士[BP17-067] field→cemetery
+   24 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   25 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 20/19 · PP 0/4
+手牌 碧沫人鱼[BP07-059]、苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]、碧沫人鱼[BP07-059]、身经百战的鱼人[BP19-067]｜对手手牌 3 张
+场 海潮炮手[BP19-026] 2/3 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 3/2
+   27 P2 mainPhase 打出 身经百战的鱼人[BP19-067] 身经百战的鱼人[BP19-067] deck→ex 〔fallback〕
+   28 P2 mainPhase 结束主阶段 〔fallback〕
+
+T8 · 选手 1 回合 · HP 20/19 · PP 4/0
+手牌 碧沫人鱼[BP07-059]、苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]、碧沫人鱼[BP07-059]｜对手手牌 4 张
+场 海潮炮手[BP19-026] 2/3 / 身经百战的鱼人[BP19-067] 3/3、虎鲸[BP02-T05] 2/2、虎鲸[BP02-T05] 2/2
+EX 战栗的海贼旗[BP19-T01] / 身经百战的鱼人[BP19-067]｜墓 3/2
+   30 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   31 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   32 P1 mainPhase 攻击 海潮炮手[BP19-026] → 不融银冰·菲琳[BP20-LD04]
+   33 P2 quick Quick 放过 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 2；P2 -2=17 〔forced〕
+   34 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   35 P1 selectCards/target 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=16
+   38 P1 selectCards/target 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=15
+   39 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   40 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   41 P1 selectCards/target 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=14
+   44 P1 selectCards/target 身经百战的鱼人[BP19-067] field→cemetery
+   45 P1 selectCards/target 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=13
+   46 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   47 P1 selectCards/target 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=12
+   49 P1 selectCards/target 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=11
+   50 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 20/11 · PP 0/5
+手牌 碧沫人鱼[BP07-059]、苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]、碧沫人鱼[BP07-059]、鲨鱼战士[BP17-067]｜对手手牌 2 张
+场 海潮炮手[BP19-026] 2/3 横、出航的罪人·芭芭萝丝[BP19-019] 7/4、怒涛副船长[BP19-028] 2/2 / 虎鲸[BP02-T05] 2/2、虎鲸[BP02-T05] 2/2
+EX 空 / 身经百战的鱼人[BP19-067]｜墓 3/5
+   52 P2 mainPhase 打出 身经百战的鱼人[BP19-067] 永恒巨鲸[BP10-062] deck→ex 〔fallback〕
+   53 P2 mainPhase 攻击 虎鲸[BP02-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   54 P1 quick Quick 放过 虎鲸[BP02-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18
+   55 P2 mainPhase 攻击 虎鲸[BP02-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   56 P1 quick Quick 放过 虎鲸[BP02-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=16
+   57 P2 mainPhase 攻击 虎鲸[BP02-T05] → 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   58 P1 quick Quick 放过 虎鲸[BP02-T05]→出航的罪人·芭芭萝丝[BP19-019] 2；出航的罪人·芭芭萝丝[BP19-019]→虎鲸[BP02-T05] 7；虎鲸[BP02-T05] field→cemetery
+   59 P2 mainPhase 攻击 虎鲸[BP02-T05] → 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   60 P1 quick Quick 放过 虎鲸[BP02-T05]→出航的罪人·芭芭萝丝[BP19-019] 2；出航的罪人·芭芭萝丝[BP19-019]→虎鲸[BP02-T05] 7；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；虎鲸[BP02-T05] field→cemetery
+   61 P2 mainPhase 结束主阶段 〔forced〕
+
+T10 · 选手 1 回合 · HP 16/11 · PP 5/1
+手牌 碧沫人鱼[BP07-059]、苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]、碧沫人鱼[BP07-059]、鲨鱼战士[BP17-067]｜对手手牌 3 张
+场 海潮炮手[BP19-026] 2/3、怒涛副船长[BP19-028] 2/2 / 虎鲸[BP02-T05] 2/2 横、虎鲸[BP02-T05] 2/2 横、身经百战的鱼人[BP19-067] 3/3
+EX 空 / 永恒巨鲸[BP10-062]｜墓 4/5
+   63 P1 mainPhase 进化 怒涛副船长[BP19-028]
+   65 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   66 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   67 P1 selectCards/target 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=10
+   68 P1 selectCards/target 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=9
+   69 P1 mainPhase 攻击 海潮炮手[BP19-026] → 不融银冰·菲琳[BP20-LD04]
+   70 P2 quick Quick 放过 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 3；P2 -3=6 〔forced〕
+   71 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 不融银冰·菲琳[BP20-LD04]
+   72 P2 quick Quick 放过 怒涛副船长[BP19-028]→不融银冰·菲琳[BP20-LD04] 3；P2 -3=3 〔forced〕
+   73 P1 mainPhase 结束主阶段
+
+T11 · 选手 2 回合 · HP 16/3 · PP 0/6
+手牌 碧沫人鱼[BP07-059]、苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]、碧沫人鱼[BP07-059]、鲨鱼战士[BP17-067]、龙之启示[SD04-002]｜对手手牌 3 张
+场 海潮炮手[BP19-026] 3/3 横、怒涛副船长[BP19-028] 3/3 横、出航的罪人·芭芭萝丝[BP19-019] 3/3 / 虎鲸[BP02-T05] 2/2、虎鲸[BP02-T05] 2/2、身经百战的鱼人[BP19-067] 3/3
+EX 空 / 永恒巨鲸[BP10-062]｜墓 4/5
+   75 P2 mainPhase 打出 永恒巨鲸[BP10-062] 〔fallback〕
+   76 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   77 P2 mainPhase 打出 碧沫人鱼[BP07-059] P2 +5=8 〔fallback〕
+   78 P2 mainPhase 攻击 身经百战的鱼人[BP19-067] → 海潮炮手[BP19-026] 〔fallback〕
+   79 P1 quick Quick 放过 身经百战的鱼人[BP19-067]→海潮炮手[BP19-026] 3；海潮炮手[BP19-026]→身经百战的鱼人[BP19-067] 3；海潮炮手[BP19-026] field→cemetery；身经百战的鱼人[BP19-067] field→cemetery
+   80 P2 mainPhase 打出 碧沫人鱼[BP07-059] P2 +5=13 〔fallback〕
+   81 P2 mainPhase 攻击 虎鲸[BP02-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   82 P1 quick Quick 放过 虎鲸[BP02-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=14
+   83 P2 mainPhase 攻击 虎鲸[BP02-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   84 P1 quick Quick 放过 虎鲸[BP02-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=12
+   85 P2 mainPhase 结束主阶段 〔forced〕
+   86 P2 selectCards/wardEngage 永恒巨鲸[BP10-062] 〔authored〕
+
+T12 · 选手 1 回合 · HP 12/13 · PP 6/1
+手牌 苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]、鲨鱼战士[BP17-067]、龙之启示[SD04-002]｜对手手牌 4 张
+场 怒涛副船长[BP19-028] 3/3、出航的罪人·芭芭萝丝[BP19-019] 3/3 / 虎鲸[BP02-T05] 2/2 横、虎鲸[BP02-T05] 2/2 横、永恒巨鲸[BP10-062] 5/6 横、碧沫人鱼[BP07-059] 2/3、碧沫人鱼[BP07-059] 2/3
+EX 空 / 空｜墓 5/6
+   88 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 永恒巨鲸[BP10-062]
+   89 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→永恒巨鲸[BP10-062] 3；永恒巨鲸[BP10-062]→出航的罪人·芭芭萝丝[BP19-019] 5；出航的罪人·芭芭萝丝[BP19-019] field→cemetery 〔forced〕
+   90 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 永恒巨鲸[BP10-062]
+   91 P2 quick Quick 放过 怒涛副船长[BP19-028]→永恒巨鲸[BP10-062] 3；永恒巨鲸[BP10-062]→怒涛副船长[BP19-028] 5；永恒巨鲸[BP10-062]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=10；怒涛副船长[BP19-028] field→cemetery；永恒巨鲸[BP10-062] field→cemetery 〔forced〕
+   92 P2 choose/effect second 〔fallback〕
+   93 P1 mainPhase 打出 空绝的崇拜者[BP15-028]
+   94 P1 mainPhase 进化 空绝的崇拜者[BP15-028]（EP） 黄金短剑[BP15-T01] 新→ex
+   95 P1 mainPhase 攻击 空绝的崇拜者[BP15-028] → 虎鲸[BP02-T05]
+   96 P2 quick Quick 放过 空绝的崇拜者[BP15-028]→虎鲸[BP02-T05] 3；虎鲸[BP02-T05]→空绝的崇拜者[BP15-028] 2；虎鲸[BP02-T05] field→cemetery 〔forced〕
+   97 P1 mainPhase 打出 黄金短剑[BP15-T01]
+   98 P1 selectCards/target 黄金短剑[BP15-T01]→虎鲸[BP02-T05] 2；虎鲸[BP02-T05] field→cemetery；黄金之靴[BP15-T03] 新→ex
+   99 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+  100 P1 mainPhase 结束主阶段
+
+T13 · 选手 2 回合 · HP 10/13 · PP 0/7
+手牌 苍海的制裁·尼普顿[BP19-062]、浮华美人鱼[BP20-060]、鲨鱼战士[BP17-067]、龙之启示[SD04-002]、虎鲸的呼声[BP19-073]｜对手手牌 2 张
+场 空绝的崇拜者[BP15-028] 3/1 伤2 横、海潮炮手[BP19-026] 2/3 / 碧沫人鱼[BP07-059] 2/3、碧沫人鱼[BP07-059] 2/3
+EX 黄金之靴[BP15-T03]、战栗的海贼旗[BP19-T01] / 空｜墓 7/6
+  102 P2 mainPhase 打出 苍海的制裁·尼普顿[BP19-062] P2 +1=14；虎鲸[BP02-T05] 新→ex 〔fallback〕
+  103 P2 mainPhase 起动 苍海的制裁·尼普顿[BP19-062] 能力 2 〔authored〕
+  104 P2 mainPhase 攻击 虎鲸[BP02-T05] → 空绝的崇拜者[BP15-028] 〔fallback〕
+  105 P1 quick Quick 放过 虎鲸[BP02-T05]→空绝的崇拜者[BP15-028] 2；空绝的崇拜者[BP15-028]→虎鲸[BP02-T05] 3；空绝的崇拜者[BP15-028] field→cemetery；虎鲸[BP02-T05] field→cemetery
+  106 P2 mainPhase 打出 虎鲸的呼声[BP19-073] 〔fallback〕
+  107 P2 selectPending p255 P2 +1=15；P2 +1=16 〔fallback〕
+  108 P2 mainPhase 攻击 碧沫人鱼[BP07-059] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+  109 P1 quick Quick 放过 碧沫人鱼[BP07-059]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=8
+  110 P2 mainPhase 攻击 碧沫人鱼[BP07-059] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+  111 P1 quick Quick 放过 碧沫人鱼[BP07-059]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=6
+  112 P2 mainPhase 攻击 虎鲸[BP02-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+  113 P1 quick Quick 放过 虎鲸[BP02-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=4
+  114 P2 mainPhase 攻击 虎鲸[BP02-T05] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+  115 P1 quick Quick 放过 虎鲸[BP02-T05]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=2
+  116 P2 mainPhase 打出 龙之启示[SD04-002] 〔fallback〕
+  117 P2 choose/mode 2 〔fallback〕
+  118 P2 mainPhase 结束主阶段 〔forced〕
+
+T14 · 选手 1 回合 · HP 2/16 · PP 7/0
+手牌 浮华美人鱼[BP20-060]、鲨鱼战士[BP17-067]、永恒巨鲸[BP10-062]、苍海的制裁·尼普顿[BP19-062]｜对手手牌 3 张
+场 海潮炮手[BP19-026] 2/3 / 碧沫人鱼[BP07-059] 2/3 横、碧沫人鱼[BP07-059] 2/3 横、苍海的制裁·尼普顿[BP19-062] 3/4、虎鲸[BP02-T05] 2/2 横、虎鲸[BP02-T05] 2/2 横
+EX 黄金之靴[BP15-T03]、战栗的海贼旗[BP19-T01] / 虎鲸[BP02-T05]｜墓 8/8
+  120 P1 mainPhase 打出 奉还的剑闪[BP20-026]
+  121 P1 selectCards/target 奉还的剑闪[BP20-026]→苍海的制裁·尼普顿[BP19-062] 4；苍海的制裁·尼普顿[BP19-062] field→cemetery
+  122 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=15
+  123 P1 selectCards/target 海潮炮手[BP19-026]→不融银冰·菲琳[BP20-LD04] 1；P2 -1=14
+  124 P1 mainPhase 攻击 海潮炮手[BP19-026] → 碧沫人鱼[BP07-059]
+  125 P2 quick Quick 放过 海潮炮手[BP19-026]→碧沫人鱼[BP07-059] 3；碧沫人鱼[BP07-059]→海潮炮手[BP19-026] 2；碧沫人鱼[BP07-059] field→cemetery 〔forced〕
+  126 P1 mainPhase 打出 艾巴利缇亚[BP05-034]
+  129 P1 mainPhase 打出 精炼的空绝[BP15-026]
+  130 P1 selectCards/target 精炼的空绝[BP15-026]→虎鲸[BP02-T05] 2；黄金之杯[BP15-T02] 新→ex；虎鲸[BP02-T05] field→cemetery
+  131 P1 mainPhase 打出 艾巴利缇亚[BP05-034]
+  134 P1 mainPhase 打出 精炼的空绝[BP15-026]
+  135 P1 selectCards/target 精炼的空绝[BP15-026]→虎鲸[BP02-T05] 2；黄金之杯[BP15-T02] 新→ex；虎鲸[BP02-T05] field→cemetery
+  136 P1 mainPhase 结束主阶段
+
+T15 · 选手 2 回合 · HP 2/14 · PP 0/8
+手牌 浮华美人鱼[BP20-060]、鲨鱼战士[BP17-067]、永恒巨鲸[BP10-062]、苍海的制裁·尼普顿[BP19-062]、身经百战的鱼人[BP19-067]｜对手手牌 0 张
+场 海潮炮手[BP19-026] 3/1 伤2 横 / 碧沫人鱼[BP07-059] 2/3
+EX 黄金之靴[BP15-T03]、黄金之杯[BP15-T02]、黄金之杯[BP15-T02] / 虎鲸[BP02-T05]｜墓 13/10
+  138 P2 mainPhase 攻击 碧沫人鱼[BP07-059] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔authored〕
+  139 P1 quick Quick 放过 碧沫人鱼[BP07-059]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=0
+
+结果 {"result":{"winner":1,"losses":[{"player":0,"reason":"leaderDefense"}]},"turn":15}
+生命 0/14
+选手输入 [{"direct":0,"authored":22,"fallback":36,"forced":27},{"direct":0,"authored":5,"fallback":29,"forced":21}]
