@@ -1,0 +1,121 @@
+g0429
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 大洋斥候[BP19-030]、篡夺绝杰·欧克托莉斯[BP05-018]、海潮炮手[BP19-026]、篡夺的随从[BP05-029]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P1 mulligan 保留 〔authored〕
+    1 P2 mulligan 整手重抽 P1 0=20；P2 0=20
+
+T1 · 选手 1 回合 · HP 20/20 · PP 1/0
+手牌 大洋斥候[BP19-030]、篡夺绝杰·欧克托莉斯[BP05-018]、海潮炮手[BP19-026]、篡夺的随从[BP05-029]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P1 mainPhase 打出 大洋斥候[BP19-030] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+    3 P1 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、海潮炮手[BP19-026]、篡夺的随从[BP05-029]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/0
+    5 P2 mainPhase 打出 虚伪的术式[BP20-049]
+    9 P2 mainPhase 结束主阶段
+
+T3 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、海潮炮手[BP19-026]、篡夺的随从[BP05-029]、怒涛副船长[BP19-028]｜对手手牌 5 张
+场 大洋斥候[BP19-030] 2/2 / 空
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 0/1
+   11 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   12 P1 mainPhase 攻击 大洋斥候[BP19-030] → 愚昧的贤者·琳库露[BP15-PR03] 〔fallback〕
+   13 P2 quick Quick 放过 大洋斥候[BP19-030]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=18
+   14 P1 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 2 回合 · HP 20/18 · PP 0/2
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、篡夺的随从[BP05-029]、怒涛副船长[BP19-028]｜对手手牌 6 张
+场 大洋斥候[BP19-030] 2/2 横、海潮炮手[BP19-026] 2/3 / 空
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 0/1
+   16 P2 mainPhase 打出 真实的继承者·薇赫里雅[BP20-038]
+   17 P2 mainPhase 进化 真实的继承者·薇赫里雅[BP20-038]（EP）
+   18 P2 selectCards/target 海潮炮手[BP19-026] field→cemetery
+   19 P2 mainPhase 结束主阶段
+
+T5 · 选手 1 回合 · HP 20/18 · PP 3/0
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、篡夺的随从[BP05-029]、怒涛副船长[BP19-028]、篡夺的随从[BP05-029]｜对手手牌 6 张
+场 大洋斥候[BP19-030] 2/2 / 真实的继承者·薇赫里雅[BP20-038] 1/3
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01] / 空｜墓 1/1
+   21 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=17 〔fallback〕
+   22 P1 mainPhase 攻击 大洋斥候[BP19-030] → 愚昧的贤者·琳库露[BP15-PR03] 〔fallback〕
+   23 P2 quick Quick 放过 大洋斥候[BP19-030]→愚昧的贤者·琳库露[BP15-PR03] 3；P2 -3=14
+   24 P1 mainPhase 打出 篡夺的随从[BP05-029] 〔fallback〕
+   25 P1 mainPhase 打出 篡夺的随从[BP05-029] 〔fallback〕
+   26 P1 selectPending p157 〔fallback〕
+   27 P1 mainPhase 结束主阶段 〔forced〕
+
+T6 · 选手 2 回合 · HP 20/14 · PP 0/3
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、怒涛副船长[BP19-028]｜对手手牌 7 张
+场 大洋斥候[BP19-030] 3/2 横、篡夺的随从[BP05-029] 3/2、篡夺的随从[BP05-029] 2/2 / 真实的继承者·薇赫里雅[BP20-038] 1/3
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/3
+   29 P2 mainPhase 打出 真实的继承者·薇赫里雅[BP20-038]
+   30 P2 mainPhase 进化 真实的继承者·薇赫里雅[BP20-038]（EP）
+   31 P2 selectCards/target 大洋斥候[BP19-030] field→cemetery
+   32 P2 mainPhase 起动 绝尽的显现·莱欧[BP20-042] 能力 2 绝尽的伪证[BP15-PR11] 新→ex
+   33 P2 mainPhase 打出 绝尽的伪证[BP15-PR11] 真实的信徒[BP05-046] cemetery→field
+   34 P2 mainPhase 攻击 真实的继承者·薇赫里雅[BP20-038] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   35 P1 quick Quick 放过 真实的继承者·薇赫里雅[BP20-038]→第八绝杰·欧克托莉斯[BP10-LD02] 1；P1 -1=19 〔forced〕
+   36 P2 mainPhase 打出 绝尽真实·莱欧[BP15-038] 真实的继承者·薇赫里雅[BP20-038] field→cemetery；真实的继承者·薇赫里雅[BP20-038] field→cemetery；真实的信徒[BP05-046] field→cemetery
+   37 P2 selectCards/effect 真实的祈祷者[BP20-052] deck→ex
+   39 P2 mainPhase 起动 绝尽真实·莱欧[BP15-038] 能力 1
+   40 P2 selectCards/target 绝尽真实·莱欧[BP15-038]→篡夺的随从[BP05-029] 9；绝尽的伪证[BP15-PR11] 新→ex；篡夺的随从[BP05-029] field→cemetery
+   41 P2 mainPhase 结束主阶段
+
+T7 · 选手 1 回合 · HP 19/14 · PP 4/0
+手牌 篡夺绝杰·欧克托莉斯[BP05-018]、怒涛副船长[BP19-028]、怒涛副船长[BP19-028]｜对手手牌 3 张
+场 篡夺的随从[BP05-029] 2/2 / 绝尽真实·莱欧[BP15-038] 6/6
+EX 战栗的海贼旗[BP19-T01] / 真实的祈祷者[BP20-052]、绝尽的伪证[BP15-PR11]｜墓 3/8
+   43 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+   44 P1 selectPending p195 〔fallback〕
+   45 P1 mainPhase 攻击 篡夺的随从[BP05-029] → 愚昧的贤者·琳库露[BP15-PR03] 〔fallback〕
+   46 P2 quick Quick 放过 篡夺的随从[BP05-029]→愚昧的贤者·琳库露[BP15-PR03] 4；P2 -4=10
+   47 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex 〔fallback〕
+   48 P1 mainPhase 进化 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+   49 P1 selectCards/target 绝尽的显现·莱欧[BP20-042] 绝尽的显现·莱欧[BP20-042] cemetery→ex 〔fallback〕
+   50 P1 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 2 回合 · HP 19/10 · PP 0/4
+手牌 怒涛副船长[BP19-028]｜对手手牌 4 张
+场 篡夺的随从[BP05-029] 4/2 横、篡夺绝杰·欧克托莉斯[BP05-018] 4/4、怒涛副船长[BP19-028] 2/2 / 绝尽真实·莱欧[BP15-038] 6/6
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01]、绝尽的显现·莱欧[BP20-042] / 真实的祈祷者[BP20-052]、绝尽的伪证[BP15-PR11]｜墓 3/9
+   52 P2 mainPhase 攻击 绝尽真实·莱欧[BP15-038] → 第八绝杰·欧克托莉斯[BP10-LD02]
+   53 P1 quick Quick 放过 绝尽真实·莱欧[BP15-038]→第八绝杰·欧克托莉斯[BP10-LD02] 6；P1 -6=13 〔forced〕
+   54 P2 mainPhase 打出 真实的祈祷者[BP20-052]
+   57 P2 mainPhase 打出 绝尽的伪证[BP15-PR11]
+   58 P2 selectCards/target 真实的狂信者[BP08-047] cemetery→field
+   59 P2 mainPhase 攻击 真实的狂信者[BP08-047] → 篡夺的随从[BP05-029]
+   60 P1 quick Quick 放过 真实的狂信者[BP08-047]→篡夺的随从[BP05-029] 3；篡夺的随从[BP05-029]→真实的狂信者[BP08-047] 4；篡夺的随从[BP05-029] field→cemetery 〔forced〕
+   61 P2 mainPhase 结束主阶段
+
+T9 · 选手 1 回合 · HP 13/10 · PP 5/0
+手牌 怒涛副船长[BP19-028]、出航的罪人·芭芭萝丝[BP19-019]｜对手手牌 5 张
+场 篡夺绝杰·欧克托莉斯[BP05-018] 4/4、怒涛副船长[BP19-028] 2/2 / 绝尽真实·莱欧[BP15-038] 6/6 横、真实的祈祷者[BP20-052] 3/5 横、真实的狂信者[BP08-047] 3/1 伤4 横
+EX 战栗的海贼旗[BP19-T01]、战栗的海贼旗[BP19-T01]、绝尽的显现·莱欧[BP20-042] / 空｜墓 4/9
+   64 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex 〔authored〕
+   65 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019] 〔authored〕
+   66 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔fallback〕
+   67 P1 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=9 〔authored〕
+   68 P1 choose/mode recover 〔authored〕
+   69 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 真实的祈祷者[BP20-052] 〔fallback〕
+   70 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→真实的祈祷者[BP20-052] 5；真实的祈祷者[BP20-052]→出航的罪人·芭芭萝丝[BP19-019] 3；真实的祈祷者[BP20-052] field→cemetery
+   71 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔authored〕
+   72 P1 selectCards/target 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=8 〔authored〕
+   73 P1 choose/mode destroy 〔authored〕
+   74 P1 selectCards/target 绝尽真实·莱欧[BP15-038] 绝尽真实·莱欧[BP15-038] field→cemetery 〔authored〕
+   75 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 〔authored〕
+   76 P1 selectCards/target 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=7 〔authored〕
+   77 P1 mainPhase 攻击 篡夺绝杰·欧克托莉斯[BP05-018] → 愚昧的贤者·琳库露[BP15-PR03] 〔authored〕
+   78 P2 quick Quick 放过 篡夺绝杰·欧克托莉斯[BP05-018]→愚昧的贤者·琳库露[BP15-PR03] 4；P2 -4=3
+   79 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 愚昧的贤者·琳库露[BP15-PR03] 〔authored〕
+   80 P2 quick Quick 放过 怒涛副船长[BP19-028]→愚昧的贤者·琳库露[BP15-PR03] 4；P2 -4=-1
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":9}
+生命 13/-1
+选手输入 [{"direct":0,"authored":14,"fallback":15,"forced":11},{"direct":0,"authored":6,"fallback":23,"forced":12}]

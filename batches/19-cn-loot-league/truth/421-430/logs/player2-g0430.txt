@@ -1,0 +1,194 @@
+g0430
+
+T0 · 选手 1 回合 · HP 20/20 · PP 0/0
+手牌 真实的戒律[BP08-041]、绝尽的崇拜者[BP15-047]、真实的祈祷者[BP20-052]、真实的继承者·薇赫里雅[BP20-038]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    0 P2 mulligan 保留 〔authored〕
+    1 P1 mulligan 整手重抽 P2 0=20；P1 0=20
+
+T1 · 选手 2 回合 · HP 20/20 · PP 0/1
+手牌 真实的戒律[BP08-041]、绝尽的崇拜者[BP15-047]、真实的祈祷者[BP20-052]、真实的继承者·薇赫里雅[BP20-038]｜对手手牌 4 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    2 P2 mainPhase 结束主阶段 〔forced〕
+
+T2 · 选手 1 回合 · HP 20/20 · PP 1/1
+手牌 真实的戒律[BP08-041]、绝尽的崇拜者[BP15-047]、真实的祈祷者[BP20-052]、真实的继承者·薇赫里雅[BP20-038]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 0/0
+    4 P1 mainPhase 打出 艾巴利缇亚[BP05-034]
+    7 P1 mainPhase 结束主阶段
+
+T3 · 选手 2 回合 · HP 20/20 · PP 0/2
+手牌 真实的戒律[BP08-041]、绝尽的崇拜者[BP15-047]、真实的祈祷者[BP20-052]、真实的继承者·薇赫里雅[BP20-038]、真实的肯定者[BP20-053]｜对手手牌 5 张
+场 空 / 空
+EX 空 / 空｜墓 1/0
+    9 P2 mainPhase 打出 真实的肯定者[BP20-053] 〔fallback〕
+   10 P2 selectCards/discard 真实的继承者·薇赫里雅[BP20-038] 〔fallback〕
+   11 P2 mainPhase 结束主阶段 〔forced〕
+
+T4 · 选手 1 回合 · HP 20/20 · PP 2/0
+手牌 真实的戒律[BP08-041]、绝尽的崇拜者[BP15-047]、真实的祈祷者[BP20-052]、真实的狂信者[BP08-047]｜对手手牌 6 张
+场 空 / 真实的肯定者[BP20-053] 2/3
+EX 空 / 空｜墓 1/1
+   13 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   14 P1 mainPhase 进化 怒涛副船长[BP19-028]（EP）
+   16 P1 mainPhase 结束主阶段
+
+T5 · 选手 2 回合 · HP 20/20 · PP 0/3
+手牌 真实的戒律[BP08-041]、绝尽的崇拜者[BP15-047]、真实的祈祷者[BP20-052]、真实的狂信者[BP08-047]、石英魔女[BP15-055]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 3/3 / 真实的肯定者[BP20-053] 2/3
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/1
+   18 P2 mainPhase 攻击 真实的肯定者[BP20-053] → 第八绝杰·欧克托莉斯[BP10-LD02] 〔fallback〕
+   19 P1 quick Quick 放过 真实的肯定者[BP20-053]→第八绝杰·欧克托莉斯[BP10-LD02] 2；P1 -2=18
+   20 P2 mainPhase 打出 真实的祈祷者[BP20-052] 〔fallback〕
+   21 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   22 P2 selectCards/discard 真实的戒律[BP08-041] 〔fallback〕
+   23 P2 mainPhase 结束主阶段 〔forced〕
+   24 P2 selectCards/wardEngage 真实的祈祷者[BP20-052] 〔authored〕
+
+T6 · 选手 1 回合 · HP 18/20 · PP 3/0
+手牌 绝尽的崇拜者[BP15-047]、真实的狂信者[BP08-047]、石英魔女[BP15-055]、无尽巫师·桃乐丝[BP12-037]、真实绝杰·莱欧[BP05-035]｜对手手牌 7 张
+场 怒涛副船长[BP19-028] 3/3 / 真实的肯定者[BP20-053] 2/3 横、真实的祈祷者[BP20-052] 3/3 横
+EX 战栗的海贼旗[BP19-T01] / 空｜墓 1/2
+   26 P1 mainPhase 打出 篡夺绝杰·欧克托莉斯[BP05-018]
+   27 P1 mainPhase 进化 篡夺绝杰·欧克托莉斯[BP05-018]（EP）
+   28 P1 selectCards/target 真实的肯定者[BP20-053] cemetery→ex
+   29 P1 mainPhase 攻击 篡夺绝杰·欧克托莉斯[BP05-018] → 真实的祈祷者[BP20-052]
+   30 P2 quick Quick 放过 篡夺绝杰·欧克托莉斯[BP05-018]→真实的祈祷者[BP20-052] 4；真实的祈祷者[BP20-052]→篡夺绝杰·欧克托莉斯[BP05-018] 3；真实的祈祷者[BP20-052] field→cemetery 〔forced〕
+   31 P1 mainPhase 攻击 怒涛副船长[BP19-028] → 愚昧的贤者·琳库露[BP15-PR03]
+   32 P2 quick Quick 放过 怒涛副船长[BP19-028]→愚昧的贤者·琳库露[BP15-PR03] 3；P2 -3=17 〔forced〕
+   33 P1 mainPhase 结束主阶段
+
+T7 · 选手 2 回合 · HP 18/17 · PP 0/4
+手牌 绝尽的崇拜者[BP15-047]、真实的狂信者[BP08-047]、石英魔女[BP15-055]、无尽巫师·桃乐丝[BP12-037]、真实绝杰·莱欧[BP05-035]、真实的宣告[BP05-044]｜对手手牌 6 张
+场 怒涛副船长[BP19-028] 3/3 横、篡夺绝杰·欧克托莉斯[BP05-018] 4/1 伤3 横 / 真实的肯定者[BP20-053] 2/3
+EX 战栗的海贼旗[BP19-T01]、真实的肯定者[BP20-053] / 空｜墓 1/4
+   35 P2 mainPhase 攻击 真实的肯定者[BP20-053] → 篡夺绝杰·欧克托莉斯[BP05-018] 〔fallback〕
+   36 P1 quick Quick 放过 真实的肯定者[BP20-053]→篡夺绝杰·欧克托莉斯[BP05-018] 2；篡夺绝杰·欧克托莉斯[BP05-018]→真实的肯定者[BP20-053] 4；篡夺绝杰·欧克托莉斯[BP05-018] field→cemetery；真实的肯定者[BP20-053] field→cemetery
+   37 P2 mainPhase 打出 真实的狂信者[BP08-047] 〔fallback〕
+   38 P2 mainPhase 攻击 真实的狂信者[BP08-047] → 怒涛副船长[BP19-028] 〔fallback〕
+   39 P1 quick Quick 放过 真实的狂信者[BP08-047]→怒涛副船长[BP19-028] 3；怒涛副船长[BP19-028]→真实的狂信者[BP08-047] 3；怒涛副船长[BP19-028] field→cemetery
+   40 P2 mainPhase 结束主阶段 〔forced〕
+
+T8 · 选手 1 回合 · HP 18/17 · PP 4/1
+手牌 绝尽的崇拜者[BP15-047]、石英魔女[BP15-055]、无尽巫师·桃乐丝[BP12-037]、真实绝杰·莱欧[BP05-035]、真实的宣告[BP05-044]｜对手手牌 7 张
+场 空 / 真实的狂信者[BP08-047] 3/2 伤3 横
+EX 战栗的海贼旗[BP19-T01]、真实的肯定者[BP20-053] / 空｜墓 3/5
+   42 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+   43 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]（EP）
+   44 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=16
+   46 P1 mainPhase 打出 海潮炮手[BP19-026] 战栗的海贼旗[BP19-T01] 新→ex
+   47 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   48 P1 selectCards/target 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=15
+   50 P1 choose/mode 海潮炮手[BP19-026]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=14；真实的狂信者[BP08-047] field→cemetery
+   51 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   52 P1 selectCards/target 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=13
+   53 P1 selectPending 海潮炮手[BP19-026]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=12
+   54 P1 mainPhase 结束主阶段
+
+T9 · 选手 2 回合 · HP 18/12 · PP 0/5
+手牌 绝尽的崇拜者[BP15-047]、石英魔女[BP15-055]、无尽巫师·桃乐丝[BP12-037]、真实绝杰·莱欧[BP05-035]、真实的宣告[BP05-044]、绝尽的显现·莱欧[BP20-042]｜对手手牌 5 张
+场 出航的罪人·芭芭萝丝[BP19-019] 7/4、海潮炮手[BP19-026] 2/3 / 空
+EX 真实的肯定者[BP20-053] / 空｜墓 3/8
+   56 P2 mainPhase 起动 绝尽的显现·莱欧[BP20-042] 能力 2 绝尽的伪证[BP15-PR11] 新→ex 〔authored〕
+   57 P2 mainPhase 打出 绝尽的伪证[BP15-PR11] 〔fallback〕
+   58 P2 selectCards/target 真实的祈祷者[BP20-052] 真实的祈祷者[BP20-052] cemetery→field 〔fallback〕
+   59 P2 selectCards/wardEnterEngaged 不选 〔fallback〕
+   60 P2 selectCards/discard 绝尽的崇拜者[BP15-047] 〔fallback〕
+   61 P2 mainPhase 打出 无尽巫师·桃乐丝[BP12-037] 〔fallback〕
+   62 P2 selectCards/effect 绝尽的显现·莱欧[BP20-042] 〔fallback〕
+   63 P2 selectCards/effect 虚伪的术式[BP20-049] 〔fallback〕
+   64 P2 mainPhase 起动 绝尽的显现·莱欧[BP20-042] 能力 2 绝尽的伪证[BP15-PR11] 新→ex 〔authored〕
+   65 P2 mainPhase 打出 绝尽的伪证[BP15-PR11] 〔fallback〕
+   66 P2 selectCards/target 真实的团结者[BP20-046] 真实的团结者[BP20-046] cemetery→field 〔fallback〕
+   67 P2 confirm/effect 确认 〔fallback〕
+   68 P2 selectCards/pick 真实的团结者[BP20-047] 〔fallback〕
+   69 P2 selectCards/target 海潮炮手[BP19-026] 真实的团结者[BP20-047]→海潮炮手[BP19-026] 3 〔fallback〕
+   70 P2 selectCards/discard 石英魔女[BP15-055] 海潮炮手[BP19-026] field→cemetery 〔fallback〕
+   71 P2 mainPhase 结束主阶段 〔fallback〕
+   72 P2 selectCards/wardEngage 真实的祈祷者[BP20-052] 〔authored〕
+
+T10 · 选手 1 回合 · HP 18/12 · PP 5/0
+手牌 真实绝杰·莱欧[BP05-035]、绝尽的崇拜者[BP15-047]、真实的隐者[BP15-053]、真实的隐者[BP15-053]｜对手手牌 6 张
+场 出航的罪人·芭芭萝丝[BP19-019] 7/4 / 真实的祈祷者[BP20-052] 3/5 横、无尽巫师·桃乐丝[BP12-037] 3/3、真实的团结者[BP20-046] 4/4
+EX 真实的肯定者[BP20-053] / 空｜墓 4/12
+   74 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 真实的祈祷者[BP20-052]
+   75 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→真实的祈祷者[BP20-052] 7；真实的祈祷者[BP20-052]→出航的罪人·芭芭萝丝[BP19-019] 3；真实的祈祷者[BP20-052] field→cemetery 〔forced〕
+   76 P1 mainPhase 打出 强袭盗贼[BP15-035] 黄金短剑[BP15-T01] 新→ex
+   77 P1 mainPhase 攻击 强袭盗贼[BP15-035] → 无尽巫师·桃乐丝[BP12-037]
+   78 P2 quick Quick 放过 强袭盗贼[BP15-035]→无尽巫师·桃乐丝[BP12-037] 3；无尽巫师·桃乐丝[BP12-037]→强袭盗贼[BP15-035] 3；强袭盗贼[BP15-035] field→cemetery；无尽巫师·桃乐丝[BP12-037] field→cemetery 〔forced〕
+   79 P1 mainPhase 打出 黄金短剑[BP15-T01] 黄金短剑[BP15-T01]→真实的团结者[BP20-046] 2；黄金短剑[BP15-T01]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=10
+   81 P1 mainPhase 打出 怒涛副船长[BP19-028] 战栗的海贼旗[BP19-T01] 新→ex
+   82 P1 mainPhase 打出 真实的肯定者[BP20-053]
+   83 P1 selectCards/discard P1 +2=20
+   84 P1 mainPhase 打出 战栗的海贼旗[BP19-T01]
+   85 P1 selectCards/target 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=9
+   86 P1 choose/mode 真实的团结者[BP20-046] field→cemetery
+   87 P1 mainPhase 结束主阶段
+
+T11 · 选手 2 回合 · HP 20/9 · PP 0/6
+手牌 真实绝杰·莱欧[BP05-035]、绝尽的崇拜者[BP15-047]、真实的隐者[BP15-053]、真实的隐者[BP15-053]、真实的信徒[BP05-046]｜对手手牌 4 张
+场 出航的罪人·芭芭萝丝[BP19-019] 7/1 伤3 横、怒涛副船长[BP19-028] 3/2、真实的肯定者[BP20-053] 2/3 / 空
+EX 空 / 空｜墓 6/16
+   89 P2 mainPhase 打出 真实的隐者[BP15-053] 〔fallback〕
+   90 P2 selectCards/target 真实的团结者[BP20-046] 真实的团结者[BP20-046] cemetery→ex 〔fallback〕
+   91 P2 mainPhase 打出 真实的团结者[BP20-046] 〔fallback〕
+   92 P2 confirm/effect 确认 〔fallback〕
+   93 P2 selectCards/target 怒涛副船长[BP19-028] 真实的团结者[BP20-047]→怒涛副船长[BP19-028] 3 〔fallback〕
+   94 P2 selectCards/discard 石英魔女[BP15-055] 怒涛副船长[BP19-028] field→cemetery 〔fallback〕
+   95 P2 mainPhase 攻击 真实的团结者[BP20-046] → 出航的罪人·芭芭萝丝[BP19-019] 〔fallback〕
+   96 P1 quick Quick 放过 真实的团结者[BP20-046]→出航的罪人·芭芭萝丝[BP19-019] 4；出航的罪人·芭芭萝丝[BP19-019]→真实的团结者[BP20-046] 7；出航的罪人·芭芭萝丝[BP19-019] field→cemetery；真实的团结者[BP20-046] field→cemetery
+   97 P2 mainPhase 结束主阶段 〔forced〕
+
+T12 · 选手 1 回合 · HP 20/9 · PP 6/0
+手牌 真实绝杰·莱欧[BP05-035]、绝尽的崇拜者[BP15-047]、真实的隐者[BP15-053]、真实的信徒[BP05-046]｜对手手牌 5 张
+场 真实的肯定者[BP20-053] 2/3 / 真实的隐者[BP15-053] 2/3
+EX 空 / 空｜墓 8/17
+   99 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+  100 P1 mainPhase 进化 出航的罪人·芭芭萝丝[BP19-019]
+  101 P1 mainPhase 打出 战栗的海贼旗[BP19-T01] 战栗的海贼旗[BP19-T01]→愚昧的贤者·琳库露[BP15-PR03] 1；P2 -1=8
+  103 P1 mainPhase 打出 空绝的崇拜者[BP15-028]
+  105 P1 selectCards/pick 黄金短剑[BP15-T01] 新→ex
+  106 P1 mainPhase 攻击 真实的肯定者[BP20-053] → 愚昧的贤者·琳库露[BP15-PR03]
+  107 P2 quick Quick 放过 真实的肯定者[BP20-053]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=6 〔forced〕
+  108 P1 mainPhase 打出 黄金短剑[BP15-T01] 黄金短剑[BP15-T01]→真实的隐者[BP15-053] 2；黄金短剑[BP15-T01]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=4
+  109 P1 selectPending 黄金之靴[BP15-T03] 新→ex
+  110 P1 choose/mode 真实的隐者[BP15-053] field→cemetery
+  111 P1 mainPhase 结束主阶段
+
+T13 · 选手 2 回合 · HP 20/4 · PP 0/7
+手牌 真实绝杰·莱欧[BP05-035]、绝尽的崇拜者[BP15-047]、真实的隐者[BP15-053]、真实的信徒[BP05-046]、真实的宣告[BP05-044]｜对手手牌 3 张
+场 真实的肯定者[BP20-053] 2/3 横、出航的罪人·芭芭萝丝[BP19-019] 5/4、空绝的崇拜者[BP15-028] 3/3 / 空
+EX 黄金之靴[BP15-T03] / 空｜墓 8/18
+  113 P2 mainPhase 打出 真实的隐者[BP15-053] 〔fallback〕
+  114 P2 selectCards/target 真实的肯定者[BP20-053] 真实的肯定者[BP20-053] cemetery→ex 〔fallback〕
+  115 P2 mainPhase 打出 真实的肯定者[BP20-053] 〔fallback〕
+  116 P2 selectCards/discard 真实的宣告[BP05-044] P2 +2=6 〔fallback〕
+  117 P2 mainPhase 打出 真实的信徒[BP05-046] 〔fallback〕
+  118 P2 mainPhase 打出 绝尽真实·莱欧[BP15-038] 真实的隐者[BP15-053] field→cemetery；真实的肯定者[BP20-053] field→cemetery；真实的信徒[BP05-046] field→cemetery 〔fallback〕
+  119 P2 selectCards/effect 真实绝杰·莱欧[BP05-035] 真实绝杰·莱欧[BP05-035] deck→ex 〔fallback〕
+  120 P2 orderCards/deckBottom 排序 真实的继承者·薇赫里雅[BP20-038]、真实的宣告[BP05-044] 〔fallback〕
+  121 P2 mainPhase 起动 绝尽真实·莱欧[BP15-038] 能力 1 〔fallback〕
+  122 P2 selectCards/target 出航的罪人·芭芭萝丝[BP19-019] 绝尽真实·莱欧[BP15-038]→出航的罪人·芭芭萝丝[BP19-019] 9；绝尽的伪证[BP15-PR11] 新→ex；出航的罪人·芭芭萝丝[BP19-019] field→cemetery 〔fallback〕
+  123 P2 mainPhase 结束主阶段 〔forced〕
+
+T14 · 选手 1 回合 · HP 20/6 · PP 7/0
+手牌 绝尽的崇拜者[BP15-047]｜对手手牌 4 张
+场 真实的肯定者[BP20-053] 2/3、空绝的崇拜者[BP15-028] 3/3 / 绝尽真实·莱欧[BP15-038] 6/6
+EX 黄金之靴[BP15-T03] / 真实绝杰·莱欧[BP05-035]、绝尽的伪证[BP15-PR11]｜墓 9/22
+  125 P1 mainPhase 打出 出航的罪人·芭芭萝丝[BP19-019] 战栗的海贼旗[BP19-T01] 新→ex
+  126 P1 mainPhase 打出 黄金之靴[BP15-T03]
+  127 P1 selectCards/target 黄金之靴[BP15-T03] 新→ex
+  128 P1 mainPhase 攻击 空绝的崇拜者[BP15-028] → 愚昧的贤者·琳库露[BP15-PR03]
+  129 P2 quick Quick 放过 空绝的崇拜者[BP15-028]→愚昧的贤者·琳库露[BP15-PR03] 3；P2 -3=3 〔forced〕
+  130 P1 mainPhase 打出 黄金之靴[BP15-T03]
+  132 P1 mainPhase 攻击 真实的肯定者[BP20-053] → 愚昧的贤者·琳库露[BP15-PR03]
+  133 P2 quick Quick 放过 真实的肯定者[BP20-053]→愚昧的贤者·琳库露[BP15-PR03] 2；P2 -2=1 〔forced〕
+  134 P1 mainPhase 攻击 出航的罪人·芭芭萝丝[BP19-019] → 愚昧的贤者·琳库露[BP15-PR03]
+  135 P2 quick Quick 放过 出航的罪人·芭芭萝丝[BP19-019]→愚昧的贤者·琳库露[BP15-PR03] 3；P2 -3=-2 〔forced〕
+
+结果 {"result":{"winner":0,"losses":[{"player":1,"reason":"leaderDefense"}]},"turn":14}
+生命 20/-2
+选手输入 [{"direct":0,"authored":21,"fallback":33,"forced":17},{"direct":0,"authored":5,"fallback":40,"forced":20}]
