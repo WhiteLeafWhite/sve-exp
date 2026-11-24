@@ -1,0 +1,2224 @@
+{
+  "format": "sve-replay",
+  "version": 1,
+  "options": {
+    "seed": "2bc19322-a22e-48bc-9a95-c66dfd115e28",
+    "decks": [
+      {
+        "leader": "BP10-LD02",
+        "main": [
+          "BP05-018",
+          "BP05-018",
+          "BP05-018",
+          "BP05-029",
+          "BP05-029",
+          "BP05-034",
+          "BP05-034",
+          "BP05-034",
+          "BP15-020",
+          "BP15-020",
+          "BP15-020",
+          "BP15-026",
+          "BP15-026",
+          "BP15-026",
+          "BP15-028",
+          "BP15-028",
+          "BP15-028",
+          "BP15-035",
+          "BP15-035",
+          "BP15-113",
+          "BP15-113",
+          "BP15-113",
+          "BP19-019",
+          "BP19-019",
+          "BP19-019",
+          "BP19-026",
+          "BP19-026",
+          "BP19-026",
+          "BP19-028",
+          "BP19-028",
+          "BP19-028",
+          "BP19-030",
+          "BP19-030",
+          "BP19-030",
+          "BP20-019",
+          "BP20-019",
+          "BP20-019",
+          "BP20-026",
+          "BP20-026",
+          "BP20-026"
+        ],
+        "evolve": [
+          "BP15-029",
+          "BP15-029",
+          "BP15-114",
+          "BP15-114",
+          "BP19-020",
+          "BP19-020",
+          "BP19-029",
+          "BP19-029",
+          "BP20-R04",
+          "BP20-R04"
+        ]
+      },
+      {
+        "leader": "CP04-PR01",
+        "main": [
+          "BP01-011",
+          "BP01-011",
+          "BP01-011",
+          "BP04-010",
+          "BP04-010",
+          "BP06-003",
+          "BP06-003",
+          "BP06-003",
+          "BP06-007",
+          "BP06-007",
+          "BP06-011",
+          "BP06-011",
+          "BP07-003",
+          "BP07-003",
+          "BP07-003",
+          "BP12-007",
+          "BP12-007",
+          "BP12-007",
+          "BP13-003",
+          "BP13-003",
+          "BP13-003",
+          "BP13-013",
+          "BP13-013",
+          "BP13-013",
+          "BP15-002",
+          "BP15-002",
+          "BP15-002",
+          "BP15-004",
+          "BP15-004",
+          "BP16-001",
+          "BP16-001",
+          "BP16-001",
+          "BP16-015",
+          "BP16-015",
+          "BP16-015",
+          "ETD03-008",
+          "ETD03-008",
+          "ETD03-008",
+          "SP01-001",
+          "SP01-001"
+        ],
+        "evolve": [
+          "BP04-011",
+          "BP13-004",
+          "BP13-014",
+          "BP13-014",
+          "BP15-003",
+          "BP15-003",
+          "BP15-005",
+          "BP15-005",
+          "BP16-002",
+          "BP16-002"
+        ]
+      }
+    ],
+    "deckNames": [
+      "20财宝 · t7B32v",
+      "妖精妖 [1DYwF7]"
+    ],
+    "controllers": [
+      "human",
+      "human"
+    ],
+    "format": "standard",
+    "restrictionList": "08_26_CHN",
+    "deckRestrictions": true,
+    "manualActions": false,
+    "showEveryMainPhase": true,
+    "askEveryQuickWindow": true,
+    "turnOrder": "player1"
+  },
+  "inputs": [
+    {
+      "by": 0,
+      "input": {
+        "type": "mulligan",
+        "redraw": true,
+        "bottomOrder": [
+          "c103",
+          "c104",
+          "c105",
+          "c106"
+        ]
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mulligan",
+        "redraw": false
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "endMainPhase"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c110"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "endMainPhase"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c116"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "endMainPhase"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c130"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c121",
+          "target": "c1"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c122",
+          "target": "c1"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "endMainPhase"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c118"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c126",
+          "target": "c52"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "activate",
+          "card": "c138",
+          "ability": 1
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c124"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "selectCards",
+        "cards": [
+          "c121"
+        ]
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "activate",
+          "card": "c138",
+          "ability": 1
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c140"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "choose",
+        "ids": [
+          "damage"
+        ]
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "selectCards",
+        "cards": [
+          "c122"
+        ]
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "endMainPhase"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c150"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "choose",
+        "ids": [
+          "fairies"
+        ]
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c107"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "evolve",
+          "card": "c156",
+          "ability": 0,
+          "evolveCard": "c95",
+          "useEvolutionPoint": true,
+          "superEvolve": false
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c132",
+          "target": "c1"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c159"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "endMainPhase"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c163"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c126",
+          "target": "c52"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c138",
+          "target": "c52"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "evolve",
+          "card": "c165",
+          "ability": 0,
+          "evolveCard": "c48",
+          "useEvolutionPoint": false,
+          "superEvolve": false
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "selectCards",
+        "cards": [
+          "c26"
+        ]
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c165",
+          "target": "c132"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c167"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "selectCards",
+        "cards": [
+          "c165"
+        ]
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "activate",
+          "card": "c138",
+          "ability": 1
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c128"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "selectCards",
+        "cards": [
+          "c152"
+        ]
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "activate",
+          "card": "c138",
+          "ability": 1
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c143"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "endMainPhase"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c109"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "selectCards",
+        "cards": []
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c119"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "selectCards",
+        "cards": []
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c153",
+          "target": "c165"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c156",
+          "target": "c1"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c162",
+          "target": "c1"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "endMainPhase"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "selectCards",
+        "cards": [
+          "c184",
+          "c188"
+        ]
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c170"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "evolve",
+          "card": "c196",
+          "ability": 0,
+          "evolveCard": "c46",
+          "useEvolutionPoint": false,
+          "superEvolve": false
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c198"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "selectCards",
+        "cards": [
+          "c196"
+        ]
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "choose",
+        "ids": [
+          "destroy"
+        ]
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "selectCards",
+        "cards": [
+          "c184"
+        ]
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c196",
+          "target": "c188"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c126",
+          "target": "c52"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c138",
+          "target": "c52"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "endMainPhase"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c162",
+          "target": "c196"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c212"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "evolve",
+          "card": "c217",
+          "ability": 0,
+          "evolveCard": "c96",
+          "useEvolutionPoint": true,
+          "superEvolve": false
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c156",
+          "target": "c138"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c217",
+          "target": "c126"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c206"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c182"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c230"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c160"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c210"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "endMainPhase"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c194"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c136"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "choose",
+        "ids": [
+          "crest"
+        ]
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "evolve",
+          "card": "c242",
+          "ability": 0,
+          "evolveCard": "c49",
+          "useEvolutionPoint": false,
+          "superEvolve": false
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "selectCards",
+        "cards": [
+          "c29"
+        ]
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c244"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "selectCards",
+        "cards": [
+          "c242"
+        ]
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "selectPending",
+        "id": "p253"
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c246",
+          "target": "c52"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 0,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "endMainPhase"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c108"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "play",
+          "card": "c262"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c237",
+          "target": "c1"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c239",
+          "target": "c1"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c266",
+          "target": "c1"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    },
+    {
+      "by": 1,
+      "input": {
+        "type": "mainPhase",
+        "action": {
+          "type": "attack",
+          "attacker": "c233",
+          "target": "c1"
+        }
+      }
+    },
+    {
+      "by": null,
+      "input": {
+        "type": "quick",
+        "action": {
+          "type": "pass"
+        }
+      }
+    }
+  ],
+  "info": {
+    "result": {
+      "winner": 1,
+      "losses": [
+        {
+          "player": 0,
+          "reason": "leaderDefense"
+        }
+      ]
+    },
+    "turn": 12
+  },
+  "training": {
+    "id": "g0215",
+    "number": 215,
+    "phase": "b022",
+    "matchup": "fairy",
+    "first": 1,
+    "mode": "policy",
+    "effortHistory": [
+      0.6
+    ],
+    "focus": [
+      "争场,炮手",
+      "留费与防守、先拆旗伤引擎、门槛与场位"
+    ],
+    "restrictionHash": "8d634887466c004a6316b453ca5b28799b3232514aeb324a081f1721fedefde0",
+    "engine": "c95927874b565f21",
+    "hashes": [
+      "b38c1afaafd651e98f6ce06b231c4add661f91f6e8190c8b7da477027f586da2",
+      "b916aa5aeef7ecb39ee3db8019ab2d8437e1514b19a297f7a768e4f4d842e518"
+    ],
+    "authors": [
+      {
+        "rev": "r3",
+        "fingerprint": "613c26cebd4825f036ea42c82677771c60595c8e3a3129e02bdb13feaa0bbbdc"
+      },
+      {
+        "rev": "r3",
+        "fingerprint": "41e30f3130d09d106da072f511111185215e743264dd404f744062d4f5ed14cb"
+      }
+    ],
+    "hp": [
+      0,
+      2
+    ],
+    "counts": [
+      {
+        "direct": 0,
+        "authored": 13,
+        "fallback": 30,
+        "forced": 23
+      },
+      {
+        "direct": 0,
+        "authored": 6,
+        "fallback": 30,
+        "forced": 18
+      }
+    ],
+    "inputCount": 120
+  },
+  "trace": [
+    {
+      "index": 0,
+      "turn": 0,
+      "seat": 1,
+      "decision": "mulligan",
+      "method": "authored"
+    },
+    {
+      "index": 1,
+      "turn": 0,
+      "seat": 2,
+      "decision": "mulligan",
+      "method": "authored"
+    },
+    {
+      "index": 2,
+      "turn": 1,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "forced"
+    },
+    {
+      "index": 3,
+      "turn": 1,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 4,
+      "turn": 2,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 5,
+      "turn": 2,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "forced"
+    },
+    {
+      "index": 6,
+      "turn": 2,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 7,
+      "turn": 3,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 8,
+      "turn": 3,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "forced"
+    },
+    {
+      "index": 9,
+      "turn": 3,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 10,
+      "turn": 4,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 11,
+      "turn": 4,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 12,
+      "turn": 4,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 13,
+      "turn": 4,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 14,
+      "turn": 4,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 15,
+      "turn": 4,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "forced"
+    },
+    {
+      "index": 16,
+      "turn": 4,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 17,
+      "turn": 5,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 18,
+      "turn": 5,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 19,
+      "turn": 5,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 20,
+      "turn": 5,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 21,
+      "turn": 5,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 22,
+      "turn": 5,
+      "seat": 1,
+      "decision": "selectCards",
+      "method": "authored"
+    },
+    {
+      "index": 23,
+      "turn": 5,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 24,
+      "turn": 5,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 25,
+      "turn": 5,
+      "seat": 1,
+      "decision": "choose",
+      "method": "fallback"
+    },
+    {
+      "index": 26,
+      "turn": 5,
+      "seat": 1,
+      "decision": "selectCards",
+      "method": "authored"
+    },
+    {
+      "index": 27,
+      "turn": 5,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "forced"
+    },
+    {
+      "index": 28,
+      "turn": 5,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 29,
+      "turn": 6,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 30,
+      "turn": 6,
+      "seat": 2,
+      "decision": "choose",
+      "method": "fallback"
+    },
+    {
+      "index": 31,
+      "turn": 6,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 32,
+      "turn": 6,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 33,
+      "turn": 6,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 34,
+      "turn": 6,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 35,
+      "turn": 6,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 36,
+      "turn": 6,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 37,
+      "turn": 6,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 38,
+      "turn": 7,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 39,
+      "turn": 7,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 40,
+      "turn": 7,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 41,
+      "turn": 7,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 42,
+      "turn": 7,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 43,
+      "turn": 7,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 44,
+      "turn": 7,
+      "seat": 1,
+      "decision": "selectCards",
+      "method": "authored"
+    },
+    {
+      "index": 45,
+      "turn": 7,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 46,
+      "turn": 7,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 47,
+      "turn": 7,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 48,
+      "turn": 7,
+      "seat": 1,
+      "decision": "selectCards",
+      "method": "authored"
+    },
+    {
+      "index": 49,
+      "turn": 7,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 50,
+      "turn": 7,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 51,
+      "turn": 7,
+      "seat": 1,
+      "decision": "selectCards",
+      "method": "authored"
+    },
+    {
+      "index": 52,
+      "turn": 7,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 53,
+      "turn": 7,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 54,
+      "turn": 7,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "forced"
+    },
+    {
+      "index": 55,
+      "turn": 7,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 56,
+      "turn": 8,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 57,
+      "turn": 8,
+      "seat": 2,
+      "decision": "selectCards",
+      "method": "fallback"
+    },
+    {
+      "index": 58,
+      "turn": 8,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 59,
+      "turn": 8,
+      "seat": 2,
+      "decision": "selectCards",
+      "method": "fallback"
+    },
+    {
+      "index": 60,
+      "turn": 8,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 61,
+      "turn": 8,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 62,
+      "turn": 8,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 63,
+      "turn": 8,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 64,
+      "turn": 8,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 65,
+      "turn": 8,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 66,
+      "turn": 8,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "forced"
+    },
+    {
+      "index": 67,
+      "turn": 8,
+      "seat": 2,
+      "decision": "selectCards",
+      "method": "authored"
+    },
+    {
+      "index": 68,
+      "turn": 8,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 69,
+      "turn": 9,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 70,
+      "turn": 9,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "authored"
+    },
+    {
+      "index": 71,
+      "turn": 9,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 72,
+      "turn": 9,
+      "seat": 1,
+      "decision": "selectCards",
+      "method": "authored"
+    },
+    {
+      "index": 73,
+      "turn": 9,
+      "seat": 1,
+      "decision": "choose",
+      "method": "authored"
+    },
+    {
+      "index": 74,
+      "turn": 9,
+      "seat": 1,
+      "decision": "selectCards",
+      "method": "authored"
+    },
+    {
+      "index": 75,
+      "turn": 9,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 76,
+      "turn": 9,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 77,
+      "turn": 9,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 78,
+      "turn": 9,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 79,
+      "turn": 9,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 80,
+      "turn": 9,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 81,
+      "turn": 9,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 82,
+      "turn": 9,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 83,
+      "turn": 10,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 84,
+      "turn": 10,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 85,
+      "turn": 10,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 86,
+      "turn": 10,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 87,
+      "turn": 10,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 88,
+      "turn": 10,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 89,
+      "turn": 10,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 90,
+      "turn": 10,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 91,
+      "turn": 10,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 92,
+      "turn": 10,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 93,
+      "turn": 10,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 94,
+      "turn": 10,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 95,
+      "turn": 10,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 96,
+      "turn": 10,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "forced"
+    },
+    {
+      "index": 97,
+      "turn": 10,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 98,
+      "turn": 11,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 99,
+      "turn": 11,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 100,
+      "turn": 11,
+      "seat": 1,
+      "decision": "choose",
+      "method": "authored"
+    },
+    {
+      "index": 101,
+      "turn": 11,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 102,
+      "turn": 11,
+      "seat": 1,
+      "decision": "selectCards",
+      "method": "authored"
+    },
+    {
+      "index": 103,
+      "turn": 11,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 104,
+      "turn": 11,
+      "seat": 1,
+      "decision": "selectCards",
+      "method": "authored"
+    },
+    {
+      "index": 105,
+      "turn": 11,
+      "seat": 1,
+      "decision": "selectPending",
+      "method": "fallback"
+    },
+    {
+      "index": 106,
+      "turn": 11,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 107,
+      "turn": 11,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 108,
+      "turn": 11,
+      "seat": 1,
+      "decision": "mainPhase",
+      "method": "forced"
+    },
+    {
+      "index": 109,
+      "turn": 11,
+      "seat": 2,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 110,
+      "turn": 12,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 111,
+      "turn": 12,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "fallback"
+    },
+    {
+      "index": 112,
+      "turn": 12,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "authored"
+    },
+    {
+      "index": 113,
+      "turn": 12,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 114,
+      "turn": 12,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "authored"
+    },
+    {
+      "index": 115,
+      "turn": 12,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 116,
+      "turn": 12,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "authored"
+    },
+    {
+      "index": 117,
+      "turn": 12,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    },
+    {
+      "index": 118,
+      "turn": 12,
+      "seat": 2,
+      "decision": "mainPhase",
+      "method": "authored"
+    },
+    {
+      "index": 119,
+      "turn": 12,
+      "seat": 1,
+      "decision": "quick",
+      "method": "forced"
+    }
+  ]
+}
